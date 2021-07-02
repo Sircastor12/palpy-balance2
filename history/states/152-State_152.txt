@@ -1,0 +1,41 @@
+state={
+	id=152
+	name="STATE_152"
+	provinces={
+		873 1411 1486 2806 2955 4132 4978 6177 6197 6208 6232 6234 6253 6256 6257 6275 6304 6318 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CAR
+		add_core_of = CAR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			1486 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			1411 50
+		}
+	}
+}
+

@@ -1,0 +1,70 @@
+spriteTypes = {
+  SpriteType = {
+    name = "GFX_archetype_corvette_archetype_medium"
+    texturefile = "gfx/interface/technologies/REP/archetype_corvette.dds"
+  }
+  SpriteType = {
+    name = "GFX_archetype_frigate_archetype_medium"
+    texturefile = "gfx/interface/technologies/REP/archetype_frigate.dds"
+  } 
+  SpriteType = {
+    name = "GFX_archetype_cruiser_archetype_medium"
+    texturefile = "gfx/interface/technologies/REP/archetype_cruiser.dds"
+  } 
+  SpriteType = {
+    name = "GFX_archetype_super_capital_archetype_medium"
+    texturefile = "gfx/interface/technologies/REP/archetype_supercapital.dds"
+  }
+  SpriteType = {
+    name = "GFX_acclamator_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/acclamator_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_acclamator_II_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/acclamator_II_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_arquintes_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/arquintes_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_carrack_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/carrack_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_consular_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/consular_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_republic_frigate_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/republic_frigate_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_cr70_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/cr70_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_cr90_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/cr90_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_dreadnaught_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/dreadnaught_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_mandator_II_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/mandator_II_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_pelta_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/pelta_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_venator_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/venator_tech.dds"
+  }
+  SpriteType = {
+    name = "GFX_victory_tech_medium"
+    texturefile = "gfx/interface/technologies/REP/victory_tech.dds"
+  }
+}

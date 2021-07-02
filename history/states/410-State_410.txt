@@ -1,0 +1,41 @@
+state={
+	id=410
+	name="STATE_410"
+	provinces={
+		646 1069 1430 1529 1531 3298 3539 4241 10271 10277 10283 10287 10289 10293 10295 10299 
+	}
+	manpower=142857
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=3
+		rubber=0
+		tungsten=4
+		oil=0
+		chromium=1
+	}
+
+  	history = {
+		owner=SLU
+		add_core_of = SLU
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			10283 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

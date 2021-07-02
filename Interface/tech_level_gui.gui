@@ -1,0 +1,19 @@
+guiTypes = {
+	containerWindowType = {
+		name = "tech_level_container"
+		position = { x = 1300 y = -7 }
+
+		buttonType ={
+			name ="tech_level_cis"
+			spriteType = "GFX_CIS_tech_1"
+			position = { x=100 y=6 }
+			pdx_tooltip = "CIS_TECH_TOOLTIP"
+		}
+		buttonType ={
+			name ="tech_level_rep"
+			spriteType = "GFX_REP_tech_1"
+			position = { x=155 y=6 }
+			pdx_tooltip = "REP_TECH_TOOLTIP"
+		}
+	}
+}

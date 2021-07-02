@@ -1,0 +1,299 @@
+guiTypes = {
+#Bounty container
+containerWindowType = {
+	name = "market_bounty_container"
+	position = {x=-11 y=173}
+	size = { width=1374 height=634 }
+
+	verticalScrollbar = "right_vertical_slider"
+
+	background = {
+		name = "Background"
+		spriteType = "GFX_bountyhunter"
+	}
+
+	buttonType = {
+		name = "Aurasing"
+		spriteType = "GFX_Aurasing"
+		position = { x = 83 y = 20 }
+		
+
+		pdx_tooltip = "AURASING_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Boba_Fett"
+		spriteType = "GFX_Boba Fett"
+		position = { x = 283 y = 20 }
+		
+
+		pdx_tooltip = "Boba_Fett_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Bric"
+		spriteType = "GFX_Bric"
+		position = { x = 483 y = 20 }
+		
+
+		pdx_tooltip = "Bric_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Bulduga"
+		spriteType = "GFX_Bulduga"
+		position = { x = 683 y = 20 }
+		
+
+		pdx_tooltip = "Bulduga_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Highsinger"
+		spriteType = "GFX_C-21 Highsinger"
+		position = { x = 883 y = 20 }
+		
+	
+		pdx_tooltip = "Highsinger_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Cad_Bane"
+		spriteType = "GFX_Cad Bane"
+		position = { x = 1083 y = 20 }
+		
+
+		pdx_tooltip = "Cad_Bane_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Castas"
+		spriteType = "GFX_Castas"
+		position = { x = 83 y = 250 }
+		
+
+		pdx_tooltip = "Castas_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Cato_Parasitti"
+		spriteType = "GFX_Cato Parasitti"
+		position = { x = 283 y = 250 }
+		
+
+		pdx_tooltip = "Cato_Parasitti_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Dengar"
+		spriteType = "GFX_Dengar"
+		position = { x = 483 y = 250 }
+		
+	
+		pdx_tooltip = "Dengar_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Derrown"
+		spriteType = "GFX_Derrown"
+		position = { x = 683 y = 250 }
+		
+
+		pdx_tooltip = "Derrown_TOOLTIP" 
+	}
+	buttonType = {
+		name = "El_Les"
+		spriteType = "GFX_El-Les"
+		position = { x = 883 y = 250 }
+		
+
+		pdx_tooltip = "El_Les_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Embo"
+		spriteType = "GFX_Embo"
+		position = { x = 1083 y = 250 }
+		
+
+		pdx_tooltip = "Embo_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Greedo"
+		spriteType = "GFX_Greedo"
+		position = { x = 83 y = 480 }
+		
+
+		pdx_tooltip = "Greedo_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Bossk"
+		spriteType = "GFX_Bossk"
+		position = { x = 283 y = 480 }
+		
+		pdx_tooltip = "Bossk_TOOLTIP" 
+	}
+	#buttonType = {
+	#	name = "Helios_3D"
+	#	spriteType = "GFX_HELIOS-3D"
+	#	position = { x = 283 y = 480 }
+	#	
+#
+	#	pdx_tooltip = "Helios_3D_TOOLTIP" 
+	#}
+	buttonType = {
+		name = "Helios_3E" 
+		spriteType = "GFX_HELIOS-3E"
+		position = { x = 483 y = 480 }
+		
+
+		pdx_tooltip = "Helios_3E_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Jakoli"
+		spriteType = "GFX_Jakoli"
+		position = { x = 683 y = 480 }
+		
+
+		pdx_tooltip = "Jakoli_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Kiera_Swan"
+		spriteType = "GFX_Kiera Swan"
+		position = { x = 883 y = 480 }
+		
+
+		pdx_tooltip = "Kiera_Swan_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Kronos"
+		spriteType = "GFX_KRONOS-327"
+		position = { x = 1083 y = 480 }
+		
+
+		pdx_tooltip = "Kronos_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Latts_Razzi"
+		spriteType = "GFX_Latts Razzi"
+		position = { x = 83 y = 710 }
+		
+		pdx_tooltip = "Latts_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Mantu"
+		spriteType = "GFX_Mantu"
+		position = { x = 283 y = 710 }
+		
+		pdx_tooltip = "Mantu_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Moralo_Eval"
+		spriteType = "GFX_Moralo Eval"
+		position = { x = 483 y = 710 }
+		
+		pdx_tooltip = "Moralo_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Onca"
+		spriteType = "GFX_Onca"
+		position = { x = 683 y = 710 }
+		
+		pdx_tooltip = "Onca_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Robonino"
+		spriteType = "GFX_Robonino"
+		position = { x = 883 y = 710 }
+		
+		pdx_tooltip = "Robonino_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Rumi_Paramita"
+		spriteType = "GFX_Rumi Paramita"
+		position = { x = 1083 y = 710 }
+		
+		pdx_tooltip = "Rumi_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Seripas"
+		spriteType = "GFX_Seripas"
+		position = { x = 83 y = 940 }
+		
+		pdx_tooltip = "Seripas_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Shahan_Alama"
+		spriteType = "GFX_Shahan Alama"
+		position = { x = 283 y = 940 }
+		
+		pdx_tooltip = "Shahan_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Sinrich"
+		spriteType = "GFX_Sinrich"
+		position = { x = 483 y = 940 }
+		
+		pdx_tooltip = "Sinrich_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Sixtat"
+		spriteType = "GFX_Sixtat"
+		position = { x = 683 y = 940 }
+		
+		pdx_tooltip = "Sixtat_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Sugi"
+		spriteType = "GFX_Sugi"
+		position = { x = 883 y = 940 }
+		
+		pdx_tooltip = "Sugi_TOOLTIP" 
+	}
+	buttonType = {
+		name = "Twazzi"
+		spriteType = "GFX_Twazzi"
+		position = { x = 1083 y = 940 }
+		
+		pdx_tooltip = "Twazzi_TOOLTIP" 
+		}
+	}
+	containerWindowType = {
+		name = "market_bounty_frame_container"
+		position = {x=550 y=125}
+		size = { width=1374 height=978 }
+	
+		moveable = yes
+	
+		background = {
+			name = "Background"
+			spriteType = "GFX_bountyhunter_frame"
+		}
+	
+		buttonType = {
+			name = "close_button"
+			position = { x = -55 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "aceselected"
+			spriteType = "GFX_aceselected"
+			position = { x = 860 y = 815 }
+			pdx_tooltip = "aceselected_loc"
+		}
+		buttonType = {
+			name = "aceselect"
+			spriteType = "GFX_aceselect"
+			position = { x = 860 y = 815 }
+			pdx_tooltip = "aceselected_loc"
+		}
+		buttonType = {
+			name = "generalselected"
+			spriteType = "GFX_generalselected"
+			position = { x = 790 y = 815 }
+			pdx_tooltip = "generalselected_loc"
+		}
+		buttonType = {
+			name = "generalselect"
+			spriteType = "GFX_generalselect"
+			position = { x = 790 y = 815 }
+			pdx_tooltip = "generalselected_loc"
+		}
+	
+	}
+}

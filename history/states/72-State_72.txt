@@ -1,0 +1,41 @@
+state={
+	id=72
+	name="STATE_72"
+	provinces={
+		297 870 988 1788 1924 3588 4676 11338 11341 11344 11349 11352 11360 
+	}
+	manpower=1428571
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=UTU
+		add_core_of = UTU
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

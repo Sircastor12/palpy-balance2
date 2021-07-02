@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		cloning_facilities = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+			modifier = {
+				weekly_manpower = 1400
+			}
+		}
+	}
+}

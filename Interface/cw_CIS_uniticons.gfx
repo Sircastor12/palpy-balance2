@@ -1,0 +1,322 @@
+spriteTypes = {
+###Unit icons###
+  ##Infantry##
+  spriteType = { 
+     name = "GFX_unit_oom_droid_unit_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/b1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_oom_droid_unit_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/b1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_oom_droid_unit_icon_small"       
+     textureFile = "gfx/interface/counters/divisions_small/b1.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_b1_droid_unit_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/b1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_b1_droid_unit_icon_medium_white"						
+     textureFile = "gfx/interface/counters/divisions_small/b1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_b1_droid_unit_icon_small"				
+     textureFile = "gfx/interface/counters/divisions_small/b1.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_b2_droid_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/b2.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_b2_droid_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/b2.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_b2_droid_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/b2.dds"
+     noOfFrames = 2
+   }
+  spriteType = { 
+     name = "GFX_unit_bx_battle_droid_unit_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/bx_droid.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_bx_battle_droid_unit_icon_medium_white"
+     textureFile = "gfx/interface/counters/divisions_small/bx_droid.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_bx_battle_droid_unit_icon_small"       
+     textureFile = "gfx/interface/counters/divisions_small/bx_droid.dds"
+     noOfFrames = 2
+   }
+
+
+  spriteType = { 
+     name = "GFX_unit_j1_artillery_brigade_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/J1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_j1_artillery_brigade_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/J1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_j1_artillery_brigade_icon_small"       
+     textureFile = "gfx/interface/counters/divisions_small/J1.dds"
+     noOfFrames = 2
+   }
+
+
+
+  spriteType = {
+     name = "GFX_unit_crab_droid_unit_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/crab_droid_icon.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_crab_droid_unit_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/crab_droid_icon.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_crab_droid_unit_icon_small"       
+     textureFile = "gfx/interface/counters/divisions_small/crab_droid_icon.dds"
+     noOfFrames = 2
+   }
+  spriteType = {
+     name = "GFX_unit_adsd_unit_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/adsd_unit.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_adsd_unit_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/adsd_unit.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_adsd_unit_icon_small"   
+     textureFile = "gfx/interface/counters/divisions_small/adsd_unit.dds"
+     noOfFrames = 2
+   }
+  spriteType = {
+     name = "GFX_unit_combat_tri_droid_unit_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/combattri.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_combat_tri_droid_unit_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/combattri.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_combat_tri_droid_unit_icon_small"   
+     textureFile = "gfx/interface/counters/divisions_small/combattri.dds"
+     noOfFrames = 2
+   }
+  spriteType = {
+     name = "GFX_unit_magna_tri_droid_unit_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/magna.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_magna_tri_droid_unit_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/magna.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_magna_tri_droid_unit_icon_small"   
+     textureFile = "gfx/interface/counters/divisions_small/magna.dds"
+     noOfFrames = 2
+   }
+
+
+
+
+
+
+
+
+  spriteType = {
+     name = "GFX_unit_STAP_unit_icon_medium"      
+     textureFile = "gfx/interface/counters/divisions_large/stap.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_STAP_unit_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/stap.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_STAP_unit_icon_small"       
+     textureFile = "gfx/interface/counters/divisions_small/stap.dds"
+     noOfFrames = 2
+   }
+
+
+
+
+   spriteType = { 
+     name = "GFX_unit_MTT_Unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/MTT.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_MTT_Unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/MTT.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_MTT_Unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/MTT.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_PAC_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/PAC.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_PAC_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/PAC.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_PAC_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/PAC.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_dsd1_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/dsd1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_dsd1_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/dsd1.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_dsd1_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/dsd1.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_destroyer_droid_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/droideka.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_destroyer_droid_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/droideka.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_destroyer_droid_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/droideka.dds"
+     noOfFrames = 2
+   }
+  spriteType = { 
+     name = "GFX_unit_hailfire_artillery_icon_medium"        
+     textureFile = "gfx/interface/counters/divisions_large/hailfire.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_hailfire_artillery_icon_medium_white"            
+     textureFile = "gfx/interface/counters/divisions_small/hailfire.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_hailfire_artillery_icon_small"       
+     textureFile = "gfx/interface/counters/divisions_small/hailfire.dds"
+     noOfFrames = 2
+   }
+##Tanks##
+   spriteType = { 
+     name = "GFX_unit_AAT_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/AAT.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_AAT_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/AAT.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_AAT_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/AAT.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_AAT2_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/AAT.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_AAT2_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/AAT.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_AAT2_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/AAT.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_OG9_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/OG9.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_OG9_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/OG9.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_OG9_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/OG9.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_tankdroid_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/tank_droid.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_tankdroid_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/tank_droid.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_tankdroid_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/tank_droid.dds"
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_supertank_unit_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/super_tank.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_supertank_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/super_tank.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_supertank_unit_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/super_tank.dds"
+     noOfFrames = 2
+   }
+}

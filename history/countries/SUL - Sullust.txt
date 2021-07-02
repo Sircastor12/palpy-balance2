@@ -1,0 +1,114 @@
+capital = 363
+
+oob = "SUL_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	volunteer_only
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 0
+		fascism = 100
+	}
+}
+
+create_country_leader = {
+	name = "Soro Suub"
+	desc = "Leader of Sullust"
+	picture = "gfx/leaders/SUL/sorosuub.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Soro Suub"
+	desc = "Leader of Sullust"
+	picture = "gfx/leaders/SUL/sorosuub.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_corps_commander = {
+	name = "An Sovv"
+	portrait_path = "gfx/leaders/SUL/AnSovv.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Mub Sqaul"
+	portrait_path = "gfx/leaders/SUL/MubSqaul.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ryr Steh"
+	portrait_path = "gfx/leaders/SUL/RyrSteh.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Magud Tsibbs"
+	portrait_path = "gfx/leaders/SUL/MagudTsibbs.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

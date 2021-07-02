@@ -1,0 +1,274 @@
+add_namespace = CMG
+## 26 BBY/977 ATC
+# 
+news_event = {
+	id = CMG.1 #Korriban Control
+	title = "Commerce Guild gains controll of Korriban"
+	desc = ""
+	major = yes
+    
+    is_triggered_only = yes
+    fire_only_once = no
+
+	mean_time_to_happen = {
+		days = 1
+	}
+        option = {
+		   name = "This is outrageous!"     
+		    trigger = {
+		   OR = { 
+
+		   TAG = REP
+
+		   }
+		   }	                   
+		}
+		
+        option = {
+		   name = "Separatist Influences Expand"     
+		    trigger = {
+		   OR = { 
+
+		   TAG = CIS
+		   TAG = FED
+
+		   }
+		   }	                   
+		}
+		
+		option = {
+		   name = "Our Influences Expand"     
+		    trigger = {
+		   OR = { 
+
+		   TAG = CMG
+
+		   }
+		   }	                   
+		}
+}
+
+#Invites to join faction for actual CIS countries
+news_event = {
+	id = CMG.2
+	title = "Incoming Transmission from Count Dooku"
+	desc = "Count Dooku has asked that you secede from the Republic and join the Confederacy of Independent Systems."
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+    	name = "Secede. Join the Confederacy."
+
+		ai_chance = {
+		    base = 200
+		}
+
+    	leave_faction = yes
+    	CIS = {
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = CIS
+			}
+			add_to_faction = CMG 
+		}
+    	ROOT = {
+    		add_popularity = {
+			    ideology = fascism
+			    popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+    }
+	option = {
+    	name = "Remain Loyal to the Republic"
+    }
+	
+	option = {
+    	name = "Go our own way."
+		leave_faction = yes
+		set_rule = { can_create_factions = yes }
+    }
+}
+
+news_event = {
+	id = CMG.3 #Mission to Anison
+	title = "Commerce Guild's diplomatic mission to Anison"
+	desc = "Ansion has decided to remain a member of the Galactic Republic, and the planet's Alwari ruling councils have united under the Council of Alwari Elders. Also, the our plan of issuing war demands to the Republic have been delayed"
+
+    
+   	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+		option = {
+			name = "Accept Failure"
+
+			ai_chance = {
+				base = 200
+			}
+
+			ROOT = {
+				add_stability = .02
+				}
+			
+		}  
+		option = {
+    	name = "Abandon Mission"
+		
+		ROOT = {
+				add_stability = -.02
+				}
+			}
+		}
+
+#Jedi Petition
+news_event = {
+	id = CMG.4
+	title = "Anti-Jedi Petition"
+	desc = "Our anti-Jedi factional petition to sever all future Jedi affiliation with the Senate has failed, however we can make the best of this."
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+    	name = "This is why we cant trust the Republic.."
+
+		ai_chance = {
+		    base = 200
+		}
+
+    	ROOT = {
+    		add_popularity = {
+			    ideology = fascism
+			    popularity = 0.1
+			}
+			
+		}
+    }
+	option = {
+    	name = "Accept the Senate's decision"
+    }
+}
+#Invite to cis
+news_event = {
+	id = CMG.5
+	title = "Invite To Join Faction"
+	desc = "The Confederacy of Independent Systems has invited us to join its fight to end corruption in the galaxy."
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+    	name = "Join the Confederacy of Independent Systems."
+		ai_chance = {
+		    base = 2000
+		}
+		CIS = {
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = CIS
+			}
+			add_to_faction = CMG
+		}
+		CMG = {
+			remove_ideas = REP_member
+			remove_ideas = REP_member_prewar
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_popularities = {
+				democratic = 15
+				neutrality = 0
+				fascism = 85
+			}	
+		}
+		REP = {
+			news_event = CMG.7
+		}
+    }
+	option = {
+    	name = "Deny the offer."
+
+		ai_chance = {
+		    base = -2000
+		}
+		CIS = {
+			news_event = CMG.6
+		}
+    }
+}
+
+#Invite to cis declined
+news_event = {
+	id = CMG.6
+	title = "Invite To Join Faction Declined"
+	desc = "The Commerce Guild has denied our offer to end corruption in the galaxy. They must be part of the problem."
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "Very Unfortunate."
+    }
+}
+
+#REP informed that CMG has seceded
+news_event = {
+	id = CMG.7
+	title = "The Commerce Guild Secedes!"
+	desc = "After selling off a planet to the appalling secessionist movement known as the Confederacy of Independent Systems, the Commerce Guild has chosen to leave the Galactic Republic."
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "Very Unfortunate."
+		trigger = {
+			tag = REP
+		}
+    }
+}
+
+#Invite to cis accepted
+news_event = {
+	id = CMG.8
+	title = "Invite To Join Faction Accepted!"
+	desc = "The Commerce Guild has accepted our offer to end corruption in the galaxy. They are a noble organization that clearly sees the Galactic Republic for what it truly is."
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "Very Unfortunate."
+    }
+}

@@ -1,0 +1,117 @@
+﻿##################
+# SUPER EVENTS #
+##################
+
+add_namespace = super
+
+news_event = {        #Clone Wars
+    id = super.1
+    title = "The Battle of Geonosis"
+    desc = "Begun, the Clone Wars have."
+    hidden = yes
+    major = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        play_song = "Clone Wars Begin"
+        set_country_flag = Super_Event_Visible
+        set_country_flag = REP_clone_wars_begun
+        set_global_flag = the_clone_wars
+    }    
+}
+
+news_event = {		#Naboo Invasion
+	id = super.2
+	title = "Invasion of Naboo"
+	desc = "The situation here is not what it seems."
+	hidden = yes
+	major = yes
+
+	is_triggered_only = yes
+
+		immediate = {
+		every_country = {
+			play_song = "Naboo Invasion"
+			set_country_flag = Super_Event_Visible
+			set_country_flag = FED_naboo_invasion
+			set_global_flag = naboo_invasion
+    	}	
+	}
+}
+
+news_event = {		#Raxus Address
+	id = super.3
+	title = "Raxus Address"
+	desc = "The time has come"
+	hidden = yes
+	major = yes
+
+	is_triggered_only = yes
+
+		immediate = {
+		every_country = {
+			play_song = "Separatist Droid Army March"
+			set_country_flag = Super_Event_Visible
+			set_country_flag = Super_Event_raxus_address
+			set_global_flag = raxus_address
+    	}	
+	}
+}	
+
+news_event = {		#Order 66
+	id = super.4
+	title = "Order 66"
+	desc = "Execute Order 69"
+	hidden = yes
+	major = yes
+
+	is_triggered_only = yes
+
+		immediate = {
+		every_country = {
+			play_song = "Order 66"
+			set_country_flag = Super_Event_Visible
+			set_country_flag = REP_order_66
+			set_global_flag = order_66
+    	}	
+	}
+}
+
+news_event = {		#Galactic Empire
+	id = super.5
+	title = "Formation of the Empire"
+	desc = "Do it."
+	hidden = yes
+	major = yes
+
+	is_triggered_only = yes
+
+		immediate = {
+		every_country = {
+			play_song = "Empire Formation"
+			set_country_flag = Super_Event_Visible
+			set_country_flag = REP_empire
+			set_global_flag = empire
+    	}	
+	}
+}
+
+news_event = {		#CIS Victory
+	id = super.6
+	title = "CIS Victory"
+	desc = "How the fuck"
+	hidden = yes
+	major = yes
+
+	is_triggered_only = yes
+
+		immediate = {
+		every_country = {
+			play_song = "CIS Victory"
+			set_country_flag = Super_Event_Visible
+			set_country_flag = CIS_victory
+			set_global_flag = CISvictory
+    	}	
+	}
+}

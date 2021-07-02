@@ -1,0 +1,557 @@
+ideas = {
+	country = {
+		Food_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.50
+				stability_weekly = -0.15
+        	}
+		}
+	
+		Food_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.95
+				stability_weekly = -0.25
+        	
+		}
+	}
+
+		Food_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -5.00
+				stability_weekly = -0.45
+        	}
+		}
+	#####
+
+		Medical_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.10
+				war_support_weekly = -0.05
+				attrition = 0.03
+        	}
+		}
+	
+		Medical_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.18
+				war_support_weekly = -0.08
+				attrition = 0.5
+			}
+		}
+
+		Medical_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.35
+				war_support_weekly = -0.15
+				attrition = 0.10
+        	}
+		}
+		#####
+		Fuel_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.08
+				war_support_weekly = -0.03
+        	}
+		}
+	
+		Fuel_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.14
+				war_support_weekly = -0.08
+			}
+		}
+
+		Fuel_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.20
+				war_support_weekly = -0.12
+        	}
+		}
+	################################
+		Electronics_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.04
+				production_factory_max_efficiency_factor = -0.05 
+        	}
+		}
+	
+		Electronics_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.7
+				production_factory_max_efficiency_factor = -0.12 
+			}
+		}
+
+		Electronics_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.12
+				production_factory_max_efficiency_factor = -0.25
+        	}
+		}
+		##########################################
+		Rawgoods_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	production_factory_start_efficiency_factor = -0.08 
+				production_lack_of_resource_penalty_factor = 0.10 
+				production_speed_buildings_factor = -0.15 
+        	}
+		}
+	
+		Rawgoods_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	production_factory_start_efficiency_factor = -0.16 
+				production_lack_of_resource_penalty_factor = 0.25
+				production_speed_buildings_factor = -0.35
+			}
+		}
+
+		Rawgoods_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	production_factory_start_efficiency_factor = -0.25
+				production_lack_of_resource_penalty_factor = 0.40
+				production_speed_buildings_factor = -0.75
+        	}
+		}
+		#######################
+		Droids_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	industrial_capacity_factory = -0.08 
+				industrial_capacity_dockyard = -0.08 
+        	}
+		}
+	
+		Droids_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	industrial_capacity_factory = -0.16 
+				industrial_capacity_dockyard = -0.16
+			}
+		}
+
+		Droids_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+        	}
+		}
+		#############################
+		Luxuries_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.03 
+				justify_war_goal_time = 0.5
+        	}
+		}
+	
+		Luxuries_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.05 
+				justify_war_goal_time = 0.08
+			}
+		}
+
+		Luxuries_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.1 
+				justify_war_goal_time = 0.15
+        	}
+		}
+	##################################
+		Vehicles_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.06
+				stability_weekly = -0.015 
+				army_speed_factor = -0.05
+        	}
+		}
+	
+		Vehicles_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.1 
+				stability_weekly = -0.04
+				army_speed_factor = -0.12 
+			}
+		}
+
+		Vehicles_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.18
+				stability_weekly = -0.08
+				army_speed_factor = -0.18
+        	}
+		}
+		#####################################
+		HighTech_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	research_speed_factor = -0.10
+        	}
+		}
+	
+		HighTech_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	research_speed_factor = -0.25  
+			}
+		}
+
+		HighTech_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	research_speed_factor = -0.5
+        	}
+		}
+		####################################
+		Services_limited = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.1
+        	}
+		}
+	
+		Services_scarce = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	research_speed_factor = 0.25  
+			}
+		}
+
+		Services_critical = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.5
+        	}
+		}
+	###############################
+		Weapons_low = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.025
+				stability_weekly = -0.015
+				war_support_weekly = -0.06 
+        	}
+		}
+	
+		Weapons_med = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	political_power_cost = 0.05
+				stability_weekly = -0.04
+				war_support_weekly = -0.10   
+			}
+		}
+
+		Weapons_high = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+             	political_power_cost = 0.05
+				stability_weekly = -0.08
+				war_support_weekly = -0.14  
+        	}
+		}
+		##############################
+		DeathSticks_low = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.05
+				recruitable_population_factor = -0.02
+				war_support_weekly = -0.08 
+        	}
+		}
+	
+		DeathSticks_med = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	monthly_population = -0.15
+				recruitable_population_factor = -0.05
+				war_support_weekly = -0.12   
+			}
+		}
+
+		DeathSticks_high = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+             	monthly_population = -0.35
+				recruitable_population_factor = -0.10
+				war_support_weekly = -0.16 
+        	}
+		}
+		######################
+		SpiceProducts_low = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.05
+				state_resources_factor = -0.15
+        	}
+		}
+	
+		SpiceProducts_med = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.12
+				state_resources_factor = -0.35 
+			}
+		}
+
+		SpiceProducts_high = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+             	consumer_goods_factor = 0.20
+				state_resources_factor = -0.60
+        	}
+		}
+		###################################
+		Slaves_low = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.10
+				stability_weekly = -0.05
+				war_support_weekly = -0.10 
+        	}
+		}
+	
+		Slaves_med = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.25
+				stability_weekly = -0.10
+				war_support_weekly = -0.20   
+			}
+		}
+
+		Slaves_high = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+             	consumer_goods_factor = 0.45
+				stability_weekly = -0.16
+				war_support_weekly = -0.35
+        	}
+		}
+		##########################################
+		Smuggling_low = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.08
+        	}
+		}
+	
+		Smuggling_med = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+            	consumer_goods_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.16   
+			}
+		}
+
+		Smuggling_high = {
+			
+			allowed = {
+				always = no
+            }
+
+			modifier = {
+             	consumer_goods_factor = 0.45
+				production_factory_efficiency_gain_factor = 0.30
+        	}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+state={
+	id=36
+	name="STATE_36"
+	provinces={
+		324 742 1597 2139 4619 7883 7888 7889 7895 7915 7922 7934 7944 7955 7971 
+	}
+	manpower=2857142
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=0
+		aluminium=7
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=KYK
+		add_core_of = KYK
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

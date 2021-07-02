@@ -1,0 +1,16 @@
+spriteTypes = {
+    progressbartype = {
+        name = "GFX_loading"
+        textureFile1 = "gfx/interface/progress1.dds"
+        textureFile2 = "gfx/interface/progress2.dds"
+        color = { <r> <g> <b> }
+        color2 = { <r> <g> <b> }
+        size = { 
+            x = <int>
+            y = <int>
+        }
+        effectFile = <path>
+        
+        horizontal = <bool>
+    }
+}

@@ -1,0 +1,31 @@
+zygerria_slave_trade = {
+	
+	zygerria_enslave_country = {
+		icon = zygerria_slaves
+
+		target_trigger = {
+			FROM = {
+				has_country_flag = zygerrian_slave_trade
+				NOT = { tag = ZYG }
+			}
+		}
+
+		visible = {
+			TAG = ZYG
+		}
+
+		cost = 100
+        fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			FROM = {
+				add_manpower = -1000
+			}
+			add_to_variable = { slaves = 1000 }
+		}
+	}
+}

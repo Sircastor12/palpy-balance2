@@ -1,0 +1,32 @@
+############################
+## Mandalore Black Market Crisis Event Chain
+############################
+
+
+add_namespace = umb
+
+
+
+
+news_event = { #Crisis on Mandalore
+	id = umb.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  umb.1"}
+	title =  "Mee Deechi"
+	desc =  "Mee Deechi was attacked in the senate building. It is believed that he is dead but not known at the moment"
+	picture = GFX_event_umbevent
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Mee Deechi
+		name =  "Mee Deechi is Dead"
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+		}
+	}
+	option = { # Mee Deechi
+		name =  "Mee Deechi Survives"
+
+		}
+	}

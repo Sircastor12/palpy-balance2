@@ -1,0 +1,97 @@
+add_namespace = ordersixsix
+
+news_event = {
+	id = ordersixsix.1
+	title = "Jedi Order Coup Thwarted!"
+	desc = "A coup lead by master Mace Windu of the Jedi Order has been thwarted by the Chancellor's forces today."
+	picture = GFX_event_jedicoup
+	major = yes
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+	
+     option = {
+		   name = "Our secret discovered"
+		   trigger = { 
+		   has_country_flag = separatistpig
+	    }	                   
+     }
+
+     option = {
+		   name = "Oh no, another one."
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+
+     option = {
+		   name = "Sad. But good for them!"
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+ }
+
+ news_event = {
+	id = ordersixsix.2
+	title = "Jedi Order Dissolved"
+	desc = "The Jedi Order has been dissovled on the orders of Chancellor Palpatine."
+	picture = GFX_event_jedidissolved
+	major = yes
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+	
+     option = {
+		   name = "Our secret discovered"
+		   trigger = { 
+		   has_country_flag = separatistpig
+	    }	                   
+     }
+
+     option = {
+		   name = "Oh no, another one."
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+
+     option = {
+		   name = "Sad. But good for them!"
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+ }
+
+  news_event = {
+	id = ordersixsix.3
+	title = "The New Galactic Empire!"
+	desc = "The Jedi Order has been dissovled on the orders of Chancellor Palpatine."
+	picture = GFX_event_newgalacticempire
+	major = yes
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+	
+     option = {
+		   name = "Our secret discovered"
+		   trigger = { 
+		   has_country_flag = separatistpig
+	    }	                   
+     }
+
+     option = {
+		   name = "Oh no, another one."
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+
+     option = {
+		   name = "Sad. But good for them!"
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+ }

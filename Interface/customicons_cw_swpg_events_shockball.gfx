@@ -1,0 +1,11 @@
+spriteTypes = { 
+##Icon For: 3677 Shockball Championships
+ SpriteType = { 
+ name = "GFX_shockball" 
+ texturefile = "gfx/event_pictures/shockball.dds" 
+ } 
+  SpriteType = { 
+ name = "GFX_shockball2" 
+ texturefile = "gfx/event_pictures/shockball2.dds" 
+ } 
+ }

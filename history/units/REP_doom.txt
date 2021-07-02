@@ -1,0 +1,139 @@
+﻿division_template = {
+	name = "Doom Company Division"
+	is_locked = yes
+
+	regiments = {
+		REP_doom_clone = { x = 0 y = 0 }
+		REP_doom_clone = { x = 0 y = 1 }
+		REP_doom_clone = { x = 0 y = 2 }
+		REP_doom_clone = { x = 0 y = 3 }
+   		REP_doom_clone = { x = 1 y = 0 }
+		REP_doom_clone = { x = 1 y = 1 }
+		REP_doom_clone = { x = 1 y = 2 }
+  		REP_doom_clone = { x = 2 y = 0 }
+		REP_doom_clone = { x = 2 y = 1 }
+		REP_doom_clone = { x = 2 y = 2 }
+	}
+	support = {
+		clone_shield = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Doom Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Vampire Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Dragon Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Werewolf Platoon"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.4  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Griffin Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Basilisk Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Chimera Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Kappa Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Manticore Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Chimera Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Troll Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Hippogriff Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Hippocampus Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Kelpie Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Erlking Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Redcap Company"
+		location = 10463 #Kamino
+		division_template = "Doom Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

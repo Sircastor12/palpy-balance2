@@ -1,0 +1,46 @@
+﻿
+division_template = {
+	name = "Mandalorian Commandos"
+
+	regiments = {
+		Mandalorian_commandos = { x = 0 y = 0 }
+		Mandalorian_commandos = { x = 0 y = 1 }
+		Mandalorian_commandos = { x = 0 y = 2 }
+   		Mandalorian_commandos = { x = 1 y = 0 }
+		Mandalorian_commandos = { x = 1 y = 1 }
+		Mandalorian_commandos = { x = 1 y = 2 }
+  		Mandalorian_commandos = { x = 2 y = 0 }
+		Mandalorian_commandos = { x = 2 y = 1 }
+		Mandalorian_commandos = { x = 2 y = 2 }
+	}
+	support = {
+		man_jet_support = { x = 0 y = 0 }
+	} 
+}
+
+units = {
+	division = {
+		name = "Death Watch Commandos"
+		location = 3951
+		division_template = "Mandalorian Commandos"
+		start_experience_factor = 2.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { mandalore_gun_equipment_0 = { owner = "DEA" } }
+	}
+	division = {
+		name = "Death Watch Commandos"
+		location = 3951
+		division_template = "Mandalorian Commandos"
+		start_experience_factor = 2.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { mandalore_gun_equipment_0 = { owner = "DEA" } }
+	}
+	division = {
+		name = "Death Watch Commandos"
+		location = 3951
+		division_template = "Mandalorian Commandos"
+		start_experience_factor = 2.0
+		start_equipment_factor = 1.0
+		force_equipment_variants = { mandalore_gun_equipment_0 = { owner = "DEA" } }
+	}
+}

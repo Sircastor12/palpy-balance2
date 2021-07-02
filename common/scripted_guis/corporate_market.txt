@@ -1,0 +1,570 @@
+scripted_gui = {
+
+	galactic_corporate_market_full = {
+		context_type = player_context
+		
+		window_name = "corporate_market_full_container"
+		
+		visible = {
+			check_variable = { show_corporate_market > 0.0 }
+		}
+		
+		effects = {
+
+			close_button_click = {
+				set_temp_variable = { show_corporate = 1 }
+				subtract_from_temp_variable = { show_corporate = show_corporate_market }
+				set_variable = { show_corporate_market = show_corporate } 
+			}
+		}
+	}
+	galactic_corporate_market_logistics_tec = {
+		context_type = player_context
+		
+		window_name = "corporate_market_logistics_screen_TEC"
+		
+		visible = {
+            TAG = TEC
+			OR = {
+				check_variable = { show_logistics_market > 0.0 }
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show_logistics = 1 }
+				subtract_from_temp_variable = { show_logistics = show_logistics_market }
+				set_variable = { show_logistics_market = show_logistics }
+			}
+			return_button_click = {
+				set_temp_variable = { show_logistics = 1 }
+				subtract_from_temp_variable = { show_logistics = show_logistics_market }
+				set_variable = { show_logistics_market = show_logistics }
+				set_temp_variable = { show_corporate = 1 }
+				subtract_from_temp_variable = { show_corporate = show_corporate_market }
+				set_variable = { show_corporate_market = show_corporate } 
+			}
+		}
+	}
+	galactic_corporate_market_production_tec = {
+		context_type = player_context
+		
+		window_name = "production_tec_container"
+		
+		visible = {
+            TAG = TEC
+			OR = {
+				check_variable = { show_production_market > 0.0 }
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show_production = 1 }
+				subtract_from_temp_variable = { show_production = show_production_market }
+				set_variable = { show_production_market = show_production }
+			}
+			return_button_click = {
+				set_temp_variable = { show_production = 1 }
+				subtract_from_temp_variable = { show_production = show_production_market }
+				set_variable = { show_production_market = show_production }
+				set_temp_variable = { show_corporate = 1 }
+				subtract_from_temp_variable = { show_corporate = show_corporate_market }
+				set_variable = { show_corporate_market = show_corporate } 
+			}
+			autamata_click = {
+				set_temp_variable = { show_autamata = 1 }
+				subtract_from_temp_variable = { show_autamata = show_autamata_market }
+				set_variable = { show_autamata_market = show_autamata }
+				set_temp_variable = { show_production = 1 }
+				subtract_from_temp_variable = { show_production = show_production_market }
+				set_variable = { show_production_market = show_production }
+			}
+			armor_click = {
+				set_temp_variable = { show_armor = 1 }
+				subtract_from_temp_variable = { show_armor = show_armor_market }
+				set_variable = { show_armor_market = show_armor }
+				set_temp_variable = { show_production = 1 }
+				subtract_from_temp_variable = { show_production = show_production_market }
+				set_variable = { show_production_market = show_production }
+			}
+		}
+	}
+####TEC baktoid autamata###
+	galactic_corporate_market_production_tec_autamata = {
+		context_type = player_context
+		
+		window_name = "production_tec_baktoid_autamata_container"
+		
+		visible = {
+            TAG = TEC
+			OR = {
+				check_variable = { show_autamata_market > 0.0 }
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show_autamata = 1 }
+				subtract_from_temp_variable = { show_autamata = show_autamata_market }
+				set_variable = { show_autamata_market = show_autamata }
+			}
+			return_button_click = {
+				set_temp_variable = { show_production = 1 }
+				subtract_from_temp_variable = { show_production = show_production_market }
+				set_variable = { show_production_market = show_production }
+				set_temp_variable = { show_autamata = 1 }
+				subtract_from_temp_variable = { show_autamata = show_autamata_market }
+				set_variable = { show_autamata_market = show_autamata }
+			}
+			###Hypori1
+			hypori1_b1_click = {
+				set_country_flag = hypori1_b1
+				clr_country_flag = hypori1_b2
+				clr_country_flag = hypori1_bx
+				clr_country_flag = hypori1_tseries
+				clr_country_flag = hypori1_off
+			}
+			hypori1_b2_click = {
+				set_country_flag = hypori1_b2
+				clr_country_flag = hypori1_b1
+				clr_country_flag = hypori1_bx
+				clr_country_flag = hypori1_tseries
+				clr_country_flag = hypori1_off
+			}
+			hypori1_bx_click = {
+				set_country_flag = hypori1_bx
+				clr_country_flag = hypori1_b1
+				clr_country_flag = hypori1_b2
+				clr_country_flag = hypori1_tseries
+				clr_country_flag = hypori1_off
+			}
+			hypori1_tseries_click = {
+				set_country_flag = hypori1_tseries
+				clr_country_flag = hypori1_b1
+				clr_country_flag = hypori1_b2
+				clr_country_flag = hypori1_bx
+				clr_country_flag = hypori1_off
+			}
+			hypori1_off_click = {
+				set_country_flag = hypori1_off
+				clr_country_flag = hypori1_tseries
+				clr_country_flag = hypori1_b1
+				clr_country_flag = hypori1_b2
+				clr_country_flag = hypori1_bx
+			}
+			###Hypori2
+			hypori2_b1_click = {
+				set_country_flag = hypori2_b1
+				clr_country_flag = hypori2_b2
+				clr_country_flag = hypori2_bx
+				clr_country_flag = hypori2_tseries
+				clr_country_flag = hypori2_off
+			}
+			hypori2_b2_click = {
+				set_country_flag = hypori2_b2
+				clr_country_flag = hypori2_b1
+				clr_country_flag = hypori2_bx
+				clr_country_flag = hypori2_tseries
+				clr_country_flag = hypori2_off
+			}
+			hypori2_bx_click = {
+				set_country_flag = hypori2_bx
+				clr_country_flag = hypori2_b1
+				clr_country_flag = hypori2_b2
+				clr_country_flag = hypori2_tseries
+				clr_country_flag = hypori2_off
+			}
+			hypori2_tseries_click = {
+				set_country_flag = hypori2_tseries
+				clr_country_flag = hypori2_b1
+				clr_country_flag = hypori2_b2
+				clr_country_flag = hypori2_bx
+				clr_country_flag = hypori2_off
+			}
+			hypori2_off_click = {
+				set_country_flag = hypori2_off
+				clr_country_flag = hypori2_tseries
+				clr_country_flag = hypori2_b1
+				clr_country_flag = hypori2_b2
+				clr_country_flag = hypori2_bx
+			}
+			###Hypori3
+			hypori3_b1_click = {
+				set_country_flag = hypori3_b1
+				clr_country_flag = hypori3_b2
+				clr_country_flag = hypori3_bx
+				clr_country_flag = hypori3_tseries
+				clr_country_flag = hypori3_off
+			}
+			hypori3_b2_click = {
+				set_country_flag = hypori3_b2
+				clr_country_flag = hypori3_b1
+				clr_country_flag = hypori3_bx
+				clr_country_flag = hypori3_tseries
+				clr_country_flag = hypori3_off
+			}
+			hypori3_bx_click = {
+				set_country_flag = hypori3_bx
+				clr_country_flag = hypori3_b1
+				clr_country_flag = hypori3_b2
+				clr_country_flag = hypori3_tseries
+				clr_country_flag = hypori3_off
+			}
+			hypori3_tseries_click = {
+				set_country_flag = hypori3_tseries
+				clr_country_flag = hypori3_b1
+				clr_country_flag = hypori3_b2
+				clr_country_flag = hypori3_bx
+				clr_country_flag = hypori3_off
+			}
+			hypori3_off_click = {
+				set_country_flag = hypori3_off
+				clr_country_flag = hypori3_tseries
+				clr_country_flag = hypori3_b1
+				clr_country_flag = hypori3_b2
+				clr_country_flag = hypori3_bx
+			}
+			###Hypori4
+			hypori4_b1_click = {
+				set_country_flag = hypori4_b1
+				clr_country_flag = hypori4_b2
+				clr_country_flag = hypori4_bx
+				clr_country_flag = hypori4_tseries
+				clr_country_flag = hypori4_off
+			}
+			hypori4_b2_click = {
+				set_country_flag = hypori4_b2
+				clr_country_flag = hypori4_b1
+				clr_country_flag = hypori4_bx
+				clr_country_flag = hypori4_tseries
+				clr_country_flag = hypori4_off
+			}
+			hypori4_bx_click = {
+				set_country_flag = hypori4_bx
+				clr_country_flag = hypori4_b1
+				clr_country_flag = hypori4_b2
+				clr_country_flag = hypori4_tseries
+				clr_country_flag = hypori4_off
+			}
+			hypori4_tseries_click = {
+				set_country_flag = hypori4_tseries
+				clr_country_flag = hypori4_b1
+				clr_country_flag = hypori4_b2
+				clr_country_flag = hypori4_bx
+				clr_country_flag = hypori4_off
+			}
+			hypori4_off_click = {
+				set_country_flag = hypori4_off
+				clr_country_flag = hypori4_tseries
+				clr_country_flag = hypori4_b1
+				clr_country_flag = hypori4_b2
+				clr_country_flag = hypori4_bx
+			}
+			###Geonosis1
+			Geonosis1_b1_click = {
+				set_country_flag = Geonosis1_b1
+				clr_country_flag = Geonosis1_b2
+				clr_country_flag = Geonosis1_bx
+				clr_country_flag = Geonosis1_tseries
+				clr_country_flag = Geonosis1_off
+			}
+			Geonosis1_b2_click = {
+				set_country_flag = Geonosis1_b2
+				clr_country_flag = Geonosis1_b1
+				clr_country_flag = Geonosis1_bx
+				clr_country_flag = Geonosis1_tseries
+				clr_country_flag = Geonosis1_off
+			}
+			Geonosis1_bx_click = {
+				set_country_flag = Geonosis1_bx
+				clr_country_flag = Geonosis1_b1
+				clr_country_flag = Geonosis1_b2
+				clr_country_flag = Geonosis1_tseries
+				clr_country_flag = Geonosis1_off
+			}
+			Geonosis1_tseries_click = {
+				set_country_flag = Geonosis1_tseries
+				clr_country_flag = Geonosis1_b1
+				clr_country_flag = Geonosis1_b2
+				clr_country_flag = Geonosis1_bx
+				clr_country_flag = Geonosis1_off
+			}
+			Geonosis1_off_click = {
+				set_country_flag = Geonosis1_off
+				clr_country_flag = Geonosis1_tseries
+				clr_country_flag = Geonosis1_b1
+				clr_country_flag = Geonosis1_b2
+				clr_country_flag = Geonosis1_bx
+			}
+			###Geonosis2
+			Geonosis2_b1_click = {
+				set_country_flag = Geonosis2_b1
+				clr_country_flag = Geonosis2_b2
+				clr_country_flag = Geonosis2_bx
+				clr_country_flag = Geonosis2_tseries
+				clr_country_flag = Geonosis2_off
+			}
+			Geonosis2_b2_click = {
+				set_country_flag = Geonosis2_b2
+				clr_country_flag = Geonosis2_b1
+				clr_country_flag = Geonosis2_bx
+				clr_country_flag = Geonosis2_tseries
+				clr_country_flag = Geonosis2_off
+			}
+			Geonosis2_bx_click = {
+				set_country_flag = Geonosis2_bx
+				clr_country_flag = Geonosis2_b1
+				clr_country_flag = Geonosis2_b2
+				clr_country_flag = Geonosis2_tseries
+				clr_country_flag = Geonosis2_off
+			}
+			Geonosis2_tseries_click = {
+				set_country_flag = Geonosis2_tseries
+				clr_country_flag = Geonosis2_b1
+				clr_country_flag = Geonosis2_b2
+				clr_country_flag = Geonosis2_bx
+				clr_country_flag = Geonosis2_off
+			}
+			Geonosis2_off_click = {
+				set_country_flag = Geonosis2_off
+				clr_country_flag = Geonosis2_tseries
+				clr_country_flag = Geonosis2_b1
+				clr_country_flag = Geonosis2_b2
+				clr_country_flag = Geonosis2_bx
+			}
+			###Geonosis3
+			Geonosis3_b1_click = {
+				set_country_flag = Geonosis3_b1
+				clr_country_flag = Geonosis3_b2
+				clr_country_flag = Geonosis3_bx
+				clr_country_flag = Geonosis3_tseries
+				clr_country_flag = Geonosis3_off
+			}
+			Geonosis3_b2_click = {
+				set_country_flag = Geonosis3_b2
+				clr_country_flag = Geonosis3_b1
+				clr_country_flag = Geonosis3_bx
+				clr_country_flag = Geonosis3_tseries
+				clr_country_flag = Geonosis3_off
+			}
+			Geonosis3_bx_click = {
+				set_country_flag = Geonosis3_bx
+				clr_country_flag = Geonosis3_b1
+				clr_country_flag = Geonosis3_b2
+				clr_country_flag = Geonosis3_tseries
+				clr_country_flag = Geonosis3_off
+			}
+			Geonosis3_tseries_click = {
+				set_country_flag = Geonosis3_tseries
+				clr_country_flag = Geonosis3_b1
+				clr_country_flag = Geonosis3_b2
+				clr_country_flag = Geonosis3_bx
+				clr_country_flag = Geonosis3_off
+			}
+			Geonosis3_off_click = {
+				set_country_flag = Geonosis3_off
+				clr_country_flag = Geonosis3_tseries
+				clr_country_flag = Geonosis3_b1
+				clr_country_flag = Geonosis3_b2
+				clr_country_flag = Geonosis3_bx
+			}
+			###Geonosis4
+			Geonosis4_b1_click = {
+				set_country_flag = Geonosis4_b1
+				clr_country_flag = Geonosis4_b2
+				clr_country_flag = Geonosis4_bx
+				clr_country_flag = Geonosis4_tseries
+				clr_country_flag = Geonosis4_off
+			}
+			Geonosis4_b2_click = {
+				set_country_flag = Geonosis4_b2
+				clr_country_flag = Geonosis4_b1
+				clr_country_flag = Geonosis4_bx
+				clr_country_flag = Geonosis4_tseries
+				clr_country_flag = Geonosis4_off
+			}
+			Geonosis4_bx_click = {
+				set_country_flag = Geonosis4_bx
+				clr_country_flag = Geonosis4_b1
+				clr_country_flag = Geonosis4_b2
+				clr_country_flag = Geonosis4_tseries
+				clr_country_flag = Geonosis4_off
+			}
+			Geonosis4_tseries_click = {
+				set_country_flag = Geonosis4_tseries
+				clr_country_flag = Geonosis4_b1
+				clr_country_flag = Geonosis4_b2
+				clr_country_flag = Geonosis4_bx
+				clr_country_flag = Geonosis4_off
+			}
+			Geonosis4_off_click = {
+				set_country_flag = Geonosis4_off
+				clr_country_flag = Geonosis4_tseries
+				clr_country_flag = Geonosis4_b1
+				clr_country_flag = Geonosis4_b2
+				clr_country_flag = Geonosis4_bx
+			}
+		}
+		triggers = {
+			###Hypori1
+			hypori1_b1_checked_visible = {
+				has_country_flag = hypori1_b1
+			}
+			hypori1_b2_checked_visible = {
+				has_country_flag = hypori1_b2
+			}
+			hypori1_bx_checked_visible = {
+				has_country_flag = hypori1_bx
+			}
+			hypori1_tseries_checked_visible = {
+				has_country_flag = hypori1_tseries
+			}
+			hypori1_off_checked_visible = {
+				has_country_flag = hypori1_off
+			}
+			###Hypori2
+			hypori2_b1_checked_visible = {
+				has_country_flag = hypori2_b1
+			}
+			hypori2_b2_checked_visible = {
+				has_country_flag = hypori2_b2
+			}
+			hypori2_bx_checked_visible = {
+				has_country_flag = hypori2_bx
+			}
+			hypori2_tseries_checked_visible = {
+				has_country_flag = hypori2_tseries
+			}
+			hypori2_off_checked_visible = {
+				has_country_flag = hypori2_off
+			}
+			###Hypori3
+			hypori3_b1_checked_visible = {
+				has_country_flag = hypori3_b1
+			}
+			hypori3_b2_checked_visible = {
+				has_country_flag = hypori3_b2
+			}
+			hypori3_bx_checked_visible = {
+				has_country_flag = hypori3_bx
+			}
+			hypori3_tseries_checked_visible = {
+				has_country_flag = hypori3_tseries
+			}
+			hypori3_off_checked_visible = {
+				has_country_flag = hypori3_off
+			}
+			###Hypori4
+			hypori4_b1_checked_visible = {
+				has_country_flag = hypori4_b1
+			}
+			hypori4_b2_checked_visible = {
+				has_country_flag = hypori4_b2
+			}
+			hypori4_bx_checked_visible = {
+				has_country_flag = hypori4_bx
+			}
+			hypori4_tseries_checked_visible = {
+				has_country_flag = hypori4_tseries
+			}
+			hypori4_off_checked_visible = {
+				has_country_flag = hypori4_off
+			}
+			###geo1
+			Geonosis1_b1_checked_visible = {
+				has_country_flag = Geonosis1_b1
+			}
+			Geonosis1_b2_checked_visible = {
+				has_country_flag = Geonosis1_b2
+			}
+			Geonosis1_bx_checked_visible = {
+				has_country_flag = Geonosis1_bx
+			}
+			Geonosis1_tseries_checked_visible = {
+				has_country_flag = Geonosis1_tseries
+			}
+			Geonosis1_off_checked_visible = {
+				has_country_flag = Geonosis1_off
+			}
+			###geo2
+			Geonosis2_b1_checked_visible = {
+				has_country_flag = Geonosis2_b1
+			}
+			Geonosis2_b2_checked_visible = {
+				has_country_flag = Geonosis2_b2
+			}
+			Geonosis2_bx_checked_visible = {
+				has_country_flag = Geonosis2_bx
+			}
+			Geonosis2_tseries_checked_visible = {
+				has_country_flag = Geonosis2_tseries
+			}
+			Geonosis2_off_checked_visible = {
+				has_country_flag = Geonosis2_off
+			}
+			###geo3
+			Geonosis3_b1_checked_visible = {
+				has_country_flag = Geonosis3_b1
+			}
+			Geonosis3_b2_checked_visible = {
+				has_country_flag = Geonosis3_b2
+			}
+			Geonosis3_bx_checked_visible = {
+				has_country_flag = Geonosis3_bx
+			}
+			Geonosis3_tseries_checked_visible = {
+				has_country_flag = Geonosis3_tseries
+			}
+			Geonosis3_off_checked_visible = {
+				has_country_flag = Geonosis3_off
+			}
+			###geo4
+			Geonosis4_b1_checked_visible = {
+				has_country_flag = Geonosis4_b1
+			}
+			Geonosis4_b2_checked_visible = {
+				has_country_flag = Geonosis4_b2
+			}
+			Geonosis4_bx_checked_visible = {
+				has_country_flag = Geonosis4_bx
+			}
+			Geonosis4_tseries_checked_visible = {
+				has_country_flag = Geonosis4_tseries
+			}
+			Geonosis4_off_checked_visible = {
+				has_country_flag = Geonosis4_off
+			}
+		}
+	}
+####TEC baktoid armor###
+	galactic_corporate_market_production_tec_armor = {
+		context_type = player_context
+		
+		window_name = "production_tec_baktoid_armor_container"
+		
+		visible = {
+            TAG = TEC
+			OR = {
+				check_variable = { show_armor_market > 0.0 }
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show_armor = 1 }
+				subtract_from_temp_variable = { show_armor = show_armor_market }
+				set_variable = { show_armor_market = show_armor }
+			}
+			return_button_click = {
+				set_temp_variable = { show_production = 1 }
+				subtract_from_temp_variable = { show_production = show_production_market }
+				set_variable = { show_production_market = show_production }
+				set_temp_variable = { show_armor = 1 }
+				subtract_from_temp_variable = { show_armor = show_armor_market }
+				set_variable = { show_armor_market = show_armor }
+			}
+		}
+	}
+}
+

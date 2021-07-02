@@ -1,0 +1,42 @@
+state={
+	id=403
+	name="STATE_403"
+	provinces={
+		622 1022 1039 1147 1500 1719 3091 3631 4006 4195 4238 4549 5036 10087 10090 10097 10117 10119 10125 10135 10139 10142 10147 10154 10155 10156 10157 10161 10172 10176 10183 10184 10186 10199 10203 10208 10213 10225 
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=2
+		rubber=0
+		tungsten=1
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BOT
+		add_core_of = BOT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+		victory_points = {
+			1022 50
+		}
+		victory_points = {
+			10183 30
+		}
+	}
+}
+

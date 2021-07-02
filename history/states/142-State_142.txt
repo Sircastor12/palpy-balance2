@@ -1,0 +1,41 @@
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		395 1994 2221 2261 2306 3794 3893 4115 6069 6076 6082 6085 6091 6094 6118 6119 6126 6130 
+	}
+	manpower=5714285
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ITH
+		add_core_of = ITH
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=1
+
+			2306 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			6126 30
+		}
+	}
+}
+

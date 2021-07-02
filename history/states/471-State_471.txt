@@ -1,0 +1,41 @@
+state={
+	id=471
+	name="STATE_471"
+	provinces={
+		177 209 451 578 670 2178 2212 2536 3102 3242 3364 3478 3923 3926 11230 11233 11243 11245 11248 11256 11258 11261 11273 11277 11281 11283 11284 11285 11292 11294 11299 11304 11305 11307 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=TEC
+		add_core_of = TEC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			11305 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

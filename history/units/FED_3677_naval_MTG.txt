@@ -1,0 +1,38 @@
+Units = {
+	fleet = {
+		name = "Trade Defense Force"			
+		naval_base = 2457 #Neimoidia
+		task_force = {
+			name = "Neimoidian Fleet"
+			location = 2457 # Neimoidia
+			ship = { name = "Vuutun Palaa" definition = carrier equipment = { lucrehulk_freighter_equipment = { amount = 1 owner = FED version_name = "Lucrehulk Freighter" } }	
+				air_wings = { 
+					vulture_fighter_equip =  { owner = FED amount = 150 }
+					C9979_equip = { owner = FED amount = 10
+					}
+				}
+			}
+			ship = { name = "Saak'ak" pride_of_the_fleet = yes definition = carrier equipment = { lucrehulk_freighter_equipment = { amount = 1 owner = FED version_name = "Lucrehulk Freighter" } }
+				air_wings = { 
+					vulture_fighter_equip =  { owner = FED amount = 150 }
+					C9979_equip = { owner = FED amount = 10
+					}
+				}
+			}
+			ship = { name = "Bra'Dak" definition = carrier equipment = { lucrehulk_freighter_equipment = { amount = 1 owner = FED version_name = "Lucrehulk Freighter" } }
+				air_wings = { 
+					vulture_fighter_equip =  { owner = FED amount = 150 }
+					C9979_equip = { owner = FED amount = 10
+					}
+				}
+			}
+			ship = { name = "Mulas Fan" definition = carrier equipment = { lucrehulk_freighter_equipment = { amount = 1 owner = FED version_name = "Lucrehulk Freighter" } }
+				air_wings = { 
+					vulture_fighter_equip =  { owner = FED amount = 150 }
+					C9979_equip = { owner = FED amount = 10
+					}
+				}
+			}
+		}	
+	}
+}

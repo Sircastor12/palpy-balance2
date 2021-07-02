@@ -1,0 +1,41 @@
+state={
+	id=223
+	name="STATE_223"
+	provinces={
+		115 160 725 963 1298 1340 1437 1790 1883 2187 2315 2413 2635 2782 3154 3432 3765 4618 7236 7250 7251 7255 7265 7268 7269 7273 7274 7282 7285 7287 7308 7311 7312 7321 7329 7330 7335 7357 7380 7381 7383 7384 7409 7416 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IEG
+		add_core_of = IEG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

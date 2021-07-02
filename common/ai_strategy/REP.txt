@@ -1,0 +1,370 @@
+REP_stagei_unit_training = {
+	enable = {
+		tag = REP
+	}
+	ai_strategy = {
+        type = role_ratio
+        id = armor_rep
+        value = 20
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = clone_trooper
+        value = 80
+    }
+	ai_strategy = {
+        type = build_army
+        id = armor_rep
+        value = 500
+    }
+	ai_strategy = {
+        type = build_army
+        id = clone_trooper
+        value = 500
+    }
+}
+############################
+REP_CAL_civil_war = {
+	enable = {
+		QUA = {
+			has_war_with = CAL
+		}
+	}
+	abort_when_not_enabled = no
+	ai_strategy = {
+		type = alliance
+		id = CAL
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CAL
+		value = 300
+	}
+}
+REP_GEO_push = {
+	enable = {
+		tag = REP
+		REP = {
+			has_war_with = GEO
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+	 	type = front_control
+		tag = GEO
+		priority = 300
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = yes
+	}
+	ai_strategy = {
+	 	type = front_unit_request
+		tag = GEO
+		value = 300
+	}
+	ai_strategy = {
+		type = front_control
+		tag = CIS
+		priority = 2000
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = yes
+   }
+   ai_strategy = {
+		type = front_unit_request
+		tag = CIS
+		value = 2000
+   }
+}
+
+REP_convoy_voy_voy_voy = {
+	enable = {
+		tag = REP
+		has_dlc = "Man the Guns"
+		convoy_threat > 0.2
+	}
+	abort = {
+		convoy_threat < 0.2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 30
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 25
+	}
+}
+
+REP_pp_spend_amount = {
+	enable = {
+		tag = REP
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 100
+	}
+}
+
+REP_stockpile_management = {
+	enable = {
+		tag = REP
+		num_divisions > 150
+	}
+
+	abort = {
+		tag = REP
+		num_divisions < 130
+	}
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 35 # double base stockpile #from 25 to 35
+	}
+}
+
+REP_save_admiral_pp_for_later = {
+	enable = {
+		tag = REP
+		has_war = no
+		threat < 0.3
+		has_political_power < 200		
+	}
+	abort = {
+		OR = {
+			has_war = yes	
+			threat > 0.3
+			has_political_power > 200
+		}
+	}
+
+	ai_strategy = { # dont burn PP on admirals (can still get free ones)
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+}
+
+REP_do_not_waste_pp_if_saving_for_manpower_laws = {
+
+	enable = {
+		tag = REP
+		manpower_per_military_factory < 500
+		has_war = yes
+	}
+	abort = {
+		OR = {
+			manpower_per_military_factory > 500
+			has_war = no
+		}
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
+	}
+}
+
+REP_build_intelligence_agency_as_major = {
+	enable = {
+		tag = REP
+		OR = {
+			has_war = yes
+			date > 976.1.1
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+
+}
+
+REP_build_intelligence_agency = {
+	enable = {
+		tag = REP
+		date > 979.1.1
+		has_war = no
+		num_of_civilian_factories > 25
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			num_of_civilian_factories < 25
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+
+}
+
+REP_upgrade_intelligence_agency = {
+	enable = {
+		tag = REP
+		date > 979.1.1
+		num_of_civilian_factories > 50
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories < 40
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+}
+
+REP_upgrade_intelligence_agency_as_spy_master = {
+	enable = {
+		tag = REP
+		is_spymaster = yes
+		OR = {
+			has_war = no
+			num_of_civilian_factories > 50
+		}
+	}
+	abort = {
+		is_spymaster = no
+		num_of_civilian_factories < 40
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 10
+	}
+}
+
+REP_addintelligence_agency_normal_upgrade_prio = {
+	enable = {
+		tag = REP
+		always = yes
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_intelligence
+		value = 1000
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_defense
+		value = 1000
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_operation
+		value = 500
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_operative
+		value = 100
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_crypto
+		value = 2000
+	}	
+}
+
+REP_ask_foreign_manpower_as_major = {
+	enable = {
+		tag = REP
+		garrison_manpower_need > 200000
+	}
+	
+	abort = {
+		garrison_manpower_need < 100000
+	}
+
+	ai_strategy = {
+		type = asking_foreign_garrison
+		value = 100
+		# id = ITA # id is optionnal. If it is filled, the value will just apply for this country. If not, the value will apply for all countries.
+	}
+}
+
+REP_more_upgrades_as_spymaster = {
+
+	enable = {
+		tag = REP
+		is_spymaster = yes
+	}
+	
+	abort = {
+		is_spymaster = no
+	}
+
+	ai_strategy = {
+		type = agency_ai_base_num_factories_factor
+		value = -50    # -50% on the define
+	}
+
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -25    # -25% on the define
+	}
+}
+
+REP_put_garrisons_on_high_prio = {
+	enable = {
+		tag = REP
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100 # positive is high prio, negative is low prio
+	}
+}

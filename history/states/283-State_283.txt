@@ -1,0 +1,41 @@
+state={
+	id=283
+	name="STATE_283"
+	provinces={
+		37 664 1607 1756 1887 2200 2690 2829 4233 4871 8190 8196 8200 8207 8223 8226 8235 8244 8246 8270 8287 
+	}
+	manpower=650000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	
+	resources={
+		steel=4
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=13
+	}
+
+  	history = {
+		owner=DUR
+		add_core_of = DUR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

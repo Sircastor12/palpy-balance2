@@ -1,0 +1,11 @@
+technologies = {
+
+	hut_market = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+
+	}
+}
+

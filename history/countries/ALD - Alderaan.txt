@@ -1,0 +1,118 @@
+﻿capital = 186
+
+oob = "ALD_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_ALD = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	REP_member_prewar
+	volunteer_only
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+	give_military_access = REP
+}
+
+0978.8.1 = {
+
+	set_politics = {
+		ruling_party = democratic
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+		}
+	}
+
+	create_country_leader = {
+	name = "Bail Organa"
+	desc = "Senator of Alderaan"
+	picture = "gfx/leaders/ALD/ALD_BailOrgana.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+	}
+
+	create_navy_leader = {
+		name = "Raymus Antilles"
+    	picture = "RaymusAntilles.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Jeremoch Colton"
+    	picture = "JeremochColton.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}
+
+	create_field_marshal = {
+		name = "Krorrull Bom"
+		picture = "KrorrullBom.dds"
+		traits = {  }
+		skill = 5
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+	}
+
+	create_corps_commander = {
+		name = "Larrus Torg"
+		portrait_path = "gfx/leaders/ALD/Larrustorg.dds"
+		traits = { }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Val Stic"
+		portrait_path = "gfx/leaders/ALD/ValStic.dds"
+		traits = { }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}

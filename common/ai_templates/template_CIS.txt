@@ -1,0 +1,572 @@
+infantry_CIS = {
+
+	available_for = {
+		CIS
+		TEC
+		FED
+	}
+
+	roles = {
+		battle_droid
+	}
+	
+	upgrade_prio = {
+		factor = 2.0
+
+		modifier = {
+			factor = 2
+			has_tech = battle_droid_2
+		}
+	}
+
+	match_to_count = 0.10
+	
+	b1_infantry_CIS = {
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		target_template = {
+			weight = 10.0
+			match_value = 3000.0
+			
+			support = {
+				recon = 1
+				j1_artillery_unit = 1
+			}
+			
+			regiments = {
+				b1_droid_unit = 10
+			}
+		}
+		
+		allowed_types = {
+			b1_droid_unit
+			j1_artillery_unit
+			recon
+		}
+	}
+	b2_infantry_CIS = {
+	
+		upgrade_prio = {
+			factor = 2
+			modifier = {
+				factor = 2
+				has_tech = battle_droid_2
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			0.00 #-- defense
+			1.00 #-- breakthrough
+			0.00 #-- hardness
+			4.00 #-- soft_attack
+			0.00 #-- hard_attack
+			0.00 #-- recon
+			1.00 #-- entrenchment
+			0.00 #-- initiative
+			0.00 #-- casualty_trickleback
+			0.00 #-- supply_consumption_factor
+			0.00 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.00 #-- air_attack
+			#-- Common Values
+			0.60 #-- max_organisation
+			0.40 #-- max_strength
+			0.00 #-- maximum_speed
+			0.00 #-- armor_value
+			0.20 #-- ap_attack
+			0.00 #-- reliability
+			0.00 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+		
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = {
+				recon = 1
+				j1_artillery_unit = 1
+			}
+			
+			regiments = {
+				b2_droid_unit = 7
+				j1_artillery_brigade = 2
+			}
+		}
+		
+		allowed_types = {
+			b2_droid_unit
+			j1_artillery_brigade
+			j1_artillery_unit
+			recon
+		}
+	}
+}
+armor_CIS = {
+
+	available_for = {
+		CIS
+		TEC
+		FED
+	}
+
+	roles = {
+		cis_armor
+	}
+	
+	upgrade_prio = {
+		factor = 2
+		modifier = {
+			factor = 2
+			has_tech = cis_tank_2
+		}
+		modifier = {
+			factor = 4
+			has_tech = cis_tank_3
+		}
+	}
+
+	match_to_count = 0.10
+	
+	aat_CIS = {
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			1.10 #-- defense
+			2.10 #-- breakthrough
+			2.60 #-- hardness
+			1.00 #-- soft_attack
+			2.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			5.00 #-- max_organisation
+			0.80 #-- max_strength
+			1.0 #-- maximum_speed
+			10.0 #-- armor_value
+			0.05 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = {
+				recon = 1
+				j1_artillery_unit = 1
+				maintenance_company = 1
+			}
+			
+			regiments = {
+				AAT_unit = 6
+				MTT_Unit = 4
+			}
+		}
+		
+		allowed_types = {
+			AAT_unit
+			MTT_Unit
+			recon
+			j1_artillery_unit
+			maintenance_company
+		}
+	}
+	og9_CIS = {
+	
+		upgrade_prio = {
+			factor = 2
+			modifier = {
+				factor = 2
+				has_tech = cis_tank_2
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			1.10 #-- defense
+			2.10 #-- breakthrough
+			2.60 #-- hardness
+			1.00 #-- soft_attack
+			2.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			5.00 #-- max_organisation
+			0.80 #-- max_strength
+			1.0 #-- maximum_speed
+			10.0 #-- armor_value
+			0.05 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = {
+				recon = 1
+				j1_artillery_unit = 1
+				maintenance_company = 1
+			}
+			
+			regiments = {
+				OG9_unit = 6
+				MTT_Unit = 4
+			}
+		}
+		
+		allowed_types = {
+			OG9_unit
+			MTT_Unit
+			recon
+			j1_artillery_unit
+			maintenance_company
+		}
+	}
+	tankdroid_CIS = {
+	
+		upgrade_prio = {
+			factor = 2
+			modifier = {
+				factor = 4
+				has_tech = cis_tank_3
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			1.10 #-- defense
+			2.10 #-- breakthrough
+			2.60 #-- hardness
+			1.00 #-- soft_attack
+			2.00 #-- hard_attack
+			0.10 #-- recon
+			0.01 #-- entrenchment
+			0.10 #-- initiative
+			0.01 #-- casualty_trickleback
+			-0.05 #-- supply_consumption_factor
+			-0.01 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.02 #-- air_attack
+			#-- Common Values
+			5.00 #-- max_organisation
+			0.80 #-- max_strength
+			1.0 #-- maximum_speed
+			10.0 #-- armor_value
+			0.05 #-- ap_attack
+			0.10 #-- reliability
+			0.10 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = {
+				recon = 1
+				j1_artillery_unit = 1
+				maintenance_company = 1
+			}
+			
+			regiments = {
+				tankdroid_unit = 6
+				MTT_Unit = 4
+			}
+		}
+		
+		allowed_types = {
+			tankdroid_unit
+			MTT_Unit
+			recon
+			j1_artillery_unit
+			maintenance_company
+		}
+	}
+}
+###Unworked###
+garrison_CIS = {
+
+	available_for = {
+		CIS
+		TEC
+		FED
+	}
+	
+	roles = {
+		garrison
+	}
+	
+	upgrade_prio = {
+		factor = 80
+
+		modifier = {
+			factor = 0
+			ai_has_role_template = garrison
+		}
+	}
+	
+	match_to_count = 0.60
+
+	garrison_CIS = {
+	
+		reinforce_prio = 0
+		custom_icon = 7
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		target_width = 6.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			0.00 #-- defense
+			0.00 #-- breakthrough
+			0.00 #-- hardness
+			4.00 #-- soft_attack
+			0.00 #-- hard_attack
+			0.00 #-- recon
+			3.00 #-- entrenchment
+			0.00 #-- initiative
+			0.00 #-- casualty_trickleback
+			0.00 #-- supply_consumption_factor
+			0.00 #-- supply_consumption
+			0.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.00 #-- air_attack
+			#-- Common Values
+			0.60 #-- max_organisation
+			0.40 #-- max_strength
+			0.00 #-- maximum_speed
+			0.00 #-- armor_value
+			0.20 #-- ap_attack
+			0.00 #-- reliability
+			0.00 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+		
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = { 
+				engineer = 1
+			}
+			
+			regiments = {
+				b1_droid_unit = 4
+			}
+		}
+		
+		allowed_types = {
+			infantry
+			engineer
+		}
+	}
+}
+suppression_CIS = {
+	
+	roles = {
+		suppression
+	}
+	
+	upgrade_prio = {
+		factor = 1
+
+		modifier = {
+			factor = 20
+			has_war = yes
+		}
+	}
+	
+	match_to_count = 0.60
+
+	suppression_CIS = {
+	
+		reinforce_prio = 0
+		custom_icon = 13
+	
+		upgrade_prio = {
+			factor = 2
+		}
+		
+		target_width = 12.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+		
+		stat_weights = {
+			0.00 #-- default_morale
+			0.00 #-- defense
+			0.00 #-- breakthrough
+			0.00 #-- hardness
+			4.00 #-- soft_attack
+			0.00 #-- hard_attack
+			0.00 #-- recon
+			3.00 #-- entrenchment
+			0.00 #-- initiative
+			0.00 #-- casualty_trickleback
+			0.00 #-- supply_consumption_factor
+			0.00 #-- supply_consumption
+			10.00 #-- suppression
+			0.00 #-- suppression_factor
+			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
+			#-- Air Values
+			0.00 #-- air_attack
+			#-- Common Values
+			0.60 #-- max_organisation
+			0.40 #-- max_strength
+			0.00 #-- maximum_speed
+			0.00 #-- armor_value
+			0.20 #-- ap_attack
+			0.00 #-- reliability
+			0.00 #-- reliability_factor
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
+			0.00 #-- build_cost_ic
+		}
+		
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+			
+			support = { 
+				military_police = 1
+			}
+			
+			regiments = {
+				cavalry = 6
+			}
+		}
+		
+		allowed_types = {
+			cavalry
+			military_police
+		}
+	}
+}

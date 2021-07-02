@@ -1,0 +1,70 @@
+﻿capital = 266
+
+oob = "CLA_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .40
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	militia_CLA = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	extensive_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 47
+		neutrality = 29
+	    fascism = 21
+		communism = 3
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 47
+		communism = 8
+	    fascism = 21
+	    neutrality = 24
+	}
+}
+
+create_country_leader = {
+	name = "Garm Bel Iblis "
+	desc = "The Governor of Corellia"
+	picture = "gfx/leaders/CLA/garmbeliblis.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Separatist Revolutionaries"
+	desc = "Separatist Revolutionaries"
+	picture = "gfx/leaders/CIS/CISGeneric.dds"
+	expire = "2020.1.1"
+	ideology = nazism
+}

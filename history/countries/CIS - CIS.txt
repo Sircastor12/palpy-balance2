@@ -1,0 +1,230 @@
+﻿capital = 6
+
+set_research_slots = 4
+set_stability = 0.7
+set_war_support = 0.55
+set_country_flag = sidious_master
+set_country_flag = dooku_apprentice
+set_country_flag = CIS_tech_1
+set_global_flag = CIS_tech_1
+
+create_faction = CIS
+
+set_rule = {
+    can_create_factions = yes
+}
+
+oob = "CIS_3677"
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	battle_droid_0 = 1
+	cis_tank_1 = 1
+	mtt_tech = 1
+	marauder_tech = 1
+	dockyard1 = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 50
+set_convoys = 2000
+
+add_ideas = {
+	CIS_member_prewar
+	unprepared_industry
+	extensive_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
+	}
+}
+
+0978.8.8 = {
+
+	oob = "CIS_3687"
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
+	}
+
+	set_technology = {
+		tech_support = 1
+		transport = 1
+		transport = 1
+		battle_droid_0 = 1
+		battle_droid_1 = 1
+		battle_droid_2 = 1
+		cis_tank_1 = 1
+		cis_tank_2 = 1
+		mtt_tech = 1
+		consular_tech = 1
+		marauder_tech = 1
+		bulwark_tech = 1
+		diamond_tech = 1
+		munificent_tech = 1
+		munificent_tech = 1
+		lucrehulk_freighter_tech = 1
+		providence_tech = 1
+		infantry_weapons = 1
+	}
+
+		create_faction = ConfederacyOfIndependentSystems
+
+	
+}
+
+
+create_country_leader = {
+	name = "Count Dooku"
+	desc = ""
+	picture = GFX_DOOKU 
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+	create_field_marshal = {
+	name = "Count Dooku"
+	picture = "count.dds"
+	traits = {  }
+	skill = 7
+	attack_skill = 7
+	defense_skill = 7
+	planning_skill = 7
+	logistics_skill = 7
+	}
+
+	create_field_marshal = {
+	name = "Asajj Ventress"
+	picture = "AsajjVentress.dds"
+	traits = {  }
+	skill = 7
+	attack_skill = 7
+	defense_skill = 7
+	planning_skill = 7
+	logistics_skill = 7
+	}
+
+	create_corps_commander = {
+	name = "Lok Durd"
+	portrait_path = "gfx/leaders/CIS/LokDurd.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Alpha-Ø2 (SPAR)"
+	portrait_path = "gfx/leaders/CIS/SPAR.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Whorm Loathsom"
+	portrait_path = "gfx/leaders/CIS/whormloathsom.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Bella"
+	portrait_path = "gfx/leaders/CIS/Bella.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Durge"
+	portrait_path = "gfx/leaders/CIS/Durge.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	}
+
+	create_navy_leader = {
+	name = "Trench"
+    picture = "trench.dds"
+	traits = {  }
+	skill = 8
+	coordination_skill = 6
+	attack_skill = 6
+	defense_skill = 4
+	maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+	name = "Dua Ningo"
+    picture = "Duaningo.dds"
+	traits = {  }
+	skill = 5
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+	name = "Lushros Dofine"
+    picture = "LushrosDofine.dds"
+	traits = {  }
+	skill = 5
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+	name = "Merai"
+    picture = "Merai.dds"
+	traits = {  }
+	skill = 5
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+	name = "Pors Tonith"
+    picture = "PorsTonith.dds"
+	traits = {  }
+	skill = 5
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	}

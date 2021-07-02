@@ -1,0 +1,155 @@
+bookmarks = {
+	bookmark = {
+		name = "A Decaying Republic"
+		desc = "After almost 1000 years of peace, the Galactic Republic is heading toward dark times as corruption and greed takes hold of the Republic Senate. Many systems, especially those located in the resource-rich Outer Rim worlds, are beginning to lose faith."
+		date = 0975.1.2.12
+		picture = "GFX_select_date_right"
+		default_country = "REP"
+		
+		#Major
+		"REP" = {
+			ideology = democratic
+			history = "REP_the_gathering_storm"
+			ideas = {
+				internal_corruption
+				weakened_executive
+				unrestricted_crime
+			}
+			focuses = {
+				REP_vote_of_no_confidence
+				REP_military_creation_act
+				REP_battle_of_geonosis
+			}
+		}
+		"CIS" = {
+			ideology = fascism
+			history = "CIS_the_gathering_storm"
+			ideas = {
+				unprepared_industry
+			}
+			focuses = {
+				CIS_council_meeting
+				CIS_outline_corruption
+				CIS_the_flares_seen_across_the_galaxy
+			}
+		}
+		"FED" = {
+			ideology = democratic
+			history = "FED_the_gathering_storm"
+			ideas = {
+				pirate_raids
+				ruusan_nerf_army
+			}
+			focuses = {
+				FED_under_new_leadership
+				FED_blockade_naboo
+				FED_a_hired_gun
+			}
+		}
+
+		"CMG" = {
+			ideology = democratic
+			history = "CMG_the_gathering_storm"
+		}
+		
+		"TEC" = {
+			ideology = democratic
+			history = "TEC_the_gathering_storm"
+		}
+		
+		"MAN" = {
+			ideology = neutrality
+			history = "MAN_the_gathering_storm"
+			ideas = {
+				MAN_idea_severe_depopulation
+				MAN_idea_recovering_from_the_civil_war
+				MAN_idea_new_mandelorians
+			}
+			focuses = {
+				Mandalore_the_rise_of_satine
+				Mandalore_this_is_the_way
+				Mandalore_the_new_coruscant
+			}
+		}
+		"DEA" = {
+			ideology = neutrality
+			history = "DEA_the_gathering_storm"
+			focuses = {
+				Deathwatch_maul
+				Deathwatch_the_invasion
+				DWI_a_new_mandalorian_crusade
+			}
+		}
+		
+		"---"={
+			history = "Other interesting planets."
+		}
+		
+		#Minor		
+
+		"IBC" = {
+			ideology = democratic
+			minor = yes
+			history = "IBC_the_gathering_storm"
+		}
+
+		"KAM" = {
+			ideology = democratic
+		    minor = yes
+			history = "KAM_the_gathering_storm"
+		}
+		"GEO" = {
+			ideology = neutrality
+		    minor = yes
+			history = "GEO_the_gathering_storm"
+		}
+		"KUA" = {
+			ideology = democratic
+		    minor = yes
+			history = "KUA_the_gathering_storm"
+		}
+		"UMB" = {
+			ideology = democratic
+		    minor = yes
+			history = "UMB_the_gathering_storm"
+			ideas = {
+				UMB_idea_hostile_environment
+			}
+			focuses = {
+				Umbara_mee_deechi
+				Umbara_switch_sides
+				Umbara_technological_superiority
+			}
+		}
+		"RYL" = {
+			ideology = democratic
+		    minor = yes
+			history = "RYL_the_gathering_storm"
+			ideas = {
+				slave_raids
+				lack_of_recourses
+				cham_syndulla_insurgent
+			}
+			focuses = {
+				our_ally_the_republic
+				stand_with_cham_syndulla
+				bend_to_the_confederacy
+			}
+		}
+		"KYK" = {
+			ideology = democratic
+		    minor = yes
+			history = "KYK_the_gathering_storm"
+		}
+		"CAL" = {
+			ideology = democratic
+		    minor = yes
+			history = "DAC_the_gathering_storm"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

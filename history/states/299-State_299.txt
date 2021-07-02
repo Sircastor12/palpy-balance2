@@ -1,0 +1,41 @@
+state={
+	id=299
+	name="STATE_299"
+	provinces={
+		197 440 758 811 1169 1274 1377 1635 2133 2219 2379 3078 4032 4124 4653 4668 4671 4811 8346 8355 8382 8401 8413 8432 8440 8448 8457 8468 8469 8480 8494 8495 8520 8545 8554 8593 
+	}
+	manpower=1571428
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=3
+		aluminium=4
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=UMB
+		add_core_of = UMB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			4668 30
+		}
+	}
+}
+

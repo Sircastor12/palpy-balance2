@@ -1,0 +1,41 @@
+state={
+	id=274
+	name="STATE_274"
+	provinces={
+		260 526 885 973 1449 1595 2899 3210 7985 8006 8013 8019 8024 8038 8057 8058 8065 8076 8112 8133 
+	}
+	manpower=5428571
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=5
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

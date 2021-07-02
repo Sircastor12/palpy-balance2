@@ -1,0 +1,41 @@
+state={
+	id=38
+	name="STATE_38"
+	provinces={
+		467 1202 4536 4654 4793 4965 8206 8210 8212 8214 8217 8219 8249 8251 
+	}
+	manpower=1571428
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=3
+		aluminium=4
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=UMB
+		add_core_of = UMB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			4793 = {
+				naval_base = 3
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

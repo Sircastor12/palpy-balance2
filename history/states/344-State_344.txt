@@ -1,0 +1,40 @@
+state={
+	id=344
+	name="STATE_344"
+	provinces={
+		168 660 1120 1326 1393 1582 2282 2488 2568 2770 3214 3229 3273 3473 3703 3759 4177 4388 4409 4483 4758 4807 9185 9197 9202 9229 9236 9247 9255 9259 9262 9263 9265 9276 9283 9285 9293 9302 9304 
+	}
+	manpower=285714
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=3
+		aluminium=1
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TOY
+		add_core_of = TOY
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			1393 50
+		}
+	}
+}
+

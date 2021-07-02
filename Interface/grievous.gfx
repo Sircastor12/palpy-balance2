@@ -1,0 +1,62 @@
+spriteTypes = {	
+
+	###Warrior
+
+	spriteType = {
+		name = "GFX_Warrior_Full"
+		texturefile = "gfx/interface/grievous/Warrior_Full.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Warrior_Head"
+		texturefile = "gfx/interface/grievous/Warrior_Head.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Warrior_Chest"
+		texturefile = "gfx/interface/grievous/Warrior_Chest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Warrior_Arms"
+		texturefile = "gfx/interface/grievous/Warrior_Arms.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Warrior_Legs"
+		texturefile = "gfx/interface/grievous/Warrior_Legs.dds"
+	}
+
+	###Protector
+
+	spriteType = {
+		name = "GFX_Protector_Full"
+		texturefile = "gfx/interface/grievous/Protector_Full.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Protector_Head"
+		texturefile = "gfx/interface/grievous/Protector_Head.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Protector_Chest"
+		texturefile = "gfx/interface/grievous/Protector_Chest.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Protector_Arms"
+		texturefile = "gfx/interface/grievous/Protector_Arms.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Protector_Legs"
+		texturefile = "gfx/interface/grievous/Protector_Legs.dds"
+	}
+}
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,18 @@
+sub_units = {
+	gauntlet_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter air_transport }
+		need = { gauntlet_fighter_equip = 1 }
+		categories = { category_fighter }
+	}
+	fang_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { fang_fighter_equip = 1 }
+		categories = { category_fighter }
+	}
+}

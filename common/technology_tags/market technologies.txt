@@ -1,0 +1,152 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+technology_categories = {
+	mand_tech
+	UMB_tech
+	kua_tech
+	cmg_tech
+	fed_tech
+	tec_tech
+	hut_tech
+	ibc_tech
+	kam_tech
+	cal_tech
+	ren_tech
+	rot_tech
+	cla_tech
+}	
+	
+technology_folders = {
+
+	mand_folder = {
+		available = {
+			OR = {
+			tag = MAN
+			tag = DEA
+			}
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	UMB_folder = {
+		available = {
+			tag = UMB
+
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	kua_folder = {
+		available = {
+			tag = KUA
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	cmg_folder = {
+		available = {
+			tag = CMG
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	fed_folder = {
+		available = {
+			tag = FED
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	tec_folder = {
+		available = {
+			tag = TEC
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	hut_folder = {
+		available = {
+			tag = HUT
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	ibc_folder = {
+		available = {
+			tag = IBC
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	kam_folder = {
+		available = {
+			tag = KAM
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	rot_folder = {
+		available = {
+			tag = ROT
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	cal_folder = {
+		available = {
+			tag = CAL
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	ren_folder = {
+		available = {
+			tag = REN
+		}
+		ledger = civilian
+	}
+}
+
+technology_folders = {
+
+	cla_folder = {
+		available = {
+			tag = CLA
+
+		}
+		ledger = civilian
+	}
+}

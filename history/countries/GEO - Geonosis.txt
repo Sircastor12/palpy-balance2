@@ -1,0 +1,90 @@
+capital = 460
+
+oob = "GEO_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	militia_GEO = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	scraping_the_barrel
+}
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 80
+		fascism = 20
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 0
+		fascism = 100
+    }
+}
+
+create_country_leader = {
+	name = "Poggle The Lesser"
+	desc = "Public Leader of The Geonosians"
+	picture = "gfx/leaders/GEO/Lesser.dds"
+	expire = "4000.1.1"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Poggle The Lesser"
+	desc = "Public Leader of The Geonosians"
+	picture = "gfx/leaders/GEO/Lesser.dds"
+	expire = "4000.1.1"
+	ideology = fascism_ideology
+}
+
+create_corps_commander = {
+	name = "Geo Gofore"
+	portrait_path = "gfx/leaders/GEO/geogofore.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mad Ewy"
+	portrait_path = "gfx/leaders/GEO/Madewy.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}

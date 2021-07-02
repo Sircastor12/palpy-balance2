@@ -1,0 +1,254 @@
+##Palps Gamble##
+is_major_planet = {
+	OR = {
+		TAG = CIS
+		TAG = REP
+		TAG = HUT
+	}
+}
+is_core_world = {
+	OR ={
+		tag = FRE
+		tag = ALD
+		tag = KUA
+		tag = REN
+		tag = CLA
+		tag = DUR
+		tag = CAR
+		tag = ABR
+	}
+}
+
+is_midrim_world = {
+	OR = {
+		tag = OND
+		tag = MIM
+		tag = BTN
+		tag = THY
+		tag = DUR
+		tag = CAR
+		tag = NAB
+		tag = MAL
+		tag = ERI
+		tag = SUL
+		tag = ROD
+		tag = BOT
+		tag = TOY
+		tag = RUS
+		tag = KYK
+		tag = UMB
+		tag = TRA
+		tag = MAN
+		tag = ITH
+	}
+}
+
+is_outterrim_world = {
+	OR = {
+		tag = TEC
+		tag = DAT
+		tag = HON
+		tag = HUT
+		tag = REN
+		tag = KOR
+		tag = DAN
+		tag = CAL
+		tag = JAB
+		tag = TET
+		tag = BOZ
+		tag = RYL
+		tag = JHT
+		tag = CHR
+		tag = GEO
+		tag = PAN
+		tag = ALZ
+		tag = UTU
+		tag = SLU
+		tag = BES
+	}
+}
+is_militarist_corp = {
+	OR = {
+		tag = TEC
+		tag = CMG
+		tag = FED
+	}
+}
+is_corporation = {
+	OR = {
+		tag = TEC
+		tag = CMG
+		tag = FED
+		tag = KUA
+		tag = REN
+		tag = SUL
+		tag = FRE
+		tag = THY
+		tag = ROT
+	}
+}
+
+is_market_corporation = {
+	OR = {
+		tag = TEC
+		tag = CMG
+		tag = FED
+		tag = KUA
+		tag = REN
+		tag = CLA
+		tag = KAM
+		tag = QUA
+		tag = MAN
+		tag = CAR
+		tag = ROT
+	}
+}
+
+is_pacifist = {
+	OR ={
+		tag = NAB
+		tag = ROD
+		tag = MAN
+		tag = ALD
+		tag = CLA
+		tag = ITH
+		tag = KYK
+		tag = OND
+		tag = TAR
+		tag = ABR
+	}
+}
+
+is_militarist = {
+	OR ={
+		tag = MIM
+		tag = UMB
+		tag = PAN
+		tag = TRA
+		tag = MAL
+		tag = ERI
+		tag = CAR
+		tag = BOT
+		tag = DUR
+	}
+}
+is_outterrim_faction = {
+	OR = {
+		tag = DAN
+		tag = CAL
+		tag = RYL
+		tag = JAB
+		tag = CHR
+		tag = UTU
+		tag = SLU
+		tag = BES
+	}
+}
+is_cis_heavy_equipped = {
+	OR = {
+		tag = CIS
+		tag = TEC
+		tag = FED
+		tag = CMG
+		tag = IBC
+	}
+}
+canonical_separatist_council_member = {
+	OR ={
+		tag = TEC
+		tag = FED
+		tag = GEO
+		tag = IBC
+		tag = CMG
+		tag = QUA
+	}
+}
+REP_focus_secession = {
+	OR = {
+		tag = MAL
+		tag = NAB
+		tag = ROT
+		tag = KYK
+		tag = REN
+		tag = KUA
+		tag = UMB
+		tag = CAL
+		tag = CLA
+		tag = ALD
+		tag = BES
+		tag = CHR
+		tag = DUR
+		tag = RYL
+	}
+}
+REP_forgetit = {
+	OR = {
+		tag = TEC
+		tag = FED
+		tag = IBC
+		tag = CMG
+	}
+}
+CIS_focus_secession = {
+	OR = {
+		tag = CMG
+		tag = TEC
+		tag = FED
+		tag = JAB
+		tag = OND
+		tag = FRE
+		tag = MIM
+		tag = UMB
+		tag = SLU
+		tag = ZYG
+		tag = DUR
+	}
+}
+CIS_forgetit = {
+	OR = {
+		tag = ALD
+		tag = KUA
+		tag = REN
+		tag = ROT
+	}
+}
+
+ai_air_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = naval_strike_tactics
+		has_tech = direct_ground_support
+		has_tech = low_echelon_support
+	}
+}
+
+ai_air_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = multialtitude_flying
+		has_tech = hunt_and_destroy
+		has_tech = operational_destruction
+	}
+}
+ai_air_doctrine_tier_3_trigger = {
+	OR = {
+		has_tech = flying_fortress
+		has_tech = naval_strike_torpedo_tactics
+		has_tech = infiltration_bombing
+	}
+}
+
+ai_land_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = mobile_defence
+		has_tech = grand_assault
+		has_tech = defence_in_depth
+	}
+}
+
+ai_land_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = branch_interoperation
+		has_tech = infiltration_assault
+		has_tech = vast_offensives
+		has_tech = large_front_offensive
+	}
+}

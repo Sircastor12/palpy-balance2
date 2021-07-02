@@ -1,0 +1,41 @@
+state={
+	id=195
+	name="STATE_195"
+	provinces={
+		92 796 807 984 999 1589 2078 2098 2743 2752 3892 3902 4101 5046 6829 6836 6840 6852 6857 6862 6866 6882 6888 6891 6899 6909 6911 6924 6928 6931 6932 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=0
+		chromium=2
+	}
+
+  	history = {
+		owner=CAL
+		add_core_of = CAL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+			corporate_factory = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			999 50
+		}
+	}
+}
+

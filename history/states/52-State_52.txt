@@ -1,0 +1,41 @@
+state={
+	id=52
+	name="STATE_52"
+	provinces={
+		2355 3053 3824 4503 4785 4796 4865 9540 9542 9551 9555 9561 9566 9568 9576 9579 
+	}
+	manpower=14285714
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=11
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=QUN
+		add_core_of = QUN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

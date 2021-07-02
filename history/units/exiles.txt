@@ -1,0 +1,41 @@
+﻿
+division_template = {
+	name = "Mandalorian Commandos"
+
+	regiments = {
+		Mandalorian_commandos = { x = 0 y = 0 }
+		Mandalorian_commandos = { x = 0 y = 1 }
+		Mandalorian_commandos = { x = 0 y = 2 }
+   		Mandalorian_commandos = { x = 1 y = 0 }
+		Mandalorian_commandos = { x = 1 y = 1 }
+		Mandalorian_commandos = { x = 1 y = 2 }
+  		Mandalorian_commandos = { x = 2 y = 0 }
+		Mandalorian_commandos = { x = 2 y = 1 }
+		Mandalorian_commandos = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Mandalorian Exiles"
+		location = 507
+		division_template = "Mandalorian Commandos"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Mandalorian Exiles"
+		location = 507
+		division_template = "Mandalorian Commandos"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Mandalorian Exiles"
+		location = 507
+		division_template = "Mandalorian Commandos"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}
+

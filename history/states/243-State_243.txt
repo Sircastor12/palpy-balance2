@@ -1,0 +1,41 @@
+state={
+	id=243
+	name="STATE_243"
+	provinces={
+		1313 1871 2366 2394 3139 4268 5052 7522 7543 7544 7556 7570 7575 7586 7588 7604 7605 7612 7613 7631 7632 7637 7647 7658 7678 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=2
+		rubber=0
+		tungsten=4
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=JAB
+		add_core_of = JAB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

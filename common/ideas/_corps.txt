@@ -1,0 +1,859 @@
+ideas = {
+	country = {
+		Geonosis_idea = {
+			equipment_bonus = {
+				b1_droid_equip = {
+					build_cost_ic = -0.15	
+				}
+				b2_droid_equip = {
+					build_cost_ic = -0.15	
+				}
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Aratech_idea = {
+			equipment_bonus = {
+				speeder_bike_basic = {
+					build_cost_ic = -0.15
+				}
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 2 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Blastech_idea = {
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15	
+				}
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Chiewab_idea = {
+			modifier = {
+				monthly_population = 0.15
+				land_reinforce_rate = 0.10
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Colicoid_idea = {
+			equipment_bonus = {
+				tec_destroyer_equipment = {
+					build_cost_ic = -0.15	
+				}
+				tri_fighter_equip = {
+					build_cost_ic = -0.15
+				}
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 60 }
+				add_to_array = { quick_market_production_array = 75 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Corellian_idea = {
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.25 
+					armor_value = 0.15
+				}
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 90 }
+				add_to_array = { quick_market_production_array = 91 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Corporate_idea = {
+			on_add = {
+				add_offsite_building = {
+					type = industrial_complex 
+					level = 3
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}			
+			}
+		}
+		Czerka_idea = {
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25	
+				}
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Free_dac_idea = {
+			modifier = {
+				industrial_capacity_dockyard = 0.18
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 95 }
+				add_to_array = { quick_market_production_array = 96 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Haor_idea = {
+			modifier = {
+				air_agility_factor = 0.15
+				air_intercept_efficiency = 0.15
+			}
+			equipment_bonus = {
+				hailfire_equipment = {
+					build_cost_ic = -0.25
+				}
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 78 }
+ 				add_to_array = { quick_market_production_array = 79 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Hoersch_idea = {
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.10
+				}
+				screen_ship = {
+					build_cost_ic = -0.10 
+				}
+				carrier = {
+					build_cost_ic = -0.15
+				}
+			}
+			on_add = {
+				#add_to_array = { quick_market_production_array = 16 }
+				#add_to_array = { quick_market_production_array = 17 }
+				#add_to_array = { quick_market_production_array = 18 }
+				#add_to_array = { quick_market_production_array = 19 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Industrial_Automaton_idea = {
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.5 
+				production_factory_max_efficiency_factor = 0.8
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		LeisureMechEnterprises_idea = {
+			modifier = {
+				stability_factor = 0.3
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		MandalMotors_idea = {
+			equipment_bonus = {
+				motorized_equipment_1 = {
+					build_cost_ic = -0.15
+				}
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Mining_guild_idea = {
+			modifier = {
+				local_resources_factor = 0.25
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Slayn_and_korpil_idea = {
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 27 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		RendiliStarDrive_idea = {
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 48 }
+				add_to_array = { quick_market_production_array = 49 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Incom_idea = {
+			modifier = {
+				air_attack_factor = 0.10
+				air_defence_factor = 0.10
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 26 }
+				add_to_array = { quick_market_production_array = 28 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		SienarFleetSystems_idea = {
+			equipment_bonus = {
+				carrier = {
+					armor_value = 0.15
+				}
+				capital_ship = {
+					armor_value = 0.15
+				}
+				screen_ship = {
+					armor_value = 0.15
+				}
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		SoroSuub_idea = {
+			equipment_bonus = {
+				support_equipment_1 = {
+					build_cost_ic = -0.20
+				}
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		Taimandbak_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+			on_add = {
+				add_offsite_building = {
+					type = arms_factory 
+					level = 5
+				}	
+			}
+		}
+		Tagge_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.15
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		TransGalMegIndustriesIncorporated_idea = {
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+			equipment_bonus = {
+				bulwark_equipment = {
+					build_cost_ic = -0.15
+				}
+			}
+			on_add = {
+				add_to_array = { quick_market_production_array = 67 }
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		UbrikkianIndustries_idea = {
+			modifier = {
+				army_attack_factor = 0.10
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}
+		XucphraCorporation_idea = {
+			modifier = {
+				land_reinforce_rate = 0.30
+				conscription = 0.3
+			}
+			on_add = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+					}
+				}
+			}
+		}	
+	}
+}

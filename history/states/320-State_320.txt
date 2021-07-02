@@ -1,0 +1,41 @@
+state={
+	id=320
+	name="STATE_320"
+	provinces={
+		516 2307 2764 2964 3516 3614 4464 4488 8810 8815 8833 8838 8847 8867 8876 8878 8883 8890 
+	}
+	manpower=1500000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=BTN
+		add_core_of = BTN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

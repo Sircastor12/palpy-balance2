@@ -1,0 +1,264 @@
+add_namespace = cwb
+#
+news_event = {
+    id = cwb.30
+    title = "Amidala Attacked!"
+    desc = cwb.30.desc
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+immediate = {
+  hidden_effect = {
+      news_event = {
+        id = cwb.31
+        days = 2
+        random = 1
+     }      
+   }
+ }
+    
+        option = {
+           name = "Oh my goodness!"
+           trigger = { 
+           NOT = {
+           tag = CIS
+           }
+        }         
+     }
+
+         option = {
+           name = "Horrah!"
+           trigger = { 
+           tag = CIS
+        }   
+     }
+}
+
+news_event = {
+    id = cwb.31
+    title = "Amidala Alive"
+    desc = cwb.31.desc
+    picture = GFX_event_padmeamidalaalive
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+immediate = {
+  hidden_effect = {
+    NAB = { 
+      news_event = {
+        id = naboo.30
+        days = 6
+        random = 10
+     }      
+   }
+ }
+}
+    
+        option = {
+           name = "Great news"
+           trigger = { 
+           NOT = {
+           tag = CIS
+           }
+        }         
+     }
+
+         option = {
+           name = "We will try again - she must not live!"
+           trigger = { 
+           tag = CIS
+        }   
+     }
+}
+
+news_event = {
+    id = cwb.1
+    title = "Clone Army Discovered on Kamino"
+    desc = "it is happening"
+    picture = GFX_clonesdiscovered
+    fire_only_once = yes
+    hidden = no
+    major = yes
+    
+    is_triggered_only = yes
+
+    immediate = {
+      set_global_flag = clonearmydiscovered
+      set_global_flag = kaminodiscovered
+      KAM = {
+        add_to_array = { global.outer_rim_list = THIS.id }
+        set_ruling_party = Democratic
+      }
+   }
+    
+        option = {
+           name = "We must secure this asset at once."
+           trigger = { 
+        }                      
+     }
+
+         option = {
+           name = "In the wrong hands, this army could be a disaster for the galaxy."
+           trigger = { 
+        }                      
+     } 
+}
+
+news_event = {
+    id = cwb.2
+    title = "Clone Army Secured"
+    desc = "Agreements have been made with the Kaminoans. The Clone Army will begin preperations for combat at once."
+    picture = GFX_event_clonearmy_agreementreached
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+    immediate = {
+    REP = { 
+      news_event = {
+      id = cwb.3
+      days = 60
+      random = 3
+  }                   
+     } 
+    }
+    
+        option = {
+           name = "Excellent."
+           trigger = { 
+        }                      
+     } 
+   }
+
+news_event = {
+    id = cwb.3
+    title = "Separatist Stronghold Discovered!"
+    desc = "A separatist stronghold has been discovered on the planet of Geonosis in the outer rim. Our spies suggest the planet holds trillions of droids, ready for deployment into battle. If we are going to stop the CIS, the time is now."
+    picture = GFX_event_separatiststronghold
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+    immediate = {
+     REP = { 
+      news_event = {
+      id = cwb.4
+      days = 10
+      random = 2
+  }                   
+     } 
+    }
+    
+        option = {
+           name = "Prepare the army and contact the Jedi Council"
+           trigger = { 
+        }                      
+     } 
+}
+
+news_event = {
+    id = cwb.4
+    title = "Jedi Intervention on Geonosis"
+    desc = "Separatist leadership has captured senator Amidala of Naboo, along with her jedi escort. The Jedi Council has deployed a strike team to Geonosis to take them back. The time is perfect to launch a full scale attack."
+    picture = GFX_event_padmecapturedgeo
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+    immediate = {
+    }
+    
+        option = {
+           name = "Our hand has been forced, deploy our Kaminoan Army."
+           trigger = { 
+        }           
+         REP = { 
+      news_event = {
+      id = cwb.5
+      days = 7
+      random = 3
+  }                   
+     }            
+     } 
+
+     option = {
+           name = "Leave the Jedi to their fate."
+           trigger = { 
+        }     
+        REP = { 
+      news_event = {
+      id = cwb.5
+      days = 7
+      random = 3
+  }                   
+     }                  
+     } 
+     }
+
+news_event = {
+    id = cwb.5
+    title = "The Battle of Geonosis"
+    desc = "Separatist leadership has captured senator Amidala of Naboo, along with her jedi escort. The Jedi Council has deployed a strike team to Geonosis to take them back. The time is perfect to launch a full scale attack."
+    picture = GFX_event_battleofgeonosis
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+    immediate = {
+    set_global_flag = endofgeonosis
+    }
+    
+        option = {
+           name = "Excellent work."
+           trigger = { 
+        }                      
+     } 
+     }
+
+
+#### JEDI DISASTER
+ news_event = {
+    id = cwb.50
+    title = "Jedi Strike Force Slaughtered"
+    desc = "A Jedi Strike Force, the first of it's kind in over one thousand years has been slaughtered in the Toppica arena of Geonosis. Approxiamtely 200 Jedi have been declared dead or captured by Geonosian officals."
+    picture = GFX_event_jedislaughterongeo
+    fire_only_once = yes
+    hidden = no
+    major = yes
+    
+    is_triggered_only = yes
+
+    immediate = {
+    }
+    
+        option = {
+           name = "Assemble the army at once!"
+           trigger = { 
+           tag = REP
+        }                      
+     } 
+
+      option = {
+           name = "Leave them to their fate"
+           trigger = { 
+           tag = REP
+        }                      
+     } 
+
+     option = {
+           name = "The Jedi cannot keep the peace"
+           trigger = { 
+           NOT = { tag = REP }
+        }                      
+     } 
+}
+

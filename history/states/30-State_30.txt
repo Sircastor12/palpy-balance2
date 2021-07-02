@@ -1,0 +1,41 @@
+state={
+	id=30
+	name="STATE_30"
+	provinces={
+		12 500 927 1217 1704 1818 1820 2370 3854 4068 4094 7347 7348 7362 7374 7386 7411 7436 7467 
+	}
+	manpower=6000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=2
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=5
+	}
+
+  	history = {
+		owner=REN
+		add_core_of = REN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

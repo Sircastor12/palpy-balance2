@@ -1,0 +1,41 @@
+state={
+	id=220
+	name="STATE_220"
+	provinces={
+		272 635 1270 2010 2349 2439 3116 4084 4343 7168 7189 7271 7290 7291 7332 7333 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=1
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=OND
+		add_core_of = OND
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			2439 30
+		}
+	}
+}
+

@@ -1,0 +1,448 @@
+technologies = {
+	early_fighter = {
+
+		enable_equipments = {
+			fighter_equipment_0
+		}
+	
+		path = {
+			leads_to_tech = fighter1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = CAS1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 970
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	fighter1 = {
+
+		enable_equipments = {
+			fighter_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = fighter2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 975
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	fighter2 = {
+
+		enable_equipments = {
+			fighter_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = fighter3
+			research_cost_coeff = 1
+		}
+				
+		research_cost = 2
+		start_year = 977
+		folder = {
+			name = air_techs_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+	
+		
+		ai_will_do = {
+			factor = 4
+
+		}
+	}
+	hyperdrive = {
+	
+		fighter = {
+			air_range = 0.15
+		}
+		
+		cas = {
+			air_range = 0.15
+		}
+		
+		path = {
+			leads_to_tech = jet_fighter1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 981
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}	
+	fighter3 = {
+
+		enable_equipments = {
+			fighter_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = hyperdrive
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 979
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+	jet_fighter1 = {
+
+		enable_equipments = {
+				jet_fighter_equipment_1
+		}
+		
+		research_cost = 2
+		start_year = 985
+
+		folder = {
+			name = air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			light_air
+			jet_technology
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+		}
+	}
+	CAS1 = {
+
+		enable_equipments = {
+			CAS_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = CAS2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 975
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	CAS2 = {
+
+		enable_equipments = {
+			CAS_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = CAS3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 977
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	CAS3 = {
+
+		enable_equipments = {
+			CAS_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = hyperdrive
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 979
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 8 }
+		}
+		
+		
+		categories = {
+			light_air
+			cas_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	early_bomber = {
+
+		enable_equipments = {
+			tac_bomber_equipment_0
+		}
+	
+		path = {
+			leads_to_tech = tactical_bomber1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 970
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 2 }
+		}
+		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tactical_bomber1 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = tactical_bomber2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 975
+
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	tactical_bomber2 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = tactical_bomber3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 977
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tactical_bomber3 = {
+
+		enable_equipments = {
+			tac_bomber_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = proton
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 979
+		folder = {
+			name = air_techs_folder
+			position = { x = -3	y = 8 }
+		}
+		
+		categories = {
+			medium_air
+			tactical_bomber
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	proton = {
+	
+		tac_bomber = {
+			air_bombing = 0.1
+			naval_strike_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = jet_tactical_bomber1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 981
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	jet_tactical_bomber1 = {
+
+		enable_equipments = {
+			jet_tac_bomber_equipment_1
+		}
+		
+
+
+		research_cost = 2
+		start_year = 985
+		
+		folder = {
+			name = air_techs_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		categories = {
+			medium_air
+			jet_technology
+			tactical_bomber
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				factor = 4
+			}
+		}
+	}
+}

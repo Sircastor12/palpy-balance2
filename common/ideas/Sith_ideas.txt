@@ -1,0 +1,210 @@
+ideas = {
+	country = {
+
+		sith_slaves_sith = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		loud_the_jedi = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+
+			}
+		}
+		cult_of_sith = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		dark_side_acolytes = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+				training_time_army_factor = 0.2
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+
+			}
+		}
+		rule_of_one = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+
+			}
+		}
+		inquisition_sith = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+			}
+		}
+		ancient_technology = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		abolish_rule_of_two = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+
+			removal_cost = -1
+
+			picture = generic_central_management
+
+			modifier = {
+
+			}
+		}
+		see_into_the_future = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+
+			}
+		}
+		ancient_sith_archives = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		ressurect_dead = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+
+			}
+		}
+		conceal_agents = {
+
+            allowed = {
+				always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+			}
+		}
+	}
+}

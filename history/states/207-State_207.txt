@@ -1,0 +1,41 @@
+state={
+	id=207
+	name="STATE_207"
+	provinces={
+		532 1547 2305 2430 2929 4443 4621 7009 7032 7038 7055 7073 7084 7106 
+	}
+	manpower=175000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=FRE
+		add_core_of = FRE
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			1547 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

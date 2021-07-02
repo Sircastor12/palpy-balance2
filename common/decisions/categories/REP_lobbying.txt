@@ -1,0 +1,14 @@
+REP_lobbying = {
+	icon = generic_prospect_for_resources
+   
+   visible = {
+		TAG = REP
+		NOT = {
+			has_country_flag = lobbyingnomore
+		}
+	}
+   available = {
+	   TAG = REP
+	   has_global_flag = actonfloor
+   }
+}

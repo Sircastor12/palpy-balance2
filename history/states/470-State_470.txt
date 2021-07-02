@@ -1,0 +1,40 @@
+state={
+	id=470
+	name="STATE_470"
+	provinces={
+		199 305 404 871 1905 2002 2070 2293 3685 3688 3853 3880 11177 11180 11200 11208 11209 11212 11222 11225 11226 11236 11239 11254 11255 11257 11260 11262 11271 11274 11280 11282 11290 11293 11296 11298 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=PAN
+		add_core_of = PAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

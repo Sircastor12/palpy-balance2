@@ -1,0 +1,755 @@
+﻿division_template = {
+	name = "Clone Trooper Division"
+	regiments = {
+		p1_clone = { x = 0 y = 0 }
+		p1_clone = { x = 0 y = 1 }
+		p1_clone = { x = 0 y = 2 }
+   		p1_clone = { x = 1 y = 0 }
+		p1_clone = { x = 1 y = 1 }
+		p1_clone = { x = 1 y = 2 }
+		p1_clone = { x = 2 y = 0 }
+		SPHA_brigade = { x = 2 y = 1 }
+		SPHA_brigade = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "AT-TE Tank Division"
+	regiments = {
+		atte_unit = { x = 0 y = 0 }
+		atte_unit = { x = 0 y = 1 }
+		atte_unit = { x = 0 y = 2 }
+   		ATRT_unit = { x = 1 y = 0 }
+		ATRT_unit = { x = 1 y = 1 }
+		ATRT_unit = { x = 1 y = 2 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10917 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10809 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10937 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10937 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10896 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10896 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10970 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10970 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10862 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10862 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10993 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10993 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 4332 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 3875 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 3875 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10809 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 2521 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 2521 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 2521 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 2521 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 4714 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 4714 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 2521 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 4714 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10917 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10809 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10937 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10937 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10896 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10896 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10896 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10970 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10970 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10970 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10862 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10862 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10993 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 10993 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10993 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 4332 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 3875 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 3875 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 10809 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 2521 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 2521 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 2521 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 2521 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 4714 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 4714 #geonosis
+		division_template = "Clone Trooper Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { SPHA_equipment = { owner = "KUA" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 2521 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+	division= {	
+		name = "AT-TE Tank Division"
+		location = 4714 #geonosis
+		division_template = "AT-TE Tank Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { atte_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATRT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+
+	}
+}
+

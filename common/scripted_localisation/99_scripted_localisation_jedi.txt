@@ -1,0 +1,141 @@
+defined_text = {
+	name = GetJedi_master
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "Saesee Tiin"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "Yaddle"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "Even Piell"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "Adi Gallia"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "Yarael Poof"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "Depa Billaba"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "Shaak Ti"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "Coleman Trebor"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "Obi wan Kenobi"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "Agen Kolar"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "Stass Allie"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "Coleman Kcaj"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "Kit Fisto"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "Anakin Skywalker"
+	}
+}
+defined_text = {
+	name = Get_seat_1_loc
+	text = {
+		trigger = {
+			has_variable = seat_1
+		}
+		localization_key = "[?seat_1.GetJedi_master]"
+	}
+}
+defined_text = {
+	name = Get_seat_2_loc
+	text = {
+		trigger = {
+			has_variable = seat_2
+		}
+		localization_key = "[?seat_2.GetJedi_master]"
+	}
+}
+defined_text = {
+	name = Get_seat_3_loc
+	text = {
+		trigger = {
+			has_variable = seat_3
+		}
+		localization_key = "[?seat_3.GetJedi_master]"
+	}
+}
+defined_text = {
+	name = Get_seat_4_loc
+	text = {
+		trigger = {
+			has_variable = seat_4
+		}
+		localization_key = "[?seat_4.GetJedi_master]"
+	}
+}
+defined_text = {
+	name = Get_seat_5_loc
+	text = {
+		trigger = {
+			has_variable = seat_5
+		}
+		localization_key = "[?seat_5.GetJedi_master]"
+	}
+}
+defined_text = {
+	name = Get_seat_6_loc
+	text = {
+		trigger = {
+			has_variable = seat_6
+		}
+		localization_key = "[?seat_6.GetJedi_master]"
+	}
+}

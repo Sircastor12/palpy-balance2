@@ -1,0 +1,41 @@
+state={
+	id=206
+	name="STATE_206"
+	provinces={
+		518 649 1623 1703 3419 4176 4527 6996 7018 7025 7033 7042 7066 7069 7081 7092 7097 7121 
+	}
+	manpower=1428571
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=1
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=4
+		chromium=0
+	}
+
+  	history = {
+		owner=FED
+		add_core_of = FED
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

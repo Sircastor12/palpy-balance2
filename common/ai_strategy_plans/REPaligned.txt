@@ -1,0 +1,62 @@
+REP_aligned_historical = {
+	name = "Republic Aligned Canonical Plan"
+	desc = ""
+
+	enable = {
+		OR = {
+			tag = KUA
+			tag = ALD
+			tag = CLA
+			tag = REN
+			tag = DUR
+			tag = ABR
+			tag = MAL
+			tag = CHR
+			tag = PAN
+			tag = BOT
+			tag = KYK
+			tag = CAR
+			tag = ITH
+			tag = TAR
+			tag = RYL
+			tag = CAL
+			tag = BES
+			tag = NAB
+			tag = GUN
+			tag = THY
+			tag = KAM
+			tag = ROT
+		}
+		is_historical_focus_on = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		GEN_galactic_politics
+		GEN_stability_amongs_a_dying_republic
+		GEN_total_loyalty_to_the_republic
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 2.0
+		support_tech = 6.5
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	weight = {
+		factor = 10.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+

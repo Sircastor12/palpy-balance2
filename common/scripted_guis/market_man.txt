@@ -1,0 +1,40 @@
+scripted_gui = {
+	market_man = {
+		context_type = player_context
+		parent_window_name = "market_full_container"
+		window_name = "market_man_container" 
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			check_variable = { show_man_market > 0.0 }
+		}
+		
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_market }
+				set_variable = { show_market = show } 
+			}
+			return_button_click = {
+				set_temp_variable = { show_man = 1 }
+				subtract_from_temp_variable = { show_man = show_man_market }
+				set_variable = { show_man_market = show_man }
+			}
+			balutar_place_order_click = {
+				purchase_balutar = yes
+			}
+			komrk_place_order_click = {
+				purchase_komrk = yes
+			}
+			buirkalor_place_order_click = {
+				purchase_buirkalor = yes
+			}
+			fang_place_order_click = {
+				purchase_fang = yes
+			}
+		}
+	}
+}

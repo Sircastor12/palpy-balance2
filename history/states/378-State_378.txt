@@ -1,0 +1,41 @@
+state={
+	id=378
+	name="STATE_378"
+	provinces={
+		228 528 2703 2924 3552 3690 4240 4342 4803 9734 9737 9755 9759 9771 9772 9793 9794 9797 9811 9826 
+	}
+	manpower=64285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=3
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TET
+		add_core_of = TET
+
+		buildings = {
+			infrastructure=2
+			arms_factory=0
+			industrial_complex=0
+			dockyard=0
+			air_base=0
+
+			9771 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

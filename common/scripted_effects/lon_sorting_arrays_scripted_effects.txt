@@ -1,0 +1,28 @@
+sort_array_high_to_low_league_of_nations_possible_voting_targets_array = {
+	for_loop_effect = {
+		start = 1
+		end = league_of_nations_possible_voting_targets_array^num
+		value = v
+		set_temp_variable = { var = j value = v }
+		set_temp_variable = { var = j_minus value = j }
+		subtract_from_temp_variable = { var = j_minus value = 1 }
+		while_loop_effect = {
+			limit = {
+				var:league_of_nations_possible_voting_targets_array^j_minus = {
+					set_temp_variable = { j_minus_threat = league_of_nations_generated_threat }
+				}
+				var:league_of_nations_possible_voting_targets_array^j = {
+					set_temp_variable = { j_threat = league_of_nations_generated_threat }
+				}
+				check_variable = { j > 0 }
+				check_variable = { j_minus_threat < j_threat }
+			}
+			# swap j-1 with j if value of j-1 < j
+			set_temp_variable = { var = temp value = league_of_nations_possible_voting_targets_array^j }
+			set_variable = { var = league_of_nations_possible_voting_targets_array^j value = league_of_nations_possible_voting_targets_array^j_minus }
+			set_variable = { var = league_of_nations_possible_voting_targets_array^j_minus value = temp }
+			subtract_from_temp_variable = { var = j value = 1 }
+			subtract_from_temp_variable = { var = j_minus value = 1 }
+		}
+	}
+}

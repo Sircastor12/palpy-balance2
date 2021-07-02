@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+		gundark = {
+			
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+				modifier = {
+					war_support_weekly = 0.01
+				}
+			}
+		blockade_trandosha	= {
+			
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+					modifier = {
+					consumer_goods_factor = -0.05
+					trade_opinion_factor = 0.5
+					}
+				}
+		KYK_Peaceful_Giants	= {
+			
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+					modifier = {
+					conscription_factor = -0.9
+					}
+				}
+		Unleashed_Madclaws	= {
+			
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+					
+					modifier = {
+					trade_opinion_factor = -0.5
+					offence = 0.15
+					
+					}
+				}
+			KYK_Tax_TradeFed	= {
+			
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+					
+				}
+			
+			
+			Wisdom_Before_Power	= {
+			
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+					modifier = {
+					
+					defence = 0.15
+					
+					}
+				}
+			
+			JediLoyalty = {
+			allowed = {
+				always = no
+                original_tag = KYK
+				}
+					modifier = {
+					
+					defence = 0.10
+					offence = 0.10
+					trade_opinion_factor = 0.5
+					}
+				}
+				HuntingMilitia = {
+					allowed = {
+						always = no
+						original_tag = KYK
+						}
+							modifier = {
+					
+							experience_loss_factor = -0.3
+					}
+				}
+				BerserkersGuild = {
+					allowed = {
+						always = no
+						original_tag = KYK
+						}
+							modifier = {
+				special_forces_min = 40 }
+		}
+	
+	}

@@ -1,0 +1,157 @@
+ideas = {
+    #############
+    country = {
+        royal_archivists = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        old_building_techniques = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        zygerria_empire = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                justify_war_goal_time = -0.25
+            }
+        }
+        slavery_hub = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+            }
+        }
+        zygerrian_lang = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                political_power_gain = 0.5
+            }
+        }
+        POW = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                weekly_manpower = 2000
+            }
+        }
+        strength_intelligence = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                army_org_factor = 0.08
+                research_speed_factor = 0.04
+
+            }
+        }
+        slaves_of_kyros = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.05
+
+            }
+        }
+    }
+    political_advisor = { 
+        atai_molec = {
+            allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+                stability_factor = 0.10
+                war_support_weekly = 0.01
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+        }
+    }
+}

@@ -1,0 +1,41 @@
+state={
+	id=191
+	name="STATE_191"
+	provinces={
+		2014 2574 3543 3580 3787 3885 4211 6774 6795 6798 6804 6821 6845 6846 6864 6869 6881 6883 6903 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=0
+		chromium=2
+	}
+
+  	history = {
+		owner=CAL
+		add_core_of = CAL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=3
+			air_base=0
+
+			6774 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

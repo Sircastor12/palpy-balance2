@@ -1,0 +1,42 @@
+state={
+	id=15
+	name="STATE_15"
+	provinces={
+		718 936 1386 2208 3124 4992 6156 6157 6161 6176 6182 6202 6211 6217 6223 6226 6240 6246 
+	}
+	manpower=570000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+	
+	resources={
+		steel = 14
+		aluminium = 2
+		rubber = 0
+		tungsten = 3
+		oil = 0
+		chromium = 3
+	}
+
+  	history = {
+		owner = MAN
+		add_core_of = DEA
+		add_core_of = MAN
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

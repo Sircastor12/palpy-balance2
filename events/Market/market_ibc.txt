@@ -1,0 +1,46 @@
+add_namespace = market_ibc
+
+country_event = { #
+	id = market_ibc.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ibc.1"}
+	title = market_ibc.1.t
+	desc = market_ibc.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ibc.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ibc.1.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_ibc.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ibc.2"}
+	title = market_ibc.2.t
+	desc = market_ibc.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ibc.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ibc.2.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+

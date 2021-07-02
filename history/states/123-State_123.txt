@@ -1,0 +1,41 @@
+state={
+	id=123
+	name="STATE_123"
+	provinces={
+		218 760 1506 1844 2865 3652 4425 4726 5766 5767 5783 5789 5798 5800 5801 5814 5832 5837 5841 5845 5851 
+	}
+	manpower=85000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=4
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=DAT
+		add_core_of = DAT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			1506 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			5832 30
+		}
+	}
+}
+

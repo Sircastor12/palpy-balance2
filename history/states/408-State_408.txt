@@ -1,0 +1,41 @@
+state={
+	id=408
+	name="STATE_408"
+	provinces={
+		82 216 1135 1380 1553 1571 1602 1864 2123 2198 2438 2672 2812 2893 3259 4288 4852 10162 10178 10179 10194 10197 10204 10205 10206 10211 10215 10218 10219 10222 10224 10227 10229 10231 10237 10242 10244 10247 10249 10252 10253 10257 10259 
+	}
+	manpower=850000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=14
+		chromium=0
+	}
+
+  	history = {
+		owner=BES
+		add_core_of = BES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

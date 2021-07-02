@@ -1,0 +1,44 @@
+############################
+## Mandalore Black Market Crisis Event Chain
+############################
+
+
+add_namespace = DCI
+
+
+
+news_event = { 
+	id = DCI.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.1"}
+	title =  "Support from the CIS"
+	desc =  "The CIS are offering us support in our fight against Mandalore. However the question of how much we should accept is important. If we take too much support we may be seen as weak"
+	picture = GFX_DC1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name =  "Request Weapons" 
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment
+    		amount = 4000
+    		producer = CIS
+		}
+		add_timed_idea = {
+			days = 730
+			idea = DEA_dealing_with_the_cis
+		}
+	}
+	option = { 
+		name =  "Request Funds"
+		add_to_variable = { dx = 60 }
+		custom_effect_tooltip = DWI_gift_custom2
+		add_timed_idea = {
+			days = 730
+			idea = DEA_dealing_with_the_cis
+		}
+		add_stability = -0.1
+	}
+	option = { 
+		name =  "Change your mind and go ahead alone."
+	}
+}

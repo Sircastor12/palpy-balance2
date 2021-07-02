@@ -1,0 +1,541 @@
+ideas = {
+    country = {
+        
+        DWI_battle_for_mandalore_ideas1 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.05
+			}
+        }
+        DWI_battle_for_mandalore_ideas2 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.15
+			}
+        }
+        DWI_war_torn_economy_ideas1 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                production_speed_buildings_factor = -0.3
+                consumer_goods_factor = 0.1
+                war_support_factor = -0.1
+                stability_factor = -0.1
+            }
+        }
+        DWI_war_torn_economy_ideas2 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                production_speed_buildings_factor = -0.15
+                consumer_goods_factor = 0.05
+                war_support_factor = -0.1
+                stability_factor = -0.1
+            }
+        }
+        DWI_war_fueled_economy_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                consumer_goods_factor = -0.05
+            }
+        }
+############################################### Sleeping Nation Idea Chain        
+        DWI_dormant_nation_ideas1 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.7
+                army_morale_factor = -0.2
+                conscription_factor = -0.5
+                war_support_factor = -0.6
+                stability_factor = -0.6
+            }
+        }
+        DWI_dormant_nation_ideas2 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.5     #+0.2
+                army_morale_factor = -0.2
+                conscription_factor = -0.4      #+0.1
+                war_support_factor = -0.5       #+0.1
+                stability_factor = -0.5         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas3 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.2     #+0.3
+                army_morale_factor = -0.2
+                conscription_factor = -0.4  
+                war_support_factor = -0.5
+                stability_factor = -0.4         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas4 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.5
+                army_morale_factor = -0.1       #+0.1
+                conscription_factor = -0.2      #+0.2
+                war_support_factor = -0.5
+                stability_factor = -0.4         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas5 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.5
+                army_morale_factor = -0.2
+                conscription_factor = -0.4
+                war_support_factor = -0.2       #+0.3
+                stability_factor = -0.4         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas6 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.2     #+0.3
+                army_morale_factor = -0.1
+                conscription_factor = -0.2  
+                war_support_factor = -0.5
+                stability_factor = -0.3         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas7 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.2     #+0.3
+                army_morale_factor = -0.2
+                conscription_factor = -0.4  
+                war_support_factor = -0.2
+                stability_factor = -0.3         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas8 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.5
+                army_morale_factor = -0.1       #+0.1
+                conscription_factor = -0.2      #+0.2
+                war_support_factor = -0.2
+                stability_factor = -0.3         #+0.1
+            }
+        }
+        DWI_dormant_nation_ideas9 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                political_power_gain = -0.2
+                army_morale_factor = -0.1
+                conscription_factor = -0.2
+                war_support_factor = -0.2
+                stability_factor = -0.2
+            }
+        }
+        DWI_sleepless_nation_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                conscription_factor = -0.15
+                war_support_factor = 0.1
+                stability_factor = -0.1
+            }
+        }
+################################################################
+        DWI_mandalorian_people_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                conscription_factor = 0.1
+                war_support_factor = 0.1
+            }
+        }
+        DWI_industrial_militrization_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                conversion_cost_civ_to_mil_factor = -0.35
+            }
+        }
+        DWI_citadel_works_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                production_speed_bunker_factor = 0.25
+                production_speed_coastal_bunker_factor = 0.2
+            }
+        }
+        DWI_mandalorian_empire_ideas1 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                war_support_factor = 0.1
+                stability_factor = -0.1
+            }
+        }
+        DWI_mandalorian_empire_ideas2 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_org_factor = 0.05
+                war_support_factor = 0.1
+                stability_factor = -0.1
+            }
+        }
+        DWI_mandalorian_empire_ideas3 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_morale_factor = 0.1
+                war_support_factor = 0.1
+                stability_factor = -0.1
+            }
+        }
+        DWI_ultimate_warrior = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_attack_factor = 0.2
+                army_defence_factor = 0.15
+                conscription_factor = -0.2
+            }
+        }
+        DWI_mandalorian_academy_ideas1 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_leader_start_attack_level = 1
+                experience_gain_army_factor = 0.1
+            }
+        }
+        DWI_mandalorian_academy_ideas2 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_leader_start_attack_level = 1
+                experience_gain_army_factor = 0.1
+                land_reinforce_rate = 0.05
+            }
+        }
+        DWI_mandalorian_academy_ideas3 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_leader_start_attack_level = 1
+                experience_gain_army_factor = 0.1
+                org_loss_when_moving = -0.1
+            }
+        }
+        DWI_strike_the_east_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            targeted_modifier = {
+				tag = CIS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+        }
+        DWI_exploit_the_north_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            targeted_modifier = {
+				tag = REP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+        }
+        DWI_rallying_support_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				war_support_weekly = 0.0025
+			}
+        }
+        DWI_cloaking_devices_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				#Error navy_visibility = -0.1
+			}
+        }
+        DWI_beskar_hull_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				navy_capital_ship_defence_factor = 0.1
+			}
+        }
+        DWI_automated_parts_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+        }
+        DWI_this_is_the_way_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				compliance_gain = 0.05
+                non_core_manpower = 0.1
+			}
+        }
+        DWI_mass_armaments_production_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.1
+			}
+        }
+        DWI_greatest_gal_army_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+				conscription_factor = 0.2
+			}
+        }
+        DWI_fastpaced_warfare_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                army_speed_factor = 0.1
+            }
+        }
+        DWI_mando_armor_ideas = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            equipment_bonus = {
+				man_durasteel_equipment_0 = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+                man_beskar_equipment_0 = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+            modifier = {
+            }
+        }
+        DWI_mandalorian_crusade_ideas1 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                justify_war_goal_time = -0.2
+            }
+        }
+        DWI_mandalorian_crusade_ideas2 = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = trade_tax
+            modifier = {
+                justify_war_goal_time = -0.5
+            }
+        }
+    }
+
+######################## Military Advisors ##############################
+    air_chief  = {
+	    DWI_fighter_staff = {
+          cost = 150
+		    allowed = {
+	    		original_tag = DEA
+	    	}
+	    	available = {
+		    	has_completed_focus = DWI_fighter_advisor
+	    	}
+	    	traits = { air_air_combat_training_2 }
+	    	ai_will_do = {
+	    		factor = 0.5
+	    		}
+	    	}
+        DWI_bomber_staff = {
+            cost = 150
+		    allowed = {
+			    original_tag = DEA
+	    	}
+	    	available = {
+	    		has_completed_focus = DWI_bomber_advisor
+	    	}
+	    	traits = { air_chief_ground_support_2 }
+	    	ai_will_do = {
+	    		factor = 0.5
+	    	}
+	    }
+	}
+    naval_manufacturer = {
+        designer = yes
+		DWI_battleship_manufacturer = {
+            cost = 150
+            available = {
+                has_completed_focus = DWI_beskar_hull_plating
+            }
+			allowed = {
+				original_TAG = DEA
+			}			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { battlefleet_designer }
+		}
+        DWI_visibility_manufacturer = {
+            cost = 150
+            available = {
+                has_completed_focus = DWI_beskar_hull_plating
+            }
+			allowed = {
+				original_TAG = DEA
+			}			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+    }
+    high_command = {
+		DWI_close_airsp_staff = {
+            cost = 150
+			ledger = air
+			allowed = {
+				original_tag = DEA
+			}
+			available = {
+				has_completed_focus = DWI_unrelenting_attack
+			}
+			traits = { air_close_air_support_3 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+}
+

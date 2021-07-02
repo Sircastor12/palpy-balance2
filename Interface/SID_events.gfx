@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_CIS_mob"
+		texturefile = "gfx/event_pictures/Sidious/cis_mob.tga"
+	}
+	spriteType = {
+		name = "GFX_event_christophsis"
+		texturefile = "gfx/event_pictures/Sidious/christophsis.tga"
+	}
+}

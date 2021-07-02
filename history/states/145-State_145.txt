@@ -1,0 +1,41 @@
+state={
+	id=145
+	name="STATE_145"
+	provinces={
+		119 121 316 874 1105 1472 1539 2204 2608 3147 3268 6081 6087 6095 6096 6100 6101 6103 6112 6125 6127 6137 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=4
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,40 @@
+state={
+	id=226
+	name="STATE_226"
+	provinces={
+		174 587 736 1279 1774 1860 1959 2962 3247 3348 4287 4820 5025 7254 7264 7272 7278 7280 7284 7292 7293 7319 7327 7354 7365 7369 7387 7390 7396 7397 7419 7426 7457 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=1
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=OND
+		add_core_of = OND
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			7390 50
+		}
+	}
+}
+

@@ -1,0 +1,486 @@
+scripted_gui = {
+
+	corporate_screen = {
+		context_type = player_context
+
+		window_name = "corporate_window"
+		parent_window_name = countrypoliticsview
+		visible = {
+			is_market_corporation = yes
+			NOT = {
+				has_country_flag = not_corp
+			}
+		}
+
+		effects = {
+			geonosis_click = {
+				open_corpo_info = yes
+				set_country_flag = geonosis_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			aratech_click = {
+				open_corpo_info = yes
+				set_country_flag = aratech_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+			}
+			blastech_click = {
+				open_corpo_info = yes
+				set_country_flag = blastech_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			chiewab_click = {
+				open_corpo_info = yes
+				set_country_flag = chiewab_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			colicoid_click = {
+				open_corpo_info = yes
+				set_country_flag = colicoid_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			corellian_click = {
+				open_corpo_info = yes
+				set_country_flag = corellian_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			corporate_click = {
+				open_corpo_info = yes
+				set_country_flag = corporate_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			czerka_click = {
+				open_corpo_info = yes
+				set_country_flag = czerka_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			free_dac_click = {
+				open_corpo_info = yes
+				set_country_flag = free_dac_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			haor_click = {
+				open_corpo_info = yes
+				set_country_flag = haor_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			hoersch_click = {
+				open_corpo_info = yes
+				set_country_flag = hoersch_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			industrial_auto_click = {
+				open_corpo_info = yes
+				set_country_flag = industrial_auto_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			leisuremech_click = {
+				open_corpo_info = yes
+				set_country_flag = leisuremech_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			mandal_click = {
+				open_corpo_info = yes
+				set_country_flag = mandal_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			mining_guild_click = {
+				open_corpo_info = yes
+				set_country_flag = mining_guild_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			slaynandkorpil_click = {
+				open_corpo_info = yes
+				set_country_flag = slaynandkorpil_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag =	medium_company_open
+				
+			}
+			rendili_click = {
+				open_corpo_info = yes
+				set_country_flag = rendili_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			incom_click = {
+				open_corpo_info = yes
+				set_country_flag = incom_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			sienar_click = {
+				open_corpo_info = yes
+				set_country_flag = sienar_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			sorosuub_click = {
+				open_corpo_info = yes
+				set_country_flag = sorosuub_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			taimandbak_click = {
+				open_corpo_info = yes
+				set_country_flag = taimandbak_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			tagge_click = {
+				open_corpo_info = yes
+				set_country_flag = tagge_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			trans_click = {
+				open_corpo_info = yes
+				set_country_flag = trans_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			ubril_click = {
+				open_corpo_info = yes
+				set_country_flag = ubril_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			xucphra_click = {
+				open_corpo_info = yes
+				set_country_flag = xucphra_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+		}
+		dynamic_lists = {
+			subsidiary_grid = {
+				array = subsidiary_array
+				entry_container = subsidiary_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			subsidiary = { image = "[Getsubsidiary]" }
+		}
+	}
+	corpo_other_screen = {
+		context_type = player_context
+
+		window_name = "corpo_other_screen"
+		parent_window_name = countrypoliticsview
+		visible = {
+			has_country_flag = corpo_info_open
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = corpo_info_open
+			}
+			buy_1_share_click = {
+				set_country_flag = p_1_share
+				clr_country_flag = p_5_share
+				clr_country_flag = p_10_share
+			}
+			buy_5_shares_click = {
+				clr_country_flag = p_1_share
+				set_country_flag = p_5_share
+				clr_country_flag = p_10_share
+			}
+			buy_10_shares_click = {
+				clr_country_flag = p_1_share
+				clr_country_flag = p_5_share
+				set_country_flag = p_10_share
+			}
+			buy_shares_click = {
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								has_country_flag = p_1_share
+							}
+							add_to_variable = { shares_held_[Getcompanyname] = 1 }
+							add_to_variable = { global.total_shares_[Getcompanyname] = 1 }
+							ROOT = {
+								subtract_from_variable = { dx = global.share_price_[Getcompanyname] }
+							}
+						}
+						if = {
+							limit = {
+								has_country_flag = p_5_share
+								}
+								add_to_variable = { shares_held_[Getcompanyname] = 5 }
+								add_to_variable = { global.total_shares_[Getcompanyname] = 5 }
+								ROOT = {
+									set_temp_variable = { 5_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 5_share_price = 5 }
+									subtract_from_variable = { dx = 5_share_price }
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								add_to_variable = { shares_held_[Getcompanyname] = 10 }
+								add_to_variable = { global.total_shares_[Getcompanyname] = 10 }
+								ROOT = {
+									set_temp_variable = { 10_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 10_share_price = 10 }
+									subtract_from_variable = { dx = 10_share_price }
+								}
+							}
+						}
+					Getcompanyname = "[Getcompanyname]"
+				}
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+			buyout_click = {
+				meta_effect = {
+					text = {
+					ROOT = {
+						subtract_from_variable = { dx = buyout_[Getcompanyname] }
+						set_country_flag = [Getcompanyname]_subsidiary
+					}
+					set_variable = { global.[Getcompanyname]_majority = THIS.id }
+					add_to_array = {
+						array = subsidiary_array
+						value = [Getcompanyvalue]
+					}
+				}
+				Getcompanyname = "[Getcompanyname]"
+				Getcompanyvalue = "[Getcompanyvalue]"
+
+				}
+				list_for_influencers_or_whatever = yes
+			}
+			sell_shares_click = {
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								has_country_flag = p_1_share
+							}
+							subtract_from_variable = { shares_held_[Getcompanyname] = 1 }
+							subtract_from_variable = { global.total_shares_[Getcompanyname] = 1 }
+							ROOT = {
+								add_to_variable = { dx = global.share_price_[Getcompanyname] }
+							}
+						}
+						if = {
+							limit = {
+								has_country_flag = p_5_share
+								}
+								subtract_from_variable = { shares_held_[Getcompanyname] = 5 }
+								subtract_from_variable = { global.total_shares_[Getcompanyname] = 5 }
+								ROOT = {
+									set_temp_variable = { 5_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 5_share_price = 5 }
+									add_to_variable = { dx = 5_share_price }
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								subtract_from_variable = { shares_held_[Getcompanyname] = 10 }
+								subtract_from_variable = { global.total_shares_[Getcompanyname] = 10 }
+								ROOT = {
+									set_temp_variable = { 10_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 10_share_price = 10 }
+									add_to_variable = { dx = 10_share_price }
+								}
+							}
+						}
+			Getcompanyname = "[Getcompanyname]"
+			}
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+			purchased_company_click = {
+
+			}
+		}
+		properties = {
+			selected_company = { image = "[Getselectedcorp]" }
+			purchased_company = { image = "[?corporation_majority:GetFlag]"}
+		}
+
+		triggers = {
+			buy_1_share_click_enabled = {
+				NOT = {
+					has_country_flag = p_1_share
+				}
+			}
+			buy_5_shares_click_enabled = {
+				NOT = {
+					has_country_flag = p_5_share
+				}
+			}
+			buy_10_shares_click_enabled = {
+				NOT = {
+					has_country_flag = p_10_share
+				}
+			}
+
+			purchased_company_visible = {
+				meta_trigger = {
+					text = {
+							any_country = {
+								has_country_flag = [Getcompanyname]_subsidiary
+							}
+						}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			corpo_owned_visible = {
+				meta_trigger = {
+					text = {
+							any_country = {
+								has_country_flag = [Getcompanyname]_subsidiary
+							}
+						}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			buy_shares_click_enabled = {
+				meta_trigger = {
+					text = {
+						NOT = {
+							any_country = {
+									has_country_flag = [Getcompanyname]_subsidiary
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_1_share
+								}
+								check_variable = { dx > share_price_[Getcompanyname] }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_5_share
+								}
+								set_temp_variable = { 5_share_price_check = global.share_price_[Getcompanyname] }
+								multiply_temp_variable = { 5_share_price_check = 5 }
+								check_variable = { dx > 5_share_price_check }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								set_temp_variable = { 10_share_price_check = global.share_price_[Getcompanyname] }
+								multiply_temp_variable = { 10_share_price_check = 10 }
+								check_variable = { dx > 10_share_price_check }
+							}
+					}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			buyout_click_enabled = {
+				meta_trigger = {
+					text = {
+						check_variable = { shares_held_percent_[Getcompanyname] > 50 }
+					NOT = {
+						any_country = {
+								has_country_flag = [Getcompanyname]_subsidiary
+							}
+						}
+						check_variable = { dx > buyout_[Getcompanyname] }
+					}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			sell_shares_click_enabled = {
+				meta_trigger = {
+					text = {
+						NOT = {
+							any_country = {
+									has_global_flag = [Getcompanyname]_subsidiary
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_1_share
+								}
+								check_variable = { 0 < shares_held_[Getcompanyname] }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_5_share
+								}
+								check_variable = { 4 < shares_held_[Getcompanyname] }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								check_variable = { 9 < shares_held_[Getcompanyname] }
+							}
+					}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+		}
+	}
+}

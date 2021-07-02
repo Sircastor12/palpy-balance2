@@ -1,0 +1,41 @@
+state={
+	id=65
+	name="STATE_65"
+	provinces={
+		478 483 2746 2875 2917 3524 3730 10664 10668 10671 10675 10679 10689 10692 10700 10708 
+	}
+	manpower=3400000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CHR
+		add_core_of = CHR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			10671 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			10689 30
+		}
+	}
+}
+

@@ -1,0 +1,55 @@
+capital = 473
+
+oob = "PAN_3677"
+set_research_slots = 2
+set_stability = 0.80
+set_war_support = 0.10
+
+set_technology = {
+	transport = 1
+	tech_support = 1
+	infantry_weapons = 1
+	militia_Pantora = 1
+}
+
+add_political_power = 0
+set_convoys = 0
+
+add_ideas = {
+	REP_member_prewar
+	volunteer_only 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 65
+		neutrality = 35
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 65
+		neutrality = 35
+	}
+}
+
+create_country_leader = {
+	name = "Chi Cho"
+	desc = "The Chairman of Pantora"
+	picture = "gfx/leaders/PAN/chicho.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}

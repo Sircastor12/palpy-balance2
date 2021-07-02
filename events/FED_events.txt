@@ -1,0 +1,549 @@
+add_namespace = FED
+news_event = {
+	id = FED.1 #Dorvalla Incident
+	title = "Doravalla Incident"
+	desc = "Trade Federation operatives in the Dorvalla system have successfully staged an attack on one of our Aurodium shipments. Our top political minds suggest that this will force the Republic senate to consider relaxing restrictions put in place by the Russan reformation."
+	picture = GFX_dorvalla
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	major = yes
+
+	trigger = { 
+	     tag = FED
+	     has_war = no
+         has_global_flag = dorvallaincident 
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+	}
+	
+        option = {
+		   name = "The Republic Senate will be forced to respond!"
+		   set_global_flag = dorvallacincidenttriggered
+		   trigger = { TAG = FED }
+	    }
+}
+
+#Eriadu summit soon
+news_event = {
+	id = FED.2 #Eriadu summit soon
+	title = "Eriadu Trade Summit"
+	desc = "The galaxy prepares for the upcoming trade summit on the planet Eriadu."
+	picture = GFX_eriadusummitsoon
+
+	fire_only_once = yes
+	trigger = {
+		tag = FED
+		FED = {
+			focus_progress = { 
+				focus = FED_eriadu_trade_summit 
+				progress > 0.40 
+				} 
+			}
+		}
+	
+	option = {
+		name = "We are hopeful."
+	}
+}
+
+#Refused Trade Summit
+news_event = {
+	id = FED.3 
+	title = "Eriadu Trade Summit"
+	desc = "The Trade Summit has ended in disaster. The majority of the Trade Federation Directorate has been assassinated by a terrorist group known as the Nebula Front. No consensus has been reached regarding the taxation of trade routes."
+	picture = GFX_eriadusummit
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "How dare they?!"
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Nute Gunray"
+				desc = "Viceroy of the Trade Federation"
+				picture = "gfx/leaders/FED/NuteGunray.dds"
+				expire = "2020.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_stability = -.25
+			add_threat = 5
+	}
+	
+}
+
+#anti piracy
+news_event = {
+	id = FED.4
+	title = "Trade Ships Under Attack!"
+	desc = "Our unarmed trade ships continue to come under attack. Pirates are raiding and destroying our precious cargo. We must do something to stop this."
+	picture = GFX_dorvalla
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "This is unacceptable."
+		trigger = {
+			tag = FED
+		}
+		hidden_effect = {
+		add_equipment_to_stockpile = {
+    		type = convoy_1
+    		amount = -486
+    		producer = FED
+		}
+		}
+		custom_effect_tooltip = fed_money_loss_pirate
+		add_to_variable = { var = dx value =  -10 }
+	}
+}
+
+#Contact from the sith
+news_event = {
+	id = FED.5 #Contact from the sith
+	title = "Incoming transmission from Lord Sidious"
+	desc = "The Sith Lord Darth Sidious has contacted the Trade Federation in search of an ally. He has offered to send his new apprentice, Darth Maul, to assist us in the removal of the pirates plauging our mining facilities in the Kellux system."
+	picture = GFX_sith
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Of Course!"
+		country_event= {
+			id = FED.6
+		}
+	}
+	
+	option = {
+		name = "We dont need their help."
+		add_stability = 0.1
+	}
+}
+
+#Maul Helps FED
+news_event = {
+	id = FED.6 
+	title = "Darth Maul's Assistance"
+	desc = "Darth Maul arrived in time to destroy a squadron of orb-wings and board the captured Federation battleship over Kellux. He fought and killed the pirates, however, we are told that the ship's crew was killed during the pirate assault."
+	picture = GFX_maulpirate
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = "Pirtate erraidcation, at a cost."
+		trigger = {
+			tag = FED
+		}
+		add_manpower = -574
+		remove_ideas = {
+		pirate_raids
+		}
+	}
+}
+
+news_event = {
+	id = FED.7
+	title = "Prop 31-814D"
+	desc = "The Republic has passed a law enabling the taxation of the Free Trade Zones. This will negatively affect our profit across the galaxy."
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "They will pay! So we dont have to..."
+		set_country_flag = fed_tax
+		custom_effect_tooltip = fed_trade_tax_dsc
+	}
+}
+
+news_event = {
+	id = FED.8
+	title = "Senate Support?"
+	desc = "The bureaucracy of the republic is long and tedious, to ammass suport in the senate we need to find strong allies to support us to vote agiasnt this bill."
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Moving fowards"
+	}
+}
+
+news_event = {
+	id = FED.9
+	title = "Senate Repeal"
+	desc = "With our recent push in the senate to repeal the unjust taxes put on us we have defeated the giant of the establisment, we have successfully pushed back the peoposition."
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Finally..."
+		clr_country_flag = fed_tax
+		custom_effect_tooltip = fed_trade_tax_gone_dsc
+	}
+}
+
+news_event = {
+	id = FED.10
+	title = "Trade Federation Push Ruusan Repeal"
+	desc = "The Trade Federation has come to the senate to request the removal of the Ruusan Reformation."
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Approve the request."
+		set_global_flag = ruusan_fed_gone
+		FED = {
+			remove_ideas = {
+				ruusan_nerf_nav
+				ruusan_nerf_army
+			}
+		}
+	}
+	option = {
+		name = "Deny the request."
+		ai_chance = {
+			factor = 200
+		}
+	}
+}
+
+news_event = {
+	id = FED.11
+	title = "Appeal Ruusan Repeal"
+	desc = "T"
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Desperate Measures."
+		FED = {
+			remove_ideas = {
+				ruusan_nerf_nav
+				ruusan_nerf_army
+			}
+		}
+		add_to_variable = { var = dx value =  -12 }
+		custom_effect_tooltip = fed_lobby_money
+	}
+}
+
+news_event = {
+	id = FED.23
+	title = "Trade Federation offers Protection to Corellia"
+	desc = "We have offered to receive payments to protect free trade across the galaxy."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We Accept With Open Arms!"
+		FED = {
+				add_to_variable = { var = dx value =  5 }
+			}
+		CLA = {
+				add_to_variable = { var = dx value =  -5 }
+			}
+	}
+	option = {
+		name = "Never"
+		CLA = {
+		add_stability = .05
+		}
+	}
+}
+
+news_event = {
+	id = FED.24
+	title = "Trade Federation offers Protection to Mimban"
+	desc = "We have offered to receive payments to protect free trade across the galaxy."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We Accept With Open Arms!"
+		FED = {
+				add_to_variable = { var = dx value =  1 }
+		}
+		MIM = {
+				add_to_variable = { var = dx value =  -1 }
+		}
+	}
+	option = {
+		name = "Never"
+		MIM = {
+		add_stability = .05
+		}
+	}
+}
+#new
+###### 
+#old
+
+
+
+#Protection at a cost
+country_event = {
+	id = FED.25
+	title = "Trade Federation Trade Protection"
+	desc = "The Trade Federation has offered to protect our trade convoys at a cost."
+	picture = GFX_news_event_002
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_global_flag = freeprotect
+	}
+	
+	option = {
+		name = "Accept the offer."
+		trigger = {
+			NOT = {
+				TAG = FED
+			}
+		}
+		ROOT = {
+				add_equipment_to_stockpile = {
+   					type = convoy_1
+ 					amount = 250
+   					producer = ROOT
+   					}
+				}
+		FED = {
+			add_ideas = protection
+		}
+	}
+	option = {
+		name = "Deny the Offer."
+		trigger = {
+			NOT = {
+				TAG = FED
+			}
+		}
+	}
+}
+#FED joins the Galactic Corporate League xxxxCANCELLEDxxxx
+country_event = {
+	id = FED.26
+	title = "The Trade Federation Joins the Galactic Corporate League"
+	desc = "The Trade Federation has joined the Galactic Corporate League to increase profits."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Interesting."
+	}
+}
+
+#FED requests tech lab access
+country_event = {
+	id = FED.27
+	title = "The Trade Federation Has Requested Lab Access."
+	desc = "The Trade Federation has requested that we give them access to some of our research labs."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Provide the Trade Federation with tech lab access."
+		ai_chance = {
+			base = 100
+    		modifier = {
+    			TEC = {
+    				has_war_with = FED
+    			} 
+    			factor = 0
+    		}
+		}
+		trigger = {
+			TAG = TEC
+		}
+		FED = {
+			add_research_slot = 1
+			country_event = {
+				id = FED.28
+			}
+		}
+	}
+	option = {
+		name = "We are uninterested."
+		trigger = {
+			TAG = TEC
+		}
+		FED = {
+			country_event = {
+				id = FED.29
+			}
+		}
+	}
+}
+#Lab access granted
+country_event = {
+	id = FED.28
+	title = "Lab Access Granted"
+	desc = "The Techno Union has granted us access to some of their tech labs."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Perfect."
+		trigger = {
+			tag = FED
+		}
+	}
+}
+#Lab access denied
+country_event = {
+	id = FED.29
+	title = "Lab Access Denied"
+	desc = "The Techno Union has denied us access to their tech labs."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Very Unfortunate."
+		trigger = {
+			tag = FED
+		}
+	}
+}
+#Loan rec'd by other country
+country_event = {
+	id = FED.30
+	title = "Trade Federation Investment."
+	desc = "The Trade Federation has invested in our cause."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Their help is appreciated."
+		trigger = {
+			NOT = {
+				tag = FED
+			}
+		}
+		add_political_power = 20
+	}
+}
+#IBC receives for contact the IBC
+country_event = {
+	id = FED.31
+	title = "Trade Federation loan request."
+	desc = "The Trade Federation has shown interest in taking out a loan from the Intergalactic Banking Clan."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Great News."
+		trigger = {
+			NOT = {
+				tag = FED
+			}
+		}
+		add_political_power = 20
+	}
+}
+#Research labs operational
+country_event = {
+	id = FED.32
+	title = "Research Labs operational"
+	desc = "The Trade Federation's new research labs are now operational."
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Great News."
+		trigger = {
+			NOT = {
+				tag = FED
+			}
+		}
+		add_political_power = 20
+	}
+}
+
+#Republic ass response xxxxCANCELLEDxxxx
+country_event = {
+	id = FED.14
+	title = "Trade Federation diplomat killed by pirates!"
+	desc = "A Trade Federation diplomat has been killed by pirates. In the Senate, the Trade Federation diplomats are using this event to push their agenda of reforming the Ruusan Reformation to allow a growth in the size of their military."
+	picture = GFX_report_event_stalin_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "No action is necessary."
+		trigger = {
+			tag = REP
+		}
+		set_global_flag = pleadignored
+	}
+	option = {
+		name = "Sounds suspicious."
+		trigger = {
+			Tag = REP
+		}
+		add_opinion_modifier = {
+    		target = FED
+   			modifier = possible_plot
+   		}
+   		set_global_flag = pleadignored
+	}
+	option = {
+		name = "Reform is necessary to protect commerce."
+		trigger = {
+			tag = REP
+		}
+		REP = {
+			reverse_add_opinion_modifier = caring_government
+		}
+		FED = {
+			remove_ideas = {
+				ruusan_nerf_nav
+				ruusan_nerf_army
+			}
+		}
+	}
+}

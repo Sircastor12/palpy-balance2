@@ -1,0 +1,568 @@
+sub_units = {
+###destroyers
+	consular_unit = {
+		sprite = destroyer
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { consular_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	rep_frigate_unit = {
+		sprite = destroyer
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { republic_frigate_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	cr70_unit = {
+		sprite = destroyer
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { cr70_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	cr90_unit = {
+		sprite = destroyer
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { cr90_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+###Frigates
+	acclamator_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { acclamator_1_equipment = 1 }
+		
+		max_organisation = 40
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	acclamator_2_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { acclamator_2_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	arquintes_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { capital_ship }
+		need = { arquintes_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	dreadnaught_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { capital_ship }
+		need = { dreadnaught_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	pelta_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { capital_ship }
+		need = { pelta_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+###cruisers
+	venator_unit = {
+		sprite = venator
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { venator_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	victory_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { victory_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	stardestroyer_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { stardestroyer_equipment = 1 }
+		
+		supply_consumption = 0.7
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+###super capitals
+	mandator1_unit = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 9
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need_equipment = { mandator1_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.2
+		
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1 
+		
+		hit_profile_mult = 1.0
+	}
+	mandator_unit = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 9
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need_equipment = { mandator_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.2
+		
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1 
+		
+		hit_profile_mult = 1.0
+	}
+##################################CIS Ships########################################
+###destroyers
+	marauder_unit = {
+		sprite = destroyer
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		need = { marauder_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.01
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+###frigates
+	bulwark_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { bulwark_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	diamond_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = {
+			carrier
+			screen_ship
+		}
+		need = { diamond_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	munificent_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { munificent_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	recusant_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { recusant_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	saboath_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { saboath_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	tec_destroyer_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need = { tec_destroyer_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+###cruisers
+	cis_carrier_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { cis_carrier_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	lucrehulk_freighter_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { lucrehulk_freighter_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	lucrehulk_battleship_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { lucrehulk_battleship_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	providence_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { providence_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+###super capitals
+	subjugator_unit = {
+		sprite = battleship
+		map_icon_category = ship
+		priority = 9
+		active = yes
+		type = { 
+			capital_ship
+			carrier
+		}
+		need_equipment = { subjugator_equipment = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0.2
+		
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1 
+		
+		hit_profile_mult = 1.0
+	}
+##################CAL############################
+
+	mc75_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { mc75_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	
+	mc80_unit = {
+		sprite = carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { 
+			capital_ship
+			carrier 
+		}
+		need = { mc80_equipment = 1 }
+		
+		supply_consumption = 0.3
+		
+		max_organisation = 40
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	
+	mc25_unit = {
+		sprite = heavy_cruiser
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { capital_ship }
+		need = { mc25_equipment = 1 }
+		
+		max_organisation = 40
+
+		
+		supply_consumption = 0.1
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+}

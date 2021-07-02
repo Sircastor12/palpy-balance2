@@ -1,0 +1,36 @@
+ideas = {
+	country = {
+		CAL_capital_of_shipbuilding = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = unknown
+
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+                repair_speed_factor = 0.25
+			}
+		}
+
+        CAL_safe_haven = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = unknown
+
+			modifier = {
+				defensive_war_stability_factor = 0.5
+                stability_factor = 0.1
+                defence_bonus_against_cores = 0.2
+			}
+		}
+    }
+}

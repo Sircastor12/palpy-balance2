@@ -1,0 +1,1164 @@
+focus_tree = {
+	id = MAN
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAN
+		}
+	}
+	continuous_focus_position = { x = 50 y = 2050 }
+	#Focus for Beskar for Buildings
+	focus = {
+		id = Mandalore_beskar_for_buildings
+		icon = GFX_MAN_beskarbuildings
+		x = 33
+		y = 7
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_our_technology }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = MAN_idea_beskar_for_buildings
+		}
+	}
+
+	#Focus for Our Technology
+	focus = {
+		id = Mandalore_our_technology
+		icon = GFX_MAN_ourtech
+		x = 31
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = Pacifists
+		}
+			
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Start the Recovery
+	focus = {
+		id = Mandalore_start_the_recovery
+		icon = GFX_MAN_start
+		x = 16
+		y = 0
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 150
+	}
+}
+
+	#Focus for Rebuild our citys
+	focus = {
+		id = Mandalore_rebuild_our_citys
+		icon = GFX_MAN_rebuildcities
+		x = 11
+		y = 1
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_start_the_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = MAN_idea_recovering_from_the_civil_war
+	}
+}
+
+	#Focus for Population of Mandalore
+	focus = {
+		id = Mandalore_population_of_mandalore
+		icon = GFX_MAN_population
+		x = 16
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_start_the_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = MAN_idea_severe_depopulation
+		}
+	}
+
+
+	#Focus for Start Dealing with Poverty
+	focus = {
+		id = Mandalore_start_dealing_with_poverty
+		icon = GFX_MAN_poverty
+		x = 21
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_start_the_recovery }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = MAN_idea_poverty
+	}
+}
+	#Focus for The Rise of Satine 
+	focus = {
+		id = Mandalore_the_rise_of_satine
+		icon = GFX_MAN_riseofsatine
+		x = 16
+		y = 2
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_population_of_mandalore 
+		}
+		prerequisite = { 
+			focus = Mandalore_start_dealing_with_poverty 
+		}
+		prerequisite = { 
+			focus = Mandalore_rebuild_our_citys 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = -0.15
+			hidden_effect = {
+    			MAN = {
+       				set_country_flag = MAN_CIVIL_WAR
+    			}
+    			DEA = {
+        			set_country_flag = MAN_CIVIL_WAR
+   				}
+			}
+		}
+	}
+
+	#Focus for Bio Cube Citys
+	focus = {
+		id = Mandalore_bio_cube_citys
+		icon = GFX_MAN_cube
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_rise_of_satine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			167 = {
+			if = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Exile all of the Warriors?
+	focus = {
+		id = Mandalore_exile_all_of_the_warriors
+		icon = GFX_MAN_exilewarriors
+		x = 19
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_rise_of_satine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			news_event = {
+    			id = exi.1
+			}
+		}
+	}
+
+	#Focus for Declare Neutrality
+	focus = {
+		id = Mandalore_declare_neutrality
+		icon = GFX_MAN_declareneutrality
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_bio_cube_citys 
+		}
+		prerequisite = { 
+			focus = Mandalore_exile_all_of_the_warriors 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MAN_idea_declared_neutrality1
+	}
+}
+
+	#Focus for Approach the Republic
+	focus = {
+		id = Mandalore_approach_the_republic
+		icon = GFX_MAN_REP
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_declare_neutrality }
+		ai_will_do = {
+			factor = 1
+		}
+			Completion_reward = {
+				add_opinion_modifier = { target = REP modifier = medium_increase }
+	}
+}
+
+	#Focus for Approach the Separatists
+	focus = {
+		id = Mandalore_approach_the_separatists
+		icon = GFX_MAN_CIS
+		x = 19
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_declare_neutrality }
+		ai_will_do = {
+			factor = 1
+		}
+			Completion_reward = {
+				add_opinion_modifier = { target = REP modifier = medium_increase }
+	}
+	}
+
+	#Focus for Our Military Tradition
+	focus = {
+		id = Mandalore_our_military_tradition
+		icon = GFX_MAN_ourmilitary
+		x = 4
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_rise_of_satine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+				add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for The Black Market Conspiracy
+	focus = {
+		id = Mandalore_the_black_market_conspiracy
+		icon = GFX_MAN_blackmarket
+		x = 22
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_rise_of_satine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+    			id = bmc.1
+			}
+		}
+	}
+
+	#Focus for Pacificts
+	focus = {
+		id = Mandalore_pacificts
+		icon = GFX_MAN_pacifist_shine
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_our_military_tradition }
+		mutually_exclusive = { focus = Mandalore_this_is_the_way }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = -0.25
+			add_stability = 0.25
+			set_country_flag = Pacifists
+		}
+	}
+
+	#Focus for Double down on Industry
+	focus = {
+		id = Mandalore_double_down_on_industry
+		icon = GFX_MAN_goforindustrialisation
+		x = 0
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_pacificts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		167 = {
+			if = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			    }
+        	}
+		}
+	}
+}
+	#Focus for This is the way
+	focus = {
+		id = Mandalore_this_is_the_way
+		icon = GFX_MAN_thisistheway
+		x = 6
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_our_military_tradition }
+		mutually_exclusive = { focus = Mandalore_pacificts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = this_is_the_way
+			remove_ideas = MAN_idea_new_mandelorians
+			remove_ideas = ruusan_nerf_army
+			remove_ideas = ruusan_nerf_nav
+		}
+	}
+
+	#Focus for The way towards stability
+	focus = {
+		id = Mandalore_the_way_towards_stability
+		icon = GFX_MAN_stability
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_pacificts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = MAN_idea_stability
+		}
+	}
+
+	#Focus for Continue the Duskar Tradition
+	focus = {
+		id = Mandalore_continue_the_duskar_tradition
+		icon = GFX_MAN_continueduskar
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_this_is_the_way }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+				add_ideas =  MAN_idea_duskar_tradition
+	}
+}
+
+	#Focus for Anti Corruption Campaign
+	focus = {
+		id = Mandalore_anti_corruption_campaign
+		icon = GFX_MAN_anticorruption
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_the_black_market_conspiracy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+    			id = bmc.6
+		}
+	}
+}
+
+	#Focus for The Sundari Mines
+	focus = {
+		id = Mandalore_the_sundari_mines
+		icon = GFX_MAN_sundarimines
+		x = 25
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_mining_beskar }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = man_steel_mine_upgrade
+			custom_effect_tooltip =  MAN_tooltip_sundari_tt
+		}
+	}
+
+	#Focus for Treaties with the Republic
+	focus = {
+		id = Mandalore_treaties_with_the_republic
+		icon = GFX_MAN_REPtreaty
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_approach_the_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		diplomatic_relation = { 
+    		country = REP
+   			relation = non_aggression_pact 
+		}
+	}
+}
+
+	#Focus for Treaties with the Seperatists
+	focus = {
+		id = Mandalore_treaties_with_the_seperatists
+		icon = GFX_MAN_CIStreaty
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_approach_the_separatists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		diplomatic_relation = { 
+    		country = CIS
+   			relation = non_aggression_pact 
+		}
+	}
+}
+	#Focus for Continue Neutrality
+	focus = {
+		id = Mandalore_continue_neutrality
+		icon = GFX_MAN_pacifist
+		x = 16
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_treaties_with_the_republic 
+			focus = Mandalore_treaties_with_the_seperatists 
+			focus = Mandalore_establish_the_council_of_neutral_systems 
+		}
+		mutually_exclusive = { focus = Mandalore_join_the_sepeartists}
+		mutually_exclusive = { focus = Mandalore_join_the_republic}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.2
+	}
+}
+
+	#Focus for Join the Sepeartists
+	focus = {
+		id = Mandalore_join_the_sepeartists
+		icon = GFX_MAN_joincis  
+		x = 19
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_treaties_with_the_seperatists  }
+		mutually_exclusive = { focus = Mandalore_join_the_republic }
+		mutually_exclusive = { focus = Mandalore_continue_neutrality }
+		available = {
+			has_government = fascism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_in_faction = no
+			is_subject = no
+			CIS = {
+				exists = yes
+				is_puppet = no
+				NOT = {
+					has_war_with = MAN
+				}
+			}
+			any_other_country = {
+				is_major = yes
+				is_faction_leader = yes
+				has_government = fascism
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = CIS
+					has_war_with = MAN	
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					CIS = {
+						has_government = fascism
+						is_faction_leader = yes
+						not = { has_war_with = ROOT }
+					}
+				}
+				CIS = { country_event = generic.2 }
+			}
+			else = {
+				var:best_leader = {
+					country_event = generic.2
+				}
+			}
+		}
+	}
+	
+
+	#Focus for Join the Republic
+	focus = {
+		id = Mandalore_join_the_republic
+		icon = GFX_MAN_joinrep
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_treaties_with_the_republic }
+		mutually_exclusive = { focus = Mandalore_join_the_sepeartists}
+		mutually_exclusive = { focus = Mandalore_continue_neutrality}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			is_in_faction = no
+			is_subject = no
+			REP = {
+				exists = yes
+				is_puppet = no
+				NOT = {
+					has_war_with = MAN
+				}
+			}
+			any_other_country = {
+				is_major = yes
+				is_faction_leader = yes
+				has_government = democratic
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = REP
+					has_war_with = MAN	
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					REP = {
+						has_government = democratic
+						is_faction_leader = yes
+						not = { has_war_with = ROOT }
+					}
+				}
+				REP = { country_event = generic.2 }
+			}
+			else = {
+				get_best_alliance_match_democratic_effect = yes
+				var:best_leader = {
+					country_event = generic.2
+				}
+			}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 1
+				}
+			}
+		}
+	}
+
+
+
+	#Focus for Military Service
+	focus = {
+		id = Mandalore_military_service
+		icon = GFX_MAN_militaryservice
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_continue_the_duskar_tradition }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = MAN_tooltip_commandos_tt
+			hidden_effect = {
+			load_oob = mandcommand
+		}
+	}
+}
+
+	#Focus for Criminalize Mercenaries
+	focus = {
+		id = Mandalore_criminalize_mercenaries
+		icon = GFX_MAN_fuckmercs
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_way_towards_stability }
+		ai_will_do = {
+			factor = 1
+}
+				completion_reward = {
+			add_stability = 0.15
+			add_war_support = -.20
+		}
+	}
+
+	#Focus for Continue Industrializing
+	focus = {
+		id = Mandalore_continue_industrializing
+		icon = GFX_MAN_industrialstonk
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_double_down_on_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			167 = {
+				if = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+			   		}
+        		}
+			}
+		}
+	}
+
+	#Focus for The New Coruscant
+	focus = {
+		id = Mandalore_the_new_coruscant
+		icon = GFX_MAN_courasaunt
+		x = 1
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_multiculturalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			167 = {
+				if = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Multiculturalism
+	focus = {
+		id = Mandalore_multiculturalism
+		icon = GFX_MAN_mixed_shine
+		x = 1
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_criminalize_mercenaries 
+			focus = Mandalore_continue_industrializing 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = MAN_multiculturalism
+		}
+	}
+
+	#Focus for Mandelorian Supremacy
+	focus = {
+		id = Mandalore_mandelorian_supremacy
+		icon = GFX_MAN_mandaloriansupremeicy
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_continue_the_duskar_tradition }
+		mutually_exclusive = { focus = Mandalore_citizenship_for_warriors }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		    add_ideas = MAN_idea_mandelorian_supremacy
+		}
+	}
+
+
+	#Focus for A Grand Fleet
+	focus = {
+		id = Mandalore_a_grand_fleet
+		icon = GFX_MAN_grandfleet
+		x = 36
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_air_force }
+		mutually_exclusive = { focus = Mandalore_mobility_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Naval Doctrine Bonus"
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	#Focus for Mobility Focus
+	focus = {
+		id = Mandalore_mobility_focus
+		icon = GFX_MAN_mobility
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_air_force }
+		mutually_exclusive = { focus = Mandalore_a_grand_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Air Doctrine Bonus"
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	#Focus for The Air Force
+	focus = {
+		id = Mandalore_the_air_force
+		icon = GFX_MAN_airforce
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_rise_of_satine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+
+	#Focus for Citizenship for Warriors
+	focus = {
+		id = Mandalore_citizenship_for_warriors
+		icon = GFX_MAN_citizenshipwarriors
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_military_service }
+		mutually_exclusive = { focus = Mandalore_mandelorian_supremacy }
+		ai_will_do = {
+			factor = 1
+			}
+		completion_reward = {
+		    add_ideas = MAN_idea_citizenship_for_warriors
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for The Exiles on Concordia
+	focus = {
+		id = Mandalore_the_exiles_on_concordia
+		icon = GFX_MAN_exiles
+		x = 6
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_mandelorian_supremacy 
+			focus = Mandalore_citizenship_for_warriors 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+    			id = con.1
+		}
+	}
+}
+
+	#Focus for Begin creating cruisers
+	focus = {
+		id = Mandalore_begin_creating_cruisers
+		icon = GFX_MAN_cruisers
+		x = 36
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_a_grand_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Superior Fighters
+	focus = {
+		id = Mandalore_superior_fighters
+		icon = GFX_MAN_superiorfighter
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_mobility_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Fang"
+				bonus = 1.0
+				uses = 1
+				technology = fang_tech
+			}
+		}
+	}
+
+	#Focus for Establish the Council of Neutral Systems
+	focus = {
+		id = Mandalore_establish_the_council_of_neutral_systems
+		icon = GFX_MAN_formcouncil
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_declare_neutrality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = council_of_neutral_systems
+			}
+		}
+
+	#Focus for Exporting Beskar
+	focus = {
+		id = Mandalore_exporting_beskar
+		icon = GFX_MAN_exportbeskar
+		x = 26
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_sundari_mines }
+		mutually_exclusive = { focus = Mandalore_domestic_uses }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = MAN_idea_exporting_beskar
+			}
+		}
+
+	#Focus for Domestic Uses
+	focus = {
+		id = Mandalore_domestic_uses
+		icon = GFX_MAN_domesticbeskar
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_sundari_mines }
+		mutually_exclusive = { focus = Mandalore_exporting_beskar }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+		    add_ideas = MAN_idea_domestic_use_of_beskar
+		}
+	}
+
+
+	#Focus for The Mandalorian Academy
+	focus = {
+		id = Mandalore_the_mandalorian_academy
+		icon = GFX_MAN_mandaloreacademy
+		x = 22
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_our_warriors }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    custom_effect_tooltip = MAN_tooltip_the_mandalorian_academy_tt
+		    hidden_effect = {
+		        add_ideas = MAN_idea_the_mandalorian_academy
+		
+		    }
+		}
+	  }
+
+
+	#Focus for Mining Beskar
+	focus = {
+		id = Mandalore_mining_beskar
+		icon = GFX_MAN_beskar
+		x = 25
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_the_rise_of_satine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = MAN_idea_mining_beskar
+		 }
+		}
+
+	#Focus for Extensive Training
+	focus = {
+		id = Mandalore_extensive_training
+		icon = GFX_MAN_training
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_our_warriors }
+		ai_will_do = {
+			factor = 1
+			}	
+				completion_reward = {
+		    add_ideas = MAN_idea_extensive_training
+			}
+		}
+
+	#Focus for Our Warriors
+	focus = {
+		id = Mandalore_our_warriors
+		icon = GFX_MAN_ourwarriors
+		x = 24
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = this_is_the_way
+		}
+			Completion_reward = {
+				add_war_support = 0.2
+		}
+	}
+
+	#Focus for The True Mandalorian
+	focus = {
+		id = Mandalore_the_true_mandalorian
+		icon = GFX_MAN_jango
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_the_mandalorian_academy 
+		}
+		prerequisite = { 
+			focus = Mandalore_extensive_training 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_stability = 0.1
+			add_tech_bonus = {
+				name = HOL_appoint_new_supreme_commander
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+
+				create_field_marshal = {
+					name = "Jango Fett"
+					portrait_path = "gfx/leaders/MAN/Jango fett.dds"
+					traits = { trait_cautious unyielding_defender }
+					skill = 4
+					attack_skill = 5
+					defense_skill = 4
+					planning_skill = 4
+					logistics_skill = 3
+				}
+			}
+		}
+
+	#Focus for Innovation
+	focus = {
+		id = Mandalore_innovation
+		icon = GFX_MAN_innovations
+		x = 29
+		y = 7
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Mandalore_our_technology }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = MAN_idea_innovation
+		}
+	}
+
+	#Focus for Peace in our Time
+	focus = {
+		id = Mandalore_peace_in_our_time
+		icon = GFX_MAN_peace
+		x = 31
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Mandalore_beskar_for_buildings 
+		}
+		prerequisite = { 
+			focus = Mandalore_innovation 
+		}
+		ai_will_do = {
+			factor = 1
+			}
+		completion_reward = {
+			167 = {
+				if = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 6
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+#End of focuses 
+ }

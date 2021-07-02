@@ -1,0 +1,41 @@
+state={
+	id=437
+	name="STATE_437"
+	provinces={
+		769 1132 1175 2012 2602 2862 10727 10749 10755 10758 10781 10785 10790 10820 
+	}
+	manpower=5700000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	
+	resources={
+		steel=11
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=GEO
+		add_core_of = GEO
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,41 @@
+state={
+	id=487
+	name="STATE_487"
+	provinces={
+		26 191 470 1038 1046 1433 1438 2364 2921 3200 3545 3986 4354 4838 4954 11447 11451 11455 11459 11460 11467 11470 11474 11476 11484 11485 11493 11497 11498 11499 11505 11515 11516 11519 11520 11528 11529 11531 11533 11534 
+	}
+	manpower=3285714
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=4
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=RYL
+		add_core_of = RYL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			11534 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			26 20
+		}
+	}
+}
+

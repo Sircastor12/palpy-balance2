@@ -1,0 +1,262 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_Baktoid"
+		texturefile = "gfx/interface/corporate_view/Baktoid.dds"
+	}
+	spriteType = {
+		name = "GFX_corporation_info_owned"
+		texturefile = "gfx/interface/corporate_view/corporation_info_owned.dds"
+	}
+	spriteType = {
+		name = "GFX_Geonosis"
+		texturefile = "gfx/interface/corporate_view/geono.dds"
+	}
+	spriteType = {
+		name = "GFX_TaimAndBak"
+		texturefile = "gfx/interface/corporate_view/TaimAndBak.dds"
+	}
+	spriteType = {
+		name = "GFX_BankingClan"
+		texturefile = "gfx/interface/corporate_view/BankingClan.dds"
+	}
+	spriteType = {
+		name = "GFX_CMG"
+		texturefile = "gfx/interface/corporate_view/CMG.dds"
+	}
+	spriteType = {
+		name = "GFX_FED"
+		texturefile = "gfx/interface/corporate_view/FED.dds"
+	}
+	spriteType = {
+		name = "GFX_Kamino"
+		texturefile = "gfx/interface/corporate_view/Kamino.dds"
+	}
+	spriteType = {
+		name = "GFX_Kuat"
+		texturefile = "gfx/interface/corporate_view/Kuat.dds"
+	}
+	spriteType = {
+		name = "GFX_SlaynAndKorpil" 
+		texturefile = "gfx/interface/corporate_view/SlaynAndKorpil.dds"
+	}
+	spriteType = {
+		name = "GFX_Aratech"
+		texturefile = "gfx/interface/corporate_view/Aratech.dds"
+	}
+	spriteType = {
+		name = "GFX_Baktoid"
+		texturefile = "gfx/interface/corporate_view/Baktoid.dds"
+	}
+	spriteType = {
+		name = "GFX_BlasTech"
+		texturefile = "gfx/interface/corporate_view/BlasTech.dds"
+	}
+	spriteType = {
+		name = "GFX_Chiewab"
+		texturefile = "gfx/interface/corporate_view/Chiewab.dds"
+	}
+	spriteType = {
+		name = "GFX_Colicoid"
+		texturefile = "gfx/interface/corporate_view/Colicoid.dds"
+	}
+	spriteType = {
+		name = "GFX_Corellian"
+		texturefile = "gfx/interface/corporate_view/Corellian.dds"
+	}
+	spriteType = {
+		name = "GFX_Corporate"
+		texturefile = "gfx/interface/corporate_view/Corporate.dds"
+	}
+	spriteType = {
+		name = "GFX_Czerka"
+		texturefile = "gfx/interface/corporate_view/Czerka.dds"
+	}
+	spriteType = {
+		name = "GFX_Free"
+		texturefile = "gfx/interface/corporate_view/Free.dds"
+	}
+	spriteType = {
+		name = "GFX_geono"
+		texturefile = "gfx/interface/corporate_view/geono.dds"
+	}
+	spriteType = {
+		name = "GFX_Haor"
+		texturefile = "gfx/interface/corporate_view/Haor.dds"
+	}
+	spriteType = {
+		name = "GFX_Hoersch"
+		texturefile = "gfx/interface/corporate_view/Hoersch.dds"
+	}
+	spriteType = {
+		name = "GFX_Industrial_Automaton"
+		texturefile = "gfx/interface/corporate_view/Industrial_Automaton.dds"
+	}
+	spriteType = {
+		name = "GFX_LeisureMechEnterprises"
+		texturefile = "gfx/interface/corporate_view/LeisureMechEnterprises.dds"
+	}
+	spriteType = {
+		name = "GFX_MandalMotors"
+		texturefile = "gfx/interface/corporate_view/MandalMotors.dds"
+	}
+	spriteType = {
+		name = "GFX_MiningGuild"
+		texturefile = "gfx/interface/corporate_view/MiningGuild.dds"
+	}
+	spriteType = {
+		name = "GFX_MonCal"
+		texturefile = "gfx/interface/corporate_view/MonCal.dds"
+	}
+	spriteType = {
+		name = "GFX_RendiliStarDrive"
+		texturefile = "gfx/interface/corporate_view/RendiliStarDrive.dds"
+	}
+	spriteType = {
+		name = "GFX_Rothana"
+		texturefile = "gfx/interface/corporate_view/Rothana.dds"
+	}
+	spriteType = {
+		name = "GFX_Incom"
+		texturefile = "gfx/interface/corporate_view/IncomCorporation.dds"
+	}
+	spriteType = {
+		name = "GFX_SienarFleetSystems"
+		texturefile = "gfx/interface/corporate_view/SienarFleetSystems.dds"
+	}
+	spriteType = {
+		name = "GFX_SoroSuub"
+		texturefile = "gfx/interface/corporate_view/SoroSuub.dds"
+	}
+	spriteType = {
+		name = "GFX_SpaartiCreations"
+		texturefile = "gfx/interface/corporate_view/SpaartiCreations.dds"
+	}
+	spriteType = {
+		name = "GFX_Tagge"
+		texturefile = "gfx/interface/corporate_view/Tagge.dds"
+	}
+	spriteType = {
+		name = "GFX_TransGalMegIndustriesIncorporated" 
+		texturefile = "gfx/interface/corporate_view/TransGalMegIndustriesIncorporated.dds"
+	}
+	spriteType = {
+		name = "GFX_UbrikkianIndustries"
+		texturefile = "gfx/interface/corporate_view/UbrikkianIndustries.dds"
+	}
+	spriteType = {
+		name = "GFX_XucphraCorporation"
+		texturefile = "gfx/interface/corporate_view/XucphraCorporation.dds"
+	}
+	spriteType = {
+		name = "GFX_corporation_info"
+		texturefile = "gfx/interface/corporate_view/corporation_info.dds"
+	}
+	spriteType = {
+		name = "GFX_corp_button"
+		texturefile = "gfx/interface/corporate_view/corp_button.dds"
+	}
+	spriteType = {
+		name = "GFX_corp_button_2"
+		texturefile = "gfx/interface/corporate_view/small_corp.dds"
+	}
+	spriteType = {
+		name = "GFX_corp_info"
+		texturefile = "gfx/interface/corporate_view/corp_info.dds"
+	}
+	spriteType = {
+		name = "GFX_Aratech_holo"
+		texturefile = "gfx/interface/market/market_logos/Aratech.dds"
+	}
+	spriteType = {
+		name = "GFX_Baktoid_holo"
+		texturefile = "gfx/interface/market/market_logos/Baktoid.dds"
+	}
+	spriteType = {
+		name = "GFX_Blastech_holo"
+		texturefile = "gfx/interface/market/market_logos/BlasTech.dds"
+	}
+	spriteType = {
+		name = "GFX_Colicoid_holo"
+		texturefile = "gfx/interface/market/market_logos/Colicoid.dds"
+	}
+	spriteType = {
+		name = "GFX_Corellia_holo"
+		texturefile = "gfx/interface/market/market_logos/Corellia.dds"
+	}
+	spriteType = {
+		name = "GFX_Czerka_arms_holo"
+		texturefile = "gfx/interface/market/market_logos/CzerkaArms.dds"
+	}
+	spriteType = {
+		name = "GFX_FreeDac_holo"
+		texturefile = "gfx/interface/market/market_logos/FreeDac.dds"
+	}
+	spriteType = {
+		name = "GFX_Haor_holo"
+		texturefile = "gfx/interface/market/market_logos/Haor.dds"
+	}
+	spriteType = {
+		name = "GFX_HoerschKessel_holo"
+		texturefile = "gfx/interface/market/market_logos/HoerschKessel.dds"
+	}
+	spriteType = {
+		name = "GFX_HupplaPasa_holo"
+		texturefile = "gfx/interface/market/market_logos/HupplaPasa.dds"
+	}
+	spriteType = {
+		name = "GFX_Incom_holo"
+		texturefile = "gfx/interface/market/market_logos/Incom.dds"
+	}
+	spriteType = {
+		name = "GFX_Kamino_holo"
+		texturefile = "gfx/interface/market/market_logos/Kamino.dds"
+	}
+	spriteType = {
+		name = "GFX_Kuat_holo"
+		texturefile = "gfx/interface/market/market_logos/Kuat.dds"
+	}
+	spriteType = {
+		name = "GFX_Rendili_holo"
+		texturefile = "gfx/interface/market/market_logos/Rendili.dds"
+	}
+	spriteType = {
+		name = "GFX_Rothana_holo"
+		texturefile = "gfx/interface/market/market_logos/Rothana.dds"
+	}
+	spriteType = {
+		name = "GFX_Sienar_holo"
+		texturefile = "gfx/interface/market/market_logos/Sienar.dds"
+	}
+	spriteType = {
+		name = "GFX_SlaynAndKorpil_holo"
+		texturefile = "gfx/interface/market/market_logos/SlaynAndKorpil.dds"
+	}
+	spriteType = {
+		name = "GFX_TaimAndBak_holo"
+		texturefile = "gfx/interface/market/market_logos/TaimAndBak.dds"
+	}
+	spriteType = {
+		name = "GFX_TransGalMeg_holo"
+		texturefile = "gfx/interface/market/market_logos/TransGalMeg.dds"
+	}
+	spriteType = {
+		name = "GFX_Ubrikkian_holo"
+		texturefile = "gfx/interface/market/market_logos/Ubrikkian.dds"
+	}
+	spriteType = {
+		name = "GFX_IBC_holo"
+		texturefile = "gfx/interface/market/market_logos/BankingClan.dds"
+	}
+	spriteType = {
+		name = "GFX_CMG_holo"
+		texturefile = "gfx/interface/market/market_logos/CMG.dds"
+	}
+	spriteType = {
+		name = "GFX_TechnoUnion_holo"
+		texturefile = "gfx/interface/market/market_logos/TechnoUnion.dds"
+	}
+	spriteType = {
+		name = "GFX_TradeFederation_holo"
+		texturefile = "gfx/interface/market/market_logos/TradeFederation.dds"
+	}
+}

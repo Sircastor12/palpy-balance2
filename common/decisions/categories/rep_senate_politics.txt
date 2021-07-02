@@ -1,0 +1,23 @@
+rep_senate_alignment = {
+	icon = generic_prospect_for_resources
+   
+   visible = {
+	   NOT = {
+		   tag = ROOT
+	   }
+   }
+   available = {
+   }
+}
+
+rep_senate_floor = {
+     icon = generic_prospect_for_resources
+	
+	visible = {
+		NOT = {
+			tag = ROOT
+		}
+	}
+	available = {
+	}
+}

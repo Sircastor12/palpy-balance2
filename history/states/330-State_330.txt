@@ -1,0 +1,41 @@
+state={
+	id=330
+	name="STATE_330"
+	provinces={
+		366 480 1840 2071 2901 3528 3727 4018 4275 4336 4455 4951 8919 8943 8969 8970 8971 8975 8988 8992 8996 9002 9012 9016 9035 9036 
+	}
+	manpower=1500000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=BTN
+		add_core_of = BTN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			4275 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			8988 10
+		}
+	}
+}
+

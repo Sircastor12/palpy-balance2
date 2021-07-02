@@ -1,0 +1,256 @@
+on_actions = {
+    on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = Geonosis_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Geonosis_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Aratech_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Aratech_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Blastech_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Blastech_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Chiewab_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Chiewab_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Colicoid_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Colicoid_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Corellian_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Corellian_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Corporate_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Corporate_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Czerka_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Czerka_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Free_dac_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Free_dac_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Haor_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Haor_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Hoersch_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Hoersch_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Industrial_Automaton_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Industrial_Automaton_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = LeisureMechEnterprises_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						LeisureMechEnterprises_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = MandalMotors_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						MandalMotors_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Mining_guild_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Mining_guild_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Slayn_and_korpil_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Slayn_and_korpil_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = RendiliStarDrive_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						RendiliStarDrive_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Incom_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Incom_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SienarFleetSystems_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						SienarFleetSystems_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SoroSuub_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						SoroSuub_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Taimandbak_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Taimandbak_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = Tagge_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						Tagge_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						TransGalMegIndustriesIncorporated_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = UbrikkianIndustries_subsidiary
+				}
+				ROOT = {
+					add_ideas = {
+						UbrikkianIndustries_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = XucphraCorporation
+				}
+				ROOT = {
+					add_ideas = {
+						XucphraCorporation_idea
+					}
+				}
+			}
+		}
+	}
+}

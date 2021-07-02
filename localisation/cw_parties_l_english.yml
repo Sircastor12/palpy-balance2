@@ -1,0 +1,78 @@
+﻿l_english:
+
+##Mandalore##
+MAN_democratic_party:0 "House of Kryze"
+MAN_democratic_party_long:0 "House of Kryze"
+MAN_communism_party:0 "The Prime Minister"
+MAN_communism_party_long:0 "The Prime Minister"
+MAN_fascism_party:0 "Secessionists"
+MAN_fascism_party_long:0 "The Secessionists"
+MAN_neutrality_party:0 "House of Kryze"
+MAN_neutrality_party_long:0"House of Kryze"
+
+##Deathwatch##
+DEA_democratic_party:0 "Mandalore"
+DEA_democratic_party_long:0 "Mandalore"
+DEA_communism_party:0 "Death Watch"
+DEA_communism_party_long:0 "Death Watch"
+DEA_fascism_party:0 "Death Watch"
+DEA_fascism_party_long:0 "Death Watch"
+DEA_neutrality_party:0 "Mandalore"
+DEA_neutrality_party_long:0"Mandalore"
+DEA_neutrality_death_party:0 "Death Watch"
+DEA_neutrality_party_death_long:0"Death Watch"
+
+##CIS##
+CIS_democratic_party:0 "Confederate Congress"
+CIS_democratic_party_long:0 "The Confederate Congress"
+CIS_communism_party:0 "Consortium"
+CIS_communism_party_long:0 "Underworld Gangs"
+CIS_fascism_party:0 "Separatist Alliance"
+CIS_fascism_party_long:0 "The Separatist Alliance of the Confederacy of Independent Systems"
+CIS_neutrality_party:0 "Confederate Council"
+CIS_neutrality_party_long:0 "The Confederate Council"
+CIS_syndicate_party:0 "Syndicate"
+CIS_syndicate_party_long:0 "Underworld Gangs"
+
+##Republic##
+REP_democratic_party:0 "Galactic Senate"
+REP_democratic_party_long:0 "The Galactic Senate"
+REP_communism_party:0 "Consortium"
+REP_communism_party_long:0 "Coruscant Underworld Gangs"
+REP_fascism_party:0 "Opposition"
+REP_fascism_party_long:0 "Senate Opposition"
+REP_neutrality_party:0 "Galactic Senate"
+REP_neutrality_party_long:0 "Serence Galactic Senate"
+REP_syndicate_party:0 "Syndicate"
+REP_syndicate_party_long:0 "Underworld Gangs"
+
+##Trade Federation##
+FED_democratic_party:0 "Hask Clique"
+FED_democratic_party_long:0 "Hask Corporate Clique"
+FED_communism_party:0 "NPF"
+FED_communism_party_long:0 "Neimoidian Popular Front"
+FED_fascism_party:0 "Gunray Clique"
+FED_fascism_party_long:0 "Nute Gunray Clique"
+FED_neutrality_party:0 "NNF"
+FED_neutrality_party_long:0 "Neimoidian Neutrality Front"
+FED_syndicate_party:0 "Syndicate"
+FED_syndicate_party_long:0 "Underworld Gangs"
+
+##Techno Union##
+FED_democratic_party:0 "Loyalist"
+FED_democratic_party_long:0 "Tambor Commerce Guild"
+FED_communism_party:0 "Consortium"
+FED_communism_party_long:0 "Underworld Gangs"
+FED_fascism_party:0 "Tambor"
+FED_fascism_party_long:0 "Tambor Supremacy"
+FED_neutrality_party:0 "Neutrality"
+FED_neutrality_party_long:0 "Techno Union Commerce Guild"
+FED_syndicate_party:0 "Syndicate"
+FED_syndicate_party_long:0 "Underworld Gangs"
+ 
+##Shadow Collective##
+
+
+ ##Custom Ideologies##
+ sith_order_id:0 "Order of the Sith Lords"
+ sith_order_id_desc:0 "The Order of the Sith Lords, also known as Bane's Sith Order, Banite Sith, or simply the Sith, was an ancient organization of Force-sensitives who utilized the dark side of the Force."

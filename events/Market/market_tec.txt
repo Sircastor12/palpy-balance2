@@ -1,0 +1,728 @@
+add_namespace = market_tec
+
+country_event = { #
+	id = market_tec.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.1"}
+	title = market_tec.1.t
+	desc = market_tec.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.1.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.2"}
+	title = market_tec.2.t
+	desc = market_tec.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.2.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.3"}
+	title = market_tec.3.t
+	desc = market_tec.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.3.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.4"}
+	title = market_tec.4.t
+	desc = market_tec.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.4.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.4.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.5"}
+	title = market_tec.5.t
+	desc = market_tec.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.5.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.6"}
+	title = market_tec.6.t
+	desc = market_tec.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.6.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.7"}
+	title = market_tec.7.t
+	desc = market_tec.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.7.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.7.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.8"}
+	title = market_tec.8.t
+	desc = market_tec.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.8.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.9"}
+	title = market_tec.9.t
+	desc = market_tec.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.9.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.9.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.10"}
+	title = market_tec.10.t
+	desc = market_tec.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.10.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.10.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.11"}
+	title = market_tec.11.t
+	desc = market_tec.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.11.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.11.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.12"}
+	title = market_tec.12.t
+	desc = market_tec.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.12.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.12.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.13"}
+	title = market_tec.13.t
+	desc = market_tec.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.13.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.13.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.14"}
+	title = market_tec.14.t
+	desc = market_tec.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.14.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.14.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.15"}
+	title = market_tec.15.t
+	desc = market_tec.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.15.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.15.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.16"}
+	title = market_tec.16.t
+	desc = market_tec.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.16.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.16.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.17"}
+	title = market_tec.17.t
+	desc = market_tec.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.17.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.17.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.18"}
+	title = market_tec.18.t
+	desc = market_tec.18.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.18.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.18.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.19"}
+	title = market_tec.19.t
+	desc = market_tec.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.19.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.19.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.20"}
+	title = market_tec.20.t
+	desc = market_tec.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.20.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.20.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.21"}
+	title = market_tec.21.t
+	desc = market_tec.21.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.21.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.21.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.22"}
+	title = market_tec.22.t
+	desc = market_tec.22.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.22.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.22.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.23"}
+	title = market_tec.23.t
+	desc = market_tec.23.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.23.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.23.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.24"}
+	title = market_tec.24.t
+	desc = market_tec.24.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.24.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.24.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.25"}
+	title = market_tec.25.t
+	desc = market_tec.25.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.25.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.25.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.26"}
+	title = market_tec.26.t
+	desc = market_tec.26.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.26.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.26.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.27"}
+	title = market_tec.27.t
+	desc = market_tec.27.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.27.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.27.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.28"}
+	title = market_tec.28.t
+	desc = market_tec.28.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.28.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.28.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.29"}
+	title = market_tec.29.t
+	desc = market_tec.29.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.29.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.29.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.30"}
+	title = market_tec.30.t
+	desc = market_tec.30.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.30.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.30.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.31"}
+	title = market_tec.31.t
+	desc = market_tec.31.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.31.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.31.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.32"}
+	title = market_tec.32.t
+	desc = market_tec.32.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.32.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.32.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_tec.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_tec.33"}
+	title = market_tec.33.t
+	desc = market_tec.33.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_tec.33.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_tec.33.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+

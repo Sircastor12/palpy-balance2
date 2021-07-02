@@ -1,0 +1,14 @@
+zygerria_slave_trade = {
+
+    icon = zygerria_slaves_cat
+
+    scripted_gui = zygerria_slavery_window
+
+    available = { 
+        original_tag = ZYG
+    }
+
+    allowed = {
+		original_tag = ZYG
+	}
+}

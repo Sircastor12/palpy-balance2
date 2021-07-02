@@ -1,0 +1,51 @@
+﻿division_template = {
+	name = "Rancor Battalion Division"
+	is_locked = yes
+
+	regiments = {
+		REP_rancor_clone = { x = 0 y = 0 }
+		REP_rancor_clone = { x = 0 y = 1 }
+		REP_rancor_clone = { x = 0 y = 2 }
+   		REP_rancor_clone = { x = 1 y = 0 }
+		REP_rancor_clone = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Blitz' Company"
+		location = 10463 #Kamino
+		division_template = "Rancor Battalion Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Colt's Company"
+		location = 10463 #Kamino
+		division_template = "Rancor Battalion Division"
+		start_experience_factor = 1   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Havoc's Company"
+		location = 10463 #Kamino
+		division_template = "Rancor Battalion Division"
+		start_experience_factor = 1   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Burma's Company"
+		location = 10463 #Kamino
+		division_template = "Rancor Battalion Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	
+}
+

@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_prestige"
+		texturefile = "gfx/interface/palpystuff/prestige.dds"
+		legacy_lazy_load = no
+	}
+}

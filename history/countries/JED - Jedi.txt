@@ -1,0 +1,28 @@
+﻿capital = 81
+set_technology = {
+	jedi_tech = 1
+}
+0975.1.2 = {
+set_popularities = {
+	democratic = 100
+	communism = 0
+	fascism = 0
+	neutrality = 0
+}
+
+set_politics = {	
+	ruling_party = democratic
+	last_election = "960.1.1"
+	election_frequency = 48
+	elections_allowed = no
+	}
+}
+
+create_country_leader = {
+	name = "Jedi Council"
+	desc = "The Jedi High Council, informally referred to as the Jedi Council, was the primary ruling body of the Order. Situated atop the High Council Tower of the Jedi Temple, the Council consisted of twelve Jedi Masters, chaired by a Grand Master, who oversaw and governed the Order as a whole."
+	picture = "gfx/leaders/JED/Council.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+

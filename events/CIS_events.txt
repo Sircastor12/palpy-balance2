@@ -1,0 +1,229 @@
+add_namespace = CIS_tree
+add_namespace = RAXUS
+
+news_event = {
+	id = CIS_tree.1
+	title = "CIS Requests Production Rights"
+	desc = "The Confederacy of Independent Systems has requested production rights for our OOM and B1 battle droid products."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "Let them produce our droids!"     
+		trigger = {
+		    TAG = TEC
+		}
+		CIS = {
+            set_country_flag = canproduceb1
+            set_country_flag = canproduceoom
+            set_technology = {
+				battle_droid_0 = 1
+			}
+            set_technology = {
+				battle_droid_1 = 1
+			}
+            news_event = {
+                id = CIS_tree.3
+            }
+        }
+		ai_chance = {
+			base = 100
+            modifier = {
+                TEC = {
+                    check_variable = { secessionpoint > 0}
+                }
+				add = -500
+            }
+		}
+	}
+	option = {
+		name = "Our production techniques will remain confidential."     
+		trigger = {
+		    TAG = TEC
+		}
+		CIS = {
+            news_event = {
+                id = CIS_tree.3
+            }
+        }
+		ai_chance = {
+			base = 0
+            modifier = {
+                TEC = {
+                    check_variable = { secessionpoint < 0}
+				}
+            	add = 500
+            }
+		}
+	}	                   
+}
+
+news_event = {
+	id = CIS_tree.2
+	title = "Techno Union Approves Production Access"
+	desc = "The Confederacy of Independent Systems has been permitted to produce B1 and OOM battle droids in its own factories."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "Let's get the lines moving."     
+		trigger = {
+		    TAG = CIS
+		}
+	}	                   
+}
+
+news_event = {
+	id = CIS_tree.3
+	title = "Techno Union Denies Production Access"
+	desc = "The Confederacy of Independent Systems has been denied permission to produce B1 and OOM battle droids in its own factories."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "They will regret this."     
+		trigger = {
+		    TAG = CIS
+		}
+	}	                   
+}
+
+news_event = { #CIS requests foothold on Geonosis
+	id = CIS_tree.4
+	title = "The Confederacy Requests A Foothold On Geonosis"
+	desc = "The Confederacy of Independent Systems, backed by Lord Sidious has requested that we allow them to occupy parts of our planet to produce war materials for the inevitable war. Should we allow this?"
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "They are welcome on our planet."     
+		trigger = {
+		    TAG = GEO
+		}
+        CIS = {
+            transfer_state = 446
+            add_state_core = 446
+            news_event = {
+                id = CIS_tree.5
+            }
+			add_to_faction = GEO
+        }
+        GEO = {
+            add_to_variable = { secessionpoint = 5 }
+			set_popularities = {
+				democratic = 0
+				neutrality = 0
+				fascism = 100
+				communism = 0
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+		set_global_flag = GEO_joinseps
+        ai_chance = {
+            base = 10 
+            modifier = {
+                is_historical_focus_on = yes
+                add = 500
+            }
+        }
+	}
+	option = {
+		name = "They are NOT welcome on our planet."     
+		trigger = {
+		    TAG = GEO
+		}
+        CIS = {
+            news_event = {
+                id = CIS_tree.6
+            }
+			set_country_flag = geonosis_denied
+        }
+	}	                   
+}
+
+news_event = {
+	id = CIS_tree.5
+	title = "Geonosian Hive Approves Planetary Access"
+	desc = "The Confederacy of Independent Systems has been permitted to build and use factories on the planet Geonosis to produce arms for the upcoming war."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "Perfect."     
+		trigger = {
+		    TAG = CIS
+		}
+	}	                   
+}
+
+news_event = {
+	id = CIS_tree.6
+	title = "Geonosian Hive DENIES Planetary Access"
+	desc = "The Confederacy of Independent Systems has been DENIED the ability to build and use factories on the planet Geonosis for the upcoming war."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "Very Unfortunate."     
+		trigger = {
+		    TAG = CIS
+		}
+	}
+	option = {
+		name = "We Shall Take it by force."     
+		trigger = {
+		    TAG = CIS
+		}
+        CIS = {
+            declare_war_on = {
+                target = GEO
+                type = annex_everything
+            }
+        }
+	}	                   
+}
+
+news_event = {
+	id = CIS_tree.7
+	title = "Council Meeting on Geonosis"
+	desc = "The Confederacy of Independent Systems has hosted a council meeting on the planet Geonosis in order to make final preparations for the war."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    trigger = {
+        CIS = {
+            has_completed_focus = CIS_council_meeting
+        }
+        ROOT = {
+            check_variable = { secessionpoint > 0 }
+        }
+    }
+
+	option = {
+		name = "Interesting."     
+	}  
+	option = {
+		name = "Trying Times are ahead."     
+	}                  
+}
+news_event = {
+	id = RAXUS.1
+	title = "The Raxus Address"
+	desc = "On the planet of Raxus Count Dooku denounced the Republic and rallied a group of planets to follow him in a dream of separation from the corrupt bureaucracy of it."
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = "Interesting"     
+	}	                   
+}

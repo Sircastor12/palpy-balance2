@@ -1,0 +1,41 @@
+state={
+	id=50
+	name="STATE_50"
+	provinces={
+		504 1222 2119 2646 3135 4113 9306 9307 9311 9314 9318 9328 9331 9339 9351 9362 9380 9385 
+	}
+	manpower=128571
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=3
+		aluminium=2
+		rubber=2
+		tungsten=2
+		oil=7
+		chromium=0
+	}
+
+  	history = {
+		owner=MIM
+		add_core_of = MIM
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			9328 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

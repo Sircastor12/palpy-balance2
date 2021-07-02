@@ -1,0 +1,41 @@
+state={
+	id=161
+	name="STATE_161"
+	provinces={
+		344 361 2090 2528 4247 5054 6289 6300 6316 6328 6348 6360 6379 6400 6453 6460 6472 6510 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=8
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CAR
+		add_core_of = CAR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			6289 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,67 @@
+capital = 328
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	volunteer_only 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 75
+		fascism = 25
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 0
+		fascism = 100
+	}
+}
+
+create_country_leader = {
+	name = "Communal Assembly of Russan"
+	desc = "Communal Assembly of Russan"
+	picture = "gfx/leaders/RUS/Ruusan.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Communal Assembly of Russan"
+	desc = "Communal Assembly of Russan"
+	picture = "gfx/leaders/RUS/Ruusan.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}

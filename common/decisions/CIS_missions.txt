@@ -1,0 +1,66 @@
+cis_missions = {
+     qua_independence = {
+        activation = {
+            has_country_flag = qua_independence
+        }
+        available = {
+            QUA = {
+                controls_state = 188
+            }
+        }
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 100
+        fire_only_once = yes
+
+        timeout_effect = {
+            add_political_power = -200
+        }
+
+        complete_effect = {
+            add_political_power = 200
+            set_country_flag = qua_independence
+        }
+    }
+
+    return_to_GEO = {
+        allowed = {
+            tag = CIS
+        }
+        activation = {
+            REP = {
+                controls_state = 442
+                controls_state = 460
+                controls_state = 446
+                controls_state = 66
+                controls_state = 437
+                controls_state = 449
+                controls_state = 462
+            }
+        }
+        available = {
+            GEO = {
+                owns_state = 442
+                owns_state = 460
+                owns_state = 446
+                owns_state = 66
+                owns_state = 437
+                owns_state = 449
+                owns_state = 462
+            }
+        }
+        is_good = no
+        selectable_mission = no
+        days_mission_timeout = 300
+        timeout_effect = {
+            custom_effect_tooltip = return_to_GEO_fail_tt
+            subtract_from_variable = { dx = 200 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = return_to_GEO_tt
+            CIS = {
+                add_to_variable = { dx = 200 }
+            }
+        }
+    }
+}

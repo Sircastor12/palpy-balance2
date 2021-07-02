@@ -1,0 +1,170 @@
+technologies = {
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	arc_tech = {
+
+		enable_subunits = {
+			ARC_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	arf_tech = {
+
+		enable_subunits = {
+			ARF_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clone_engineer_tech = {
+
+		enable_subunits = {
+			clone_engineer
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clone_medic_tech = {
+
+		enable_subunits = {
+			clone_medic
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clone_marine_tech = {
+
+		enable_subunits = {
+			clone_marine
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clone_airborne_tech = {
+
+		enable_subunits = {
+			clone_airborne
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clone_scuba_tech = {
+
+		enable_subunits = {
+			clone_scuba
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	clone_snow_tech = {
+
+		enable_subunits = {
+			clone_snow
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jedi_tech = {
+
+		enable_equipments = {
+			jedi_equip
+		}
+
+		enable_subunits = {
+			jedi_guardian
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

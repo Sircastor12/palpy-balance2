@@ -1,0 +1,389 @@
+equipments = {
+
+	clone_trooper = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		sprite = clone_trooper
+
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 10
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 13
+		hard_attack = 5
+		ap_attack = 0
+		air_attack = 1
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.43
+		resources = {
+			steel = 2
+		}	
+	}
+
+	rocket_launcher = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = GFX_RocketLauncher_medium		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 5
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 15
+		ap_attack = 5
+		air_attack = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.43
+		resources = {
+			steel = 2
+		}	
+	}
+
+	jedi_arch = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.5
+		ap_attack = 1
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.43
+		resources = {
+			steel = 2
+		}	
+	}
+
+	#rocket equipment
+	rocketlauncher_equipment = {
+		year = 1939
+
+		archetype = rocket_launcher
+		priority = 10
+		visual_level = 2
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 5
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 20
+		ap_attack = 5
+		air_attack = 5
+		
+		build_cost_ic = 0.58
+		resources = {
+			steel = 2
+		}
+	}
+
+	#p1 clone
+	p1_clone_equip = {
+		year = 1939
+	
+		can_be_produced = {
+			tag = KAM
+		}
+
+		sprite = clone_trooper
+		archetype = clone_trooper
+		priority = 10
+		visual_level = 2
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 10
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 13
+		hard_attack = 5
+		ap_attack = 0
+		air_attack = 1
+		
+		build_cost_ic = 0.58
+		resources = {
+			steel = 2
+		}
+	}
+
+	#p2 clone
+	p2_clone_equip = {
+		year = 1942
+
+		can_be_produced = {
+			tag = KAM
+		}
+		archetype = clone_trooper
+		parent = p1_clone_equip
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 25
+		breakthrough = 15
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 15
+		hard_attack = 10
+		ap_attack = 0
+		air_attack = 2
+		
+		reliability = 0.95
+		build_cost_ic = 0.75
+		resources = {
+			steel = 3
+		}
+	}
+	jedi_equip = {
+		year = 1945
+	
+		archetype = jedi_arch
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 25
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 15
+		ap_attack = 2
+		air_attack = 1
+		
+		reliability = 0.8
+		build_cost_ic = 0.69
+	}
+
+#########Vehicles#############
+
+	###Republic motorized###
+	ATRT_equipment_arch = {
+		year = 1936
+
+		is_archetype = yes
+		sprite = atrt
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		type = {
+			#infantry #Removing inf type 
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 15
+		reliability = 0.8
+		hardness = 0.3
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 2.5
+		resources = {
+			#oil = 1
+			rubber = 1
+			steel = 1
+		}
+		
+		fuel_consumption = 1.2
+	}
+
+	ATRT_equipment = {
+		year = 1936
+
+		can_be_produced = {
+			tag = ROT	
+		}
+
+		archetype = ATRT_equipment_arch
+		priority = 30			
+	}
+	#REP mechanized##
+	REP_mechanized_equipment = {
+		year = 1936
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		type = {
+			#infantry #Removing inf type 
+			mechanized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 25
+		breakthrough = 0
+		hardness = 0.7
+		armor_value = 4
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+		
+		build_cost_ic = 8
+		resources = {
+			steel = 2
+			#oil = 1
+			rubber = 1
+		}
+		
+		fuel_consumption = 2.4
+	}
+
+	# ~1941
+	ATOT_equipment = {
+		year = 1940
+
+		archetype = REP_mechanized_equipment
+		priority = 40
+		visual_level = 0
+	}
+
+	# ~1943
+	ATUT_equipment_arch = {
+		year = 1934
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_medium_tank_equipment		
+		is_buildable = no
+		type = { 
+			armor
+			artillery
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_art_upgrade
+		}
+				
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 10
+		hardness = 0.90
+		armor_value = 5
+
+		#Offensive Abilities
+		soft_attack = 20
+		hard_attack = 30
+		ap_attack = 4
+		air_attack = 2
+
+		build_cost_ic = 12
+		
+		resources = {
+			tungsten = 3
+			steel = 2
+		}
+		fuel_consumption = 1.8
+	}
+
+	ATUT_equipment = {
+		year = 1939
+
+		archetype = ATUT_equipment_arch
+		priority = 60
+		visual_level = 0
+	}
+}

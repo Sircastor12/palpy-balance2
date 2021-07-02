@@ -1,0 +1,862 @@
+scripted_gui = {
+	market_rep_naval_container = {
+		context_type = player_context
+		window_name = "market_rep_naval_container"
+		#if = {
+		#	limit = {
+		#		you = gay
+		#	}
+		#	you are looking at this file
+		#} In english... If you are gay... you look at this file
+		ai_enabled = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = rep_navy_open
+				}
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = rep_navy_open
+			}
+			return_button_click = {
+				clr_country_flag = rep_navy_open
+				set_country_flag = show_market
+			}
+			pelta_place_order_click = {
+				purchase_pelta = yes
+			}
+			arquintes_place_order_click = {
+				purchase_arquintes = yes
+			}	
+			acclamator_place_order_click = {
+				purchase_acclamator = yes
+			}
+			acclamator2_place_order_click = {
+				purchase_acclamator2 = yes
+			}
+			venator_place_order_click = {
+				purchase_venator = yes
+			}
+			victory_place_order_click = {
+				purchase_victory = yes
+			}
+			mandator2_place_order_click = {
+				purchase_mandator2 = yes
+			}
+			consular_place_order_click = {
+				purchase_consular = yes
+			}
+			c70_place_order_click = {
+				purchase_c70 = yes
+			}
+			stealthship_place_order_click = {
+				purchase_stealthship = yes
+			}
+			dreadnaught_place_order_click = {
+				purchase_ren_dreadnaught = yes
+			}
+
+		}
+		ai_weights = {
+			arquintes_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.arquintes < 2 }
+					}
+					modifier = {
+						tag = REP
+						add = 10
+					}
+					modifier = {
+						add = 200
+						ROOT = {
+							AND = {
+								TAG = REP
+								has_navy_size = {
+								    size < 30
+								    type = arquintes_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = REP
+									TAG = FED
+									TAG = TEC
+									TAG = CMG
+								}
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								has_navy_size = {
+								    size < 10
+								    type = arquintes_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.arquintes < 2 }
+						}
+					}
+				}
+			}
+			acclamator_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 150
+						tag = REP
+						check_variable = { global.acclamator > 6 }
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 250
+						AND = {
+							TAG = REP
+							REP = {
+								has_navy_size = {
+								    size < 80
+								    type = acclamator_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = REP
+									TAG = FED
+									TAG = TEC
+									TAG = CMG
+								}
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								has_navy_size = {
+								    size < 2
+								    type = acclamator_unit
+								}
+								check_variable = { global.acclamator > 2 }
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+						}
+					}
+				}
+			}
+			venator_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 300
+						tag = REP 
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.venator < 2 }
+					}
+					modifier = {
+						add = 400
+						ROOT = {
+							AND = {
+								TAG = REP
+								has_navy_size = {
+								    size < 30
+								    type = venator_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						ROOT = {
+							naval_base < 1
+						}
+					}
+				}
+			}
+			victory_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.victory < 2 }
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = REP
+								has_navy_size = {
+								    size < 10
+								    type = victory_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = REP
+									TAG = FED
+									TAG = TEC
+									TAG = CMG
+								}
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								has_navy_size = {
+								    size < 1
+								    type = victory_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.victory < 2 }
+						}
+					}
+				}
+			}
+			consular_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.consular < 4 }
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = REP
+								has_navy_size = {
+								    size < 30
+								    type = consular_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = REP
+								}
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								has_navy_size = {
+								    size < 10
+								    type = consular_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.consular < 4 }
+						}
+					}
+				}
+			}
+			c70_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.c70 < 4 }
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = REP
+								has_navy_size = {
+								    size < 50
+								    type = rep_frigate_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = REP
+								}
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								has_navy_size = {
+								    size < 15
+								    type = rep_frigate_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.c70 < 4 }
+						}
+					}
+				}
+			}
+			dreadnaught_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.ren_dreadnaught < 2 }
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = REP
+								has_navy_size = {
+								    size < 20
+								    type = dreadnaught_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = REP
+								}
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								has_navy_size = {
+								    size < 2
+								    type = dreadnaught_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.ren_dreadnaught < 3 }
+						}
+					}
+				}
+			}
+		}
+		properties = {
+			consular_owner = { image = "[Getcorelliaowner]" }
+			dreadnaught_owner = { image = "[Getrendiliowner]" }
+			c70_owner = { image = "[Getcorelliaowner]" }
+			victory_owner = { image = "[Getrendiliowner]" }
+			stealthship_owner = { image = "[Getsienarowner]" }
+		}
+		triggers = {
+			pelta_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			arquintes_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			acclamator_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			acclamator2_place_order_click_enabled = {
+				has_global_flag = REP_tech_4
+			}
+			stardestroyer_place_order_click_enabled = {
+				has_global_flag = REP_tech_4
+			}
+			venator_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			victory_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			mandator2_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			c70_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			stealthship_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+		}
+	}
+	market_cis_naval_container = {
+		context_type = player_context
+		window_name = "market_cis_naval_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = CIS_navy_open
+				}
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = CIS_navy_open
+			}
+			return_button_click = {
+				clr_country_flag = CIS_navy_open
+				set_country_flag = show_market
+			}
+			diamond_place_order_click = {
+				purchase_cmg_diamond = yes
+			}
+			recusant_place_order_click = {
+				purchase_dac_recusant = yes
+			}
+			providence_place_order_click = {
+				purchase_ren_providence = yes
+			}
+			munificent_place_order_click = {
+				purchase_fed_munificent = yes
+			}
+			lucrehulk_freighter_place_order_click = {
+				purchase_lucrehulk_freighter = yes
+			}
+			lucrehulk_battleship_place_order_click = {
+				purchase_lucrehulk_battleship = yes
+			}
+			bulwark_place_order_click = {
+				purchase_tec_bulwark = yes
+			}
+			marauder_place_order_click = {
+				purchase_marauder = yes
+			}
+			tu_destroyer_place_order_click = {
+				purchase_tudestroyer = yes
+			}
+			saboath_place_order_click = {
+				purchase_saboath = yes
+			}
+			subjugator_place_order_click = {
+				purchase_subjugator = yes
+			}
+		}
+		ai_weights = {
+			diamond_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.diamond < 2 }
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = CIS
+								has_navy_size = {
+								    size < 35
+								    type = diamond_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = CIS
+								}
+								has_idea = CIS_member
+								has_navy_size = {
+								    size < 5
+								    type = diamond_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.diamond < 2 }
+						}
+					}
+				}
+			}
+			recusant_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 150
+						ROOT = {
+							AND = {
+								TAG = CIS
+								has_navy_size = {
+								    size < 30
+								    type = recusant_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = CIS
+								}
+								has_idea = CIS_member
+								has_navy_size = {
+								    size < 3
+								    type = recusant_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						ROOT = {
+							OR = {
+								ROOT = {
+									naval_base < 1
+								}
+								check_variable = { global.dac_recusant < 2 }
+							}
+						}
+					}
+				}
+			}
+			providence_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.ren_providence < 2 }
+					}
+					modifier = {
+						add = 500
+						ROOT = {
+							tag = CIS
+							has_navy_size = {
+							    size < 20
+							    type = providence_unit
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = CIS
+								}
+								has_idea = CIS_member
+								has_navy_size = {
+								    size < 1
+								    type = providence_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.ren_providence < 3 }
+						}
+					}
+				}
+			}
+			lucrehulk_battleship_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 300
+						ROOT = {
+								TAG = CIS
+								has_navy_size = {
+									size < 10
+									type = lucrehulk_battleship_unit
+								}
+							}
+						}
+					modifier = {
+						add = -500
+						ROOT = {
+							naval_base < 1
+						}
+					}
+					modifier = {
+						add = -400
+						check_variable = { global.lucrehulk_battleship < 1 }
+					}
+				}
+			}
+			munificent_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = CIS
+								has_navy_size = {
+									size < 80
+									type = munificent_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = CIS
+								}
+								has_idea = CIS_member
+								has_navy_size = {
+									size < 15
+									type = munificent_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						OR = {
+							ROOT = {
+								naval_base < 1
+							}
+							check_variable = { global.fed_munificent < 2 }
+						}
+					}
+				}
+			}
+			lucrehulk_freighter_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 250
+						ROOT = {
+								TAG = FED
+								has_navy_size = {
+									size < 10
+									type = lucrehulk_freighter_unit
+								}
+							}
+						}
+					modifier = {
+						add = -500
+						ROOT = {
+							naval_base < 1
+						}
+					}
+				}
+			}
+			marauder_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								TAG = CIS
+								has_navy_size = {
+								    size < 40
+								    type = marauder_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = 100
+						ROOT = {
+							AND = {
+								NOT = {
+									TAG = CIS
+								}
+								has_idea = CIS_member
+								has_navy_size = {
+								    size < 10
+								    type = marauder_unit
+								}
+							}
+						}
+					}
+					modifier = {
+						add = -500
+						ROOT = {
+							naval_base < 1
+						}
+					}
+				}
+			}
+		}
+		properties = {
+			lucrehulk_freighter_owner = { image = "[Gethoerschowner]" }
+			marauder_owner = { image = "[Getbaktoidowner]" }
+			fed_munificent_owner = { image = "[Gethoerschowner]" }
+			recusant_owner = { image = "[Gethoerschowner]" }
+			lucrehulk_battleship_owner = { image = "[Gethoerschowner]" }
+			bulwark_owner = { image = "[Gettransgalmagowner]" }
+			providence_owner = { image = "[Getfree_dacowner]" }
+			tudestroyer_owner = { image = "[Getbaktoidowner]" }
+			subjugator_owner = { image = "[Getfree_dacowner]" }
+		}
+		triggers = {
+			recusant_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			providence_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			munificent_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			lucrehulk_battleship_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			bulwark_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			tu_destroyer_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			saboath_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			subjugator_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+		}
+	}
+	market_neutral_naval_container = {
+		context_type = player_context
+		window_name = "market_neutral_naval_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = neutral_navy_open
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = neutral_navy_open
+			}
+			return_button_click = {
+				clr_country_flag = neutral_navy_open
+				set_country_flag = show_market
+			}
+		}
+	}
+}

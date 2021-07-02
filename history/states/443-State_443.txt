@@ -1,0 +1,41 @@
+state={
+	id=443
+	name="STATE_443"
+	provinces={
+		1050 1184 1198 1211 1568 1689 1791 10782 10835 10854 10855 10870 10899 10911 10925 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 0
+		chromium = 0
+	}
+
+  	history = {
+		owner = SID
+		add_core_of = SID
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			1791 50
+		}
+	}
+}
+

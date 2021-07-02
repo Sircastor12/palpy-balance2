@@ -1,0 +1,41 @@
+state={
+	id=47
+	name="STATE_47"
+	provinces={
+		809 2323 2371 4438 5011 9063 9069 9075 9076 9080 9085 9097 9108 9111 9116 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BEA
+		add_core_of = BEA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

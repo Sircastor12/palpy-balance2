@@ -1,0 +1,53 @@
+capital = 124
+
+set_research_slots = 1
+set_stability = 0.8
+set_war_support = 1.0
+set_country_flag = no_ideas
+
+set_technology = {
+	transport = 1
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+add_political_power = 80
+set_convoys = 250
+
+add_ideas = {
+	all_adults_serve
+	black_market_economy
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+}
+
+
+create_country_leader = {
+	name = "Hondo Ohnaka"
+	desc = "Hondo Ohnaka was a male Weequay pirate who led the Ohnaka Gang on the Outer Rim world of Florrum during the Clone Wars."
+	picture = GFX_hondo
+	expire = "2020.1.1"
+	ideology = marxism
+}

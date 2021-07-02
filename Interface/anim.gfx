@@ -1,0 +1,173 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_2020"
+		texturefile = "gfx/leaders/HOT/vision2020anim.dds"
+		noOfFrames = 86
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_maul"
+		texturefile = "gfx/leaders/SHA/maul.dds"
+		noOfFrames = 30 
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_tambor"
+		texturefile = "gfx/leaders/TEC/Wattambor_anim.dds"
+		noOfFrames = 96 
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_hondo"
+		texturefile = "gfx/leaders/HON/Hondo_anim.dds"
+		noOfFrames = 96 
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = { 
+	frameAnimatedSpriteType = {
+		name = "GFX_maul_gen"
+		texturefile = "gfx/leaders/SHA/maul_gen.dds"
+		noOfFrames = 52 
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = { 
+	frameAnimatedSpriteType = {
+		name = "GFX_cody2"
+		texturefile = "gfx/leaders/REP/cody2.dds"
+		noOfFrames = 40 
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = { 
+	frameAnimatedSpriteType = {
+		name = "GFX_rex2"
+		texturefile = "gfx/leaders/REP/rex2.dds" 
+		noOfFrames = 16 
+		animation_rate_fps = 10
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = { 
+	frameAnimatedSpriteType = {
+		name = "GFX_obi"
+		texturefile = "gfx/leaders/REP/obiwan.dds" 
+		noOfFrames = 53
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_main_menu"
+		texturefile = "gfx/loadingscreens/main_menu_anim.dds"
+		noOfFrames = 150
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_OOGWAY"
+		texturefile = "gfx/leaders/HOT/oogway.dds"
+		noOfFrames = 66
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_PALP"
+		texturefile = "gfx/leaders/REP/palp.dds"
+		noOfFrames = 32
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_DOOKU"
+		texturefile = "gfx/leaders/CIS/dooku.dds"
+		noOfFrames = 40
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_CLONE_WARS"
+		texturefile = "gfx/event_pictures/anim/fastversion.dds"
+        noOfFrames = 42
+        loadType = "INGAME"
+        allwaystransparent = no
+        animation_rate_fps = 10
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_PALP_secret"
+		texturefile = "gfx/leaders/PAL/Palpatine.dds"
+		noOfFrames = 89
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_ship"
+		texturefile = "gfx/interface/consortium/black_market_thing.dds"
+		noOfFrames = 59
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_ship_2"
+		texturefile = "gfx/interface/consortium/black_market_thing_2.dds"
+		noOfFrames = 60
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}
+spriteTypes = {
+	frameAnimatedSpriteType = { 
+		name = "GFX_ship_3"
+		texturefile = "gfx/interface/consortium/black_market_thing_3.dds"
+		noOfFrames = 60
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+	}
+}

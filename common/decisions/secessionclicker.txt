@@ -1,0 +1,220 @@
+secession = {
+	secessionpoint_cis = {
+		icon = cis_sec
+		available = {
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+								tag = REP
+							}
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							check_variable = {
+							    var = secessionpoint
+							    value = 7
+							    compare = less_than
+							}
+							check_variable = {
+							    var = secessionpoint
+							    value = -7
+							    compare = greater_than
+							}
+						}
+					}
+				}
+			}
+
+		visible = {
+			OR = {
+				tag = CIS
+			}
+			NOT = { has_global_flag = secessionoccured }
+		}
+
+		fire_only_once = no
+		cost = 50
+
+		days_re_enable = 60
+		on_map_mode = map_only
+		complete_effect = {
+			custom_effect_tooltip = secessioncis
+			hidden_effect = {
+				every_country = {
+					add_to_variable = { secessionpoint_update = 1 }
+				}
+				FROM.OWNER = {
+					add_to_variable = { secessionpoint = 1 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				FROM.OWNER = {
+					check_variable = { secessionpoint < 4  }
+				}
+				add = -50
+			}
+			modifier = {
+				FROM.OWNER = {
+					check_variable = { secessionpoint < -3 }
+				}
+				add = -50
+			}
+			modifier = {
+				FROM.OWNER = {
+					is_outterrim_world = yes
+				}
+				add = 15
+			}
+			modifier = {
+				FROM.OWNER = {
+					CIS_focus_secession = yes
+				}
+				add = 30
+			}
+			modifier = {
+				FROM.OWNER = {
+					CIS_forgetit = yes
+				}
+				add = -100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = CLA
+				}
+				add = -100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = NAB
+				}
+				add = -100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = BES
+				}
+				add = -100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = ALD
+				}
+				add = -100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = CAL
+				}
+				add = -100
+			}
+		}
+	}
+
+	secessionpoint_rep = {
+		icon = rep_sec
+		available = {
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = {
+								tag = ROOT
+								tag = CIS
+							}
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							check_variable = {
+							    var = secessionpoint
+							    value = 7
+							    compare = less_than
+							}
+							check_variable = {
+							    var = secessionpoint
+							    value = -7
+							    compare = greater_than
+							}
+						}
+					}
+				}
+			}
+
+		visible = {
+			OR = {
+				tag = REP
+			}
+			NOT = { has_global_flag = secessionoccured }
+		}
+
+		fire_only_once = no
+		cost = 50
+
+		days_re_enable = 60
+		on_map_mode = map_only
+		complete_effect = {
+			custom_effect_tooltip = secessionrep
+			hidden_effect = {
+				every_country = {
+					add_to_variable = { secessionpoint_update = 1 }
+				}
+				FROM.OWNER = {
+					add_to_variable = { secessionpoint = -1 }
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				FROM.OWNER = {
+					check_variable = { secessionpoint < -4  }
+				}
+				add = -50
+			}
+			modifier = {
+				FROM.OWNER = {
+					check_variable = { secessionpoint > 3 }
+				}
+				add = -50
+			}
+			modifier = {
+				FROM.OWNER = {
+					is_core_world = yes
+				}
+				add = 15
+			}
+			modifier = {
+				FROM.OWNER = {
+					REP_focus_secession = yes
+				}
+				add = 30
+			}
+			modifier = {
+				FROM.OWNER = {
+					REP_forgetit = yes
+				}
+				add = -100
+			}
+			modifier = {
+				FROM.OWNER = {
+					tag = CAL
+					tag = PAN
+				}
+				add = 50
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+killpadme = {
+     icon = generic_prospect_for_resources
+visible = { tag = cis }
+available = { 
+tag = cis
+     }
+allowed = {
+tag = cis
+	}
+}

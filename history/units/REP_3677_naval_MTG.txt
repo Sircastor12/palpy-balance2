@@ -1,0 +1,34 @@
+Units = {
+	fleet = {
+		name = "3rd Fleet"			
+		naval_base = 4513 #Coruscant
+		task_force = {
+			name = "Diplomatic Squadron 21"
+			location = 4513 #Coruscant
+			ship = { name = "RSS Watcher" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Sprinter" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Dagger" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Thunder" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+		}
+		task_force = {
+			name = "Diplomatic Squadron 16"
+			location = 4513 #Coruscant
+			ship = { name = "RSS Challenger" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Giver" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Resolve" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Mercury" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+		}
+	}
+	fleet = {
+		name = "5th Fleet"			
+		naval_base = 6614 #Anaxes
+		task_force = {
+			name = "Diplomatic Squadron 7"
+			location = 6614 #Anaxes
+			ship = { name = "RSS Liberator" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Gemini" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Apollo" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+			ship = { name = "RSS Sparrow" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = REP version_name = "Consular Class" } } }
+		}	
+	}
+}

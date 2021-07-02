@@ -1,0 +1,346 @@
+add_namespace = TOYDARIA
+
+news_event = { #
+	id = TOYDARIA.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.1"}
+	title = "Republic Diplomacy"
+	desc = "The Galactic Republic has sent a representative to start diplomatic negotiations between our people."
+	picture = GFX_toydaria1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Accept the offer, Join the Republic."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				add = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_ideas = {
+			REP_member
+		}
+		REP = {
+			news_event = {
+				id = TOYDARIA.2
+			}
+		}
+	}
+	option = { 
+		name = "Deny the offer."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				add = 0
+				is_historical_focus_on = yes
+			}
+		}
+		REP = {
+			news_event = {
+				id = TOYDARIA.3
+			}
+		}
+	}
+	option = { 
+		name = "They shall fight for our support."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				add = 10
+				is_historical_focus_on = yes
+			}
+		}
+		CIS = {
+			news_event = {
+				id = TOYDARIA.4
+			}
+		}
+		REP = {
+			news_event = {
+				id = TOYDARIA.4
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.2"}
+	title = "Toydaria has Accepted our Offer"
+	desc = "Toydaria has become an official member of the Galactic Republic and has gained a seat in the Senate."
+	picture = GFX_toydaria2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = TOYDARIA.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.3"}
+	title = "Todaria has Denied our offer"
+	desc = "Toydaria has denied our offer to become a member of the Galactic Republic. They wish to remain neutral in this terrible war."
+	picture = GFX_toydaria3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = TOYDARIA.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.4"}
+	title = "A Contest"
+	desc = "The Kingdom of Toydaria has requested that we show our force by sending troops to the planet and engaging the enemy to prove superiority. Shall we send the troops?"
+	picture = GFX_toydaria4
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { #
+		name = "Send the troops."
+		ai_chance = { factor = 3 }
+		set_country_flag = Toydariatroopssent
+		if = {
+			limit = {
+				tag = REP
+			}
+			load_oob = REP_Toydaria
+			TOY = {
+				news_event = {
+					id = TOYDARIA.5
+				}
+				give_military_access = REP
+			}
+		}
+		if = {
+			limit = {
+				tag = CIS
+			}
+			load_oob = CIS_Toydaria
+			TOY = {
+				news_event = {
+					id = TOYDARIA.6
+				}
+				give_military_access = CIS
+			}
+		}
+	}
+	option = { #
+		name = "An unnecessary fight."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = {
+				tag = REP
+			}
+			TOY = {
+				news_event = {
+					id = TOYDARIA.7
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = CIS
+			}
+			TOY = {
+				news_event = {
+					id = TOYDARIA.8
+				}
+			}
+		}
+	}
+	option = { #
+		name = "Toydarian Scum. We'll take it for ourselves."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		ROOT = { create_wargoal = { type = puppet_wargoal_focus target = TOY } }
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.5"}
+	title = "The Republic Sends Forces"
+	desc = "The Republic has agreed to send troops in a show of force against the CIS to gain an ally in our planet. The victor may be chosen in the decisions tab."
+	picture = GFX_toydaria5
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Fantastic."
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.6"}
+	title = "The CIS Sends Forces"
+	desc = "The CIS has agreed to send troops in a show of force against the Republic to gain an ally in our planet. The victor may be chosen in the decisions tab."
+	picture = GFX_toydaria6
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Fantastic."
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.7"}
+	title = "The Republic Refuses to Sends Forces"
+	desc = "The Republic has refused to send troops in a show of force against the CIS to gain an ally in our planet."
+	picture = GFX_toydaria7
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "A Poor Decision."
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.8"}
+	title = "The CIS Refuses to Send Forces"
+	desc = "The CIS has refused to send troops in a show of force against the Republic to gain an ally in our planet."
+	picture = GFX_toydaria8
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "A Poor Decision."
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.9"}
+	title = "Toydaria Joins the Republic!"
+	desc = "The Kingdom of Toydaria has chosen to join the Galactic Republic. The clone forces clearly outperformed their droid counterparts of the Separatists."
+	picture = GFX_toydaria9
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { #
+		trigger = {
+			tag = REP
+		}
+		name = "A Wise Decision."
+		ai_chance = { factor = 1 }
+	}
+	option = { #
+		trigger = {
+			tag = CIS
+		}
+		name = "A Poor Decision."
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = { #
+		name = "Toydarian Scum. We'll take it for ourselves."
+		trigger = {
+			TAG = CIS
+		}
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 25
+				is_historical_focus_on = yes
+			}
+		}
+		CIS = { 
+			declare_war_on = {
+			    target = TOY
+			    type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = TOYDARIA.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event TOYDARIA.10"}
+	title = "Toydaria Joins the CIS!"
+	desc = "The Kingdom of Toydaria has chosen to join the CIS. The droid forces clearly outperformed their clone counterparts of the Galactic Republic."
+	picture = GFX_toydaria10
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		trigger = {
+			tag = CIS
+		}
+		name = "A Wise Decision."
+		ai_chance = { factor = 1 }
+	}
+	option = { #
+		trigger = {
+			tag = REP
+		}
+		name = "A Poor Decision."
+		ai_chance = { factor = 1 }
+	}
+	option = { #
+		name = "Toydarian Scum. We'll take it for ourselves."
+		trigger = {
+			TAG = REP
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		REP = { 
+			declare_war_on = {
+			    target = TOY
+			    type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+
+

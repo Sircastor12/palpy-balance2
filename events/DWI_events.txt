@@ -1,0 +1,366 @@
+add_namespace = DWI
+
+country_event = { #Neocrusaders
+    id = DWI.1
+    title = "Call for the Neocrusaders!"
+    desc = DWI.1.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+    immediate = {
+		random_list = {
+			80 = { 
+                DEA = { 
+                    country_event = { 
+                        id = DWI.8
+                        days = 60
+                        random = 480 
+                    } 
+                } 
+            }
+			20 = { 
+                DEA = { 
+                    country_event = { 
+                        id = DWI.9
+                        days = 60
+                        random = 480 
+                    } 
+                } 
+            }
+		}
+	}
+
+    option = {
+        name = "Soon"
+    }
+}
+country_event = { #Death Watch Wins Invasion
+    id = DWI.2
+    title = "The Reclamation of Mandalore"
+    desc = DWI.2.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+
+    trigger = {
+        AND = {
+            NOT = {
+                has_completed_focus = DWI_the_duchess_downfall
+            }
+            has_focus_tree = DWI
+            MAN = {
+                exists = no
+            }
+            DEA = {
+                owns_state = 160
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    immediate = {
+        hidden_effect = {    
+            delete_unit_template_and_units = { 
+                division_template = "Mandalorian Fanatics" 
+            }
+        }
+    }
+
+    option = {
+        name = "The fight is not yet over."
+        complete_national_focus = DWI_the_duchess_downfall
+    }
+}
+news_event = { #March of the Million
+    id = DWI.3
+    title = "The March of the Million"
+    desc = DWI.3.d
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    option = {
+        name = "For Mandalore!"        
+    }
+}
+country_event = { #Banking Clan Loan
+    id = DWI.4
+    title = "The Banking Clan"
+    desc = DWI.4.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    option = {
+        name = "Money go brrr."        
+    }
+}
+country_event = { #Mandalorian Empire
+    id = DWI.5
+    title = "An Empire of Mandalore"
+    desc = DWI.5.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    option = {
+        name = "Our victory was never a question."
+        swap_ideas = {
+            remove_idea = DWI_mandalorian_empire_ideas1
+            add_idea = DWI_mandalorian_empire_ideas2
+        }
+    }
+    option = {
+        name = "We are finally here."
+        swap_ideas = {
+            remove_idea = DWI_mandalorian_empire_ideas1
+            add_idea = DWI_mandalorian_empire_ideas3
+        }
+    }
+}
+country_event = { #Mandalore War
+    id = DWI.6
+    title = "The War for Mandalore!"
+    desc = DWI.6.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            division_template = {
+                name = "Mandalorian Fanatics"
+                is_locked = yes
+                priority = 1
+                regiments = {
+                    Mandalorian_commandos = { x = 0 y = 0 }
+                    Mandalorian_commandos = { x = 0 y = 1 }
+                    Mandalorian_commandos = { x = 0 y = 2 }
+
+                    Mandalorian_commandos = { x = 1 y = 0 }
+                    Mandalorian_commandos = { x = 1 y = 1 }
+                    Mandalorian_commandos = { x = 1 y = 2 }
+                }
+            }
+            18 = {
+                create_unit = {
+                    division = "name = \"1st Tarre Volunteer Corps\" division_template = \"Mandalorian Fanatics\" start_experience_factor = 0.3" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"2nd Tarre Volunteer Corps\" division_template = \"Mandalorian Fanatics\" start_experience_factor = 0.3" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"3rd Tarre Volunteer Corps\" division_template = \"Mandalorian Fanatics\" start_experience_factor = 0.3" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"4th Tarre Volunteer Corps\" division_template = \"Mandalorian Fanatics\" start_experience_factor = 0.3" 
+                    owner = ROOT
+                }
+            }    
+            if = {
+                limit = {
+                    has_country_flag = DEA_cis_volunteers_flag
+                }    
+                176 = {    
+                    create_unit = {
+                        division = "name = \"1st Pidge Volunteer Corps\" division_template = \"Mandalorian Fanatics\" start_experience_factor = 0.3" 
+                        owner = ROOT
+                    }
+                    create_unit = {
+                        division = "name = \"2nd Pidge Volunteer Corps\" division_template = \"Mandalorian Fanatics\" start_experience_factor = 0.3" 
+                        owner = ROOT
+                    }
+                }
+            }
+        }
+    }
+    
+    option = {
+        name = "Homecoming at last."
+    }
+}
+country_event = { #Mandalore War
+    id = DWI.7
+    title = "The Defense of Mandalore!"
+    desc = DWI.7.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {   
+            division_template = {
+                name = "Mandalorian Volunteers"
+                is_locked = yes
+                priority = 1
+                regiments = {
+                    Mandalorian_commandos = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+
+                    Mandalorian_commandos = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                }
+            }
+            160 = {
+                create_unit = {
+                    division = "name = \"1st Sundari Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"1st Ronion Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"2nd Sundari Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"1st Shuror Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"1st Keldabe Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"2nd Ronion Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+            }
+            151 = {
+                create_unit = {
+                    division = "name = \"1st Nomad Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"2nd Nomad Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+            }
+            167 = {
+                create_unit = {
+                    division = "name = \"2nd Shuror Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"3rd Shuror Volunteer Corps\" division_template = \"Mandalorian Volunteers\" start_experience_factor = 0.1" 
+                    owner = ROOT
+                }
+            }
+        }
+    }
+    
+    option = {
+        name = "Primitive, but necessary."
+    }
+}
+country_event = { #
+    id = DWI.8
+    title = "The Neocrusaders Answer!"
+    desc = DWI.8.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {    
+            division_template = {
+		    	name = "Neocrusaders"
+              is_locked = yes
+			    priority = 1
+			    regiments = {
+			    	Mandalorian_commandos = { x = 0 y = 0 }
+			    	Mandalorian_commandos = { x = 0 y = 1 }
+				    Mandalorian_commandos = { x = 0 y = 2 }
+
+				    Mandalorian_commandos = { x = 1 y = 0 }
+			    	Mandalorian_commandos = { x = 1 y = 1 }
+				    Mandalorian_commandos = { x = 1 y = 2 }
+			    }
+	    	}
+            18 = {
+                create_unit = {
+				    division = "name = \"1st Neocrusaders Division\" division_template = \"Neocrusaders\" start_experience_factor = 0.3" 
+				    owner = ROOT
+			    }
+                create_unit = {
+				    division = "name = \"2nd Neocrusaders Division\" division_template = \"Neocrusaders\" start_experience_factor = 0.3" 
+			    	owner = ROOT
+			    }
+            }
+        }
+    }
+
+    option = {
+        name = "Glory Awaits!"
+    }
+}
+country_event = { #
+    id = DWI.9
+    title = "Neocrusaders Remain Silent"
+    desc = DWI.9.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+    is_triggered_only = yes
+
+    option = {
+        name = "Pity"
+        war_support_factor = -0.05
+    }
+}
+country_event = { #Death Watch Loses Invasion
+    id = DWI.11
+    title = "Mandalore Stands"
+    desc = DWI.11.d
+    picture = GFX_event_padmeamidalassas
+    fire_only_once = yes
+    hidden = no
+
+    trigger = {
+        AND = {
+            tag = MAN
+            DEA = {
+                has_focus_tree = DWI
+            }
+            OR = {
+                DEA = {
+                    exists = no
+                }
+                DEA = {
+                    is_subject_of = MAN
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        days = 0
+    }
+
+    immediate = {
+        hidden_effect = {    
+            delete_unit_template_and_units = { 
+                division_template = "Mandalorian Volunteers" 
+            }
+        }
+    }
+
+    option = {
+        name = "Our victory was never a question."
+    }
+}

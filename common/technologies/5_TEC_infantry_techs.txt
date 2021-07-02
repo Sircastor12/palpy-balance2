@@ -1,0 +1,235 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+#subtech:advanced programming
+	TEC_droid_adv_programming = {
+
+		b1_droid_unit = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = battle_droid_2
+		}		
+
+		research_cost = 1.0
+		start_year = 977
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @977 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#subtech:b2 rocket droid
+	TEC_b2_rocket_tech = {
+
+		b2_droid_unit = {
+			hard_attack = 0.05
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = d_wing_tech
+		}		
+
+		research_cost = 1.0
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = -1 y = @980 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#subtech:launcher arms
+	TEC_droid_launcher_arms = {
+
+		b2_droid_unit = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = d_wing_tech
+		}		
+
+		research_cost = 1.0
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = 1 y = @980 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#Improved shielding
+	TEC_droideka_improved_shielding = {
+		
+		destroyer_droid_unit = {
+			defense = 0.10
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = dsd1_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @976 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#compact weapons
+	TEC_inf2_compact_weapons = {
+
+		dsd1_unit = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+			maximum_speed = 0.05
+		}
+
+		crab_droid_unit = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_mob_improved_repulsor
+		}		
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @980 }
+		}
+
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+#Mobile products
+#compact weapons
+	TEC_mob_improved_repulsor = {
+		
+		STAP_unit = {
+			maximum_speed  = 0.05
+			recon = 0.15
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @977 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#compact weapons
+	TEC_mob_defensive_weapons = {
+		
+		PAC_unit = {
+			defense = 0.10
+			soft_attack = 0.05
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @976 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#compact weapons
+	TEC_mob_improved_propulsion = {
+		
+		MTT_Unit = {
+			maximum_speed = 0.15
+			defense = -0.05
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @977 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	TEC_armor_improved_weapons = {
+		
+		AAT_unit = {
+			hard_attack = 0.10
+			breakthrough = 0.05
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = cis_tank_2
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @976 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+}

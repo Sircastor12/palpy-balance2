@@ -1,0 +1,41 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		231 928 1436 1493 2539 4631 4761 4945 9113 9118 9126 9127 9129 9132 9133 9152 9170 
+	}
+	manpower=285714
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=3
+		aluminium=1
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TOY
+		add_core_of = TOY
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			928 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

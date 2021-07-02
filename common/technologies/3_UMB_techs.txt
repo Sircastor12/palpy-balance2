@@ -1,0 +1,210 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+	Umbaran_blaster_rifle_0 = {
+
+		enable_equipments = {
+			Umbaran_blaster_rifle_0
+		}
+		
+		
+		path = {
+			leads_to_tech = umb_enhanced_blasters
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = UMB_folder
+			position = { x = 1 y = -1 }
+		}
+		
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+	umb_enhanced_blasters = {
+
+		Umbaran_militia = {
+			soft_attack = 0.25
+			ap_attack = 1
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = milicreep_droids
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = UMB_folder
+			position = { x = 1 y = 2 }
+		}
+
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	milicreep_droids = {
+
+		enable_equipments = {
+			milicreep_droids
+		}
+		
+		enable_subunits = {
+			millicreep_unit
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = UMB_folder
+			position = { x = 1 y = 7 }
+		}
+		
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hover_tank = {
+
+		enable_equipments = {
+			hover_tank_umb
+		}
+		
+		enable_subunits = {
+			hover_tank_unit
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = impeding_assault_tank
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = UMB_folder
+			position = { x = 3 y = 0 }
+		}
+		
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	impeding_assault_tank = {
+
+		enable_equipments = {
+			impeding_assault_tank
+		}
+		
+		enable_subunits = {
+			impeding_assault_tank_unit
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = mobile_heavy_cannon
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = UMB_folder
+			position = { x = 3 y = 3 }
+		}
+		
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mobile_heavy_cannon = {
+
+		enable_equipments = {
+			mobile_heavy_cannon
+		}
+		
+		enable_subunits = {
+			mobile_heavy_cannon_unit
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = UMB_folder
+			position = { x = 3 y = 7 }
+		}
+		
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	umb_plane = {
+
+		enable_equipments = {
+			umb_plane
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = UMB_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			umbara
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+

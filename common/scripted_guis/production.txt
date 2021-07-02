@@ -1,0 +1,195 @@
+scripted_gui = {
+	production_window = {
+			context_type = player_context
+			window_name = "production_window"
+
+		visible = {
+			has_country_flag = production_screen_open
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = production_screen_open
+			}
+			new_production_click = {
+				if = {
+					limit = {
+						has_country_flag = production_screen_item_open
+					}
+					clr_country_flag = production_screen_item_open
+				}
+				else = {
+					set_country_flag = production_screen_item_open
+				}
+			}
+			close_line_click = {
+				ROOT = {
+					clear_temp_variable = prod_temp_id
+					for_each_loop = {
+						array = production
+						value = vv
+						index = ii #ii is the temp variable for the first empty slot
+					}
+					clear_variable = production^ii
+					remove_from_array = { production_lines = PREV }
+					meta_effect = {
+						text = {
+							subtract_from_variable = { production_linesused = global.[Item_Code]factories }
+							set_variable = { global.[Item_Code]factories = 0 }
+						}
+						Item_Code = "[PREV.GetMarketItemCode]"
+					}
+				}
+			}
+			factory_minus1_click = {
+				ROOT = {
+					meta_effect = {
+						text = {
+							subtract_from_variable = { global.[Item_Code]factories = 1 }
+						}
+						Item_Code = "[PREV.GetMarketItemCode]"
+					}
+					if = {
+						limit = {
+							meta_trigger = {
+								text = {
+									check_variable = { global.[Item_Code]efficiency > 0 }
+								}
+								Item_Code = "[PREV.GetMarketItemCode]"
+							}
+						}
+						meta_effect = {
+							text = {
+								subtract_from_variable = { global.[Item_Code]efficiency = 0.1 }
+							}
+							Item_Code = "[PREV.GetMarketItemCode]"
+						}
+					}
+					subtract_from_variable = { production_linesused = 1 }
+				}
+			}
+			factory_plus1_click = {
+				ROOT = {
+					meta_effect = {
+						text = {
+							add_to_variable = { global.[Item_Code]factories = 1 }
+						}
+						Item_Code = "[PREV.GetMarketItemCode]"
+					}
+					if = {
+						limit = {
+							meta_trigger = {
+								text = {
+									check_variable = { global.[Item_Code]efficiency > 0 }
+								}
+								Item_Code = "[PREV.GetMarketItemCode]"
+							}
+						}
+						meta_effect = {
+							text = {
+								subtract_from_variable = { global.[Item_Code]efficiency = 0.1 }
+							}
+							Item_Code = "[PREV.GetMarketItemCode]"
+						}
+					}
+					add_to_variable = { production_linesused = 1 }
+				}
+			}
+		}
+		triggers = {
+			new_production_click_enabled = {
+				ROOT = {
+					check_variable = { production_linesused < production^num }
+				}
+			}
+			factory_plus1_click_enabled = {
+				ROOT = {
+					check_variable = { production_linesused < production^num }
+				}
+			}
+			factory_minus1_click_enabled = {
+				ROOT = {
+					meta_trigger = {
+						text = {
+							check_variable = { global.[Item_Code]factories > 1 }
+						}
+						Item_Code = "[PREV.GetMarketItemCode]"
+					}
+				}
+			}
+		}
+		properties = {
+			equipment_icon = { image = "[GetMarketItemIconP]" }
+		}
+		dynamic_lists = {
+			production_grid = {
+				array = production_lines
+				entry_container = production_entry
+				change_scope = yes
+			}
+		}
+	}
+	production_item_container = {
+		context_type = player_context
+		window_name = "production_item_container"
+		parent_window_name = "production_window"
+
+		visible = {
+			has_country_flag = production_screen_item_open
+		}
+		effects = {
+			production_name_market_click = {
+				ROOT = {
+					add_to_variable = { production_linesused = 1 }
+					set_temp_variable = { prod_temp_id = PREV.id }
+					add_to_temp_variable = { prod_temp_id = 1073741.824 }
+					multiply_temp_variable = { prod_temp_id = 1000 }
+					for_each_loop = {
+						array = production
+						value = vv
+						index = ii #ii is the temp variable for the first empty slot
+						break = brk
+						if = {
+							limit = {
+								check_variable = { vv = 0 }
+							}
+							set_temp_variable = { brk = 1 }
+						}
+					  }
+					set_variable = { production^ii = prod_temp_id }
+					add_to_array = { production_lines = PREV }
+					clr_country_flag = production_screen_item_open
+					meta_effect = {
+						text = {
+							set_variable = { global.[Item_Code]efficiency = 0.1}
+							add_to_variable = { global.[Item_Code]factories = 1 }
+						}
+						Item_Code = "[PREV.GetMarketItemCode]"
+					}
+				}
+			}
+		}
+		triggers = {
+			production_name_market_click_enabled = {
+				meta_trigger = {
+					text = {
+						ROOT = {
+							has_global_flag = [Tech]
+						}
+					}
+					Tech = "[PREV.GetMarketItemTechLevel]"
+				}
+			} 
+		}
+		dynamic_lists = {
+			production_item_grid = {
+				array = quick_market_production_array
+				entry_container = production_item_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			production_name_market = { image = "[GetMarketItemIconP]" }
+		}
+	}
+}

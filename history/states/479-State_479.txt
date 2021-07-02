@@ -1,0 +1,40 @@
+state={
+	id=479
+	name="STATE_479"
+	provinces={
+		605 1106 1663 1708 1795 2047 2659 3039 3390 3691 3797 4120 4172 4602 4858 11348 11361 11369 11371 11375 11384 11386 11387 11400 11402 11405 11416 11418 11436 
+	}
+	manpower=3285714
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=4
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=RYL
+		add_core_of = RYL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			1663 50
+		}
+	}
+}
+

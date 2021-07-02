@@ -1,0 +1,26 @@
+spriteTypes = { 
+	spriteType = {
+		name = "GFX_idea_decentralized_govt"
+		texturefile = "gfx/interface/ideas/decentralized_gov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_technologicalplateau"
+		texturefile = "gfx/interface/ideas/technological_plat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_weakened_executive"
+		texturefile = "gfx/interface/ideas/weakened_exec.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_lower_levels" 
+		texturefile = "gfx/interface/ideas/rep_under_levels.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_unrestricted_crime"
+		texturefile = "gfx/interface/ideas/unrestricted_crime.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Galactic_Republic"
+		texturefile = "gfx/interface/ideas/Galactic_Republic.dds"
+	}
+}

@@ -1,0 +1,261 @@
+capital = 189
+
+oob = "REP_3677"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "REP_3677_naval_MTG"
+}
+set_research_slots = 4
+set_stability = 0.7
+set_war_support = .45
+set_country_flag = REP_tech_1
+set_global_flag = REP_tech_1
+
+country_lock_all_division_template = yes
+
+create_faction = REP
+
+set_rule = {
+    can_create_factions = yes
+}
+
+set_technology = {
+	tech_support = 1
+	militia_REP = 1
+	cal_weapons = 1
+	motorised_infantry = 1
+	infantry_weapons = 1
+	gw_artillery = 1
+	gwtank = 1
+	dockyard1 = 1
+	rocketlauncher_unit_tech = 1
+	rocketlauncher_tech = 1
+	
+	#Industry
+	
+	#Naval
+	transport = 1
+	early_light_cruiser = 1 
+	basic_destroyer = 1
+	early_destroyer = 1
+	consular_tech = 1
+	
+	#Air
+	early_fighter = 1
+	early_bomber = 1
+}
+
+add_ideas = {
+	internal_corruption
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	weakened_executive
+	1000_years_peace
+	lower_levels
+	decentralized_govt
+	technologicalplateau
+	unrestricted_crime
+}
+
+17 = {
+	add_dynamic_modifier = { modifier = corrupt_bureaucracy }
+}
+
+add_political_power = 250
+set_convoys = 2000
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+	create_faction = GalacticRepublic
+}
+
+0978.8.8 = {
+
+	oob = "REP_3687"
+
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+
+	create_country_leader = {
+		name = "Sheev Palpatine"
+		desc = "The newly elected Chancellor of the Galactic Republic"
+		picture = GFX_PALP
+		expire = "5000.1.1"
+		ideology = conservatism
+	}
+}
+
+create_equipment_variant = {
+	name = "Consular Class"
+	type = consular_equipment
+	parent_version = 0
+}
+
+create_country_leader = {
+	name = "Sheev Palpatine"
+	desc = "The newly elected Chancellor of the Galactic Republic"
+	picture = GFX_PALP
+	expire = "5000.1.1"
+	ideology = conservatism
+}
+create_country_leader = {
+	name = "Finis Valorum"
+	desc = ""
+	picture = "gfx/leaders/REP/REP_Valorum.dds"
+	expire = "3678.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+ 	name = "Solomahal"
+ 	portrait_path = "gfx/leaders/REP/solomahal.dds"
+	traits = { desert_fox }
+	skill = 2 
+ 	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+ 	name = "Meebur Gascon"
+ 	portrait_path = "gfx/leaders/REP/Meebur Gascon.dds"
+	traits = { }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Rayno Vaca"
+ 	portrait_path = "gfx/leaders/REP/Rayno Vaca.dds"
+	traits = {  }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Hurst Romodi"
+ 	portrait_path = "gfx/leaders/REP/HurstRomodi.dds"
+	traits = {  }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Niko Bavris"
+ 	portrait_path = "gfx/leaders/REP/NikoBavris.dds"
+	traits = {  }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Wulff Yularen"
+    picture = "Wulff Yularen.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+create_navy_leader = {
+	name = "Wilhuff Tarkin"
+    picture = "Tarkin.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Klus Jonoin"
+    picture = "KlusJonoin.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Nils Tenant"
+    picture = "Nils Tenant.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Dao"
+    picture = "Dao.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Shoan Killian"
+    picture = "shoan kilian.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Ronnan Tyla Vedij"
+    picture = "RonnanTylaVedij.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+create_navy_leader = {
+	name = "Ian Block"
+    picture = "IanBlock.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}

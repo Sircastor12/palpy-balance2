@@ -1,0 +1,40 @@
+state={
+	id=332
+	name="STATE_332"
+	provinces={
+		189 301 799 879 1476 1826 2048 2289 2670 2795 3114 3271 3371 3968 4641 4980 8979 8985 8998 9001 9014 9026 9034 9039 9044 9051 9055 9058 9065 9070 9077 9078 9082 9089 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=3
+		rubber=2
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=THY
+		add_core_of = THY
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			9034 30
+		}
+	}
+}
+

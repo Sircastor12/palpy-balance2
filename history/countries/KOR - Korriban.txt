@@ -1,0 +1,45 @@
+capital = 108
+
+set_research_slots = 0
+set_stability = 0
+set_war_support = .0
+
+add_political_power = 0
+set_convoys = 0
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+add_ideas = {
+	uninhabited_idea
+}
+
+create_country_leader = {
+	name = "Uninhabited"
+	desc = "This planet is believed to be uninhabited"
+	picture = "gfx/leaders/KOR/uninhabited.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}

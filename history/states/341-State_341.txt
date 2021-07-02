@@ -1,0 +1,41 @@
+state={
+	id=341
+	name="STATE_341"
+	provinces={
+		1263 1611 1676 3429 3553 3868 4498 5070 9138 9150 9160 9168 9181 9187 9192 9201 9214 9215 9217 9233 9239 9250 
+	}
+	manpower=285714
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=3
+		aluminium=1
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TOY
+		add_core_of = TOY
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

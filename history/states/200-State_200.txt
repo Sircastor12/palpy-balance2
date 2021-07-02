@@ -1,0 +1,42 @@
+state={
+	id=200
+	name="STATE_200"
+	provinces={
+		498 539 593 1267 1604 1637 1705 1727 2525 3463 3474 3564 4894 6898 6908 6923 6930 6942 6949 6960 6964 6976 6984 7015 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=0
+		chromium=2
+	}
+
+  	history = {
+		owner=CAL
+		add_core_of = CAL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=4
+			air_base=0
+			corporate_factory = 1
+
+			6984 = {
+				naval_base = 3
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,393 @@
+add_namespace = BIO
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.1
+	title = "Bioweapon on Coruscant"
+	desc = "An unknown source has distributed an unknown deadly biological weapon on Coruscant. Allthough most citizens are safe there is much civil unrest in the planet. The Republic must decide how to handle this situation"
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+	option = {
+		name = "We need to launch an investigaiton to find the culprit"
+		ROOT = { 
+			add_political_power = -20
+			country_event = {
+			id = BIO.2
+			}
+		}
+	}
+		option = {
+			name = "The people will be safe, they will forget"
+			ROOT = { 
+			add_stability = -.25
+			
+			}
+	}
+}	
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.2
+	title = "Bioweapon Investigation"
+	desc = "The republic has decided to investigate the source, Tan Divo will be leading the investigation. First we should question people that might be related to this outbreak."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "Question Hospital Workers"
+			country_event = {
+			id = BIO.3
+			}
+		}
+		option = {
+			name = "Question Underworld Gangs"
+			country_event = {
+			id = BIO.4
+			}
+		}
+		option = {
+			name = "Give up on the investigaiton"
+		ROOT = { 
+		add_stability = -.20	
+		}
+		}
+	}
+
+
+
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.3
+	title = "Questioning the Hospital Workers"
+	desc = "After speaking to various medical droids and physicians we have decied that there are a few ways to go about with this questioning, we can either interveiw the paitednts or find clues about where it was introduced on Coruscant"
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "What are the symptoms?"
+			country_event = {
+			id = BIO.5
+			}
+		}
+		option = {
+			name = "Is there any info on the source of the weapon?"
+			country_event = {
+			id = BIO.7
+			}
+		}
+		option = {
+			name = "Give up on the investigaiton"
+		ROOT = { 
+		add_stability = -.20	
+		}
+		}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.4
+	title = "Questioning the Gangs"
+	desc = "After questioning and investigating many underworld gangs we have found no leads. It is reasonable to assume they are not involved in this plot."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+	option = {
+			name = "Continue the investigaiton and question others"
+			country_event = {
+			id = BIO.2
+			}
+		}
+		option = {
+			name = "Give up on the investigaiton"
+		ROOT = { 
+		add_stability = -.20	
+		}
+		}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.5
+	title = "Bioweapon Symptoms"
+	desc = "The symptoms found in the bioweapon used are most similar to that of 3 afflictions. The most common symptoms are fevers, coughs, and sore throats. More rarely is diarrhea and eventually death."
+	picture = GFX_symptoms
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "It must be Affliceria!"
+			country_event = {
+			id = BIO.10
+			}
+			ROOT = { 
+			add_political_power = -20
+			}
+		}
+		option = {
+			name = "It must be Trihexalon!"
+			country_event = {
+			id = BIO.11
+			}
+			ROOT = { 
+			add_political_power = -20
+			}
+		}
+		option = {
+			name = "It must be The Blue Shadow Virus!"
+		ountry_event = {
+			id = BIO.12
+		}
+		ROOT = { 
+			add_political_power = -20
+			}
+		}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.7
+	title = "Question the source of the Weapon"
+	desc = "With the current information we have now we have no leads, perhaps if we had knew what exactly what virus this was we could investiagte the source."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "Continue the investigaiton and question others"
+			country_event = {
+			id = BIO.2
+			}
+		}	
+}
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.10
+	title = "Spread Affliceria Cure"
+	desc = "We have spread the Cure for Affliceria to the people of Coruscant, however this has not fixed anything, more and more people are getting sick by the day. Some suggest that we should give up on the investigation, and that we have wasted too much money on this problem."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+			option = {
+				name = "Give up on the investigaiton"
+				ROOT = { 
+				add_stability = -.20	
+				}
+				}
+			
+			
+		option = {
+			name = "Continue investigation, no matter the cost"
+			ROOT = { 
+			add_political_power = -50
+			}
+			}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.11
+	title = "Spread Trihexalon Cure"
+	desc = "We have spread the Cure for Affliceria to the people of Coruscant, this has successfully curttailed the release of the deadly affliction. However the perpetrator of this event is still at large, maybe we can presue this further."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+			option = {
+				name = "Find out who did this."
+				country_event = {
+				id = BIO.13
+				}
+				hidden = {
+				set_country_flag = curefound
+				}
+				}
+			
+			
+		option = {
+			name = "The people are safe, no need to further investigate."
+			ROOT = { 
+			add_stability = .15
+			}
+			}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.12
+	title = "Spread The Blue Shadow Virus Cure"
+	desc = "We have spread the Cure for The Blue Shadow Virus to the people of Coruscant, however this has not fixed anything, more and more people are getting sick by the day. Some suggest that we should give up on the investigation, and that we have wasted too much money on this problem."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+			option = {
+				name = "Give up on the investigaiton"
+				ROOT = { 
+				add_stability = -.20	
+				}
+				}
+
+			
+		option = {
+			name = "Continue investigation, no matter the cost"
+			ROOT = { 
+			add_political_power = -50
+			}
+			}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.13
+	title = "Questioning the Hospital Workers"
+	desc = "After speaking to various medical droids and physicians we have decied that there are a few ways to go about with this questioning, we can either interveiw the paitednts or find clues about where it was introduced on Coruscant"
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "Is there any info on the source of the weapon?"
+			country_event = {
+			id = BIO.14
+			}
+		}
+		option = {
+			name = "Give up on the investigaiton"
+		ROOT = { 
+		add_stability = -.20	
+		}
+		}
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.14
+	title = "Question the source of the Weapon"
+	desc = "Now that we know that the Bioweapon used was Trihexalon we can search the planet for any Trihexalon on the planet."
+	picture = GFX_report_event_stalin_01
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "Search for Trihexalon on Coruscant"
+			country_event = {
+			id = BIO.15
+			}
+		}	
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.15
+	title = "Question the source of the Weapon"
+	desc = "We have found trace amounts of Trihexalon in the Coruscanti underworld, the only hint that we have is a scratched vial with barely legible writing. We need to know what is written on it, the text seems to have been put through something called a 'Ceasar Cipher'. We have yet to decode them but the scientists tell us that it is one of the three, only one should make sense after decoding."
+	picture = GFX_cipher
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = { 
+			tag = REP
+	}
+		option = {
+			name = "M lezi xli lmkl kvsyrh"
+			country_event = {
+			id = BIO.16
+			}
+		}	
+		
+		option = {
+			name = "Tvstivxc sj Gsqqivgi Kymph"
+			country_event = {
+			id = BIO.17
+			}
+		}
+
+		option = {
+			name = "Xlmw mw alivi xli jyr fikmrw"
+			country_event = {
+			id = BIO.18
+			}
+		}		
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.18
+	title = "Decoding...."
+	desc = "'This is where the fun begins'... What? This doesnt make any sense... However, we have exausted all of our resources on this and we must stop the investigation."
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = { 
+			tag = REP
+	}
+	
+		option = {
+			name = "The investigation is over"
+		}		
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.17
+	title = "Decoding...."
+	desc = "'Property of Commerce Guild'... Thats it! Thoose damn Separatist are behind this!."
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = { 
+			tag = REP
+	}
+	
+		option = {
+			name = "This is an Act of War!"
+			reverse_add_opinion_modifier = {
+				target = CMG
+				modifier = act_of_war
+			}
+			create_wargoal = {
+ 		  		target = CMG
+ 		  		type = take_state
+			}
+		}		
+}
+
+#Bio Weapon on Coruscant 
+country_event = {
+	id = BIO.16
+	title = "Decoding...."
+	desc = "'I have the high ground'... What? This doesnt make any sense... However, we have exausted all of our resources on this and we must stop the investigation."
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = { 
+			tag = REP
+	}
+	
+		option = {
+			name = "The investigation is over"	
+		}		
+}

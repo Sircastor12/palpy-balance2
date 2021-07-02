@@ -1,0 +1,2312 @@
+#focus_tree = {
+#	id = CommerceGuild
+#	country = {
+#		factor = 0
+#		modifier = {
+#			add = 10
+#			tag = CMG
+#		}
+#	}
+#	
+#	continuous_focus_position = { x = 50 y = 1250 }
+#    default = no
+#	
+#	
+#	#Focus for End the Financial Crisis
+#	focus = {
+#		id = CMG_end_financial_crisis
+#		icon = GFX_goal_generic_secret_weapon
+#		x = 20
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_bribe_the_senate }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		remove_ideas = { Financial_Crisis }
+#		}
+#			
+#	}
+#	
+#	#Focus for Monopolize the Outer Rim Banks
+#	focus = {
+#		id = CMG_monopolize_banks
+#		icon = GFX_goal_generic_secret_weapon
+#		x = 20
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_end_financial_crisis }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = { Monopolized_Outer_Rim }
+#		}
+#	}
+#	
+#	#Focus for Push Anti-Jedi Petition
+#	focus = {
+#		id = CMG_antijedi_petition
+#		icon = GFX_goal_tfv_sever_ties_with_uk
+#		x = 20
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_monopolize_banks }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			country_event = {
+#				id = CMG.4
+#			}
+#		}
+#		
+#	}
+#
+#	#Focus for Strengthen Grip on Korriban
+#	focus = {
+#		id = CMG_grip_on_korriban
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 20
+#		y = 7
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_office_on_korriban }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			create_wargoal = {
+#				type = annex_everything
+#				target = KOR
+#			}
+#		}
+#	}
+#	
+#	#Focus for Begin Talks with Count Dooku
+#	focus = {
+#		id = CMG_talks_with_count_dooku
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 20
+#		y = 8
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_grip_on_korriban }
+#		available = { country_exists = CIS }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			country_event = {
+#				id = CMG.2
+#			}
+#		}
+#	}
+#	
+#	focus = {
+#		id = CMG_rhen_var
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 18
+#		y = 9
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_talks_with_count_dooku }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		}
+#	}
+#	
+#	#Focus for Misson to Anison
+#	focus = {
+#		id = CMG_mission_to_anison
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 20
+#		y = 9
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_talks_with_count_dooku }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			country_event = {
+#				id = CMG.3
+#			}
+#		}
+#	}
+#	
+#	#Focus for Release Bioweapon on Corouscant  
+#	focus = {
+#		id = CMG_Bioweapon_on_Corouscant
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 20
+#		y = 10
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_mission_to_anison }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		country_event = {
+#			id = BIO.1			
+#		}
+#		}
+#	}
+#	
+#	#Focus for Open Communications with Galatic Criminals
+#	focus = {
+#		id = CMG_communications_with_galatic_criminals
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 23
+#		y = 9
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_talks_with_count_dooku}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#	#Focus for Communications with Granta Omega
+#	focus = {
+#		id = CMG_communications_with_granta_omega
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 22
+#		y = 10
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_communications_with_galatic_criminals}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			create_corps_commander = {
+#					name = "Granta Omega"
+#					gfx = GFX_portrait_chi_alexander_von_falkenhausen
+#					skill = 3
+#					attack_skill = 4
+#					defense_skill = 3
+#					planning_skill = 2
+#					logistics_skill = 2
+#					id = 603
+#					traits = { infantry_officer }
+#			}
+#		}	
+#	}
+#	
+#	#Focus for Communications with Jenna Zan Arbor
+#	focus = {
+#		id = CMG_communications_with_Jenna_Zan_Arbor
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		x = 24
+#		y = 10
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_communications_with_galatic_criminals }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			create_corps_commander = {
+#					name = "Jenna Zan Arbor"
+#					gfx = GFX_portrait_chi_alexander_von_falkenhausen
+#					skill = 3
+#					attack_skill = 2
+#					defense_skill = 2
+#					planning_skill = 4
+#					logistics_skill = 3
+#					id = 603
+#					traits = { infantry_officer }
+#			}
+#		}	
+#	}
+#
+#
+#
+#	#Focus for Expand Dorvalla Mining II
+#	focus = {
+#		id = CMG_expand_dorvalla_mining_ii
+#		icon = GFX_goal_generic_construct_civ_factory
+#		x = 9
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_dorvalla_mining }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available = {
+#			has_full_control_of_state = 12
+#		}
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		search_filters = { FOCUS_FILTER_INDUSTRY }
+#
+#		completion_reward = {
+#			12 = {
+#				add_resource = {
+#					type = steel
+#					amount = 8
+#				}
+#				add_resource = {
+#					type = aluminium
+#					amount = 8
+#				}
+#				add_resource = {
+#					type = tungsten
+#					amount = 8
+#				}
+#				add_resource = {
+#					type = chromium
+#					amount = 4
+#				}
+#			}
+#		}
+#	}
+#
+#	#Focus for Strengthen the Mining Guild
+#	focus = {
+#		id = CMG_strengthen_the_mining_guild
+#		icon = GFX_goal_generic_construction2
+#		x = 5
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			29 = {
+#			add_state_modifier = {
+#				modifier = {
+#				local_resources = 0.05
+#					}
+#				}
+#			}
+#		}
+#	}
+#	
+#	#Focus for Capital Infastructure
+#	focus = {
+#		id = CMG_cap_infastructure
+#		icon = GFX_goal_generic_construction2
+#		x = 8
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		available = { has_full_control_of_state = 12 }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		completion_reward = {
+#			12 = {
+#			add_building_construction = {
+#				type = infrastructure
+#				level = 3
+#				instant_build = yes
+#			}
+#			}
+#		}
+#		
+#	}
+#	
+#	#Focus for Expand Mining Guild to Korriban
+#	focus = {
+#		id = CMG_mining_guild_korriban
+#		icon = GFX_goal_generic_construction2
+#		x = 6
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		available = { has_full_control_of_state = 8 }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		completion_reward = {
+#			8 = {
+#			add_building_construction = {
+#				type = infrastructure
+#				level = 2
+#				instant_build = yes
+#			}
+#			}
+#		}
+#		
+#	}
+#	
+#	#Focus for Begin Mining on Korriban
+#	focus = {
+#		id = CMG_mining_on_Korriban
+#		icon = GFX_goal_generic_construction2
+#		x = 6
+#		y = 6
+#		cost = 8
+#		available_if_capitulated = yes
+#		available = { has_full_control_of_state = 8 }
+#		prerequisite = { focus = CMG_mining_guild_korriban }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			8 = {
+#				add_resource = {
+#					type = steel
+#					amount = 20
+#				}
+#				add_resource = {
+#					type = aluminium
+#					amount = 12
+#				}
+#				add_resource = {
+#					type = tungsten
+#					amount = 12
+#				}
+#				add_resource = {
+#					type = chromium
+#					amount = 8
+#				}
+#				add_resource = {
+#					type = oil
+#					amount = 8
+#				}
+#			}
+#			}
+#		}
+#	
+#
+#	#Focus for Expand Arcona Corporation II
+#	focus = {
+#		id = CMG_expand_arcona_corporation_ii
+#		icon = GFX_goal_unknown
+#		x = 7
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_arcona_corporation }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		bypass = {
+#			custom_trigger_tooltip = {
+#				tooltip = construction_effort_tt
+#				all_owned_state = {
+#					free_building_slots = {
+#						building = industrial_complex
+#						size < 2
+#						include_locked = yes
+#					}					
+#				}
+#			}
+#		}
+#
+#		complete_tooltip = {
+#			add_extra_state_shared_building_slots = 1
+#			add_building_construction = {
+#				type = industrial_complex
+#				level = 1
+#				instant_build = yes
+#			}			
+#		}
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					free_building_slots = {
+#						building = industrial_complex
+#						size > 0
+#						include_locked = yes
+#					}
+#					OR = {
+#						is_in_home_area = yes
+#						NOT = {
+#							owner = {
+#								any_owned_state = {
+#									free_building_slots = {
+#										building = industrial_complex
+#										size > 0
+#										include_locked = yes
+#									}
+#									is_in_home_area = yes
+#								}
+#							}
+#						}
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	#Focus for Expand SoroSuub
+#	focus = {
+#		id = CMG_expand_sorosuub
+#		icon = GFX_goal_generic_construct_mil_factory
+#		x = 11
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_offsite_building = { type = arms_factory level = 2 }
+#		}
+#	}
+#
+#	#Focus for Expand SoroSuub II
+#	focus = {
+#		id = CMG_expand_sorosuub_ii
+#		icon = GFX_goal_generic_construct_mil_factory
+#		x = 11
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_sorosuub }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_offsite_building = { type = arms_factory level = 2 }
+#		}
+#	}
+#
+#	#Focus for Expand SoroSuub III
+#	focus = {
+#		id = CMG_expand_sorosuub_iii
+#		icon = GFX_goal_generic_construct_mil_factory
+#		x = 11
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_sorosuub_ii }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_offsite_building = { type = arms_factory level = 2 }
+#		}
+#	}
+#
+#	#Focus for Expand Dorvalla Mining
+#	focus = {
+#		id = CMG_expand_dorvalla_mining
+#		icon = GFX_goal_generic_construct_civ_factory
+#		x = 9
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available = {
+#			has_full_control_of_state = 12
+#		}
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		search_filters = { FOCUS_FILTER_INDUSTRY }
+#
+#		completion_reward = {
+#			12 = {
+#				add_resource = {
+#					type = steel
+#					amount = 4
+#				}
+#				add_resource = {
+#					type = aluminium
+#					amount = 4
+#				}
+#				add_resource = {
+#					type = tungsten
+#					amount = 4
+#				}
+#			
+#		
+#			}
+#	
+#		}
+#	}
+#
+#	#Focus for Expand Arcona Corporation
+#	focus = {
+#		id = CMG_expand_arcona_corporation
+#		icon = GFX_goal_generic_construct_civ_factory
+#		x = 7
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		ai_will_do = {
+#			factor = 1}
+#	
+#		bypass = {
+#			custom_trigger_tooltip = {
+#				tooltip = construction_effort_tt
+#				all_owned_state = {
+#					free_building_slots = {
+#						building = industrial_complex
+#						size < 2
+#						include_locked = yes
+#					}					
+#				}
+#			}
+#		}
+#
+#		complete_tooltip = {
+#			add_extra_state_shared_building_slots = 1
+#			add_building_construction = {
+#				type = industrial_complex
+#				level = 1
+#				instant_build = yes
+#			}			
+#		}
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					free_building_slots = {
+#						building = industrial_complex
+#						size > 0
+#						include_locked = yes
+#					}
+#					OR = {
+#						is_in_home_area = yes
+#						NOT = {
+#							owner = {
+#								any_owned_state = {
+#									free_building_slots = {
+#										building = industrial_complex
+#										size > 0
+#										include_locked = yes
+#									}
+#									is_in_home_area = yes
+#								}
+#							}
+#						}
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	
+#
+#
+#	#Focus for SoroSuub Research Branch
+#	focus = {
+#		id = CMG_sorosuub_research_branch
+#		icon = GFX_focus_research2
+#		x = 13
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_sorosuub_ii }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_ideas = SoroSuub_research_labs
+#			add_political_power = 75
+#		}
+#	}
+#
+#	#Focus for Strengthen the Offworld Mining Corporation
+#	focus = {
+#		id = CMG_strengthen_the_offworld_mining_corporation
+#		icon = GFX_goal_generic_construction2
+#		x = 3
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_increase_trade }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.5
+#			uses = 2
+#			technology = construction1
+#			technology = construction2
+#			technology = construction3
+#			technology = construction4
+#			technology = construction5
+#			technology = excavation1
+#			technology = excavation2
+#			technology = excavation3
+#			technology = excavation4
+#			technology = excavation5
+#		}
+#		}
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.5 
+#			uses = 2
+#			category = synth_resources
+#		}
+#		}
+#	}
+#
+#	#Focus for Increase Trade
+#	focus = {
+#		id = CMG_increase_trade
+#		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+#		x = 7
+#		y = 1
+#		cost = 8
+#		available_if_capitulated = yes
+#		search_filters = { FOCUS_FILTER_INDUSTRY } 
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.0 
+#			uses = 1 
+#			category = industry
+#		}
+#		}
+#	}
+#	#Focus for UniFy Subsidiary
+#		focus = {
+#			id = CMG_unify_subsidiary
+#			icon = GFX_goal_generic_demand_territory
+#			x = 3
+#			y = 3
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_strengthen_the_offworld_mining_corporation }
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_stability = -.05
+#			
+#			29 = {
+#				add_resource = {
+#					type = steel
+#					amount = 16
+#				}
+#				add_resource = {
+#					type = chromium
+#					amount = 10
+#				}
+#				add_resource = {
+#					type = aluminium
+#					amount = 10
+#				}
+#
+#			}
+#		}
+#	}
+#	#Focus for Guild controll of the OMC
+#	focus = {
+#		id = CMG_Guild_controll_of_the_OMC
+#		icon = GFX_goal_generic_occupy_states_ongoing_war
+#		x = 3
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_unify_subsidiary }
+#		mutually_exclusive = { focus = CMG_Sith_Leadership_of_the_OMC }
+#		mutually_exclusive = { focus = CMG_Hutt_Leadership_of_the_OMC }
+#		ai_will_do = {
+#			factor = 2
+#		}
+#		
+#		completion_reward = {
+#			add_stability = .07
+#			add_political_power = 50
+#			}
+#	}
+#
+#	
+#	#Focus for Sith Leadership of the OMC
+#		focus = {
+#			id = CMG_Sith_Leadership_of_the_OMC
+#			icon = GFX_goal_tripartite_pact
+#			x = 1
+#			y = 4
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_unify_subsidiary }
+#			mutually_exclusive = { focus = CMG_Guild_controll_of_the_OMC }
+#			mutually_exclusive = { focus = CMG_Hutt_Leadership_of_the_OMC }
+#			ai_will_do = {
+#				factor = .25
+#			}
+#			
+#			completion_reward = {
+#				add_war_support = 0.05
+#				add_ideas = Sith_leadership_of_the_OMC
+#				}
+#				
+#			
+#		}
+#		
+#	#Focus for Hutt Leadership of the OMC
+#		focus = {
+#			id = CMG_Hutt_Leadership_of_the_OMC
+#			icon = GFX_goal_tripartite_pact
+#			x = 5
+#			y = 4
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_unify_subsidiary }
+#			mutually_exclusive = { focus = CMG_Sith_Leadership_of_the_OMC }	
+#			mutually_exclusive = { focus = CMG_dir }
+#			ai_will_do = {
+#				factor = .25
+#			}
+#			
+#			completion_reward = {
+#				add_ideas = Hutts_in_the_OMC
+#			}
+#		}
+#			
+#	#Focus for Duralloy Excavations
+#	focus = {
+#		id = CMG_Duralloy_Excavations
+#		icon = GFX_goal_generic_production
+#		x = 5
+#		y = 3
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_strengthen_the_mining_guild }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			29 = {
+#				add_resource = {
+#					type = steel
+#					amount = 24
+#				}
+#			}
+#		}
+#	}
+#	
+#	#Focus for Negotiate to End the Financial Crisis
+#	focus = {
+#		id = CMG_negotiate_financial_crisis
+#		icon = GFX_goal_generic_intelligence_exchange
+#		x = 20
+#		y = 1
+#		cost = 8
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_political_power = 50
+#		}
+#	}
+#	
+#
+#	#Focus for Bribe the Senate
+#		focus = {
+#			id = CMG_bribe_the_senate
+#			icon = GFX_goal_generic_dangerous_deal
+#			x = 20
+#			y = 2
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_negotiate_financial_crisis }
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#				add_threat = 1
+#				add_political_power = -50
+#				reverse_add_opinion_modifier = {
+#					target = REP
+#					modifier = dirty_politics
+#				}
+#				add_popularity = {
+#					ideology = fascism
+#    				popularity = 0.10
+#				}
+#			}
+#		}
+#		
+#	#Focus for Bribe Maxo Vista
+#	focus = {
+#		id = CMG_maxo_vista
+#		icon = GFX_goal_generic_defence
+#		x = 18
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_bribe_the_senate }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			add_political_power = -50
+#		}
+#	}
+#	
+#	#Focus for Rig "Accident" at the Galatic Games
+#	focus = {
+#		id = CMG_Accident_at_the_Galatic_Games
+#		icon = GFX_goal_generic_defence
+#		x = 18
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_maxo_vista }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			country_event = {
+#				id = galgames.1
+#			}
+#		}
+#	}	
+#	
+#	#Focus for Execute "Accident" at the Galatic Games
+#	focus = {
+#		id = CMG_execute_Accident_at_Galatic_Games
+#		icon = GFX_goal_generic_defence
+#		x = 18
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_Accident_at_the_Galatic_Games }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			country_event = {
+#				id = galgames.2 #terrorist attak
+#			}
+#		}
+#	}	
+#	
+#	
+#	
+#	#Focus for Contact the Trade Federation
+#		focus = {
+#			id = CMG_contact_the_trade_federation
+#			icon = GFX_goal_generic_dangerous_deal
+#			x = 22
+#			y = 3
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_bribe_the_senate }
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			completion_reward = {
+#			add_ideas = trade_federation_contact_idea
+#			FED = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#	#Focus for Befriend the Banking Clan
+#	focus = {
+#		id = CMG_befriend_banking_clan
+#		icon = GFX_focus_usa_reestablish_the_gold_standard
+#		prerequisite = { focus = CMG_contact_the_trade_federation }
+#		x = 22
+#		y = 5
+#		cost = 8
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 100
+#			IBC = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#
+#	#Focus for Open Office on Korriban
+#	focus = {
+#		id = CMG_office_on_korriban
+#		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+#		x = 20
+#		y = 6
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_antijedi_petition }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		transfer_state = 8 
+#		country_event = {
+#			id = CMG.1	#Korriban Controll
+#		}
+#		add_popularity = {
+#					ideology = fascism
+#    			popularity = 0.10
+#		}
+#		}
+#	}
+#
+#	#Focus for Expand Arcona Corporation III
+#	focus = {
+#		id = CMG_expand_arcona_corporation_iii
+#		icon = GFX_goal_unknown
+#		x = 7
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_arcona_corporation_ii }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		bypass = {
+#			custom_trigger_tooltip = {
+#				tooltip = construction_effort_tt
+#				all_owned_state = {
+#					free_building_slots = {
+#						building = industrial_complex
+#						size < 2
+#						include_locked = yes
+#					}					
+#				}
+#			}
+#		}
+#
+#		complete_tooltip = {
+#			add_extra_state_shared_building_slots = 2
+#			add_building_construction = {
+#				type = industrial_complex
+#				level = 2
+#				instant_build = yes
+#			}			
+#		}
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					free_building_slots = {
+#						building = industrial_complex
+#						size > 0
+#						include_locked = yes
+#					}
+#					OR = {
+#						is_in_home_area = yes
+#						NOT = {
+#							owner = {
+#								any_owned_state = {
+#									free_building_slots = {
+#										building = industrial_complex
+#										size > 0
+#										include_locked = yes
+#									}
+#									is_in_home_area = yes
+#								}
+#							}
+#						}
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 2
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#	#Focus for Expand Dorvalla Mining III
+#	focus = {
+#		id = CMG_expand_dorvalla_mining_iii
+#		icon = GFX_goal_generic_oil_refinery
+#		x = 9
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_expand_dorvalla_mining_ii }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available = {
+#			has_full_control_of_state = 12
+#		}
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		search_filters = { FOCUS_FILTER_INDUSTRY }
+#
+#		completion_reward = {
+#			12 = {
+#				add_resource = {
+#					type = oil
+#					amount = 16
+#				}
+#				add_resource = {
+#					type = steel
+#					amount = 14
+#				}
+#				add_resource = {
+#					type = aluminium
+#					amount = 14
+#				}
+#				add_resource = {
+#					type = tungsten
+#					amount = 14
+#				}
+#				add_resource = {
+#					type = chromium
+#					amount = 8
+#				}
+#				
+#			}		
+#		
+#		}
+#	
+#	}
+#		
+#	#Focus for Planetkilling Weapons
+#	focus = {
+#		id = CMG_Planetkilling_weapons
+#		icon = GFX_focus_wonderweapons
+#		x = 11
+#		y = 6
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_sorosuub_research_branch }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = nuclear_bonus
+#				ahead_reduction = 2
+#				category = nuclear
+#			}
+#		}
+#	}
+#	
+#	#Focus for Extra Research Slot
+#	focus = {
+#		id = CMG_extra_research_slot
+#		icon = GFX_focus_research2
+#		x = 13
+#		y = 7
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_sorosuub_research_branch }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_research_slot = 1
+#		}
+#	}
+#	
+#	#Focus for Secret Weapons
+#	focus = {
+#		id = CMG_secret_weapons
+#		icon = GFX_goal_generic_scientific_exchange
+#		x = 15
+#		y = 6
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_sorosuub_research_branch }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 1.0
+#				uses = 2
+#				category = electronics
+#				category = nuclear
+#				category = rocketry
+#			}
+#		}
+#	}
+#
+#	#Focus for Droid Army
+#	focus = {
+#		id = CMG_droid_army
+#		icon = GFX_goal_unknown
+#		x = 28
+#		y = 3
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_ground_warfare }
+#		mutually_exclusive = { focus = CMG_integrated_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_ideas = droid_army
+#		}
+#	}
+#
+#	#Focus for Integrated Army
+#	focus = {
+#		id = CMG_integrated_army
+#		icon = GFX_goal_unknown
+#		x = 36
+#		y = 3
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_ground_warfare }
+#		mutually_exclusive = { focus = CMG_droid_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_ideas = integrated_army 
+#		}
+#	}
+#
+#
+#	#Focus for Commerce Guild Punitive Security Forces
+#	focus = {
+#		id = CMG_commerce_guild_punitive_security_forces
+#		icon = GFX_goal_generic_axis_build_infantry
+#		x = 32
+#		y = 1
+#		cost = 10
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#				army_experience = 30
+#			}
+#	}
+#
+#	#Focus for Ground Warfare
+#	focus = {
+#		id = CMG_ground_warfare
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 2
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_commerce_guild_punitive_security_forces }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#				add_ideas = CMG_ground_warfare
+#			}
+#			
+#	}
+#
+#	#Focus for Mass Production
+#	focus = {
+#		id = CMG_mass_production
+#		icon = GFX_goal_unknown
+#		x = 27
+#		y = 5
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_supremacy_of_technology }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = mass_production
+#		}	
+#	}
+#	
+#	#Focus for Droid Planning 
+#	focus = {
+#		id = CMG_droid_plan
+#		icon = GFX_goal_unknown
+#		x = 27
+#		y = 6
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_mass_production }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = droid_plan
+#		}	
+#	}
+#	
+#	#Focus for Droid Inititive 
+#	focus = {
+#		id = CMG_droid_init
+#		icon = GFX_goal_unknown
+#		x = 27
+#		y = 7
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_droid_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = droid_init
+#		}	
+#	}
+#
+#	#Focus for Strength in Numbers
+#	focus = {
+#		id = CMG_strength_in_numbers
+#		icon = GFX_goal_unknown
+#		x = 29
+#		y = 6
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_tactical_droid_contracts }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_tech_bonus= {
+#			bonus = 1.5
+#			uses = 1
+#			category = cat_mass_assault
+#			}
+#		}
+#	}
+#
+#	#Focus for Droids of Our Own
+#	focus = {
+#		id = CMG_droids_of_our_own
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 4
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_ground_warfare }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_ideas = droid_own
+#		}
+#	}
+#
+#	#Focus for Sentient Command
+#	focus = {
+#		id = CMG_sentient_command
+#		icon = GFX_goal_unknown
+#		x = 35
+#		y = 4
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_integrated_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = sentient_command
+#		}
+#	}
+#
+#	#Focus for Doctrine Effort
+#	focus = {
+#		id = CMG_doctrine_effort
+#		icon = GFX_goal_unknown
+#		x = 35
+#		y = 6
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_experienced_mercenaries }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_tech_bonus = {
+#				bonus = 1.5
+#				uses = 1
+#				category = land_doctrine
+#			}
+#		}
+#	}
+#
+#	#Focus for Equipment Improvments
+#	focus = {
+#		id = CMG_equipment_improvments
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 8
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { 
+#			focus = CMG_desert_training 
+#			focus = CMG_proven_method_of_warfare
+#			focus = CMG_advanced_tactical_assault
+#			focus = CMG_droid_init
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.5 
+#			uses = 1 
+#			category = infantry_weapons
+#		}
+#		}
+#	}
+#
+#	#Focus for Support Equipment Improvements
+#	focus = {
+#		id = CMG_support_equipment_improvements
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 9
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_equipment_improvments }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.5 
+#			uses = 1 
+#			category = support_tech
+#		}
+#		}
+#	}
+#
+#	#Focus for Armor Improvemnts
+#	focus = {
+#		id = CMG_armor_improvemnts
+#		icon = GFX_goal_unknown
+#		x = 30
+#		y = 9
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_equipment_improvments }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.5 
+#			uses = 1 
+#			category = armor
+#		}
+#		}
+#	}
+#
+#	#Focus for Artillery Improvments
+#	focus = {
+#		id = CMG_artillery_improvments
+#		icon = GFX_goal_unknown
+#		x = 34
+#		y = 9
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_equipment_improvments }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_tech_bonus= {
+#			bonus = 1.5 
+#			uses = 1 
+#			category = artillery
+#		}
+#		}
+#	}
+#
+#	#Focus for Doctrine Effort II
+#	focus = {
+#		id = CMG_doctrine_effort_ii
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 10
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { 
+#			focus = CMG_support_equipment_improvements 
+#			focus = CMG_armor_improvemnts 
+#			focus = CMG_artillery_improvments 
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_tech_bonus = {
+#				bonus = 1.5
+#				uses = 2
+#				category = land_doctrine
+#			}
+#		}
+#	}
+#
+#	#Focus for Supremacy of Technology
+#	focus = {
+#		id = CMG_supremacy_of_technology
+#		icon = GFX_goal_unknown
+#		x = 27
+#		y = 4
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_droid_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_ideas = supremacy_of_technology
+#		}
+#	}
+#
+#	#Focus for OG-9 Homing Spider Droid
+#	focus = {
+#		id = CMG_og9_homing_spider_droid
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 5
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_droids_of_our_own }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for DSD1 Dwarf Spider Droid
+#	focus = {
+#		id = CMG_dsd1_dwarf_spider_droid
+#		icon = GFX_goal_unknown
+#		x = 32
+#		y = 6
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_og9_homing_spider_droid }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for A-DSD Advanced Dwarf Spider Droid
+#	focus = {
+#		id = CMG_adsd_advanced_dwarf_spider_droid
+#		icon = GFX_goal_unknown
+#		x = 31
+#		y = 7
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_dsd1_dwarf_spider_droid }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for Heavy Dwarf Spider Droid
+#	focus = {
+#		id = CMG_heavy_dwarf_spider_droid
+#		icon = GFX_goal_unknown
+#		x = 33
+#		y = 7
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_dsd1_dwarf_spider_droid }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for Supremacy of Induviduality
+#	focus = {
+#		id = CMG_supremacy_of_induviduality
+#		icon = GFX_goal_unknown
+#		x = 37
+#		y = 4
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_integrated_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_ideas = superior_will
+#		}
+#	}
+#
+#	#Focus for Gossam Commandos
+#	focus = {
+#		id = CMG_gossam_commandos
+#		icon = GFX_goal_unknown
+#		x = 37
+#		y = 5
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_supremacy_of_induviduality }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for Felucian Terrain Program
+#	focus = {
+#		id = CMG_felucian_terrain_program
+#		icon = GFX_goal_unknown
+#		x = 37
+#		y = 6
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_gossam_commandos }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			custom_effect_tooltip = RAJ_jungle_training_effect
+#			hidden_effect = { set_technology = { jungle_warfare = 1 } }
+#		}
+#	}
+#
+#	#Focus for Desert Training
+#	focus = {
+#		id = CMG_desert_training
+#		icon = GFX_goal_unknown
+#		x = 37
+#		y = 7
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_felucian_terrain_program }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#		add_ideas = desert_train
+#		}
+#	}
+#
+#	#Focus for Tactical Droid Contracts
+#	focus = {
+#		id = CMG_tactical_droid_contracts
+#		icon = GFX_goal_unknown
+#		x = 29
+#		y = 5
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_droid_command }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for Proven Method of Warfare
+#	focus = {
+#		id = CMG_proven_method_of_warfare
+#		icon = GFX_goal_unknown
+#		x = 35
+#		y = 7
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_doctrine_effort }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = proven_method
+#		}
+#	}
+#
+#	#Focus for Experienced Mercenaries
+#	focus = {
+#		id = CMG_experienced_mercenaries
+#		icon = GFX_goal_unknown
+#		x = 35
+#		y = 5
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_sentient_command }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	#Focus for Droid Command
+#	focus = {
+#		id = CMG_droid_command
+#		icon = GFX_goal_unknown
+#		x = 29
+#		y = 4
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_droid_army }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = droid_command
+#		}
+#	}
+#
+#	#Focus for Advanced Tactical Assault
+#	focus = {
+#		id = CMG_advanced_tactical_assault
+#		icon = GFX_goal_unknown
+#		x = 29
+#		y = 7
+#		cost = 10
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_strength_in_numbers }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_ideas = advanced_tatical_assult
+#		}
+#	}
+#	
+#	focus = {
+#			id = CMG_guild_navy
+#			icon = Focus_generic_navy_battleship
+#			x = 42
+#			y = 1
+#			cost = 8
+#			available_if_capitulated = yes
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_tech_bonus = {
+#    			bonus = 1.5
+#    			uses = 1
+#    			category = naval_doctrine
+#				}
+#			}
+#		}
+#	#Focus for Naval Warfare
+#	focus = {
+#		id = CMG_naval_warfare
+#		icon = GFX_goal_unknown
+#		x = 42
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_guild_navy }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			navy_experience = 40
+#		}	
+#	}
+#	
+#	#navy of our owne
+#	focus = {
+#		id = CMG_own_navy
+#		icon = GFX_goal_unknown
+#		x = 42
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_naval_warfare }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
+#	
+#	#Focus for Diamond Class Cruisers
+#	focus = {
+#		id = CMG_diamond_criuser
+#		icon = GFX_goal_unknown
+#		x = 42
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_own_navy }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
+#	#Focus for Recusant-class Light Destroyers
+#	focus = {
+#		id = CMG_recusant_destroyer
+#		icon = GFX_goal_unknown
+#		x = 42
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_diamond_criuser }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	#Focus for Pammant Dockyards
+#	focus = {
+#		id = CMG_pammant_docks
+#		icon = GFX_goal_unknown
+#		x = 42
+#		y = 6
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_recusant_destroyer }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			12 = {
+#				
+#				add_building_construction = {
+#				    type = dockyard
+#				    level = 4
+#				    instant_build = yes
+#				}
+#				add_extra_state_shared_building_slots = 4
+#			}
+#		}	
+#	}
+#	
+#	#Focus for Providence-class Carrier Destroyer
+#	focus = {
+#		id = CMG_provice_destroyer
+#		icon = GFX_goal_unknown
+#		x = 42
+#		y = 7
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_pammant_docks }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
+#	
+#	#Focus for The Malevolence
+#	focus = {
+#		id = CMG_Malevolence
+#		icon = GFX_goal_unknown
+#		x = 41
+#		y = 8
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_provice_destroyer }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
+#	
+#	#Focus for The Invisible Hand
+#	focus = {
+#		id = CMG_Invisible_Hand
+#		icon = GFX_goal_unknown
+#		x = 43
+#		y = 8
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_provice_destroyer }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#	
+#	#Focus for Capital Dockyards
+#	focus = {
+#		id = CMG_Capital_docks
+#		icon = GFX_goal_unknown
+#		x = 44
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_naval_warfare }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#			12 = {
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#				    type = dockyard
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#		}	
+#	}
+#	
+#	#Focus for Naval Expansion
+#	focus = {
+#		id = CMG_naval_expansion
+#		icon = GFX_goal_unknown
+#		x = 40
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_naval_warfare }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			navy_experience = 20
+#		}		
+#	}
+#	
+#	#Focus for Block supply lines
+#	focus = {
+#		id = CMG_block_supply
+#		icon = GFX_goal_unknown
+#		x = 40
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_naval_warfare }
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_ideas = block_supply
+#		}		
+#	}
+#	
+#	focus = {
+#			id = CMG_naval_doctrine_effort
+#			icon = Focus_generic_navy_battleship
+#			x = 40
+#			y = 5
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_block_supply }
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_tech_bonus = {
+#    			bonus = 1.0
+#    			uses = 2
+#    			category = naval_doctrine
+#				}
+#			}
+#		}
+#	
+#	focus = {
+#			id = CMG_imp_hyperdrives
+#			icon = Focus_generic_navy_battleship
+#			x = 40
+#			y = 6
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_naval_doctrine_effort}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_ideas = imp_hyperdrives
+#			}
+#		}
+#		
+#			focus = {
+#			id = CMG_dockyard_construction
+#			icon = Focus_generic_navy_battleship
+#			x = 44
+#			y = 4
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_Capital_docks}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_ideas = dockyard_construction
+#			}
+#		}
+#		
+#		focus = {
+#			id = CMG_dockyard_output
+#			icon = Focus_generic_navy_battleship
+#			x = 44
+#			y = 5
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_dockyard_construction}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_ideas = dock_output
+#			}
+#		}
+#		
+#		
+#		focus = {
+#			id = CMG_expanded_docks
+#			icon = Focus_generic_navy_battleship
+#			x = 44
+#			y = 6
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_dockyard_output}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			12 = {
+#				add_building_construction = {
+#				    type = naval_base
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#			29 = {
+#				add_building_construction = {
+#				    type = naval_base
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#			16 = {
+#				add_building_construction = {
+#				    type = naval_base
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#			}
+#		}
+#		
+#	#Focus for Commerce Guild Air Defence Force
+#	focus = {
+#		id = CMG_guild_air
+#		icon = Focus_generic_air_plane
+#		x = 48
+#		y = 1
+#		cost = 8
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_tech_bonus = {
+#    		bonus = 1.5
+#    		uses = 1
+#    		category = air_doctrine
+#			}
+#		}
+#	}
+#	
+#	
+#	
+#
+#	focus = {
+#		id = CMG_starfighter_warfare
+#		icon = Focus_generic_air_plane
+#		x = 48
+#		y = 2
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_guild_air}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		air_experience = 40
+#		}	
+#	}
+#	
+#	focus = {
+#		id = CMG_fleet_expansion
+#		icon = Focus_generic_air_plane
+#		x = 47
+#		y = 4
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_droid_starfighters}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		air_experience = 20
+#		}	
+#	}
+#	
+#	focus = {
+#		id = CMG_droid_starfighters
+#		icon = Focus_generic_air_plane
+#		x = 47
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_starfighter_warfare}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = droid_starfighters
+#		}	
+#	}
+#	
+#	focus = {
+#		id = CMG_situational_pro
+#		icon = Focus_generic_air_plane
+#		x = 47
+#		y = 5
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_fleet_expansion}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = situational_pro
+#		}	
+#	}
+#	
+#	focus = {
+#		id = CMG_starfighter_doctrine
+#		icon = Focus_generic_air_plane
+#		x = 47
+#		y = 6
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_situational_pro}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_tech_bonus = {
+#    		bonus = 1
+#    		uses = 2
+#    		category = air_doctrine
+#			}
+#		}	
+#	}
+#	
+#	focus = {
+#		id = CMG_imp_engines
+#		icon = Focus_generic_air_plane
+#		x = 47
+#		y = 7
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_starfighter_doctrine}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		completion_reward = {
+#		add_ideas = imp_engines
+#		}	
+#	}
+#	
+#	
+#	focus = {
+#		id = CMG_cap_air
+#		icon = Focus_generic_air_plane
+#		x = 49
+#		y = 3
+#		cost = 8
+#		available_if_capitulated = yes
+#		prerequisite = { focus = CMG_starfighter_warfare}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		
+#		completion_reward = {
+#			12 = {
+#				add_building_construction = {
+#				    type = air_base
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#		}
+#		}	
+#		
+#	focus = {
+#			id = CMG_airbase_construction
+#			icon = Focus_generic_navy_battleship
+#			x = 49
+#			y = 4
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_cap_air}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			add_ideas = airbase_construction
+#			}
+#		}	
+#		
+#		focus = {
+#			id = CMG_cap_aa
+#			icon = Focus_generic_navy_battleship
+#			x = 49
+#			y = 5
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_airbase_construction}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			12 = {
+#				add_building_construction = {
+#				    type = anti_air_building
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#			}
+#		}	
+#		
+#		focus = {
+#			id = CMG_expand_airbase
+#			icon = Focus_generic_navy_battleship
+#			x = 49
+#			y = 6
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_cap_aa}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			12 = {
+#				add_building_construction = {
+#				    type = air_base
+#				    level = 3
+#				    instant_build = yes
+#				}
+#			}
+#			16 = {
+#				add_building_construction = {
+#				    type = air_base
+#				    level = 3
+#				    instant_build = yes
+#				}
+#			}
+#			29 = {
+#				add_building_construction = {
+#				    type = air_base
+#				    level = 3
+#				    instant_build = yes
+#				}
+#			}
+#			}
+#		}
+#			focus = {
+#			id = CMG_home_defence
+#			icon = Focus_generic_navy_battleship
+#			x = 49
+#			y = 7
+#			cost = 8
+#			available_if_capitulated = yes
+#			prerequisite = { focus = CMG_expand_airbase}
+#			ai_will_do = {
+#				factor = 1
+#			}
+#			
+#			completion_reward = {
+#			12 = {
+#				add_building_construction = {
+#				    type = anti_air_building
+#				    level = 2
+#				    instant_build = yes
+#				}
+#			}
+#			12 = {
+#				add_building_construction = {
+#				    type = coastal_bunker
+#				    level = 2
+#				    instant_build = yes
+#					province = 1280
+#				}
+#			}
+#			12 = {
+#				add_building_construction = {
+#				    type = coastal_bunker
+#				    level = 2
+#				    instant_build = yes
+#					province = 947
+#				}
+#			}
+#			12 = {
+#				add_building_construction = {
+#				    type = coastal_bunker
+#				    level = 2
+#				    instant_build = yes
+#					province = 1295
+#				}
+#			}
+#			}
+#		}
+#		
+#	
+##End of focuses 
+# }
+# }

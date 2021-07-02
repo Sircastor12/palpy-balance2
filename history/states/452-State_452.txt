@@ -1,0 +1,41 @@
+state={
+	id=452
+	name="STATE_452"
+	provinces={
+		241 652 996 3353 3598 4159 4183 4927 10849 10864 10900 10913 10933 10959 10963 10984 11011 11026 11043 11090 11100 
+	}
+	manpower=114285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=JHT
+		add_core_of = JHT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			652 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			3598 10
+		}
+	}
+}
+

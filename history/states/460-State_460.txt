@@ -1,0 +1,41 @@
+state={
+	id=460
+	name="STATE_460"
+	provinces={
+		1515 1726 2158 2765 2879 2995 3049 3119 3228 3285 3358 3662 4808 4935 10950 10969 10978 10979 11008 11020 11021 11022 11036 11044 11057 11073 11092 11095 11111 11138 11147 11169 11173 11184 11190 11201 
+	}
+	manpower=5700000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	
+	resources={
+		steel=11
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=GEO
+		add_core_of = GEO
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			11022 50
+		}
+	}
+}
+

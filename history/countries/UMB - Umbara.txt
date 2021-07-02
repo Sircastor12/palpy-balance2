@@ -1,0 +1,117 @@
+capital = 290
+
+oob = "UMB_3677"
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = .40
+
+set_technology = {
+	tech_support = 1
+	militia_UMB = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	UMB_idea_hostile_environment
+	REP_member_prewar
+	service_by_requirement
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+
+	oob = "UMB_3687"
+
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 80
+		communism = 0
+		neutrality = 0
+		fascism = 20
+	}
+}
+
+create_country_leader = {
+	name = "Mee Deechi"
+	desc = "Senator of Umbara"
+	picture = "gfx/leaders/UMB/MeeDeechi.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Zaenteld Brarenga"
+	desc = "Leader of Umbara"
+	picture = "gfx/leaders/UMB/ZaenteldBrarenga.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_field_marshal = {
+	name = "Zaenteld Brarenga"
+	picture = "ZaenteldBrarenga.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Vhaen Tecash"
+	portrait_path = "gfx/leaders/UMB/VhaenTecash.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wyrd Lega"
+	portrait_path = "gfx/leaders/UMB/WyrdLega.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Thandos Snapith"
+	portrait_path = "gfx/leaders/UMB/ThandosSnapith.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

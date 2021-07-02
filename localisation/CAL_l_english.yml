@@ -1,0 +1,22 @@
+﻿l_english:
+ 
+ STATE_1_TT:0 "§YCentral Dac§!"
+ STATE_1_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_1_support]%§! regime support in this region."
+ 
+ STATE_2_TT:0 "§YNorthern Dac§!"
+ STATE_2_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_2_support]%§! regime support in this region."
+
+ STATE_3_TT:0 "§YNortheastern Dac§!"
+ STATE_3_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_3_support]%§! regime support in this region."
+ 
+ STATE_4_TT:0 "§YSoutheastern Dac§!"
+ STATE_4_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_4_support]%§! regime support in this region."
+ 
+ STATE_5_TT:0 "§YSouthern Dac§!"
+ STATE_5_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_5_support]%§! regime support in this region."
+ 
+ STATE_6_TT:0 "§YSouthwestern Dac§!"
+ STATE_6_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_6_support]%§! regime support in this region."
+ 
+ STATE_7_TT:0 "§YNorthwestern Dac§!"
+ STATE_7_TT_Delayed:0 "The Mon Calamari have §Y[?cal_state_7_support]%§! regime support in this region."

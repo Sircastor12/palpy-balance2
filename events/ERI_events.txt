@@ -1,0 +1,23 @@
+add_namespace = eri
+
+news_event = {
+	id = eri.1
+	title = "Wilhuff Tarkin becomes Lieutenant Governor"
+	desc = "Wilhuff Tarkin becomes Lieutenant Governor of Eriadu, Congratulations!"
+	picture = GFX_event_tarkinpromoted
+	major = no
+    
+    is_triggered_only = yes
+
+immediate = {
+ERI = {
+set_country_flag = tarkinpromoted
+}
+}
+	
+        option = {
+		   name = "Congratulations Governor Tarkin!"
+		   trigger = { 
+	    }	                   
+     }
+   }

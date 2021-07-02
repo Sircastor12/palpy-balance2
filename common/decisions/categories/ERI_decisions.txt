@@ -1,0 +1,10 @@
+eriadu_decisions = {
+     icon = generic_prospect_for_resources
+	
+available = { 
+	original_tag = ERI
+     }
+allowed = {
+		original_tag = ERI
+	}
+}

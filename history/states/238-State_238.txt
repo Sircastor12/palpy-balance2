@@ -1,0 +1,42 @@
+state={
+	id=238
+	name="STATE_238"
+	provinces={
+		176 1104 1947 2495 3822 4180 4479 4554 4630 7461 7472 7489 7528 7542 7571 7572 7597 7598 7621 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 0
+		chromium = 0
+	}
+
+  	history = {
+		owner = PAM
+		add_core_of = QUA
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 0
+			corporate_factory = 1
+
+			4180 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

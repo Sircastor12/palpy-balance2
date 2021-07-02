@@ -1,0 +1,164 @@
+scripted_gui = {
+	ibc_loan_window = {
+		context_type = player_context
+		window_name = "ibc_loan_window"
+		
+		ai_enabled = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = ibc_loans_babayetu
+				}
+			}
+		}
+        dynamic_lists = {
+            ibc_loan_grid = {
+                array = Global.nation_list
+                change_scope = yes
+				entry_container = ibc_loan_entry
+            }
+        }
+		effects = {
+			close_button_click = {
+				clr_country_flag = ibc_loans_babayetu
+				}
+			ibc_up_click = {
+				add_to_variable = { Global.interest_rate = 0.5 }
+				add_political_power = -100
+			}
+			ibc_down_click = {
+				subtract_from_variable = { Global.interest_rate = 0.5 }
+				add_political_power = -100
+			}
+			ibc_take_1_loan_click = { 
+				add_to_variable = { debttotal = 10 }
+				add_to_variable = { Global.debtotal = 10 }
+				add_to_variable = { dx = 10 }
+
+				IBC = {
+					subtract_from_variable = { IBC_treasury = 10 }
+				}
+			}
+			ibc_take_10_loans_click = { 
+				add_to_variable = { debttotal = 100 }
+				add_to_variable = { Global.debtotal = 100 }
+				add_to_variable = { dx = 100 }
+
+				IBC = {
+					subtract_from_variable = { IBC_treasury = 100 }
+				}
+			}
+			ibc_pay_1_loan_click = { 
+				subtract_from_variable = { dx = 10 }
+				subtract_from_variable = { debttotal = 10 }
+				subtract_from_variable = { Global.debtotal = 10 }
+
+				IBC = {
+					add_to_variable = { IBC_treasury = 10 }
+				}
+			}
+			ibc_pay_10_loan_click = { 
+				subtract_from_variable = { dx = 100 }
+				subtract_from_variable = { debttotal = 100 }
+				subtract_from_variable = { Global.debtotal = 100 }
+
+				IBC = {
+					add_to_variable  = { IBC_treasury = 100 }
+				}
+			}
+			ibc_pay_all_loan_click = { 
+				subtract_from_variable = { dx = debttotal }
+				subtract_from_variable = { Global.debtotal = debttotal }
+				set_variable = { Global.debtIBC = debttotal }
+
+				IBC = {
+					add_to_variable  = { dx = Global.debtIBC }
+				}
+				set_variable = { debttotal = 0 }
+				set_variable = { Global.debtIBC = 0 }
+			}
+
+		}
+		triggers = {
+			ibc_up_click_enabled = {
+				tag = IBC
+				has_political_power > 100
+				check_variable = { Global.debtotal > 1000 }
+			}
+			ibc_down_click_enabled = {
+				tag = IBC
+				has_political_power > 100
+				check_variable = { Global.debtotal > 1000 }
+				check_variable = { Global.interest_rate > 0 }
+			}
+			ibc_take_1_loan_click_enabled = { 
+				NOT = {
+					tag = IBC
+				}
+				IBC = {
+				check_variable = { IBC_treasury > 10 }
+				}
+			}
+			ibc_take_10_loans_click_enabled = { 
+				NOT = {
+					tag = IBC
+				}
+				IBC = {
+				check_variable = { IBC_treasury > 100 }
+				}
+			}
+			ibc_pay_1_loan_click_enabled = { 
+				check_variable = { dx > 10 }
+				check_variable = { debttotal > 10 }
+				NOT = {
+					tag = IBC
+				}
+			}
+			ibc_pay_10_loan_click_enabled = { 
+				check_variable = { dx > 100 }
+				check_variable = { debttotal > 100 }
+				NOT = {
+					tag = IBC
+				}
+			}
+			ibc_pay_all_loan_click_enabled = { 
+				check_variable = { dx > debttotal }
+				NOT = {
+					tag = IBC
+				}
+			}
+		}
+		ai_weights = {
+			ibc_take_1_loan_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 20
+						check_variable = { dx < 5.0 }
+					}
+					modifier = {
+						factor = 0
+						check_variable = { dx > 5.0 }
+					}
+				}
+			}
+			ibc_pay_1_loan_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+							AND = {
+								check_variable = { debttotal > 0 }
+								check_variable = { dx > 250.0 }
+							}
+						}
+						add = 100
+					}
+				}
+			}
+		}
+	}
+}

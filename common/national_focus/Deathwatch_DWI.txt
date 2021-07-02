@@ -1,0 +1,2655 @@
+focus_tree = {
+	id = DWI
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DWI
+		}
+	}
+	#Focus for Carlac-Doctrine
+	focus = {
+		id = DWI_carlacdoctrine
+		icon = GFX_goal_unknown
+		x = 28
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = DWI_shadowdoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_mass_assault
+				category = cat_grand_battle_plan
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+	#Focus for Citadel Works
+	focus = {
+		id = DWI_citadel_works
+		icon = GFX_goal_generic_fortify_city
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_sundari_metalworks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = DWI_citadel_works_ideas
+				days = 100
+			}
+		}
+	}
+
+	#Focus for The Stronghold Domes
+	focus = {
+		id = DWI_the_stronghold_domes
+		icon = GFX_goal_generic_fortify_city
+		x = 19
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_citadel_works 
+		}
+		prerequisite = { 
+			focus = DWI_mandalore_infrastructure 
+		}
+		available = {
+			controls_state = 160
+			controls_state = 148
+			controls_state = 167
+			controls_state = 164
+			controls_state = 173
+			controls_state = 151
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_bunkersMAN_custom
+			hidden_effect = {
+			160 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 507
+					instant_build = yes
+				}
+			}
+			148 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6235
+					instant_build = yes
+				}
+			}
+			167 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6380
+					instant_build = yes
+				}
+			}
+			164 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6341
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 6362
+					instant_build = yes
+				}
+			}
+			173 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 6593
+					instant_build = yes
+				}
+			}
+			151 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 1671
+					instant_build = yes
+				}
+			}	
+			}
+		}
+	}
+
+	#Focus for The Crossroads Bastion
+	focus = {
+		id = DWI_the_crossroads_bastion
+		icon = GFX_goal_generic_fortify_city
+		x = 18
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_citadel_works 
+		}
+		prerequisite = { 
+			focus = DWI_taris 
+		}
+		available = {
+			controls_state = 181
+			controls_state = 178
+			controls_state = 187
+			controls_state = 185
+			controls_state = 179
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_bunkersTAR_custom
+			hidden_effect = {
+			181 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6681
+					instant_build = yes
+				}
+			}
+			178 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6656
+					instant_build = yes
+				}
+			}
+			187 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 2651
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 6848
+					instant_build = yes
+				}
+			}
+			185 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 377
+					instant_build = yes
+				}
+			}
+			179 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 6670
+					instant_build = yes
+				}
+			}
+			}		
+		}
+	}
+
+	#Focus for Asymmetrical Specialisation
+	focus = {
+		id = DWI_asymmetrical_specialisation
+		icon = GFX_goal_unknown
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_jetpack_improvements 
+		}
+		prerequisite = { 
+			focus = DWI_builtin_flamethrowers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Territorial Stations
+	focus = {
+		id = DWI_territorial_stations
+		icon = GFX_goal_unknown
+		x = 42
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_mandalore_spaceport }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_territorial_stations_custom
+			if = {
+					limit = {
+						controls_state = 10
+						}
+						10 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+			if = {
+					limit = {
+						controls_state = 5
+						}
+						5 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+			if = {
+					limit = {
+						controls_state = 6
+						}
+						6 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+			if = {
+					limit = {
+						controls_state = 7
+						}
+						7 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+			if = {
+					limit = {
+						controls_state = 9
+						}
+						9 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+			if = {
+					limit = {
+						controls_state = 8
+						}
+						8 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+			if = {
+					limit = {
+						controls_state = 12
+						}
+						12 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = yes
+							}
+						}
+			}
+		}
+	}
+
+	#Focus for Expanded Factories
+	focus = {
+		id = DWI_expanded_factories
+		icon = GFX_goal_unknown
+		x = 29
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_carlacdoctrine }
+		available = {
+			check_variable = { dx > 30 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = { dx = -30 }
+			custom_effect_tooltip = DWI_cost_custom3
+		}
+	}
+
+	#Focus for Fast-Paced Warfare
+	focus = {
+		id = DWI_fastpaced_warfare
+		icon = GFX_goal_unknown
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_shadowdoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_fastpaced_warfare_ideas
+		}
+	}
+
+	#Focus for Combined Warfare
+	focus = {
+		id = DWI_combined_warfare
+		icon = GFX_goal_unknown
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_expanded_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_mass_armaments_production_ideas
+		}
+	}
+
+	#Focus for Kom'rk-Class Starfighters
+	focus = {
+		id = DWI_komrkclass_starfighters
+		icon = GFX_goal_unknown
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_fighters }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = { gauntlet_tech = 1 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = fang_tech
+			}
+		}
+	}
+
+	#Focus for Standardise Mandalorian Accessories
+	focus = {
+		id = DWI_standardise_mandalorian_accessories
+		icon = GFX_goal_unknown
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_carlacdoctrine 
+			focus = DWI_shadowdoctrine 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = support_tech
+				name = DWI_support_tech
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+
+	#Focus for Traditional Mandalorian Armour
+	focus = {
+		id = DWI_traditional_mandalorian_armour
+		icon = GFX_goal_unknown
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_carlacdoctrine 
+			focus = DWI_shadowdoctrine 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_mando_armor_ideas
+		}
+	}
+
+	#Focus for WESTAR Blaster Pistols
+	focus = {
+		id = DWI_westar_blaster_pistols
+		icon = GFX_goal_unknown
+		x = 37
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_carlacdoctrine 
+			focus = DWI_shadowdoctrine 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = DWI_armour_tech
+				bonus = 1
+				uses = 1
+				technology = westar_gun_20
+				technology = westar_gun_34
+				technology = westar_gun_35
+			}
+		}
+	}
+
+	#Focus for Mandalore Infrastructure
+	focus = {
+		id = DWI_mandalore_infrastructure
+		icon = GFX_goal_unknown
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_concordian_infrastructure }
+		available = {
+			controls_state = 151
+			controls_state = 160
+			controls_state = 164
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			151 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			160 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			164 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Concordian Infrastructure
+	focus = {
+		id = DWI_concordian_infrastructure
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_expand_our_lunar_industries }
+		available = {
+			controls_state = 18
+			controls_state = 176
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			18 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			176 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Mandalore Spaceport
+	focus = {
+		id = DWI_mandalore_spaceport
+		icon = GFX_goal_unknown
+		x = 42
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_mandalorian_warfleet }
+		available = {
+			controls_state = 164
+			check_variable = { dx > 30 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			164 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 190
+				}
+			}
+			add_to_variable = { dx = -30 }
+			custom_effect_tooltip = DWI_cost_custom3
+		}
+	}
+
+	#Focus for This Is The Way
+	focus = {
+		id = DWI_this_is_the_way
+		icon = GFX_goal_unknown
+		x = 26
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_completed_focus = DWI_carlacdoctrine
+		}
+		prerequisite = { 
+			focus = DWI_ithor_guild
+			focus = DWI_felucia_guild 
+			focus = DWI_dathomir_guild 
+			focus = DWI_jabiim_guild 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_this_is_the_way_ideas
+		}
+	}
+
+	#Focus for Establish Florrum Guild
+	focus = {
+		id = DWI_florrum_guild
+		icon = GFX_goal_unknown
+		x = 28
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		available  = {
+			controls_state = 124
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				124 = {
+					add_state_modifier = {
+						modifier = {
+							compliance_gain = 0.03
+						}
+					}
+					add_resource = {
+						type = rubber
+						amount = 16					
+					}
+				}
+			}
+			custom_effect_tooltip = DWI_guild5_custom
+		}
+	}
+
+	#Focus for Shadow-Doctrine
+	focus = {
+		id = DWI_shadowdoctrine
+		icon = GFX_goal_unknown
+		x = 24
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = DWI_carlacdoctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_mobile_warfare
+				category = cat_superior_firepower
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+	#Focus for Automating Parts Production
+	focus = {
+		id = DWI_automating_parts_production
+		icon = GFX_goal_unknown
+		x = 48
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_capital_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_automated_parts_ideas
+		}
+	}
+
+	#Focus for Mando bomber
+	focus = {
+		id = DWI_mando_bomber
+		icon = GFX_goal_unknown
+		x = 40
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_ground_hangar_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+
+	#Focus for Anti-Air Systems
+	focus = {
+		id = DWI_antiair_systems
+		icon = GFX_goal_unknown
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_air_and_land }
+		available = {
+			controls_state = 160
+			controls_state = 18
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			160 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			18 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Back Into The Fight
+	focus = {
+		id = DWI_back_into_the_fight
+		icon = GFX_goal_unknown
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_carlacdoctrine 
+		}
+		prerequisite = { 
+			focus = DWI_mandalorian_military_academy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_mandalorian_academy_ideas1
+				add_idea = DWI_mandalorian_academy_ideas2
+			}
+		}
+	}
+
+	#Focus for Mandalorian Military Academy
+	focus = {
+		id = DWI_mandalorian_military_academy
+		icon = GFX_goal_unknown
+		x = 26
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_carlacdoctrine 
+			focus = DWI_shadowdoctrine 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+			add_ideas = DWI_mandalorian_academy_ideas1	
+		}
+	}
+
+	#Focus for Unrelenting Attack
+	focus = {
+		id = DWI_unrelenting_attack
+		icon = GFX_goal_unknown
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_invest_cas }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = DWI_close_airsp_staff
+		}
+	}
+
+	#Focus for The Mandalorian Warfleet
+	focus = {
+		id = DWI_the_mandalorian_warfleet
+		icon = GFX_goal_unknown
+		x = 47
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+
+	#Focus for The Ravage
+	focus = {
+		id = DWI_the_ravage
+		icon = GFX_goal_unknown
+		x = 13
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_ithor 
+			focus = DWI_jabiim
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_plunder_custom
+			hidden_effect = {
+				if = {
+					limit = {
+						controls_state = 181
+						}
+						181 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+							add_resistance = 30
+							custom_effect_tooltip = DWI_plunder_money_custom2
+							add_to_variable = { dx = 30 }
+						}
+						160 = {
+							add_extra_state_shared_building_slots = 4
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+				}
+				if = {
+					limit = {
+						controls_state = 141
+					}
+						141 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+							add_resistance = 30
+							custom_effect_tooltip = DWI_plunder_money_custom
+							add_to_variable = { dx = 30 }
+						}
+						160 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+				}
+				if = {
+					limit = {
+						controls_state = 237
+					}
+						237 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+							add_resistance = 30
+							custom_effect_tooltip = DWI_plunder_money_custom
+							add_to_variable = { dx = 30 }
+						}
+						160 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+				}
+			}
+		}	
+	}
+
+	#Focus for The Duchess' Downfall
+	focus = {
+		id = DWI_the_duchess_downfall
+		icon = GFX_goal_unknown
+		x = 10
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_battle_for_mandalore }
+		available = {
+			NOT = {
+				at_war_with = MAN	
+			}
+			owns_state = 160
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				country_event = DWI.2
+			}
+			add_political_power = 100
+			add_state_core = 160
+			add_state_core = 15
+			add_state_core = 148
+			add_state_core = 167
+			add_state_core = 151
+			set_capital = 160
+			add_ideas = DWI_war_torn_economy_ideas1
+			add_ideas = DWI_dormant_nation_ideas1
+			hidden_effect = {
+				remove_ideas = DWI_battle_for_mandalore_ideas1
+				remove_ideas = DWI_battle_for_mandalore_ideas2
+				delete_unit_template_and_units = {
+					division_template = "Mandalorian Fanatics"
+				}	
+			}
+		}
+	}
+
+	#Focus for The Mandalorian People
+	focus = {
+		id = DWI_the_mandalorian_people
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_march_of_the_million }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_mandalorian_people_ideas
+		}
+	}
+
+	#Focus for The Battle for Mandalore
+	focus = {
+		id = DWI_the_battle_for_mandalore
+		icon = GFX_goal_unknown
+		x = 10
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_war = no
+		}
+		completion_reward = {
+			add_ideas = DWI_battle_for_mandalore_ideas1
+		}
+	}
+
+	#Focus for Exploit the Concordian Mines
+	focus = {
+		id = DWI_exploit_the_concordian_mines
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 18
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			controls_state = 176
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			176 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 21					
+				}
+			}
+		}	
+	}
+
+	#Focus for Ord Mantell
+	focus = {
+		id = DWI_jabiim
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 12
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_taris }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = JAB
+				NOT = {	
+					country_exists = JAB
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = JAB
+				generator = { 237 }
+			}
+		}
+	}
+
+	#Focus for Ithor
+	focus = {
+		id = DWI_ithor
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_taris }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = ITH
+				NOT = {	
+					country_exists = ITH
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ITH
+				generator = { 141 }
+			}
+		}
+	}
+
+	#Focus for Legitimize DWI Thought
+	focus = {
+		id = DWI_legitimize_death_watch_thought
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_awaking_a_dormant_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_legitimize_custom
+			hidden_effect = {
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas2
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas2
+					add_idea = DWI_dormant_nation_ideas3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas4
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas4
+					add_idea = DWI_dormant_nation_ideas6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas5
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas5
+					add_idea = DWI_dormant_nation_ideas7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas8
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas8
+					add_idea = DWI_dormant_nation_ideas9
+				}
+			}
+			}
+		}
+	}
+
+	#Focus for A New Mandalorian Crusade
+	focus = {
+		id = DWI_a_new_mandalorian_crusade
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 10
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_the_mandalorian_war_machine 
+		}
+		prerequisite = { 
+			focus = DWI_the_mandalorian_people 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_mandalorian_crusade_ideas1
+		}
+	}
+
+	#Focus for The Mandalorian Empire
+	focus = {
+		id = DWI_the_mandalorian_empire
+		icon = GFX_goal_unknown
+		x = 10
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_the_ravage 
+			focus = DWI_the_plunder 
+		}
+		available = {
+			is_major = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_mando_empire_custom
+			country_event = DWI.5
+			swap_ideas = {
+				remove_idea = DWI_sleepless_nation_ideas
+				add_idea = DWI_mandalorian_empire_ideas1
+			}
+			add_country_leader_trait = mandalor
+		}
+	}
+
+	#Focus for Taris
+	focus = {
+		id = DWI_taris
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_exploit_the_mid_rim }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = TAR
+				NOT = {	
+					country_exists = TAR
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = TAR
+				generator = { 181 }
+			}
+		}
+	}
+
+	#Focus for Dathomir
+	focus = {
+		id = DWI_dathomir
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 6
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_florrum }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = DAT
+				NOT = {	
+					country_exists = DAT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = DAT
+				generator = { 120 }
+			}
+		}
+	}
+
+	#Focus for Florrum
+	focus = {
+		id = DWI_florrum
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 7
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_strike_the_outer_rim }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = HON
+				NOT = {	
+					country_exists = HON
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HON
+				generator = { 124 }
+			}
+		}
+	}
+
+	#Focus for The Plunder
+	focus = {
+		id = DWI_the_plunder
+		icon = GFX_goal_unknown
+		x = 7
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_dathomir
+			focus = DWI_felucia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_plunder_custom
+			hidden_effect = {
+				if = {
+					limit = {
+						controls_state = 124
+					}
+						124 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+							add_resistance = 30
+							custom_effect_tooltip = DWI_plunder_money_custom
+							add_to_variable = { dx = 30 }
+						}
+						160 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+				}
+				if = {
+					limit = {
+						controls_state = 120
+					}
+						120 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+							add_resistance = 30
+							custom_effect_tooltip = DWI_plunder_money_custom
+							add_to_variable = { dx = 30 }	
+						}	
+						160 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+				}
+				if = {
+					limit = {
+						controls_state = 154
+					}
+						154 = {
+							remove_building = {
+								type = industrial_complex
+								level = 1
+							}
+							remove_building = {
+								type = arms_factory
+								level = 1
+							}
+							add_resistance = 30
+							custom_effect_tooltip = DWI_plunder_money_custom
+							add_to_variable = { dx = 30 }
+						}
+						160 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+				}
+			}
+		}
+	}
+
+	#Focus for Awaking a Dormant Nation
+	focus = {
+		id = DWI_awaking_a_dormant_nation
+		icon = GFX_goal_unknown
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_duchess_downfall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_dormant_nation_ideas1
+				add_idea = DWI_dormant_nation_ideas2
+			}
+		}
+	}
+
+	#Focus for Break the Pacifist Plague
+	focus = {
+		id = DWI_break_the_pacifist_plague
+		icon = GFX_goal_unknown
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_awaking_a_dormant_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_pacifist_custom
+			hidden_effect = {
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas2
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas2
+					add_idea = DWI_dormant_nation_ideas4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas3
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas3
+					add_idea = DWI_dormant_nation_ideas6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas5
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas5
+					add_idea = DWI_dormant_nation_ideas8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas7
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas7
+					add_idea = DWI_dormant_nation_ideas9
+				}
+			}
+			}
+		}
+	}
+
+	#Focus for Honour Our Warrior Heritage
+	focus = {
+		id = DWI_honour_our_warrior_heritage
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_awaking_a_dormant_nation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_heritage_custom
+			hidden_effect = {
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas2
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas2
+					add_idea = DWI_dormant_nation_ideas5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas3
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas3
+					add_idea = DWI_dormant_nation_ideas7
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas4
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas4
+					add_idea = DWI_dormant_nation_ideas8
+				}
+			}
+			if = {
+				limit = {
+					has_idea = DWI_dormant_nation_ideas6
+				}
+				swap_ideas = {
+					remove_idea = DWI_dormant_nation_ideas6
+					add_idea = DWI_dormant_nation_ideas9
+				}
+			}
+			}
+		}
+	}
+
+	#Focus for Back on Track
+	focus = {
+		id = DWI_back_on_track
+		icon = GFX_focus_generic_industry_3
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_ruined_in_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_war_torn_economy_ideas2
+				add_idea = DWI_war_fueled_economy_ideas
+			}
+		}
+	}
+
+	#Focus for The Mandalorian War Machine
+	focus = {
+		id = DWI_the_mandalorian_war_machine
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_fueling_the_future 
+			focus = DWI_militarise_our_industry 
+		}
+		available = {
+			check_variable = { dx > 60 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_to_variable = { dx = -60 }
+			custom_effect_tooltip = DWI_cost_custom1
+		}
+	}
+
+	#Focus for Establish Taris Guild
+	focus = {
+		id = DWI_taris_guild
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		available  = {
+			controls_state = 181
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				181 = {
+					add_state_modifier = {
+						modifier = {
+							compliance_gain = 0.03
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = DWI_guild1_custom
+		}
+	}
+
+	#Focus for Ruined In Victory
+	focus = {
+		id = DWI_ruined_in_victory
+		icon = GFX_focus_generic_industry_2
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_duchess_downfall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_war_torn_economy_ideas1
+				add_idea = DWI_war_torn_economy_ideas2
+			}
+		}
+	}
+
+	#Focus for Fueling The Future
+	focus = {
+		id = DWI_fueling_the_future
+		icon = GFX_goal_generic_oil_refinery
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_back_on_track }
+		available = {
+			check_variable = { dx > 20 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+			add_to_variable = { dx = -20 }
+			custom_effect_tooltip = DWI_cost_custom2
+		}
+	}
+
+	#Focus for Continue The Crusades
+	focus = {
+		id = DWI_continue_the_crusades
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 10
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_mandalorian_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_mandalorian_crusade_ideas1
+				add_idea = DWI_mandalorian_crusade_ideas2
+			}
+		}
+	}
+
+	#Focus for Breaking Their Resistance
+	focus = {
+		id = DWI_breaking_their_resistance
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_battle_for_mandalore }
+		available = {
+			at_war_with = MAN
+			NOT = {
+				has_completed_focus = DWI_the_duchess_downfall
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_battle_for_mandalore_ideas1
+				add_idea = DWI_battle_for_mandalore_ideas2
+			}
+		}
+	}
+
+	#Focus for Expand Our Lunar Industries
+	focus = {
+		id = DWI_expand_our_lunar_industries
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_exploit_the_concordian_mines }
+		available = {
+			controls_state = 18
+			check_variable = { dx > 30 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = industry
+			}
+			18 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = { dx = -30 }
+			custom_effect_tooltip = DWI_cost_custom3
+		}
+	}
+
+	#Focus for Sundari Metalworks
+	focus = {
+		id = DWI_sundari_metalworks
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_expand_our_lunar_industries 
+		}
+		prerequisite = { 
+			focus = DWI_back_on_track 
+		}
+		available = {
+			controls_state = 160
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			160 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Militarise Our Industry
+	focus = {
+		id = DWI_militarise_our_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_back_on_track }
+		available = {
+			check_variable = { dx > 20 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = DWI_industrial_militrization_ideas
+				days = 100
+			}
+			add_war_support = 0.1
+			add_to_variable = { dx = -20 }
+			custom_effect_tooltip = DWI_cost_custom2
+		}
+	}
+
+	#Focus for Kyramud-Class Battleship
+	focus = {
+		id = DWI_kyramudclass_battleship
+		icon = GFX_goal_unknown
+		x = 49
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_automating_parts_production 
+		}
+		prerequisite = { 
+			focus = DWI_beskar_hull_plating 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_unfinished_custom
+		}
+	}
+
+	#Focus for Experimental Cloaking Devices
+	focus = {
+		id = DWI_experimental_cloaking_devices
+		icon = GFX_goal_unknown
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_raider_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_unfinished_custom
+			custom_effect_tooltip = available_naval_manufacturer
+			show_ideas_tooltip = DWI_visibility_manufacturer
+		}
+	}
+
+	#Focus for Rapid Beachhead
+	focus = {
+		id = DWI_invest_cas
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_fastpaced_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = DWI_cas
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+
+	#Focus for Coordinated Strike
+	focus = {
+		id = DWI_traditional_warfare
+		icon = GFX_goal_unknown
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_back_into_the_fight }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 2
+				category = armor
+				category = artillery
+			}
+		}
+	}
+
+	#Focus for No Time To Lose
+	focus = {
+		id = DWI_no_time_to_lose
+		icon = GFX_goal_unknown
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_shadowdoctrine 
+		}
+		prerequisite = { 
+			focus = DWI_mandalorian_military_academy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DWI_mandalorian_academy_ideas1
+				add_idea = DWI_mandalorian_academy_ideas3
+			}
+		}
+	}
+
+	#Focus for Establish Ithor Guild
+	focus = {
+		id = DWI_ithor_guild
+		icon = GFX_goal_unknown
+		x = 23
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_taris_guild }
+		available  = {
+			controls_state = 141
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				141 = {
+					add_state_modifier = {
+						modifier = {
+							local_non_core_manpower = 0.05
+							compliance_gain = 0.03
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = DWI_guild2_custom
+		}
+	}
+
+	#Focus for The March of the Million
+	focus = {
+		id = DWI_the_march_of_the_million
+		icon = GFX_goal_unknown
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_legitimize_death_watch_thought 
+		}
+		prerequisite = { 
+			focus = DWI_break_the_pacifist_plague 
+		}
+		prerequisite = { 
+			focus = DWI_honour_our_warrior_heritage 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {	
+				country_event = DWI.3
+			}
+			swap_ideas = {
+				remove_idea = DWI_dormant_nation_ideas9
+				add_idea = DWI_sleepless_nation_ideas
+			}
+			add_timed_idea = {
+				idea = DWI_rallying_support_ideas
+				days = 280
+			}
+		}
+	}
+
+
+	#Focus for Beskar Hull Plating
+	focus = {
+		id = DWI_beskar_hull_plating
+		icon = GFX_goal_unknown
+		x = 50
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_capital_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_unfinished_custom
+			custom_effect_tooltip = available_naval_manufacturer
+			show_ideas_tooltip = DWI_battleship_manufacturer
+		}
+	}
+
+	#Focus for Corvette Research
+	focus = {
+		id = DWI_corvette_research
+		icon = GFX_goal_unknown
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_raider_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	#Focus for Enhanced Targetting Systems
+	focus = {
+		id = DWI_enhanced_targetting_systems
+		icon = GFX_goal_unknown
+		x = 45
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_experimental_cloaking_devices 
+		}
+		prerequisite = { 
+			focus = DWI_corvette_research 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = DWI_unfinished_custom
+		}
+	}
+
+	#Focus for Raider Focus
+	focus = {
+		id = DWI_raider_focus
+		icon = GFX_goal_unknown
+		x = 45
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_mandalorian_warfleet }
+		mutually_exclusive = { focus = DWI_capital_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_trade_interdiction
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+	#Focus for Capital Focus
+	focus = {
+		id = DWI_capital_focus
+		icon = GFX_goal_unknown
+		x = 49
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_the_mandalorian_warfleet }
+		mutually_exclusive = { focus = DWI_raider_focus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = cat_fleet_in_being
+				category = cat_base_strike
+				name = naval_doc_bonus
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+	#Focus for Establish Felucia Guild
+	focus = {
+		id = DWI_felucia_guild
+		icon = GFX_goal_unknown
+		x = 28
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_florrum_guild }
+		available  = {
+			controls_state = 154
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				154 = {
+					add_state_modifier = {
+						modifier = {
+							compliance_gain = 0.03
+							local_resources = 0.1
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = DWI_guild6_custom
+		}
+	}
+
+	#Focus for Establish Dathomir Guild
+	focus = {
+		id = DWI_dathomir_guild
+		icon = GFX_goal_unknown
+		x = 26
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		available  = {
+			controls_state = 120
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				division_template = {
+					name = "Mandalorian Big-Game Hunters"
+					priority = 1
+					regiments = {
+					Mandalorian_commandos = { x = 0 y = 0 }
+					Mandalorian_commandos = { x = 0 y = 1 }
+
+					Mandalorian_commandos = { x = 1 y = 0 }
+					Mandalorian_commandos = { x = 1 y = 1 }
+					}
+				}
+				120 = {
+					add_state_modifier = {
+						modifier = {
+							compliance_gain = 0.03
+						}
+					}
+					create_unit = {
+						division = "name = \"Mandalorian Big-Game Hunters\" division_template = \"Mandalorian Big-Game Hunters\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+				}
+			}
+			custom_effect_tooltip = DWI_guild4_custom
+		}
+	}
+
+	#Focus for The Ultimate Warrior
+	focus = {
+		id = DWI_the_ultimate_warrior
+		icon = GFX_goal_unknown
+		x = 36
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_completed_focus = DWI_shadowdoctrine
+		}
+		prerequisite = { 
+			focus = DWI_westar_blaster_pistols 
+		}
+		prerequisite = { 
+			focus = DWI_beskar_steel 
+		}
+		prerequisite = { 
+			focus = DWI_asymmetrical_specialisation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DWI_ultimate_warrior
+		}
+	}
+
+	#Focus for Built-in Flamethrowers
+	focus = {
+		id = DWI_builtin_flamethrowers
+		icon = GFX_goal_unknown
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_standardise_mandalorian_accessories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = engineers_tech
+				name = DWI_flame_tech
+				bonus = 2
+				uses = 1
+			}
+		}
+	}
+
+	#Focus for Ground Hangar Expansion
+	focus = {
+		id = DWI_ground_hangar_expansion
+		icon = GFX_goal_unknown
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_mandalore_spaceport }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					controls_state = 160
+				}
+					160 = {
+						add_building_construction = {
+							type = air_base
+							level = 5
+							instant_build = yes
+						}
+					}
+			}
+			if = {
+				limit = {
+					controls_state = 18
+				}
+					18 = {
+						add_building_construction = {
+							type = air_base
+							level = 3
+							instant_build = yes
+						}
+					}
+			}
+		}
+	}
+
+	#Focus for Air and Land
+	focus = {
+		id = DWI_air_and_land
+		icon = GFX_goal_unknown
+		x = 41
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_ground_hangar_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {	
+			add_tech_bonus = {
+				category = air_doctrine
+				bonus = 1.0
+				uses = 2
+			}
+		}
+	}
+
+
+	#Focus for Establish Ord Mantell Guild
+	focus = {
+		id = DWI_jabiim_guild
+		icon = GFX_goal_unknown
+		x = 25
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_taris_guild }
+		available  = {
+			controls_state = 237
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {	
+				237 = {
+					add_state_modifier = {
+						modifier = {
+							compliance_gain = 0.03
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = DWI_guild3_custom
+		}
+	}
+
+	#Focus for Commerce Guild
+	focus = {
+		id = DWI_felucia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 8
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_florrum }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = CMG
+				NOT = {	
+					country_exists = CMG
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = CMG
+				generator = { 154 }
+			}
+		}
+	}
+
+	#Focus for Korriban
+	focus = {
+		id = DWI_korriban
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 10
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_florrum }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			OR = {
+				has_war_with = KOR
+				NOT = {	
+					country_exists = KOR
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = KOR
+				generator = { 8 }
+			}
+		}
+	}
+	
+	#Focus for Korriban Research Centre
+	focus = {
+		id = DWI_korriban_research
+		icon = GFX_goal_unknown
+		x = 10
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_korriban }
+		available = {
+			controls_state = 108
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Call For The Neo-Crusaders
+	focus = {
+		id = DWI_call_for_the_neocrusaders
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = DWI_a_new_mandalorian_crusade 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = DWI.1
+		}
+	}
+
+	#Focus for Strike The Separatists
+	focus = {
+		id = DWI_strike_the_outer_rim
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 7
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_call_for_the_neocrusaders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						HON = {
+							is_in_faction_with = CIS
+						}
+						DAT = {
+							is_in_faction_with = CIS
+						}
+						CMG = {
+							is_in_faction_with = CIS
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = DWI_strike_the_east_ideas
+					days = 365
+				}
+			}
+			else = {
+				add_command_power = 25
+			}
+		}
+	}
+
+	#Focus for Exploit the Weakened Republic
+	focus = {
+		id = DWI_exploit_the_mid_rim
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_call_for_the_neocrusaders }
+		bypass = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						TAR = {
+							is_in_faction_with = REP
+						}
+						ITH = {
+							is_in_faction_with = REP
+						}
+						JAB = {
+							is_in_faction_with = REP
+						}
+					}
+				}	
+				add_timed_idea = {
+					idea = DWI_exploit_the_north_ideas
+					days = 365
+				}
+			}
+			else = {
+				add_command_power = 25
+			}
+		}
+	}
+
+	#Focus for fighters
+	focus = {
+		id = DWI_fighters
+		icon = GFX_goal_unknown
+		x = 39
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_ground_hangar_expansion }
+		mutually_exclusive = { focus = DWI_bombers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	#Focus for Beskar Steel
+	focus = {
+		id = DWI_beskar_steel
+		icon = GFX_goal_unknown
+		x = 35
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_traditional_mandalorian_armour }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = DWI_armour_tech
+				bonus = 1
+				uses = 1
+				technology = beskar_armor
+			}
+		}
+	}
+
+	#Focus for Jetpack Improvements
+	focus = {
+		id = DWI_jetpack_improvements
+		icon = GFX_goal_unknown
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_standardise_mandalorian_accessories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = DWI_jetpack_tech
+				bonus = 1
+				uses = 1
+				technology = jetpack_tech
+			}
+		}
+	}
+
+	#Focus for Speeder Transportation
+	focus = {
+		id = DWI_speeder_transportation
+		icon = GFX_goal_unknown
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_no_time_to_lose }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = DWI_speeder_tech
+				bonus = 1.5
+				uses = 1
+				technology = motorised_infantry
+				technology = mechanised_infantry
+				technology = mechanised_infantry2
+				technology = mechanised_infantry3
+				technology = swoop_tech
+				technology = buirk_tech
+			}
+		}
+	}
+
+	#Focus for Flat bonus
+	focus = {
+		id = DWI_greatest_army
+		icon = GFX_goal_unknown
+		x = 29
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = DWI_combined_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = {
+				DWI_greatest_gal_army_ideas
+			}
+		}
+	}
+
+#End of focuses 
+}

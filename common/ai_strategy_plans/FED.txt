@@ -1,0 +1,43 @@
+Trade_federation_canonical = {
+	name = "Trade Federation Canonical"
+	desc = "Essentially historical behaviour for Trade Federation"
+
+	enable = {
+		original_tag = FED
+	}
+
+	abort = {
+		always = NO
+	}
+
+	ai_national_focuses = {
+		FED_eriadu_trade_summit
+		FED_under_new_leadership
+		FED_antipiracy_precautions
+		FED_contact_from_the_sith
+		FED_prop_31
+		FED_blockade_naboo
+		FED_galactic_investments
+		FED_isolate_our_investments
+		FED_neimoidia_first
+		FED_a_stronger_world
+	}
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 2.0
+		support_tech = 6.5
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

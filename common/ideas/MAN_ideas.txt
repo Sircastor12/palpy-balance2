@@ -1,0 +1,382 @@
+ideas = {
+    #############
+    country = {
+
+        MAN_idea_severe_depopulation = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                industrial_capacity_factory = -0.05
+                conscription_factor = -0.3
+
+            }
+
+        }
+        council_of_neutral_systems = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                enemy_justify_war_goal_time = 0.50
+                join_faction_tension = 1
+
+            }
+
+        }
+
+        MAN_idea_recovering_from_the_civil_war = {
+
+            picture = spa_recovering_from_the_civil_war
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                war_support_factor = -1.0
+                stability_factor = -0.25
+                political_power_factor = -0.05
+
+            }
+
+        }
+
+        MAN_idea_declared_neutrality1 = {
+
+            picture = hol_aloof_neutrality
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                generate_wargoal_tension = 1.0
+                join_faction_tension = 1.0
+
+            }
+
+        }
+
+        MAN_idea_declared_neutrality2 = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                join_faction_tension = -1.0
+
+            }
+
+        }
+
+        MAN_idea_citizenship_for_warriors = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                weekly_manpower = 1000
+
+            }
+
+        }
+
+        MAN_idea_beskar_for_buildings = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                industry_air_damage_factor = -0.5
+
+            }
+
+        }
+
+        MAN_idea_mining_beskar = {
+
+            allowed = {
+		always = no
+               original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                local_resources_factor = 0.2
+
+            }
+
+        }
+
+        MAN_idea_domestic_use_of_beskar = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                industrial_capacity_factory = 0.05
+
+            }
+
+        }
+
+        MAN_idea_exporting_beskar = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                trade_opinion_factor = 0.25
+                political_power_factor = 0.10
+
+            }
+
+        }
+
+        MAN_idea_the_mandalorian_academy = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                army_leader_start_level = 1
+                army_leader_start_attack_level = 1
+                army_leader_start_planning_level = 1
+                army_leader_start_defense_level = 1
+                army_leader_start_logistics_level = 1
+
+            }
+
+        }
+
+        MAN_idea_extensive_training = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                army_org_factor = 0.05
+                training_time_army_factor = 0.1
+
+            }
+
+        }
+
+
+        MAN_multiculturalism = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                MONTHLY_POPULATION = 0.5
+
+            }
+
+        }
+
+    MAN_idea_mandelorian_supremacy = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+                conscription = 0.05
+
+            }
+
+        }
+
+        MAN_idea_stability = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+            stability_weekly = 0.005
+
+            }
+
+        }
+       
+        MAN_idea_new_mandelorians = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+            conscription_factor = -0.5
+
+            }
+
+        }
+
+        MAN_idea_duskar_tradition = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+            war_support_weekly = 0.005
+
+            }
+
+        }
+
+        MAN_idea_innovation = {
+
+            allowed = {
+		      always = no
+              original_tag = MAN
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                research_speed_factor = 0.1
+
+            }
+
+        }
+
+
+MAN_idea_sundari_mine = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+        available = {
+    }
+
+    on_add = {
+        add_to_variable = { steel_export = 80 }    
+    }
+}
+
+
+MAN_idea_poverty = {
+
+            allowed = {
+		always = no
+                original_tag = MAN
+            }
+
+        available = {
+    }
+
+    modifier = {
+        consumer_goods_factor = 0.1
+
+            }
+        }
+    }
+}

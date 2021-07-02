@@ -1,0 +1,41 @@
+state={
+	id=109
+	name="STATE_109"
+	provinces={
+		293 612 658 798 1002 1367 2485 2701 5573 5574 5587 5589 5603 5604 5617 5646 5653 
+	}
+	manpower=1250000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=SER
+		add_core_of = SER
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			5587 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

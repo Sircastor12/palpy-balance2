@@ -1,0 +1,63 @@
+scripted_gui = {
+
+	trophy_container = {
+		context_type = player_context
+		
+		window_name = "trophy_container"
+		parent_window_name = countrypoliticsview
+		
+		visible = { 
+			OR = {
+				has_government = syndicate
+				has_government = communism
+			}
+		}
+		effects = {
+			trophy_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = trophy_open
+					}
+					clr_country_flag = trophy_open
+				}
+				else = {
+					set_country_flag = trophy_open
+				}
+			}
+		}
+    }
+	trophy_window = {
+			context_type = player_context
+			window_name = "trophy_window"
+		
+		visible = {
+			has_country_flag = trophy_open
+		}
+
+	effects = {
+		trophy_button_click = {
+			add_to_array = {
+				array = trophies_array
+				value = 6
+			}
+		}
+
+		close_button_click = {
+			clr_country_flag = trophy_open
+			}
+
+		}
+	triggers = {
+		}
+		dynamic_lists = {
+			trophy_grid = {
+				array = trophies_array
+				entry_container = trophy_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			trophies = { image = "[Gettrophyimage]" }
+		}
+	}
+}

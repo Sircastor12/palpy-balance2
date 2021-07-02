@@ -1,0 +1,139 @@
+﻿capital = 166
+
+oob = "TEC_3677"
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 35
+set_variable = { var = tax_stability_modifier value = -0.05 }
+set_rule = { can_create_factions = yes }
+set_country_flag = no_ideas
+set_country_flag = Baktoid_subsidiary
+
+set_technology = {
+	tech_support = 1
+	tec_market = 1
+	battle_droid_0 = 1
+	battle_droid_1 = 1
+	transport = 1
+	cis_tank_1 = 1
+	stap_tech = 1
+	droideka_tech = 1
+	pac_tech = 1
+	mtt_tech = 1
+	vulture_tech = 1
+	c9979_tech = 1
+	marauder_tech = 1
+}
+
+add_political_power = 75
+set_convoys = 1000
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	extensive_conscription
+	CIS_equipped
+	REP_member_prewar
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 90
+		fascism = 10
+	}
+}
+
+0978.8.8 = {
+
+	oob = "TEC_3687"
+
+	set_technology = {
+		tech_support = 1
+		tec_market = 1
+		battle_droid_0 = 1
+		battle_droid_1 = 1
+		battle_droid_2 = 1
+		transport = 1
+		cis_tank_1 = 1
+		cis_tank_2 = 1
+		dsd1_tech = 1
+	}
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 20
+		fascism = 80
+	}
+}
+
+
+create_country_leader = {
+	name = "Wat Tambor"
+	desc = "Foreman of the Techno Union"
+	picture = GFX_tambor
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Wat Tambor"
+	desc = "Foreman of the Techno Union"
+	picture = GFX_tambor
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+	name = "Kul Teska"
+	portrait_path = "gfx/leaders/TEC/KulTeska.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Dooba Kunda"
+	portrait_path = "gfx/leaders/TEC/doobakunda.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Domb Treetor"
+	portrait_path = "gfx/leaders/TEC/DombTreetor.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Tendir Blue"
+	portrait_path = "gfx/leaders/TEC/TendirBlue.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

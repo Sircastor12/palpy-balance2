@@ -1,0 +1,12 @@
+scripted_gui = {
+	zygerria_slavery_window = {
+		context_type = decision_category
+		
+		window_name = "zygerria_slave_window"
+		visible_when_empty = yes
+		visible = {
+			
+		}
+	}
+}
+

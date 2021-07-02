@@ -1,0 +1,110 @@
+capital = 293
+
+oob = "DUR_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_DUR = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	volunteer_only
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 93
+	    neutrality = 7
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 93
+	    neutrality = 7
+	}
+}
+	
+
+create_country_leader = {
+	name = "Baniss Keeg"
+	desc = "Leader of Duro"
+	picture = "gfx/leaders/DUR/BanissKeeg.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Oldul Zhal"
+	desc = "Leader of Duro"
+	picture = "gfx/leaders/DUR/OldulZhal.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_corps_commander = {
+	name = "Gin Ku"
+	portrait_path = "gfx/leaders/DUR/GinKu.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Miner Stozoks"
+	portrait_path = "gfx/leaders/DUR/MinerStozoks.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Shriv Suurgav"
+	portrait_path = "gfx/leaders/DUR/ShrivSuurgav.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Cumzeim Kol"
+	portrait_path = "gfx/leaders/DUR/CumzeimKol.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

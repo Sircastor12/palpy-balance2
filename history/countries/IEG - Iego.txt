@@ -1,0 +1,73 @@
+﻿capital = 212
+
+oob = "IEG_3677"
+
+set_research_slots = 0
+set_stability = 0
+set_war_support = 0.0
+
+add_political_power = 0
+set_convoys = 0
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+set_convoys = 10
+
+set_popularities = {
+        democratic = 50
+        communism = 0
+        fascism = 0
+        neutrality = 50
+
+}
+
+set_politics = {
+	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Amit Noloff"
+	desc = "Member of the Council of Iego"
+	picture = "gfx/leaders/IEG/amit.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+create_country_leader = {
+	name = "Amit Noloff"
+	desc = "Member of the Council of Iego"
+	picture = "gfx/leaders/IEG/amit.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+create_country_leader = {
+	name = "Amit Noloff"
+	desc = "Member of the Council of Iego"
+	picture = "gfx/leaders/IEG/amit.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}

@@ -1,0 +1,87 @@
+﻿l_english:
+ MAN_tooltip_the_mandalorian_academy_tt:0 "Gains National Spirit §YThe Mandalorian Academy§!, which grants (§G+1§! bonus §YLevel§! and §YSkill Point§! for every new leader)."
+ MAN_jango_fett_tt:0 "§gJango Fett§! becomes a General.\n"
+ MAN_tooltip_sundari_tt:0 "You will gain more income from §YDuralloy§! exports monthly."
+ MAN_tooltip_commandos_tt:0 "You will get 4 §YCommando§! divisions."
+exiles_recruited_tt:0 "Recruit several divisions of exiles."
+
+
+
+
+laws_p_TOOLTIP:0 "Laws WIP"
+Industry_p_TOOLTIP:0 "Industry WIP"
+International_p_TOOLTIP:0 "International"
+Naval_p_TOOLTIP:0 "Naval WIP"
+Army_p_TOOLTIP:0 "Army WIP"
+send_cis_mission_TOOLTIP:0 "Send this mission to the CIS"
+send_rep_mission_TOOLTIP:0 "Send this mission to the Republic"
+sid_cis_attack_TOOLTIP:0 "Lord Sidious has instructed us to attack this planet. We should do so with great haste. In order to complete the mission we must control this state "
+sid_rep_attack_TOOLTIP:0 "The Chancellor has instructed us to attack this planet. We should do so with great haste. In order to complete the mission we must control this state"
+cis_mission:0 "Conquer [?CIS_attack_target^i.GetName]"
+rep_mission:0 "Conquer [?REP_attack_target^i.GetName]"
+sidious_influence:0 "Sidious Missions"
+corporate_button_TOOLTIP:0 "The Corporate Faction"
+outerrim_button_TOOLTIP:0 "The Outer Rim Faction"
+military_button_TOOLTIP:0 "The Militarist Faction"
+peace_button_TOOLTIP:0 "The Pacifist Faction" 
+
+
+clone_button_tooltip:0 "The Market for special clone divisions. Must have completed the focus YOrder of Battle!."
+
+
+invasion_button_cis_desc:0 "Sidious has tasked us with invading [?CIS_attack_target^i.GetName]. We must not fail him"
+
+invasion_button_rep_desc:0 "Palpatine has tasked us with invading [?REP_attack_target^i.GetName]. We must not fail him"
+invasion_button_cis_reward_desc:0 "§g 8% Stability§!"
+invasion_button_rep_reward_desc:0 "§g 8% Stability§!"
+invasion_button_cis_penalty_desc:0 "§R 8% Stability§!"
+invasion_button_rep_penalty_desc:0 "§R 8% Stability§!"
+
+corptop_1:0 "[GetShareHolderNameTop1]"
+corptop_2:0 "[GetShareHolderNameTop2]"
+corptop_3:0 "[GetShareHolderNameTop3]"
+corptop_4:0 "[GetShareHolderNameTop4]"
+corptop_5:0 "[GetShareHolderNameTop5]"
+
+geonosis_TOOLTIP:0 "Huppla Pasa Tisc Shipwrights Collective"
+aratech_TOOLTIP:0 "Aratech"
+blastech_TOOLTIP:0 "Blastech"
+chiewab_TOOLTIP:0 "Chiewab Amalgamated Pharmaceuticals Company"
+colicoid_TOOLTIP:0 "Colicoid Creation Nest"
+corellian_TOOLTIP:0 "Corellian Engineering"
+corporate_TOOLTIP:0 "Corporate Alliance"
+czerka_TOOLTIP:0 "Czerka Arms"
+free_dac_TOOLTIP:0 "Free Dac Volunteers Engineering Corps"
+haor_TOOLTIP:0 "Haor"
+hoersch_TOOLTIP:0 "Hoersch-Kessel Drive"
+industrial_auto_TOOLTIP:0 "Industrial Automaton"
+leisuremech_TOOLTIP:0 "LeisureMech Enterprises"
+mandal_TOOLTIP:0 "Mandal Motors"
+mining_guild_TOOLTIP:0 "MiningGuild"
+slayn_and_korpil_TOOLTIP:0 "Slayn and Korpil"
+rendili_TOOLTIP:0 "Rendili StarDrive"
+incom_TOOLTIP:0 "Incom Corporation"
+sienar_TOOLTIP:0 "Sienar Fleet Systems"
+sorosuub_TOOLTIP:0 "SoroSuub Corporation"
+taimandbak_TOOLTIP:0 "Taim and Bek"
+tagge_TOOLTIP:0 "Tagge Company"
+trans_TOOLTIP:0 "TransGalMeg Industries, Incorporated"
+ubril_TOOLTIP:0 "Ubrikkian Industries"
+xucphra_TOOLTIP:0 "Xucphra Corporation"
+
+REP_TECH_TOOLTIP:0 "This is the Republic §CTech Level§!. Every nation who has the §RLoyalist§! Ideology or is in the §RRepublic§! will have access to research or market items that are available with the corresponding tech. Only the Republic can up the tech level"
+CIS_TECH_TOOLTIP:0 "This is the CIS §CTech Level§!. Every nation who has the §CSeparatist§! Ideology or is in the §CSeparatist Alliance§! will have access to research or market items that are available with the corresponding tech. Only the CIS can up the tech level"
+
+sidious_cis_formation:0 "Form the CIS"
+stage_raxus_address:0 "Stage the Raxus Address"
+
+tech_level_decisions:0 "Tech Level Decisions"
+rep_tech_level:0 "Tier up Republic Tech"
+cis_tech_level:0 "Tier up CIS Tech"
+rep_tech_level_mission:0 "Republic Tech Increase"
+cis_tech_level_mission:0 "CIS Tech Increase"
+
+Jabiimi_commando:0 "Nimbus Commando"
+
+luxury_demand:0 "[?ROOT.luxury_demand]"
+ 

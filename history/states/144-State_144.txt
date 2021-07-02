@@ -1,0 +1,41 @@
+state={
+	id=144
+	name="STATE_144"
+	provinces={
+		6 1087 1825 1838 2025 2389 2450 2562 2845 2914 4940 6099 6102 6109 6110 6120 6131 6132 6139 6144 6175 
+	}
+	manpower=5714285
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ITH
+		add_core_of = ITH
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			6 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,310 @@
+focus_tree = {
+	id = HOT
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = HOT
+		}
+	}
+	#Focus for Snow
+	focus = {
+		id = HOT_snow
+		icon = GFX_OTHER_hoth
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_mkMgzGbR
+		icon = GFX_OTHER_hoth
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_sqLvrtwD }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_MjvXrxpD
+		icon = GFX_OTHER_hoth
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_ThHPcuge }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_EMiVSOnK
+		icon = GFX_OTHER_hoth
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_TKuwxEWL }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    hidden_effect = {
+    			HOT = {
+       				set_country_flag = 2020vision
+    			}
+			}
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_eDbNjrst
+		icon = GFX_OTHER_hoth
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_TKuwxEWL }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_SYRQAXiz
+		icon = GFX_OTHER_hoth
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_vZuMsmpB }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_ujtmrCDW
+		icon = GFX_OTHER_hoth
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_tTkxaeIi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_TKuwxEWL
+		icon = GFX_OTHER_hoth
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_hDTcOxUi
+		icon = GFX_OTHER_hoth
+		x = 5
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_fWjIvVxT
+		icon = GFX_OTHER_hoth
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_MsgafyCt
+		icon = GFX_OTHER_hoth
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_yHKCPXZm
+		icon = GFX_OTHER_hoth
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_vTCFPZMO
+		icon = GFX_OTHER_hoth
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_nSCbZzrp
+		icon = GFX_OTHER_hoth
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_SleEQHCU
+		icon = GFX_OTHER_hoth
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_sqLvrtwD }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_ThHPcuge
+		icon = GFX_OTHER_hoth
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_vZuMsmpB }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_sqLvrtwD
+		icon = GFX_OTHER_hoth
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_cbvXSfUJ
+		icon = GFX_OTHER_hoth
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_GTwDAlYh
+		icon = GFX_OTHER_hoth
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_vZuMsmpB
+		icon = GFX_OTHER_hoth
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Snow
+	focus = {
+		id = HOT_tTkxaeIi
+		icon = GFX_OTHER_hoth
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HOT_snow }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

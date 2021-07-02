@@ -1,0 +1,181 @@
+add_namespace = market_cmg
+
+news_event = { #
+	id = market_cmg.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_cmg.1"}
+	title = "Purchasing Rights Request"
+	desc = market_cmg.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { #
+		name = "Accept the request."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 50
+				AND = {
+					CMG = {
+						has_idea = cis_idea
+					}
+					FROM = {
+						has_idea = cis_idea
+					}
+				}
+			}
+			modifier = {
+				factor = 50
+				AND = {
+					CMG = {
+						has_idea = rep_idea
+					}
+					FROM = {
+						has_idea = rep_idea
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				CMG = {
+					NOT = {
+						has_tech = diamond_tech
+					}
+				}
+			}
+		}
+		FROM = {
+			set_technology = {
+    			diamond_tech = 1
+			}
+			add_political_power = -25	
+			subtract_from_variable = { dx = 5 }
+			news_event = {
+				id = market_generic.1
+			}
+		}
+	}
+
+	option = {
+		name = "Deny the request."
+		ai_chance = { factor = 1 }
+		FROM = {
+			add_political_power = -25
+			news_event = {
+				id = market_generic.2
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = market_cmg.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_cmg.2"}
+	title = market_cmg.2.t
+	desc = market_cmg.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_cmg.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_cmg.2.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = market_cmg.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_cmg.3"}
+	title = market_cmg.3.t
+	desc = market_cmg.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_cmg.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_cmg.3.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = market_cmg.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_cmg.4"}
+	title = market_cmg.4.t
+	desc = market_cmg.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_cmg.4.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_cmg.4.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = market_cmg.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_cmg.5"}
+	title = market_cmg.5.t
+	desc = market_cmg.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_cmg.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_cmg.5.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = market_cmg.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_cmg.6"}
+	title = market_cmg.6.t
+	desc = market_cmg.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_cmg.6.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_cmg.6.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+

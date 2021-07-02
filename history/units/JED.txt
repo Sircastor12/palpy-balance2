@@ -1,0 +1,64 @@
+﻿division_template = {
+	name = "Jedi Guardian"
+	is_locked = yes
+
+	regiments = {
+		jedi_guardian = { x = 0 y = 0 }
+		jedi_guardian = { x = 0 y = 1 }
+		jedi_guardian = { x = 0 y = 2 }
+   		jedi_guardian = { x = 1 y = 0 }
+		jedi_guardian = { x = 1 y = 1 }
+		jedi_guardian = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Jedi Guardian"
+		location = 194 #Jedi Temple
+		division_template = "Jedi Guardian"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+	}
+}
+

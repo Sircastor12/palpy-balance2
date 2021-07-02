@@ -1,0 +1,37 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			IBC = {
+				set_variable = { IBC_treasury = 10000 }
+			}
+			every_country = {
+				#### We get the index by checking the array length before we add to it
+				set_variable = { national_debt_index = global.national_debt_countries^num }
+				### Add to global array 
+				add_to_array = { global.national_debt_countries = THIS.id }
+				add_to_array = { global.national_debt_total = 0 }
+				add_to_array = { Global.nation_list = THIS.id }
+			}
+		}
+	}
+	
+	add_to_national_debt_scritped_effect = {
+		### We use the previous debt index to insert our debt total into the array
+		if = {
+			limit = {
+				is_in_array = {
+					array = lobal.national_debt_countries
+					value = THIS.id
+				}
+			}
+			set_variable = { global.national_debt_total^national_debt_index = debttotal }
+		}
+		else = {
+			set_variable = { national_debt_index = global.national_debt_countries^num }
+			### Add to global array 
+			add_to_array = { global.national_debt_countries = THIS.id }
+			add_to_array = { global.national_debt_total = debttotal }
+		}
+		
+	}
+}

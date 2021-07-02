@@ -1,0 +1,45 @@
+ideas = {
+	country = {
+		notoriety_1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rank_gold
+
+			modifier = {
+
+			}
+		}
+		notoriety_2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rank_silver
+
+			modifier = {
+
+			}
+		}
+		notoriety_3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rank_bronze
+
+			modifier = {
+			}
+		}
+	}
+}

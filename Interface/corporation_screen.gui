@@ -1,0 +1,354 @@
+guiTypes = {
+    containerWindowType = {
+        name = "corporate_window"
+        orientation = center
+        position = {x=-275 y=-106}
+        size = { width=550 height=550 }
+
+		buttonType = {
+			name = "geonosis" 
+			position = { x = 40 y = 180 }
+			spriteType = "GFX_Geonosis"
+			pdx_tooltip = "geonosis_TOOLTIP"
+		}
+		buttonType = {
+			name = "aratech" 
+			position = { x = 140 y = 180 }
+			spriteType = "GFX_Aratech"
+			pdx_tooltip = "aratech_TOOLTIP"
+		}
+		buttonType = {
+			name = "blastech" 
+			position = { x = 240 y = 180 }
+			spriteType = "GFX_BlasTech"
+			pdx_tooltip = "blastech_TOOLTIP"
+		}
+		buttonType = {
+			name = "chiewab" 
+			position = { x = 340 y = 180 }
+			spriteType = "GFX_Chiewab"
+			pdx_tooltip = "chiewab_TOOLTIP"
+		}
+		buttonType = {
+			name = "colicoid" 
+			position = { x = 440 y = 180 }
+			spriteType = "GFX_Colicoid"
+			pdx_tooltip = "colicoid_TOOLTIP"
+			}
+		buttonType = {
+			name = "corellian" 
+			position = { x = 40 y = 270 }
+			spriteType = "GFX_Corellian"
+			pdx_tooltip = "corellian_TOOLTIP"
+		}
+		buttonType = {
+			name = "corporate" 
+			position = { x = 140 y = 270 }
+			spriteType = "GFX_Corporate"
+			pdx_tooltip = "corporate_TOOLTIP"
+		}
+		buttonType = {
+			name = "czerka" 
+			position = { x = 240 y = 270 }
+			spriteType = "GFX_Czerka"
+			pdx_tooltip = "czerka_TOOLTIP"
+		}
+		buttonType = {
+			name = "free_dac" 
+			position = { x = 340 y = 270 }
+			spriteType = "GFX_Free"
+			pdx_tooltip = "free_dac_TOOLTIP"
+		}
+		buttonType = {
+			name = "haor" 
+			position = { x = 440 y = 270 }
+			spriteType = "GFX_Haor"
+			pdx_tooltip = "haor_TOOLTIP"
+		}
+		buttonType = {
+			name = "hoersch" 
+			position = { x = 40 y = 360 }
+			spriteType = "GFX_Hoersch"
+			pdx_tooltip = "hoersch_TOOLTIP"
+		}
+		buttonType = {
+			name = "industrial_auto" 
+			position = { x = 140 y = 360 }
+			spriteType = "GFX_Industrial_Automaton"
+			pdx_tooltip = "industrial_auto_TOOLTIP"
+		}
+		buttonType = {
+			name = "leisuremech" 
+			position = { x = 240 y = 360 }
+			spriteType = "GFX_LeisureMechEnterprises"
+			pdx_tooltip = "leisuremech_TOOLTIP"
+		}
+		buttonType = {
+			name = "mandal" 
+			position = { x = 340 y = 360 }
+			spriteType = "GFX_MandalMotors"
+			pdx_tooltip = "mandal_TOOLTIP"
+		}
+		buttonType = {
+			name = "mining_guild" 
+			position = { x = 440 y = 360 }
+			spriteType = "GFX_MiningGuild"
+			pdx_tooltip = "mining_guild_TOOLTIP"
+		}
+		buttonType = {
+			name = "slaynandkorpil" 
+			position = { x = 40 y = 450 }
+			spriteType = "GFX_SlaynAndKorpil"
+			pdx_tooltip = "slayn_and_korpil_TOOLTIP"
+		}
+		buttonType = {
+			name = "rendili" 
+			position = { x = 140 y = 450 }
+			spriteType = "GFX_RendiliStarDrive"
+			pdx_tooltip = "rendili_TOOLTIP"
+		}
+		buttonType = {
+			name = "incom" 
+			position = { x = 240 y = 450 }
+			spriteType = "GFX_Incom"
+			pdx_tooltip = "incom_TOOLTIP"
+		}
+		buttonType = {
+			name = "sienar" 
+			position = { x = 340 y = 450 }
+			spriteType = "GFX_SienarFleetSystems"
+			pdx_tooltip = "sienar_TOOLTIP"
+		}
+		buttonType = {
+			name = "sorosuub" 
+			position = { x = 440 y = 450 }
+			spriteType = "GFX_SoroSuub"
+			pdx_tooltip = "sorosuub_TOOLTIP"
+		}
+		buttonType = {
+			name = "taimandbak" 
+			position = { x = 40 y = 540 }
+			spriteType = "GFX_TaimAndBak"
+			pdx_tooltip = "taimandbak_TOOLTIP"
+		}
+		buttonType = {
+			name = "tagge" 
+			position = { x = 140 y = 540 }
+			spriteType = "GFX_Tagge"
+			pdx_tooltip = "tagge_TOOLTIP"
+		}
+		buttonType = {
+			name = "trans" 
+			position = { x = 240 y = 540 }
+			spriteType = "GFX_TransGalMegIndustriesIncorporated"
+			pdx_tooltip = "trans_TOOLTIP"
+		}
+		buttonType = {
+			name = "ubril" 
+			position = { x = 340 y = 540 }
+			spriteType = "GFX_UbrikkianIndustries"
+			pdx_tooltip = "ubril_TOOLTIP"
+		}
+		buttonType = {
+			name = "xucphra" 
+			position = { x = 440 y = 540 }
+			spriteType = "GFX_XucphraCorporation"
+			pdx_tooltip = "xucphra_TOOLTIP"
+		}
+		containerWindowType = {
+			name = "subsidiary_container"
+			position = { x=00 y=55 }
+			size = { width=545 height=125 } 
+			margin = { top = 10 bottom = 10 }
+			horizontalScrollbar  = "bottom_horizontal_slider"
+			
+			background = {
+				name = "GFX_transparent_bg"
+			}
+	
+			gridboxtype = {
+				name = "subsidiary_grid"
+				position = { x = -30 y = 0 }
+				slotsize = { width = 80 height = 80 }
+				max_slots_vertical = 1
+			}
+		}
+	}
+	containerWindowType = {
+        name = "corpo_other_screen"
+        orientation = center
+        position = {x=265 y=-106}
+		size = { width=550 height=550 }
+
+		iconType = {
+			name = "corpo_info"
+			position = { x=0 y=0 }
+			spriteType = "GFX_corporation_info"
+		}
+
+		buttonType = {
+			name = "selected_company" 
+			position = { x = 150 y = 7 }
+			spriteType = "GFX_Baktoid"
+			pdx_tooltip = ""
+		}
+		buttonType = {
+			name = "buy_shares" 
+			position = { x = 233 y = 230 }
+			spriteType = "GFX_corp_button"
+			pdx_tooltip = ""
+			buttonFont = "hoi_16mbs"
+			text = "Buy Shares"
+		}
+		buttonType = {
+			name = "buy_1_share" 
+			position = { x = 260 y = 90 }
+			spriteType = "GFX_corp_button_2"
+			pdx_tooltip = ""
+			buttonFont = "hoi_16mbs"
+			text = "1 Share"
+		}
+		buttonType = {
+			name = "buy_5_shares" 
+			position = { x = 260 y = 127 }
+			spriteType = "GFX_corp_button_2"
+			pdx_tooltip = ""
+			buttonFont = "hoi_16mbs"
+			text = "5 Shares"
+		}
+		buttonType = {
+			name = "buy_10_shares" 
+			position = { x = 260 y = 164 }
+			spriteType = "GFX_corp_button_2"
+			pdx_tooltip = ""
+			buttonFont = "hoi_16mbs"
+			text = "10 Shares"
+		}
+		buttonType = {
+			name = "buyout" 
+			position = { x = 145 y = 230 }
+			spriteType = "GFX_corp_button_2"
+			pdx_tooltip = ""
+			buttonFont = "hoi_16mbs"
+			text = "Buyout"
+		}
+		buttonType = {
+			name = "sell_shares" 
+			position = { x = 25 y = 230 }
+			spriteType = "GFX_corp_button"
+			pdx_tooltip = ""
+			buttonFont = "hoi_16mbs"
+			text = "Sell Shares"
+		}
+		instantTextBoxType  = {
+			name = "factories"
+			position = { x=29 y=450 }
+			font = "hoi_16mbs"
+			text = " [Getcorp_size]"
+		}
+		instantTextBoxType  = {
+			name = "influence"
+			position = { x=29 y=81 }
+			font = "hoi_16mbs"
+			text = "Top 5 Share Holders"
+		}
+		instantTextBoxType  = {
+			name = "top_1"
+			position = { x=29 y=100 }
+			font = "hoi_16mbs"
+			text = "corptop_1"
+		}
+		instantTextBoxType  = {
+			name = "top_2"
+			position = { x=29 y=119 }
+			font = "hoi_16mbs"
+			text = "corptop_2"
+		}
+		instantTextBoxType  = {
+			name = "top_3"
+			position = { x=29 y=138 }
+			font = "hoi_16mbs"
+			text = "corptop_3"
+		}
+		instantTextBoxType  = {
+			name = "top_4"
+			position = { x=29 y=157 }
+			font = "hoi_16mbs"
+			text = "corptop_4"
+		}
+		instantTextBoxType  = {
+			name = "top_5"
+			position = { x=29 y=176 }
+			font = "hoi_16mbs"
+			text = "corptop_5"
+		}
+		instantTextBoxType  = {
+			name = "price_per_share"
+			position = { x=240 y=37 }
+			font = "hoi_16mbs"
+			text = "Price a Share Y[Getshareprice]"
+		}
+		instantTextBoxType  = {
+			name = "total_shares"
+			position = { x=33 y=37 }
+			font = "hoi_16mbs"
+			text = "Total Shares Y[Gettotalshares]"
+		}
+		instantTextBoxType  = {
+			name = "buyout_price"
+			position = { x=33 y=307 }
+			font = "hoi_16mbs"
+			text = "Buyout Cost Y[Getbuyoutprice]"
+		}
+		instantTextBoxType  = {
+			name = "shares_held"
+			position = { x=33 y=327 }
+			font = "hoi_16mbs"
+			text = "Shares Held Y[Getcompanyshares]"
+		}
+		instantTextBoxType  = {
+			name = "bonus"
+			position = { x=33 y=357 }
+			font = "hoi_16mbs"
+			text = "Aquiring this company will provide further bonuses associated with the company"
+		}
+		iconType = {
+			name = "corpo_owned"
+			position = { x=0 y=70 }
+			spriteType = "GFX_corporation_info_owned"
+		}
+		buttonType = {
+			name = "purchased_company" 
+			position = { x = 150 y = 330 }
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			pdx_tooltip = ""
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -235 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {
+		name = "subsidiary_entry"
+		position = { x=0 y=0 }	
+		size = { width=550 height=300 } 
+		margin = { top = 10 bottom = 10 }
+		Orientation = upper_left
+		verticalScrollbar = "right_vertical_slider"
+
+		buttonType = {
+            name = "subsidiary"
+			position = { x = 100 y = 12 }
+            quadTextureSprite ="GFX_Baktoid"
+            buttonFont = "hoi_16mbs"
+            clicksound = click_close
+			text = "[Getsubsidiary_info]"
+        }
+	}
+}

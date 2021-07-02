@@ -1,0 +1,42 @@
+state={
+	id=298
+	name="STATE_298"
+	provinces={
+		35 666 1392 2009 2093 2518 2891 2946 3048 3060 3917 4257 8381 8405 8415 8438 8456 8466 8498 8501 8542 8601 
+	}
+	manpower=2500000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	
+	resources={
+		steel=5
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TEC
+		add_core_of = TEC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+			corporate_factory = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

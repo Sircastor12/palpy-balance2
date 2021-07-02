@@ -1,0 +1,41 @@
+state={
+	id=95
+	name="STATE_95"
+	provinces={
+		1728 1915 2006 2328 2403 2633 3106 3234 3847 4572 5019 5369 5373 5383 5391 5402 5407 5409 
+	}
+	manpower=714285
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IBC
+		add_core_of = IBC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			5391 = {
+				naval_base = 3
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

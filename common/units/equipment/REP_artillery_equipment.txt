@@ -1,0 +1,47 @@
+equipments = {
+
+	REP_artillery_equipment = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_artillery_equipment		
+		type = {
+			artillery
+			infantry #adding infantry type
+			#motorized #Removing motorized type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 20
+		hardness = 1
+		armor_value = 3
+
+		#Offensive Abilities
+		soft_attack = 35
+		hard_attack = 2
+		ap_attack = 3
+		air_attack = 0
+		
+		build_cost_ic = 4.5
+		resources = {
+			tungsten = 1
+			steel = 3
+		}
+	}
+	
+	SPHA_equipment = {
+		year = 1942
+
+		archetype = REP_artillery_equipment
+		priority = 50
+		visual_level = 2
+	}
+}

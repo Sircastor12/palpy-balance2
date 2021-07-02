@@ -1,0 +1,82 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_cloneback"
+		texturefile = "gfx/interface/clone/cloneback.dds"
+	} 
+	spriteType = {
+		name = "GFX_clone_frame"
+		texturefile = "gfx/interface/clone/cloneframe.dds"
+	}
+	spriteType = {
+		name = "GFX_13"
+		texturefile = "gfx/interface/clone/13.dds"
+	}
+	spriteType = {
+		name = "GFX_21"
+		texturefile = "gfx/interface/clone/21.dds"
+	}
+	spriteType = {
+		name = "GFX_41"
+		texturefile = "gfx/interface/clone/41.dds"
+	}
+	spriteType = {
+		name = "GFX_91"
+		texturefile = "gfx/interface/clone/91.dds"
+	}
+	spriteType = {
+		name = "GFX_104"
+		texturefile = "gfx/interface/clone/104.dds"
+	}
+	spriteType = {
+		name = "GFX_187"
+		texturefile = "gfx/interface/clone/187.dds"
+	}
+	spriteType = {
+		name = "GFX_212"
+		texturefile = "gfx/interface/clone/212.dds"
+	}
+	spriteType = {
+		name = "GFX_327"
+		texturefile = "gfx/interface/clone/327.dds"
+	}
+	spriteType = {
+		name = "GFX_332"
+		texturefile = "gfx/interface/clone/332.dds"
+	}
+	spriteType = {
+		name = "GFX_442"
+		texturefile = "gfx/interface/clone/442.dds"
+	}
+	spriteType = {
+		name = "GFX_501" 
+		texturefile = "gfx/interface/clone/501.dds"
+	}
+	spriteType = {
+		name = "GFX_corus"
+		texturefile = "gfx/interface/clone/corus.dds"
+	}
+	spriteType = {
+		name = "GFX_doom"
+		texturefile = "gfx/interface/clone/doom.dds"
+	}
+	spriteType = {
+		name = "GFX_monnk"
+		texturefile = "gfx/interface/clone/monnk.dds"
+	}
+	spriteType = {
+		name = "GFX_rancor"
+		texturefile = "gfx/interface/clone/rancor.dds"
+	}
+	spriteType = {
+		name = "GFX_rancor"
+		texturefile = "gfx/interface/clone/rancor.dds"
+	}
+	spriteType = {
+		name = "GFX_wolffe"
+		texturefile = "gfx/interface/clone/wolffe.dds"   
+	} 
+	spriteType = {
+		name = "GFX_Cody"
+		texturefile = "gfx/interface/clone/Cody.dds"   
+	} 
+}  

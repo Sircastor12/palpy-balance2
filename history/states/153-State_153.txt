@@ -1,0 +1,41 @@
+state={
+	id=153
+	name="STATE_153"
+	provinces={
+		823 1116 1698 2162 3515 4259 4390 6231 6248 6264 6272 6278 6283 6285 6287 6298 6302 6309 6323 6332 6336 6337 6364 
+	}
+	manpower=2745000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=7
+		chromium=2
+	}
+
+  	history = {
+		owner=REP
+		add_core_of = REP
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

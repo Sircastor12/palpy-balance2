@@ -1,0 +1,52 @@
+capital = 443
+
+set_country_flag = sidious_master
+set_country_flag = dooku_apprentice
+set_research_slots = 0
+set_stability = 0
+set_war_support = 0.0
+set_country_flag = no_ideas
+
+add_ideas = {
+	disarmed_nation
+	closed_economy
+	civilian_economy
+}
+
+add_political_power = 250
+set_convoys = 0
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+add_ideas = {
+	sidious
+}
+
+create_country_leader = {
+	name = "Darth Sidious"
+	picture = GFX_PALP_secret
+	expire = "2020.1.1"
+	ideology = despotism
+}

@@ -1,0 +1,41 @@
+state={
+	id=273
+	name="STATE_273"
+	provinces={
+		952 1006 1251 1565 1619 2031 2575 3021 3099 3808 4016 4173 4221 4415 4451 4462 4474 8007 8009 8010 8034 8045 8066 8085 8089 8107 8110 8121 8122 8157 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=3
+		aluminium=1
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=3
+	}
+
+  	history = {
+		owner=CLA
+		add_core_of = CLA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			2575 30
+		}
+	}
+}
+

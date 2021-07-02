@@ -1,0 +1,65 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+#Mandalorian Commando
+	super_mandalorian_commando_0 = {
+
+		enable_subunits = {
+			Mandalorian_super_commandos
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	Night_sisters_0 = {
+
+		enable_subunits = {
+			Night_sisters
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Night_brothers_0 = {
+
+		enable_subunits = {
+			Night_brothers
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

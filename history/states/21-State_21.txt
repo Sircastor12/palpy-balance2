@@ -1,0 +1,44 @@
+state={
+	id=21
+	name="STATE_21"
+	provinces={
+		111 1567 2815 3126 3626 4768 6669 6676 6683 6684 6691 6693 6699 6700 6715 
+	}
+	manpower=80000000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	
+	resources={
+		steel=9
+		aluminium=2
+		rubber=2
+		tungsten=3
+		oil=5
+		chromium=1
+	}
+
+  	history = {
+		owner=REP
+		add_core_of = REP
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			4513 = {
+				naval_base = 4
+			}
+			1567 = {
+				naval_base = 4
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

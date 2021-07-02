@@ -1,0 +1,139 @@
+﻿division_template = {
+	name = "41st Corps Division"
+	is_locked = yes
+
+	regiments = {
+		REP_41_clone = { x = 0 y = 0 }
+		REP_41_clone = { x = 0 y = 1 }
+		REP_41_clone = { x = 0 y = 2 }
+   		REP_41_clone = { x = 1 y = 0 }
+		REP_41_clone = { x = 1 y = 1 }
+		REP_41_clone = { x = 1 y = 2 }
+  		REP_41_clone = { x = 2 y = 0 }
+		REP_41_clone = { x = 2 y = 1 }
+		REP_41_clone = { x = 2 y = 2 }
+		REP_41_clone = { x = 0 y = 3 }
+	}
+	support = {
+		clone_recon = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "41st Green Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Strike Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Banshee Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Firebolt Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Black Cat Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Mutant Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Miracle Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Wild Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Stripes Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Alpha Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Danger Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Marvel Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Lion Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Titan Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Rage Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "41st Oracle Company"
+		location = 10463 #Kamino
+		division_template = "41st Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

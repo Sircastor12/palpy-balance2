@@ -1,0 +1,34 @@
+rep_duties = {
+     icon = generic_prospect_for_resources
+	
+available = { 
+	original_tag = REP
+	has_global_flag = clonearmydiscovered
+     }
+allowed = {
+		original_tag = REP
+	}
+}
+
+Kuat_drive_yards = {
+     icon = generic_prospect_for_resources
+	
+available = { 
+	KUA = {controls_state = 24}
+	KUA = {is_in_faction_with = REP}
+     }
+allowed = {
+		original_tag = REP
+	}
+}
+
+cloning_facilities = {
+     icon = generic_prospect_for_resources
+	
+available = { 
+	KAM = {owns_state = 60}
+     }
+allowed = {
+		original_tag = REP
+	}
+}

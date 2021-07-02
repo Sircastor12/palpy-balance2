@@ -1,0 +1,103 @@
+﻿capital = 392
+
+oob = "GUN_3677"
+set_research_slots = 1
+set_stability = 0.9
+set_war_support = .20
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	infantry_weapons = 1
+	militia_Gungan = 1
+}
+
+add_political_power = 20
+set_convoys = 5
+
+add_ideas = {
+	volunteer_only
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Rugor Nass"
+	desc = "Gungan High Council Boss"
+	picture = "gfx/leaders/GUN/RugorNass.dds"
+	expire = "2020.1.1"
+	ideology = liberalism
+}
+
+create_corps_commander = {
+	name = "Boss Lyonie"
+	portrait_path = "gfx/leaders/GUN/BossLyonie.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Roos Tarpals"
+	portrait_path = "gfx/leaders/GUN/RoosTarpals.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tobler Ceel"
+	portrait_path = "gfx/leaders/GUN/ToblerCeel.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jar Jar Binks"
+	portrait_path = "gfx/leaders/GUN/JarJarBinks.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+

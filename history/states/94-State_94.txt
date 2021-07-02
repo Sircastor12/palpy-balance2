@@ -1,0 +1,40 @@
+state={
+	id=94
+	name="STATE_94"
+	provinces={
+		8 117 443 770 1680 1851 1922 2235 2272 2728 3092 3212 3782 4090 4560 5335 5348 5352 5360 5368 5377 5379 5382 5385 5388 5393 5394 5397 5403 5404 5405 5406 5408 5411 5412 5414 
+	}
+	manpower=714285
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IBC
+		add_core_of = IBC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			5385 50
+		}
+	}
+}
+

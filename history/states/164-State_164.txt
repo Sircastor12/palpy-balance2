@@ -1,0 +1,41 @@
+state={
+	id=164
+	name="STATE_164"
+	provinces={
+		458 1228 1358 1899 2016 3675 3844 4371 4749 6320 6334 6341 6362 6375 6397 6445 6446 6479 6484 6499 
+	}
+	manpower=570000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+	
+	resources={
+		steel = 14
+		aluminium = 2
+		rubber = 0
+		tungsten = 3
+		oil = 0
+		chromium = 3
+	}
+
+  	history = {
+		owner = MAN
+		add_core_of = MAN
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 1
+
+			6362 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			6341 10
+		}
+	}
+}
+

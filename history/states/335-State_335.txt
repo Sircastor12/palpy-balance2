@@ -1,0 +1,41 @@
+state={
+	id=335
+	name="STATE_335"
+	provinces={
+		486 1598 2154 2507 2722 3507 4323 4418 9031 9040 9052 9053 9054 9066 9067 9079 9088 9093 9103 9117 9120 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=3
+		rubber=2
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=THY
+		add_core_of = THY
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

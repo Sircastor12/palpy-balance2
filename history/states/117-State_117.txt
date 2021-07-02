@@ -1,0 +1,41 @@
+state={
+	id=117
+	name="STATE_117"
+	provinces={
+		396 1505 1861 2081 2821 5708 5713 5719 5720 5723 5726 5728 5735 5739 5752 5754 5771 5782 5784 5793 
+	}
+	manpower=85000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=4
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=DAT
+		add_core_of = DAT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

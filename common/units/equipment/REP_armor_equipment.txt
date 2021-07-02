@@ -1,0 +1,231 @@
+equipments = {
+
+	REP_tank_equipment = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_medium_tank_equipment		
+		is_buildable = no
+		is_convertable = yes
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_capital_ships
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 36
+		hardness = 0.9
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 19
+		hard_attack = 14
+		ap_attack = 61
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 12 
+		resources = {
+			#oil = 1
+			tungsten = 2
+			steel = 2
+		}
+		
+		fuel_consumption = 3.6
+	}
+
+	# 1941
+	tx130_equipment = {
+		year = 1943
+
+		can_be_produced = {
+			tag = ROT	
+		}
+
+		archetype = REP_tank_equipment
+		sprite = tx130
+		priority = 50
+		visual_level = 2
+		is_convertable = no
+		
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 30
+		breakthrough = 30
+		hardness = 1.0
+		armor_value = 4
+
+		#Offensive Abilities
+		soft_attack = 35
+		hard_attack = 30
+		ap_attack = 6
+		air_attack = 3
+		
+		build_cost_ic = 14
+		resources = {
+			#oil = 2
+			tungsten = 2
+			steel = 3
+		}	
+	}
+
+	# 1943
+	atte_equipment = {
+		year = 1943
+
+		can_be_produced = {
+			tag = ROT	
+		}
+
+		archetype = REP_tank_equipment
+		sprite = atte
+		priority = 50
+		visual_level = 2
+		is_convertable = no
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 35
+		breakthrough = 35
+		hardness = 1.0
+		armor_value = 4
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 25
+		ap_attack = 6
+		air_attack = 2
+		
+		build_cost_ic = 28
+		resources = {
+			#oil = 2
+			tungsten = 2
+			steel = 4
+		}	
+	}
+	rx200_equipment = {
+		year = 1943
+
+		can_be_produced = {
+			tag = ROT	
+		}
+
+		archetype = REP_tank_equipment
+		priority = 50
+		visual_level = 2
+		is_convertable = no
+		
+		#Misc Abilities
+		maximum_speed = 13
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 3
+		hardness = 1.0
+		armor_value = 10
+
+		#Offensive Abilities
+		soft_attack = 38
+		hard_attack = 1.5
+		ap_attack = 13
+		air_attack = 17
+		
+		build_cost_ic = 11
+		resources = {
+			#oil = 2
+			tungsten = 2
+			steel = 3
+		}	
+	}
+	REP_super_heavy_tank_equipment = {
+		year = 1934
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_super_heavy_tank_equipment		
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 15
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 74
+		hardness = 0.99
+		armor_value = 20
+
+		#Offensive Abilities
+		soft_attack = 38
+		hard_attack = 45
+		ap_attack = 146
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 15
+
+		build_cost_ic = 100
+		resources = {
+			#oil = 2
+			steel = 5
+			chromium = 4
+		}
+		
+		fuel_consumption = 13
+	}
+
+	jugg_equipment = {
+		year = 1943
+
+		can_be_produced = {
+			tag = ROT	
+		}
+
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 40
+		breakthrough = 45
+		hardness = 1.0
+		armor_value = 7
+
+		#Offensive Abilities
+		soft_attack = 40
+		hard_attack = 45
+		ap_attack = 6
+		air_attack = 4
+
+		archetype = REP_super_heavy_tank_equipment
+		priority = 130
+		sprite = jugg
+		visual_level = 0
+		is_convertable = no
+	}
+}

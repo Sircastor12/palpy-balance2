@@ -1,0 +1,68 @@
+﻿capital = 141
+
+oob = "ITH_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_ITH = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	disarmed_nation 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+
+create_country_leader = {
+	name = "Tendau Bendon"
+	desc = "Senator of Ithor"
+	picture = "gfx/leaders/ITH/Tendau_Bendon.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Separatist Revolutionaries"
+	desc = "Separatist Revolutionaries"
+	picture = "gfx/leaders/CIS/CISGeneric.dds"
+	expire = "2020.1.1"
+	ideology = nazism
+}

@@ -1,0 +1,9962 @@
+#names
+defined_text = {
+	name = GetMarketItemName
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "74z Speeder"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "BARC Speeder"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "DC-17"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "DC-15 Carbine"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "DC-15 Rifle"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "E-10 Rifle"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "Support Equipment"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "Land Speeder"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "Sorosub Fang Fighter"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "Diamond Cruiser"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "Recusant Destroyer"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "CMG Providence Cruiser"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "CMG DSD-1"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "CMG ADSD"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "CMG Homing Spider"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "Lucrehulk Freighter"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "Lucrehulk Battleship"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "Trade Fed. Recusant"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "Trade Fed. Munificent"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "Lancer Droid"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "IBC Hailfire"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "Phase I Clone Trooper"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "Phase II Clone Trooper"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "Clone Commander"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "Clone Admiral"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "Z-95"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "V-19"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "ARC-170"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "V-Wing"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "Y-Wing"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "LAAT"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "LAAT Gunship"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "Pelta"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "Arquintes"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "Acclamator"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "Acclamator II"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "Venator"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "Kuat Victory"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "Mandator I"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "Mandator II"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "Bulatar"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "Kom'Rk"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "Buirkalor"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "Fang"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "Mon Cal Dreadnaught"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "Carrack"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "Hammerhead"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "Rendili Dreadnaught"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "Rendili Victory"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "Rendili Providence"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "AT-RT"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "SPHA"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "AT-TE"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "TX-130"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "Juggernaut"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "Vulture"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "C-9979"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "Rogue"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "Bellbulab-22"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "Trifighter"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "Droid Bomber"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "Hyena"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "Bellbulab-24"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "HMP Gunship"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "Marauder"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "Techno Union Destroyer"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "TEC. Bulwark"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "OOM Battle Droid"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "B1 Battle Droid"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "B2 Battle Droid"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "BX Battle Droid"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "Tactical Droid"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "D-Wing"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "STAP"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "Droideka"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "Tec. DSD-1"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "Tec. ADSD"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "Crab"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "PAC"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "MTT"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "J1 Cannon"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "Tec. Hailfire"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "AAT"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "Tec. Homing Spider"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "Octuparra Mag"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "Octuparra Combat"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "Tank Droid"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "AAT-2"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "Corellian Hammerhead"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "Consular"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "C-70 Charger"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "CR-70"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "CR-90"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "Dac Recusant"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "Dac Providence"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "Subjugator"
+	}
+
+}
+#item codes
+defined_text = {
+	name = GetMarketItemCode
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "74z"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "barc"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "inf0"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "inf1"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "inf2"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "inf3"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "supportequipment"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "landspeeder"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "soro_fang"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "cmg_diamond"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "cmg_recusant"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "cmg_providence"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "cmg_dsd1"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "cmg_adsd"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "cmg_homing_spider"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "lucrehulk_freighter"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "lucrehulk_battleship"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "fed_recusant"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "fed_munificent"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "lancer"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "ibc_hailfire"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "phase_1"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "phase_2"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "clone_general"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "clone_admiral"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "z95"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "v19"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "arc170"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "vwing"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "btlb"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "laat"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "laati"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "pelta"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "arquintes"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "acclamator"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "acclamator2"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "venator"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "victory"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "mandator1"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "mandator2"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "balutar"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "komrk"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "buirkalor"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "fang"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "cal_dreadnaught"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "carrack"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "hammerhead"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "ren_dreadnaught"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "ren_victory"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "ren_providence"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "atrt"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "spha"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "atte"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "tx130"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "juggernaut"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "vulture"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "c9979"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "rogue"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "bellbulab22"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "trifighter"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "advanceddroidbomber"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "hyena"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "bellbulab24"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "hmpgunship"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "marauder"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "tudestroyer"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "tec_bulwark"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "oom"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "b1"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "b2"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "bx"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "tactical"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "dwing"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "stap"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "droideka"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "tec_dsd1"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "tec_adsd"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "crab"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "pac"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "mtt"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "j1"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "tec_hailfire"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "aat"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "og9"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "octuparramagna"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "octuparracombat"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "tankdroid"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "aat2"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "cla_hammerhead"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "consular"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "c70"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "cr70"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "cr90"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "dac_recusant"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "dac_providence"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "subjugator"
+	}
+}
+#count
+defined_text = {
+	name = GetMarketCount
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = aratech_speeder_74z_count #Aratech
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = aratech_speeder_barc_count #Aratech
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = inf0_count #Blastech
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = inf1_count #Blastech
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = inf2_count #Blastech
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = inf3_count #Blastech
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = supportequipment_count
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = landspeeder_count
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = soro_fang_count
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = cmg_diamond_cruiser_count
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = cmg_recusant_destroyer_count
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = cmg_providence_dreadnaught_count
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = dsd1_count
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = adsd_count
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = homing_spider_count
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = lucrehulk_freighter_count
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = lucrehulk_battleship_count
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = fed_recusant_count
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = fed_munificent_count
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = lancer_count
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = ibc_hailfire_count
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = phase_1_count
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = phase_2_count
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = clone_general_count
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = clone_admiral_count
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = z95_count
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = v19_count
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = arc170_count
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = vwing_count
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = btlb_count
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = laat_count
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = laati_count
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = pelta_count
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = arquintes_count
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = acclamator_count
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = acclamator2_count
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = venator_count
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = victory_count
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = mandator1_count
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = mandator2_count
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = balutar_count
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = komrk_count
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = buirkalor_count
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = fang_count
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = cal_dreadnaught_count
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = carrack_count
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = hammerhead_count
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = ren_dreadnaught_count
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = ren_victory_count
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = providence_count
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = atrt_count
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = spha_count
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = atte_count
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = tx130_count
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = juggernaut_count
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = vulture_count
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = c9979_count
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = rogue_count
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = bellbulab22_count
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = trifighter_count
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = advanceddroidbomber_count
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = hyena_count
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = bellbulab24_count
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = hmpgunship_count
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = marauder_cruiser_count
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = tudestroyer_destroyer_count
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = bulwark_dreadnaught_count
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = oom_count
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = b1_count
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = b2_count
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = bx_count
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = tactical_count
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = dwing_count
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = stap_count
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = droideka_count
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = tec_dsd1_count
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = tec_adsd_count
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = crab_count
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = pac_count
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = mtt_count
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = j1_count
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = tec_hailfire_count
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = aat_count
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = og9_count
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = octuparramagna_count
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = octuparracombat_count
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = tankdroid_count
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = aat2_count
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = cla_hammerhead_count
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = consular_count
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = c70_count
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = cr70_count
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = cr90_count
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = dac_recusant_count
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = dac_providence_count
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = subjugator_count
+	}
+}
+#stock
+defined_text = {
+	name = GetMarketStock
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = speeder_74z_stock #Aratech
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = speeder_barc_stock #Aratech
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = inf0_stock #Blastech
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = inf1_stock #Blastech
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = inf2_stock #Blastech
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = inf3_stock #Blastech
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = supportequipment_stock
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = landspeeder_stock
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = soro_fang_stock
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = diamond_cruiser_stock
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = recusant_destroyer_stock
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = providence_dreadnaught_stock
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = dsd1_stock
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = adsd_stock
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = homing_spider_stock
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = lucrehulk_freighter_stock
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = lucrehulk_battleship_stock
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = fed_recusant_stock
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = fed_munificent_stock
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = lancer_stock
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = ibc_hailfire_stock
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = phase_1_stock
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = phase_2_stock
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = clone_general_stock
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = clone_admiral_stock
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = z95_stock
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = v19_stock
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = arc170_stock
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = vwing_stock
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = btlb_stock
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = laat_stock
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = laati_stock
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = pelta_stock
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = arquintes_stock
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = acclamator_stock
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = acclamator2_stock
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = venator_stock
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = victory_stock
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = mandator1_stock
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = mandator2_stock
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = balutar_stock
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = komrk_stock
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = buirkalor_stock
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = fang_stock
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = cal_dreadnaught_stock
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = carrack_stock
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = hammerhead_stock
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = ren_dreadnaught_stock
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = ren_victory_stock
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = providence_stock
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = atrt_stock
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = spha_stock
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = atte_stock
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = tx130_stock
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = juggernaut_stock
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = vulture_stock
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = c9979_stock
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = rogue_stock
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = bellbulab22_stock
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = trifighter_stock
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = advanceddroidbomber_stock
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = hyena_stock
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = bellbulab24_stock
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = hmpgunship_stock
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = marauder_cruiser_stock
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = tudestroyer_destroyer_stock
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = bulwark_dreadnaught_stock
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = oom_stock
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = b1_stock
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = b2_stock
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = bx_stock
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = tactical_stock
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = dwing_stock
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = stap_stock
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = droideka_stock
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = tec_dsd1_stock
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = tec_adsd_stock
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = crab_stock
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = pac_stock
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = mtt_stock
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = j1_stock
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = tec_hailfire_stock
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = aat_stock
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = og9_stock
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = octuparramagna_stock
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = octuparracombat_stock
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = tankdroid_stock
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = aat2_stock
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = cla_hammerhead_stock
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = consular_stock
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = c70_stock
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = cr70_stock
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = cr90_stock
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = dac_recusant_stock
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = dac_providence_stock
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = subjugator_stock
+	}
+}
+#price
+defined_text = {
+	name = GetMarketItemPrice
+	#74z
+	text = {
+		trigger = {
+			state = 1
+			ROOT = {
+				check_variable = { dx > 74z_pricem }
+			}
+		}
+		localization_key = 74z_pricemet
+	}
+	text = {
+		trigger = {
+			state = 1
+			ROOT = {
+				check_variable = { dx < 74z_pricem }
+			}
+		}
+		localization_key = 74z_pricenotmet
+	}
+	#Barc
+	text = {
+		trigger = {
+			state = 2
+			ROOT = {
+				check_variable = { dx > barc_pricem }
+			}
+		}
+		localization_key = barc_pricemet
+	}
+	text = {
+		trigger = {
+			state = 2
+			ROOT = {
+				check_variable = { dx < barc_pricem }
+			}
+		}
+		localization_key = barc_pricenotmet
+	}
+	#Inf0
+	text = {
+		trigger = {
+			state = 3
+			ROOT = {
+				check_variable = { dx > inf0_pricem }
+			}
+		}
+		localization_key = inf0_pricemet
+	}
+	text = {
+		trigger = {
+			state = 3
+			ROOT = {
+				check_variable = { dx < inf0_pricem }
+			}
+		}
+		localization_key = inf0_pricenotmet
+	}
+	#Inf1
+	text = {
+		trigger = {
+			state = 4
+			ROOT = {
+				check_variable = { dx > inf1_pricem }
+			}
+		}
+		localization_key = inf1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 4
+			ROOT = {
+				check_variable = { dx < inf1_pricem }
+			}
+		}
+		localization_key = inf1_pricenotmet
+	}
+	#Inf2
+	text = {
+		trigger = {
+			state = 5
+			ROOT = {
+				check_variable = { dx > inf2_pricem }
+			}
+		}
+		localization_key = inf2_pricemet
+	}
+	text = {
+		trigger = {
+			state = 5
+			ROOT = {
+				check_variable = { dx < inf2_pricem }
+			}
+		}
+		localization_key = inf2_pricenotmet
+	}
+	#Inf3
+	text = {
+		trigger = {
+			state = 6
+			ROOT = {
+				check_variable = { dx > inf3_pricem }
+			}
+		}
+		localization_key = inf3_pricemet
+	}
+	text = {
+		trigger = {
+			state = 6
+			ROOT = {
+				check_variable = { dx < inf3_pricem }
+			}
+		}
+		localization_key = inf3_pricenotmet
+	}
+
+	#support equipment
+	text = {
+		trigger = {
+			state = 7
+			ROOT = {
+				check_variable = { dx > supportequipment_pricem }
+			}
+		}
+		localization_key = supportequipment_pricemet
+	}
+	text = {
+		trigger = {
+			state = 7
+			ROOT = {
+				check_variable = { dx < supportequipment_pricem }
+			}
+		}
+		localization_key = supportequipment_pricenotmet
+	}
+	#Land speeder
+	text = {
+		trigger = {
+			state = 8
+			ROOT = {
+				check_variable = { dx > landspeeder_pricem }
+			}
+		}
+		localization_key = landspeeder_pricemet
+	}
+	text = {
+		trigger = {
+			state = 8
+			ROOT = {
+				check_variable = { dx < landspeeder_pricem }
+			}
+		}
+		localization_key = landspeeder_pricenotmet
+	}
+	#Soro fang
+	text = {
+		trigger = {
+			state = 9
+			ROOT = {
+				check_variable = { dx > soro_fang_pricem }
+			}
+		}
+		localization_key = soro_fang_pricemet
+	}
+	text = {
+		trigger = {
+			state = 9
+			ROOT = {
+				check_variable = { dx < soro_fang_pricem }
+			}
+		}
+		localization_key = soro_fang_pricenotmet
+	}
+	#cmg diamond
+	text = {
+		trigger = {
+			state = 10
+			ROOT = {
+				check_variable = { dx > cmg_diamond_pricem }
+			}
+		}
+		localization_key = diamond_cruiser_pricemet
+	}
+	text = {
+		trigger = {
+			state = 10
+			ROOT = {
+				check_variable = { dx < cmg_diamond_pricem }
+			}
+		}
+		localization_key = diamond_cruiser_pricenotmet
+	}
+	#cmg recusant
+	text = {
+		trigger = {
+			state = 11
+			ROOT = {
+				check_variable = { dx > cmg_recusant_pricem }
+			}
+		}
+		localization_key = recusant_destroyer_pricemet
+	}
+	text = {
+		trigger = {
+			state = 11
+			ROOT = {
+				check_variable = { dx < cmg_recusant_pricem }
+			}
+		}
+		localization_key = recusant_destroyer_pricenotmet
+	}
+	#cmg providence
+	text = {
+		trigger = {
+			state = 12
+			ROOT = {
+				check_variable = { dx > cmg_providence_pricem }
+			}
+		}
+		localization_key = providence_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			state = 12
+			ROOT = {
+				check_variable = { dx < cmg_providence_pricem }
+			}
+		}
+		localization_key = providence_dreadnaught_pricenotmet
+	}
+	#cmg dsd1
+	text = {
+		trigger = {
+			state = 13
+			ROOT = {
+				check_variable = { dx > cmg_dsd1_pricem }
+			}
+		}
+		localization_key = dsd1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 13
+			ROOT = {
+				check_variable = { dx < cmg_dsd1_pricem }
+			}
+		}
+		localization_key = dsd1_pricenotmet
+	}
+	#cmg ADSD
+	text = {
+		trigger = {
+			state = 14
+			ROOT = {
+				check_variable = { dx > cmg_adsd_pricem }
+			}
+		}
+		localization_key = adsd_pricemet
+	}
+	text = {
+		trigger = {
+			state = 14
+			ROOT = {
+				check_variable = { dx < cmg_adsd_pricem }
+			}
+		}
+		localization_key = adsd_pricenotmet
+	}
+	#cmg homing spider
+	text = {
+		trigger = {
+			state = 15
+			ROOT = {
+				check_variable = { dx > cmg_homing_spider_pricem }
+			}
+		}
+		localization_key = homing_spider_pricemet
+	}
+	text = {
+		trigger = {
+			state = 15
+			ROOT = {
+				check_variable = { dx < cmg_homing_spider_pricem }
+			}
+		}
+		localization_key = homing_spider_pricenotmet
+	}
+	#lucrehulk freighter
+	text = {
+		trigger = {
+			state = 16
+			ROOT = {
+				check_variable = { dx > lucrehulk_freighter_pricem }
+			}
+		}
+		localization_key = lucrehulk_freighter_pricemet
+	}
+	text = {
+		trigger = {
+			state = 16
+			ROOT = {
+				check_variable = { dx < lucrehulk_freighter_pricem }
+			}
+		}
+		localization_key = lucrehulk_freighter_pricenotmet
+	}
+	#lucrehulk battleship
+	text = {
+		trigger = {
+			state = 17
+			ROOT = {
+				check_variable = { dx > lucrehulk_battleship_pricem }
+			}
+		}
+		localization_key = lucrehulk_battleship_pricemet
+	}
+	text = {
+		trigger = {
+			state = 17
+			ROOT = {
+				check_variable = { dx < lucrehulk_battleship_pricem }
+			}
+		}
+		localization_key = lucrehulk_battleship_pricenotmet
+	}
+	#fed recusant
+	text = {
+		trigger = {
+			state = 18
+			ROOT = {
+				check_variable = { dx > fed_recusant_pricem }
+			}
+		}
+		localization_key = fed_recusant_pricemet
+	}
+	text = {
+		trigger = {
+			state = 18
+			ROOT = {
+				check_variable = { dx < fed_recusant_pricem }
+			}
+		}
+		localization_key = fed_recusant_pricenotmet
+	}
+
+	#fed munificent
+	text = {
+		trigger = {
+			state = 19
+			ROOT = {
+				check_variable = { dx > fed_munificent_pricem }
+			}
+		}
+		localization_key = fed_munificent_pricemet
+	}
+	text = {
+		trigger = {
+			state = 19
+			ROOT = {
+				check_variable = { dx < fed_munificent_pricem }
+			}
+		}
+		localization_key = fed_munificent_pricenotmet
+	}
+	#ibc lancer
+	text = {
+		trigger = {
+			state = 20
+			ROOT = {
+				check_variable = { dx > lancer_pricem }
+			}
+		}
+		localization_key = lancer_pricemet
+	}
+	text = {
+		trigger = {
+			state = 20
+			ROOT = {
+				check_variable = { dx < lancer_pricem }
+			}
+		}
+		localization_key = lancer_pricenotmet
+	}
+	#ibc hailfire
+	text = {
+		trigger = {
+			state = 21
+			ROOT = {
+				check_variable = { dx > ibc_hailfire_pricem }
+			}
+		}
+		localization_key = ibc_hailfire_pricemet
+	}
+	text = {
+		trigger = {
+			state = 21
+			ROOT = {
+				check_variable = { dx < ibc_hailfire_pricem }
+			}
+		}
+		localization_key = ibc_hailfire_pricenotmet
+	}
+	#phase 1 clone
+	text = {
+		trigger = {
+			state = 22
+			ROOT = {
+				check_variable = { dx > phase_1_pricem }
+			}
+		}
+		localization_key = phase_1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 22
+			ROOT = {
+				check_variable = { dx < phase_1_pricem }
+			}
+		}
+		localization_key = phase_1_pricenotmet
+	}
+	#phase 2
+	text = {
+		trigger = {
+			state = 23
+			ROOT = {
+				check_variable = { dx > phase_2_pricem }
+			}
+		}
+		localization_key = phase_2_pricemet
+	}
+	text = {
+		trigger = {
+			state = 23
+			ROOT = {
+				check_variable = { dx < phase_2_pricem }
+			}
+		}
+		localization_key = phase_2_pricenotmet
+	}
+	#clone general
+	text = {
+		trigger = {
+			state = 24
+			ROOT = {
+				check_variable = { dx > clone_general_pricem }
+			}
+		}
+		localization_key = clone_general_pricemet
+	}
+	text = {
+		trigger = {
+			state = 24
+			ROOT = {
+				check_variable = { dx < clone_general_pricem }
+			}
+		}
+		localization_key = clone_general_pricenotmet
+	}
+	#clone admiral
+	text = {
+		trigger = {
+			state = 25
+			ROOT = {
+				check_variable = { dx > clone_admiral_pricem }
+			}
+		}
+		localization_key = clone_admiral_pricemet
+	}
+	text = {
+		trigger = {
+			state = 25
+			ROOT = {
+				check_variable = { dx < clone_admiral_pricem }
+			}
+		}
+		localization_key = clone_admiral_pricenotmet
+	}
+	#z95
+	text = {
+		trigger = {
+			state = 26
+			ROOT = {
+				check_variable = { dx > z95_pricem }
+			}
+		}
+		localization_key = z95_pricemet
+	}
+	text = {
+		trigger = {
+			state = 26
+			ROOT = {
+				check_variable = { dx < z95_pricem }
+			}
+		}
+		localization_key = z95_pricenotmet
+	}
+	#v19
+	text = {
+		trigger = {
+			state = 27
+			ROOT = {
+				check_variable = { dx > v19_pricem }
+			}
+		}
+		localization_key = v19_pricemet
+	}
+	text = {
+		trigger = {
+			state = 27
+			ROOT = {
+				check_variable = { dx < v19_pricem }
+			}
+		}
+		localization_key = v19_pricenotmet
+	}
+	#arc170
+	text = {
+		trigger = {
+			state = 28
+			ROOT = {
+				check_variable = { dx > arc170_pricem }
+			}
+		}
+		localization_key = arc170_pricemet
+	}
+	text = {
+		trigger = {
+			state = 28
+			ROOT = {
+				check_variable = { dx < arc170_pricem }
+			}
+		}
+		localization_key = arc170_pricenotmet
+	}
+	#vwing
+	text = {
+		trigger = {
+			state = 29
+			ROOT = {
+				check_variable = { dx > vwing_pricem }
+			}
+		}
+		localization_key = vwing_pricemet
+	}
+	text = {
+		trigger = {
+			state = 29
+			ROOT = {
+				check_variable = { dx < vwing_pricem }
+			}
+		}
+		localization_key = vwing_pricenotmet
+	}
+	#ywing
+	text = {
+		trigger = {
+			state = 30
+			ROOT = {
+				check_variable = { dx > btlb_pricem }
+			}
+		}
+		localization_key = btlb_pricemet
+	}
+	text = {
+		trigger = {
+			state = 30
+			ROOT = {
+				check_variable = { dx < btlb_pricem }
+			}
+		}
+		localization_key = btlb_pricenotmet
+	}
+	#laat
+	text = {
+		trigger = {
+			state = 31
+			ROOT = {
+				check_variable = { dx > laat_pricem }
+			}
+		}
+		localization_key = laat_pricemet
+	}
+	text = {
+		trigger = {
+			state = 31
+			ROOT = {
+				check_variable = { dx < laat_pricem }
+			}
+		}
+		localization_key = laat_pricenotmet
+	}
+	#latti
+	text = {
+		trigger = {
+			state = 32
+			ROOT = {
+				check_variable = { dx > laati_pricem }
+			}
+		}
+		localization_key = laati_pricemet
+	}
+	text = {
+		trigger = {
+			state = 32
+			ROOT = {
+				check_variable = { dx < laati_pricem }
+			}
+		}
+		localization_key = laati_pricenotmet
+	}
+	#pelta
+	text = {
+		trigger = {
+			state = 33
+			ROOT = {
+				check_variable = { dx > pelta_pricem }
+			}
+		}
+		localization_key = pelta_pricemet
+	}
+	text = {
+		trigger = {
+			state = 33
+			ROOT = {
+				check_variable = { dx < pelta_pricem }
+			}
+		}
+		localization_key = pelta_pricenotmet
+	}
+	#arquintes
+	text = {
+		trigger = {
+			state = 34
+			ROOT = {
+				check_variable = { dx > arquintes_pricem }
+			}
+		}
+		localization_key = arquintes_pricemet
+	}
+	text = {
+		trigger = {
+			state = 34
+			ROOT = {
+				check_variable = { dx < arquintes_pricem }
+			}
+		}
+		localization_key = arquintes_pricenotmet
+	}
+	#acclamator
+	text = {
+		trigger = {
+			state = 35
+			ROOT = {
+				check_variable = { dx > acclamator_pricem }
+			}
+		}
+		localization_key = acclamator_pricemet
+	}
+	text = {
+		trigger = {
+			state = 35
+			ROOT = {
+				check_variable = { dx < acclamator_pricem }
+			}
+		}
+		localization_key = acclamator_pricenotmet
+	}
+	#acclamator 2
+	text = {
+		trigger = {
+			state = 36
+			ROOT = {
+				check_variable = { dx > acclamator2_pricem }
+			}
+		}
+		localization_key = acclamator2_pricemet
+	}
+	text = {
+		trigger = {
+			state = 36
+			ROOT = {
+				check_variable = { dx < acclamator2_pricem }
+			}
+		}
+		localization_key = acclamator2_pricenotmet
+	}
+	#venator
+	text = {
+		trigger = {
+			state = 37
+			ROOT = {
+				check_variable = { dx > venator_pricem }
+			}
+		}
+		localization_key = venator_pricemet
+	}
+	text = {
+		trigger = {
+			state = 37
+			ROOT = {
+				check_variable = { dx < venator_pricem }
+			}
+		}
+		localization_key = venator_pricenotmet
+	}
+	#victory
+	text = {
+		trigger = {
+			state = 38
+			ROOT = {
+				check_variable = { dx > victory_pricem }
+			}
+		}
+		localization_key = victory_pricemet
+	}
+	text = {
+		trigger = {
+			state = 38
+			ROOT = {
+				check_variable = { dx < victory_pricem }
+			}
+		}
+		localization_key = victory_pricenotmet
+	}
+	#mandator i
+	text = {
+		trigger = {
+			state = 39
+			ROOT = {
+				check_variable = { dx > mandator1_pricem }
+			}
+		}
+		localization_key = mandator1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 39
+			ROOT = {
+				check_variable = { dx < mandator1_pricem }
+			}
+		}
+		localization_key = mandator1_pricenotmet
+	}
+	#mandator ii
+	text = {
+		trigger = {
+			state = 40
+			ROOT = {
+				check_variable = { dx > mandator2_pricem }
+			}
+		}
+		localization_key = mandator2_pricemet
+	}
+	text = {
+		trigger = {
+			state = 40
+			ROOT = {
+				check_variable = { dx < mandator2_pricem }
+			}
+		}
+		localization_key = mandator2_pricenotmet
+	}
+	#balutar
+	text = {
+		trigger = {
+			state = 41
+			ROOT = {
+				check_variable = { dx > balutar_pricem }
+			}
+		}
+		localization_key = balutar_pricemet
+	}
+	text = {
+		trigger = {
+			state = 41
+			ROOT = {
+				check_variable = { dx < balutar_pricem }
+			}
+		}
+		localization_key = balutar_pricenotmet
+	}
+	#komrk
+	text = {
+		trigger = {
+			state = 42
+			ROOT = {
+				check_variable = { dx > komrk_pricem }
+			}
+		}
+		localization_key = komrk_pricemet
+	}
+	text = {
+		trigger = {
+			state = 42
+			ROOT = {
+				check_variable = { dx < komrk_pricem }
+			}
+		}
+		localization_key = komrk_pricenotmet
+	}
+	#buirkalor
+	text = {
+		trigger = {
+			state = 43
+			ROOT = {
+				check_variable = { dx > buirkalor_pricem }
+			}
+		}
+			localization_key = buirkalor_pricemet
+	}
+	text = {
+		trigger = {
+			state = 43
+			ROOT = {
+				check_variable = { dx < buirkalor_pricem }
+			}
+		}
+		localization_key = buirkalor_pricenotmet
+	}
+	#mandal fang
+	text = {
+		trigger = {
+			state = 44
+			ROOT = {
+				check_variable = { dx > fang_pricem }
+			}
+		}
+		localization_key = fang_pricemet
+	}
+	text = {
+		trigger = {
+			state = 44
+			ROOT = {
+				check_variable = { dx < fang_pricem }
+			}
+		}
+		localization_key = fang_pricenotmet
+	}
+	#cal dreadnaught
+	text = {
+		trigger = {
+			state = 45
+			ROOT = {
+				check_variable = { dx > cal_dreadnaught_pricem }
+			}
+		}
+		localization_key = cal_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			state = 45
+			ROOT = {
+				check_variable = { dx < cal_dreadnaught_pricem }
+			}
+		}
+		localization_key = cal_dreadnaught_pricenotmet
+	}
+	#carrack
+	text = {
+		trigger = {
+			state = 46
+			ROOT = {
+				check_variable = { dx > carrack_pricem }
+			}
+		}
+		localization_key = carrack_pricemet
+	}
+	text = {
+		trigger = {
+			state = 46
+			ROOT = {
+				check_variable = { dx < carrack_pricem }
+			}
+		}
+		localization_key = carrack_pricenotmet
+	}
+	#hammerhead
+	text = {
+		trigger = {
+			state = 47
+			ROOT = {
+				check_variable = { dx > hammerhead_pricem }
+			}
+		}
+		localization_key = hammerhead_pricemet
+	}
+	text = {
+		trigger = {
+			state = 47
+			ROOT = {
+				check_variable = { dx < hammerhead_pricem }
+			}
+		}
+		localization_key = hammerhead_pricenotmet
+	}
+	#rendili dreadnaught
+	text = {
+		trigger = {
+			state = 48
+			ROOT = {
+				check_variable = { dx > ren_dreadnaught_pricem }
+			}
+		}
+		localization_key = ren_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			state = 48
+			ROOT = {
+				check_variable = { dx < ren_dreadnaught_pricem }
+			}
+		}
+		localization_key = ren_dreadnaught_pricenotmet
+	}
+	#Rendili victory
+	text = {
+		trigger = {
+			state = 49
+			ROOT = {
+				check_variable = { dx > ren_victory_pricem }
+			}
+		}
+		localization_key = ren_victory_pricemet
+	}
+	text = {
+		trigger = {
+			state = 49
+			ROOT = {
+				check_variable = { dx < ren_victory_pricem }
+			}
+		}
+		localization_key = ren_victory_pricenotmet
+	}
+	#rendili providence
+	text = {
+		trigger = {
+			state = 50
+			ROOT = {
+				check_variable = { dx > ren_providence_pricem }
+			}
+		}
+		localization_key = providence_pricemet
+	}
+	text = {
+		trigger = {
+			state = 50
+			ROOT = {
+				check_variable = { dx < ren_providence_pricem }
+			}
+		}
+		localization_key = providence_pricenotmet
+	}
+	#atrt
+	text = {
+		trigger = {
+			state = 51
+			ROOT = {
+				check_variable = { dx > atrt_pricem }
+			}
+		}
+			localization_key = atrt_pricemet
+	}
+	text = {
+		trigger = {
+			state = 51
+			ROOT = {
+				check_variable = { dx < atrt_pricem }
+			}
+		}
+		localization_key = atrt_pricenotmet
+	}
+	#spha
+	text = {
+		trigger = {
+			state = 52
+			ROOT = {
+				check_variable = { dx > spha_pricem }
+			}
+		}
+		localization_key = spha_pricemet
+	}
+	text = {
+		trigger = {
+			state = 52
+			ROOT = {
+				check_variable = { dx < spha_pricem }
+			}
+		}
+		localization_key = spha_pricenotmet
+	}
+	#atte
+	text = {
+		trigger = {
+			state = 53
+			ROOT = {
+				check_variable = { dx > atte_pricem }
+			}
+		}
+		localization_key = atte_pricemet
+	}
+	text = {
+		trigger = {
+			state = 53
+			ROOT = {
+				check_variable = { dx < atte_pricem }
+			}
+		}
+		localization_key = atte_pricenotmet
+	}
+	#tx130
+	text = {
+		trigger = {
+			state = 54
+			ROOT = {
+				check_variable = { dx > tx130_pricem }
+			}
+		}
+		localization_key = tx130_pricemet
+	}
+	text = {
+		trigger = {
+			state = 54
+			ROOT = {
+				check_variable = { dx < tx130_pricem }
+			}
+		}
+		localization_key = tx130_pricenotmet
+	}
+	#juggernaut
+	text = {
+		trigger = {
+			state = 55
+			ROOT = {
+				check_variable = { dx > juggernaut_pricem }
+			}
+		}
+		localization_key = juggernaut_pricemet
+	}
+	text = {
+		trigger = {
+			state = 55
+			ROOT = {
+				check_variable = { dx < juggernaut_pricem }
+			}
+		}
+		localization_key = juggernaut_pricenotmet
+	}
+	#vulture
+	text = {
+		trigger = {
+			state = 56
+			ROOT = {
+				check_variable = { dx > vulture_pricem }
+			}
+		}
+		localization_key = vulture_pricemet
+	}
+	text = {
+		trigger = {
+			state = 56
+			ROOT = {
+				check_variable = { dx < vulture_pricem }
+			}
+		}
+		localization_key = vulture_pricenotmet
+	}
+	#c9979
+	text = {
+		trigger = {
+			state = 57
+			ROOT = {
+				check_variable = { dx > c9979_pricem }
+			}
+		}
+		localization_key = c9979_pricemet
+	}
+	text = {
+		trigger = {
+			state = 57
+			ROOT = {
+				check_variable = { dx < c9979_pricem }
+			}
+		}
+		localization_key = c9979_pricenotmet
+	}
+	#rogue
+	text = {
+		trigger = {
+			state = 58
+			ROOT = {
+				check_variable = { dx > rogue_pricem }
+			}
+		}
+		localization_key = rogue_pricemet
+	}
+	text = {
+		trigger = {
+			state = 58
+			ROOT = {
+				check_variable = { dx < rogue_pricem }
+			}
+		}
+		localization_key = rogue_pricenotmet
+	}
+	#bellbulab22
+	text = {
+		trigger = {
+			state = 59
+			ROOT = {
+				check_variable = { dx > bellbulab22_pricem }
+			}
+		}
+		localization_key = bellbulab22_pricemet
+	}
+	text = {
+		trigger = {
+			state = 59
+			ROOT = {
+				check_variable = { dx < bellbulab22_pricem }
+			}
+		}
+		localization_key = bellbulab22_pricenotmet
+	}
+	#trifighter
+	text = {
+		trigger = {
+			state = 60
+			ROOT = {
+				check_variable = { dx > trifighter_pricem }
+			}
+		}
+		localization_key = trifighter_pricemet
+	}
+	text = {
+		trigger = {
+			state = 60
+			ROOT = {
+				check_variable = { dx < trifighter_pricem }
+			}
+		}
+		localization_key = trifighter_pricenotmet
+	}
+	#droid bomber
+	text = {
+		trigger = {
+			state = 61
+			ROOT = {
+				check_variable = { dx > advanceddroidbomber_pricem }
+			}
+		}
+		localization_key = advanceddroidbomber_pricemet
+	}
+	text = {
+		trigger = {
+			state = 61
+			ROOT = {
+				check_variable = { dx < advanceddroidbomber_pricem }
+			}
+		}
+		localization_key = advanceddroidbomber_pricenotmet
+	}
+	#hyena
+	text = {
+		trigger = {
+			state = 62
+			ROOT = {
+				check_variable = { dx > hyena_pricem }
+			}
+		}
+		localization_key = hyena_pricemet
+	}
+	text = {
+		trigger = {
+			state = 62
+			ROOT = {
+				check_variable = { dx < hyena_pricem }
+			}
+		}
+		localization_key = hyena_pricenotmet
+	}
+	#bellbulab 24
+	text = {
+		trigger = {
+			state = 63
+			ROOT = {
+				check_variable = { dx > bellbulab24_pricem }
+			}
+		}
+		localization_key = bellbulab24_pricemet
+	}
+	text = {
+		trigger = {
+			state = 63
+			ROOT = {
+				check_variable = { dx < bellbulab24_pricem }
+			}
+		}
+		localization_key = bellbulab24_pricenotmet
+	}
+	#hmp gunship
+	text = {
+		trigger = {
+			state = 64
+			ROOT = {
+				check_variable = { dx > hmpgunship_pricem }
+			}
+		}
+		localization_key = hmpgunship_pricemet
+	}
+	text = {
+		trigger = {
+			state = 64
+			ROOT = {
+				check_variable = { dx < hmpgunship_pricem }
+			}
+		}
+		localization_key = hmpgunship_pricenotmet
+	}
+	#marauder
+	text = {
+		trigger = {
+			state = 65
+			ROOT = {
+				check_variable = { dx > marauder_pricem }
+			}
+		}
+		localization_key = marauder_cruiser_pricemet
+	}
+	text = {
+		trigger = {
+			state = 65
+			ROOT = {
+				check_variable = { dx < marauder_pricem }
+			}
+		}
+		localization_key = marauder_cruiser_pricenotmet
+	}
+	#techno union destroyer
+	text = {
+		trigger = {
+			state = 66
+			ROOT = {
+				check_variable = { dx > tudestroyer_pricem }
+			}
+		}
+		localization_key = tudestroyer_destroyer_pricemet
+	}
+	text = {
+		trigger = {
+			state = 66
+			ROOT = {
+				check_variable = { dx < tudestroyer_pricem }
+			}
+		}
+		localization_key = tudestroyer_destroyer_pricenotmet
+	}
+	#techno union bulwark
+	text = {
+		trigger = {
+			state = 67
+			ROOT = {
+				check_variable = { dx > tec_bulwark_pricem }
+			}
+		}
+		localization_key = bulwark_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			state = 67
+			ROOT = {
+				check_variable = { dx < tec_bulwark_pricem }
+			}
+		}
+		localization_key = bulwark_dreadnaught_pricenotmet
+	}
+	#oom
+	text = {
+		trigger = {
+			state = 68
+			ROOT = {
+				check_variable = { dx > oom_pricem }
+			}
+		}
+		localization_key = oom_pricemet
+	}
+	text = {
+		trigger = {
+			state = 68
+			ROOT = {
+				check_variable = { dx < oom_pricem }
+			}
+		}
+		localization_key = oom_pricenotmet
+	}
+	#b1
+	text = {
+		trigger = {
+			state = 69
+			ROOT = {
+				check_variable = { dx > b1_pricem }
+			}
+		}
+		localization_key = b1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 69
+			ROOT = {
+				check_variable = { dx < b1_pricem }
+			}
+		}
+		localization_key = b1_pricenotmet
+	}
+	#b2
+	text = {
+		trigger = {
+			state = 70
+			ROOT = {
+				check_variable = { dx > b2_pricem }
+			}
+		}
+		localization_key = b2_pricemet
+	}
+	text = {
+		trigger = {
+			state = 70
+			ROOT = {
+				check_variable = { dx < b2_pricem }
+			}
+		}
+		localization_key = b2_pricenotmet
+	}
+	#bx
+	text = {
+		trigger = {
+			state = 71
+			ROOT = {
+				check_variable = { dx > bx_pricem }
+			}
+		}
+		localization_key = bx_pricemet
+	}
+	text = {
+		trigger = {
+			state = 71
+			ROOT = {
+				check_variable = { dx < bx_pricem }
+			}
+		}
+		localization_key = bx_pricenotmet
+	}
+	#tactical droid
+	text = {
+		trigger = {
+			state = 72
+			ROOT = {
+				check_variable = { dx > tactical_pricem }
+			}
+		}
+		localization_key = tactical_pricemet
+	}
+	text = {
+		trigger = {
+			state = 72
+			ROOT = {
+				check_variable = { dx < tactical_pricem }
+			}
+		}
+		localization_key = tactical_pricenotmet
+	}
+	#dwing
+	text = {
+		trigger = {
+			state = 73
+			ROOT = {
+				check_variable = { dx > dwing_pricem }
+			}
+		}
+		localization_key = dwing_pricemet
+	}
+	text = {
+		trigger = {
+			state = 73
+			ROOT = {
+				check_variable = { dx < dwing_pricem }
+			}
+		}
+		localization_key = dwing_pricenotmet
+	}
+	#stap
+	text = {
+		trigger = {
+			state = 74
+			ROOT = {
+				check_variable = { dx > stap_pricem }
+			}
+		}
+		localization_key = stap_pricemet
+	}
+	text = {
+		trigger = {
+			state = 74
+			ROOT = {
+				check_variable = { dx < stap_pricem }
+			}
+		}
+		localization_key = stap_pricenotmet
+	}
+	#droideka
+	text = {
+		trigger = {
+			state = 75
+			ROOT = {
+				check_variable = { dx > droideka_pricem }
+			}
+		}
+		localization_key = droideka_pricemet
+	}
+	text = {
+		trigger = {
+			state = 75
+			ROOT = {
+				check_variable = { dx < droideka_pricem }
+			}
+		}
+		localization_key = droideka_pricenotmet
+	}
+	#techno union dsd1
+	text = {
+		trigger = {
+			state = 76
+			ROOT = {
+				check_variable = { dx > tec_dsd1_pricem }
+			}
+		}
+		localization_key = tec_dsd1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 76
+			ROOT = {
+				check_variable = { dx < tec_dsd1_pricem }
+			}
+		}
+		localization_key = tec_dsd1_pricenotmet
+	}
+	#techno union adsd
+	text = {
+		trigger = {
+			state = 77
+			ROOT = {
+				check_variable = { dx > tec_adsd_pricem }
+			}
+		}
+		localization_key = tec_adsd_pricemet
+	}
+	text = {
+		trigger = {
+			state = 77
+			ROOT = {
+				check_variable = { dx < tec_adsd_pricem }
+			}
+		}
+		localization_key = tec_adsd_pricenotmet
+	}
+	#crab
+	text = {
+		trigger = {
+			state = 78
+			ROOT = {
+				check_variable = { dx > crab_pricem }
+			}
+		}
+		localization_key = crab_pricemet
+	}
+	text = {
+		trigger = {
+			state = 78
+			ROOT = {
+				check_variable = { dx < crab_pricem }
+			}
+		}
+		localization_key = crab_pricenotmet
+	}
+	#pac
+	text = {
+		trigger = {
+			state = 79
+			ROOT = {
+				check_variable = { dx > pac_pricem }
+			}
+		}
+		localization_key = pac_pricemet
+	}
+	text = {
+		trigger = {
+			state = 79
+			ROOT = {
+				check_variable = { dx < pac_pricem }
+			}
+		}
+		localization_key = pac_pricenotmet
+	}
+	#mtt
+	text = {
+		trigger = {
+			state = 80
+			ROOT = {
+				check_variable = { dx > mtt_pricem }
+			}
+		}
+		localization_key = mtt_pricemet
+	}
+	text = {
+		trigger = {
+			state = 80
+			ROOT = {
+				check_variable = { dx < mtt_pricem }
+			}
+		}
+		localization_key = mtt_pricenotmet
+	}
+	#j1
+	text = {
+		trigger = {
+			state = 81
+			ROOT = {
+				check_variable = { dx > j1_pricem }
+			}
+		}
+		localization_key = j1_pricemet
+	}
+	text = {
+		trigger = {
+			state = 81
+			ROOT = {
+				check_variable = { dx < j1_pricem }
+			}
+		}
+		localization_key = j1_pricenotmet
+	}
+	#techno union hailfire
+	text = {
+		trigger = {
+			state = 82
+			ROOT = {
+				check_variable = { dx > tec_hailfire_pricem }
+			}
+		}
+		localization_key = tec_hailfire_pricemet
+	}
+	text = {
+		trigger = {
+			state = 82
+			ROOT = {
+				check_variable = { dx < tec_hailfire_pricem }
+			}
+		}
+		localization_key = tec_hailfire_pricenotmet
+	}
+	#aat
+	text = {
+		trigger = {
+			state = 83
+			ROOT = {
+				check_variable = { dx > aat_pricem }
+			}
+		}
+		localization_key = aat_pricemet
+	}
+	text = {
+		trigger = {
+			state = 83
+			ROOT = {
+				check_variable = { dx < aat_pricem }
+			}
+		}
+		localization_key = aat_pricenotmet
+	}
+	#og9
+	text = {
+		trigger = {
+			state = 84
+			ROOT = {
+				check_variable = { dx > og9_pricem }
+			}
+		}
+		localization_key = og9_pricemet
+	}
+	text = {
+		trigger = {
+			state = 84
+			ROOT = {
+				check_variable = { dx < og9_pricem }
+			}
+		}
+		localization_key = og9_pricenotmet
+	}
+	#octuparra magna
+	text = {
+		trigger = {
+			state = 85
+			ROOT = {
+				check_variable = { dx > octuparramagna_pricem }
+			}
+		}
+		localization_key = octuparramagna_pricemet
+	}
+	text = {
+		trigger = {
+			state = 85
+			ROOT = {
+				check_variable = { dx < octuparramagna_pricem }
+			}
+		}
+		localization_key = octuparramagna_pricenotmet
+	}
+	#octuparra combat
+	text = {
+		trigger = {
+			state = 86
+			ROOT = {
+				check_variable = { dx > octuparracombat_pricem }
+			}
+		}
+		localization_key = octuparracombat_pricemet
+	}
+	text = {
+		trigger = {
+			state = 86
+			ROOT = {
+				check_variable = { dx < octuparracombat_pricem }
+			}
+		}
+		localization_key = octuparracombat_pricenotmet
+	}
+	#tank droid
+	text = {
+		trigger = {
+			state = 87
+			ROOT = {
+				check_variable = { dx > tankdroid_pricem }
+			}
+		}
+		localization_key = tankdroid_pricemet
+	}
+	text = {
+		trigger = {
+			state = 87
+			ROOT = {
+				check_variable = { dx < tankdroid_pricem }
+			}
+		}
+		localization_key = tankdroid_pricenotmet
+	}
+	#aat2
+	text = {
+		trigger = {
+			state = 88
+			ROOT = {
+				check_variable = { dx > aat2_pricem }
+			}
+		}
+		localization_key = aat2_pricemet
+	}
+	text = {
+		trigger = {
+			state = 88
+			ROOT = {
+				check_variable = { dx < aat2_pricem }
+			}
+		}
+		localization_key = aat2_pricenotmet
+	}
+	#cla hammerhead
+	text = {
+		trigger = {
+			state = 89
+			ROOT = {
+				check_variable = { dx > cla_hammerhead_pricem }
+			}
+		}
+		localization_key = cla_hammerhead_pricemet
+	}
+	text = {
+		trigger = {
+			state = 89
+			ROOT = {
+				check_variable = { dx < cla_hammerhead_pricem }
+			}
+		}
+		localization_key = cla_hammerhead_pricenotmet
+	}
+	#consular
+	text = {
+		trigger = {
+			state = 90
+			ROOT = {
+				check_variable = { dx > consular_pricem }
+			}
+		}
+		localization_key = consular_pricemet
+	}
+	text = {
+		trigger = {
+			state = 90
+			ROOT = {
+				check_variable = { dx < consular_pricem }
+			}
+		}
+		localization_key = consular_pricenotmet
+	}
+	#c70
+	text = {
+		trigger = {
+			state = 91
+			ROOT = {
+				check_variable = { dx > c70_pricem }
+			}
+		}
+		localization_key = c70_pricemet
+	}
+	text = {
+		trigger = {
+			state = 91
+			ROOT = {
+				check_variable = { dx < c70_pricem }
+			}
+		}
+		localization_key = c70_pricenotmet
+	}
+	#cr70
+	text = {
+		trigger = {
+			state = 92
+			ROOT = {
+				check_variable = { dx > cr70_pricem }
+			}
+		}
+		localization_key = cr70_pricemet
+	}
+	text = {
+		trigger = {
+			state = 92
+			ROOT = {
+				check_variable = { dx < cr70_pricem }
+			}
+		}
+		localization_key = cr70_pricenotmet
+	}
+	#cr90
+	text = {
+		trigger = {
+			state = 93
+			ROOT = {
+				check_variable = { dx > cr90_pricem }
+			}
+		}
+		localization_key = cr90_pricemet
+	}
+	text = {
+		trigger = {
+			state = 93
+			ROOT = {
+				check_variable = { dx < cr90_pricem }
+			}
+		}
+		localization_key = cr90_pricenotmet
+	}
+	#dac recusant
+	text = {
+		trigger = {
+			state = 94
+			ROOT = {
+				check_variable = { dx > dac_recusant_pricem }
+			}
+		}
+		localization_key = dac_recusant_pricemet
+	}
+	text = {
+		trigger = {
+			state = 94
+			ROOT = {
+				check_variable = { dx < dac_recusant_pricem }
+			}
+		}
+		localization_key = dac_recusant_pricenotmet
+	}
+	#dac providence
+	text = {
+		trigger = {
+			state = 95
+			ROOT = {
+				check_variable = { dx > dac_providence_pricem }
+			}
+		}
+		localization_key = dac_providence_pricemet
+	}
+	text = {
+		trigger = {
+			state = 95
+			ROOT = {
+				check_variable = { dx < dac_providence_pricem }
+			}
+		}
+		localization_key = dac_providence_pricenotmet
+	}
+	#subjugator
+	text = {
+		trigger = {
+			state = 96
+			ROOT = {
+				check_variable = { dx > subjugator_pricem }
+			}
+		}
+		localization_key = subjugator_pricemet
+	}
+	text = {
+		trigger = {
+			state = 96
+			ROOT = {
+				check_variable = { dx < subjugator_pricem }
+			}
+		}
+		localization_key = subjugator_pricenotmet
+	}
+}
+#Purchase rights techs
+defined_text = {
+	name = GetMarketItemPurchaseRight
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = 74z_tech #Aratech
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = speeder_barc_aratechh #Aratech
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = inf0_tech #Blastech
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = inf1_tech #Blastech
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = inf2_tech #Blastech
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = inf3_tech #Blastech
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = supportequipment_tech
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = landspeeder_tech
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = soro_fang_tech
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = diamond_cruiser_tech
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = recusant_destroyer_tech
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = providence_dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = dsd1_tech
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = adsd_tech
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = homing_spider_tech
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = lucrehulk_freighter_tech
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = lucrehulk_battleship_tech
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = fed_recusant_tech
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = fed_munificent_tech
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = lancer_tech
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = ibc_hailfire_tech
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = phase_1_tech
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = phase_2_tech
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = clone_general_tech
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = clone_admiral_tech
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = z95_tech
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = v19_tech
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = arc170_tech
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = vwing_tech
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = btlb_tech
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = laat_tech
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = laati_tech
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = pelta_tech
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = arquintes_tech
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = acclamator_tech
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = acclamator2_tech
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = venator_tech
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = victory_tech
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = mandator1_tech
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = mandator2_tech
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = balutar_tech
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = komrk_tech
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = buirkalor_tech
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = fang_tech
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = cal_dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = carrack_tech
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = hammerhead_tech
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = ren_dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = ren_victory_tech
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = providence_tech
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = atrt_tech
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = spha_tech
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = atte_tech
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = tx130_tech
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = juggernaut_tech
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = vulture_tech
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = c9979_tech
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = rogue_tech
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = bellbulab22_tech
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = trifighter_tech
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = advanceddroidbomber_tech
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = hyena_tech
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = bellbulab24_tech
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = hmpgunship_tech
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = marauder_cruiser_tech
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = tudestroyer_destroyer_tech
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = bulwark_dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = oom_tech
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = b1_tech
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = b2_tech
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = bx_tech
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = tactical_tech
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = dwing_tech
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = stap_tech
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = droideka_tech
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = tec_dsd1_tech
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = tec_adsd_tech
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = crab_tech
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = pac_tech
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = mtt_tech
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = j1_tech
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = ibc_hailfire_tech
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = aat_tech
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = og9_tech
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = octuparramagna_tech
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = octuparracombat_tech
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = tankdroid_tech
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = aat2_tech
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = cla_hammerhead_tech
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = consular_tech
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = c70_tech
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = cr70_tech
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = cr90_tech
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = dac_recusant_tech
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = dac_providence_tech
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = subjugator_tech
+	}
+}
+#itemssold
+defined_text = {
+	name = GetMarketItemSold
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "ara_74z_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "ara_barc_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "inf0_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "inf1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "inf2_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "inf3_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "supportequipment_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "landspeeder_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "soro_fang_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "cmg_diamond_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "cmg_recusant_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "cmg_providence_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "cmg_dsd1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "cmg_adsd_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "cmg_homing_spider_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "lucrehulk_freighter_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "lucrehulk_battleship_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "fed_recusant_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "fed_munificent_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "lancer_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "ibc_hailfire_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "phase_1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "phase_2_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "clone_general_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "clone_admiral_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "z95_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "v19_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "arc170_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "vwing_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "btlb_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "laat_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "laati_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "pelta_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "arquintes_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "acclamator _sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "acclamator2_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "venator_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "victory_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "mandator1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "mandator2_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "balutar_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "komrk_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "buirkalor_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "fang_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "cal_dreadnaught_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "carrack_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "hammerhead_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "ren_dreadnaught_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "ren_victory_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "ren_providence_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "atrt_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "spha_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "atte_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "tx130_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "juggernaut_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "vulture_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "c9979_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "rogue_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "bellbulab22_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "trifighter_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "advanceddroidbomber_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "hyena_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "bellbulab24_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "hmpgunship_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "marauder_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "tudestroyer_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "tec_bulwark_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "oom_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "b1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "b2_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "bx_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "tactical_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "dwing_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "stap_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "droideka_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "tec_dsd1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "tec_adsd_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "crab_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "pac_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "mtt_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "j1_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "tec_hailfire_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "aat_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "og9_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "octuparramagna_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "octuparracombat_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "tankdroid_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "aat2_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "cla_hammerhead_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "consular_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "c70_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "cr70_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "cr90_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "dac_recusant_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "dac_providence_sold_loc"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "subjugator_sold_loc"
+	}
+}
+#icons
+defined_text = {
+	name = GetMarketItemIcon
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "GFX_74z_card"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "GFX_barc_card"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "GFX_inf0_card"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "GFX_inf1_card"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "GFX_inf2_card"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "GFX_inf3_card"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "GFX_supportequipment_card"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "GFX_aa5_card"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "GFX_fang_card"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "GFX_diamond_card"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "GFX_recusant_card"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "GFX_providence_card"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "GFX_dsd1_card"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "GFX_adsd_card"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "GFX_homing_spider_card"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "GFX_lucrehulk_freighter_card"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "GFX_lucrehulk_battleship_card"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "GFX_recusant_card"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "GFX_munificent_card"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "GFX_lancer_card"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "GFX_hailfire_card"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "GFX_phase_1_card"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "GFX_phase_2_card"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "GFX_clone_general_card"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "GFX_clone_admiral_card"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "GFX_z95_card"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "GFX_v19_card"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "GFX_arc170_card"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "GFX_vwing_card"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "GFX_btlb_card"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "GFX_laat_card"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "GFX_laati_card"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "GFX_pelta_card"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "GFX_arquintes_card"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "GFX_acclamator_card"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "GFX_acclamator2_card"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "GFX_venator_card"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "GFX_victory_card"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "GFX_mandator1_card"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "GFX_mandator2_card"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "GFX_balutar_card"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "GFX_komrk_card"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "GFX_buirkalor_card"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "GFX_fang_card"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "GFX_dreadnaught_card"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "GFX_carrack_card"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "GFX_hammerhead_card"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "GFX_dreadnaught_card"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "GFX_victory_card"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "GFX_providence_card"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "GFX_atrt_card"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "GFX_spha_card"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "GFX_atte_card"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "GFX_tx130_card"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "GFX_juggernaut_card"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "GFX_vulture_card"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "GFX_c9979_card"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "GFX_rogue_card"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "GFX_bellbulab22_card"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "GFX_trifighter_card"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "GFX_advanceddroidbomber_card"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "GFX_hyena_card"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "GFX_bellbulab24_card"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "GFX_hmpgunship_card"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "GFX_marauder_card"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "GFX_tudestroyer_card"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "GFX_bulwark_card"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "GFX_oom_card"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "GFX_b1_card"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "GFX_b2_card"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "GFX_bx_card"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "GFX_tactical_card"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "GFX_dwing_card"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "GFX_stap_card"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "GFX_droideka_card"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "GFX_dsd1_card"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "GFX_adsd_card"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "GFX_crab_card"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "GFX_pac_card"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "GFX_mtt_card"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "GFX_j1_card"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "GFX_hailfire_card"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "GFX_aat_card"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "GFX_homing_spider_card"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "GFX_octuparramagna_card"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "GFX_octuparracombat_card"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "GFX_tankdroid_card"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "GFX_aat2_card"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "GFX_hammerhead_card"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "GFX_consular_card"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "GFX_c70_card"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "GFX_cr70_card"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "GFX_cr90_card"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "GFX_recusant_card"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "GFX_providence_card"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "GFX_subjugator_card"
+	}
+}
+#equipment name
+defined_text = {
+	name = GetMarketItemEquipmentTypeCode
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "speeder_bike_basic" #Aratech
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "BARC_equipment" #Aratech
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "infantry_equipment_0" #Blastech
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "infantry_equipment_1" #Blastech
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "infantry_equipment_2" #Blastech
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "infantry_equipment_3" #Blastech
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "support_equipment_1"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "motorized_equipment_1"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "fang_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "diamond_equipment"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "recusant_equipment"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "providence_equipment"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "dsd1_dwarf_equipment"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "adsd_dwarf_equipment"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "OG9_equipment"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "lucrehulk_freighter_equipment"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "lucrehulk_battleship_equipment"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "recusant_equipment"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "munificent_equipment"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "ig_lancer_equip"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "hailfire_equipment"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "p1_clone_equip"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "p2_clone_equip"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "clone_general"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "clone_admiral"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "z95_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "v19_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "arc_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "vwing_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "blty_bomber_equip"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "laat_equip"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "laati_equip"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "pelta_equipment"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "arquintes_equipment"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "acclamator_1_equipment"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "acclamator_2_equipment"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "venator_equipment"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "victory_equipment"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "mandator1_equipment"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "mandator_equipment"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "mand_swoop_equipment"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "gauntlet_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "buirk_equipment"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "fang_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "dreadnaught_equipment"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "carrack_equipment"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "destroyer_1"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "dreadnaught_equipment"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "victory_equipment"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "providence_equipment"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "ATRT_equipment"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "SPHA_equipment"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "atte_equipment"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "tx130_equipment"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "jugg_equipment"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "vulture_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "C9979_equip"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "rogue_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "belb_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "tri_fighter_equip"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "droid_bomber_equip"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "hyena_bomber_equip"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "belb_bomber_equip"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "hmp_equip"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "marauder_equipment"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "tec_destroyer_equipment"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "bulwark_equipment"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "oom_droid_equipment"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "b1_droid_equip"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "b2_droid_equip"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "bx_battle_droid_equipment"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "tactical"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "dw_droid_equip"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "STAP_equip"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "destroyer_battle_droid"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "dsd1_dwarf_equipment"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "adsd_dwarf_equipment"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "crab_droid_equip"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "PAC_equipment_1"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "MTT_equipment_1"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "j1_equipment"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "hailfire_equipment"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "AAT_equipment"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "OG9_equipment"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "magna_tri_droid_equip"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "combat_tri_droid_equip"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "tankdroid_equipment"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "aat2_equipment"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "destroyer_1"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "consular_equipment"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "republic_frigate_equipment"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "cr70_equipment"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "cr90_equipment"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "recusant_equipment"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "providence_equipment"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "subjugator_equipment"
+	}
+}
+#prod 1 loc
+defined_text = {
+	name = Get_production_1_loc
+	text = {
+		trigger = {
+			has_variable = production_1
+		}
+		localization_key = "[?production^i.GetMarketItemName]"
+	}
+}
+###Production
+#Production icons
+defined_text = {
+	name = GetMarketItemIconP
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "GFX_74z_card_P"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "GFX_barc_card_P"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "GFX_inf0_card_P"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "GFX_inf1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "GFX_inf2_card_P"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "GFX_inf3_card_P"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "GFX_supportequipment_card_P"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "GFX_aa5_card_P"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "GFX_fang_card_P"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "GFX_diamond_card_P"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "GFX_recusant_card_P"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "GFX_providence_card_P"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "GFX_dsd1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "GFX_adsd_card_P"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "GFX_homing_spider_card_P"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "GFX_lucrehulk_freighter_card_P"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "GFX_lucrehulk_battleship_card_P"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "GFX_recusant_card_P"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "GFX_munificent_card_P"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "GFX_lancer_card_P"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "GFX_hailfire_card_P"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "GFX_phase_1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "GFX_phase_2_card_P"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "GFX_clone_general_card_P"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "GFX_clone_admiral_card_P"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "GFX_z95_card_P"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "GFX_v19_card_P"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "GFX_arc170_card_P"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "GFX_vwing_card_P"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "GFX_btlb_card_P"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "GFX_laat_card_P"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "GFX_laati_card_P"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "GFX_pelta_card_P"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "GFX_arquintes_card_P"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "GFX_acclamator_card_P"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "GFX_acclamator2_card_P"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "GFX_venator_card_P"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "GFX_victory_card_P"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "GFX_mandator1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "GFX_mandator2_card_P"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "GFX_balutar_card_P"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "GFX_komrk_card_P"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "GFX_buirkalor_card_P"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "GFX_fang_card_P"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "GFX_dreadnaught_card_P"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "GFX_carrack_card_P"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "GFX_hammerhead_card_P"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "GFX_dreadnaught_card_P"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "GFX_victory_card_P"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "GFX_providence_card_P"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "GFX_atrt_card_P"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "GFX_spha_card_P"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "GFX_atte_card_P"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "GFX_tx130_card_P"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "GFX_juggernaut_card_P"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "GFX_vulture_card_P"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "GFX_c9979_card_P"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "GFX_rogue_card_P"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "GFX_bellbulab22_card_P"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "GFX_trifighter_card_P"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "GFX_advanceddroidbomber_card_P"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "GFX_hyena_card_P"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "GFX_bellbulab24_card_P"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "GFX_hmpgunship_card_P"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "GFX_marauder_card_P"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "GFX_tudestroyer_card_P"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "GFX_bulwark_card_P"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "GFX_oom_card_P"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "GFX_b1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "GFX_b2_card_P"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "GFX_bx_card_P"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "GFX_tactical_card_P"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "GFX_dwing_card_P"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "GFX_stap_card_P"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "GFX_droideka_card_P"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "GFX_dsd1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "GFX_adsd_card_P"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "GFX_crab_card_P"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "GFX_pac_card_P"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "GFX_mtt_card_P"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "GFX_j1_card_P"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "GFX_hailfire_card_P"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "GFX_aat_card_P"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "GFX_homing_spider_card_P"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "GFX_octuparramagna_card_P"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "GFX_octuparracombat_card_P"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "GFX_tankdroid_card_P"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "GFX_aat2_card_P"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "GFX_hammerhead_card_P"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "GFX_consular_card_P"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "GFX_c70_card_P"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "GFX_cr70_card_P"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "GFX_cr90_card_P"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "GFX_recusant_card_P"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "GFX_providence_card_P"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "GFX_subjugator_card_P"
+	}
+}
+#weekly output
+defined_text = {
+	name = GetMarketItemMonthly
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "74zefficiency"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "barcefficiency"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "inf0efficiency"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "inf1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "inf2efficiency"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "inf3efficiency"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "supportequipmentefficiency"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "landspeederefficiency"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "soro_fangefficiency"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "cmg_diamondefficiency"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "cmg_recusantefficiency"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "cmg_providenceefficiency"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "cmg_dsd1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "cmg_adsdefficiency"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "cmg_homing_spiderefficiency"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "lucrehulk_freighterefficiency"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "lucrehulk_battleshipefficiency"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "fed_recusantefficiency"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "fed_munificentefficiency"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "lancerefficiency"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "ibc_hailfireefficiency"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "phase_1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "phase_2efficiency"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "clone_generalefficiency"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "clone_admiralefficiency"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "z95efficiency"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "v19efficiency"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "arc170efficiency"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "vwingefficiency"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "btlbefficiency"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "laatefficiency"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "laatiefficiency"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "peltaefficiency"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "arquintesefficiency"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "acclamatorefficiency"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "acclamator2efficiency"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "venatorefficiency"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "victoryefficiency"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "mandator1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "mandator2efficiency"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "balutarefficiency"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "komrkefficiency"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "buirkalorefficiency"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "fangefficiency"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "cal_dreadnaughtefficiency"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "carrackefficiency"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "hammerheadefficiency"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "ren_dreadnaughtefficiency"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "ren_victoryefficiency"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "ren_providenceefficiency"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "atrtefficiency"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "sphaefficiency"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "atteefficiency"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "tx130efficiency"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "juggernautefficiency"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "vultureefficiency"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "c9979efficiency"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "rogueefficiency"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "bellbulab22efficiency"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "trifighterefficiency"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "advanceddroidbomberefficiency"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "hyenaefficiency"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "bellbulab24efficiency"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "hmpgunshipefficiency"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "marauderefficiency"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "tudestroyerefficiency"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "tec_bulwarkefficiency"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "oomefficiency"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "b1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "b2efficiency"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "bxefficiency"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "tacticalefficiency"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "dwingefficiency"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "stapefficiency"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "droidekaefficiency"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "tec_dsd1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "tec_adsdefficiency"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "crabefficiency"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "pacefficiency"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "mttefficiency"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "j1efficiency"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "tec_hailfireefficiency"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "aatefficiency"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "og9efficiency"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "octuparramagnaefficiency"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "octuparracombatefficiency"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "tankdroidefficiency"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "aat2efficiency"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "cla_hammerheadefficiency"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "consularefficiency"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "c70efficiency"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "cr70efficiency"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "cr90efficiency"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "dac_recusantefficiency"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "dac_providenceefficiency"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "subjugatorefficiency"
+	}
+}
+#efficiency percent
+defined_text = {
+	name = GetMarketItemEfficiencyPercent
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "74zefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "barcefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "inf0efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "inf1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "inf2efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "inf3efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "supportequipmentefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "landspeederefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "soro_fangefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "cmg_diamondefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "cmg_recusantefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "cmg_providenceefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "cmg_dsd1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "cmg_adsdefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "cmg_homing_spiderefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "lucrehulk_freighterefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "lucrehulk_battleshipefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "fed_recusantefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "fed_munificentefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "lancerefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "ibc_hailfireefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "phase_1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "phase_2efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "clone_generalefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "clone_admiralefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "z95efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "v19efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "arc170efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "vwingefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "btlbefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "laatefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "laatiefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "peltaefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "arquintesefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "acclamatorefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "acclamator2efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "venatorefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "victoryefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "mandator1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "mandator2efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "balutarefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "komrkefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "buirkalorefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "fangefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "cal_dreadnaughtefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "carrackefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "hammerheadefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "ren_dreadnaughtefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "ren_victoryefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "ren_providenceefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "atrtefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "sphaefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "atteefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "tx130efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "juggernautefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "vultureefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "c9979efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "rogueefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "bellbulab22efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "trifighterefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "advanceddroidbomberefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "hyenaefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "bellbulab24efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "hmpgunshipefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "marauderefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "tudestroyerefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "tec_bulwarkefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "oomefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "b1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "b2efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "bxefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "tacticalefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "dwingefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "stapefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "droidekaefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "tec_dsd1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "tec_adsdefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "crabefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "pacefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "mttefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "j1efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "tec_hailfireefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "aatefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "og9efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "octuparramagnaefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "octuparracombatefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "tankdroidefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "aat2efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "cla_hammerheadefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "consularefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "c70efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "cr70efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "cr90efficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "dac_recusantefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "dac_providenceefficiencypercent"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "subjugatorefficiencypercent"
+	}
+}
+#factories
+defined_text = {
+	name = GetMarketItemFactories
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "74zfactories"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "barcfactories"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "inf0factories"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "inf1factories"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "inf2factories"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "inf3factories"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "supportequipmentfactories"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "landspeederfactories"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "soro_fangfactories"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "cmg_diamondfactories"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "cmg_recusantfactories"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "cmg_providencefactories"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "cmg_dsd1factories"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "cmg_adsdfactories"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "cmg_homing_spiderfactories"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "lucrehulk_freighterfactories"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "lucrehulk_battleshipfactories"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "fed_recusantfactories"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "fed_munificentfactories"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "lancerfactories"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "ibc_hailfirefactories"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "phase_1factories"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "phase_2factories"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "clone_generalfactories"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "clone_admiralfactories"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "z95factories"
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = "v19factories"
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = "arc170factories"
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = "vwingfactories"
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = "btlbfactories"
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = "laatfactories"
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = "laatifactories"
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = "peltafactories"
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = "arquintesfactories"
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = "acclamatorfactories"
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = "acclamator2factories"
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = "venatorfactories"
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = "victoryfactories"
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = "mandator1factories"
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = "mandator2factories"
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = "balutarfactories"
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = "komrkfactories"
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = "buirkalorfactories"
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = "fangfactories"
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = "cal_dreadnaughtfactories"
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = "carrackfactories"
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = "hammerheadfactories"
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = "ren_dreadnaughtfactories"
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = "ren_victoryfactories"
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = "ren_providencefactories"
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = "atrtfactories"
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = "sphafactories"
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = "attefactories"
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = "tx130factories"
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = "juggernautfactories"
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = "vulturefactories"
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = "c9979factories"
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = "roguefactories"
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = "bellbulab22factories"
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = "trifighterfactories"
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = "advanceddroidbomberfactories"
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = "hyenafactories"
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = "bellbulab24factories"
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = "hmpgunshipfactories"
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = "marauderfactories"
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = "tudestroyerfactories"
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = "tec_bulwarkfactories"
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = "oomfactories"
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = "b1factories"
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = "b2factories"
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = "bxfactories"
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = "tacticalfactories"
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = "dwingfactories"
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = "stapfactories"
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = "droidekafactories"
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = "tec_dsd1factories"
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = "tec_adsdfactories"
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = "crabfactories"
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = "pacfactories"
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = "mttfactories"
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = "j1factories"
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = "tec_hailfirefactories"
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = "aatfactories"
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = "og9factories"
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = "octuparramagnafactories"
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = "octuparracombatfactories"
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = "tankdroidfactories"
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = "aat2factories"
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = "cla_hammerheadfactories"
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = "consularfactories"
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = "c70factories"
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = "cr70factories"
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = "cr90factories"
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = "dac_recusantfactories"
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = "dac_providencefactories"
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = "subjugatorfactories"
+	}
+}
+#techs
+defined_text = {
+	name = GetMarketItemTech
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = cal_weapons #Aratech
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = barc_tech #Aratech
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = infantry_weapons #Blastech
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = infantry_weapons1 #Blastech
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = improved_infantry_weapons #Blastech
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = advanced_infantry_weapons #Blastech
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = tech_support
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = motorised_infantry
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = fang_tech
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = diamond_tech
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = recusant_tech
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = providence_tech
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = dsd1_tech
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = adsd_tech
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = cis_tank_2
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = lucrehulk_freighter_tech
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = lucrehulk_battleship_tech
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = recusant_tech
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = munificent_tech
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = lancer_tech
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = hailfire_droid
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = p1_clone_tech
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = p2_clone_tech
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = p1_clone_tech
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = p1_clone_tech
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = z95_tech
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = v19_tech
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = arc170_tech
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = vwing_tech
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = ywing_tech
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = laat_tech
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = laati_tech
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = pelta_tech
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = arquintes_tech
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = acclamator_tech
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = acclamator_II_tech
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = venator_tech
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = victory_tech
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = mandator_I_tech
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = mandator_II_tech
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = swoop_tech
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = gauntlet_tech
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = buirk_tech
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = fang_tech
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = carrack_tech
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = early_destroyer
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = victory_tech
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = providence_tech
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = atrt_tech
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = SPHA_tech
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = atte_tech
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = tx130_tech
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = jugg_tech
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = vulture_tech
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = c9979_tech
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = rogue_tech
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = bellbulab22_tech
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = trifighter_tech
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = advanceddroidbomber_tech
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = hyena_tech
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = bellbulab24_tech
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = hmpgunship_tech
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = marauder_tech
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = marauder_tech
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = bulwark_tech
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = battle_droid_0
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = battle_droid_1
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = battle_droid_2
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = bx_tech
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = battle_droid_1
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = d_wing_tech
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = stap_tech
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = droideka_tech
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = dsd1_tech
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = adsd_tech
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = crab_tech
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = pac_tech
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = mtt_tech
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = j1_artillery
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = hailfire_droid
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = cis_tank_1
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = cis_tank_2
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = TEC_magna_tri
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = TEC_combat_tri
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = cis_tank_3
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = cis_tank_4
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = early_destroyer
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = consular_tech
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = republic_frigate_tech
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = cr70_tech
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = cr90_tech
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = recusant_tech
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = providence_tech
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = subjugator_tech
+	}
+}
+#tech level flags
+defined_text = {
+	name = GetMarketItemTechLevel
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = cal_weapons #Aratech
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = REP_tech_1 #Aratech
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = infantry_weapons #Blastech
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = infantry_weapons1 #Blastech
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = improved_infantry_weapons #Blastech
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = advanced_infantry_weapons #Blastech
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = tech_support
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = motorised_infantry
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = fang_tech
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = adsd_tech
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = lancer_tech
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = REP_tech_1
+	}
+	text = {
+		trigger = {
+			state = 27
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 28
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 29
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 30
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 31
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 32
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 33
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 34
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 35
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 36
+		}
+		localization_key = REP_tech_4
+	}
+	text = {
+		trigger = {
+			state = 37
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 38
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 39
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 40
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 41
+		}
+		localization_key = swoop_tech
+	}
+	text = {
+		trigger = {
+			state = 42
+		}
+		localization_key = gauntlet_tech
+	}
+	text = {
+		trigger = {
+			state = 43
+		}
+		localization_key = buirk_tech
+	}
+	text = {
+		trigger = {
+			state = 44
+		}
+		localization_key = fang_tech
+	}
+	text = {
+		trigger = {
+			state = 45
+		}
+		localization_key = REP_tech_1
+	}
+	text = {
+		trigger = {
+			state = 46
+		}
+		localization_key = carrack_tech
+	}
+	text = {
+		trigger = {
+			state = 47
+		}
+		localization_key = early_destroyer
+	}
+	text = {
+		trigger = {
+			state = 48
+		}
+		localization_key = dreadnaught_tech
+	}
+	text = {
+		trigger = {
+			state = 49
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 50
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 51
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 52
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 53
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 54
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 55
+		}
+		localization_key = REP_tech_3
+	}
+	text = {
+		trigger = {
+			state = 56
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 57
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 58
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 59
+		}
+		localization_key = bellbulab22_tech
+	}
+	text = {
+		trigger = {
+			state = 60
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 61
+		}
+		localization_key = advanceddroidbomber_tech
+	}
+	text = {
+		trigger = {
+			state = 62
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 63
+		}
+		localization_key = bellbulab24_tech
+	}
+	text = {
+		trigger = {
+			state = 64
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 65
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 66
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 67
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 68
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 69
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 70
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 71
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 72
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 73
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 74
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 75
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 76
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 77
+		}
+		localization_key = adsd_tech
+	}
+	text = {
+		trigger = {
+			state = 78
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 79
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 80
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 81
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 82
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 83
+		}
+		localization_key = CIS_tech_1
+	}
+	text = {
+		trigger = {
+			state = 84
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 85
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 86
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 87
+		}
+		localization_key = CIS_tech_3
+	}
+	text = {
+		trigger = {
+			state = 88
+		}
+		localization_key = CIS_tech_4
+	}
+	text = {
+		trigger = {
+			state = 89
+		}
+		localization_key = early_destroyer
+	}
+	text = {
+		trigger = {
+			state = 90
+		}
+		localization_key = REP_tech_1
+	}
+	text = {
+		trigger = {
+			state = 91
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 92
+		}
+		localization_key = REP_tech_2
+	}
+	text = {
+		trigger = {
+			state = 93
+		}
+		localization_key = cr90_tech
+	}
+	text = {
+		trigger = {
+			state = 94
+		}
+		localization_key = CIS_tech_2
+	}
+	text = {
+		trigger = {
+			state = 95
+		}
+		localization_key = CIS_tech_4
+	}
+	text = {
+		trigger = {
+			state = 96
+		}
+		localization_key = CIS_tech_4
+	}
+}

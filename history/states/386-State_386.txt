@@ -1,0 +1,41 @@
+state={
+	id=386
+	name="STATE_386"
+	provinces={
+		453 749 750 1065 1853 2665 2847 3828 9857 9860 9871 9874 9876 9882 9883 9886 9890 9891 9893 9898 9900 9906 9907 9908 9910 9914 9918 9919 
+	}
+	manpower=4285714
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=4
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=GOR
+		add_core_of = GOR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			9906 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			453 30
+		}
+	}
+}
+

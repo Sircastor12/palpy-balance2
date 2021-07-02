@@ -1,0 +1,41 @@
+state={
+	id=133
+	name="STATE_133"
+	provinces={
+		877 909 1530 2134 2483 3518 3843 3960 4407 4458 5058 5906 5916 5928 5938 5956 5961 5966 5969 5977 5993 5998 6017 6033 6041 
+	}
+	manpower=10000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=2
+		tungsten=2
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BLA
+		add_core_of = BLA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

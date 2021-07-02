@@ -1,0 +1,40 @@
+state={
+	id=363
+	name="STATE_363"
+	provinces={
+		223 1291 1621 1900 2252 2309 2458 2612 2779 3409 4131 4561 4721 4859 5053 9488 9489 9493 9503 9504 9510 9515 9517 9518 9519 9521 9529 9530 9548 9549 9573 
+	}
+	manpower=15000000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 10
+		rubber = 0
+		tungsten = 0
+		oil = 3
+		chromium = 0
+	}
+
+  	history = {
+		owner = SUL
+		add_core_of = SUL
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			9530 50
+		}
+	}
+}
+

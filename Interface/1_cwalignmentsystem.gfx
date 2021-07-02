@@ -1,0 +1,51 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_clonewarsalignment_bg"
+		texturefile = "gfx/interface/corporate_market/clonewarsalignment_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_corporate_logistics_frame"
+		texturefile = "gfx/interface/corporate_market/selection_frame_logistics.dds"
+	}
+	spriteType = {
+		name = "GFX_corporate_production_frame"
+		texturefile = "gfx/interface/corporate_market/selection_frame_production.dds"
+	}
+	spriteType = {
+		name = "GFX_corporate_screens_bg"
+		texturefile = "gfx/interface/corporate_market/corporate_screens_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_corporate_logistics_bg"
+		texturefile = "gfx/interface/corporate_market/corporate_logistics_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_corporate_logistics_gridbox"
+		texturefile = "gfx/interface/corporate_market/logistics_gridbox.dds"
+	}
+	spriteType = {
+		name = "GFX_tick_checked"
+		texturefile = "gfx/interface/corporate_market/checkbox_small_ticked.dds"
+	}
+	spriteType = {
+		name = "GFX_tick_unchecked"
+		texturefile = "gfx/interface/corporate_market/checkbox_small_unticked.dds"
+	}
+###TEC Production###
+	spriteType = {
+		name = "GFX_baktoid_armor"
+		texturefile = "gfx/interface/corporate_market/TEC/baktoid_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_baktoid_combat"
+		texturefile = "gfx/interface/corporate_market/TEC/baktoid_autamata.dds"
+	}
+	spriteType = {
+		name = "GFX_baktoid_combat_bg"
+		texturefile = "gfx/interface/corporate_market/TEC/autamata_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_baktoid_armor_bg"
+		texturefile = "gfx/interface/corporate_market/TEC/armor_bg.dds"
+	}
+}

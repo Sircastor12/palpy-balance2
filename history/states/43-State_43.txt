@@ -1,0 +1,41 @@
+state={
+	id=43
+	name="STATE_43"
+	provinces={
+		94 230 746 4156 4293 8607 8608 8609 8617 8619 8635 8653 8654 8659 8670 8675 8693 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=QUN
+		add_core_of = QUN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			10463 50
+		}
+	}
+}
+

@@ -1,0 +1,144 @@
+guiTypes = {
+	containerWindowType = {
+		name = "open_galactic_market_window"
+		position = { x = -35 y = -272 }
+		size = { width = 50 height = 50 }
+		orientation = lower_right
+
+		fade_time = 2000
+		fade_type = linear
+
+		buttonType = {
+			name = "open_galactic_market_window_button"
+			spriteType = "GFX_league_of_nations_button"
+			position = { x = -4 y = -2 }
+			pdx_tooltip = "OPEN_CLOSE_LEAGUE_OF_NATIONS_WINDOW"
+		}
+
+		iconType = {
+			name = "open_galactic_market_window_icon_glow"
+			spriteType = "GFX_league_of_nations_button_glow_strip"
+			position = { x = -4 y = -2 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "open_galactic_market_window_icon_glow_frame"
+			spriteType = "GFX_red_alert_glow"
+			position = { x = -6 y = -3 }
+			scale = 0.9
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "quickmarket_topbar"
+		position = { x=200 y=35 }
+		buttonType = {
+			name = "quickmarket_button"
+			position = { x = 340 y = 0 }
+			quadTextureSprite ="GFX_topbar_quick_market_button"
+			Orientation = "UPPER_LEFT"
+			shortcut = "b"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+	}
+
+	containerWindowType = {
+		name = "galactic_market_window"
+		position = { x = -370 y = -100 }
+		size = { width = 580 height = 520 }
+		orientation = center
+		origo = center
+		moveable = yes
+
+		fade_time = 300
+		fade_type = linear
+		click_to_front = yes
+		clipping = no
+
+		background = {
+			name = "galactic_market_window_background"
+			spriteType = "GFX_galactic_market"
+		}
+		instantTextBoxType = {
+			name = "luxury_goods_market"
+			position = { x = 35 y = 70 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "Luxury Goods"
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "necessary_goods_market"
+			position = { x = 252 y = 70 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "Necessities"
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "black_market_goods_market"
+			position = { x = 468 y = 70 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "Illegal Goods"
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "consumer_goods"
+			position = { x = 908 y = 216 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "[?consumer_goods]"
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "luxury_goods_demand"
+			position = { x = 728 y = 128 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "[?total_demand_lux]"
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "total_demand_nec"
+			position = { x = 907 y = 128 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "[?total_demand_nec]"
+			format = centre
+		}
+		instantTextBoxType = {
+			name = "total_demand_illegal"
+			position = { x = 1094 y = 128 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "[?total_demand_illegal]"
+			format = centre
+		}
+		iconType = {
+			name = "galactic_market_1"
+			spriteType = "GFX_galactic_market_necessary"
+			position = { x=708 y=277 }		
+		}
+		iconType = {
+			name = "galactic_market_2"
+			spriteType = "GFX_galactic_market_necessary"
+			position = { x=925 y=277 }		
+		}
+		iconType = {
+			name = "galactic_market_3"
+			spriteType = "GFX_galactic_market_necessary"
+			position = { x=1144 y=277 }		
+		}
+	}
+}

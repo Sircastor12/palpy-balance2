@@ -1,0 +1,41 @@
+state={
+	id=457
+	name="STATE_457"
+	provinces={
+		269 775 817 1847 2320 2508 2636 4096 4355 4605 4672 4993 10932 10947 10952 10960 10989 10990 10999 11024 11025 11028 11042 11046 11052 11056 11060 11061 11066 11067 11071 11078 11084 11098 11129 11137 
+	}
+	manpower=3400000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CHR
+		add_core_of = CHR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

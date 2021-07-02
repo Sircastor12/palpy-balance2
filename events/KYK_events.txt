@@ -1,0 +1,140 @@
+add_namespace = KYK
+
+#Contact from the sith
+country_event = {
+	id = KYK.1 #Alaris Prime
+	title = "Senator Yarua"
+	desc = "Senator Yarua has taken a petition to the senate for full colonization rights of Alaris Prime for the Wookiees. The delegation from Trandosha and the Trade Federation have made every attempt to block the bill from making it to the floor of the senate."
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Offer money"
+			custom_effect_tooltip = "Send 10 M Credits to Trandosha"
+			subtract_from_variable = { dx = 10 }
+			TRA = {
+				add_to_variable = { dx = 10 }
+			}			
+		}
+	option = {
+		name = "Spend Favors"
+			add_political_power = -100
+			TRA = {
+				add_political_power = 100
+			}
+		}	
+	option = {
+		name = "Offer weapons"
+			send_equipment = {
+			equipment = infantry_equipment
+			amount = 10000
+			target = TRA
+			}
+		
+		}	
+	}
+country_event = {
+	id = KYK.2 #Send Attichitcuk
+	title = "Send Attichitcuk"
+	desc = "Attichitcuk and his son, Chewbacca, have arrived on the jungle moon of Alaris Prime. So far they have discovered giant trees, similiar to the Wroshyr trees of Kashyyyk inhabitated by swarms of insectoids, massive reptiles, and dangerous Gundarks."
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "I've got a bad feeling about this."
+					
+		}	
+	}
+country_event = {
+	id = KYK.3 #repel_the_trandoshans
+	title = "Repel The Trandoshans"
+	desc = "Skirmishes with the Trandoshan invaders have revealed they have a powerful ally, the Trade Federation. Their camp is full of powered down B1 droids and has a Nemoidian power core in it. The law is clear, this is our planet, we must evict them. "
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Direct Assault"
+				add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+					}
+				custom_effect_tooltip = "Loot 10 M Credits worth of droids and equipment"
+				add_to_variable = { dx = 10 }
+				army_experience = 25		
+		}
+	option = {
+		name = "Rile up the Gundarks"
+				add_ideas = gundark
+		}		
+	}	
+	
+news_event = {
+	id = KYK.4 #blockade_the_trandoshans
+	title = "Blockade The Trandoshans"
+	desc = "After a skirmish with the Wookiees over the jungle moon of Alaris Prime, they are blaming our Government for the death of 200 supposed merchants and have initiated a blockade of our trade.  "
+	is_triggered_only = yes
+	fire_only_once = yes	
+
+	option = {
+		name = "We will destroy them!"
+				give_resource_rights = { receiver = KYK state = 244 }
+				give_resource_rights = { receiver = KYK state = 252 }
+				give_resource_rights = { receiver = KYK state = 259 }
+				create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KYK
+				}
+		}			
+	}
+	
+	news_event = {
+	id = KYK.5 #tax_the_trade_federation
+	title = "Kashyyyk is Embargoing your Trade"
+	desc = "Kashyyyk blames us for their Trandoshan problem and is levying a costly tax on our trade through their system. Their system is an important hub for trade to the outer rim."
+		is_triggered_only = yes
+	fire_only_once = yes	
+
+	option = {
+		name = "Their insolence must be stopped"
+				create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KYK
+				}
+				add_to_variable = { dx = -10 }
+		}			
+	}
+		news_event = {
+	id = KYK.6 #Loyalty_to_the_Jedi
+	title = "Kashyyyk has pledged it's undying loyalty to the Jedi"
+	desc = "As Master Yoda fights to defend Kashyyyk, their leaders have pledged their undying support to Jedi. If we ever have to fight the Jedi, we will also have to fight the Wookiees."
+		is_triggered_only = yes
+	fire_only_once = yes	
+
+	option = {
+		name = "Enslave the Wookiees"
+				create_wargoal = {
+				type = puppet_wargoal_focus
+				target = KYK
+				}
+				
+		}	
+	option = {
+		name = "We also support the Jedi"
+				
+				}
+				
+		}	
+		country_event = {
+	id = KYK.7 #Alaris Prime Developments
+	title = "Alaris Prime Developments"
+	desc = "Those massive leathery monstrosities, Gundarks, keep raiding our camps. Chewbacca was nearly killed by one while pinned down, but managed to disorient it after ripping it's ears off"
+	is_triggered_only = yes
+	fire_only_once = yes	
+	option = {
+		name = "Begin Civilian Colonization"
+			
+			add_offsite_building = { type = industrial_complex level = 1 }			
+		}
+	option = {
+		name = "Begin Military Colonization"
+			add_offsite_building = { type = arms_factory level = 1 }
+		}		
+	}	
+	

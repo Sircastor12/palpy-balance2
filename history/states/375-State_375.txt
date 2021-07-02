@@ -1,0 +1,43 @@
+state={
+	id=375
+	name="STATE_375"
+	provinces={
+		273 277 582 727 1848 1931 2203 2753 3279 3792 3862 3930 3937 4134 4283 4769 5045 9665 9671 9676 9682 9683 9693 9703 9704 9710 9714 9719 9720 9724 9725 9730 9738 9742 9743 9748 9760 9775 9781 9787 9788 
+	}
+	manpower=64285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=3
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TET
+		add_core_of = TET
+
+		buildings = {
+			infrastructure=2
+			arms_factory=0
+			industrial_complex=0
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			9730 50
+		}
+		victory_points = {
+			582 20
+		}
+	}
+}
+

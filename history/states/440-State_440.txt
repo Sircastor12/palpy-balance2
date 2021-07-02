@@ -1,0 +1,40 @@
+state={
+	id=440
+	name="STATE_440"
+	provinces={
+		469 762 1068 1473 1653 1697 1868 2177 2358 2423 2448 2548 2759 3044 3061 3112 3117 3184 4092 4548 10723 10733 10742 10747 10750 10761 10767 10777 10778 10793 10803 10810 10811 10821 10828 10837 10841 10866 10878 
+	}
+	manpower=2142857
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=3
+		oil=1
+		chromium=0
+	}
+
+  	history = {
+		owner=ROT
+		add_core_of = ROT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			10828 50
+		}
+	}
+}
+

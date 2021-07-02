@@ -1,0 +1,41 @@
+state={
+	id=2
+	name="STATE_2"
+	provinces={
+		106 229 374 1406 1740 2062 2331 4129 5131 5132 5133 5141 5147 5148 5149 5150 5152 5158 5159 5162 5163 5169 
+	}
+	manpower=55000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=0
+		aluminium=1
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=DAN
+		add_core_of = DAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			5159 30
+		}
+	}
+}
+

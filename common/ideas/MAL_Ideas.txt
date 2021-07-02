@@ -1,0 +1,74 @@
+ideas = {
+	country = {
+		fuel_reallocation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 1.0 
+			}
+		}
+		FED_fuelreallocation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -0.4
+			}
+		}
+		nerf_fuel_reallocation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		nerf_FED_fuelreallocation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -0.2
+			}
+		}
+		Blockade = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -2.0
+			}
+		}
+	}
+}

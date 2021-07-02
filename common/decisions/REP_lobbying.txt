@@ -1,0 +1,110 @@
+REP_lobbying = {
+	lobby_pacifists = {
+		icon = generic_political_discourse
+
+		visible = {
+			TAG = REP
+			NOT = {
+				has_global_flag = pacifists_lobbied
+			}
+		}
+
+		cost = 100
+        fire_only_once = no
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = AI_lobby_please
+				add = 15
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = pacifists_lobbied
+			subtract_from_variable = { dx = 50 }
+			custom_effect_tooltip = cost50_TT
+		}
+	}
+	lobby_outerrim = {
+		icon = generic_political_discourse
+
+		visible = {
+			TAG = REP
+			NOT = {
+				has_global_flag = outerrim_lobbied
+			}
+		}
+
+		cost = 50
+        fire_only_once = no
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = AI_lobby_please
+				add = 10
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = outerrim_lobbied
+			subtract_from_variable = { dx = 20 }
+			custom_effect_tooltip = cost20_TT
+		}
+	}
+	lobby_militarists = {
+		icon = generic_political_discourse
+
+		visible = {
+			TAG = REP
+			NOT = {
+				has_global_flag = militarists_lobbied
+			}
+		}
+
+		cost = 50
+        fire_only_once = no
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = AI_lobby_please
+				add = 7
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = militarists_lobbied
+			subtract_from_variable = { dx = 20 }
+			custom_effect_tooltip = cost20_TT
+		}
+	}
+	lobby_corporations = {
+		icon = generic_political_discourse
+
+		visible = {
+			TAG = REP
+			NOT = {
+				has_global_flag = corporations_lobbied
+			}
+		}
+
+		cost = 50
+        fire_only_once = no
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = AI_lobby_please
+				add = 10
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = corporations_lobbied
+			subtract_from_variable = { dx = 20 }
+			custom_effect_tooltip = cost20_TT
+		}
+	}
+}

@@ -1,0 +1,41 @@
+state={
+	id=51
+	name="STATE_51"
+	provinces={
+		729 931 1074 1390 1414 3241 9425 9426 9429 9432 9433 9436 9441 9463 9465 9469 9477 
+	}
+	manpower=3250000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 12
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 10
+		chromium = 0
+	}
+
+  	history = {
+		owner = SUL
+		add_core_of = SUL
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 6
+			air_base = 0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

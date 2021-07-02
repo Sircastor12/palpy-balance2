@@ -1,0 +1,22 @@
+############################################
+## Enslave the bitches in other countries ##
+############################################
+
+add_namespace = zygerria
+
+news_event = { #The slaves are escaping
+	id = zygerria.1
+	title =  "You are being raped!"
+	desc =  "Your people are dead."
+	picture = GFX_bmc2
+	is_triggered_only = yes
+
+	option = {
+		name =  "NO"
+		add_manpower = -500
+		ZYG = { add_to_variable = { var = slaves value = 500 } }
+	}
+	option = {
+		name =  "YES"
+	}
+}

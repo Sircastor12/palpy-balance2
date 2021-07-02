@@ -1,0 +1,62 @@
+capital = 440
+
+oob = "ROT_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+	atte_tech = 1
+	atrt_tech = 1
+	SPHA_tech = 1
+}
+
+add_political_power = 75
+set_convoys = 1000
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	extensive_conscription 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 99
+		communism = 1
+	}
+}
+
+
+
+create_country_leader = {
+	name = "Rothana Heavy Engineering"
+	desc = "Subsidiary of Kuat"
+	picture = "gfx/leaders/ROT/Rothana.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}

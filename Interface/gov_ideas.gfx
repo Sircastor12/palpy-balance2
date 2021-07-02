@@ -1,0 +1,76 @@
+#background sprite is in frontendmainviewbg.gfx
+
+spriteTypes = {
+	SpriteType = {  
+		name = "GFX_idea_mas_amedda" 
+		texturefile = "gfx/interface/ideas/mas_ame.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_aang" 
+		texturefile = "gfx/interface/ideas/aang.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_bail_organa" 
+		texturefile = "gfx/interface/ideas/bail_organa.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_jar_jar_binks" 
+		texturefile = "gfx/interface/ideas/jarjar.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_orn_free_taa" 
+		texturefile = "gfx/interface/ideas/orn_free_ta.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_sly_moore" 
+		texturefile = "gfx/interface/ideas/sly_moore.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_tarkin" 
+		texturefile = "gfx/interface/ideas/tarkin.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_yularen" 
+		texturefile = "gfx/interface/ideas/yularen.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_yularen_chief" 
+		texturefile = "gfx/interface/ideas/yularen.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_amidala" 
+		texturefile = "gfx/interface/ideas/amidala.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_bail_antilles" 
+		texturefile = "gfx/interface/ideas/antilles.dds"
+	}
+	SpriteType = {  
+		name = "GFX_idea_anakin" 
+		texturefile = "gfx/interface/ideas/anakin.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_lok_durd" 
+		texturefile = "gfx/interface/ideas/lok_durd.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_trench" 
+		texturefile = "gfx/interface/ideas/trench.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_mar_tuuk" 
+		texturefile = "gfx/interface/ideas/mar_tuuk.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_ventress" 
+		texturefile = "gfx/interface/ideas/ventress.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_grievous" 
+		texturefile = "gfx/interface/ideas/grievous.dds" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_trench_navy" 
+		texturefile = "gfx/interface/ideas/trench.dds" 
+	}
+}

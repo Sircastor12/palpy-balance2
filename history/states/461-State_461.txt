@@ -1,0 +1,41 @@
+state={
+	id=461
+	name="STATE_461"
+	provinces={
+		383 924 1007 1389 1418 1605 1830 2121 2216 2480 2909 2999 3029 3066 3814 3889 4266 4296 5022 11001 11019 11029 11070 11079 11099 11124 11130 11143 11149 11150 11160 11168 11172 11178 11189 11193 11195 
+	}
+	manpower=114285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=JHT
+		add_core_of = JHT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			11029 30
+		}
+	}
+}
+

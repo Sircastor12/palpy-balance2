@@ -1,0 +1,1672 @@
+scripted_gui = {
+	market_rep_army_container = {
+		context_type = player_context
+		window_name = "market_rep_army_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = rep_army_open
+				}
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = rep_army_open
+			}
+			return_button_click = {
+				clr_country_flag = rep_army_open
+				set_country_flag = show_market
+			}
+			barc_place_order_click = {
+				purchase_barc = yes
+			}
+			atrt_place_order_click = {
+				purchase_atrt = yes
+			}
+			spha_place_order_click = {
+				purchase_spha = yes
+			}
+			atte_place_order_click = {
+				purchase_atte = yes
+			}
+			tx130_place_order_click = {
+				purchase_tx130 = yes
+			}
+			rx200_place_order_click = {
+				purchase_rx200 = yes
+			}
+			juggernaut_place_order_click = {
+				purchase_juggernaut = yes
+			}
+			atte_autobuy_click = {
+				set_country_flag = atte_autobuy
+			}
+			atte_autobuy_off_click = {
+				clr_country_flag = atte_autobuy
+			}
+			spha_autobuy_click = {
+				set_country_flag = spha_autobuy
+			}
+			spha_autobuy_off_click = {
+				clr_country_flag = spha_autobuy
+			}
+		}
+		ai_weights = {
+			barc_place_order_click = {
+				ai_will_do = {
+					factor = 0
+					modifier = {
+						add = 1000
+						has_equipment = {
+   							speed_bike_arc < 1
+						}
+					}
+				}
+			}
+			atrt_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.atrt < 100}
+						}
+					}
+					modifier = {
+						has_equipment = {
+							ATRT_equipment < 200
+						}
+						add =  250
+					}
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+				}
+			}
+			spha_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+						}
+					}
+					modifier = {
+						add = 200
+						has_equipment = {
+							SPHA_equipment < 100
+						}
+					}
+					modifier = {
+						tag = REP
+						check_variable = { global.spha > 37 }
+						add = 800
+					}
+				}
+			}
+			atte_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.atte < 100}
+						}
+					}
+					modifier = {
+						tag = REP
+						has_equipment = {
+							atte_equipment < 300
+						}
+						add =  150
+					}
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+				}
+			}
+			tx130_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.tx130 < 100}
+					}
+					modifier = {
+						tag = REP
+						has_equipment = {
+							tx130_equipment < 300
+						}
+						add =  150
+					}
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+				}
+			}
+			rx200_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						tag = REP
+						has_equipment = {
+							rx200_equipment < 300
+						}
+						add =  150
+					}
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+				}
+			}
+			juggernaut_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.juggernaut < 100}
+					}
+					modifier = {
+						tag = REP
+						has_equipment = {
+							jugg_equipment < 50
+						}
+						add =  150
+					}
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+				}
+			}
+		}
+		properties = {
+			barc_owner = { image = "[Getaratechowner]" }
+		}
+		triggers = {
+			atrt_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			spha_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			atte_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			tx130_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			rx200_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			juggernaut_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			atap_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			atte_autobuy_off_visible = {
+				has_country_flag = atte_autobuy
+			}
+			spha_autobuy_off_visible = {
+				has_country_flag = spha_autobuy
+			}
+		}
+	}
+	market_rep_infantry_container = {
+		context_type = player_context
+		window_name = "market_rep_infantry_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = rep_infantry_open
+				}
+			}
+		}
+		effects = {
+			KAM_CLONE_click = {
+				if = {
+					limit = {
+						tag = REP
+						has_country_flag = the_clone_army_expanded
+					}
+					set_country_flag = clone_legion_visible
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_market }
+					set_variable = { show_market = show } 
+				}
+			}
+			close_button_click = {
+				clr_country_flag = rep_infantry_open
+			}
+			return_button_click = {
+				clr_country_flag = rep_infantry_open
+				set_country_flag = show_market
+			}
+			rocketlauncher_place_order_click = {
+				purchase_rocketlauncher = yes
+			}
+			phase_1_place_order_click = {
+				purchase_phase_1 = yes
+			}
+			phase_2_place_order_click = {
+				purchase_phase_2 = yes
+			}
+			clone_general_place_order_click = {
+				purchase_clone_general = yes
+			}
+			clone_admiral_place_order_click = {
+				purchase_clone_admiral = yes
+			}
+			stormtrooper_place_order_click = {
+				purchase_stormtrooper = yes
+			}
+			phase_1_autobuy_click = {
+				set_country_flag = p1_autobuy
+			}
+			phase_1_autobuy_off_click = {
+				clr_country_flag = p1_autobuy
+			}
+			phase_2_autobuy_click = {
+				set_country_flag = p2_autobuy
+			}
+			phase_2_autobuy_off_click = {
+				clr_country_flag = p2_autobuy
+			}
+		}
+		ai_weights = {
+			phase_1_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						tag = REP
+						has_equipment = {
+							p1_clone_equip < 3000
+						}
+						add = 100
+					}
+					modifier = {
+						check_variable = { global.phase_1 < 500 }
+						add = -400
+					}
+					modifier = {
+						tag = REP
+						has_war = yes
+						has_equipment = {
+							p1_clone_equip < 8000
+						}
+						add = 100
+					}
+					modifier = {
+						has_tech = p2_clone_tech
+						add = -100
+					}
+				}
+			}
+			phase_2_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						tag = REP
+						has_equipment = {
+							p2_clone_equip < 3000
+						}
+						add = 50
+					}
+					modifier = {
+						NOT = {
+							has_tech = p2_clone_tech
+						}
+						add = -500
+					}
+				}
+			}
+			clone_general_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 100
+						ROOT = {
+							all_army_leader = {
+								is_leading_army = yes
+							}
+						}
+					}
+				}
+			}
+			stormtrooper_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						tag = REP
+						has_equipment = {
+							stormtrooper_equipment < 3000
+						}
+						add = 50
+					}
+					modifier = {
+						NOT = {
+							has_tech = stormtrooper_tech
+						}
+						add = -500
+					}
+				}
+			}
+		}
+		properties = {
+			rocketlauncher_owner = { image = "[Getsienarowner]" }
+		}
+		triggers = {
+			phase_1_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			phase_2_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			clone_general_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			clone_admiral_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			stormtrooper_place_order_click_enabled = {
+				has_global_flag = REP_tech_4
+			}
+			phase_1_autobuy_off_visible = {
+				has_country_flag = p1_autobuy
+			}
+			phase_2_autobuy_off_visible = {
+				has_country_flag = p2_autobuy
+			}
+		}
+	}
+	market_clone_legion = {
+		context_type = player_context
+		window_name = "market_clone_frame_container" 
+
+		ai_enabled = {
+			always = yes
+			REP = {
+				has_completed_focus = REP_establish_an_order_of_battle
+			}
+		}
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = clone_legion_visible
+				}
+			}
+		}
+		effects = {
+			clone_legion_button_click = {
+				ROOT = {
+					if = {
+						limit = {
+							REP = {
+								is_ai = yes
+							}
+							set_global_flag = flag_501st
+						}
+					}
+					set_country_flag = unitselected
+					clr_country_flag = flag_13th
+					clr_country_flag = flag_21st
+					clr_country_flag = flag_41st
+					clr_country_flag = flag_91st
+					clr_country_flag = flag_104th
+					clr_country_flag = flag_187th
+					clr_country_flag = flag_212th
+					clr_country_flag = flag_327th
+					clr_country_flag = flag_332nd
+					clr_country_flag = flag_442nd
+					clr_country_flag = flag_501st
+					clr_country_flag = flag_coruscant
+					clr_country_flag = flag_doom
+					clr_country_flag = flag_monkey
+					clr_country_flag = flag_rancor
+					meta_effect = {
+						text = {
+							set_country_flag = [CloneLegion]
+						}
+						CloneLegion = "[PREV.GetTheCloneLegion]"
+					}
+				}
+			}
+			order_units_click = {
+				ROOT = {
+					meta_effect = {
+						text = {
+							subtract_from_variable = { dx = [LegionPrice]}
+							load_oob = "[OobFile]"
+						}
+						LegionPrice = "[PREV.GetTheCloneLegionPrice]"
+						OobFile = [PREV.GetTheCloneLegionOOB]
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_13th
+					}
+					load_oob = REP_13thCorps
+					remove_from_array = { clone_legions_arrays = 1 }
+					create_corps_commander = {
+						name = "Albedo"
+						picture = "13 Albedo P2.dds"
+						traits = { phase_2  Swamp_Fox trait_reckless }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 1
+						id = 41
+					}
+					set_country_flag = bought13
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_21st
+					}
+					set_technology = {
+						ATOT_tech = 1
+						ATUT_tech = 1
+					}
+					load_oob = REP_21stCorps
+					remove_from_array = { clone_legions_arrays = 2 }
+					create_corps_commander = {
+						name = "Bacara"
+						picture = "bacara P2.dds"
+						traits = { phase_2 Winter_Specialist trait_mountaineer Winter_Expert Adaptable }
+						skill = 5
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 3
+						logistics_skill = 2
+						id = 37
+					}
+					set_country_flag = bought21
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_41st
+					}
+					load_oob = REP_41stCorps
+					remove_from_array = { clone_legions_arrays = 3 }
+					create_corps_commander = {
+						name = "Gree"
+						picture = "Gree P2.dds"
+						traits = { phase_1  Harsh_Leader }
+						skill = 3
+						attack_skill = 4
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+						id = 33
+					}
+					set_country_flag = bought41
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_91st
+					}
+					load_oob = REP_91stCorps
+					remove_from_array = { clone_legions_arrays = 4 }
+					create_corps_commander = {
+						name = "Neyo"
+						picture = "Neyo P2.dds"
+						traits = { phase_2 Harsh_Leader }
+						skill = 4
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 4
+						logistics_skill = 3
+						id = 34
+					}
+					set_country_flag = bought91
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_104th
+					}
+					load_oob = REP_104thCorps
+					remove_from_array = { clone_legions_arrays = 5 }
+					create_corps_commander = {
+						name = "Wolffe"
+						picture = "Wolffe P2.dds"
+						traits = { phase_1 Harsh_Leader }
+						skill = 4
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						id = 35
+					}
+					set_country_flag = bought104
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_187th
+					}
+					load_oob = REP_187thLegion
+					remove_from_array = { clone_legions_arrays = 6 }
+					create_corps_commander = {
+						name = "Chase"
+						picture = "187 Chase p2.dds"
+						traits = { phase_2  Skilled_Staffer Armor_Officer }
+						skill = 3
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 1
+						id = 36
+					}
+					set_country_flag = bought187
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_212th
+					}
+					load_oob = REP_212thCorps
+					remove_from_array = { clone_legions_arrays = 7 }
+					create_corps_commander = {
+						name = "Cody"
+						gfx = "GFX_cody2"
+						traits = { phase_1 Panzer_Leader Skilled_Staffer }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 2
+						logistics_skill = 1
+						id = 32
+					}
+					set_country_flag = bought212
+					if = {
+						limit = {
+							REP = {
+								is_ai = yes
+							}
+							set_global_flag = flag_327th
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_327th
+					}
+					load_oob = REP_327thStarCorps
+					remove_from_array = { clone_legions_arrays = 8 }
+					create_corps_commander = {
+						name = "Bly"
+						picture = "Bly P2.dds"
+						traits = { phase_1 trait_reckless Trickster }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 3
+						id = 38
+					}
+					set_country_flag = bought327
+					if = {
+						limit = {
+							REP = {
+								is_ai = yes
+							}
+							set_global_flag = flag_104th
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_332nd
+					}
+					load_oob = REP_332ndComp
+					remove_from_array = { clone_legions_arrays = 9 }
+					create_corps_commander = {
+						name = "Vaughn"
+						picture = "vaughn P2.dds"
+						traits = { phase_2 naval_invader }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 1
+						id = 39
+					}
+					set_country_flag = bought332
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_442nd
+					}
+					load_oob = REP_442ndBatt
+					remove_from_array = { clone_legions_arrays = 10 }
+					create_corps_commander = {
+						name = "Mav"
+						picture = "442 Mav.dds"
+						traits = { phase_2 Hill_Fighter trait_reckless }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+						id = 40
+					}
+					set_country_flag = bought442
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_501st
+					}
+					load_oob = REP_501stCorps
+					remove_from_array = { clone_legions_arrays = 11 }
+					create_corps_commander = {
+						name = "Rex"
+						gfx = "GFX_rex2"
+						traits = { phase_2 War_Hero Infantry_Officer }
+						skill = 4
+						attack_skill = 4
+						defense_skill = 4
+						planning_skill = 2
+						logistics_skill = 2
+						id = 31
+					}
+					set_country_flag = bought501
+					if = {
+						limit = {
+							REP = {
+								is_ai = yes
+							}
+							set_global_flag = flag_212th
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_coruscant
+					}
+					load_oob = REP_coruguard
+					remove_from_array = { clone_legions_arrays = 12 }
+					create_corps_commander = {
+						name = "Fox"
+						picture = "Fox P2.dds"
+						traits = { phase_1 Urban_Assault_Specialist }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 4
+						planning_skill = 3
+						logistics_skill = 1
+						id = 42
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_doom
+					}
+					load_oob = REP_doom
+					remove_from_array = { clone_legions_arrays = 13 }
+					create_corps_commander = {
+						name = "Doom"
+						picture = "Doom P2.dds"
+						traits = { phase_1 trait_cautious }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 2
+						logistics_skill = 1
+						id = 43
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_monkey
+					}
+					load_oob = REP_monnk
+					remove_from_array = { clone_legions_arrays = 14 }
+					create_corps_commander = {
+						name = "Monnk"
+						picture = "monnk P2.dds"
+						traits = { phase_1 fast_planner }
+						skill = 3
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 1
+						id = 44
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = flag_rancor
+					}
+					load_oob = REP_rancor
+					remove_from_array = { clone_legions_arrays = 15 }
+					create_corps_commander = {
+						name = "Colt"
+						picture = "havoc ARC.dds"
+						traits = { arc_clone Brilliant_Strategist Commando Skirmisher }
+						skill = 6
+						attack_skill = 5
+						defense_skill = 2
+						planning_skill = 4
+						logistics_skill = 2
+						id = 45
+					}
+				}
+				clr_country_flag = unitselected
+				clr_country_flag = flag_13th
+				clr_country_flag = flag_21st
+				clr_country_flag = flag_41st
+				clr_country_flag = flag_91st
+				clr_country_flag = flag_104th
+				clr_country_flag = flag_187th
+				clr_country_flag = flag_212th
+				clr_country_flag = flag_327th
+				clr_country_flag = flag_332nd
+				clr_country_flag = flag_442nd
+				clr_country_flag = flag_501st
+				clr_country_flag = flag_coruscant
+				clr_country_flag = flag_doom
+				clr_country_flag = flag_monkey
+				clr_country_flag = flag_rancor
+			}
+			close_button_click = {
+				clr_country_flag = clone_legion_visible
+			}
+
+		}
+		triggers = {
+			commander_icon_visible = {
+				has_country_flag = unitselected
+			}
+			unit_price_visible = {
+				has_country_flag = unitselected
+			}
+			order_units_visible = {
+				has_country_flag = unitselected
+			}
+			order_units_click_enabled = {
+				meta_trigger = {
+					text = {
+						check_variable = {dx > [LegionPrice]}
+					}
+					LegionPrice = [PREV.GetTheCloneLegionPrice]
+				}
+			}
+		}
+		dynamic_lists = {
+			clone_legions_gridbox = {
+				array = clone_legions_arrays
+				entry_container = clone_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			clone_legion_button = { image = "[GetCloneLegion]" }
+			commander_icon = { image = "[GetTheCloneLegionCommanderImage]" }
+		}
+		ai_weights = {
+			clone_legion_button_click = {
+				ai_will_do = {
+					base = -100
+					modifier = {
+						tag = REP
+						add = 500
+					}
+				}
+			}
+			order_units_click = {
+				ai_will_do = {
+					base = -100
+					modifier = {
+						tag = REP
+						add = 500
+					}
+				}
+			}
+		}
+	}
+	market_cis_army_container = {
+		context_type = player_context
+		window_name = "market_cis_army_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = CIS_army_open
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = CIS_army_open
+			}
+			return_button_click = {
+				clr_country_flag = CIS_army_open
+				set_country_flag = show_market
+			}
+			aat_place_order_click = {
+				purchase_aat = yes
+			}
+			og9_place_order_click = {
+				purchase_og9 = yes
+			}
+			octuparramagna_place_order_click = {
+				purchase_octuparramagna = yes
+			}
+			tankdroid_place_order_click = {
+				purchase_tankdroid = yes
+			}
+			aat2_place_order_click = {
+				purchase_aat2 = yes
+			}
+			stap_place_order_click = {
+				purchase_stap = yes
+			}
+			dsd1_place_order_click = {
+				purchase_cmg_dsd1 = yes
+			}
+			crab_place_order_click = {
+				purchase_crab = yes
+			}
+			pac_place_order_click = {
+				purchase_pac = yes
+			}
+			mtt_place_order_click = {
+				purchase_mtt = yes
+			}
+			j1_place_order_click = {
+				purchase_j1 = yes
+			}
+			tec_hailfire_place_order_click = {
+				purchase_tec_hailfire = yes
+			}
+			octuptarra_autobuy_click = {
+				set_country_flag = octuptarra_autobuy
+			}
+			octuptarra_autobuy_off_click = {
+				clr_country_flag = octuptarra_autobuy
+			}
+		}
+		ai_weights = {
+			aat_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.aat < 300 }
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.aat > 149 }
+						has_equipment = {
+							AAT_equipment < 500
+						}
+					}
+				}
+			}
+			og9_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.og9 < 300 }
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.og9 > 99 }
+						has_equipment = {
+							OG9_equipment < 500
+						}
+					}
+				}
+			}
+			tankdroid_place_order_click = {
+				ai_will_do = {
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.tankdroid < 300 }
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.tankdroid > 149 }
+						has_equipment = {
+							tankdroid_equipment < 500
+						}
+					}
+				}
+			}
+			pac_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.pac < 300 }
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.pac > 149 }
+						has_equipment = {
+							PAC_equipment < 500
+						}
+					}
+				}
+			}
+			mtt_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.mtt < 300 }
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.mtt > 149 }
+						has_equipment = {
+							MTT_equipment < 500
+						}
+					}
+				}
+			}
+			j1_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.j1 < 300 }
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.j1 > 149 }
+						has_equipment = {
+							j1_equipment < 500
+						}
+					}
+				}
+			}
+			tec_hailfire_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.tec_hailfire < 300 }
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.tec_hailfire > 99 }
+						has_equipment = {
+							hailfire_equipment < 500
+						}
+					}
+				}
+			}
+			stap_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.stap < 300 }
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.stap > 499 }
+						has_equipment = {
+							STAP_equip < 500
+						}
+					}
+				}
+			}
+			dsd1_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.tec_dsd1 > 249 }
+						has_equipment = {
+							dsd1_dwarf_equipment < 500
+						}
+					}
+					modifier = {
+						add = -100
+						check_variable = { global.crab > 149 }
+					}
+				}
+			}
+			crab_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.crab > 149 }
+						has_equipment = {
+							crab_droid_equip < 500
+						}
+					}
+				}
+			}	
+		}
+		properties = {
+			aat_owner = { image = "[Getbaktoidowner]" }
+			mtt_owner = { image = "[Getbaktoidowner]" }
+			stap_owner = { image = "[Getbaktoidowner]" }
+			pac_owner = { image = "[Getbaktoidowner]" }
+			og9_owner = { image = "[Getbaktoidowner]" }
+			dsd1_owner = { image = "[Getbaktoidowner]" }
+			tec_hailfire_owner = { image = "[Gethaorowner]" }
+			aat2_owner = { image = "[Getbaktoidowner]" }
+		}
+		triggers = {
+			og9_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			octuparramagna_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			tankdroid_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			aat2_place_order_click_enabled = {
+				has_global_flag = CIS_tech_4
+			}
+			dsd1_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			crab_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			j1_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			tec_hailfire_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			octuptarra_autobuy_off_visible = {
+				has_country_flag = octuptarra_autobuy
+			}
+		}
+	}
+	market_cis_infantry_container = {
+		context_type = player_context
+		window_name = "market_cis_infantry_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = CIS_infantry_open
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = CIS_infantry_open
+			}
+			return_button_click = {
+				clr_country_flag = CIS_infantry_open
+				set_country_flag = show_market
+			}
+			oom_place_order_click = {
+				purchase_oom = yes
+			}
+			b1_place_order_click = {
+				purchase_b1 = yes
+			}
+			b2_place_order_click = {
+				purchase_b2 = yes
+			}
+			bx_place_order_click = {
+				purchase_bx = yes
+			}
+			tactical_place_order_click = {
+				purchase_tactical = yes
+			}
+			dwing_place_order_click = {
+				purchase_dwing = yes
+			}
+			droideka_place_order_click = {
+				purchase_droideka = yes
+			}
+			lancer_place_order_click = {
+				purchase_lancer = yes
+			}
+			aqua_place_order_click = {
+				purchase_aqua = yes
+			}
+			super_tactical_place_order_click = {
+				purchase_super_tactical = yes
+			}
+			b1_autobuy_click = {
+				set_country_flag = b1_autobuy
+			}
+			b1_autobuy_off_click = {
+				clr_country_flag = b1_autobuy
+			}
+			b2_autobuy_click = {
+				set_country_flag = b2_autobuy
+			}
+			b2_autobuy_off_click = {
+				clr_country_flag = b2_autobuy
+			}
+		}
+		ai_weights = {
+			oom_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.oom < 300 }
+						add = -200
+					}
+					modifier = {
+						is_cis_heavy_equipped = yes
+						has_equipment = {
+							oom_droid_equipment < 2000
+						}
+						add = 100
+					}
+					modifier = {
+						add = 250
+						is_cis_heavy_equipped = yes
+						has_equipment = {
+							b1_droid_equip < 0
+						}
+					}
+					modifier = {
+						add = -200
+						AND = {
+							OR = {
+								tag = FED
+								tag = TEC
+							}
+							num_divisions > 65
+						}
+					}
+				}
+			}
+			b1_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						OR = {
+							ROOT = {
+								has_country_flag = dontspendmoney
+							}
+							check_variable = { global.b1 < 2000 }
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						has_equipment = {
+							b1_droid_equip < 8000
+						}
+					}
+					modifier = {
+						add = 250
+						is_cis_heavy_equipped = yes
+						has_equipment = {
+							b1_droid_equip < 0
+						}
+					}
+					modifier = {
+						add = -200
+						AND = {
+							OR = {
+								tag = FED
+								tag = TEC
+							}
+							num_divisions > 65
+						}
+					}
+				}
+			}
+			b2_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.b2 < 2000 }
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						has_equipment = {
+							b2_droid_equip < 1000
+						}
+					}
+				}
+			}
+			tactical_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						ROOT = {
+							all_army_leader = {
+								is_leading_army = yes
+							}
+						}
+					}
+				}
+			}
+			droideka_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 100
+						is_cis_heavy_equipped = yes
+						check_variable = { global.droideka > 149 }
+						has_equipment = {
+							destroyer_battle_droid < 500
+						}
+					}
+				}
+			}
+		}
+		properties = {
+			b1_owner = { image = "[Getbaktoidowner]" }
+			oom_owner = { image = "[Getbaktoidowner]" }
+			droideka_owner = { image = "[Getcolicoidowner]" }
+			tactical_owner = { image = "[Getbaktoidowner]" }
+			lancer_owner = { image = "[Getbaktoidowner]" }
+			bx_owner = { image = "[Getbaktoidowner]" }
+			aqua_owner = { image = "[Gethaorowner]" }
+			b2_owner = { image = "[Getbaktoidowner]" }
+			super_tactical_owner = { image = "[Getbaktoidowner]" }
+			b3_owner = { image = "[Getbaktoidowner]" }
+		}
+		triggers = {
+			b2_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			bx_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			tactical_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			dwing_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			lancer_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			aqua_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			super_tactical_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			b3_place_order_click_enabled = {
+				has_global_flag = CIS_tech_4
+			}
+			b1_autobuy_off_visible = {
+				has_country_flag = b1_autobuy
+			}
+			b2_autobuy_off_visible = {
+				has_country_flag = b2_autobuy
+			}
+		}
+	}
+	market_neutral_army_container = {
+		context_type = player_context
+		window_name = "market_neutral_army_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = neutral_army_open
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = neutral_army_open
+			}
+			return_button_click = {
+				clr_country_flag = neutral_army_open
+				set_country_flag = show_market
+			}
+			landspeeder_place_order_click = {
+				purchase_landspeeder = yes
+			}
+		}
+	}
+	market_neutral_infantry_container = {
+		context_type = player_context
+		window_name = "market_neutral_infantry_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = neutral_infantry_open
+				}
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = neutral_infantry_open
+			}
+			return_button_click = {
+				clr_country_flag = neutral_infantry_open
+				set_country_flag = show_market
+			}
+			inf0_place_order_click = {
+				purchase_inf0 = yes
+			}
+			inf1_place_order_click = {
+				purchase_inf1 = yes
+			}
+			inf2_place_order_click = {
+				purchase_inf2 = yes
+			}
+			inf3_place_order_click = {
+				purchase_inf3 = yes
+			}
+			supportequipment_place_order_click = {
+				purchase_supportequipment = yes
+			}
+		}
+		ai_weights = {
+			inf0_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						has_equipment = {
+   							infantry_equipment_0 < 3000
+						}
+						add = 50
+					}
+					modifier = {
+						has_tech = infantry_weapons1
+						add = -100
+					}
+					modifier = {
+						AND = {
+							OR = {
+								TAG = CIS
+								TAG = REP
+								TAG = TEC
+								TAG = FED
+							}
+							has_equipment = {
+								infantry_equipment_0 < 500
+							}
+						}
+						add = 200
+					}
+				}
+			}
+			inf1_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						has_equipment = {
+   							infantry_equipment_1 < 3000
+						}
+						add = 50
+					}
+					modifier = {
+						has_tech = improved_infantry_weapons
+						add = -100
+					}
+					modifier = {
+						AND = {
+							OR = {
+								TAG = CIS
+								TAG = REP
+								TAG = TEC
+								TAG = FED
+							}
+							has_equipment = {
+								infantry_equipment_1 < 500
+							}
+						}
+						add = 200
+					}
+				}
+			}
+			inf2_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						has_equipment = {
+   							infantry_equipment_2 < 3000
+						}
+						add = 50
+					}
+					modifier = {
+						has_tech = advanced_infantry_weapons
+						add = -100
+					}
+					modifier = {
+						AND = {
+							OR = {
+								TAG = CIS
+								TAG = REP
+								TAG = TEC
+								TAG = FED
+							}
+							has_equipment = {
+								infantry_equipment_2 < 500
+							}
+						}
+						add = 200
+					}
+				}
+			}
+			inf3_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						has_equipment = {
+   							infantry_equipment_3 < 3000
+						}
+						add = 50
+					}
+					modifier = {
+						AND = {
+							OR = {
+								TAG = CIS
+								TAG = REP
+								TAG = TEC
+								TAG = FED
+							}
+							has_equipment = {
+								infantry_equipment_3 < 500
+							}
+						}
+						add = 200
+					}
+				}
+			}
+			supportequipment_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						has_equipment = {
+							support_equipment_1 < 1000
+						}
+						add = 200
+					}
+				}
+			}
+		}
+		properties = {
+			inf0_owner = { image = "[Getblastechowner]" }
+			supportequipment_owner = { image = "[Getblastechowner]" }
+			inf1_owner = { image = "[Getblastechowner]" }
+			inf2_owner = { image = "[Getblastechowner]" }
+			inf3_owner = { image = "[Getblastechowner]" }
+		}
+	}
+}

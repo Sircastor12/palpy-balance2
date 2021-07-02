@@ -1,0 +1,169 @@
+add_namespace = DACWAR
+news_event = {
+	id = DACWAR.1 #CIS Offers Support
+	title = "CIS Supports The Quarren Struggle"
+	desc = "The Confederacy of Independent Systems has offered the Quarren people their support in their struggle for representation and independence."
+	major = yes
+    
+    is_triggered_only = yes
+    fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}                   	
+	option = {
+		name = "Push for Quarren Independence!"    
+		trigger = {
+		    TAG = CIS
+		}
+        QUA = {
+            transfer_state = 188
+            transfer_state = 197
+		    add_state_core = 188
+            add_state_core = 197
+            load_oob = QUA_3677
+            set_variable = { 74z_pricem = 1.2}
+            set_variable = { barc_pricem = 1.3}
+            set_variable = { inf0_pricem = 0.375}
+            set_variable = { inf1_pricem = 0.5}
+            set_variable = { inf2_pricem = 0.55}
+            set_variable = { inf3_pricem = 0.55}
+            set_variable = { supportequipment_pricem = 0.63}
+            set_variable = { landspeeder_pricem = 0.5}
+            set_variable = { soro_fang_pricem = 9.25}
+            set_variable = { cmg_diamond_pricem = 5.0}
+            set_variable = { cmg_recusant_pricem = 61.0}
+            set_variable = { cmg_providence_pricem = 125.0}
+            set_variable = { cmg_dsd1_pricem = 3.75}
+            set_variable = { cmg_adsd_pricem = 6.25}
+            set_variable = { cmg_homing_spider_pricem = 7.0}
+            set_variable = { lucrehulk_freighter_pricem = 200.0}
+            set_variable = { lucrehulk_battleship_pricem = 500.0}
+            set_variable = { fed_recusant_pricem = 61.0}
+            set_variable = { fed_munificent_pricem = 12.0}
+            set_variable = { lancer_pricem = 0.575}
+            set_variable = { ibc_hailfire_pricem = 6.0}
+            set_variable = { phase_1_pricem = 2.5}
+            set_variable = { phase_2_pricem = 2.9}
+            set_variable = { clone_general_pricem = 0.30}
+            set_variable = { clone_admiral_pricem = 0.25}
+            set_variable = { z95_pricem = 3.75}
+            set_variable = { v19_pricem = 6.75}
+            set_variable = { arc170_pricem = 7.75}
+            set_variable = { vwing_pricem = 5.1}
+            set_variable = { btlb_pricem = 6.75}
+            set_variable = { laat_pricem = 2.25}
+            set_variable = { laati_pricem = 4.25}
+            set_variable = { laatc_pricem = 2.9}
+            set_variable = { pelta_pricem = 7.3}
+            set_variable = { arquintes_pricem = 4.0}
+            set_variable = { acclamator_pricem = 59.0}
+            set_variable = { acclamator2_pricem = 74.0}
+            set_variable = { venator_pricem = 110.0}
+            set_variable = { victory_pricem = 125.0}
+            set_variable = { mandator1_pricem = 600.0}
+            set_variable = { mandator2_pricem = 700.0}
+            set_variable = { balutar_pricem = 1.65}
+            set_variable = { komrk_pricem = 9.5}
+            set_variable = { buirkalor_pricem = 22.5}
+            set_variable = { fang_pricem = 9.25}
+            set_variable = { cal_dreadnaught_pricem = 7.2}
+            set_variable = { carrack_pricem = 4.3}
+            set_variable = { hammerhead_pricem = 1.0}
+            set_variable = { ren_dreadnaught_pricem = 7.2}
+            set_variable = { ren_victory_pricem = 125.0}
+            set_variable = { ren_providence_pricem = 125.0}
+            set_variable = { atrt_pricem = 1.2}
+            set_variable = { spha_pricem = 4.5}
+            set_variable = { atte_pricem = 15.0}
+            set_variable = { tx130_pricem = 12.75}
+            set_variable = { juggernaut_pricem = 17.5}
+            set_variable = { vulture_pricem = 0.95}
+            set_variable = { c9979_pricem = 10.0}
+            set_variable = { rogue_pricem = 6.4}
+            set_variable = { bellbulab22_pricem = 8.4}
+            set_variable = { trifighter_pricem = 2.0}
+            set_variable = { advanceddroidbomber_pricem = 1.1}
+            set_variable = { hyena_pricem = 1.2}
+            set_variable = { bellbulab24_pricem = 8.6}
+            set_variable = { hmpgunship_pricem = 3.0}
+            set_variable = { marauder_pricem = 2.4}
+            set_variable = { tudestroyer_pricem = 12.0}
+            set_variable = { tec_bulwark_pricem = 18.0}
+            set_variable = { oom_pricem = 0.975}
+            set_variable = { b1_pricem = 0.900}
+            set_variable = { b2_pricem = 1.65}
+            set_variable = { bx_pricem = 1.12}
+            set_variable = { tactical_pricem = 0.285}
+            set_variable = { dwing_pricem = 1.25}
+            set_variable = { stap_pricem = 1.25}
+            set_variable = { droideka_pricem = 3.15}
+            set_variable = { tec_dsd1_pricem = 3.75}
+            set_variable = { tec_adsd_pricem = 6.25}
+            set_variable = { crab_pricem = 3.0}
+            set_variable = { pac_pricem = 5.6}
+            set_variable = { mtt_pricem = 15.7}
+            set_variable = { j1_pricem = 1.2}
+            set_variable = { tec_hailfire_pricem = 6.0}
+            set_variable = { aat_pricem = 11.25}
+            set_variable = { og9_pricem = 7.0}
+            set_variable = { octuparramagna_pricem = 18.0}
+            set_variable = { octuparracombat_pricem = 15.0}
+            set_variable = { tankdroid_pricem = 7.35}
+            set_variable = { aat2_pricem = 12.75}
+            set_variable = { cla_hammerhead_pricem = 1.0}
+            set_variable = { consular_pricem = 3.0}
+            set_variable = { c70_pricem = 3.5}
+            set_variable = { cr70_pricem = 3.75}
+            set_variable = { cr90_pricem = 4.0}
+            set_variable = { dac_recusant_pricem = 61.0}
+            set_variable = { dac_providence_pricem = 125.0}
+            set_variable = { subjugator_pricem = 650.0}
+        }
+		CIS = {
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = CIS
+			}
+			add_to_faction = QUA
+		}
+		add_victory_points = {
+   			province = 176
+    		value = 90   
+		}
+	}	                   
+}
+
+news_event = {
+	id = DACWAR.2 #CIS Offers Support
+	title = "CIS Supports The Quarren Struggle"
+	desc = "The Confederacy of Independent Systems has offered the Quarren people their support in their struggle for representation and independence. As a result, the planet Dac (Mon Calamari) has been divided into loyalist, and Separatist halves."
+	major = yes
+    
+    is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+    option = {
+	    name = "Separatist Influences Expands!"     
+		trigger = {
+		    TAG = REP
+		}	                   
+	}
+    option = {
+	    name = "Separatist Influences Expands!"     
+		trigger = {
+		    TAG = DAC
+		}
+	}	                   	
+	option = {
+		name = "Our Influences Expand!"     
+		trigger = {
+		    TAG = CIS
+		}
+	}	                   
+}

@@ -1,0 +1,41 @@
+state={
+	id=466
+	name="STATE_466"
+	provinces={
+		306 1266 1394 1489 1839 3128 3575 4710 5060 11097 11155 11166 11182 11183 11197 11199 11215 11218 11224 11229 11232 11234 
+	}
+	manpower=4857142
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=PAN
+		add_core_of = PAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,62 @@
+apprentice_making_sith = {
+	meta_effect = {
+		text = {
+	if = {
+		limit = {
+			check_variable = { apprentice = 1 }
+		}
+		create_corps_commander = {
+			name = "Malicious Nolzo"
+			picture = ""
+			traits = {  }
+			skill = 3
+			attack_skill = [Getattack]
+			defense_skill = [Getdefense]
+			planning_skill = [Getplanningapprentice]
+			logistics_skill = [Getlogisticsapprentice]
+			id = 111
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { apprentice = 2 }
+		}
+		create_corps_commander = {
+			name = "Mad Djoleq"
+			picture = ""
+			traits = {  }
+			skill = 3
+			attack_skill = [Getattack]
+			defense_skill = [Getdefense]
+			planning_skill = [Getplanningapprentice]
+			logistics_skill = [Getlogisticsapprentice]
+			id = 112
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { apprentice = 3 }
+		}
+		create_corps_commander = {
+			name = "Rage Djalde"
+			picture = ""
+			traits = {  }
+			skill = 3
+			attack_skill = [Getattack]
+			defense_skill = [Getdefense]
+			planning_skill = [Getplanningapprentice]
+			logistics_skill = [Getlogisticsapprentice]
+			id = 113
+				}
+			}
+		}
+		Getattack = "[Getattack]"
+		Getdefense = "[Getdefense]"
+		Getplanningapprentice = "[Getplanningapprentice]"
+		Getlogisticsapprentice = "[Getlogisticsapprentice]"
+	}
+	set_variable = { sith_general_attack = 1 }
+	set_variable = { sith_general_defense = 1 }
+	set_variable = { sith_general_supply = 1 }
+	set_variable = { sith_general_planning = 1 }
+}

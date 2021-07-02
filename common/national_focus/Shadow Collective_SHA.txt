@@ -1,0 +1,1344 @@
+focus_tree = {
+	id = SHA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SHA
+		}
+	}
+	#Focus for The Duel
+	focus = {
+		id = Shadow_Collective_the_duel
+		icon = GFX_goal_unknown
+		x = 10
+		y = 11
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_save_mandalore }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = high_loyalty_man
+			country_event = SHA.14
+		}
+	}
+
+	#Focus for Focus on the Syndicates
+	focus = {
+		id = Shadow_Collective_focus_on_the_syndicates
+		icon = GFX_goal_unknown
+		x = 31
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		mutually_exclusive = { focus = Shadow_Collective_embrace_the_dark_side }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Focus for Listening Posts
+	focus = {
+		id = Shadow_Collective_listening_posts
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_fortify_mandalore }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		13 = {
+			add_building_construction = {
+				type = radar_station 
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Find a New Apprentice?
+	focus = {
+		id = Shadow_Collective_find_a_new_apprentice
+		icon = GFX_goal_unknown
+		x = 4
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = a_new_apprentice
+		}
+	}
+
+	#Focus for Organize a meeting
+	focus = {
+		id = Shadow_Collective_organize_a_meeting
+		icon = GFX_goal_unknown
+		x = 17
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_collective }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Infiltrate the Spice Trade
+	focus = {
+		id = Shadow_Collective_infiltrate_the_spice_trade
+		icon = GFX_goal_unknown
+		x = 9
+		y = 1
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_collective }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+		}
+	}
+
+	#Focus for Unite the Clans
+	focus = {
+		id = Shadow_Collective_unite_the_clans
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.20
+		}
+	}
+
+	#Focus for Weaken their Connections
+	focus = {
+		id = Shadow_Collective_weaken_their_connections
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_steal_bounty_hunters }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Shadow_Collective
+	focus = {
+		id = Shadow_Collective_the_shadow_collective
+		icon = GFX_goal_unknown
+		x = 13
+		y = 0
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Crimson Dawn
+	focus = {
+		id = Shadow_Collective_the_crimson_dawn
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_offer_pillage_to_looters }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = high_loyalty_cri
+			country_event = {
+    			id = SHA.7
+		}
+	}
+}
+
+	#Focus for Trial by Fire
+	focus = {
+		id = Shadow_Collective_trial_by_fire
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_ohnakas_gang 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_black_sun 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_hutts 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_crimson_dawn 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_pyke_syndicate 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+ 
+	#Focus for The Pyke Syndicate
+	focus = {
+		id = Shadow_Collective_the_pyke_syndicate
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_infiltrate_the_spice_trade }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = high_loyalty_pyk
+			country_event = {
+    			id = SHA.1
+		}
+	}
+}
+	#Focus for Bleed them Dry
+	focus = {
+		id = Shadow_Collective_bleed_them_dry
+		icon = GFX_goal_unknown
+		x = 37
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_use_the_crimson_raiders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			give_resource_rights = { receiver = DEA state = 52 }
+			give_resource_rights = { receiver = DEA state = 6 }
+	}
+}
+
+	#Focus for The Shadow Fleet
+	focus = {
+		id = Shadow_Collective_the_shadow_fleet
+		icon = GFX_goal_unknown
+		x = 49
+		y = 6
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Spice Trade
+	focus = {
+		id = Shadow_Collective_expand_the_spice_trade
+		icon = GFX_goal_unknown
+		x = 43
+		y = 8
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_spice_trade }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			41 = {
+				add_state_modifier = {
+  				 modifier = {
+      			  local_resources = 0.20
+  					}
+				}
+			}
+		}
+	}
+
+	#Focus for The Spice Trade
+	focus = {
+		id = Shadow_Collective_the_spice_trade
+		icon = GFX_goal_unknown
+		x = 43
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_underground }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Underground
+	focus = {
+		id = Shadow_Collective_the_underground
+		icon = GFX_goal_unknown
+		x = 40
+		y = 6
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A NEW AGE
+	focus = {
+		id = Shadow_Collective_a_new_age
+		icon = GFX_goal_unknown
+		x = 23
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_hate 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_chaos 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for HATE
+	focus = {
+		id = Shadow_Collective_hate
+		icon = GFX_goal_unknown
+		x = 21
+		y = 8
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_a_new_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Doctrine
+	focus = {
+		id = Shadow_Collective_a_new_doctrine
+		icon = GFX_goal_unknown
+		x = 23
+		y = 7
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_embrace_the_dark_side }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Embrace the Dark Side
+	focus = {
+		id = Shadow_Collective_embrace_the_dark_side
+		icon = GFX_goal_unknown
+		x = 23
+		y = 6
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		mutually_exclusive = { focus = Shadow_Collective_focus_on_the_syndicates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Night Brothers
+	focus = {
+		id = Shadow_Collective_the_night_brothers
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = { Night_brothers_0 = 1 }
+		}
+	}
+
+	#Focus for The Super Commandos
+	focus = {
+		id = Shadow_Collective_the_super_commandos
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = { super_mandalorian_commando_0 = 1 }
+		}
+	}
+
+	#Focus for Consolidate Power
+	focus = {
+		id = Shadow_Collective_consolidate_power
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_trial_by_fire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = DEA_band_of_rogues
+		}
+	}
+
+	#Focus for The Hutts
+	focus = {
+		id = Shadow_Collective_the_hutts
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_weaken_their_connections 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_attack_the_hutt_stronghold 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = high_loyalty_hut
+			country_event = {
+    			id = SHA.2
+		}
+	}
+}
+
+	#Focus for The Black Sun
+	focus = {
+		id = Shadow_Collective_the_black_sun
+		icon = GFX_goal_unknown
+		x = 17
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_organize_a_meeting }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = high_loyalty_blk
+			country_event = {
+    			id = SHA.5
+		}
+	}
+}
+
+	#Focus for CHAOS
+	focus = {
+		id = Shadow_Collective_chaos
+		icon = GFX_goal_unknown
+		x = 25
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_a_new_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Night Sisters
+	focus = {
+		id = Shadow_Collective_the_night_sisters
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_the_night_brothers 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_super_commandos 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = { Night_sisters_0 = 1 }
+		7 = {
+			if = {
+				limit = { is_owned_by = DAT }
+				add_core_of = DEA
+			}
+		}
+				DEA = {
+					annex_country = { target = DAT transfer_troops = no }
+				}
+		}
+	}
+
+	#Focus for Rile up the Population
+	focus = {
+		id = Shadow_Collective_rile_up_the_population
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_consolidate_power }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+	}
+}
+
+	#Focus for Use the Crimson Raiders
+	focus = {
+		id = Shadow_Collective_use_the_crimson_raiders
+		icon = GFX_goal_unknown
+		x = 37
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_underground }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		TAR = {
+			give_resource_rights = { receiver = DEA state = 10 }
+		}
+			give_resource_rights = { receiver = DEA state = 32 }
+	}
+}
+
+	#Focus for Offer Pillage to Looters
+	focus = {
+		id = Shadow_Collective_offer_pillage_to_looters
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_collective }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Steal Bounty Hunters
+	focus = {
+		id = Shadow_Collective_steal_bounty_hunters
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_collective }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ohnaka's Gang
+	focus = {
+		id = Shadow_Collective_ohnakas_gang
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_weequays }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+    			id = SHA.8
+		}
+	}
+}
+	#Focus for Clan Wren
+	focus = {
+		id = Shadow_Collective_clan_wren
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_unite_the_clans }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_oob = mandcommandvizren
+			load_oob = mandcommandvizren
+		}
+	}
+
+	#Focus for Clan Saxon
+	focus = {
+		id = Shadow_Collective_clan_saxon
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_unite_the_clans }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_oob = mandcommandvizren
+			load_oob = mandcommandvizren
+		}
+	}
+
+	#Focus for Preparations for the Invasion
+	focus = {
+		id = Shadow_Collective_preparations_for_the_invasion
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_clan_vizla }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = SHA.11
+		}
+	}
+
+	#Focus for Fortify Mandalore
+	focus = {
+		id = Shadow_Collective_fortify_mandalore
+		icon = GFX_goal_unknown
+		x = 16
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_rile_up_the_population }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+						14 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1307
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 190
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1299
+					instant_build = yes
+				}
+		}
+	}
+}
+
+	#Focus for Our Guy in the Sun
+	focus = {
+		id = Shadow_Collective_our_guy_in_the_sun
+		icon = GFX_goal_unknown
+		x = 40
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_underground }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_corps_commander = {
+			name = "Ziton Moj"
+			picture = "gfx/leaders/SHA/Ziton Moj.dds"
+			traits = { commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			}
+		}
+	}
+
+	#Focus for Clan Vizla
+	focus = {
+		id = Shadow_Collective_clan_vizla
+		icon = GFX_goal_unknown
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_clan_wren 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_clan_saxon 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_oob = mandcommandvizren
+		}
+		completion_reward = {
+			load_oob = mandcommandvizren
+		}
+	}
+
+	#Focus for The Weequays
+	focus = {
+		id = Shadow_Collective_the_weequays
+		icon = GFX_goal_unknown
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_collective }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Outstretched Arm
+	focus = {
+		id = Shadow_Collective_an_outstretched_arm
+		icon = GFX_goal_unknown
+		x = 18
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_propaganda_campaign }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = SPR_plant_the_seeds_of_revolution_tt
+	}
+}
+	#Focus for Attack The Hutt Stronghold
+	focus = {
+		id = Shadow_Collective_attack_the_hutt_stronghold
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_steal_bounty_hunters }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mandalorian fighters
+	focus = {
+		id = Shadow_Collective_mandalorian_fighters
+		icon = GFX_goal_unknown
+		x = 51
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purchasing Cruisers
+	focus = {
+		id = Shadow_Collective_purchasing_cruisers
+		icon = GFX_goal_unknown
+		x = 47
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_shadow_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Save Mandalore
+	focus = {
+		id = Shadow_Collective_save_mandalore
+		icon = GFX_goal_unknown
+		x = 10
+		y = 10
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = criminals_on_mandalore
+		}
+		prerequisite = { focus = Shadow_Collective_preparations_for_the_invasion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		ROOT = {
+			country_event = SHA.13
+			}
+		}
+	}
+
+	#Focus for Prepare the Others
+	focus = {
+		id = Shadow_Collective_prepare_the_others
+		icon = GFX_goal_unknown
+		x = 18
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_fortify_mandalore }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+						46 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1816
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1082
+					instant_build = yes
+				}
+			}
+				41 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 1735
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Start the Cult
+	focus = {
+		id = Shadow_Collective_start_the_cult
+		icon = GFX_goal_unknown
+		x = 23
+		y = 10
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_a_new_age } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Propaganda Campaign
+	focus = {
+		id = Shadow_Collective_propaganda_campaign
+		icon = GFX_goal_unknown
+		x = 16
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_listening_posts 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_prepare_the_others 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.2
+	}
+}
+
+	#Focus for Build Dark Side Temples
+	focus = {
+		id = Shadow_Collective_build_dark_side_temples
+		icon = GFX_goal_unknown
+		x = 21
+		y = 11
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_start_the_cult }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Understand the Great Mystery
+	focus = {
+		id = Shadow_Collective_understand_the_great_mystery
+		icon = GFX_goal_unknown
+		x = 25
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_start_the_cult }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Criminal Empire
+	focus = {
+		id = Shadow_Collective_expand_the_criminal_empire
+		icon = GFX_goal_unknown
+		x = 31
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_focus_on_the_syndicates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Recruit Bounty Hunters
+	focus = {
+		id = Shadow_Collective_recruit_bounty_hunters
+		icon = GFX_goal_unknown
+		x = 28
+		y = 9
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_expand_the_criminal_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mourner's wail Syndicate
+	focus = {
+		id = Shadow_Collective_the_mourners_wail_syndicate
+		icon = GFX_goal_unknown
+		x = 31
+		y = 9
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_expand_the_criminal_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaldana Syndicate
+	focus = {
+		id = Shadow_Collective_the_kaldana_syndicate
+		icon = GFX_goal_unknown
+		x = 34
+		y = 9
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_expand_the_criminal_empire }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seize Control of Corellia
+	focus = {
+		id = Shadow_Collective_seize_control_of_corellia
+		icon = GFX_goal_unknown
+		x = 31
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_recruit_bounty_hunters 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_mourners_wail_syndicate 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_the_kaldana_syndicate 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Wandering Star
+	focus = {
+		id = Shadow_Collective_the_wandering_star
+		icon = GFX_goal_unknown
+		x = 31
+		y = 11
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_seize_control_of_corellia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Smuggle In Weapons
+	focus = {
+		id = Shadow_Collective_smuggle_in_weapons
+		icon = GFX_goal_unknown
+		x = 14
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_propaganda_campaign }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 10000
+			    producer = MAN
+			}
+		}
+	}
+
+	#Focus for A Combined Military
+	focus = {
+		id = Shadow_Collective_a_combined_military
+		icon = GFX_goal_unknown
+		x = 27
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = Shadow_Collective_an_elite_force }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Elite Force
+	focus = {
+		id = Shadow_Collective_an_elite_force
+		icon = GFX_goal_unknown
+		x = 34
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = Shadow_Collective_a_combined_military }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+				add_ideas = SHA_elite
+			}
+	}
+
+	#Focus for Mandelorian Training
+	focus = {
+		id = Shadow_Collective_mandelorian_training
+		icon = GFX_goal_unknown
+		x = 32
+		y = 2
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_an_elite_force }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SHA_mand_train
+		}
+	}
+
+	#Focus for Slaves in the Army
+	focus = {
+		id = Shadow_Collective_slaves_in_the_army
+		icon = GFX_goal_unknown
+		x = 25
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_a_combined_military }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+				add_ideas = SHA_slaves_in_army
+			}
+	}
+
+	#Focus for Night Sister Teachings
+	focus = {
+		id = Shadow_Collective_night_sister_teachings
+		icon = GFX_goal_unknown
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_an_elite_force }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SHA_night_train
+		}
+	}
+
+	#Focus for The Common Criminals
+	focus = {
+		id = Shadow_Collective_the_common_criminals
+		icon = GFX_goal_unknown
+		x = 29
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_a_combined_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SHA_common_criminal
+		}
+	}
+
+	#Focus for Ventress
+	focus = {
+		id = Shadow_Collective_ventress
+		icon = GFX_goal_unknown
+		x = 23
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_understand_the_great_mystery 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_build_dark_side_temples 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+
+		create_corps_commander = {
+			name = "Ventress"
+			portrait_path = "gfx/leaders/SHA/gar saxton.dds"
+			traits = { inflexible_strategist }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			}
+		}
+	}
+	#Focus for Bring Mother Talzin back
+	focus = {
+		id = Shadow_Collective_bring_mother_talzin_back
+		icon = GFX_goal_unknown
+		x = 40
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = mother_talzin
+		}
+	}
+
+	#Focus for Resource Exploitation
+	focus = {
+		id = Shadow_Collective_resource_exploitation
+		icon = GFX_goal_unknown
+		x = 40
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_bleed_them_dry 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_our_guy_in_the_sun 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_expand_the_spice_trade 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SHA_resource_exploitation
+		}
+	}
+
+	#Focus for Approach Dooku
+	focus = {
+		id = Shadow_Collective_approach_dooku
+		icon = GFX_goal_unknown
+		x = 40
+		y = 12
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_bring_mother_talzin_back }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Slave Labour
+	focus = {
+		id = Shadow_Collective_slave_labour
+		icon = GFX_goal_unknown
+		x = 25
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_slaves_in_the_army }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+				add_ideas = SHA_slaves_labour
+			}
+	}
+
+	#Focus for Mercenary Generals
+	focus = {
+		id = Shadow_Collective_mercenary_generals
+		icon = GFX_goal_unknown
+		x = 29
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_the_common_criminals }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+				add_ideas = SHA_mercenary_cap
+		}
+	}
+
+	#Focus for Elite Generals
+	focus = {
+		id = Shadow_Collective_elite_generals
+		icon = GFX_goal_unknown
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = Shadow_Collective_mandelorian_training
+		}
+		prerequisite = {
+			focus = Shadow_Collective_night_sister_teachings
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_corps_commander = {
+			name = "Gar Saxon"
+			portrait_path = "gfx/leaders/SHA/gar saxton.dds"
+			traits = { trait_reckless inflexible_strategist }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+
+		create_corps_commander = {
+			name = "Rook Kast"
+			portrait_path = "gfx/leaders/SHA/Rook kast.dds"
+			traits = { infantry_expert ambusher }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 5
+			}
+		}
+	}
+
+	#Focus for The Mandalorian Academy
+	focus = {
+		id = Shadow_Collective_the_mandalorian_academy
+		icon = GFX_goal_unknown
+		x = 34
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Shadow_Collective_elite_generals }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MAN_idea_the_mandalorian_academy
+		}
+	}
+
+	#Focus for More troops for our Armies
+	focus = {
+		id = Shadow_Collective_more_troops_for_our_armies
+		icon = GFX_goal_unknown
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Shadow_Collective_slave_labour 
+		}
+		prerequisite = { 
+			focus = Shadow_Collective_mercenary_generals 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

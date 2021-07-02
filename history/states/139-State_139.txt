@@ -1,0 +1,41 @@
+state={
+	id=139
+	name="STATE_139"
+	provinces={
+		1481 1636 2122 2771 2960 3369 4773 4921 5999 6011 6012 6018 6026 6032 6042 6045 6050 6051 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=5
+		aluminium=0
+		rubber=2
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BLA
+		add_core_of = BLA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			4773 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,14 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_pg_music_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/pg_music_album_art.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_cantina_music_album_art"
+		texturefile = "gfx/interface/topbar/musicplayer/cantina_music_album_art.dds"
+		noOfFrames = 2
+	}
+}

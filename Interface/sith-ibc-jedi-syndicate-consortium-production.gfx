@@ -1,0 +1,567 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sith_empty"
+		texturefile = "gfx/interface/sith/empty_sith.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_filled"
+		texturefile = "gfx/interface/sith/filled_sith.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_window"
+		texturefile = "gfx/interface/sith/sith.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_button"
+		texturefile = "gfx/interface/sith/sith_button.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_open_topbar_button"
+		texturefile = "gfx/interface/sith/sith_open_button.dds"
+	}
+	spriteType = {
+		name = "GFX_missions_open_button" 
+		texturefile = "gfx/interface/sith/open_button_missions.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_palpatine"
+		texturefile = "gfx/interface/sith/palpatine_v2.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_palpatine"
+		texturefile = "gfx/interface/sith/palpatine_v2.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_alchemy"
+		texturefile = "gfx/interface/sith/sith_alchemy.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_C"
+		texturefile = "gfx/interface/sith/C.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_H"
+		texturefile = "gfx/interface/sith/H.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_R"
+		texturefile = "gfx/interface/sith/R.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_S"
+		texturefile = "gfx/interface/sith/S.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_T"
+		texturefile = "gfx/interface/sith/T.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_X"
+		texturefile = "gfx/interface/sith/X.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_D"
+		texturefile = "gfx/interface/sith/D.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_make_apprentice"
+		texturefile = "gfx/interface/sith/make_apprentice.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_tyranus"
+		texturefile = "gfx/interface/sith/tyranus.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_maul"
+		texturefile = "gfx/interface/sith/maul.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_ahsoka"
+		texturefile = "gfx/interface/sith/ahsoka.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_anakin"
+		texturefile = "gfx/interface/sith/anakin.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_savage"
+		texturefile = "gfx/interface/sith/savage.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_ventress"
+		texturefile = "gfx/interface/sith/ventress.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_pong"
+		texturefile = "gfx/interface/sith/pong.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_jarjar"
+		texturefile = "gfx/interface/sith/jarjar.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_tree_button"
+		texturefile = "gfx/interface/sith/sith_tree_button.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_tree_dathomir_button"
+		texturefile = "gfx/interface/sith/dathomir_button.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_tree_old_sith_button"
+		texturefile = "gfx/interface/sith/old_sith_button.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_tree_new_sith_button"
+		texturefile = "gfx/interface/sith/new_sith_button.dds"
+	}
+	spriteType = {
+		name = "GFX_sith_tree_sith_perks"
+		texturefile = "gfx/interface/sith/sith_perks.dds"
+	}
+###################IBC################################
+	spriteType = {
+		name = "GFX_ibc_window"
+		texturefile = "gfx/interface/ibc/ibc_window.dds"
+	}
+	spriteType = {
+		name = "GFX_down_button_ibc"
+		texturefile = "gfx/interface/ibc/down_button_ibc.dds"
+	}
+	spriteType = {
+		name = "GFX_up_button_ibc"
+		texturefile = "gfx/interface/ibc/up_button_ibc.dds"
+	}
+	spriteType = {
+		name = "GFX_ibc_button"
+		texturefile = "gfx/interface/ibc/ibc_button.dds"
+	}
+	spriteType = {
+		name = "GFX_IBC_open_button"
+		texturefile = "gfx/interface/ibc/IBC_open_button.dds"
+	}
+####################Jedi############################################
+	spriteType = {
+		name = "GFX_jedi_screen"
+		texturefile = "gfx/interface/jedi_interface/jedi_interface.dds"
+	}
+	spriteType = {
+		name = "GFX_jedi_open"
+		texturefile = "gfx/interface/senate/rep_jedi.dds"
+	}
+	spriteType = {
+		name = "GFX_jedi_empty_seat"
+		texturefile = "gfx/interface/jedi_interface/jedi_empty_Seat.dds"
+	}
+####################Syndicate###################################
+	spriteType = {
+		name = "GFX_syndicate_screen"
+		texturefile = "gfx/interface/shadow_collective/shadow_collective_menu.dds"
+	}
+	spriteType = {
+		name = "GFX_syndicate_open"
+		texturefile = "gfx/interface/shadow_collective/shadow_collective_button.dds"
+	}
+	spriteType = {
+		name = "GFX_low_loyalty"
+		texturefile = "gfx/interface/shadow_collective/low_loyalty.dds"
+	}
+	spriteType = {
+		name = "GFX_medium_loyalty"
+		texturefile = "gfx/interface/shadow_collective/medium_loyalty.dds"
+	}
+	spriteType = {
+		name = "GFX_high_loyalty"
+		texturefile = "gfx/interface/shadow_collective/high_loyalty.dds"
+	}
+############Notoriety############################
+	spriteType = {
+		name = "GFX_notoriety"
+		texturefile = "gfx/interface/consortium/notoriety.dds"
+	}
+	spriteType = {
+		name = "GFX_not_hon"
+		texturefile = "gfx/interface/consortium/not_hon.dds"
+	}
+	spriteType = {
+		name = "GFX_not_bes"
+		texturefile = "gfx/interface/consortium/not_bes.dds"
+	}
+	spriteType = {
+		name = "GFX_not_blk"
+		texturefile = "gfx/interface/consortium/not_blk.dds"
+	}
+	spriteType = {
+		name = "GFX_not_gor"
+		texturefile = "gfx/interface/consortium/not_gor.dds"
+	}
+	spriteType = {
+		name = "GFX_not_jab"
+		texturefile = "gfx/interface/consortium/not_jab.dds"
+	}
+	spriteType = {
+		name = "GFX_not_pyk"
+		texturefile = "gfx/interface/consortium/not_pyk.dds"
+	}
+	spriteType = {
+		name = "GFX_not_qun"
+		texturefile = "gfx/interface/consortium/not_qun.dds"
+	}
+	spriteType = {
+		name = "GFX_not_SHA"
+		texturefile = "gfx/interface/consortium/not_SHA.dds"
+	}
+	spriteType = {
+		name = "GFX_rank_bronze"
+		texturefile = "gfx/interface/consortium/rank_bronze.dds"
+	}
+	spriteType = {
+		name = "GFX_rank_gold"
+		texturefile = "gfx/interface/consortium/rank_gold.dds"
+	}
+	spriteType = {
+		name = "GFX_rank_silver"
+		texturefile = "gfx/interface/consortium/rank_silver.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rank_bronze"
+		texturefile = "gfx/interface/ideas/rank_bronze.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rank_gold"
+		texturefile = "gfx/interface/ideas/rank_gold.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rank_silver"
+		texturefile = "gfx/interface/ideas/rank_silver.dds"
+	}
+	spriteType = {
+		name = "GFX_tiled_consortium"
+		texturefile = "gfx/interface/consortium/tiled_window_consortium.dds"
+	}
+	spriteType = {
+		name = "GFX_national_spirits_con"
+		texturefile = "gfx/interface/consortium/national_spirits_con.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_background_CON" 
+		texturefile = "gfx/interface/consortium/faction_background_CON.dds"
+	}
+	spriteType = {
+		name = "GFX_politics2" 
+		texturefile = "gfx/interface/consortium/politics2.dds"
+	}
+#################Trophies################################
+	spriteType = {
+		name = "GFX_trophies"
+		texturefile = "gfx/interface/trophies/TrophiesBG.dds"
+	}
+	spriteType = {
+		name = "GFX_trophies_button"
+		texturefile = "gfx/interface/trophies/trophies_button.dds"
+	}
+	spriteType = {
+		name = "GFX_WhipZYG"
+		texturefile = "gfx/interface/trophies/WhipZYG.dds"
+	}
+	spriteType = {
+		name = "GFX_AngelIEG"
+		texturefile = "gfx/interface/trophies/AngelIEG.dds"
+	}
+	spriteType = {
+		name = "GFX_BanehelmetKOR"
+		texturefile = "gfx/interface/trophies/BanehelmetKOR.dds"
+	}
+	spriteType = {
+		name = "GFX_BeskarMAN"
+		texturefile = "gfx/interface/trophies/BeskarMAN.dds"
+	}
+	spriteType = {
+		name = "GFX_BespincapeBES"
+		texturefile = "gfx/interface/trophies/BespincapeBES.dds"
+	}
+	spriteType = {
+		name = "GFX_BluevirusNAB"
+		texturefile = "gfx/interface/trophies/BluevirusNAB.dds"
+	}
+	spriteType = {
+		name = "GFX_BoomaGUN"
+		texturefile = "gfx/interface/trophies/BoomaGUN.dds"
+	}
+	spriteType = {
+		name = "GFX_BrainWormGEO"
+		texturefile = "gfx/interface/trophies/BrainWormGEO.dds"
+	}
+	spriteType = {
+		name = "GFX_CommandohelmetKAM"
+		texturefile = "gfx/interface/trophies/CommandohelmetKAM.dds"
+	}
+	spriteType = {
+		name = "GFX_DarkSaberDEA"
+		texturefile = "gfx/interface/trophies/DarkSaberDEA.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic1"
+		texturefile = "gfx/interface/trophies/Generic1.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic2"
+		texturefile = "gfx/interface/trophies/Generic2.dds"
+	}
+	spriteType = {
+		name = "GFX_Goldengonk"
+		texturefile = "gfx/interface/trophies/Goldengonk.dds"
+	}
+	spriteType = {
+		name = "GFX_HolocronREP"
+		texturefile = "gfx/interface/trophies/HolocronREP.dds"
+	}
+	spriteType = {
+		name = "GFX_InhibitorchipKAM"
+		texturefile = "gfx/interface/trophies/InhibitorchipKAM.dds"
+	}
+	spriteType = {
+		name = "GFX_KalikoriRYL"
+		texturefile = "gfx/interface/trophies/KalikoriRYL.dds"
+	}
+	spriteType = {
+		name = "GFX_LightsaberREP"
+		texturefile = "gfx/interface/trophies/LightsaberREP.dds"
+	}
+	spriteType = {
+		name = "GFX_MilitaryrecordsCAR"
+		texturefile = "gfx/interface/trophies/MilitaryrecordsCAR.dds"
+	}
+	spriteType = {
+		name = "GFX_MillicreepUMB"
+		texturefile = "gfx/interface/trophies/MillicreepUMB.dds"
+	}
+	spriteType = {
+		name = "GFX_Rancor"
+		texturefile = "gfx/interface/trophies/Rancor.dds"
+	}
+	spriteType = {
+		name = "GFX_RoyalbatcaTHY"
+		texturefile = "gfx/interface/trophies/RoyalbatcaTHY.dds"
+	}
+	spriteType = {
+		name = "GFX_SithholocronKOR"
+		texturefile = "gfx/interface/trophies/SithholocronKOR.dds"
+	}
+	spriteType = {
+		name = "GFX_TreeofblessingITH"
+		texturefile = "gfx/interface/trophies/TreeofblessingITH.dds"
+	}
+	spriteType = {
+		name = "GFX_WhipZYG"
+		texturefile = "gfx/interface/trophies/WhipZYG.dds"
+	}
+	spriteType = {
+		name = "GFX_YandiHOT"
+		texturefile = "gfx/interface/trophies/YandiHOT.dds"
+	}
+	spriteType = {
+		name = "GFX_ZilloscaleMAL"
+		texturefile = "gfx/interface/trophies/ZilloscaleMAL.dds"
+	}
+###############Progress Bars##########################
+	progressbartype = {
+		name = "GFX_progress_bar_sith"
+		textureFile1 = "gfx/interface/sith/progress_bar_full_v2.dds"
+        textureFile2 = "gfx/interface/sith/progress_bar_empty_v2.dds"
+        size = {x=50 y=448}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_progress_bar_sith_alchemy"
+		textureFile1 = "gfx/interface/sith/progress_bar_empty_alchemy_full.dds"
+        textureFile2 = "gfx/interface/sith/progress_bar_empty_alchemy.dds"
+        size = {x=464 y=30}
+		effectFile = "gfx/FX/progress.lua"
+	}
+
+	progressbartype = {
+        name = "GFX_progress_bar_jedi" 
+        textureFile1 = "gfx/interface/jedi_interface/jedi_full.dds"
+        textureFile2 = "gfx/interface/jedi_interface/jedi_empty.dds"
+        size = {x=726 y=40}
+        effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+        name = "GFX_cis_idealist_bar"
+        textureFile1 = "gfx/interface/cis/idealists.dds"
+        textureFile2 = "gfx/interface/cis/cis_not_ideal_bar.dds"
+        size = {x=943 y=52}
+        effectFile = "gfx/FX/progress.lua"
+	}
+	
+#################Production Interface#####################
+	spriteType = {
+		name = "GFX_production_screen"
+		texturefile = "gfx/interface/production/production_screen.dds"
+	}
+	spriteType = {
+		name = "GFX_production_tab"
+		texturefile = "gfx/interface/production/production_tab.dds"
+	}
+	spriteType = {
+		name = "GFX_factory_minus1"
+		texturefile = "gfx/interface/production/factory_minus1.dds"
+	}
+	spriteType = {
+		name = "GFX_factory_plus1"
+		texturefile = "gfx/interface/production/factory_plus1.dds"
+	}
+	spriteType = {
+		name = "GFX_star_wars_escape"
+		texturefile = "gfx/interface/starwarsescape.dds"
+	}
+	spriteType = {
+		name = "GFX_production_open_button"
+		texturefile = "gfx/interface/production/production_interface_open.dds"
+	}
+#####################Palpatine#############################
+	spriteType = {
+		name = "GFX_palpatine_regular"
+		texturefile = "gfx/interface/sith/palpatine_regular.dds"
+	}
+	spriteType = {
+		name = "GFX_palpatine_sidious"
+		texturefile = "gfx/interface/sith/palpatine_sidious.dds"
+	}
+	spriteType = {
+		name = "GFX_send_mission"
+		texturefile = "gfx/interface/sith/send_mission.dds"
+	}
+	spriteType = {
+		name = "GFX_industry_button"
+		texturefile = "gfx/interface/sith/industry_button.dds"
+	}
+	spriteType = {
+		name = "GFX_international"
+		texturefile = "gfx/interface/sith/international.dds"
+	}
+	spriteType = {
+		name = "GFX_naval_button"
+		texturefile = "gfx/interface/sith/naval_button.dds"
+	}
+	spriteType = {
+		name = "GFX_army_button"
+		texturefile = "gfx/interface/sith/army_button.dds"
+	}
+	spriteType = {
+		name = "GFX_laws_button"
+		texturefile = "gfx/interface/sith/laws_button.dds"
+	}
+	spriteType = {
+		name = "GFX_cis_pol_view_32" 
+		texturefile = "gfx/interface/test_file/pol_view_bg_cis_test.dds"
+	}
+	spriteType = {
+		name = "GFX_cis_pol_view"
+		texturefile = "gfx/interface/test_file/pol_view_bg_cis.dds"
+	}
+	spriteType = {
+		name = "GFX_rep_pol_view"
+		texturefile = "gfx/interface/test_file/pol_view_bg_rep.dds"   
+	}
+	spriteType = {
+		name = "GFX_neu_pol_view"
+		texturefile = "gfx/interface/test_file/pol_view_bg_neu.dds"   
+	}
+	spriteType = {
+		name = "GFX_neu_con_view"
+		texturefile = "gfx/interface/test_file/pol_view_bg_con.dds"   
+	}
+	spriteType = {
+		name = "GFX_neu_corp_view"
+		texturefile = "gfx/interface/test_file/pol_view_bg_corp.dds"   
+	}
+	spriteType = {
+		name = "GFX_corporation_bottom"
+		texturefile = "gfx/interface/test_file/corporation_bottom_2.dds"   
+	}
+#################Clone##################
+	spriteType = {
+		name = "GFX_commander_13"
+		texturefile = "gfx/interface/clone/commanders/13.dds"   
+	}
+	spriteType = {
+		name = "GFX_commander_187"
+		texturefile = "gfx/interface/clone/commanders/187.dds"   
+	}
+	spriteType = {
+		name = "GFX_commander_442"
+		texturefile = "gfx/interface/clone/commanders/442.dds"   
+	}
+	spriteType = {
+		name = "GFX_commander_Bacara"
+		texturefile = "gfx/interface/clone/commanders/Bacara.dds"   
+	}
+	spriteType = {
+		name = "GFX_commander_Bly"
+		texturefile = "gfx/interface/clone/commanders/Bly.dds"   
+	}
+	spriteType = {
+		name = "GFX_commander_Cody"
+		texturefile = "gfx/interface/clone/commanders/Cody.dds"   
+	}
+	spriteType = {
+		name = "GFX_commander_Colt"
+		texturefile = "gfx/interface/clone/commanders/Colt.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Doom"
+		texturefile = "gfx/interface/clone/commanders/Doom.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Fox"
+		texturefile = "gfx/interface/clone/commanders/Fox.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Gree"
+		texturefile = "gfx/interface/clone/commanders/Gree.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Jesse"
+		texturefile = "gfx/interface/clone/commanders/Jesse.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Monnk"
+		texturefile = "gfx/interface/clone/commanders/Monnk.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Neo"
+		texturefile = "gfx/interface/clone/commanders/Neo.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Rex"
+		texturefile = "gfx/interface/clone/commanders/Rex.dds"
+	}
+	spriteType = {
+		name = "GFX_commander_Wolffe"
+		texturefile = "gfx/interface/clone/commanders/Wolffe.dds"
+	}
+#################CIS##########################
+	spriteType = {
+		name = "GFX_cis_button"
+		texturefile = "gfx/interface/cis/cis_button.dds"
+	}
+	spriteType = {
+		name = "GFX_cis_screen"
+		texturefile = "gfx/interface/cis/cis_screen.dds"
+	}
+	spriteType = {
+		name = "GFX_cis_not_ideal"
+		texturefile = "gfx/interface/cis/cis_not_ideal.dds"
+	}
+	spriteType = {
+		name = "GFX_cis_ideal"
+		texturefile = "gfx/interface/cis/cis_ideal.dds"
+	}
+	spriteType = {
+		name = "GFX_cis_senate"
+		texturefile = "gfx/interface/cis/cis_senate.dds"
+	}
+}

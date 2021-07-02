@@ -1,0 +1,72 @@
+capital = 421
+
+oob = "ROD_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_ROD = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	disarmed_nation
+	starvation_rodia
+	pirates_rodia
+	bad_reputaion
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Onaconda Farr"
+	desc = "Senator of Rodia"
+	picture = "gfx/leaders/ROD/OnacondaFarr.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Sheed Zsippigg"
+	desc = "Leader of Rodia"
+	picture = "gfx/leaders/ROD/SheedZsippigg.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}

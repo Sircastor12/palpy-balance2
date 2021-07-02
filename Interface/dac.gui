@@ -1,0 +1,77 @@
+guiTypes = {
+	containerWindowType = {
+		name = "dac_window"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=507 height=500 }
+		
+		containerWindowType = {
+			name = "DAC_MAP_GUI"
+			size = { width = 0 height = 0 }
+			position = { x = 40 y = 0 }
+			buttonType = {
+				name = "DAC_MAP_GUI_State_2"
+				position = { x = 113 y = 3 }
+				spriteType = "GFX_State_2_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_2_TT"
+				pdx_tooltip_delayed = "STATE_2_TT_Delayed"
+			}
+			buttonType = {
+				name = "DAC_MAP_GUI_State_4"
+				position = { x = 310 y = 150 }
+				spriteType = "GFX_State_4_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_4_TT"
+				pdx_tooltip_delayed = "STATE_4_TT_Delayed"
+			}
+			buttonType = {
+				name = "DAC_MAP_GUI_State_3"
+				position = { x = 260 y = 20 }
+				spriteType = "GFX_State_3_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_3_TT"
+				pdx_tooltip_delayed = "STATE_3_TT_Delayed"
+			}
+			buttonType = {
+				name = "DAC_MAP_GUI_State_5"
+				position = { x = 113 y = 230 }
+				spriteType = "GFX_State_5_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_5_TT"
+				pdx_tooltip_delayed = "STATE_5_TT_Delayed"
+			}
+			buttonType = {
+				name = "DAC_MAP_GUI_State_7"
+				position = { x = 10 y = 30 }
+				spriteType = "GFX_State_7_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_7_TT"
+				pdx_tooltip_delayed = "STATE_7_TT_Delayed"
+			}
+			buttonType = {
+				name = "DAC_MAP_GUI_State_6"
+				position = { x = 5 y = 175 }
+				spriteType = "GFX_State_6_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_6_TT"
+				pdx_tooltip_delayed = "STATE_6_TT_Delayed"
+			}
+			buttonType = {
+				name = "DAC_MAP_GUI_State_1"
+				position = { x = 84 y = 83 }
+				spriteType = "GFX_State_1_Neutral"
+				scale = 0.8
+				pdx_tooltip = "STATE_1_TT"
+				pdx_tooltip_delayed = "STATE_1_TT_Delayed"
+			}
+			iconType = {
+				name = "DAC_MAP_GUI_Map_Outline"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_Map_Outline"
+				scale = 0.8
+				alwaystransparent = yes
+			}
+		}
+	}
+}

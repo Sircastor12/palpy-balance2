@@ -1,0 +1,40 @@
+state={
+	id=294
+	name="STATE_294"
+	provinces={
+		142 294 537 1434 1757 1810 2197 2978 3277 3911 4369 4878 8298 8307 8308 8323 8343 8358 8359 8366 8368 8373 8380 8384 8392 8393 8412 8428 8429 8444 8446 8454 8464 8488 
+	}
+	manpower=1450
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=18
+		tungsten=0
+		oil=21
+		chromium=0
+	}
+
+  	history = {
+		owner=KES
+		add_core_of = KES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			2197 15
+		}
+	}
+}
+

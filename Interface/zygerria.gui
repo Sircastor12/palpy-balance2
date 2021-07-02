@@ -1,0 +1,47 @@
+guiTypes = {
+	containerWindowType = {
+		name = "zygerria_slave_window"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=507 height=335 }
+		
+		#buttonType = {
+		#	name = "zygerria_background" 
+		#	position = {x=-8 y=-21}	
+		#	spriteType = "GFX_Zygerria_Bg"
+		#	alwaystransparent = yes
+		#}
+
+		instantTextBoxType = {
+			name = "zygerria_slave_counter"
+			position = { x = 18 y = 20 }
+			font = "hoi36header"
+			maxWidth = 120
+			maxHeight = 20
+			text = "ZYGERRIA_SLAVE_COUNTER"
+			format = left
+			pdx_tooltip = "ZYGERRIA_SLAVE_COUNTER_TT"
+		}
+
+		buttonType = {
+			name = "zygerria_pyramid_top" 
+			position = {x=202 y=45}	
+			spriteType = "GFX_Zygerria_Pyramid_Top"
+			pdx_tooltip = "ZYGERRIA_PYRAMID_TOP_TT"
+		}
+
+		buttonType = {
+			name = "zygerria_pyramid_middle" 
+			position = {x=172 y=100}	
+			spriteType = "GFX_Zygerria_Pyramid_Middle"
+			pdx_tooltip = "ZYGERRIA_PYRAMID_MIDDLE_TT"
+		}
+
+		buttonType = {
+			name = "zygerria_pyramid_bottom" 
+			position = {x=63 y=138}	
+			spriteType = "GFX_Zygerria_Pyramid_Bottom"
+			pdx_tooltip = "ZYGERRIA_PYRAMID_BOTTOM_TT"
+		}
+	}
+}

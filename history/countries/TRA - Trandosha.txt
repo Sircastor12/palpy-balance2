@@ -1,0 +1,146 @@
+﻿capital = 247
+
+oob = "TRA_3677"
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = .05
+
+set_technology = {
+	tech_support = 1
+	militia_TRA = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	scraping_the_barrel
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 70
+		communism = 0
+		neutrality = 0
+		fascism = 30
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 20
+		communism = 0
+		neutrality = 0
+		fascism = 80
+	}
+}
+
+create_country_leader = {
+	name = "Hadocrassk"
+	desc = "Speaker-Above-All"
+	picture = "gfx/leaders/TRA/Hadocrassk.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Garnac"
+	desc = "Leader of a Trandoshan hunting guild"
+	picture = "gfx/leaders/TRA/garnac.dds"
+	expire = "2020.1.1"
+	ideology = nazism
+}
+
+create_field_marshal = {
+	name = "Garnac"
+	picture = "garnac.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+		name = "Sochek"
+		portrait_path = "gfx/leaders/TRA/Sochek.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+create_corps_commander = {
+		name = "Smug"
+		portrait_path = "gfx/leaders/TRA/Smug.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+create_corps_commander = {
+		name = "Gilas"
+		portrait_path = "gfx/leaders/TRA/Gilas.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+create_corps_commander = {
+		name = "Dar"
+		portrait_path = "gfx/leaders/TRA/Dar.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+create_navy_leader = {
+		name = "Clutch"
+    	picture = "Clutch.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}
+
+create_navy_leader = {
+		name = "LoTaren"
+    	picture = "LoTaren.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}

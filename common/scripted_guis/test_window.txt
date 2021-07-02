@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	cis_gov_base = {
+		window_name = "gov_base"
+		context_type = player_context
+		parent_window_name = "government_dummy"
+
+		visible = {
+		}
+
+		effects = {
+		}
+		properties = {
+			gov_view = { image = "[GetPolitics]" }
+		}
+	}
+}
+

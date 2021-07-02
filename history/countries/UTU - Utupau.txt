@@ -1,0 +1,96 @@
+capital = 480
+
+oob = "UTU_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_UTU = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	volunteer_only
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+create_country_leader = {
+	name = "Tion Medon"
+	desc = "Leader of Utupau"
+	picture = "gfx/leaders/UTU/TionMedon.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+create_field_marshal = {
+	name = "Ussassiath Fampi"
+	picture = "UssassiathFampi.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Brix Ratt"
+	portrait_path = "gfx/leaders/UTU/BrixRatt.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Pemos Nol"
+	portrait_path = "gfx/leaders/UTU/PemosNol.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Senin Vant"
+    picture = "SeninVant.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

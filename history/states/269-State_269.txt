@@ -1,0 +1,41 @@
+state={
+	id=269
+	name="STATE_269"
+	provinces={
+		640 2470 2719 3223 4152 4588 4594 4970 5024 7959 7977 7978 7999 8003 8005 8037 8068 8074 8075 8113 
+	}
+	manpower=2857142
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=0
+		aluminium=7
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=KYK
+		add_core_of = KYK
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			8113 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			5024 25
+		}
+	}
+}
+

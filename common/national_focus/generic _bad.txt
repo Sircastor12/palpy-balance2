@@ -1,0 +1,56 @@
+focus_tree = {
+	id = generic_focus_bad
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = JHT
+		}
+		modifier = {
+			add = 30
+			tag = JAW
+		}
+		modifier = {
+			add = 30
+			tag = TUK
+		}
+		modifier = {
+			add = 30
+			tag = GOR
+		}
+		modifier = {
+			add = 30
+			tag = QUN
+		}
+		modifier = {
+			add = 30
+			tag = BEA
+		}
+		modifier = {
+			add = 30
+			tag = KES
+		}
+		modifier = {
+			add = 30
+			tag = HON
+		}
+		modifier = {
+			add = 30
+			tag = PAM
+		}
+		modifier = {
+			add = 30
+			tag = ALZ
+		}
+		modifier = {
+			add = 30
+			tag = BLA
+		}
+		modifier = {
+			add = 30
+			tag = KOR
+		}
+	}
+	
+}

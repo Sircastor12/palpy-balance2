@@ -1,0 +1,46 @@
+TEC_historical = {
+	name = "Techno Union Canonical Plan"
+	desc = ""
+
+	enable = {
+		is_historical_focus_on = yes
+		TAG = TEC
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+        tec_begin_consolidating_the_subsidaries
+		tec_pledge_support_to_the_separatists
+		tec_loyalty_to_the_separatist_council
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 2.0
+		support_tech = 6.5
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

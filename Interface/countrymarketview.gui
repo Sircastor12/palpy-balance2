@@ -1,0 +1,7952 @@
+guiTypes = {
+	containerWindowType = {
+		name = "market_init_container"
+		position = { x = 1025 y = -3 }
+
+		buttonType ={
+			name ="market_init_bg"
+			spriteType = "GFX_market_open_button"
+			position = { x=40 y=6 }
+			shortcut = "ctrl+m"
+			pdx_tooltip = "market_button_loc"
+		}
+		buttonType ={
+			name ="ibc_open_button"
+			spriteType = "GFX_IBC_open_button"
+			position = { x=75 y=6 }
+			shortcut = "ctrl+i"
+			pdx_tooltip = "ibc_button_loc"
+		}
+		buttonType ={
+			name ="bounty_open_button"
+			spriteType = "GFX_open_button_bounty"
+			position = { x=110 y=6 }
+			shortcut = "ctrl+['"
+			pdx_tooltip = "bounty_hunter_button_loc"
+		}
+		buttonType ={
+			name ="senate_open_button"
+			spriteType = "GFX_senate_open_button"
+			position = { x=145 y=6 }
+			shortcut = "ctrl+s"
+			pdx_tooltip = "senate_button_loc"
+		}
+	}
+	containerWindowType = {
+		name = "market_full_container"
+		position = {x=550 y=125}
+		size = { width=948 height=966 }
+
+		moveable = yes
+
+		background = {
+			name = "gfx_market_selection"
+			spriteType = "GFX_market_selections"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = 50 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType ={
+			name ="REP_naval_button"
+			spriteType = "GFX_naval_button_market"
+			position = { x=27 y=20 }
+		}
+		buttonType ={
+			name ="REP_air_button"
+			spriteType = "GFX_air_button_market"
+			position = { x=27 y=360 }
+		}
+		buttonType ={
+			name ="REP_army_button"
+			spriteType = "GFX_army_button_market"
+			position = { x=27 y=660 }
+		}
+		buttonType ={
+			name ="REP_infantry_button"
+			spriteType = "GFX_infantry_button_market"
+			position = { x=474 y=660 }
+		}
+		buttonType ={
+			name ="CIS_naval_button"
+			spriteType = "GFX_CIS_naval_button_market"
+			position = { x=27 y=20 }
+		}
+		buttonType ={
+			name ="CIS_air_button"
+			spriteType = "GFX_CIS_air_button_market"
+			position = { x=27 y=360 }
+		}
+		buttonType ={
+			name ="CIS_army_button"
+			spriteType = "GFX_CIS_army_button_market"
+			position = { x=27 y=660 }
+		}
+		buttonType ={
+			name ="CIS_infantry_button"
+			spriteType = "GFX_CIS_infantry_button_market"
+			position = { x=474 y=660 }
+		}
+		buttonType ={
+			name ="neutral_naval_button"
+			spriteType = "GFX_nnaval_button_market"
+			position = { x=27 y=20 }
+		}
+		buttonType ={
+			name ="neutral_air_button"
+			spriteType = "GFX_nair_button_market"
+			position = { x=27 y=360 }
+		}
+		buttonType ={
+			name ="neutral_army_button"
+			spriteType = "GFX_narmy_button_market"
+			position = { x=27 y=660 }
+		}
+		buttonType ={
+			name ="neutral_infantry_button"
+			spriteType = "GFX_ninfantry_button_market"
+			position = { x=474 y=660 }
+		}
+		buttonType ={
+			name ="more_button"
+			spriteType = "GFX_market_more_button"
+			position = { x=913 y=4 }
+		}
+	}
+###Neutral Navy###
+	containerWindowType = {
+		name = "market_neutral_naval_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	}
+###Neutral Air###
+	containerWindowType = {
+		name = "market_neutral_air_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "neutral_Background"
+			spriteType = "GFX_market_screen_product"
+		}
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	}
+###Neutral Army###
+	containerWindowType = {
+		name = "market_neutral_army_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+		containerWindowType = {
+			name = "market_speedertank"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_landspeeder_card"
+			}
+			iconType = {
+				name = "landspeeder_owner" 
+				position = {x=5 y=150 }
+				spriteType = "landspeeder_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Land Speeder"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Motorized"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "landspeeder_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "landspeeder_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-43 y =211 }
+				font = "hoi_18mbs"
+				text = "landspeeder_price"
+				format = right
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "landspeeder_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "landspeeder_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+###Neutral infantry###
+	containerWindowType = {
+		name = "market_neutral_infantry_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#inf0
+		containerWindowType = {
+			name = "market_inf0"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_inf0_card"
+			}
+			iconType = {
+				name = "inf0_owner" 
+				position = {x=5 y=150 }
+				spriteType = "inf0_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Infantry Equipment"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Equipment"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "inf0_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "inf0_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-43 y =211 }
+				font = "hoi_18mbs"
+				text = "inf0_price"
+				format = right
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "inf0_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "inf0_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#supportequipment
+		containerWindowType = {
+			name = "market_supportequipment"
+			position = {x=315 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_supportequipment_card"
+			}
+			iconType = {
+				name = "supportequipment_owner" 
+				position = {x=5 y=150		}
+				spriteType = "supportequipment_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Support Equipment"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Equipment"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "supportequipment_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "supportequipment_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "supportequipment_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "supportequipment_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "supportequipment_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#inf1
+		containerWindowType = {
+			name = "market_inf1"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_inf1_card"
+			}
+			iconType = {
+				name = "inf1_owner" 
+				position = {x=5 y=150 }
+				spriteType = "inf1_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Basic Infantry Equipment"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=5 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Equipment"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "inf1_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "inf1_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-43 y =211 }
+				font = "hoi_18mbs"
+				text = "inf1_price"
+				format = right
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "inf1_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "inf1_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 3
+		#inf2
+		containerWindowType = {
+			name = "market_inf2"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_inf2_card"
+			}
+			iconType = {
+				name = "inf2_owner" 
+				position = {x=5 y=150 }
+				spriteType = "inf2_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Advanced Infantry Equip."
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=5 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Equipment"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "inf2_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "inf2_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-43 y =211 }
+				font = "hoi_18mbs"
+				text = "inf2_price"
+				format = right
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "inf2_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "inf2_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 4
+		#inf3
+		containerWindowType = {
+			name = "market_inf3"
+			position = {x=130 y=937}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_inf3_card"
+			}
+			iconType = {
+				name = "inf3_owner" 
+				position = {x=5 y=150 }
+				spriteType = "inf3_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Future Infantry Equipment"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=5 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Equipment"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "inf3_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "inf3_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-43 y =211 }
+				font = "hoi_18mbs"
+				text = "inf3_price"
+				format = right
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "inf3_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "inf3_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+
+###REP Navy###
+	containerWindowType = { 
+		name = "market_rep_naval_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "rep_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_REP_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "rep_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_REP_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "rep_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_REP_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "rep_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_REP_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#Consular
+		containerWindowType = {
+			name = "market_consular"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_consular_card"
+			}
+			iconType = {
+				name = "consular_owner" 
+				position = {x=5 y=150		}
+				spriteType = "consular_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Consular Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Corvette"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "consular_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "consular_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=57 y =211 }
+				font = "hoi_18mbs"
+				text = "consular_price"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "consular_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "consular_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#dreadnaught
+		containerWindowType = {
+			name = "market_dreadnaught"
+			position = {x=315 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_dreadnaught_card"
+			}
+			iconType = {
+				name = "dreadnaught_owner" 
+				position = {x=5 y=150		}
+				spriteType = "dreadnaught_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Dreadnaught Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Heavy Cruiser"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "ren_dreadnaught_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "ren_dreadnaught_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "ren_dreadnaught_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "ren_dreadnaught_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "dreadnaught_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#venator
+		containerWindowType = {
+			name = "market_venator"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "market_venator"
+				spriteType = "GFX_venator_card"
+			}
+			iconType = {
+				name = "venator_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Venator Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Capital/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "venator_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "venator_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "venator_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "venator_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "venator_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#acclamator
+		containerWindowType = {
+			name = "market_acclamator"
+			position = {x=315 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_acclamator_card"
+			}
+			iconType = {
+				name = "acclamator_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Acclamator Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Assault Ship/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "acclamator_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "acclamator_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "acclamator_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "acclamator_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "acclamator_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#c70
+		containerWindowType = {
+			name = "market_c70"
+			position = {x=500 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_c70_card"
+			}
+			iconType = {
+				name = "c70_owner" 
+				position = {x=5 y=150		}
+				spriteType = "c70_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "C-70 Charger Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Corvette"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "c70_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "c70_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "c70_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "c70_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "c70_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#pelta
+		containerWindowType = {
+			name = "market_pelta"
+			position = {x=685 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_pelta_card"
+			}
+			iconType = {
+				name = "pelta_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Pelta Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Frigate"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "pelta_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "pelta_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "pelta_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "pelta_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "pelta_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 3
+		#arquintes
+		containerWindowType = {
+			name = "market_arquintes"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_arquintes_card"
+			}
+			iconType = {
+				name = "arquintes_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Arquintes Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Light Cruiser"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "arquintes_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "arquintes_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "arquintes_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "arquintes_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "arquintes_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#victory
+		containerWindowType = {
+			name = "market_victory"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_victory_card"
+			}
+			iconType = {
+				name = "victory_owner" 
+				position = {x=5 y=150		}
+				spriteType = "victory_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Victory Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Capital/Missile/LCV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "victory_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "victory_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "victory_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "victory_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "victory_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#mandator2
+		containerWindowType = {
+			name = "market_mandator2"
+			position = {x=500 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_mandator2_card"
+			}
+			iconType = {
+				name = "mandator2_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Mandator-II Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Super Capital/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "mandator2_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "mandator2_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "mandator2_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "mandator2_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "mandator2_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#stealthship
+		containerWindowType = {
+			name = "market_stealthship"
+			position = {x=685 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_stealthship_card"
+			}
+			iconType = {
+				name = "stealthship_owner" 
+				position = {x=5 y=150		}
+				spriteType = "stealthship_owner"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "IPV-2C Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "stealthship_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "stealthship_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "stealthship_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "stealthship_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "stealthship_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	#Level 4
+		#Imperial class
+		containerWindowType = {
+			name = "market_stardestroyer"
+			position = {x=130 y=937}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_stardestroyer_card"
+			}
+			iconType = {
+				name = "stardestroyer_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Imperator Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "stardestroyer_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "stardestroyer_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "stardestroyer_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "stardestroyer_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "stardestroyer_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+		#acclamator 2
+		containerWindowType = {
+			name = "market_acclamator2"
+			position = {x=315 y=937}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_acclamator2_card"
+			}
+			iconType = {
+				name = "acclamator2_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Acclamator-II Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Assault Ship/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "acclamator2_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "acclamator2_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "acclamator2_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "acclamator2_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "acclamator2_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+###REP Air###
+	containerWindowType = {
+		name = "market_rep_air_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+		
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "rep_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_REP_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "rep_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_REP_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "rep_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_REP_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "rep_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_REP_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#z95
+		containerWindowType = {
+			name = "market_z95"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_z95_card"
+			}
+			iconType = {
+				name = "z95_owner" 
+				position = {x=5 y=150		}
+				spriteType = "z95_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Z-95 Headhunter"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Fighter"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "z95_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "z95_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "z95_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "z95_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "z95_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "z95_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "z95_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#v19
+		containerWindowType = {
+			name = "market_v19"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_v19_card"
+			}
+			iconType = {
+				name = "v19_owner" 
+				position = {x=5 y=150		}
+				spriteType = "v19_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "V-19 Torrent"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Fighter/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "v19_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "v19_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "v19_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "v19_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "v19_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "v19_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "v19_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#btlb
+		containerWindowType = {
+			name = "market_btlb"
+			position = {x=315 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_btlb_card"
+			}
+			iconType = {
+				name = "btlb_owner" 
+				position = {x=5 y=150		}
+				spriteType = "btlb_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "BTL-B Y-Wing"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Bomber/CAS/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "btlb_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "btlb_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "btlb_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "btlb_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "btlb_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "btlb_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "btlb_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#laat
+		containerWindowType = {
+			name = "market_laat"
+			position = {x=500 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_laat_card"
+			}
+			iconType = {
+				name = "laat_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "LAAT Gunship"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: CAS/Transport/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "laat_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "laat_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "laat_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "laat_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "laat_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "laat_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "laat_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 3
+		#arc170
+		containerWindowType = {
+			name = "market_arc170"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_arc170_card"
+			}
+			iconType = {
+				name = "arc170_owner" 
+				position = {x=5 y=150		}
+				spriteType = "arc170_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "ARC-170"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: H.Fighter/CAS/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "arc170_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "arc170_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "arc170_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "arc170_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "arc170_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "arc170_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "arc170_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#vwing
+		containerWindowType = {
+			name = "market_vwing"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_vwing_card"
+			}
+			iconType = {
+				name = "vwing_owner" 
+				position = {x=5 y=150		}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "V-Wing"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Interceptor/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "vwing_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "vwing_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "vwing_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "vwing_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "vwing_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "vwing_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "vwing_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 4
+		#tie fighter
+		containerWindowType = {
+			name = "market_tiefighter"
+			position = {x=130 y=937}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_tief_card"
+			}
+			iconType = {
+				name = "tiefighter_owner" 
+				position = {x=5 y=150		}
+				spriteType = "tiefighter_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "TIE Fighter"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "tiefighter_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "tiefighter_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "tiefighter_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "tiefighter_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "tiefighter_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+		#tie bomber
+		containerWindowType = {
+			name = "market_tiebomber"
+			position = {x=315 y=937}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_tieb_card"
+			}
+			iconType = {
+				name = "tiebomber_owner" 
+				position = {x=5 y=150		}
+				spriteType = "tiebomber_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "TIE Bomber"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "tiebomber_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "tiebomber_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "tiebomber_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "tiebomber_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "tiebomber_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	}
+###REP Army###
+	containerWindowType = {
+		name = "market_rep_army_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "rep_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_REP_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "rep_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_REP_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "rep_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_REP_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "rep_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_REP_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#barc
+		containerWindowType = {
+			name = "market_barc"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_barc_card"
+			}
+			iconType = {
+				name = "barc_owner" 
+				position = {x=5 y=150		}
+				spriteType = "barc_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "BARC Speeder"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Speeder"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "speeder_barc_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "aratech_speeder_barc_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "speeder_barc_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "speeder_barc_aratechh" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "barc_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#atte
+		containerWindowType = {
+				name = "market_atte"
+				position = {x=130 y=337}
+				size = { width=188 height=279 }
+				
+				background = {
+					name = "Background"
+					spriteType = "GFX_atte_card"
+				}
+				iconType = {
+					name = "atte_owner" 
+					position = {x=5 y=150		}
+					spriteType = "GFX_Kuat_holo"
+				}
+				instantTextBoxType = {
+					name ="unit_title"
+					position = { x=0 y = 7 }
+					font = "hoi_18mbs"
+					text = "AT-TE"
+					format = center 
+					maxWidth = 188
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_type"
+					position = { x=0 y =144 }
+					font = "hoi_18mbs"
+					text = "Type: Tank"
+					format = center
+					maxWidth = 188
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_stock"
+					position = { x=57 y =175 }
+					font = "hoi_18mbs"
+					text = "atte_stock"
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_count"
+					position = { x=57 y =193 }
+					font = "hoi_18mbs"
+					text = "atte_count"
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_price"
+					position = { x=-23 y =211 }
+					font = "hoi_18mbs"
+					text = "atte_price"
+					format = right
+					maxWidth = 200
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_purchase_rights"
+					position = { x=57 y =228 }
+					font = "hoi_18mbs"
+					text = "atte_tech" 
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "atte_autobuy" 
+					position = {x=3 y=210}
+					spriteType = "GFX_market_autobuy"
+					pdx_tooltip = "turn_autobuy_on_tt"
+				}
+				buttonType = {
+					name = "atte_autobuy_off" 
+					position = {x=3 y=210}
+					spriteType = "GFX_market_autobuy_on"
+					pdx_tooltip = "turn_autobuy_off_tt"
+				}
+				buttonType = {
+					name = "atte_place_order" 
+					position = {x=3 y=245}
+					spriteType = "GFX_market_place_order"
+					pdx_tooltip = "CAT_aratechhnounion_infantry"
+				}
+		}
+		#spha
+		containerWindowType = {
+			name = "market_spha"
+			position = {x=315 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_spha_card"
+			}
+			iconType = {
+				name = "spha_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "SPHA"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Heavy Artillery"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "spha_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "spha_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "spha_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "spha_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "spha_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "spha_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "spha_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#atrt
+		containerWindowType = {
+				name = "market_atrt"
+				position = {x=500 y=337}
+				size = { width=188 height=279 }
+				
+				background = {
+					name = "Background"
+					spriteType = "GFX_atrt_card"
+				}
+				iconType = {
+					name = "atrt_owner" 
+					position = {x=5 y=150}
+					spriteType = "GFX_Kuat_holo"
+				}
+				instantTextBoxType = {
+					name ="unit_title"
+					position = { x=0 y = 7 }
+					font = "hoi_18mbs"
+					text = "AT-RT"
+					format = center 
+					maxWidth = 188
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_type"
+					position = { x=0 y =144 }
+					font = "hoi_18mbs"
+					text = "Type: Recon Walker"
+					format = center
+					maxWidth = 188
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_stock"
+					position = { x=57 y =175 }
+					font = "hoi_18mbs"
+					text = "atrt_stock"
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_count"
+					position = { x=57 y =193 }
+					font = "hoi_18mbs"
+					text = "atrt_count"
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_price"
+					position = { x=-23 y =211 }
+					font = "hoi_18mbs"
+					text = "atrt_price"
+					format = right
+					maxWidth = 200
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_purchase_rights"
+					position = { x=57 y =228 }
+					font = "hoi_18mbs"
+					text = "atrt_tech" 
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "atrt_place_order" 
+					position = {x=3 y=245}
+					spriteType = "GFX_market_place_order"
+					pdx_tooltip = "CAT_aratechhnounion_infantry"
+				}
+		}
+	#Level 3
+		#juggernaut
+		containerWindowType = {
+			name = "market_juggernaut"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_juggernaut_card"
+			}
+			iconType = {
+				name = "juggernaut_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "HAVw A6 Juggernaut"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Super Heavy Tank"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "juggernaut_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "juggernaut_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "juggernaut_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "juggernaut_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "juggernaut_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#tx130
+		containerWindowType = {
+			name = "market_tx130"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_tx130_card"
+			}
+			iconType = {
+				name = "tx130_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "TX-130 Saber"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Medium Tank"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "tx130_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "tx130_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "tx130_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "tx130_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "tx130_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#rx200
+		containerWindowType = {
+			name = "market_rx200"
+			position = {x=500 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_rx200_card"
+			}
+			iconType = {
+				name = "rx200_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "RX-200 Falchion"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "rx200_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "rx200_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "rx200_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "rx200_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "rx200_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+		#atap
+		containerWindowType = {
+			name = "market_atap"
+			position = {x=685 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_atap_card"
+			}
+			iconType = {
+				name = "atap_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kuat_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "AT-AP"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "atap_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "atap_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "atap_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "atap_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "atap_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	}
+###REP infantry###
+	containerWindowType = {
+		name = "market_rep_infantry_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "rep_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_REP_tech_1"
+			pdx_tooltip = "CAT_market_return"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "rep_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_REP_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "rep_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_REP_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "rep_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_REP_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+		buttonType = {
+			name = "KAM_CLONE" 
+			position = {x=690 y=330}
+			spriteType = "GFX_clone_button" 
+			pdx_tooltip = "clone_button_tooltip"
+		}
+	#Level 1
+		#rocketlauncher
+		containerWindowType = {
+			name = "market_rocketlauncher"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_rocketlauncher_card"
+			}
+			iconType = {
+				name = "rocketlauncher_owner" 
+				position = {x=5 y=150}
+				spriteType = "rocketlauncher_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "RPS-6 Rocket Launcher"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Small Arms/AT"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "rocketlauncher_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "rocketlauncher_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-43 y =211 }
+				font = "hoi_18mbs"
+				text = "rocketlauncher_price"
+				format = right
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "rocketlauncher_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "rocketlauncher_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#phase_1
+		containerWindowType = {
+			name = "market_phase_1"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+			background = {
+				name = "Background"
+				spriteType = "GFX_phase_1_card"
+			}
+			iconType = {
+				name = "phase_1_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kamino_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Phase 1 Clone"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "phase_1_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "phase_1_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "phase_1_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "phase_1_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "phase_1_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "phase_1_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "phase_1_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#clone_general
+		containerWindowType = {
+				name = "market_clone_general"
+				position = {x=315 y=337}
+				size = { width=188 height=279 }
+
+				background = {
+					name = "Background"
+					spriteType = "GFX_clone_general_card"
+				}
+				iconType = {
+					name = "clone_general_owner" 
+					position = {x=5 y=150}
+					spriteType = "GFX_Kamino_holo"
+				}
+				instantTextBoxType = {
+					name ="unit_title"
+					position = { x=0 y = 7 }
+					font = "hoi_18mbs"
+					text = "Clone Commander"
+					format = center 
+					maxWidth = 188
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_type"
+					position = { x=0 y =144 }
+					font = "hoi_18mbs"
+					text = "Type: Commander"
+					format = center
+					maxWidth = 188
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_stock"
+					position = { x=57 y =175 }
+					font = "hoi_18mbs"
+					text = "clone_general_stock"
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_count"
+					position = { x=57 y =193 }
+					font = "hoi_18mbs"
+					text = "clone_general_count"
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_price"
+					position = { x=-23 y =211 }
+					font = "hoi_18mbs"
+					text = "clone_general_price"
+					format = right
+					maxWidth = 200
+					maxHeight = 24
+					fixedsize = yes
+				}
+				instantTextBoxType = {
+					name ="unit_purchase_rights"
+					position = { x=57 y =228 }
+					font = "hoi_18mbs"
+					text = "clone_general_tech" 
+					format = right
+					maxWidth = 120
+					maxHeight = 24
+					fixedsize = yes
+				}
+				buttonType = {
+					name = "clone_general_place_order" 
+					position = {x=3 y=245}
+					spriteType = "GFX_market_place_order"
+					pdx_tooltip = "CAT_aratechhnounion_infantry"
+				}
+		}
+		#clone_admiral
+		containerWindowType = {
+			name = "market_clone_admiral"
+			position = {x=500 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_clone_admiral_card"
+			}
+			iconType = {
+				name = "clone_admiral_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kamino_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Clone Admiral"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Admiral"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "clone_admiral_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "clone_admiral_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "clone_admiral_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "clone_admiral_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "clone_admiral_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}		
+	#Level 3
+		#phase_2
+		containerWindowType = {
+			name = "market_phase_2"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_phase_2_card"
+			}
+			iconType = {
+				name = "phase_2_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kamino_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Phase 2 Clone"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "phase_2_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "phase_2_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "phase_2_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "phase_2_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "phase_2_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "phase_2_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "phase_2_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 4
+		#Storm Trooper
+		containerWindowType = {
+			name = "market_stormtrooper"
+			position = {x=130 y=937}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_stormtrooper_card"
+			}
+			iconType = {
+				name = "stormtrooper_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_Kamino_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Stormtrooper Armor"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "stormtrooper_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "stormtrooper_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "stormtrooper_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "stormtrooper_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "stormtrooper_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	###
+	}
+	containerWindowType = {
+		name = "market_clone_frame_container"
+		position = {x=400 y=50}
+		size = { width=1080 height=815 }
+	
+		moveable = yes
+	
+		background = {
+			name = "Background"
+			spriteType = "GFX_new_clone"
+		}
+	
+		buttonType = {
+			name = "commander_icon" 
+			position = {x=682 y=130}
+			spriteType = "GFX_generic_card"
+			alwaystransparent = yes
+		}
+	
+		instantTextBoxType = {
+			name ="commander_name"
+			position = { x=727 y =758 }
+			font = "hoi_30header"
+			text = "[GetTheCloneLegionCommanderName]" 
+			format = Center
+			maxWidth = 300
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="unit_title"
+			position = { x=160 y =470 }
+			font = "hoi_36header"
+			text = "[GetTheCloneLegionName]" 
+			format = Center
+			maxWidth = 400
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="unit_description"
+			position = { x=95 y =515 }
+			font = "hoi_26mbs"
+			text = "[GetTheCloneLegionDescription]"
+			format = Center
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="unit_strenghts"
+			position = { x=70 y =675 }
+			font = "hoi_30header"
+			text = "[GetTheCloneLegionStrengths]" 
+			format = Left
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="unit_price"
+			position = { x=450 y =675 }
+			font = "hoi_30header"
+			text = "the_clone_price" 
+			format = Left
+			maxWidth = 500
+			maxHeight = 200
+			fixedsize = yes
+		}
+	
+		containerWindowType = {
+			name = "clone_legion_grid_container"
+			position = { x = 65 y = 98 }
+			size = { width = 556 height = 260 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			horizontalScrollbar  = "bottom_horizontal_slider"
+	
+			background = {
+				name = "GFX_transparent_bg"
+			}
+	
+			gridboxtype = {
+				name = "clone_legions_gridbox"
+				position = { x = 13 y = 0 }
+				size = { width = 100 height = 270 }
+				slotsize = { width = 137 height = 242 }
+				max_slots_horizontal = 15
+			}
+		}
+		buttonType = {
+			name = "order_units" 
+			position = {x=250 y=770}	
+			spriteType = "GFX_market_place_order"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -40 y = 2 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {
+		name = "clone_entry"
+		position = { x=0 y=0 }	
+		size = { width=550 height=300 } 
+		margin = { top = 10 bottom = 10 }
+		Orientation = upper_left
+		verticalScrollbar = "right_vertical_slider"
+	
+		buttonType = {
+			name = "clone_legion_button" 
+			position = {x=0 y=0}	
+			spriteType = "GFX_13"
+		}
+	}
+###
+###CIS Navy###
+	containerWindowType = {
+		name = "market_cis_naval_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+	
+		moveable = yes
+	
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "cis_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_CIS_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "cis_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_CIS_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "cis_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_CIS_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "cis_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_CIS_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#diamond
+		containerWindowType = {
+			name = "market_diamond"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_diamond_card"
+			}
+			iconType = {
+				name = "diamond_cruiser_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_CMG_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Diamond Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Cruiser"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "diamond_cruiser_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "cmg_diamond_cruiser_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=57 y =211 }
+				font = "hoi_18mbs"
+				text = "diamond_cruiser_price"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "diamond_cruiser_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "diamond_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#lucrehulk_freighter
+		containerWindowType = {
+			name = "market_lucrehulk_freighter"
+			position = {x=315 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_lucrehulk_freighter_card"
+			}
+			iconType = {
+				name = "lucrehulk_freighter_owner" 
+				position = {x=5 y=150}
+				spriteType = "lucrehulk_freighter_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Lucrehulk Freighter"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Capital Ship/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_freighter_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_freighter_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_freighter_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_freighter_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "lucrehulk_freighter_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#marauder
+		containerWindowType = {
+			name = "market_marauder"
+			position = {x=500 y=37}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_marauder_card"
+			}
+			iconType = {
+				name = "marauder_owner" 
+				position = {x=5 y=150}
+				spriteType = "marauder_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Marauder Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Corvette"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "marauder_cruiser_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "marauder_cruiser_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "marauder_cruiser_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "marauder_cruiser_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "marauder_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#munificent
+		containerWindowType = {
+			name = "market_munificent"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_munificent_card"
+			}
+			iconType = {
+				name = "fed_munificent_owner" 
+				position = {x=5 y=150}
+				spriteType = "fed_munificent_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Munificent Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Frigate/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "fed_munificent_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "fed_munificent_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "fed_munificent_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "fed_munificent_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "munificent_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#recusant
+		containerWindowType = {
+			name = "market_recusant"
+			position = {x=315 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_recusant_card"
+			}
+			iconType = {
+				name = "recusant_owner" 
+				position = {x=5 y=150}
+				spriteType = "recusant_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Recusant Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Light Cruiser"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "dac_recusant_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "dac_recusant_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "dac_recusant_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "dac_recusant_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "recusant_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#lucrehulk_battleship
+		containerWindowType = {
+			name = "market_lucrehulk_battleship"
+			position = {x=500 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_lucrehulk_battleship_card"
+			}
+			iconType = {
+				name = "lucrehulk_battleship_owner" 
+				position = {x=5 y=150}
+				spriteType = "lucrehulk_battleship_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Lucrehulk Battleship"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Capital Ship/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_battleship_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_battleship_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_battleship_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "lucrehulk_battleship_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "lucrehulk_battleship_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#bulwark
+		containerWindowType = {
+			name = "market_bulwark"
+			position = {x=685 y=337}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_bulwark_card"
+			}
+			iconType = {
+				name = "bulwark_owner" 
+				position = {x=5 y=150}
+				spriteType = "bulwark_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Bulwark Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Battlecruiser"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "bulwark_dreadnaught_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "bulwark_dreadnaught_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "bulwark_dreadnaught_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "bulwark_dreadnaught_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "bulwark_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 3
+		#providence
+		containerWindowType = {
+			name = "market_providence"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_providence_card"
+			}
+			iconType = {
+				name = "providence_owner" 
+				position = {x=5 y=150}
+				spriteType = "providence_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Providence Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Capital Ship/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "providence_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "providence_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "providence_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "providence_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "providence_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#techno union destroyer
+		containerWindowType = {
+			name = "market_tu_destroyer"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_tudestroyer_card"
+			}
+			iconType = {
+				name = "tudestroyer_owner" 
+				position = {x=5 y=150}
+				spriteType = "tudestroyer_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Techno Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Destroyer"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "tudestroyer_destroyer_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "tudestroyer_destroyer_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "tudestroyer_destroyer_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "tudestroyer_destroyer_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "tu_destroyer_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#saboath
+		containerWindowType = {
+			name = "market_saboath"
+			position = {x=500 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_saboath_card"
+			}
+			iconType = {
+				name = "saboath_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_CMG_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Saboath Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "saboath_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "saboath_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "saboath_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "saboath_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "saboath_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order_blue"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+		#subjugator
+		containerWindowType = {
+			name = "market_subjugator"
+			position = {x=685 y=637}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_subjugator_card"
+			}
+			iconType = {
+				name = "subjugator_owner" 
+				position = {x=5 y=150}
+				spriteType = "subjugator_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Subjugator Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Super Capital/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "subjugator_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "subjugator_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "subjugator_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "subjugator_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "subjugator_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+###CIS Air###
+	containerWindowType = {
+		name = "market_cis_air_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "cis_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_CIS_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "cis_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_CIS_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "cis_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_CIS_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "cis_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_CIS_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#vulture
+		containerWindowType = {
+			name = "market_vulture"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_vulture_card"
+			}
+			iconType = {
+				name = "vulture_owner" 
+				position = {x=5 y=150}
+				spriteType = "vulture_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Vulture Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Fighter/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "vulture_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "vulture_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "vulture_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "vulture_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "vulture_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "vulture_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "vulture_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#c9979
+		containerWindowType = {
+			name = "market_c9979"
+			position = {x=315 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_c9979_card"
+			}
+			iconType = {
+				name = "c9979_owner" 
+				position = {x=5 y=150}
+				spriteType = "c9979_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "C9979"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Transport"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "c9979_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "c9979_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "c9979_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "c9979_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "c9979_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#nantex
+		containerWindowType = {
+			name = "market_nantex"
+			position = {x=500 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_nantex_card"
+			}
+			iconType = {
+				name = "nantex_owner" 
+				position = {x=5 y=150}
+				spriteType = "nantex_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Nantex Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "nantex_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "nantex_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "nantex_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "nantex_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "nantex_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order_blue"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	#Level 2
+		#hyena
+		containerWindowType = {
+			name = "market_hyena"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_hyena_card"
+			}
+			iconType = {
+				name = "hyena_owner" 
+				position = {x=5 y=150}
+				spriteType = "hyena_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Hyena Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Bomber/CAS/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "hyena_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "hyena_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "hyena_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "hyena_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "hyena_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 3
+		#trifighter
+		containerWindowType = {
+			name = "market_trifighter"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_trifighter_card"
+			}
+			iconType = {
+				name = "trifighter_owner" 
+				position = {x=5 y=150}
+				spriteType = "trifighter_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Droid Trifighter"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Interceptor/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "trifighter_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "trifighter_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "trifighter_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "trifighter_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "trifighter_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#hmpgunship
+		containerWindowType = {
+			name = "market_hmpgunship"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_hmpgunship_card"
+			}
+			iconType = {
+				name = "hmpgunship_owner" 
+				position = {x=5 y=150}
+				spriteType = "hmpgunship_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "HMP Droid Gunship"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: CAS/CV"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "hmpgunship_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "hmpgunship_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "hmpgunship_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "hmpgunship_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "hmpgunship_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#rogue
+		containerWindowType = {
+			name = "market_rogue"
+			position = {x=500 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_rogue_card"
+			}
+			iconType = {
+				name = "rogue_owner" 
+				position = {x=5 y=150}
+				spriteType = "rogue_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Rogue Class"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Fighter"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "rogue_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "rogue_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "rogue_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "rogue_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "rogue_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#buzz_droids
+		containerWindowType = {
+			name = "market_buzz_droids"
+			position = {x=685 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_buzz_droids_card"
+			}
+			iconType = {
+				name = "buzz_droids_owner" 
+				position = {x=5 y=150}
+				spriteType = "buzz_droids_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Buzz Droids"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "buzz_droids_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "buzz_droids_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "buzz_droids_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "buzz_droids_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "buzz_droids_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order_blue"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	}
+###CIS Army###
+	containerWindowType = {
+		name = "market_cis_army_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "cis_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_CIS_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "cis_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_CIS_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "cis_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_CIS_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "cis_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_CIS_tech_4"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#aat
+		containerWindowType = {
+			name = "market_aat"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_aat_card"
+			}
+			iconType = {
+				name = "aat_owner" 
+				position = {x=5 y=150}
+				spriteType = "aat_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "AAT"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Medium Armor"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "aat_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "aat_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "[root.aat_price]"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "aat_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "aat_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#mtt
+		containerWindowType = {
+			name = "market_mtt"
+			position = {x=315 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_mtt_card"
+			}
+			iconType = {
+				name = "mtt_owner" 
+				position = {x=5 y=150}
+				spriteType = "mtt_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "MTT"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Mechanized Carrier"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "mtt_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "mtt_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "mtt_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "mtt_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "mtt_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#stap
+		containerWindowType = {
+			name = "market_stap"
+			position = {x=500 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_stap_card"
+			}
+			iconType = {
+				name = "stap_owner" 
+				position = {x=5 y=150}
+				spriteType = "stap_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "STAP"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Mobile Recon"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "stap_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "stap_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "stap_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "stap_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "stap_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#pac
+		containerWindowType = {
+			name = "market_pac"
+			position = {x=685 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_pac_card"
+			}
+			iconType = {
+				name = "pac_owner" 
+				position = {x=5 y=150}
+				spriteType = "pac_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "PAC"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Motorized Carrier"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "pac_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "pac_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "pac_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "pac_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "pac_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#og9
+		containerWindowType = {
+			name = "market_og9"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_homing_spider_card"
+			}
+			iconType = {
+				name = "og9_owner" 
+				position = {x=5 y=150}
+				spriteType = "og9_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "OG-9 Homing Spider"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Armored Walker"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "og9_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "og9_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "og9_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "og9_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "og9_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#j1
+		containerWindowType = {
+			name = "market_j1"
+			position = {x=315 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_j1_card"
+			}
+			iconType = {
+				name = "j1_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_TechnoUnion_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "J1 Cannon"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Artillery/AA/AT"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "j1_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "j1_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "j1_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "j1_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "j1_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#dsd1
+		containerWindowType = {
+			name = "market_dsd1"
+			position = {x=500 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_dsd1_card"
+			}
+			iconType = {
+				name = "dsd1_owner" 
+				position = {x=5 y=150}
+				spriteType = "dsd1_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "DSD-1 Dwarf Spider"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Light Armor"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "dsd1_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "dsd1_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "dsd1_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "dsd1_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "dsd1_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#hailfire
+		containerWindowType = {
+			name = "market_tec_hailfire"
+			position = {x=685 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_hailfire_card"
+			}
+			iconType = {
+				name = "tec_hailfire_owner" 
+				position = {x=5 y=150}
+				spriteType = "tec_hailfire_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "IG-227 Hailfire"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Mobile Rocket Arty."
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "tec_hailfire_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "tec_hailfire_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "tec_hailfire_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "ibc_hailfire_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "tec_hailfire_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 3
+		#tankdroid
+		containerWindowType = {
+			name = "market_tankdroid"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_tankdroid_card"
+			}
+			iconType = {
+				name = "tankdroid_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_TechnoUnion_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "NR-N99 Enforcer"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Medium Armor"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "tankdroid_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "tankdroid_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "tankdroid_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "tankdroid_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "tankdroid_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#crab
+		containerWindowType = {
+			name = "market_crab"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_crab_card"
+			}
+			iconType = {
+				name = "crab_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_TechnoUnion_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "LM-432 Crab Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Light Armor"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "crab_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "crab_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "crab_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "crab_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "crab_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#octuparra_magna
+		containerWindowType = {
+			name = "market_octuparramagna"
+			position = {x=500 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_octuparramagna_card"
+			}
+			iconType = {
+				name = "octuparramagna_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_TechnoUnion_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Octuptarra Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Heavy Armor"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "octuparramagna_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "octuparramagna_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "octuparramagna_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "octuparramagna_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "octuptarra_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "octuptarra_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "octuparramagna_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 4
+		#aat2 battle droid
+		containerWindowType = {
+			name = "market_aat2"
+			position = {x=130 y=937}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_aat2_card"
+			}
+			iconType = {
+				name = "aat2_owner" 
+				position = {x=5 y=150}
+				spriteType = "aat2_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "AAT-B"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Medium Armor"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "aat2_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "aat2_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "aat2_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "aat2_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "aat2_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+###CIS infantry###
+	containerWindowType = {
+		name = "market_cis_infantry_container"
+		position = {x=550 y=125}
+		size = {width=948 height=930}
+		verticalScrollbar = "right_vertical_slider"
+
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_screen_product"
+		}	
+		iconType = {
+			name = "slot1"
+			position = {x=13 y=30}
+			spriteType = "GFX_slot_1"
+		}
+		buttonType = {
+			name = "cis_tech_1" 
+			position = {x=31 y=149}
+			spriteType = "GFX_CIS_tech_1"
+		}
+		iconType = {
+			name = "slot2"
+			position = {x=13 y=330}
+			spriteType = "GFX_slot_2"
+		}
+		buttonType = {
+			name = "cis_tech_2" 
+			position = {x=31 y=444}
+			spriteType = "GFX_CIS_tech_2"
+		}
+		iconType = {
+			name = "slot3"
+			position = {x=13 y=630}
+			spriteType = "GFX_slot_3"
+		}
+		buttonType = {
+			name = "cis_tech_3" 
+			position = {x=31 y=744}
+			spriteType = "GFX_CIS_tech_3"
+		}
+		iconType = {
+			name = "slot4"
+			position = {x=13 y=930}
+			spriteType = "GFX_slot_4"
+		}
+		buttonType = {
+			name = "cis_tech_4" 
+			position = {x=31 y=1050}
+			spriteType = "GFX_CIS_tech_4"
+		} 
+		buttonType = {
+			name = "close_button"
+			position = { x = -60 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "CAT_market_return"
+		}
+	#Level 1
+		#b1
+		containerWindowType = {
+			name = "market_b1"
+			position = {x=130 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_b1_card"
+			}
+			iconType = {
+				name = "b1_owner" 
+				position = {x=5 y=150}
+				spriteType = "b1_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "B1 Battle Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "b1_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "b1_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "b1_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "b1_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "b1_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "b1_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "b1_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#oom
+		containerWindowType = {
+			name = "market_oom"
+			position = {x=315 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_oom_card"
+			}
+			iconType = {
+				name = "oom_owner" 
+				position = {x=5 y=150}
+				spriteType = "oom_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "OOM Battle Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Task Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "oom_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "oom_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "oom_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "oom_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "oom_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#droideka
+		containerWindowType = {
+			name = "market_droideka"
+			position = {x=500 y=37}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_droideka_card"
+			}
+			iconType = {
+				name = "droideka_owner" 
+				position = {x=5 y=150}
+				spriteType = "droideka_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Droideka"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Heavy Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "droideka_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "droideka_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "droideka_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "droideka_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "droideka_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 2
+		#tactical
+		containerWindowType = {
+			name = "market_tactical"
+			position = {x=130 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_tactical_card"
+			}
+			iconType = {
+				name = "tactical_owner" 
+				position = {x=5 y=150}
+				spriteType = "tactical_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Tactical Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Commander"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "tactical_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "tactical_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "tactical_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "tactical_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "tactical_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#lancer
+		containerWindowType = {
+			name = "market_lancer"
+			position = {x=315 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_lancer_card"
+			}
+			iconType = {
+				name = "lancer_owner" 
+				position = {x=5 y=150}
+				spriteType = "lancer_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Lancer Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Cavalry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "lancer_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "lancer_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "lancer_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "lancer_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "lancer_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#bx
+		containerWindowType = {
+			name = "market_bx"
+			position = {x=500 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_bx_card"
+			}
+			iconType = {
+				name = "bx_owner" 
+				position = {x=5 y=150}
+				spriteType = "bx_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "BX Commando Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Special Forces"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "bx_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "bx_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "bx_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "bx_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "bx_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#aqua
+		containerWindowType = {
+			name = "market_tec_aqua"
+			position = {x=685 y=337}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_aqua_card"
+			}
+			iconType = {
+				name = "aqua_owner" 
+				position = {x=5 y=150}
+				spriteType = "aqua_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "Aqua Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "aqua_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "aqua_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "aqua_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "aqua_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "aqua_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order_blue"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	#Level 3
+		#b2
+		containerWindowType = {
+			name = "market_b2"
+			position = {x=130 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_b2_card"
+			}
+			iconType = {
+				name = "b2_owner" 
+				position = {x=5 y=150}
+				spriteType = "b2_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "B2 Battle Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "b2_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "b2_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "b2_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "b2_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "b2_autobuy" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy"
+				pdx_tooltip = "turn_autobuy_on_tt"
+			}
+			buttonType = {
+				name = "b2_autobuy_off" 
+				position = {x=3 y=210}
+				spriteType = "GFX_market_autobuy_on"
+				pdx_tooltip = "turn_autobuy_off_tt"
+			}
+			buttonType = {
+				name = "b2_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		#super_tactical
+		containerWindowType = {
+			name = "market_super_tactical"
+			position = {x=315 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_supertactical_card"
+			}
+			iconType = {
+				name = "super_tactical_owner" 
+				position = {x=5 y=150}
+				spriteType = "super_tactical_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "ST Series Tactical Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "super_tactical_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "super_tactical_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "super_tactical_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "super_tactical_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "super_tactical_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order_blue"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+		#dwing
+		containerWindowType = {
+			name = "market_dwing"
+			position = {x=500 y=637}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_dwing_card"
+			}
+			iconType = {
+				name = "dwing_owner" 
+				position = {x=5 y=150}
+				spriteType = "GFX_TechnoUnion_holo"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "D-Wing Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "Type: Infantry"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_stock"
+				position = { x=57 y =175 }
+				font = "hoi_18mbs"
+				text = "dwing_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_count"
+				position = { x=57 y =193 }
+				font = "hoi_18mbs"
+				text = "dwing_count"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_price"
+				position = { x=-23 y =211 }
+				font = "hoi_18mbs"
+				text = "dwing_price"
+				format = right
+				maxWidth = 200
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_purchase_rights"
+				position = { x=57 y =228 }
+				font = "hoi_18mbs"
+				text = "dwing_tech" 
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "dwing_place_order" 
+				position = {x=3 y=245}
+				spriteType = "GFX_market_place_order_blue"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	#Level 4
+		#b3 battle droid
+		containerWindowType = {
+			name = "market_b3"
+			position = {x=130 y=937}
+			size = { width=188 height=279 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_b3_card"
+			}
+			iconType = {
+				name = "b3_owner" 
+				position = {x=5 y=150}
+				spriteType = "b3_owner"
+			}
+			instantTextBoxType = {
+				name ="unit_title"
+				position = { x=0 y = 7 }
+				font = "hoi_18mbs"
+				text = "B3 Battle Droid"
+				format = center 
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="unit_type"
+				position = { x=0 y =144 }
+				font = "hoi_18mbs"
+				text = "COMING SOON"
+				format = center
+				maxWidth = 188
+				maxHeight = 24
+				fixedsize = yes
+			}
+			#instantTextBoxType = {
+			#	name ="unit_stock"
+			#	position = { x=57 y =175 }
+			#	font = "hoi_18mbs"
+			#	text = "b3_stock"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_count"
+			#	position = { x=57 y =193 }
+			#	font = "hoi_18mbs"
+			#	text = "b3_count"
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_price"
+			#	position = { x=-23 y =211 }
+			#	font = "hoi_18mbs"
+			#	text = "b3_price"
+			#	format = right
+			#	maxWidth = 200
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#instantTextBoxType = {
+			#	name ="unit_purchase_rights"
+			#	position = { x=57 y =228 }
+			#	font = "hoi_18mbs"
+			#	text = "b3_tech" 
+			#	format = right
+			#	maxWidth = 120
+			#	maxHeight = 24
+			#	fixedsize = yes
+			#}
+			#buttonType = {
+			#	name = "b3_place_order" 
+			#	position = {x=3 y=245}
+			#	spriteType = "GFX_market_place_order_blue"
+			#	pdx_tooltip = "CAT_aratechhnounion_infantry"
+			#}
+		}
+	}
+}

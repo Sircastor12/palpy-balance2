@@ -1,0 +1,41 @@
+state={
+	id=392
+	name="STATE_392"
+	provinces={
+		28 122 414 715 1185 2230 3134 3653 4208 5034 9939 9943 9947 9953 9957 9965 9972 9975 9980 9981 9983 9984 9988 9996 10000 10001 10013 10015 10054 
+	}
+	manpower=40000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=9
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=4
+		chromium=0
+	}
+
+  	history = {
+		owner=GUN
+		add_core_of = GUN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+			
+			10000 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			10001 50
+		}
+	}
+}
+

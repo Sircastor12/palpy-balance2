@@ -1,0 +1,2250 @@
+defined_text = {
+	name = Getcorp_size
+	text = {
+		trigger = {
+			has_country_flag = major_company_open
+		}
+		localization_key = "Corporate Factories: 5"
+	}
+	text = {
+		trigger = {
+			has_country_flag = medium_company_open
+		}
+		localization_key = "Corporate Factories: 3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = minor_company_open
+		}
+		localization_key = "Corporate Factories: 1"
+	}
+}
+defined_text = {
+	name = Getselectedcorp
+	text = {
+		trigger = {
+			has_country_flag = geonosis_open
+		}
+		localization_key = "GFX_Geonosis"
+	}
+	text = {
+		trigger = {
+			has_country_flag = aratech_open
+		}
+		localization_key = "GFX_Aratech"
+	}
+	text = {
+		trigger = {
+			has_country_flag = blastech_open
+		}
+		localization_key = "GFX_BlasTech"
+	}
+	text = {
+		trigger = {
+			has_country_flag = chiewab_open
+		}
+		localization_key = "GFX_Chiewab"
+	}
+	text = {
+		trigger = {
+			has_country_flag = colicoid_open
+		}
+		localization_key = "GFX_Colicoid"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corellian_open
+		}
+		localization_key = "GFX_Corellian"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corporate_open
+		}
+		localization_key = "GFX_Corporate"
+	}
+	text = {
+		trigger = {
+			has_country_flag = czerka_open
+		}
+		localization_key = "GFX_Czerka"
+	}
+	text = {
+		trigger = {
+			has_country_flag = free_dac_open
+		}
+		localization_key = "GFX_Free"
+	}
+	text = {
+		trigger = {
+			has_country_flag = haor_open
+		}
+		localization_key = "GFX_Haor"
+	}
+	text = {
+		trigger = {
+			has_country_flag = hoersch_open
+		}
+		localization_key = "GFX_Hoersch"
+	}
+	text = {
+		trigger = {
+			has_country_flag = industrial_auto_open
+		}
+		localization_key = "GFX_Industrial_Automaton"
+	}
+	text = {
+		trigger = {
+			has_country_flag = leisuremech_open
+		}
+		localization_key = "GFX_LeisureMechEnterprises"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mandal_open
+		}
+		localization_key = "GFX_MandalMotors"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mining_guild_open
+		}
+		localization_key = "GFX_MiningGuild"
+	}
+	text = {
+		trigger = {
+			has_country_flag = slaynandkorpil_open
+		}
+		localization_key = "GFX_SlaynAndKorpil"
+	}
+	text = {
+		trigger = {
+			has_country_flag = rendili_open
+		}
+		localization_key = "GFX_RendiliStarDrive"
+	}
+	text = {
+		trigger = {
+			has_country_flag = incom_open
+		}
+		localization_key = "GFX_Incom"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sienar_open
+		}
+		localization_key = "GFX_SienarFleetSystems"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sorosuub_open
+		}
+		localization_key = "GFX_SoroSuub"
+	}
+	text = {
+		trigger = {
+			has_country_flag = taimandbak_open
+		}
+		localization_key = "GFX_TaimAndBak"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tagge_open
+		}
+		localization_key = "GFX_Tagge"
+	}
+	text = {
+		trigger = {
+			has_country_flag = trans_open
+		}
+		localization_key = "GFX_TransGalMegIndustriesIncorporated"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ubril_open
+		}
+		localization_key = "GFX_UbrikkianIndustries"
+	}
+	text = {
+		trigger = {
+			has_country_flag = xucphra_open
+		}
+		localization_key = "GFX_XucphraCorporation"
+	}
+}
+defined_text = {
+	name = Getcompanyvalue
+	text = {
+		trigger = {
+			has_country_flag = geonosis_open
+		}
+		localization_key = "1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = aratech_open
+		}
+		localization_key = "2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = blastech_open
+		}
+		localization_key = "3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = chiewab_open
+		}
+		localization_key = "4"
+	}
+	text = {
+		trigger = {
+			has_country_flag = colicoid_open
+		}
+		localization_key = "5"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corellian_open
+		}
+		localization_key = "6"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corporate_open
+		}
+		localization_key = "7"
+	}
+	text = {
+		trigger = {
+			has_country_flag = czerka_open
+		}
+		localization_key = "8"
+	}
+	text = {
+		trigger = {
+			has_country_flag = free_dac_open
+		}
+		localization_key = "9"
+	}
+	text = {
+		trigger = {
+			has_country_flag = haor_open
+		}
+		localization_key = "10"
+	}
+	text = {
+		trigger = {
+			has_country_flag = hoersch_open
+		}
+		localization_key = "11"
+	}
+	text = {
+		trigger = {
+			has_country_flag = industrial_auto_open
+		}
+		localization_key = "12"
+	}
+	text = {
+		trigger = {
+			has_country_flag = leisuremech_open
+		}
+		localization_key = "13"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mandal_open
+		}
+		localization_key = "14"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mining_guild_open
+		}
+		localization_key = "15"
+	}
+	text = {
+		trigger = {
+			has_country_flag = slaynandkorpil_open
+		}
+		localization_key = "16"
+	}
+	text = {
+		trigger = {
+			has_country_flag = rendili_open
+		}
+		localization_key = "17"
+	}
+	text = {
+		trigger = {
+			has_country_flag = incom_open
+		}
+		localization_key = "18"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sienar_open
+		}
+		localization_key = "19"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sorosuub_open
+		}
+		localization_key = "20"
+	}
+	text = {
+		trigger = {
+			has_country_flag = taimandbak_open
+		}
+		localization_key = "21"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tagge_open
+		}
+		localization_key = "22"
+	}
+	text = {
+		trigger = {
+			has_country_flag = trans_open
+		}
+		localization_key = "23"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ubril_open
+		}
+		localization_key = "24"
+	}
+	text = {
+		trigger = {
+			has_country_flag = xucphra_open
+		}
+		localization_key = "25"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GFX_Baktoid
+		}
+		localization_key = "26"
+	}
+}
+defined_text = {
+	name = Getsubsidiary
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "GFX_Geonosis"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "GFX_Aratech"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "GFX_BlasTech"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "GFX_Chiewab"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "GFX_Colicoid"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "GFX_Corellian"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "GFX_Corporate"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "GFX_Czerka"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "GFX_Free"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "GFX_Haor"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "GFX_Hoersch"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "GFX_Industrial_Automaton"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "GFX_LeisureMechEnterprises"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "GFX_MandalMotors"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "GFX_MiningGuild"
+	}
+	text = {
+		trigger = {
+			state = 16
+		}
+		localization_key = "GFX_SlaynAndKorpil"
+	}
+	text = {
+		trigger = {
+			state = 17
+		}
+		localization_key = "GFX_RendiliStarDrive"
+	}
+	text = {
+		trigger = {
+			state = 18
+		}
+		localization_key = "GFX_Incom"
+	}
+	text = {
+		trigger = {
+			state = 19
+		}
+		localization_key = "GFX_SienarFleetSystems"
+	}
+	text = {
+		trigger = {
+			state = 20
+		}
+		localization_key = "GFX_SoroSuub"
+	}
+	text = {
+		trigger = {
+			state = 21
+		}
+		localization_key = "GFX_TaimAndBak"
+	}
+	text = {
+		trigger = {
+			state = 22
+		}
+		localization_key = "GFX_Tagge"
+	}
+	text = {
+		trigger = {
+			state = 23
+		}
+		localization_key = "GFX_TransGalMegIndustriesIncorporated"
+	}
+	text = {
+		trigger = {
+			state = 24
+		}
+		localization_key = "GFX_UbrikkianIndustries"
+	}
+	text = {
+		trigger = {
+			state = 25
+		}
+		localization_key = "GFX_XucphraCorporation"
+	}
+	text = {
+		trigger = {
+			state = 26
+		}
+		localization_key = "GFX_Baktoid"
+	}
+}
+defined_text = {
+	name = Getcompanyname
+	text = {
+		trigger = {
+			has_country_flag = geonosis_open
+		}
+		localization_key = "Geonosis"
+	}
+	text = {
+		trigger = {
+			has_country_flag = aratech_open
+		}
+		localization_key = "Aratech"
+	}
+	text = {
+		trigger = {
+			has_country_flag = blastech_open
+		}
+		localization_key = "Blastech"
+	}
+	text = {
+		trigger = {
+			has_country_flag = chiewab_open
+		}
+		localization_key = "Chiewab"
+	}
+	text = {
+		trigger = {
+			has_country_flag = colicoid_open
+		}
+		localization_key = "Colicoid"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corellian_open
+		}
+		localization_key = "Corellian"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corporate_open
+		}
+		localization_key = "Corporate"
+	}
+	text = {
+		trigger = {
+			has_country_flag = czerka_open
+		}
+		localization_key = "Czerka"
+	}
+	text = {
+		trigger = {
+			has_country_flag = free_dac_open
+		}
+		localization_key = "Free_dac"
+	}
+	text = {
+		trigger = {
+			has_country_flag = haor_open
+		}
+		localization_key = "Haor"
+	}
+	text = {
+		trigger = {
+			has_country_flag = hoersch_open
+		}
+		localization_key = "Hoersch"
+	}
+	text = {
+		trigger = {
+			has_country_flag = industrial_auto_open
+		}
+		localization_key = "Industrial_Automaton"
+	}
+	text = {
+		trigger = {
+			has_country_flag = leisuremech_open
+		}
+		localization_key = "LeisureMechEnterprises"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mandal_open
+		}
+		localization_key = "MandalMotors"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mining_guild_open
+		}
+		localization_key = "Mining_guild"
+	}
+	text = {
+		trigger = {
+			has_country_flag = slaynandkorpil_open
+		}
+		localization_key = "Slayn_and_korpil"
+	}
+	text = {
+		trigger = {
+			has_country_flag = rendili_open
+		}
+		localization_key = "RendiliStarDrive"
+	}
+	text = {
+		trigger = {
+			has_country_flag = incom_open
+		}
+		localization_key = "Incom"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sienar_open
+		}
+		localization_key = "SienarFleetSystems"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sorosuub_open
+		}
+		localization_key = "SoroSuub"
+	}
+	text = {
+		trigger = {
+			has_country_flag = taimandbak_open
+		}
+		localization_key = "Taimandbak"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tagge_open
+		}
+		localization_key = "Tagge"
+	}
+	text = {
+		trigger = {
+			has_country_flag = trans_open
+		}
+		localization_key = "TransGalMegIndustriesIncorporated"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ubril_open
+		}
+		localization_key = "UbrikkianIndustries"
+	}
+	text = {
+		trigger = {
+			has_country_flag = xucphra_open
+		}
+		localization_key = "XucphraCorporation"
+	}
+}
+defined_text = {
+	name = Getshareprice
+	text = {
+		trigger = {
+			has_country_flag = geonosis_open
+		}
+		localization_key = "[?global.share_price_Geonosis]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = aratech_open
+		}
+		localization_key = "[?global.share_price_Aratech]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = blastech_open
+		}
+		localization_key = "[?global.share_price_Blastech]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = chiewab_open
+		}
+		localization_key = "[?global.share_price_Chiewab]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = colicoid_open
+		}
+		localization_key = "[?global.share_price_Colicoid]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corellian_open
+		}
+		localization_key = "[?global.share_price_Corellian]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corporate_open
+		}
+		localization_key = "[?global.share_price_Corporate]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = czerka_open
+		}
+		localization_key = "[?global.share_price_Czerka]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = free_dac_open
+		}
+		localization_key = "[?global.share_price_Free_dac]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = haor_open
+		}
+		localization_key = "[?global.share_price_Haor]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = hoersch_open
+		}
+		localization_key = "[?global.share_price_Hoersch]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = industrial_auto_open
+		}
+		localization_key = "[?global.share_price_Industrial_Automaton]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = leisuremech_open
+		}
+		localization_key = "[?global.share_price_LeisureMechEnterprises]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mandal_open
+		}
+		localization_key = "[?global.share_price_MandalMotors]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mining_guild_open
+		}
+		localization_key = "[?global.share_price_Mining_guild]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = slaynandkorpil_open
+		}
+		localization_key = "[?global.share_price_Slayn_and_korpil]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = rendili_open
+		}
+		localization_key = "[?global.share_price_RendiliStarDrive]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = incom_open
+		}
+		localization_key = "[?global.share_price_Incom]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sienar_open
+		}
+		localization_key = "[?global.share_price_SienarFleetSystems]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sorosuub_open
+		}
+		localization_key = "[?global.share_price_SoroSuub]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = taimandbak_open
+		}
+		localization_key = "[?global.share_price_Taimandbak]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tagge_open
+		}
+		localization_key = "[?global.share_price_Tagge]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = trans_open
+		}
+		localization_key = "[?global.share_price_TransGalMegIndustriesIncorporated]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ubril_open
+		}
+		localization_key = "[?global.share_price_UbrikkianIndustries]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = xucphra_open
+		}
+		localization_key = "[?global.share_price_XucphraCorporation]"
+	}
+}
+defined_text = {
+	name = Getbuyoutprice
+	text = {
+		trigger = {
+			has_country_flag = geonosis_open
+		}
+		localization_key = "[?buyout_Geonosis]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = aratech_open
+		}
+		localization_key = "[?buyout_Aratech]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = blastech_open
+		}
+		localization_key = "[?buyout_Blastech]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = chiewab_open
+		}
+		localization_key = "[?buyout_Chiewab]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = colicoid_open
+		}
+		localization_key = "[?buyout_Colicoid]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corellian_open
+		}
+		localization_key = "[?buyout_Corellian]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = corporate_open
+		}
+		localization_key = "[?buyout_Corporate]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = czerka_open
+		}
+		localization_key = "[?buyout_Czerka]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = free_dac_open
+		}
+		localization_key = "[?buyout_Free_dac]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = haor_open
+		}
+		localization_key = "[?buyout_Haor]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = hoersch_open
+		}
+		localization_key = "[?buyout_Hoersch]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = industrial_auto_open
+		}
+		localization_key = "[?buyout_Industrial_Automaton]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = leisuremech_open
+		}
+		localization_key = "[?buyout_LeisureMechEnterprises]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mandal_open
+		}
+		localization_key = "[?buyout_MandalMotors]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = mining_guild_open
+		}
+		localization_key = "[?buyout_Mining_guild]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = slaynandkorpil_open
+		}
+		localization_key = "[?buyout_Slayn_and_korpil]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = rendili_open
+		}
+		localization_key = "[?buyout_RendiliStarDrive]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = incom_open
+		}
+		localization_key = "[?buyout_Incom]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sienar_open
+		}
+		localization_key = "[?buyout_SienarFleetSystems]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = sorosuub_open
+		}
+		localization_key = "[?buyout_SoroSuub]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = taimandbak_open
+		}
+		localization_key = "[?buyout_Taimandbak]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = tagge_open
+		}
+		localization_key = "[?buyout_Tagge]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = trans_open
+		}
+		localization_key = "[?buyout_TransGalMegIndustriesIncorporated]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ubril_open
+		}
+		localization_key = "[?buyout_UbrikkianIndustries]"
+	}
+	text = {
+		trigger = {
+			has_country_flag = xucphra_open
+		}
+		localization_key = "[?buyout_XucphraCorporation]"
+	}
+}
+defined_text = {
+	name = Getcompanyshares
+
+    text = {
+        trigger = {
+			set_temp_variable = { share_holder = 0 }
+            meta_trigger = {
+                text = {
+					var:share_holder = {
+						set_temp_variable = { shares_held = shares_held_[Getcompanyname] }
+					}
+                }
+                Getcompanyname = "[This.Getcompanyname]"
+            }
+        }
+        localization_key = "[?shares_held]"
+	}
+}
+defined_text = {
+    name = GetShareHolderNameTop1
+
+    text = {
+        trigger = {
+			set_temp_variable = { share_holder = 0 }
+            meta_trigger = {
+                text = {
+                    if = {
+                        limit = {
+                            check_variable = { global.[Getcompanyname]^num > 0 }
+                        }
+						set_temp_variable = { share_holder = global.[Getcompanyname]^0 }
+					var:share_holder = {
+						set_temp_variable = { shares_held = shares_held_[Getcompanyname] }
+						set_temp_variable = { shares_held_percentage = shares_held_percent_[Getcompanyname] }
+						}
+                    }
+                }
+                Getcompanyname = "[This.Getcompanyname]"
+            }
+            NOT = { check_variable = { share_holder = 0 } }
+        }
+        localization_key = "[?share_holder.GetName] [?shares_held] Y[?shares_held_percentage]% "
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = GetShareHolderNameTop2
+
+    text = {
+        trigger = {
+			set_temp_variable = { share_holder = 0 }
+            meta_trigger = {
+                text = {
+                    if = {
+                        limit = {
+                            check_variable = { global.[Getcompanyname]^num > 0 }
+                        }
+						set_temp_variable = { share_holder = global.[Getcompanyname]^1 }
+					var:share_holder = {
+						set_temp_variable = { shares_held = shares_held_[Getcompanyname] }
+						set_temp_variable = { shares_held_percentage = shares_held_percent_[Getcompanyname] }
+						}
+                    }
+                }
+                Getcompanyname = "[This.Getcompanyname]"
+            }
+            NOT = { check_variable = { share_holder = 0 } }
+        }
+        localization_key = "[?share_holder.GetName] [?shares_held] Y[?shares_held_percentage]% "
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = GetShareHolderNameTop3
+
+    text = {
+        trigger = {
+			set_temp_variable = { share_holder = 0 }
+            meta_trigger = {
+                text = {
+                    if = {
+                        limit = {
+                            check_variable = { global.[Getcompanyname]^num > 0 }
+                        }
+						set_temp_variable = { share_holder = global.[Getcompanyname]^2 }
+					var:share_holder = {
+						set_temp_variable = { shares_held = shares_held_[Getcompanyname] }
+						set_temp_variable = { shares_held_percentage = shares_held_percent_[Getcompanyname] }
+						}
+                    }
+                }
+                Getcompanyname = "[This.Getcompanyname]"
+            }
+            NOT = { check_variable = { share_holder = 0 } }
+        }
+        localization_key = "[?share_holder.GetName] [?shares_held] Y[?shares_held_percentage]% "
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = GetShareHolderNameTop4
+
+    text = {
+        trigger = {
+			set_temp_variable = { share_holder = 0 }
+            meta_trigger = {
+                text = {
+                    if = {
+                        limit = {
+                            check_variable = { global.[Getcompanyname]^num > 0 }
+                        }
+						set_temp_variable = { share_holder = global.[Getcompanyname]^3 }
+					var:share_holder = {
+						set_temp_variable = { shares_held = shares_held_[Getcompanyname] }
+						set_temp_variable = { shares_held_percentage = shares_held_percent_[Getcompanyname] }
+						}
+                    }
+                }
+                Getcompanyname = "[This.Getcompanyname]"
+            }
+            NOT = { check_variable = { share_holder = 0 } }
+        }
+        localization_key = "[?share_holder.GetName] [?shares_held] Y[?shares_held_percentage]% "
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+    name = GetShareHolderNameTop5
+
+    text = {
+        trigger = {
+			set_temp_variable = { share_holder = 0 }
+            meta_trigger = {
+                text = {
+                    if = {
+                        limit = {
+                            check_variable = { global.[Getcompanyname]^num > 0 }
+                        }
+						set_temp_variable = { share_holder = global.[Getcompanyname]^4 }
+					var:share_holder = {
+						set_temp_variable = { shares_held = shares_held_[Getcompanyname] }
+						set_temp_variable = { shares_held_percentage = shares_held_percent_[Getcompanyname] }
+						}
+                    }
+                }
+                Getcompanyname = "[This.Getcompanyname]"
+            }
+            NOT = { check_variable = { share_holder = 0 } }
+        }
+        localization_key = "[?share_holder.GetName] [?shares_held] Y[?shares_held_percentage]% "
+    }
+    text = {
+        trigger = {
+            always = yes
+        }
+        localization_key = ""
+    }
+}
+defined_text = {
+	name = Gettotalshares
+
+	text = {
+		trigger = {
+			meta_trigger = {
+                text = {
+                    if = {
+						set_temp_variable = { total_outstanding_shares = global.total_shares_[Getcompanyname] }
+					}
+				}
+				Getcompanyname = "[This.Getcompanyname]"
+			}
+		}
+		localization_key = "[?total_outstanding_shares]"
+	}
+}
+defined_text = {
+	name = Getaratechowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Aratech_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Aratech_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Aratech_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getbaktoidowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  baktoid_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Baktoid_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = baktoid_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getblastechowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Blastech_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Blastech_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Blastech_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getcolicoidowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Colicoid_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Colicoid_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Colicoid_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getcorelliaowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Corellian_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Corellian_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getfree_dacowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Free_dac_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_FreeDac_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Free_dac_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Gethaorowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Haor_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Haor_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Haor_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Gethoerschowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Hoersch_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_HoerschKessel_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Hoersch_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getgeonosisowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Geonosis_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_HupplaPasa_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Geonosis_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getincomowner
+	text = {
+		trigger = {
+			NOT = {
+			any_country = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+	}
+		localization_key = "GFX_Incom_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Incom_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getrendiliowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  RendiliStarDrive_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Rendili_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = RendiliStarDrive_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getsienarowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  SienarFleetSystems_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Sienar_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = SienarFleetSystems_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getslayn_and_korpil_owner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Slayn_and_korpil_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_SlaynAndKorpil_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Slayn_and_korpil_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Gettaimandbakowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  Taimandbak_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_TaimAndBak_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = Taimandbak_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Gettransgalmagowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  TransGalMegIndustriesIncorporated_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_TransGalMeg_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}
+defined_text = {
+	name = Getubrikkianowner
+	text = {
+		trigger = {
+			NOT = {
+				any_country = {
+					has_country_flag =  UbrikkianIndustries_subsidiary
+				}
+			}
+		}
+		localization_key = "GFX_Ubrikkian_holo"
+	}
+	text = {
+		trigger = {
+			KUA = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_Kuat_holo"
+	}
+	text = {
+		trigger = {
+			IBC = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_IBC_holo"
+	}
+	text = {
+		trigger = {
+			CMG = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_CMG_holo"
+	}
+	text = {
+		trigger = {
+			TEC = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_TechnoUnion_holo"
+	}
+	text = {
+		trigger = {
+			FED = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_TradeFederation_holo"
+	}
+	text = {
+		trigger = {
+			CLA = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_Corellia_holo"
+	}
+	text = {
+		trigger = {
+			KAM = {
+				has_country_flag = UbrikkianIndustries_subsidiary
+			}
+		}
+		localization_key = "GFX_Kamino_holo"
+	}
+}

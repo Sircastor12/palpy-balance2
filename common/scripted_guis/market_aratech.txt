@@ -1,0 +1,68 @@
+scripted_gui = {
+	market_aratech = {
+		context_type = player_context
+		parent_window_name = "market_full_container"
+		window_name = "market_aratech_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					check_variable = { show_aratech_market > 0.0 }
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_market }
+				set_variable = { show_market = show } 
+			}
+			return_button_click = {
+				set_temp_variable = { show_aratech = 1 }
+				subtract_from_temp_variable = { show_aratech = show_aratech_market }
+				set_variable = { show_aratech_market = show_aratech }
+			}
+			74z_place_order_click = {
+				purchase_74z = yes
+			}
+			barc_place_order_click = {
+				purchase_barc = yes
+			}
+		}
+
+		ai_weights = {
+			74z_place_order_click = {
+				ai_will_do = {
+					factor = 0
+					modifier = {
+						add = 1000
+						has_equipment = {
+   							speed_bike_arc < 1
+						}
+					}
+					modifier = {
+						add = -400
+						has_tech = barc_tech
+					}
+				}
+			}
+			barc_place_order_click = {
+				ai_will_do = {
+					factor = 0
+					modifier = {
+						add = 1000
+						has_equipment = {
+   							speed_bike_arc < 1
+						}
+					}
+				}
+			}
+		}
+	}
+}

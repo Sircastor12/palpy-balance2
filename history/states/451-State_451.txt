@@ -1,0 +1,41 @@
+state={
+	id=451
+	name="STATE_451"
+	provinces={
+		40 207 632 904 1645 2555 2784 3123 3303 4620 4895 10833 10850 10902 10929 10940 10972 10986 11012 11027 11049 
+	}
+	manpower=2142857
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=3
+		oil=1
+		chromium=0
+	}
+
+  	history = {
+		owner=ROT
+		add_core_of = ROT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

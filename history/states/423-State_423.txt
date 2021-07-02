@@ -1,0 +1,40 @@
+state={
+	id=423
+	name="STATE_423"
+	provinces={
+		10 424 487 737 850 1378 1460 1866 1878 3170 3496 4136 4198 4281 4290 4468 4659 10440 10447 10462 10463 10464 10473 10484 10485 10486 10499 10501 10503 10511 10513 10523 10524 10527 10541 10544 10562 10563 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=1
+		chromium=0
+	}
+
+  	history = {
+		owner=KAM
+		add_core_of = KAM
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

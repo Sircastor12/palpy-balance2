@@ -1,0 +1,545 @@
+scripted_gui = {
+	market_rep_air_container = {
+		context_type = player_context
+		window_name = "market_rep_air_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = rep_air_open
+				}
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = rep_air_open
+			}
+			return_button_click = {
+				clr_country_flag = rep_air_open
+				set_country_flag = show_market
+			}
+			z95_place_order_click = {
+				purchase_z95 = yes
+			}
+			v19_place_order_click = {
+				purchase_v19 = yes
+			}
+			arc170_place_order_click = {
+				purchase_arc170 = yes
+			}
+			vwing_place_order_click = {
+				purchase_vwing = yes
+			}
+			btlb_place_order_click = {
+				purchase_btlb = yes
+			}
+			laat_place_order_click = {
+				purchase_laat = yes 
+			}
+			tiefighter_place_order_click = {
+				purchase_tiefighter = yes
+			}
+			tiebomber_place_order_click = {
+				purchase_tiebomber = yes
+			}
+			z95_autobuy_click = {
+				set_country_flag = z95_autobuy
+			}
+			z95_autobuy_off_click = {
+				clr_country_flag = z95_autobuy
+			}
+			v19_autobuy_click = {
+				set_country_flag = v19_autobuy
+			}
+			v19_autobuy_off_click = {
+				clr_country_flag = v19_autobuy
+			}
+			btlb_autobuy_click = {
+				set_country_flag = btlb_autobuy
+			}
+			btlb_autobuy_off_click = {
+				clr_country_flag = btlb_autobuy
+			}
+			laat_autobuy_click = {
+				set_country_flag = laat_autobuy
+			}
+			laat_autobuy_off_click = {
+				clr_country_flag = laat_autobuy
+			}
+			arc170_autobuy_click = {
+				set_country_flag = arc170_autobuy
+			}
+			arc170_autobuy_off_click = {
+				clr_country_flag = arc170_autobuy
+			}
+			vwing_autobuy_click = {
+				set_country_flag = vwing_autobuy
+			}
+			vwing_autobuy_off_click = {
+				clr_country_flag = vwing_autobuy
+			}
+		}
+		ai_weights = {
+			z95_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 105
+						has_deployed_air_force_size = {
+							size < 100
+							type = fighter
+						}
+					}
+					modifier = {
+						add = 100
+						has_deployed_air_force_size = {
+							size < 500
+							type = fighter
+						}
+						has_war = yes
+					}
+					modifier = {
+						add = -200
+						has_tech = v19_tech
+					}
+					modifier = {
+						add = -100
+						OR = {
+							NOT = {
+								TAG = REP
+							}
+						}
+					}
+					modifier = {
+						add = -200
+							check_variable = { global.z95 < 200}
+					}
+				}
+			}
+			v19_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 100
+						tag = REP
+						has_deployed_air_force_size = {
+							size < 2000
+							type = fighter
+						}
+						check_variable = { global.v19 > 100}
+					}
+				}
+			}
+			arc170_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -300
+						NOT = {
+							TAG = REP
+						}
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.arc170 < 100}
+					}
+					modifier = {
+						add = 130
+						has_deployed_air_force_size = {
+							size < 1000
+							type = fighter
+						}
+					}
+					modifier = {
+						add = -110
+						has_tech = vwing_tech	
+					}
+				}
+			}
+			vwing_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.vwing < 100}
+					}
+					modifier = {
+						add = 150
+						has_deployed_air_force_size = {
+							size < 2000
+							type = fighter
+						}
+					}
+				}
+			}
+			btlb_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						NOT = {
+							TAG = REP
+						}
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+						check_variable = { global.btlb < 100}
+					}
+					modifier = {
+						add = 100
+						has_deployed_air_force_size = {
+							size < 2000
+							type = CAS
+						}
+					}
+				}
+			}
+		}
+		properties = {
+			z95_owner = { image = "[Getincomowner]" }
+			v19_owner = { image = "[Getslayn_and_korpil_owner]" }
+			btlb_owner = { image = "[Getarakydeowner]" }
+			arc170_owner = { image = "[Getincomowner]" }
+			tiefighter_owner = { image = "[Getsienarowner]" }
+			tiebomber_owner = { image = "[Getsienarowner]" }
+		}
+		triggers = {
+			v19_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			arc170_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			vwing_place_order_click_enabled = {
+				has_global_flag = REP_tech_3
+			}
+			btlb_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			laat_place_order_click_enabled = {
+				has_global_flag = REP_tech_2
+			}
+			tiefighter_place_order_click_enabled = {
+				has_global_flag = REP_tech_4
+			}
+			tiebomber_place_order_click_enabled = {
+				has_global_flag = REP_tech_4
+			}
+			z95_autobuy_off_visible = {
+				has_country_flag = z95_autobuy
+			}
+			v19_autobuy_off_visible = {
+				has_country_flag = v19_autobuy
+			}
+			btlb_autobuy_off_visible = {
+				has_country_flag = btlb_autobuy
+			}
+			laat_autobuy_off_visible = {
+				has_country_flag = laat_autobuy
+			}
+			arc170_autobuy_off_visible = {
+				has_country_flag = arc170_autobuy
+			}
+			vwing_autobuy_off_visible = {
+				has_country_flag = vwing_autobuy
+			}
+		}
+	}
+	market_cis_air_container = {
+		context_type = player_context
+		window_name = "market_cis_air_container" 
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = CIS_air_open
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = CIS_air_open
+			}
+			return_button_click = {
+				clr_country_flag = CIS_air_open
+				set_country_flag = show_market
+			}
+			vulture_place_order_click = {
+				purchase_vulture = yes
+			}
+			c9979_place_order_click = {
+				purchase_c9979 = yes
+			}
+			rogue_place_order_click = {
+				purchase_rogue = yes
+			}
+			trifighter_place_order_click = {
+				purchase_trifighter = yes
+			}
+			hyena_place_order_click = {
+				purchase_hyena = yes
+			}
+			hmpgunship_place_order_click = {
+				purchase_hmpgunship = yes
+			}
+			nantex_place_order_click = {
+				purchase_nantex = yes
+			}
+			buzz_droids_place_order_click = {
+				purchase_buzz_droids = yes
+			}
+			vulture_autobuy_click = {
+				set_country_flag = vulture_autobuy
+			}
+			vulture_autobuy_off_click = {
+				clr_country_flag = vulture_autobuy
+			}
+		}
+		ai_weights = {
+			vulture_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 180
+						tag = CIS
+						has_deployed_air_force_size = {
+							size < 2000
+							type = fighter
+						}
+						check_variable = { global.vulture > 150 }
+					}
+					modifier = {
+						add = 180
+						is_cis_heavy_equipped = yes
+						NOT = {
+							tag = CIS
+						}
+						has_deployed_air_force_size = {
+							size < 1800
+							type = fighter
+						}
+						check_variable = { global.vulture > 150 }
+					}
+					modifier = {
+						add = 180
+						has_ideas = {
+							CIS_member
+							CIS_member_prewar
+						}
+						NOT = {
+							tag = CIS
+						}
+						has_deployed_air_force_size = {
+							size < 250
+							type = fighter
+						}
+						check_variable = { global.vulture > 150 }
+					}
+				}
+			}
+			trifighter_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 150
+						tag = CIS
+						has_deployed_air_force_size = {
+							size < 3500
+							type = fighter
+						}
+						check_variable = { global.trifighter > 150}
+					}
+					modifier = {
+						add = 150
+						has_ideas = {
+							CIS_member
+							CIS_member_prewar
+						}
+						has_deployed_air_force_size = {
+							size < 500
+							type = fighter
+						}
+						check_variable = { global.trifighter > 150}
+					}
+				}	
+			}
+			hyena_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 300
+						tag = CIS
+						has_deployed_air_force_size = {
+							size < 2000
+							type = cas
+						}
+						check_variable = { global.hyena > 150}
+					}
+					modifier = {
+						add = 150
+						has_ideas = {
+							OR = {
+								CIS_member
+								CIS_member_prewar
+							}
+						}
+						has_deployed_air_force_size = {
+							size < 150
+							type = cas
+						}
+						check_variable = { global.hyena > 150}
+					}
+				}
+			}
+			hmpgunship_place_order_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -500
+						NOT = {
+							has_idea = CIS_member
+							tag = FED
+							tag = CMG
+							tag = TEC
+							tag = CIS
+						}
+					}
+					modifier = {
+						add = -200
+						ROOT = {
+							has_country_flag = dontspendmoney
+						}
+					}
+					modifier = {
+						add = 150
+						is_cis_heavy_equipped = yes
+						has_deployed_air_force_size = {
+							size < 3500
+							type = cas
+						}
+					}	
+				}
+			}
+		}
+		properties = {
+			vulture_owner = { image = "[Gethaorowner]" }
+			c9979_owner = { image = "[Gethaorowner]" }
+			nantex_owner = { image = "[Getgeonosisowner]" }
+			hyena_owner = { image = "[Getbaktoidowner]" }
+			trifighter_owner = { image = "[Getcolicoidowner]" }
+			hmpgunship_owner = { image = "[Getbaktoidowner]" }
+			rogue_owner = { image = "[Getbaktoidowner]" }
+			buzz_droids_owner = { image = "[Getcolicoidowner]" }
+		}
+		triggers = {
+			rogue_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			trifighter_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			hyena_place_order_click_enabled = {
+				has_global_flag = CIS_tech_2
+			}
+			hmpgunship_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			buzz_droids_place_order_click_enabled = {
+				has_global_flag = CIS_tech_3
+			}
+			vulture_autobuy_off_visible = {
+				has_country_flag = vulture_autobuy
+			}
+		}
+	}
+	market_neutral_air_container = {
+		context_type = player_context
+		window_name = "market_neutral_air_container"
+
+		ai_enabled = {
+			always = yes
+		}
+		
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = neutral_air_open
+				}
+			}
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = neutral_air_open
+			}
+			return_button_click = {
+				clr_country_flag = neutral_air_open
+				set_country_flag = show_market
+			}
+		}
+	}
+}

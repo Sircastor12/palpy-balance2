@@ -1,0 +1,752 @@
+#legion gfx
+defined_text = {
+	name = GetCloneLegion
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "GFX_13"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "GFX_21"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "GFX_41"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "GFX_91"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "GFX_104"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "GFX_187"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "GFX_212"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "GFX_327"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "GFX_332"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "GFX_442"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "GFX_501"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "GFX_corus"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "GFX_doom"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "GFX_monnk"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "GFX_rancor"
+	}
+}
+#legion flag to set interface
+defined_text = {
+	name = GetTheCloneLegion
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "flag_13th"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "flag_21st"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "flag_41st"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "flag_91st"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "flag_104th"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "flag_187th"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "flag_212th"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "flag_327th"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "flag_332nd"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "flag_442nd"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "flag_501st"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "flag_coruscant"
+	}
+	text = {
+		trigger = {
+			state = 13
+		}
+		localization_key = "flag_doom"
+	}
+	text = {
+		trigger = {
+			state = 14
+		}
+		localization_key = "flag_monkey"
+	}
+	text = {
+		trigger = {
+			state = 15
+		}
+		localization_key = "flag_rancor"
+	}
+}
+#legion name
+defined_text = {
+	name = GetTheCloneLegionName
+	text = {
+		trigger = {
+			has_country_flag = flag_13th
+		}
+		localization_key = "13th Battalion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_21st
+		}
+		localization_key = "21st Nova Corps"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_41st
+		}
+		localization_key = "41st Elite Corps"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_91st
+		}
+		localization_key = "91st Mobile Recon Corps"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_104th
+		}
+		localization_key = "104th Wolfpack Battalion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_187th
+		}
+		localization_key = "187th Legion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_212th
+		}
+		localization_key = "212th Attack Battalion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_327th
+		}
+		localization_key = "327th Star Corps"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_332nd
+		}
+		localization_key = "332nd Company"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_442nd
+		}
+		localization_key = "442nd Siege Battalion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_501st
+		}
+		localization_key = "501st Legion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_coruscant
+		}
+		localization_key = "Coruscant Guard"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_doom
+		}
+		localization_key = "Doom Legion"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_monkey
+		}
+		localization_key = "Monnk Company"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_rancor
+		}
+		localization_key = "Rancor Battalion"
+	}
+}
+#commander image
+defined_text = {
+	name = GetTheCloneLegionCommanderImage
+	text = {
+		trigger = {
+			has_country_flag = flag_13th
+		}
+		localization_key = "GFX_commander_13"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_21st
+		}
+		localization_key = "GFX_commander_Bacara"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_41st
+		}
+		localization_key = "GFX_commander_Gree"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_91st
+		}
+		localization_key = "GFX_commander_Neo"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_104th
+		}
+		localization_key = "GFX_commander_Wolffe"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_187th
+		}
+		localization_key = "GFX_commander_187"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_212th
+		}
+		localization_key = "GFX_commander_Cody"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_327th
+		}
+		localization_key = "GFX_commander_Bly"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_332nd
+		}
+		localization_key = "GFX_commander_Jesse"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_442nd
+		}
+		localization_key = "GFX_commander_442"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_501st
+		}
+		localization_key = "GFX_commander_Rex"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_coruscant
+		}
+		localization_key = "GFX_commander_Fox"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_doom
+		}
+		localization_key = "GFX_commander_Doom"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_monkey
+		}
+		localization_key = "GFX_commander_Monnk"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_rancor
+		}
+		localization_key = "GFX_commander_Colt"
+	}
+}
+#commander name
+defined_text = {
+	name = GetTheCloneLegionCommanderName
+	text = {
+		trigger = {
+			has_country_flag = flag_13th
+		}
+		localization_key = "Captain Albedo"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_21st
+		}
+		localization_key = "Commander Bacara"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_41st
+		}
+		localization_key = "Commander Gree"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_91st
+		}
+		localization_key = "Commander Neyo"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_104th
+		}
+		localization_key = "Commander Wolffe"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_187th
+		}
+		localization_key = "Commander Chase"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_212th
+		}
+		localization_key = "Commander Cody"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_327th
+		}
+		localization_key = "Commander Bly"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_332nd
+		}
+		localization_key = "Captain Vaughn"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_442nd
+		}
+		localization_key = "Captain Mav"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_501st
+		}
+		localization_key = "Captain Rex"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_coruscant
+		}
+		localization_key = "Commander Fox"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_doom
+		}
+		localization_key = "Commander Doom"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_monkey
+		}
+		localization_key = "Commander Monkk"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_rancor
+		}
+		localization_key = "ARC Trooper Colt"
+	}
+}
+#legion description
+defined_text = {
+	name = GetTheCloneLegionDescription
+	text = {
+		trigger = {
+			has_country_flag = flag_13th
+		}
+		localization_key = "13th_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_21st
+		}
+		localization_key = "21st_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_41st
+		}
+		localization_key = "41st_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_91st
+		}
+		localization_key = "91st_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_104th
+		}
+		localization_key = "104th_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_187th
+		}
+		localization_key = "187th_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_212th
+		}
+		localization_key = "212th_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_327th
+		}
+		localization_key = "327th_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_332nd
+		}
+		localization_key = "332nd_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_442nd
+		}
+		localization_key = "442nd_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_501st
+		}
+		localization_key = "501st_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_coruscant
+		}
+		localization_key = "Coruscant_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_doom
+		}
+		localization_key = "Doom_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_monkey
+		}
+		localization_key = "Monnk_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_rancor
+		}
+		localization_key = "Rancor_desc"
+	}
+}
+#legion strengths
+defined_text = {
+	name = GetTheCloneLegionStrengths
+	text = {
+		trigger = {
+			has_country_flag = flag_13th
+		}
+		localization_key = "13th_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_21st
+		}
+		localization_key = "21st_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_41st
+		}
+		localization_key = "41st_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_91st
+		}
+		localization_key = "91st_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_104th
+		}
+		localization_key = "104th_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_187th
+		}
+		localization_key = "187th_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_212th
+		}
+		localization_key = "212th_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_327th
+		}
+		localization_key = "327th_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_332nd
+		}
+		localization_key = "332nd_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_442nd
+		}
+		localization_key = "442nd_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_501st
+		}
+		localization_key = "501st_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_coruscant
+		}
+		localization_key = "Coruscant_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_doom
+		}
+		localization_key = "Doom_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_monkey
+		}
+		localization_key = "Monnk_strengths"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_rancor
+		}
+		localization_key = "Rancor_strengths"
+	}
+}
+#Legion price
+defined_text = {
+	name = GetTheCloneLegionPrice
+	text = {
+		trigger = {
+			has_country_flag = flag_13th
+		}
+		localization_key = "80"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_21st
+		}
+		localization_key = "100"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_41st
+		}
+		localization_key = "100"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_91st
+		}
+		localization_key = "100"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_104th
+		}
+		localization_key = "80"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_187th
+		}
+		localization_key = "100"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_212th
+		}
+		localization_key = "120"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_327th
+		}
+		localization_key = "110"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_332nd
+		}
+		localization_key = "35"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_442nd
+		}
+		localization_key = "100"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_501st
+		}
+		localization_key = "130"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_coruscant
+		}
+		localization_key = "60"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_doom
+		}
+		localization_key = "100"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_monkey
+		}
+		localization_key = "75"
+	}
+	text = {
+		trigger = {
+			has_country_flag = flag_rancor
+		}
+		localization_key = "85"
+	}
+}

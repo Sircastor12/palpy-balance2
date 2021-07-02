@@ -1,0 +1,41 @@
+state={
+	id=168
+	name="STATE_168"
+	provinces={
+		7 129 464 1884 2166 2185 2634 3025 3222 3238 3288 3471 3678 4387 4748 4989 6363 6406 6420 6426 6441 6442 6465 6475 6476 6486 6494 6495 6506 6512 6520 6521 6537 6549 6558 6568 6598 6602 
+	}
+	manpower=6400000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=5
+	}
+
+  	history = {
+		owner=REP
+		add_core_of = REP
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=2
+			air_base=0
+
+			3222 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			6475 20
+		}
+	}
+}
+

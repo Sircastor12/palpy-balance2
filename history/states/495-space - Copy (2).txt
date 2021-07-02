@@ -1,0 +1,14 @@
+state={
+	id=523
+	name="Empty Space"
+	provinces={
+		11612 11687 11755 11785 11834 11894 11961 
+	}
+	history = {
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	impassable = yes
+}
+

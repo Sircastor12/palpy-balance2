@@ -1,0 +1,40 @@
+state={
+	id=315
+	name="STATE_315"
+	provinces={
+		256 728 820 1874 2037 2350 2415 3336 3393 3654 3924 4097 4432 4911 5037 8702 8709 8715 8717 8728 8733 8736 8746 8752 8755 8757 8766 8767 8779 8780 8782 8791 8792 8801 8802 8812 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=QUN
+		add_core_of = QUN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			2037 30
+		}
+	}
+}
+

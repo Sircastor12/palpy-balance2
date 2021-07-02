@@ -1,0 +1,135 @@
+technologies = {
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	C_501_clone_tech = {
+
+		enable_subunits = {
+			REP_501_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	C_104_clone_tech = {
+
+		enable_subunits = {
+			REP_104_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+	
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	C_212_clone_tech = {
+
+		enable_subunits = {
+			REP_212_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	C_41_clone_tech = {
+
+		enable_subunits = {
+			REP_41_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+	
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	C_327_clone_tech = {
+
+		enable_subunits = {
+			REP_327_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	C_13_clone_tech = {
+
+		enable_subunits = {
+			REP_13_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+	
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	C_monnk_clone_tech = {
+
+		enable_subunits = {
+			REP_monnk_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

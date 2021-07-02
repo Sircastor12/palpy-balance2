@@ -1,0 +1,25 @@
+﻿l_english:
+
+  get_super_event_title:0 "-"
+  GFX_CLONE_WARS:0 "The Clone Wars Begin"
+  GFX_CLONE_WARS_TEXT:0 "Victory, you say? Master Obi-Wan, not victory. The shroud of the dark side has fallen. Begun the Clone War has. \n§Y-Yoda-§!"
+
+  get_super_event_title:0 "-"
+  GFX_NABOO_INVASION:0 "Invasion of Naboo"
+  GFX_NABOO_INVASION_TEXT:0 "The situation here is not what it seems. There is something else behind all this, Your Highness. There is no logic in the Federation's move here. \n§Y-Qui-Gon Jinn-§!"
+
+  get_super_event_title:0 "-"
+  GFX_RAXUS_ADDRESS:0 "The Raxus Address"
+  GFX_RAXUS_ADDRESS_TEXT:0 "This new order will serve the people, not corrupt politicians. It will utilize its power in service to good, uninhibited by a self-righteous, tyrannical code. \n§Y-Count Dooku-§!"
+
+  get_super_event_title:0 "-"
+  GFX_ORDER_66:0 "Order 66"
+  GFX_ORDER_66_TEXT:0 "Execute Order 66." \n§Y-Darth Sidious-§!"
+
+  get_super_event_title:0 "-"
+  GFX_EMPIRE:0 "Formation of a Galactic Empire"
+  GFX_EMPIRE_TEXT:0 "Everything That Has Transpired Has Done So According To My Design. \n§Y-Emperor Palpatine-§!"
+
+  get_super_event_title:0 "-"
+  GFX_CIS_VICTORY:0 "CIS Victory"
+  GFX_CIS_VICTORY_TEXT:0 "A Failed Apprentice Makes A Foolish Master. \n§Y-Darth Tyrannus-§!"

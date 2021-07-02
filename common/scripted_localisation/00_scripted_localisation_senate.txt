@@ -1,0 +1,45 @@
+
+defined_text = {
+	name = Getsenateparty
+	text = {
+		trigger = {
+			ROOT = {
+				is_militarist = yes
+			}
+		}
+		localization_key = "GFX_senate_militarist"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				is_pacifist = yes
+			}
+		}
+		localization_key = "GFX_senate_pacifists"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				is_corporation = yes
+			}
+		}
+		localization_key = "GFX_senate_corporate"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				is_outterrim_world = yes
+			}
+		}
+		localization_key = "GFX_senate_outer_rim"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				original_tag = REP
+			}
+		}
+		localization_key = "GFX_senate_leader"
+	}
+}
+

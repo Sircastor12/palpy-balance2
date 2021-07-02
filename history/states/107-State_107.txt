@@ -1,0 +1,40 @@
+state={
+	id=107
+	name="STATE_107"
+	provinces={
+		83 88 330 368 744 780 814 843 1064 1338 1652 1667 2222 2787 3511 3856 3940 4248 5552 5560 5561 5568 5578 5582 5583 5588 5592 5593 5594 5599 5602 5609 5611 5615 5616 5620 5623 5626 5630 
+	}
+	manpower=1250000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=SER
+		add_core_of = SER
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			5602 50
+		}
+	}
+}
+

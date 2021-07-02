@@ -1,0 +1,21 @@
+spriteTypes = { 
+##Icon For: Naboo Crisis Escalates!
+SpriteType = { 
+	name = "GFX_naboocrisisescalates" 
+	texturefile = "gfx/interface/event_gfx/GFX_naboocrisisescalates.tga" 
+	} 
+##Icon For: Raxus address
+SpriteType = { 
+	name = "GFX_raxusaddress" 
+	texturefile = "gfx/interface/event_gfx/relaystation.dds" 
+	}
+SpriteType = { 
+	name = "GFX_raxus" 
+	texturefile = "gfx/event_pictures/Raxus.tga" 
+	} 
+##Icon For: hutt bounty hunters
+SpriteType = { 
+	name = "GFX_huttbhguild" 
+	texturefile = "gfx/interface/event_gfx/huttbhguild.dds" 
+	} 
+}

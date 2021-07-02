@@ -1,0 +1,41 @@
+state={
+	id=143
+	name="STATE_143"
+	provinces={
+		150 321 1391 1743 1770 1792 2336 4318 4947 6074 6079 6089 6092 6093 6098 6104 6105 6111 6113 6115 6121 6124 6136 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=4
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=5
+			air_base=0
+
+			1770 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			6092 15
+		}
+	}
+}
+

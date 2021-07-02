@@ -1,0 +1,23 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = {
+							tag = TET
+						}
+					has_government = communism
+				}
+				add_to_array = { global.consortium_countries = THIS.id }
+				}
+			}
+
+			DAN = { set_country_flag = zygerrian_slave_trade }
+			SER = { set_country_flag = zygerrian_slave_trade }
+			HON = { set_country_flag = zygerrian_slave_trade }
+			ZYG = { set_variable = { var = slaves value = 4000 } }
+
+		}
+	}
+}

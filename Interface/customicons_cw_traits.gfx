@@ -1,0 +1,11 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_trait_jedi_knight" 
+		texturefile = "gfx/interface/traits/trait_jedi_knight.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_trait_jedi_master" 
+		texturefile = "gfx/interface/traits/trait_jedi_master.dds" 
+	}
+}
+ 

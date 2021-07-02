@@ -1,0 +1,442 @@
+add_namespace = REP_Investigation
+
+news_event = { #
+	id = REP_Investigation.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.1"}
+	title = "Anti-Corruption Investigations Have Begun"
+	desc = REP_Investigation.1.d
+	picture = GFX_event_repgovernment
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Investigate Senators from the Core."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		every_country = {
+			limit = {
+				is_core_world = yes
+			}
+			add_to_variable = { secessionpoint = 1 }
+		}
+		custom_effect_tooltip = core_secession_point_tt
+		news_event = {
+		    id = REP_Investigation.2
+		    days = 5
+		    random = 70
+		}
+		swap_ideas = {
+		    remove_idea = internal_corruption
+		    add_idea = internal_corruption_reduced
+		}
+	}
+	option = { #
+		name = "Investigate Senators from the Mid Rim."
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		every_country = {
+			if = {
+				limit = {
+					is_midrim_world = yes
+				}
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = midrim_secession_point_tt
+		news_event = {
+		    id = REP_Investigation.2
+		    days = 5
+		    random = 70
+		}
+		swap_ideas = {
+		    remove_idea = internal_corruption
+		    add_idea = internal_corruption_reduced
+		}
+	}
+	option = { #
+		name = "Investigate Senators from the Outer Rim."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		every_country = {
+			if = {
+				limit = {
+					is_outterrim_world = yes
+				}
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = outerrim_secession_point_tt
+		news_event = {
+		    id = REP_Investigation.2
+		    days = 5
+		    random = 70
+		}
+		swap_ideas = {
+		    remove_idea = internal_corruption
+		    add_idea = internal_corruption_reduced
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.2"}
+	title = "Megacorporation Investigation"
+	desc = REP_Investigation.2.d
+	picture = GFX_senatecorpsupport
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Investigate connections to the Trade Federation."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		FED = {
+			add_to_variable = { secessionpoint = 1 }
+		}
+		custom_effect_tooltip = fed_secession_point_tt
+		news_event = {
+		    id = REP_Investigation.3
+		    days = 5
+		    random = 70
+		}
+	}
+	option = { #
+		name = "Investigate connections to the Techno Union."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		TEC = {
+			add_to_variable = { secessionpoint = 1 }
+		}
+		custom_effect_tooltip = tec_secession_point_tt
+		news_event = {
+		    id = REP_Investigation.3
+		    days = 5
+		    random = 70
+		}
+	}
+	option = { #
+		name = "Investigate connections to the Commerce Guild."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		CMG = {
+			add_to_variable = { secessionpoint = 1 }
+		}
+		custom_effect_tooltip = cmg_secession_point_tt
+		news_event = {
+		    id = REP_Investigation.3
+		    days = 5
+		    random = 70
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "Lobbying Rules in the Republic"
+	desc = "Unrestricted lobbying and campaign donations from megacorporations has increasingly become a problem in the Republic Senate. Should we allow this to continue?"
+	picture = GFX_event_senatemoney
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Allow lobbying to continue."
+		ai_chance = {
+			factor = 01
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+		every_country = {
+			if = {
+				limit = {
+					NOT = {
+						is_corporation = yes
+					}
+				}
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = noncorporation_secession_point_tt
+	}
+	option = { #
+		name = "Ban lobbying from the Republic Senate."
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		set_country_flag = lobbyingnomore
+		every_country = {
+			if = {
+				limit = {
+					is_corporation = yes
+				}
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = corporation_secession_point_tt
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "Another Failed Assassination Attempt!"
+	desc = "There has been another attempted assassination on Senator Padme Amidala of Naboo. An investigation should soon follow."
+	picture = GFX_event_padmeamidalassas2
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		focus_progress = {
+   			focus = REP_send_jedi_to_protect_padme
+    		progress > 0.8
+		}
+	}
+
+	option = {
+		name = "A shocking development."
+		ai_chance = {
+			factor = 1
+		}
+		news_event = {
+			id = REP_Investigation.5
+			hours = 5
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "The Chase!"
+	desc = "Two Jedi Knights were seen chasing a bounty hunter through the streets of Coruscant!."
+	picture = GFX_thechase
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "A Wild Chase."
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "Failed Assassination Atempt"
+	desc = "An assassination attempt on the Senator Padme Amidala of Naboo has failed."
+	picture = GFX_event_padmeamidalassas
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "These are uneasy times."
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "The Dart"
+	desc = "Dexter from Dexter's Diner has led the investigation to an Outer Rim World called Kamino. However, the planet cannot be found in the Jedi Archives."
+	picture = GFX_dexter
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+   			focus = REP_the_investigation
+    		progress > 0.4
+		}
+	}
+
+	option = {
+		name = "Perhaps the records are incomplete?"
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "Kamino Discovered!"
+	desc = "While investigating the assassination attempt of Padme Amidala, Jedi Master Obi-Wan Kenobi has discovered the Outer Rim planet Kamino."
+	picture = GFX_kamino
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+   			focus = REP_the_investigation
+    		progress > 0.6
+		}
+	}
+
+	option = {
+		name = "A wild discovery."
+		ai_chance = {
+			factor = 1
+		}
+		set_global_flag = kaminodiscovered
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "An Army Discovered!"
+	desc = "While investigating the assassination attempt of Padme Amidala, Jedi Master Obi-Wan Kenobi has discovered a mysterious army for the Galactic Republic. It's origins are unknown."
+	picture = GFX_clonesdiscovered
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+   			focus = REP_the_investigation
+    		progress > 0.8
+		}
+	}
+
+	option = {
+		name = "Begin negotiations to accept the army."
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "A Suspect in the Case"
+	desc = "Jedi Master Obi-Wan Kenobi has found a suspect in the attempted assassination of Senator Padme Amidala by the name of Jango Fett on Kamino."
+	picture = GFX_jangofettkamino
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+   			focus = REP_the_investigation
+    		progress > 0.99
+		}
+	}
+
+	option = {
+		name = "Interesting."
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "Clone Army at our Disposal!"
+	desc = "We have closed the deal with the Kaminoans. They will support our efforts to build a new army after the passing of the Military Creation Act."
+	picture = GFX_event_clonearmy_agreementreached
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+   			focus = REP_chase_the_bounty_hunter
+    		progress > 0.3
+		}
+	}
+
+	option = {
+		name = "Negotiations Complete."
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			set_country_flag = the_clone_army
+			load_oob = REP_initialclone
+			KAM = {
+				add_ideas = {
+					REP_member_prewar
+				}
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REP_Investigation.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event REP_Investigation.3"}
+	title = "Separatist Stronghold Discovered!"
+	desc = REP_Investigation.12.d
+	picture = GFX_geoarmydiscovered
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		focus_progress = {
+   			focus = REP_chase_the_bounty_hunter
+    		progress > 1.0
+		}
+	}
+
+	option = {
+		name = "We must rescue him."
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

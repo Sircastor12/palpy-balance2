@@ -1,0 +1,23 @@
+add_namespace = ald
+
+news_event = {
+	id = ald.1
+	title = "Retirement of Bail Antillies"
+	desc = "Bail Organa becomes senator for Alderaan"
+	picture = GFX_event_tarkinpromoted
+	major = no
+    
+    is_triggered_only = yes
+
+immediate = {
+ERI = {
+set_country_flag = tarkinpromoted
+}
+}
+	
+        option = {
+		   name = "Congratulations Governor Tarkin!"
+		   trigger = { 
+	    }	                   
+     }
+   }

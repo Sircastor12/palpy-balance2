@@ -1,0 +1,41 @@
+state={
+	id=322
+	name="STATE_322"
+	provinces={
+		730 791 859 933 2159 2362 2785 2884 3219 3255 3406 3657 3694 3716 3918 3927 4558 8808 8816 8822 8826 8827 8834 8836 8839 8846 8848 8851 8852 8855 8860 8864 8872 8881 8884 8885 8894 8896 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BEA
+		add_core_of = BEA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			322 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

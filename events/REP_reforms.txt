@@ -1,0 +1,1163 @@
+add_namespace = REFORM
+
+news_event = { #Military creation act
+	id = REFORM.1
+	title = "Military Creation Act Passed!"
+	desc = "The Republic Senate has passed the Military Creation Act."
+	picture = GFX_clonesdiscovered
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = militarycreationacttofloor
+		clr_global_flag = militarycreationacttofloor
+		clr_global_flag = actonfloor
+		set_global_flag = militarycreationactpassed
+		set_variable = { global.days_remaining < 0 }
+		add_war_support = 0.15
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.14
+			}
+		}
+	}
+}
+
+news_event = { #Dangerous Ideas act
+	id = REFORM.2
+	title = "Dangerous Ideas Act Passed!"
+	desc = "The Republic Senate has passed the Dangerous Ideas Act."
+	picture = GFX_dangerousideas
+
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = dangerousideasacttofloor
+		clr_global_flag = dangerousideasacttofloor
+		clr_global_flag = actonfloor
+		set_global_flag = dangerousideasactpassed
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.15
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REFORM.3
+	title = "Increased Police Powers Act Passed!"
+	desc = "The Republic Senate has passed the Increased Police Powers Act."
+	picture = GFX_policepowersact
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = increasedpolicepowersacttofloor
+		clr_global_flag = increasedpolicepowersacttofloor
+		clr_global_flag = actonfloor
+		set_global_flag = increasedpolicepowersactpassed
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.16
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REFORM.4
+	title = "Corporate Sanctions Act Passed!"
+	desc = "The Republic Senate has passed the Corporate Sanctions Act."
+	picture = GFX_sanctions
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = corporatesanctionsacttofloor
+		clr_global_flag = corporatesanctionsacttofloor
+		clr_global_flag = actonfloor
+		set_global_flag = corporatesanctionsactpassed
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.17
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REFORM.5
+	title = "The Security Act Passed!"
+	desc = "The Republic Senate has passed the The Security Act."
+	#picture = 
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+        check_variable = { global.days_remaining < 0 }
+		REP = {
+        	has_country_flag = security_actfloor
+		}
+        check_variable = { global.yay > global.nay }
+	}
+
+	
+
+	immediate = {
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		set_global_flag = security_actpassed
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = security_actfloor
+	}
+}
+
+news_event = { #
+	id = REFORM.6
+	title = "The Galactic Militarization Act Passed!"
+	desc = "The Republic Senate has passed the The Galactic Militarization Act."
+	#picture = 
+	
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+        check_variable = { global.days_remaining < 0 }
+		REP = {
+        	has_country_flag = galacticmilitarizationfloor
+		}
+        check_variable = { global.yay > global.nay }
+	}
+
+	
+
+	immediate = {
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		set_global_flag = galacticmilitarizationpassed
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = galacticmilitarizationfloor
+	}
+}
+
+news_event = { #
+	id = REFORM.7
+	title = "The Fire With Fire Act has Passed!"
+	desc = "The Republic Senate has passed the Fire With Fire Act."
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+        check_variable = { global.days_remaining < 0 }
+		REP = {
+        	has_country_flag = firewithfirefloor
+		}
+        check_variable = { global.yay > global.nay }
+	}
+
+	
+
+	immediate = {
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		set_global_flag = firewithfirepassed
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = firewithfirefloor
+	}
+}
+
+news_event = { #
+	id = REFORM.8
+	title = "The Financial Reform Act has Passed!"
+	desc = "The Republic Senate has passed the Financial Reform Act."
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+        check_variable = { global.days_remaining < 0 }
+		REP = {
+        	has_country_flag = financialreformfloor
+		}
+        check_variable = { global.yay > global.nay }
+	}
+
+	
+
+	immediate = {
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		set_global_flag = financialreformpassed
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = financialreformfloor
+	}
+}
+
+news_event = { #
+	id = REFORM.9
+	title = "The Military Enhancement Bill has Passed!"
+	desc = "The Republic Senate has passed the Military Enhancement Bill."
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+        check_variable = { global.days_remaining < 0 }
+		REP = {
+        	has_country_flag = militaryenhancementfloor
+		}
+        check_variable = { global.yay > global.nay }
+	}
+
+	
+
+	immediate = {
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		set_global_flag = militaryenhancementpassed
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = militaryenhancementfloor
+	}
+}
+
+news_event = { #
+	id = REFORM.10
+	title = "The Sector Governance Decree has Passed!"
+	desc = "The Republic Senate has passed the Sector Governance Decree."
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+        check_variable = { global.days_remaining < 0 }
+		REP = {
+        	has_country_flag = sectorgovernancedecreefloor
+		}
+        check_variable = { global.yay > global.nay }
+	}
+
+	
+
+	immediate = {
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		set_global_flag = sectorgovernancedecreepassed
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = sectorgovernancedecreefloor
+	}
+}
+
+news_event = { #
+	id = REFORM.11
+	title = "The Ruusan Reformation has been Repealed!"
+	desc = "The Republic Senate has repealed the Ruusan Reformation. The capabilities of our armed forces will no longer be restricted."
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		every_country = {
+			remove_ideas = {
+				ruusan_nerf_army
+				ruusan_nerf_nav
+				ruusan_nerf_army_small
+				ruusan_nerf_nav_small
+			}
+		}
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = ruusanreformationfloor
+		clr_global_flag = ruusanrepealtofloor
+		clr_global_flag = actonfloor
+		set_global_flag = ruusanreformationpassed
+		set_variable = { global.days_remaining < 0 }
+		add_war_support = 0.15
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.18
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REFORM.12
+	title = "The Emergency Powers Act has Passed!"
+	desc = "The Republic Senate has passed the Emergency Powers Act."
+	picture = GFX_emergencypowers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clr_global_flag = actonfloor
+		set_global_flag = emergencypowersactpassed
+		clr_global_flag = emergencypowersacttofloor
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = emergencypowersacttofloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					ROOT = {
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.13
+			}
+		}
+	}
+}
+###FALSE EVENTS###
+news_event = { #
+	id = REFORM.13
+	title = "The Emergency Powers Act has Passed!"
+	desc = "The Republic Senate has passed the Emergency Powers Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.14
+	title = "Military Creation Act Passed!"
+	desc = "The Republic Senate has passed the Military Creation Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+		add_war_support = 0.10
+	}
+}
+
+news_event = { #
+	id = REFORM.15
+	title = "Dangerous Ideas Act Passed!"
+	desc = "The Republic Senate has passed the Dangerous Ideas Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REFORM.16
+	title = "Increased Police Powers Act Passed!"
+	desc = "The Republic Senate has passed the Increased Police Powers Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = REFORM.17
+	title = "Corporate Sanctions Act Passed!"
+	desc = "The Republic Senate has passed the Corporate Sanctions Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.18
+	title = "The Ruusan Reformation has been Repealed!"
+	desc = "The Republic Senate has repealed the Ruusan Reformation. The capabilities of our armed forces will no longer be restricted."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+		remove_ideas = {
+			ruusan_nerf_army
+			ruusan_nerf_nav 
+		}
+	}
+}
+news_event = { #Military creation act fail
+	id = REFORM.19
+	title = "Military Creation Act Vote Fails!"
+	desc = "The Republic Senate has failed to pass the Military Creation Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Very Unfortunate."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = militarycreationacttofloor
+		clr_global_flag = militarycreationacttofloor
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.20
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.20
+	title = "Military Creation Act Vote Fails!"
+	desc = "The Republic Senate has failed to pass the Military Creation Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.21
+	title = "The Emergency Powers Act has Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Emergency Powers Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = REP
+		}
+		clr_global_flag = actonfloor
+		clr_global_flag = emergencypowersacttofloor
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = emergencypowersacttofloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.22
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.22
+	title = "The Emergency Powers Act has Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Emergency Powers Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.23
+	title = "The Ruusan Reformation has NOT been Repealed!"
+	desc = "The Republic Senate has failed to repeal the Ruusan Reformation. The capabilities of our armed forces will continue to be restricted."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = ruusanreformationfloor
+		clr_global_flag = ruusanrepealtofloor
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.24
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.24
+	title = "The Repeal of the Ruusan Reformation has Failed!"
+	desc = "The Republic Senate has failed to repeal the Ruusan Reformation."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #Dangerous Ideas act
+	id = REFORM.25
+	title = "Dangerous Ideas Act Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Dangerous Ideas Act."
+	picture = GFX_dangerousideas
+
+	fire_only_once = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = dangerousideasacttofloor
+		clr_global_flag = dangerousideasacttofloor
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.26
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.26
+	title = "Dangerous Ideas Act Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Dangerous Ideas Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.27
+	title = "Increased Police Powers Act Has Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Increased Police Powers Act."
+	picture = GFX_policepowersact
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = increasedpolicepowersacttofloor
+		clr_global_flag = increasedpolicepowersacttofloor
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.28
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.28
+	title = "Increased Police Powers Act Has Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Increased Police Powers Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.29
+	title = "Corporate Sanctions Act Has Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Corporate Sanctions Act."
+	picture = GFX_sanctions
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Interesting."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = { factor = 100 }
+		clear_variable = global.yay
+		clear_variable = global.nay
+        clr_country_flag = corporatesanctionsacttofloor
+		clr_global_flag = corporatesanctionsacttofloor
+		clr_global_flag = actonfloor
+		set_variable = { global.days_remaining < 0 }
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = league_of_nations_voted_yes
+				clr_country_flag = league_of_nations_voted_no
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					tag = REP
+				}
+			}
+			news_event = {
+				id = REFORM.30
+			}
+		}
+	}
+}
+news_event = { #
+	id = REFORM.30
+	title = "Corporate Sanctions Act Has Failed to Pass!"
+	desc = "The Republic Senate has failed to pass the Corporate Sanctions Act."
+	picture = GFX_emergencypowers
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Interesting."
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				tag = REP
+			}
+		}
+	}
+}

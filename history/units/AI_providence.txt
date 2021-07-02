@@ -1,0 +1,16 @@
+Units = {
+	fleet = {
+		name = "CIS Fleet"
+		naval_base = 64 #Neimoidia
+		task_force = {
+			name = "CIS Fleet"
+			location = 64 # Neimoidia
+			ship = { name = "Providence-Class" definition = carrier equipment = { providence_equipment = { amount = 1 owner = CIS } }	
+				air_wings = { 
+					vulture_fighter_equip =  { owner = CIS amount = 150 }
+					hyena_bomber_equip = { owner = CIS amount = 100 }
+				}
+			}
+		}
+	}	
+}

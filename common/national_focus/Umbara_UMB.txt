@@ -1,0 +1,746 @@
+focus_tree = {
+	id = UMB
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UMB
+		}
+	}
+	#Focus for Stay Loyal
+	focus = {
+		id = Umbara_stay_loyal
+		icon = GFX_UMB_stayloyal
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_mee_deechi }
+		available = { has_government = democratic }
+		mutually_exclusive = { focus = Umbara_switch_sides }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.20
+				}
+	}
+}
+	#Focus for Adapt to our climate
+	focus = {
+		id = Umbara_adapt_to_our_climate
+		icon = GFX_UMB_adopttoourclimate
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_the_umbaran_spirit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+     		remove_idea = UMB_idea_hostile_environment
+     		add_idea = UMB_idea_adapting_hostile_environment
+			}
+		}
+	}
+
+	#Focus for An Industrial Umbara
+	focus = {
+		id = Umbara_an_industrial_umbara
+		icon = GFX_UMB_IndustrialUmbara
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_adapt_to_our_climate }
+		ai_will_do = {
+			factor = 1
+		}
+				completion_reward = {
+			290 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+
+				}
+			}
+		}
+	}
+
+	#Focus for A Professional Military
+	focus = {
+		id = Umbara_a_professional_military
+		icon = GFX_UMB_ProfessionalMilitary
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_our_military }
+		mutually_exclusive = { focus = Umbara_a_militia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+		}
+	}
+	}
+
+	#Focus for Prepare for the Republic
+	focus = {
+		id = Umbara_prepare_for_the_republic
+		icon = GFX_UMB_PreparefortheRepublic
+		x = 17
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_offer_assistance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = {
+					all_provinces = yes
+					limit_to_coastal = yes
+				}
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+
+	#Focus for Defend our Homeland!
+	focus = {
+		id = Umbara_defend_our_homeland
+		icon = GFX_UMB_Defend_our_Homeland
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_a_militia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UMB_defense
+		}
+	}
+
+	#Focus for An Armored Force
+	focus = {
+		id = Umbara_an_armored_force
+		icon = GFX_UMB_ArmoredForce
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_a_professional_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	#Focus for Arms Industry
+	focus = {
+		id = Umbara_arms_industry
+		icon = GFX_UMB_ArmsIndustry
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_build_taller }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				290 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for A Militia
+	focus = {
+		id = Umbara_a_militia
+		icon = GFX_UMB_Militia
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_our_military }
+		mutually_exclusive = { focus = Umbara_a_professional_military }
+		ai_will_do = {
+			factor = 1
+		}
+	completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+		}
+	}
+}
+
+	#Focus for Technological Superiority
+	focus = {
+		id = Umbara_technological_superiority
+		icon = GFX_UMB_TechnologicalSuperiority
+		x = 18
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_the_umbaran_spirit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Expand our Research
+	focus = {
+		id = Umbara_expand_our_research
+		icon = GFX_UMB_ExpandourResearch
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_technological_superiority }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UMB_Research
+		}
+	}
+
+	#Focus for Offer Assistance
+	focus = {
+		id = Umbara_offer_assistance
+		icon = GFX_UMB_OfferAssistance
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_switch_sides }
+		available = {
+			CIS = {
+				has_war_with = REP
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = REP
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for Pacify the wildlife
+	focus = {
+		id = Umbara_pacify_the_wildlife
+		icon = GFX_UMB_Pacifythewildlife
+		x = 0
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_an_industrial_umbara }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = UMB_idea_adapting_hostile_environment
+		}
+	}
+
+	#Focus for Continue Lobbying
+	focus = {
+		id = Umbara_continue_lobbying
+		icon = GFX_UMB_continuelobbying
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_stay_loyal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our Military
+	focus = {
+		id = Umbara_our_military
+		icon = GFX_UMB_OurMilitary
+		x = 25
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_the_umbaran_spirit }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+			air_experience = 50
+		}
+	}
+
+	#Focus for Build Up Our Military
+	focus = {
+		id = Umbara_build_up_our_military
+		icon = GFX_UMB_BuildUpOurMilitary
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_switch_sides }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UMB_buildup
+		}
+	}
+
+	#Focus for Build Taller
+	focus = {
+		id = Umbara_build_taller
+		icon = GFX_UMB_BuildTaller
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_an_industrial_umbara }
+		ai_will_do = {
+			factor = 1
+		}
+			completion_reward = {
+			290 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			    }
+        	}
+		}
+	}
+
+	#Focus for Mee Deechi
+	focus = {
+		id = Umbara_mee_deechi
+		icon = GFX_UMB_Meedeech
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_support_the_clone_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			news_event = {
+    			id = umb.1
+			}
+		}
+	}
+
+	#Focus for The Umbaran Spirit
+	focus = {
+		id = Umbara_the_umbaran_spirit
+		icon = GFX_UMB_umbaranspirit
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+
+	}
+
+	#Focus for Support the Clone war
+	focus = {
+		id = Umbara_support_the_clone_war
+		icon = GFX_UMB_supportclonewars
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_adapt_to_our_climate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			REP = {
+				add_war_support = 0.1
+			}
+		}
+	}
+
+	#Focus for Switch Sides
+	focus = {
+		id = Umbara_switch_sides
+		icon = GFX_UMB_Switchsides
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_mee_deechi }
+		available = { has_government = fascism }
+		mutually_exclusive = { focus = Umbara_stay_loyal }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.80
+			}
+		}
+	}
+
+	#Focus for Advance or Perish
+	focus = {
+		id = Umbara_advance_or_perish
+		icon = GFX_UMB_AdvanceorPerish
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_technological_superiority }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Umbaran Research Boost"
+				bonus = 1.0
+				uses = 2
+				category = umbara
+			}
+		}
+	}
+
+	#Focus for Land Clearance
+	focus = {
+		id = Umbara_land_clearance
+		icon = GFX_UMB_LandClearance
+		x = 0
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_pacify_the_wildlife }
+		ai_will_do = {
+			factor = 1
+			}
+		completion_reward = {
+			290 = {
+				
+			add_extra_state_shared_building_slots = 3
+		}
+	}
+}
+
+
+	#Focus for An Organized Military
+	focus = {
+		id = Umbara_an_organized_military
+		icon = GFX_UMB_milorg
+		x = 13
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_build_up_our_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOL_appoint_new_supreme_commander
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+		}
+		}
+	}
+
+	#Focus for Progressing the Clone Wars
+	focus = {
+		id = Umbara_progressing_the_clone_wars
+		icon = GFX_UMB_ProgressingtheCloneWars
+		x = 7
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_the_clone_security_force }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Advanced Vehicles
+	focus = {
+		id = Umbara_advanced_vehicles
+		icon = GFX_UMB_AdvancedVehicles
+		x = 23
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_work_on_our_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+			name = "Umbaran Research Boost"
+			bonus = 1.0
+			uses = 1
+			category = umbara
+			}
+		}
+	}
+
+	#Focus for The Clone Security Force
+	focus = {
+		id = Umbara_the_clone_security_force
+		icon = GFX_UMB_clonesecurity
+		x = 7
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Umbara_republic_research_agreement 
+		}
+		prerequisite = { 
+			focus = Umbara_attract_senators_to_our_cause 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Republic Research Agreement
+	focus = {
+		id = Umbara_republic_research_agreement
+		icon = GFX_UMB_RepublicResearchAgreement
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_rise_in_the_ranks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = umb_research_agreement
+			REP = {
+					add_to_tech_sharing_group = umb_research_agreement
+			}
+		}
+	}
+
+	#Focus for Attract Senators to our Cause
+	focus = {
+		id = Umbara_attract_senators_to_our_cause
+		icon = GFX_UMB_AttractSenaters
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_continue_lobbying }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Modern Umbara
+	focus = {
+		id = Umbara_a_modern_umbara
+		icon = GFX_UMB_ModernUmbara
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Umbara_arms_industry 
+		}
+		prerequisite = { 
+			focus = Umbara_land_clearance 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UMB_idea_modern_umbara
+
+		}
+	}
+
+	#Focus for Renowned Universitys
+	focus = {
+		id = Umbara_renowned_universitys
+		icon = GFX_UMB_RenownedUniversities
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Umbara_expand_our_research 
+		}
+		prerequisite = { 
+			focus = Umbara_advance_or_perish 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Guerrilla Warfare
+	focus = {
+		id = Umbara_guerrilla_warfare
+		icon = GFX_UMB_GuerrillaWarfare
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Umbara_an_organized_military 
+		}
+		prerequisite = { 
+			focus = Umbara_prepare_for_the_republic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = UMB_guerilla
+		}
+	}
+
+	#Focus for Rise in the Ranks
+	focus = {
+		id = Umbara_rise_in_the_ranks
+		icon = GFX_UMB_Riseinranks
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_stay_loyal }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Request a CIS fleet
+	focus = {
+		id = Umbara_request_a_cis_fleet
+		icon = GFX_UMB_cisfleet
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_guerrilla_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Work on our Doctrine
+	focus = {
+		id = Umbara_work_on_our_doctrine
+		icon = GFX_UMB_WorkonourDoctrine
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Umbara_a_militia 
+			focus = Umbara_a_professional_military 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = HOL_appoint_new_supreme_commander
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+		}
+	}
+}
+	#Focus for Advanced Weaponry
+	focus = {
+		id = Umbara_advanced_weaponry
+		icon = GFX_UMB_AdvancedWeaponry
+		x = 27
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Umbara_work_on_our_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus = {
+			name = "Umbaran Research Boost"
+			bonus = 1.0
+			uses = 1
+			category = umbara
+			}
+		}
+	}
+
+#End of focuses 
+ }

@@ -1,0 +1,52 @@
+
+defined_text = {
+	name = GetNotoriety
+	text = {
+		trigger = {
+			tag = HON
+		}
+		localization_key = "GFX_not_hon"
+	}
+	text = {
+		trigger = {
+			tag = GOR
+		}
+		localization_key = "GFX_not_gor"
+	}
+	text = {
+		trigger = {
+			tag = JHT
+		}
+		localization_key = "GFX_not_jab"
+	}
+	text = {
+		trigger = {
+			tag = BEA
+		}
+		localization_key = "GFX_not_bes"
+	}
+	text = {
+		trigger = {
+			tag = QUN
+		}
+		localization_key = "GFX_not_qun"
+	}
+	text = {
+		trigger = {
+			tag = KES
+		}
+		localization_key = "GFX_not_pyk"
+	}
+	text = {
+		trigger = {
+			tag = BLA
+		}
+		localization_key = "GFX_not_blk"
+	}
+	text = {
+		trigger = {
+			tag = DEA
+		}
+		localization_key = "GFX_not_SHA"
+	}
+}

@@ -1,0 +1,41 @@
+state={
+	id=481
+	name="STATE_481"
+	provinces={
+		362 1657 1831 1916 1918 1935 2607 2931 2948 3274 3881 3939 11408 11431 11445 11448 11463 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ALZ
+		add_core_of = ALZ
+
+		buildings = {
+			infrastructure=2
+			arms_factory=0
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

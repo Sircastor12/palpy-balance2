@@ -1,0 +1,1651 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country={
+                set_variable = { global.ara_74z = 500}
+                set_variable = { global.rocketlauncher = 500}
+                set_variable = { global.ara_barc = 150}
+                set_variable = { global.inf0 = 250000}
+                set_variable = { global.inf1 = 0}
+                set_variable = { global.inf2 = 0}    
+                set_variable = { global.inf3 = 0}
+                set_variable = { global.supportequipment = 80000}
+                set_variable = { global.landspeeder = 250}
+                set_variable = { global.soro_fang = 0}
+                set_variable = { global.cmg_diamond = 0}
+                set_variable = { global.cmg_recusant = 0}
+                set_variable = { global.cmg_providence = 0}
+                set_variable = { global.cmg_dsd1 = 0}
+                set_variable = { global.cmg_adsd = 0}
+                set_variable = { global.cmg_homing_spider = 0}
+                set_variable = { global.lucrehulk_freighter = 0}
+                set_variable = { global.lucrehulk_battleship = 0}
+                set_variable = { global.fed_recusant = 0}
+                set_variable = { global.fed_munificent = 0}
+                set_variable = { global.lancer = 0}
+                set_variable = { global.ibc_hailfire = 0}
+                set_variable = { global.phase_1 = 0}
+                set_variable = { global.phase_2 = 0}
+                set_variable = { global.clone_general = 0}
+                set_variable = { global.clone_admiral = 0}
+                set_variable = { global.z95 = 0}
+                set_variable = { global.v19 = 0}
+                set_variable = { global.arc170 = 0}
+                set_variable = { global.vwing = 0}
+                set_variable = { global.btlb = 0}
+                set_variable = { global.laat = 0}
+                set_variable = { global.laati = 0}
+                set_variable = { global.pelta = 0}
+                set_variable = { global.arquintes = 0}
+                set_variable = { global.acclamator = 0}
+                set_variable = { global.acclamator2 = 0}
+                set_variable = { global.venator = 0}
+                set_variable = { global.victory = 0}
+                set_variable = { global.mandator1 = 0}
+                set_variable = { global.mandator2 = 0}
+                set_variable = { global.balutar = 0}
+                set_variable = { global.komrk = 0}
+                set_variable = { global.buirkalor = 0}
+                set_variable = { global.fang = 0}
+                set_variable = { global.cal_dreadnaught = 0}
+                set_variable = { global.hammerhead = 0}
+                set_variable = { global.ren_dreadnaught = 0}
+                set_variable = { global.ren_victory = 0}
+                set_variable = { global.ren_providence = 0}
+                set_variable = { global.atrt = 0}
+                set_variable = { global.spha = 0}
+                set_variable = { global.atte = 0}
+                set_variable = { global.tx130 = 0}
+                set_variable = { global.juggernaut = 0}
+                set_variable = { global.vulture = 0}
+                set_variable = { global.c9979 = 0}
+                set_variable = { global.rogue = 0}
+                set_variable = { global.bellbulab22 = 0}
+                set_variable = { global.trifighter = 0}
+                set_variable = { global.advanceddroidbomber = 0}
+                set_variable = { global.hyena = 0}
+                set_variable = { global.bellbulab24 = 0}
+                set_variable = { global.hmpgunship = 0}
+                set_variable = { global.marauder = 0}
+                set_variable = { global.tudestroyer = 0}
+                set_variable = { global.tec_bulwark = 0}
+                set_variable = { global.oom = 10000}
+                set_variable = { global.b1 = 65000}
+                set_variable = { global.b2 = 0}
+                set_variable = { global.bx = 0}
+                set_variable = { global.tactical = 0}
+                set_variable = { global.dwing = 0}
+                set_variable = { global.stap = 250}
+                set_variable = { global.droideka = 250}
+                set_variable = { global.tec_dsd1 = 0}
+                set_variable = { global.tec_adsd = 0}
+                set_variable = { global.crab = 0}
+                set_variable = { global.pac = 75}
+                set_variable = { global.mtt = 650}
+                set_variable = { global.j1 = 300}
+                set_variable = { global.tec_hailfire = 0}
+                set_variable = { global.aat = 900}
+                set_variable = { global.og9 = 0}
+                set_variable = { global.octuparramagna = 0}
+                set_variable = { global.octuparracombat = 0}
+                set_variable = { global.tankdroid = 0}
+                set_variable = { global.aat2 = 0}
+                set_variable = { global.cla_hammerhead = 0}
+                set_variable = { global.consular = 5}
+                set_variable = { global.c70 = 0}
+                set_variable = { global.cr70 = 0}
+                set_variable = { global.cr90 = 0}
+                set_variable = { global.dac_recusant = 0}
+                set_variable = { global.dac_providence = 0}
+                set_variable = { global.subjugator = 0}
+
+                set_variable = { global.ara_74zq = 200}
+                set_variable = { global.ara_barcq = 150}
+                set_variable = { global.rocketlauncherq = 150}
+                set_variable = { global.inf0q = 1000}
+                set_variable = { global.inf1q = 1000}
+                set_variable = { global.inf2q = 1000}    
+                set_variable = { global.inf3q = 1000}
+                set_variable = { global.supportequipmentq = 500}
+                set_variable = { global.landspeederq = 50}
+                set_variable = { global.soro_fangq = 50}
+                set_variable = { global.cmg_diamondq = 1}
+                set_variable = { global.cmg_recusantq = 1}
+                set_variable = { global.cmg_providenceq = 1}
+                set_variable = { global.cmg_dsd1q = 250}
+                set_variable = { global.cmg_adsdq = 250}
+                set_variable = { global.cmg_homing_spiderq = 100}
+                set_variable = { global.lucrehulk_freighterq = 1}
+                set_variable = { global.lucrehulk_battleshipq = 1}
+                set_variable = { global.fed_recusantq = 1}
+                set_variable = { global.fed_munificentq = 1}
+                set_variable = { global.lancerq = 50}
+                set_variable = { global.ibc_hailfireq = 100}
+                set_variable = { global.phase_1q = 1000}
+                set_variable = { global.phase_2q = 1000}
+                set_variable = { global.clone_generalq = 1}
+                set_variable = { global.clone_admiralq = 1}
+                set_variable = { global.z95q = 50}
+                set_variable = { global.v19q = 50}
+                set_variable = { global.arc170q = 50}
+                set_variable = { global.vwingq = 50}
+                set_variable = { global.btlbq = 50}
+                set_variable = { global.laatq = 50}
+                set_variable = { global.laatiq = 50}
+                set_variable = { global.peltaq = 1}
+                set_variable = { global.arquintesq = 1}
+                set_variable = { global.acclamatorq = 1}
+                set_variable = { global.acclamator2q = 1}
+                set_variable = { global.venatorq = 1}
+                set_variable = { global.victoryq = 1}
+                set_variable = { global.mandator1q = 1}
+                set_variable = { global.mandator2q = 1}
+                set_variable = { global.balutarq = 150}
+                set_variable = { global.komrkq = 50}
+                set_variable = { global.buirkalorq = 150}
+                set_variable = { global.fangq = 50}
+                set_variable = { global.cal_dreadnaughtq = 1}
+                set_variable = { global.hammerheadq = 1}
+                set_variable = { global.ren_dreadnaughtq = 1}
+                set_variable = { global.ren_victoryq = 1}
+                set_variable = { global.ren_providenceq = 1}
+                set_variable = { global.atrtq = 150}
+                set_variable = { global.sphaq = 36}
+                set_variable = { global.atteq = 50}
+                set_variable = { global.tx130q = 150}
+                set_variable = { global.juggernautq = 50}
+                set_variable = { global.vultureq = 50}
+                set_variable = { global.c9979q = 50}
+                set_variable = { global.rogueq = 50}
+                set_variable = { global.bellbulab22q = 50}
+                set_variable = { global.trifighterq = 50}
+                set_variable = { global.advanceddroidbomberq = 50}
+                set_variable = { global.hyenaq = 50}
+                set_variable = { global.bellbulab24q = 50}
+                set_variable = { global.hmpgunshipq = 50}
+                set_variable = { global.marauderq = 1}
+                set_variable = { global.tudestroyerq = 1}
+                set_variable = { global.tec_bulwarkq = 1}
+                set_variable = { global.oomq = 1000}
+                set_variable = { global.b1q = 1000}
+                set_variable = { global.b2q = 1000}
+                set_variable = { global.bxq = 150}
+                set_variable = { global.tacticalq = 1}
+                set_variable = { global.dwingq = 500}
+                set_variable = { global.stapq = 500}
+                set_variable = { global.droidekaq = 150}
+                set_variable = { global.tec_dsd1q = 250}
+                set_variable = { global.tec_adsdq = 250}
+                set_variable = { global.crabq = 150}
+                set_variable = { global.pacq = 150}
+                set_variable = { global.mttq = 150}
+                set_variable = { global.j1q = 150}
+                set_variable = { global.tec_hailfireq = 100}
+                set_variable = { global.aatq = 150}
+                set_variable = { global.og9q = 100}
+                set_variable = { global.octuparramagnaq = 150}
+                set_variable = { global.octuparracombatq = 150}
+                set_variable = { global.tankdroidq = 150}
+                set_variable = { global.aat2q = 150}
+                set_variable = { global.cla_hammerheadq = 1}
+                set_variable = { global.consularq = 1}
+                set_variable = { global.c70q = 1}
+                set_variable = { global.cr70q = 1}
+                set_variable = { global.cr90q = 1}
+                set_variable = { global.dac_recusantq = 1}
+                set_variable = { global.dac_providenceq = 1}
+                set_variable = { global.subjugatorq = 1}
+
+                set_variable = { 74z_pricem = 1.2}
+                set_variable = { rocketlauncher_pricem = 1.2}
+                set_variable = { barc_pricem = 1.3}
+                set_variable = { inf0_pricem = 0.375}
+                set_variable = { inf1_pricem = 0.5}
+                set_variable = { inf2_pricem = 0.55}
+                set_variable = { inf3_pricem = 0.55}
+                set_variable = { supportequipment_pricem = 0.63}
+                set_variable = { landspeeder_pricem = 0.5}
+                set_variable = { soro_fang_pricem = 9.25}
+                set_variable = { cmg_diamond_pricem = 5.0}
+                set_variable = { cmg_recusant_pricem = 61.0}
+                set_variable = { cmg_providence_pricem = 125.0}
+                set_variable = { cmg_dsd1_pricem = 3.75}
+                set_variable = { cmg_adsd_pricem = 6.25}
+                set_variable = { cmg_homing_spider_pricem = 7.0}
+                set_variable = { lucrehulk_freighter_pricem = 200.0}
+                set_variable = { lucrehulk_battleship_pricem = 500.0}
+                set_variable = { fed_recusant_pricem = 61.0}
+                set_variable = { fed_munificent_pricem = 12.0}
+                set_variable = { lancer_pricem = 1.0}
+                set_variable = { ibc_hailfire_pricem = 6.0}
+                set_variable = { phase_1_pricem = 5.0}
+                set_variable = { phase_2_pricem = 6.0}
+                set_variable = { clone_general_pricem = 0.30}
+                set_variable = { clone_admiral_pricem = 0.25}
+                set_variable = { z95_pricem = 3.75}
+                set_variable = { v19_pricem = 6.75}
+                set_variable = { arc170_pricem = 7.75}
+                set_variable = { vwing_pricem = 5.1}
+                set_variable = { btlb_pricem = 6.75}
+                set_variable = { laat_pricem = 2.25}
+                set_variable = { laati_pricem = 4.25}
+                set_variable = { pelta_pricem = 7.3}
+                set_variable = { arquintes_pricem = 4.0}
+                set_variable = { acclamator_pricem = 59.0}
+                set_variable = { acclamator2_pricem = 74.0}
+                set_variable = { venator_pricem = 110.0}
+                set_variable = { victory_pricem = 125.0}
+                set_variable = { mandator1_pricem = 600.0}
+                set_variable = { mandator2_pricem = 700.0}
+                set_variable = { balutar_pricem = 1.65}
+                set_variable = { komrk_pricem = 9.5}
+                set_variable = { buirkalor_pricem = 22.5}
+                set_variable = { fang_pricem = 9.25}
+                set_variable = { cal_dreadnaught_pricem = 7.2}
+                set_variable = { hammerhead_pricem = 1.0}
+                set_variable = { ren_dreadnaught_pricem = 7.2}
+                set_variable = { ren_victory_pricem = 125.0}
+                set_variable = { ren_providence_pricem = 125.0}
+                set_variable = { atrt_pricem = 1.2}
+                set_variable = { spha_pricem = 4.5}
+                set_variable = { atte_pricem = 5.0}
+                set_variable = { tx130_pricem = 12.75}
+                set_variable = { juggernaut_pricem = 17.5}
+                set_variable = { vulture_pricem = 0.95}
+                set_variable = { c9979_pricem = 10.0}
+                set_variable = { rogue_pricem = 6.4}
+                set_variable = { bellbulab22_pricem = 8.4}
+                set_variable = { trifighter_pricem = 2.0}
+                set_variable = { advanceddroidbomber_pricem = 1.1}
+                set_variable = { hyena_pricem = 1.2}
+                set_variable = { bellbulab24_pricem = 8.6}
+                set_variable = { hmpgunship_pricem = 3.0}
+                set_variable = { marauder_pricem = 2.4}
+                set_variable = { tudestroyer_pricem = 12.0}
+                set_variable = { tec_bulwark_pricem = 18.0}
+                set_variable = { oom_pricem = 2.00}
+                set_variable = { b1_pricem = 1.80}
+                set_variable = { b2_pricem = 4.0 }
+                set_variable = { bx_pricem = 1.12}
+                set_variable = { tactical_pricem = 0.285}
+                set_variable = { dwing_pricem = 1.25}
+                set_variable = { stap_pricem = 1.25}
+                set_variable = { droideka_pricem = 3.15}
+                set_variable = { tec_dsd1_pricem = 3.75}
+                set_variable = { tec_adsd_pricem = 6.25}
+                set_variable = { crab_pricem = 3.0}
+                set_variable = { pac_pricem = 5.6}
+                set_variable = { mtt_pricem = 15.7}
+                set_variable = { j1_pricem = 1.2}
+                set_variable = { tec_hailfire_pricem = 6.0}
+                set_variable = { aat_pricem = 11.25}
+                set_variable = { og9_pricem = 7.0}
+                set_variable = { octuparramagna_pricem = 18.0}
+                set_variable = { octuparracombat_pricem = 15.0}
+                set_variable = { tankdroid_pricem = 7.35}
+                set_variable = { aat2_pricem = 12.75}
+                set_variable = { cla_hammerhead_pricem = 1.0}
+                set_variable = { consular_pricem = 3.0}
+                set_variable = { c70_pricem = 3.5}
+                set_variable = { cr70_pricem = 3.75}
+                set_variable = { cr90_pricem = 4.0}
+                set_variable = { dac_recusant_pricem = 61.0}
+                set_variable = { dac_providence_pricem = 125.0}
+                set_variable = { subjugator_pricem = 650.0}
+
+                set_variable = { global.cmg_diamond_sold = 0}
+                set_variable = { global.cmg_recusant_sold = 0}
+                set_variable = { global.cmg_providence_sold = 0}
+                set_variable = { global.cmg_dsd1_sold = 0}
+                set_variable = { global.cmg_adsd_sold = 0}
+                set_variable = { global.cmg_homing_spider_sold = 0}
+                set_variable = { global.lucrehulk_freighter_sold = 0}
+                set_variable = { global.lucrehulk_battleship_sold = 0}
+                set_variable = { global.fed_recusant_sold = 0}
+                set_variable = { global.fed_munificent_sold = 0}
+                set_variable = { global.lancer_sold = 0}
+                set_variable = { global.ibc_hailfire_sold = 0}
+                set_variable = { global.phase_1_sold = 0}
+                set_variable = { global.phase_2_sold = 0}
+                set_variable = { global.clone_general_sold = 0}
+                set_variable = { global.clone_admiral_sold = 0}
+                set_variable = { global.z95_sold = 0}
+                set_variable = { global.v19_sold = 0}
+                set_variable = { global.arc170_sold = 0}
+                set_variable = { global.vwing_sold = 0}
+                set_variable = { global.btlb_sold = 0}
+                set_variable = { global.laat_sold = 0}
+                set_variable = { global.laati_sold = 0}
+                set_variable = { global.laatc_sold = 0}
+                set_variable = { global.pelta_sold = 0}
+                set_variable = { global.arquintes_sold = 0}
+                set_variable = { global.acclamator_sold = 0}
+                set_variable = { global.acclamator2_sold = 0}
+                set_variable = { global.venator_sold = 0}
+                set_variable = { global.victory_sold = 0}
+                set_variable = { global.mandator1_sold = 0}
+                set_variable = { global.mandator2_sold = 0}
+                set_variable = { global.balutar_sold = 0}
+                set_variable = { global.komrk_sold = 0}
+                set_variable = { global.buirkalor_sold = 0}
+                set_variable = { global.fang_sold = 0}
+                set_variable = { global.cal_dreadnaught_sold = 0}
+                set_variable = { global.hammerhead_sold = 0}
+                set_variable = { global.ren_dreadnaught_sold = 0}
+                set_variable = { global.ren_victory_sold = 0}
+                set_variable = { global.ren_providence_sold = 0}
+                set_variable = { global.atrt_sold = 0}
+                set_variable = { global.spha_sold = 0}
+                set_variable = { global.atte_sold = 0}
+                set_variable = { global.tx130_sold = 0}
+                set_variable = { global.juggernaut_sold = 0}
+                set_variable = { global.vulture_sold = 0}
+                set_variable = { global.c9979_sold = 0}
+                set_variable = { global.rogue_sold = 0}
+                set_variable = { global.bellbulab22_sold = 0}
+                set_variable = { global.trifighter_sold = 0}
+                set_variable = { global.advanceddroidbomber_sold = 0}
+                set_variable = { global.hyena_sold = 0}
+                set_variable = { global.bellbulab24_sold = 0}
+                set_variable = { global.hmpgunship_sold = 0}
+                set_variable = { global.marauder_sold = 0}
+                set_variable = { global.tudestroyer_sold = 0}
+                set_variable = { global.tec_bulwark_sold = 0}
+                set_variable = { global.oom_sold = 0}
+                set_variable = { global.b1_sold = 0}
+                set_variable = { global.b2_sold = 0}
+                set_variable = { global.bx_sold = 0}
+                set_variable = { global.tactical_sold = 0}
+                set_variable = { global.dwing_sold = 0}
+                set_variable = { global.stap_sold = 0}
+                set_variable = { global.droideka_sold = 0}
+                set_variable = { global.tec_dsd1_sold = 0}
+                set_variable = { global.tec_adsd_sold = 0}
+                set_variable = { global.crab_sold = 0}
+                set_variable = { global.pac_sold = 0}
+                set_variable = { global.mtt_sold = 0}
+                set_variable = { global.j1_sold = 0}
+                set_variable = { global.tec_hailfire_sold = 0}
+                set_variable = { global.aat_sold = 0}
+                set_variable = { global.og9_sold = 0}
+                set_variable = { global.octuparramagna_sold = 0}
+                set_variable = { global.octuparracombat_sold = 0}
+                set_variable = { global.tankdroid_sold = 0}
+                set_variable = { global.aat2_sold = 0}
+                set_variable = { global.cla_hammerhead_sold = 0}
+                set_variable = { global.consular_sold = 0}
+                set_variable = { global.c70_sold = 0}
+                set_variable = { global.cr70_sold = 0}
+                set_variable = { global.cr90_sold = 0}
+                set_variable = { global.dac_recusant_sold = 0}
+                set_variable = { global.dac_providence_sold = 0}
+                set_variable = { global.subjugator_sold = 0}
+            }
+        }
+    }
+    on_weekly = {
+        effect = {
+            if = {
+                limit = {
+                    REP = {
+                        is_ai = yes
+                        NOT = {
+                            has_country_flag = bought501
+                        }
+                    }
+                }
+                REP = {
+                    set_country_flag = flag_501st
+                }
+            }
+            if = {
+                limit = {
+                    REP = {
+                        is_ai = yes
+                        NOT = {
+                            has_country_flag = bought212
+                        }
+                    }
+                }
+                REP = {
+                    set_country_flag = flag_212th
+                }
+            }
+            if = {
+                limit = {
+                    REP = {
+                        is_ai = yes
+                        NOT = {
+                            has_country_flag = bought327
+                        }
+                    }
+                }
+                REP = {
+                    set_country_flag = flag_327th
+                }
+            }
+            if = {
+                limit = {
+                    REP = {
+                        is_ai = yes
+                        NOT = {
+                            has_country_flag = bought104
+                        }
+                    }
+                }
+                REP = {
+                    set_country_flag = flag_104th
+                }
+            }
+            if = {
+                limit = {
+                    REP = {
+                        is_ai = yes
+                        NOT = {
+                            has_country_flag = bought442
+                        }
+                    }
+                }
+                REP = {
+                    set_country_flag = flag_442nd
+                }
+            }
+            if = {
+                limit = {
+                    owns_state = 60
+                }
+                #Aratech
+                if = {
+                    limit = {
+                        check_variable = { global.ara_74z < 3000 }
+                    }
+                    add_to_variable = { global.ara_74z = global.ara_74zweeklymax } 
+                }
+                if = {
+                    limit = {
+                        check_variable = { global.ara_barc < 3000 }
+                    }
+                    add_to_variable = { global.ara_barc = global.ara_barcweeklymax }
+                }
+                if = {
+                    limit = {
+                        check_variable = { global.rocketlauncher < 3000 }
+                    }
+                    add_to_variable = { global.rocketlauncher = global.rocketlauncherweeklymax } 
+                }
+                #Blastech
+                if = {
+                    limit = {
+                        check_variable = { global.inf0 < 200000 }
+                    }
+                    add_to_variable = { global.inf0 = global.inf0weeklymax }
+                }
+                if = {
+                    limit = {
+                        date > 975.06.06
+                        date < 977.06.06
+                        check_variable = { global.inf1 < 150000 }
+                    }
+                    add_to_variable = { global.inf1 = global.inf1weeklymax }
+                }
+                if = {
+                    limit = {
+                        date > 977.06.06
+                        date < 980.06.06
+                        check_variable = { global.inf2 < 250000 }
+                    }
+                    add_to_variable = { global.inf2 = global.inf2weeklymax }
+                }
+                if = {
+                    limit = {
+                        date > 979.06.06
+                        check_variable = { global.inf3 < 250000 }
+                    }
+                    add_to_variable = { global.inf3 = global.inf3weeklymax }
+                }
+                #CMG
+                if = {
+                    limit = {
+                        CMG = {
+                            is_ai = yes
+                        }
+                        country_exists = CMG
+                        date > 977.01.01
+                        check_variable = { global.cmg_dsd1 < 1500 }
+                    }
+                    add_to_variable = { global.cmg_dsd1 = global.cmg_dsd1weeklymax }
+                }
+                if = {
+                    limit = {
+                        CMG = {
+                            is_ai = yes
+                        }
+                        country_exists = CMG
+                        date > 981.01.01
+                        check_variable = { global.cmg_adsd < 1500 }
+                    }
+                    add_to_variable = { global.cmg_adsd = global.cmg_adsdweeklymax }
+                }
+                if = {
+                    limit = {
+                        CMG = {
+                            is_ai = yes
+                        }
+                        country_exists = CMG
+                        date > 978.01.01
+                        check_variable = { global.cmg_homing_spider < 1000 }
+                    }
+                    add_to_variable = { global.cmg_homing_spider = global.cmg_homing_spiderweeklymax }
+                }
+                if = {
+                    limit = {
+                        CMG = {
+                            is_ai = yes
+                        }
+                        country_exists = CMG
+                        date > 977.01.01
+                        check_variable = { global.cmg_diamond < 10 }
+                    }
+                    add_to_variable = { global.cmg_diamond = global.cmg_diamondweeklymax }
+                }
+                if = {
+                    limit = {
+                        CMG = {
+                            is_ai = yes
+                        }
+                        country_exists = CMG
+                        date > 978.01.01
+                        check_variable = { global.cmg_recusant < 6 }
+                    }
+                    add_to_variable = { global.cmg_recusant = global.cmg_recusantweeklymax }
+                }
+                if = {
+                    limit = {
+                        CMG = {
+                            is_ai = yes
+                        }
+                        country_exists = CMG
+                        date > 978.01.01
+                        check_variable = { global.cmg_providence < 6 }
+                    }
+                    add_to_variable = { global.cmg_providence = global.cmg_providenceweeklymax }
+                }
+                #FED
+                if = {
+                    limit = {
+                        FED = {
+                            is_ai = yes
+                        }
+                        country_exists = FED
+                        date > 975.01.01
+                        check_variable = { global.lucrehulk_freighter < 3 }
+                    }
+                    add_to_variable = { global.lucrehulk_freighter = global.lucrehulk_freighterweeklymax }
+                }
+                if = {
+                    limit = {
+                        FED = {
+                            is_ai = yes
+                        }
+                        country_exists = FED
+                        date > 977.01.01
+                        check_variable = { global.lucrehulk_battleship < 3 }
+                    }
+                    add_to_variable = { global.lucrehulk_battleship = global.lucrehulk_battleshipweeklymax }
+                }
+                if = {
+                    limit = {
+                        FED = {
+                            is_ai = yes
+                        }
+                        country_exists = FED
+                        date > 977.01.01
+                        check_variable = { global.fed_recusant < 4 }
+                    }
+                    add_to_variable = { global.fed_recusant = global.fed_recusantweeklymax }
+                }
+                if = {
+                    limit = {
+                        FED = {
+                            is_ai = yes
+                        }
+                        country_exists = FED
+                        date > 977.01.01
+                        check_variable = { global.fed_munificent < 10 }
+                    }
+                    add_to_variable = { global.fed_munificent = 1 }
+                }
+                #IBC
+                if = {
+                    limit = {
+                        IBC = {
+                            is_ai = yes
+                        }
+                        country_exists = IBC
+                        date > 977.01.01
+                        check_variable = { global.lancer < 1000 }
+                    }
+                    add_to_variable = { global.lancer = global.lancerweeklymax }
+                }
+                if = {
+                    limit = {
+                        IBC = {
+                            is_ai = yes
+                        }
+                        country_exists = IBC
+                        date > 978.01.01
+                        check_variable = { global.ibc_hailfire < 1000 }
+                    }
+                    add_to_variable = { global.ibc_hailfire = global.ibc_hailfireweeklymax }
+                }
+                #KAM
+                if = {
+                    limit = {
+                        KAM = {
+                            is_ai = yes
+                        }
+                        country_exists = KAM
+                        date > 978.01.01
+                        check_variable = { global.phase_1 < 25000 }
+                    }
+                    add_to_variable = { global.phase_1 = 2000 }
+                }
+                if = {
+                    limit = {
+                        KAM = {
+                            is_ai = yes
+                        }
+                        country_exists = KAM
+                        date > 980.01.01
+                        check_variable = { global.phase_2 < 25000 }
+                    }
+                    add_to_variable = { global.phase_2 = 2000 }
+                }
+                if = {
+                    limit = {
+                        KAM = {
+                            is_ai = yes
+                        }
+                        country_exists = KAM
+                        country_exists = KAM
+                        date > 978.01.01
+                        check_variable = { global.clone_general < 10 }
+                    }
+                    add_to_variable = { global.clone_general = global.clone_generalweeklymax }
+                }
+                if = {
+                    limit = {
+                        KAM = {
+                            is_ai = yes
+                        }
+                        country_exists = KAM
+                        date > 978.01.01
+                        check_variable = { global.clone_admiral < 10 }
+                    }
+                    add_to_variable = { global.clone_admiral = global.clone_admiralweeklymax }
+                }
+                #KUA
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 975.01.01
+                        check_variable = { global.z95 < 500 }
+                    }
+                    add_to_variable = { global.z95 = global.z95weeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 978.01.01
+                        check_variable = { global.v19 < 500 }
+                    }
+                    add_to_variable = { global.v19 = global.v19weeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 979.01.01
+                        check_variable = { global.arc170 < 500 }
+                    }
+                    add_to_variable = { global.arc170 = global.arc170weeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 981.01.01
+                        check_variable = { global.vwing < 500 }
+                    }
+                    add_to_variable = { global.vwing = global.vwingweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 978.01.01
+                        check_variable = { global.btlb < 500 }
+                    }
+                    add_to_variable = { global.btlb = global.btlbweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 976.01.01
+                        check_variable = { global.laat < 500 }
+                    }
+                    add_to_variable = { global.laat = global.laatweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 977.01.01
+                        check_variable = { global.laati < 500 }
+                    }
+                    add_to_variable = { global.laati = global.laatiweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 975.01.01
+                        check_variable = { global.pelta < 10 }
+                    }
+                    add_to_variable = { global.pelta = global.peltaweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 978.01.01
+                        check_variable = { global.arquintes < 10 }
+                    }
+                    add_to_variable = { global.arquintes = global.arquintesweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 977.01.01
+                        check_variable = { global.acclamator < 10 }
+                    }
+                    add_to_variable = { global.acclamator = 3 }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 980.01.01
+                        check_variable = { global.acclamator2 < 6 }
+                    }
+                    add_to_variable = { global.acclamator2 = global.acclamator2weeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 978.01.01
+                        check_variable = { global.venator < 4 }
+                    }
+                    add_to_variable = { global.venator = global.venatorweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 980.01.01
+                        check_variable = { global.victory < 4 }
+                    }
+                    add_to_variable = { global.victory = global.victoryweeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 976.01.01
+                        check_variable = { global.mandator1 < 2 }
+                    }
+                    add_to_variable = { global.mandator1 = global.mandator1weeklymax }
+                }
+                if = {
+                    limit = {
+                        KUA = {
+                            is_ai = yes
+                        }
+                        country_exists = KUA
+                        date > 979.01.01
+                        check_variable = { global.mandator2 < 2 }
+                    }
+                    add_to_variable = { global.mandator2 = global.mandator2weeklymax }
+                }
+                #MAN
+                if = {
+                    limit = {
+                        MAN = {
+                            is_ai = yes
+                        }
+                        country_exists = MAN
+                        date > 976.01.01
+                        check_variable = { global.balutar < 1000 }
+                    }
+                    add_to_variable = { global.balutar = global.balutarweeklymax }
+                }
+                if = {
+                    limit = {
+                        MAN = {
+                            is_ai = yes
+                        }
+                        country_exists = MAN
+                        date > 977.01.01
+                        check_variable = { global.komrk < 150 }
+                    }
+                    add_to_variable = { global.komrk = global.komrkweeklymax }
+                }
+                if = {
+                    limit = {
+                        MAN = {
+                            is_ai = yes
+                        }
+                        country_exists = MAN
+                        date > 979.01.01
+                        check_variable = { global.buirkalor < 1000 }
+                    }
+                    add_to_variable = { global.buirkalor = global.buirkalorweeklymax }
+                }
+                if = {
+                    limit = {
+                        MAN = {
+                            is_ai = yes
+                        }
+                        country_exists = MAN
+                        date > 977.01.01
+                        check_variable = { global.fang < 150 }
+                    }
+                    add_to_variable = { global.fang = global.fangweeklymax }
+                }
+                #CAL
+                if = {
+                    limit = {
+                        CAL = {
+                            is_ai = yes
+                        }
+                        country_exists = CAL
+                        date > 975.01.01
+                        check_variable = { global.cal_dreadnaught < 10 }
+                    }
+                    add_to_variable = { global.cal_dreadnaught = global.cal_dreadnaughtweeklymax }
+                }
+                #Rendili
+                if = {
+                    limit = {
+                        REN = {
+                            is_ai = yes
+                        }
+                        country_exists = REN
+                        date > 975.01.01
+                        check_variable = { global.hammerhead < 15 }
+                    }
+                    add_to_variable = { global.hammerhead = global.hammerheadweeklymax }
+                }
+                if = {
+                    limit = {
+                        REN = {
+                            is_ai = yes
+                        }
+                        country_exists = REN
+                        date > 975.01.01
+                        check_variable = { global.ren_dreadnaught < 10 }
+                    }
+                    add_to_variable = { global.ren_dreadnaught = global.ren_dreadnaughtweeklymax }
+                }
+                if = {
+                    limit = {
+                        REN = {
+                            is_ai = yes
+                        }
+                        country_exists = REN
+                        date > 980.01.01
+                        check_variable = { global.ren_victory < 6 }
+                    }
+                    add_to_variable = { global.ren_victory = global.ren_victoryweeklymax }
+                }
+                if = {
+                    limit = {
+                        REN = {
+                            is_ai = yes
+                        }
+                        country_exists = REN
+                        date > 978.01.01
+                        check_variable = { global.ren_providence < 6 }
+                    }
+                    add_to_variable = { global.ren_providence = global.ren_providenceweeklymax }
+                }
+                #Rothana
+                if = {
+                    limit = {
+                        ROT = {
+                            is_ai = yes
+                        }
+                        country_exists = ROT
+                        date > 978.01.01
+                        check_variable = { global.atrt < 750 }
+                    }
+                    add_to_variable = { global.atrt = global.atrtweeklymax }
+                }
+                if = {
+                    limit = {
+                        ROT = {
+                            is_ai = yes
+                        }
+                        country_exists = ROT
+                        date > 978.01.01
+                        check_variable = { global.spha < 600 }
+                    }
+                    add_to_variable = { global.spha = 72 }
+                }
+                if = {
+                    limit = {
+                        ROT = {
+                            is_ai = yes
+                        }
+                        country_exists = ROT
+                        date > 978.01.01
+                        check_variable = { global.atte < 375 }
+                    }
+                    add_to_variable = { global.atte = global.atteweeklymax }
+                }
+                if = {
+                    limit = {
+                        ROT = {
+                            is_ai = yes
+                        }
+                        country_exists = ROT
+                        date > 979.01.01
+                        check_variable = { global.tx130 < 375 }
+                    }
+                    add_to_variable = { global.tx130 = global.tx130weeklymax }
+                }
+                if = {
+                    limit = {
+                        ROT = {
+                            is_ai = yes
+                        }
+                        country_exists = ROT
+                        date > 980.01.01
+                        check_variable = { global.juggernaut < 100 }
+                    }
+                    add_to_variable = { global.juggernaut = global.juggernautweeklymax }
+                }
+                #Sorosuub
+                if = {
+                    limit = {
+                        date > 975.01.01
+                        check_variable = { global.supportequipment < 5000 }
+                    }
+                    add_to_variable = { global.supportequipment = 500 }
+                }
+                if = {
+                    limit = {
+                        date > 975.01.01
+                        check_variable = { global.landspeeder < 800 }
+                    }
+                    add_to_variable = { global.landspeeder = global.landspeederweeklymax }
+                }
+                if = {
+                    limit = {
+                        date > 980.01.01
+                        check_variable = { global.soro_fang < 120 }
+                    }
+                    add_to_variable = { global.soro_fang = global.soro_fangweeklymax }
+                }
+                #Techno Union
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.oom < 10000 }
+                    }
+                    add_to_variable = { global.oom = 700 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.06.06
+                        check_variable = { global.b1 < 10000 }
+                    }
+                    add_to_variable = { global.b1 = 700 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.b2 < 5000 }
+                    }
+                    add_to_variable = { global.b2 = 700 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 980.01.01
+                        check_variable = { global.bx < 1000 }
+                    }
+                    add_to_variable = { global.bx = 200 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 976.01.01
+                        check_variable = { global.tactical < 10 }
+                    }
+                    add_to_variable = { global.tactical = global.tacticalweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 981.01.01
+                        check_variable = { global.dwing < 5000 }
+                    }
+                    add_to_variable = { global.dwing = global.dwingweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.stap < 3000 }
+                    }
+                    add_to_variable = { global.stap = global.stapweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.droideka < 3000 }
+                    }
+                    add_to_variable = { global.droideka = global.droidekaweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 977.01.01
+                        check_variable = { global.tec_dsd1 < 1000 }
+                    }
+                    add_to_variable = { global.tec_dsd1 = global.tec_dsd1weeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 981.01.01
+                        check_variable = { global.tec_adsd < 500 }
+                    }
+                    add_to_variable = { global.tec_adsd = global.tec_adsdweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 979.01.01
+                        check_variable = { global.crab < 500 }
+                    }
+                    add_to_variable = { global.crab = global.crabweeklymax }
+                }
+
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.pac < 600 }
+                    }
+                    add_to_variable = { global.pac = global.pacweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.mtt < 450 }
+                    }
+                    add_to_variable = { global.mtt = global.mttweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.06.01
+                        check_variable = { global.j1 < 1500 }
+                    }
+                    add_to_variable = { global.j1 = 500 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.tec_hailfire < 300 }
+                    }
+                    add_to_variable = { global.tec_hailfire = global.tec_hailfireweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        check_variable = { global.aat < 1000 }
+                    }
+                    add_to_variable = { global.aat = 200 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.og9 < 1000 }
+                    }
+                    add_to_variable = { global.og9 = 350 }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.octuparramagna < 300 }
+                    }
+                    add_to_variable = { global.octuparramagna = global.octuparramagnaweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.octuparracombat < 600 }
+                    }
+                    add_to_variable = { global.octuparracombat = global.octuparracombatweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.08.01
+                        check_variable = { global.tankdroid < 800 }
+                    }
+                    add_to_variable = { global.tankdroid = global.tankdroidweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.aat2 < 600 }
+                    }
+                    add_to_variable = { global.aat2 = global.aat2weeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.vulture < 600 }
+                    }
+                    add_to_variable = { global.vulture = global.vultureweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.c9979 < 150 }
+                    }
+                    add_to_variable = { global.c9979 = global.c9979weeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.rogue < 200 }
+                    }
+                    add_to_variable = { global.rogue = global.rogueweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 979.01.01
+                        check_variable = { global.bellbulab22 < 100 }
+                    }
+                    add_to_variable = { global.bellbulab22 = global.bellbulab22weeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 980.01.01
+                        check_variable = { global.trifighter < 600 }
+                    }
+                    add_to_variable = { global.trifighter = global.trifighterweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.advanceddroidbomber < 250 }
+                    }
+                    add_to_variable = { global.advanceddroidbomber = global.advanceddroidbomberweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 978.01.01
+                        check_variable = { global.hyena < 400 }
+                    }
+                    add_to_variable = { global.hyena = global.hyenaweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 979.01.01
+                        check_variable = { global.bellbulab24 < 100 }
+                    }
+                    add_to_variable = { global.bellbulab24 = global.bellbulab24weeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 979.01.01
+                        check_variable = { global.hmpgunship < 250 }
+                    }
+                    add_to_variable = { global.hmpgunship = global.hmpgunshipweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 975.01.01
+                        check_variable = { global.marauder < 8 }
+                    }
+                    add_to_variable = { global.marauder = global.marauderweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 976.01.01
+                        check_variable = { global.tudestroyer < 6 }
+                    }
+                    add_to_variable = { global.tudestroyer = global.tudestroyerweeklymax }
+                }
+                if = {
+                    limit = {
+                        TEC = {
+                            is_ai = yes
+                        }
+                        country_exists = TEC
+                        date > 980.01.01
+                        check_variable = { global.tec_bulwark < 5 }
+                    }
+                    add_to_variable = { global.tec_bulwark = global.tec_bulwarkweeklymax }
+                }
+                #CLA
+                if = {
+                    limit = {
+                        CLA = {
+                            is_ai = yes
+                        }
+                        country_exists = CLA
+                        date > 975.01.01
+                        check_variable = { global.cla_hammerhead < 12 }
+                    }
+                    add_to_variable = { global.cla_hammerhead = global.cla_hammerheadweeklymax }
+                }
+                if = {
+                    limit = {
+                        CLA = {
+                            is_ai = yes
+                        }
+                        country_exists = CLA
+                        date > 976.01.01
+                        check_variable = { global.consular < 12 }
+                    }
+                    add_to_variable = { global.consular = global.consularweeklymax }
+                }
+                if = {
+                    limit = {
+                        CLA = {
+                            is_ai = yes
+                        }
+                        country_exists = CLA
+                        date > 978.01.01
+                        check_variable = { global.c70 < 12 }
+                    }
+                    add_to_variable = { global.c70 = global.c70weeklymax }
+                }
+                if = {
+                    limit = {
+                        CLA = {
+                            is_ai = yes
+                        }
+                        country_exists = CLA
+                        date > 981.01.01
+                        check_variable = { global.cr70 < 12 }
+                    }
+                    add_to_variable = { global.cr70 = global.cr70weeklymax }
+                }
+                if = {
+                    limit = {
+                        CLA = {
+                            is_ai = yes
+                        }
+                        country_exists = CLA
+                        date > 982.01.01
+                        check_variable = { global.cr90 < 12 }
+                    }
+                    add_to_variable = { global.cr90 = global.cr90weeklymax }
+                }
+                #DAC
+                if = {
+                    limit = {
+                        QUA = {
+                            is_ai = yes
+                        }
+                        country_exists = QUA
+                        QUA = {
+                            owns_state = 15
+                        }
+                        date > 978.01.01
+                        check_variable = { global.dac_recusant < 10 }
+                    }
+                    add_to_variable = { global.dac_recusant = global.dac_recusantweeklymax }
+                }
+                if = {
+                    limit = {
+                        QUA = {
+                            is_ai = yes
+                        }
+                        country_exists = QUA
+                        QUA = {
+                            owns_state = 15
+                        }
+                        date > 978.01.01
+                        check_variable = { global.dac_providence < 6 }
+                    }
+                    add_to_variable = { global.dac_providence = global.dac_providenceweeklymax }
+                }
+                if = {
+                    limit = {
+                        QUA = {
+                            is_ai = yes
+                        }
+                        country_exists = QUA
+                        QUA = {
+                            owns_state = 15
+                        }
+                        date > 979.01.01
+                        check_variable = { global.subjugator < 2 }
+                    }
+                    add_to_variable = { global.subjugator = global.subjugatorweeklymax }
+                }
+            }
+            if = {
+                limit = {
+                    REP = {
+                        NOT = {
+                            has_completed_focus = REP_anticorruption_campaign
+                        }
+                    }
+                }
+                REP = {
+                    set_country_flag = dontspendmoney
+                }
+            }
+            if = {
+                limit = {
+                    REP = {
+                        has_completed_focus = REP_anticorruption_campaign
+                    }
+                }
+                REP = {
+                    clr_country_flag = dontspendmoney
+                }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    has_country_flag = p1_autobuy
+                    check_variable = { global.phase_1 > 3000 }
+                }
+                PREV = {
+                    purchase_phase_1 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = p2_autobuy
+                    check_variable = { global.phase_2 > 3000 }
+                }
+                PREV = {
+                    purchase_phase_2 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = atte_autobuy
+                    check_variable = { global.atte > 150 }
+                }
+                PREV = {
+                    purchase_atte = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = spha_autobuy
+                    check_variable = { global.spha > 108 }
+                }
+                PREV = {
+                    purchase_spha = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = b1_autobuy
+                    check_variable = { global.b1 > 3000 }
+                }
+                PREV = {
+                    purchase_b1 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = b2_autobuy
+                    check_variable = { global.b2 > 3000 }
+                }
+                PREV = {
+                    purchase_b2 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = vulture_autobuy
+                    check_variable = { global.vulture > 151 }
+                }
+                PREV = {
+                    purchase_vulture = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = z95_autobuy
+                    check_variable = { global.z95 > 150 }
+                }
+                PREV = {
+                    purchase_z95 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = btlb_autobuy
+                    check_variable = { global.btlb > 150 }
+                }
+                PREV = {
+                    purchase_btlb = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = v19_autobuy
+                    check_variable = { global.v19 > 150 }
+                }
+                PREV = {
+                    purchase_v19 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = laat_autobuy
+                    check_variable = { global.laat > 150 }
+                }
+                PREV = {
+                    purchase_laat = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = arc170_autobuy
+                    check_variable = { global.arc170 > 150 }
+                }
+                PREV = {
+                    purchase_arc170 = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = vwing_autobuy
+                    check_variable = { global.vwing > 150 }
+                }
+                PREV = {
+                    purchase_vwing = yes
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = octuptarra_autobuy
+                    check_variable = { global.octuptarra > 300  }
+                }
+                PREV = {
+                    purchase_octuparramagna = yes
+                }
+            }
+        }
+    }
+}

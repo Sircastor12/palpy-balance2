@@ -1,0 +1,200 @@
+guiTypes = {
+	containerWindowType = {
+		name = "palpatine_container"
+		position = { x = 1025 y = -3 }
+
+		buttonType ={
+			name ="palpatine_button"
+			spriteType = "GFX_missions_open_button"
+			position = { x=300 y=6 }
+			shortcut = "ctrl+m"
+
+			pdx_tooltip = "missions_button_loc"
+		}
+	}
+    containerWindowType = {
+        name = "palpatine_regular"
+        orientation = center
+        position = {x=-400 y=-300}
+        size = { width=1000 height=800 }
+        moveable = yes
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_palpatine_regular"
+		}
+
+		instantTextboxType = {
+			name = "current_mission"
+			position = { x = 186 y = 640 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = -400} 
+			text = "[Get_mission_loc]"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+		instantTextboxType = {
+			name = "completion_reward"
+			position = { x = 235 y = 855 }
+			font = "hoi_16mbs"
+			borderSize = {x = 50 y = -400} 
+			text = "Reward"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+		instantTextboxType = {
+			name = "completion_reward_reward"
+			position = { x = 215 y = 880 }
+			font = "hoi_16mbs"
+			borderSize = {x = 50 y = -400} 
+			text = "[get.rewardp]"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+		instantTextboxType = {
+			name = "failure_penalty"
+			position = { x = 235 y = 955 }
+			font = "hoi_16mbs"
+			borderSize = {x = 50 y = -400} 
+			text = "Penalty"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+		instantTextboxType = {
+			name = "failure_reward_penalty"
+			position = { x = 215 y = 930 }
+			font = "hoi_16mbs"
+			borderSize = {x = 50 y = -400} 
+			text = "[get.penaltyp]"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+		buttonType = {
+			name = "laws_button"
+			position = {x=37 y=185}
+			quadTextureSprite ="GFX_laws_button"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "laws_p_TOOLTIP"
+		}
+		buttonType = {
+			name = "industry_button"
+			position = {x=37 y=240}
+			quadTextureSprite ="GFX_industry_button"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "Industry_p_TOOLTIP"
+		}
+		buttonType = {
+			name = "international_button"
+			position = {x=37 y=295}
+			quadTextureSprite ="GFX_international"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "International_p_TOOLTIP"
+		}
+		buttonType = {
+			name = "naval_button"
+			position = {x=37 y=350}
+			quadTextureSprite ="GFX_naval_button"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "Naval_p_TOOLTIP"
+		}
+		buttonType = {
+			name = "army_button"
+			position = {x=37 y=405}
+			quadTextureSprite ="GFX_army_button"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "Army_p_TOOLTIP"
+		}
+		buttonType = {
+			name = "close_button"
+			position = {x=840 y=5}
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			scale = 0.5
+		}
+	}
+	containerWindowType = {
+        name = "palpatine_sidious"
+        orientation = center
+        position = {x=-400 y=-300}
+        size = { width=1000 height=800 }
+        moveable = yes
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_palpatine_sidious"
+		}
+		buttonType = {
+			name = "send_mission_cis"
+			position = {x=184 y=470} 
+			quadTextureSprite ="GFX_send_mission"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "send_cis_mission_TOOLTIP"
+		}
+		buttonType = {
+			name = "send_mission_rep"
+			position = {x=535 y=470}
+			quadTextureSprite ="GFX_send_mission"
+			buttonFont = "hoi_16mbs"
+			shortcut = ""
+			clicksound = click_close
+			pdx_tooltip = "send_rep_mission_TOOLTIP"
+		}
+		buttonType = {
+			name = "close_button"
+			position = {x=840 y=5}
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			scale = 0.5
+		}
+		instantTextboxType = {
+			name = "sent_mission_cis"
+			position = { x = 300 y = 250 }
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0} 
+			text = "Assign Mission"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+		instantTextboxType = {
+			name = "sent_mission_rep"
+			position = { x = 150 y = 640 }
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0} 
+			text = "sith_acolyte_power"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+			pdx_tooltip = "sith_acolyte_TOOLTIP"
+		}
+	}
+}

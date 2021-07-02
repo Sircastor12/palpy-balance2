@@ -1,0 +1,14 @@
+scripted_gui = {
+	tech_level_container = {
+		context_type = player_context
+		window_name = "tech_level_container"
+		
+		visible = {
+			always = yes
+		}
+		properties = {
+			tech_level_cis = { image = "[GetCIStech]" }
+			tech_level_rep = { image = "[GetREPtech]" }
+		}
+    }
+}

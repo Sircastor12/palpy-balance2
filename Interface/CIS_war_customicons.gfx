@@ -1,0 +1,3157 @@
+spriteTypes = { 
+	##Icon For: Legitimize The Senate
+	SpriteType = { 
+		name = "GFX_CIS_legitimize_the_senate-62295"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_legitimize_the_senate-62295.dds"
+	}
+
+	##Icon Shine For: Legitimize The Senate
+	SpriteType = { 
+		name = "GFX_CIS_legitimize_the_senate-62295_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_legitimize_the_senate-62295.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_legitimize_the_senate-62295.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_legitimize_the_senate-62295.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Promises of Economic Equality
+	SpriteType = { 
+		name = "GFX_CIS_promises_of_economic_equality-62300"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_promises_of_economic_equality-62300.dds"
+	}
+
+	##Icon Shine For: Promises of Economic Equality
+	SpriteType = { 
+		name = "GFX_CIS_promises_of_economic_equality-62300_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_promises_of_economic_equality-62300.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_promises_of_economic_equality-62300.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_promises_of_economic_equality-62300.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Guarantee of Racial Equality
+	SpriteType = { 
+		name = "GFX_CIS_guarantee_of_racial_equality-62297"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_guarantee_of_racial_equality-62297.dds"
+	}
+
+	##Icon Shine For: Guarantee of Racial Equality
+	SpriteType = { 
+		name = "GFX_CIS_guarantee_of_racial_equality-62297_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_guarantee_of_racial_equality-62297.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_guarantee_of_racial_equality-62297.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_guarantee_of_racial_equality-62297.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Face of a Large Shadow
+	SpriteType = { 
+		name = "GFX_CIS_the_face_of_a_large_shadow-62307"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_face_of_a_large_shadow-62307.dds"
+	}
+
+	##Icon Shine For: The Face of a Large Shadow
+	SpriteType = { 
+		name = "GFX_CIS_the_face_of_a_large_shadow-62307_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_face_of_a_large_shadow-62307.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_face_of_a_large_shadow-62307.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_face_of_a_large_shadow-62307.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Deal with the Idealists
+	SpriteType = { 
+		name = "GFX_CIS_deal_with_the_idealists-62314"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_deal_with_the_idealists-62314.dds"
+	}
+
+	##Icon Shine For: Deal with the Idealists
+	SpriteType = { 
+		name = "GFX_CIS_deal_with_the_idealists-62314_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_deal_with_the_idealists-62314.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_deal_with_the_idealists-62314.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_deal_with_the_idealists-62314.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Education in The Outer rim
+	SpriteType = { 
+		name = "GFX_CIS_education_in_the_outer_rim-62301"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_education_in_the_outer_rim-62301.dds"
+	}
+
+	##Icon Shine For: Education in The Outer rim
+	SpriteType = { 
+		name = "GFX_CIS_education_in_the_outer_rim-62301_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_education_in_the_outer_rim-62301.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_education_in_the_outer_rim-62301.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_education_in_the_outer_rim-62301.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Army of Dreamers
+	SpriteType = { 
+		name = "GFX_CIS_the_army_of_dreamers-62292"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_dreamers-62292.dds"
+	}
+
+	##Icon Shine For: The Army of Dreamers
+	SpriteType = { 
+		name = "GFX_CIS_the_army_of_dreamers-62292_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_dreamers-62292.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_dreamers-62292.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_dreamers-62292.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Army of Cold Metal
+	SpriteType = { 
+		name = "GFX_CIS_the_army_of_cold_metal-62293"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_cold_metal-62293.dds"
+	}
+
+	##Icon Shine For: The Army of Cold Metal
+	SpriteType = { 
+		name = "GFX_CIS_the_army_of_cold_metal-62293_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_cold_metal-62293.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_cold_metal-62293.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_army_of_cold_metal-62293.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Fortify Ruusan
+	SpriteType = { 
+		name = "GFX_CIS_fortify_ruusan-62274"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_ruusan-62274.dds"
+	}
+
+	##Icon Shine For: Fortify Ruusan
+	SpriteType = { 
+		name = "GFX_CIS_fortify_ruusan-62274_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_ruusan-62274.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_ruusan-62274.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_ruusan-62274.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Extend Our Reach
+	SpriteType = { 
+		name = "GFX_CIS_extend_our_reach-62264"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_extend_our_reach-62264.dds"
+	}
+
+	##Icon Shine For: Extend Our Reach
+	SpriteType = { 
+		name = "GFX_CIS_extend_our_reach-62264_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_extend_our_reach-62264.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_extend_our_reach-62264.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_extend_our_reach-62264.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Central Command Structure
+	SpriteType = { 
+		name = "GFX_CIS_central_command_structure-62278"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_central_command_structure-62278.dds"
+	}
+
+	##Icon Shine For: Central Command Structure
+	SpriteType = { 
+		name = "GFX_CIS_central_command_structure-62278_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_central_command_structure-62278.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_central_command_structure-62278.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_central_command_structure-62278.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Superior Programming
+	SpriteType = { 
+		name = "GFX_CIS_superior_programming-62280"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_superior_programming-62280.dds"
+	}
+
+	##Icon Shine For: Superior Programming
+	SpriteType = { 
+		name = "GFX_CIS_superior_programming-62280_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_superior_programming-62280.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_superior_programming-62280.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_superior_programming-62280.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Quality Droids
+	SpriteType = { 
+		name = "GFX_CIS_quality_droids-62276"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_quality_droids-62276.dds"
+	}
+
+	##Icon Shine For: Quality Droids
+	SpriteType = { 
+		name = "GFX_CIS_quality_droids-62276_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_quality_droids-62276.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_quality_droids-62276.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_quality_droids-62276.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Volunteer Forces
+	SpriteType = { 
+		name = "GFX_CIS_volunteer_forces-62275"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_volunteer_forces-62275.dds"
+	}
+
+	##Icon Shine For: Volunteer Forces
+	SpriteType = { 
+		name = "GFX_CIS_volunteer_forces-62275_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_volunteer_forces-62275.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_volunteer_forces-62275.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_volunteer_forces-62275.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Take Over Boz Pity
+	SpriteType = { 
+		name = "GFX_CIS_take_over_boz_pity-62269"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_take_over_boz_pity-62269.dds"
+	}
+
+	##Icon Shine For: Take Over Boz Pity
+	SpriteType = { 
+		name = "GFX_CIS_take_over_boz_pity-62269_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_take_over_boz_pity-62269.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_take_over_boz_pity-62269.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_take_over_boz_pity-62269.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Open Borders
+	SpriteType = { 
+		name = "GFX_CIS_open_borders-62296"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_open_borders-62296.dds"
+	}
+
+	##Icon Shine For: Open Borders
+	SpriteType = { 
+		name = "GFX_CIS_open_borders-62296_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_open_borders-62296.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_open_borders-62296.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_open_borders-62296.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Long Live The Confederacy
+	SpriteType = { 
+		name = "GFX_CIS_long_live_the_confederacy-62332"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_long_live_the_confederacy-62332.dds"
+	}
+
+	##Icon Shine For: Long Live The Confederacy
+	SpriteType = { 
+		name = "GFX_CIS_long_live_the_confederacy-62332_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_long_live_the_confederacy-62332.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_long_live_the_confederacy-62332.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_long_live_the_confederacy-62332.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Steps That Strike Fear
+	SpriteType = { 
+		name = "GFX_CIS_the_steps_that_strike_fear-62268"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_steps_that_strike_fear-62268.dds"
+	}
+
+	##Icon Shine For: The Steps That Strike Fear
+	SpriteType = { 
+		name = "GFX_CIS_the_steps_that_strike_fear-62268_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_steps_that_strike_fear-62268.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_steps_that_strike_fear-62268.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_steps_that_strike_fear-62268.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Mobilize The Movement
+	SpriteType = { 
+		name = "GFX_CIS_mobilize_the_movement-62260"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_mobilize_the_movement-62260.dds"
+	}
+
+	##Icon Shine For: Mobilize The Movement
+	SpriteType = { 
+		name = "GFX_CIS_mobilize_the_movement-62260_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_mobilize_the_movement-62260.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_mobilize_the_movement-62260.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_mobilize_the_movement-62260.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Form the separatist senate
+	SpriteType = { 
+		name = "GFX_CIS_form_the_separatist_senate-62261"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_separatist_senate-62261.dds"
+	}
+
+	##Icon Shine For: Form the separatist senate
+	SpriteType = { 
+		name = "GFX_CIS_form_the_separatist_senate-62261_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_separatist_senate-62261.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_separatist_senate-62261.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_separatist_senate-62261.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Idealist's of The Galaxy
+	SpriteType = { 
+		name = "GFX_CIS_the_idealists_of_the_galaxy-62267"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_idealists_of_the_galaxy-62267.dds"
+	}
+
+	##Icon Shine For: The Idealist's of The Galaxy
+	SpriteType = { 
+		name = "GFX_CIS_the_idealists_of_the_galaxy-62267_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_idealists_of_the_galaxy-62267.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_idealists_of_the_galaxy-62267.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_idealists_of_the_galaxy-62267.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Numbers Over Quality
+	SpriteType = { 
+		name = "GFX_CIS_numbers_over_quality-62277"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_numbers_over_quality-62277.dds"
+	}
+
+	##Icon Shine For: Numbers Over Quality
+	SpriteType = { 
+		name = "GFX_CIS_numbers_over_quality-62277_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_numbers_over_quality-62277.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_numbers_over_quality-62277.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_numbers_over_quality-62277.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Artificial Planning
+	SpriteType = { 
+		name = "GFX_CIS_artificial_planning-62283"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_artificial_planning-62283.dds"
+	}
+
+	##Icon Shine For: Artificial Planning
+	SpriteType = { 
+		name = "GFX_CIS_artificial_planning-62283_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_artificial_planning-62283.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_artificial_planning-62283.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_artificial_planning-62283.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Grand Droid Army
+	SpriteType = { 
+		name = "GFX_CIS_the_grand_droid_army-62272"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_grand_droid_army-62272.dds"
+	}
+
+	##Icon Shine For: The Grand Droid Army
+	SpriteType = { 
+		name = "GFX_CIS_the_grand_droid_army-62272_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_grand_droid_army-62272.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_grand_droid_army-62272.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_grand_droid_army-62272.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Flares seen across the galaxy
+	SpriteType = { 
+		name = "GFX_CIS_the_flares_seen_across_the_galaxy-62259"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_flares_seen_across_the_galaxy-62259.dds"
+	}
+
+	##Icon Shine For: The Flares seen across the galaxy
+	SpriteType = { 
+		name = "GFX_CIS_the_flares_seen_across_the_galaxy-62259_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_flares_seen_across_the_galaxy-62259.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_flares_seen_across_the_galaxy-62259.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_flares_seen_across_the_galaxy-62259.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Buildup of Elite Units
+	SpriteType = { 
+		name = "GFX_CIS_buildup_of_elite_units-62279"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_buildup_of_elite_units-62279.dds"
+	}
+
+	##Icon Shine For: Buildup of Elite Units
+	SpriteType = { 
+		name = "GFX_CIS_buildup_of_elite_units-62279_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_buildup_of_elite_units-62279.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_buildup_of_elite_units-62279.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_buildup_of_elite_units-62279.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Power to The Senate
+	SpriteType = { 
+		name = "GFX_CIS_power_to_the_senate-62294"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_senate-62294.dds"
+	}
+
+	##Icon Shine For: Power to The Senate
+	SpriteType = { 
+		name = "GFX_CIS_power_to_the_senate-62294_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_senate-62294.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_senate-62294.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_senate-62294.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Integrated Army
+	SpriteType = { 
+		name = "GFX_CIS_integrated_army-62271"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_integrated_army-62271.dds"
+	}
+
+	##Icon Shine For: Integrated Army
+	SpriteType = { 
+		name = "GFX_CIS_integrated_army-62271_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_integrated_army-62271.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_integrated_army-62271.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_integrated_army-62271.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Aftermath of Geonosis
+	SpriteType = { 
+		name = "GFX_CIS_aftermath_of_geonosis-62258"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_aftermath_of_geonosis-62258.dds"
+	}
+
+	##Icon Shine For: Aftermath of Geonosis
+	SpriteType = { 
+		name = "GFX_CIS_aftermath_of_geonosis-62258_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_aftermath_of_geonosis-62258.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_aftermath_of_geonosis-62258.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_aftermath_of_geonosis-62258.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Extensive Militarization
+	SpriteType = { 
+		name = "GFX_CIS_extensive_militarization-62310"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_extensive_militarization-62310.dds"
+	}
+
+	##Icon Shine For: Extensive Militarization
+	SpriteType = { 
+		name = "GFX_CIS_extensive_militarization-62310_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_extensive_militarization-62310.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_extensive_militarization-62310.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_extensive_militarization-62310.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Anti Corruption Initiatives
+	SpriteType = { 
+		name = "GFX_CIS_anti_corruption_initiatives-62299"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_anti_corruption_initiatives-62299.dds"
+	}
+
+	##Icon Shine For: Anti Corruption Initiatives
+	SpriteType = { 
+		name = "GFX_CIS_anti_corruption_initiatives-62299_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_anti_corruption_initiatives-62299.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_anti_corruption_initiatives-62299.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_anti_corruption_initiatives-62299.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Specialized Models
+	SpriteType = { 
+		name = "GFX_CIS_specialized_models-62284"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_specialized_models-62284.dds"
+	}
+
+	##Icon Shine For: Specialized Models
+	SpriteType = { 
+		name = "GFX_CIS_specialized_models-62284_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_specialized_models-62284.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_specialized_models-62284.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_specialized_models-62284.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Raxus Officer Schools
+	SpriteType = { 
+		name = "GFX_CIS_raxus_officer_schools-62287"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_officer_schools-62287.dds"
+	}
+
+	##Icon Shine For: Raxus Officer Schools
+	SpriteType = { 
+		name = "GFX_CIS_raxus_officer_schools-62287_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_officer_schools-62287.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_officer_schools-62287.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_officer_schools-62287.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Battle Hardened Modules
+	SpriteType = { 
+		name = "GFX_CIS_battle_hardened_modules-62289"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_battle_hardened_modules-62289.dds"
+	}
+
+	##Icon Shine For: Battle Hardened Modules
+	SpriteType = { 
+		name = "GFX_CIS_battle_hardened_modules-62289_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_battle_hardened_modules-62289.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_battle_hardened_modules-62289.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_battle_hardened_modules-62289.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Sentient Command
+	SpriteType = { 
+		name = "GFX_CIS_sentient_command-62281"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_sentient_command-62281.dds"
+	}
+
+	##Icon Shine For: Sentient Command
+	SpriteType = { 
+		name = "GFX_CIS_sentient_command-62281_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_sentient_command-62281.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_sentient_command-62281.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_sentient_command-62281.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Friends in High Places
+	SpriteType = { 
+		name = "GFX_CIS_friends_in_high_places-62327"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_friends_in_high_places-62327.dds"
+	}
+
+	##Icon Shine For: Friends in High Places
+	SpriteType = { 
+		name = "GFX_CIS_friends_in_high_places-62327_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_friends_in_high_places-62327.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_friends_in_high_places-62327.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_friends_in_high_places-62327.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Disposable Army
+	SpriteType = { 
+		name = "GFX_CIS_disposable_army-62286"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_disposable_army-62286.dds"
+	}
+
+	##Icon Shine For: Disposable Army
+	SpriteType = { 
+		name = "GFX_CIS_disposable_army-62286_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_disposable_army-62286.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_disposable_army-62286.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_disposable_army-62286.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Set up Base on Ruusan
+	SpriteType = { 
+		name = "GFX_CIS_set_up_base_on_ruusan-62270"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_set_up_base_on_ruusan-62270.dds"
+	}
+
+	##Icon Shine For: Set up Base on Ruusan
+	SpriteType = { 
+		name = "GFX_CIS_set_up_base_on_ruusan-62270_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_set_up_base_on_ruusan-62270.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_set_up_base_on_ruusan-62270.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_set_up_base_on_ruusan-62270.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Recycle Damaged Droids
+	SpriteType = { 
+		name = "GFX_CIS_recycle_damaged_droids-62282"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_recycle_damaged_droids-62282.dds"
+	}
+
+	##Icon Shine For: Recycle Damaged Droids
+	SpriteType = { 
+		name = "GFX_CIS_recycle_damaged_droids-62282_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_recycle_damaged_droids-62282.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_recycle_damaged_droids-62282.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_recycle_damaged_droids-62282.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Power to The Council
+	SpriteType = { 
+		name = "GFX_CIS_power_to_the_council-62317"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_council-62317.dds"
+	}
+
+	##Icon Shine For: Power to The Council
+	SpriteType = { 
+		name = "GFX_CIS_power_to_the_council-62317_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_council-62317.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_council-62317.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_power_to_the_council-62317.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Begin Industrialization
+	SpriteType = { 
+		name = "GFX_CIS_begin_industrialization-62319"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_begin_industrialization-62319.dds"
+	}
+
+	##Icon Shine For: Begin Industrialization
+	SpriteType = { 
+		name = "GFX_CIS_begin_industrialization-62319_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_begin_industrialization-62319.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_begin_industrialization-62319.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_begin_industrialization-62319.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: 100-1 Ratio
+	SpriteType = { 
+		name = "GFX_CIS_1001_ratio-62291"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_1001_ratio-62291.dds"
+	}
+
+	##Icon Shine For: 100-1 Ratio
+	SpriteType = { 
+		name = "GFX_CIS_1001_ratio-62291_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_1001_ratio-62291.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_1001_ratio-62291.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_1001_ratio-62291.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Mass Production
+	SpriteType = { 
+		name = "GFX_CIS_mass_production-62285"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_production-62285.dds"
+	}
+
+	##Icon Shine For: Mass Production
+	SpriteType = { 
+		name = "GFX_CIS_mass_production-62285_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_production-62285.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_production-62285.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_production-62285.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Loyalty Over Integrity
+	SpriteType = { 
+		name = "GFX_CIS_loyalty_over_integrity-62308"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_loyalty_over_integrity-62308.dds"
+	}
+
+	##Icon Shine For: Loyalty Over Integrity
+	SpriteType = { 
+		name = "GFX_CIS_loyalty_over_integrity-62308_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_loyalty_over_integrity-62308.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_loyalty_over_integrity-62308.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_loyalty_over_integrity-62308.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Fortify Boz Pity
+	SpriteType = { 
+		name = "GFX_CIS_fortify_boz_pity-62273"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_boz_pity-62273.dds"
+	}
+
+	##Icon Shine For: Fortify Boz Pity
+	SpriteType = { 
+		name = "GFX_CIS_fortify_boz_pity-62273_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_boz_pity-62273.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_boz_pity-62273.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_fortify_boz_pity-62273.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Mass Assault Tactics
+	SpriteType = { 
+		name = "GFX_CIS_mass_assault_tactics-62290"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_assault_tactics-62290.dds"
+	}
+
+	##Icon Shine For: Mass Assault Tactics
+	SpriteType = { 
+		name = "GFX_CIS_mass_assault_tactics-62290_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_assault_tactics-62290.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_assault_tactics-62290.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_mass_assault_tactics-62290.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Fair Taxation
+	SpriteType = { 
+		name = "GFX_CIS_fair_taxation-62298"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_fair_taxation-62298.dds"
+	}
+
+	##Icon Shine For: Fair Taxation
+	SpriteType = { 
+		name = "GFX_CIS_fair_taxation-62298_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_fair_taxation-62298.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_fair_taxation-62298.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_fair_taxation-62298.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Corporate Subsidies
+	SpriteType = { 
+		name = "GFX_CIS_corporate_subsidies-62315"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_subsidies-62315.dds"
+	}
+
+	##Icon Shine For: Corporate Subsidies
+	SpriteType = { 
+		name = "GFX_CIS_corporate_subsidies-62315_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_subsidies-62315.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_subsidies-62315.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_subsidies-62315.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Shadow Feed Propaganda
+	SpriteType = { 
+		name = "GFX_CIS_shadow_feed_propaganda-62309"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_shadow_feed_propaganda-62309.dds"
+	}
+
+	##Icon Shine For: Shadow Feed Propaganda
+	SpriteType = { 
+		name = "GFX_CIS_shadow_feed_propaganda-62309_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_shadow_feed_propaganda-62309.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_shadow_feed_propaganda-62309.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_shadow_feed_propaganda-62309.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Bury Any Peace Talks
+	SpriteType = { 
+		name = "GFX_CIS_bury_any_peace_talks-62312"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_bury_any_peace_talks-62312.dds"
+	}
+
+	##Icon Shine For: Bury Any Peace Talks
+	SpriteType = { 
+		name = "GFX_CIS_bury_any_peace_talks-62312_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_bury_any_peace_talks-62312.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_bury_any_peace_talks-62312.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_bury_any_peace_talks-62312.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Hope For a Better Tomorrow
+	SpriteType = { 
+		name = "GFX_CIS_a_hope_for_a_better_tomorrow-62302"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_a_hope_for_a_better_tomorrow-62302.dds"
+	}
+
+	##Icon Shine For: A Hope For a Better Tomorrow
+	SpriteType = { 
+		name = "GFX_CIS_a_hope_for_a_better_tomorrow-62302_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_a_hope_for_a_better_tomorrow-62302.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_a_hope_for_a_better_tomorrow-62302.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_a_hope_for_a_better_tomorrow-62302.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Stage Terror Attacks
+	SpriteType = { 
+		name = "GFX_CIS_stage_terror_attacks-62313"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_stage_terror_attacks-62313.dds"
+	}
+
+	##Icon Shine For: Stage Terror Attacks
+	SpriteType = { 
+		name = "GFX_CIS_stage_terror_attacks-62313_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_stage_terror_attacks-62313.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_stage_terror_attacks-62313.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_stage_terror_attacks-62313.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Ensure War Profits
+	SpriteType = { 
+		name = "GFX_CIS_ensure_war_profits-62316"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_ensure_war_profits-62316.dds"
+	}
+
+	##Icon Shine For: Ensure War Profits
+	SpriteType = { 
+		name = "GFX_CIS_ensure_war_profits-62316_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_ensure_war_profits-62316.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_ensure_war_profits-62316.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_ensure_war_profits-62316.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Commerce Guild
+	SpriteType = { 
+		name = "GFX_CIS_the_commerce_guild-62334"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_commerce_guild-62334.dds"
+	}
+
+	##Icon Shine For: The Commerce Guild
+	SpriteType = { 
+		name = "GFX_CIS_the_commerce_guild-62334_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_the_commerce_guild-62334.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_commerce_guild-62334.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_the_commerce_guild-62334.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Guild Resources
+	SpriteType = { 
+		name = "GFX_CIS_guild_resources-62335"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_guild_resources-62335.dds"
+	}
+
+	##Icon Shine For: Guild Resources
+	SpriteType = { 
+		name = "GFX_CIS_guild_resources-62335_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_guild_resources-62335.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_guild_resources-62335.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_guild_resources-62335.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Flatter The Separatist Council
+	SpriteType = { 
+		name = "GFX_CIS_flatter_the_separatist_council-62262"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_flatter_the_separatist_council-62262.dds"
+	}
+
+	##Icon Shine For: Flatter The Separatist Council
+	SpriteType = { 
+		name = "GFX_CIS_flatter_the_separatist_council-62262_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_flatter_the_separatist_council-62262.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_flatter_the_separatist_council-62262.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_flatter_the_separatist_council-62262.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Corporate Contracts
+	SpriteType = { 
+		name = "GFX_CIS_corporate_contracts-62311"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_contracts-62311.dds"
+	}
+
+	##Icon Shine For: Corporate Contracts
+	SpriteType = { 
+		name = "GFX_CIS_corporate_contracts-62311_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_contracts-62311.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_contracts-62311.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_contracts-62311.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Toast to Our Friends
+	SpriteType = { 
+		name = "GFX_CIS_a_toast_to_our_friends-62306"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_a_toast_to_our_friends-62306.dds"
+	}
+
+	##Icon Shine For: A Toast to Our Friends
+	SpriteType = { 
+		name = "GFX_CIS_a_toast_to_our_friends-62306_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_a_toast_to_our_friends-62306.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_a_toast_to_our_friends-62306.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_a_toast_to_our_friends-62306.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Further The Sith Plot
+	SpriteType = { 
+		name = "GFX_CIS_further_the_sith_plot-62305"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_further_the_sith_plot-62305.dds"
+	}
+
+	##Icon Shine For: Further The Sith Plot
+	SpriteType = { 
+		name = "GFX_CIS_further_the_sith_plot-62305_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_further_the_sith_plot-62305.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_further_the_sith_plot-62305.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_further_the_sith_plot-62305.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Tie up Loose Ends
+	SpriteType = { 
+		name = "GFX_CIS_tie_up_loose_ends-62304"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_tie_up_loose_ends-62304.dds"
+	}
+
+	##Icon Shine For: Tie up Loose Ends
+	SpriteType = { 
+		name = "GFX_CIS_tie_up_loose_ends-62304_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_tie_up_loose_ends-62304.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_tie_up_loose_ends-62304.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_tie_up_loose_ends-62304.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Operation Downfall
+	SpriteType = { 
+		name = "GFX_CIS_operation_downfall-62303"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_operation_downfall-62303.dds"
+	}
+
+	##Icon Shine For: Operation Downfall
+	SpriteType = { 
+		name = "GFX_CIS_operation_downfall-62303_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_operation_downfall-62303.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_operation_downfall-62303.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_operation_downfall-62303.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Techno Union
+	SpriteType = { 
+		name = "GFX_CIS_techno_union_2-62337"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union-62337.dds"
+	}
+
+	##Icon Shine For: Techno Union
+	SpriteType = { 
+		name = "GFX_CIS_techno_union_2-62337_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union-62337.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union-62337.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union-62337.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Trade Federation
+	SpriteType = { 
+		name = "GFX_CIS_trade_federation_2-62340"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_trade_federation-62340.dds"
+	}
+
+	##Icon Shine For: Trade Federation
+	SpriteType = { 
+		name = "GFX_CIS_trade_federation_2-62340_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_trade_federation-62340.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_trade_federation-62340.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_trade_federation-62340.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: InterGalactic Banking Clan
+	SpriteType = { 
+		name = "GFX_CIS_intergalactic_banking_clan-62343"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_intergalactic_banking_clan-62343.dds"
+	}
+
+	##Icon Shine For: InterGalactic Banking Clan
+	SpriteType = { 
+		name = "GFX_CIS_intergalactic_banking_clan-62343_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_intergalactic_banking_clan-62343.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_intergalactic_banking_clan-62343.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_intergalactic_banking_clan-62343.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Envoy to The Under world
+	SpriteType = { 
+		name = "GFX_CIS_envoy_to_the_under_world-62263"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_envoy_to_the_under_world-62263.dds"
+	}
+
+	##Icon Shine For: Envoy to The Under world
+	SpriteType = { 
+		name = "GFX_CIS_envoy_to_the_under_world-62263_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_envoy_to_the_under_world-62263.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_envoy_to_the_under_world-62263.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_envoy_to_the_under_world-62263.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Techno Union Think Tank
+	SpriteType = { 
+		name = "GFX_CIS_techno_union_think_tank-62338"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union_think_tank-62338.dds"
+	}
+
+	##Icon Shine For: Techno Union Think Tank
+	SpriteType = { 
+		name = "GFX_CIS_techno_union_think_tank-62338_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union_think_tank-62338.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union_think_tank-62338.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_techno_union_think_tank-62338.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Further R-I-I Funding
+	SpriteType = { 
+		name = "GFX_CIS_further_rii_funding-62341"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_further_rii_funding-62341.dds"
+	}
+
+	##Icon Shine For: Further R-I-I Funding
+	SpriteType = { 
+		name = "GFX_CIS_further_rii_funding-62341_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_further_rii_funding-62341.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_further_rii_funding-62341.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_further_rii_funding-62341.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Ship Contracts
+	SpriteType = { 
+		name = "GFX_CIS_ship_contracts-62342"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_ship_contracts-62342.dds"
+	}
+
+	##Icon Shine For: Ship Contracts
+	SpriteType = { 
+		name = "GFX_CIS_ship_contracts-62342_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_ship_contracts-62342.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_ship_contracts-62342.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_ship_contracts-62342.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Civilian Factories
+	SpriteType = { 
+		name = "GFX_CIS_civilian_factories-62330"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_civilian_factories-62330.dds"
+	}
+
+	##Icon Shine For: Civilian Factories
+	SpriteType = { 
+		name = "GFX_CIS_civilian_factories-62330_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_civilian_factories-62330.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_civilian_factories-62330.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_civilian_factories-62330.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Raxus Drilling Initiative
+	SpriteType = { 
+		name = "GFX_CIS_raxus_drilling_initiative-62336"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_drilling_initiative-62336.dds"
+	}
+
+	##Icon Shine For: Raxus Drilling Initiative
+	SpriteType = { 
+		name = "GFX_CIS_raxus_drilling_initiative-62336_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_drilling_initiative-62336.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_drilling_initiative-62336.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_drilling_initiative-62336.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pyke Rhydonium Deal
+	SpriteType = { 
+		name = "GFX_CIS_pyke_rhydonium_deal-62265"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_pyke_rhydonium_deal-62265.dds"
+	}
+
+	##Icon Shine For: Pyke Rhydonium Deal
+	SpriteType = { 
+		name = "GFX_CIS_pyke_rhydonium_deal-62265_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_pyke_rhydonium_deal-62265.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_pyke_rhydonium_deal-62265.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_pyke_rhydonium_deal-62265.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Treaty With The Hutts
+	SpriteType = { 
+		name = "GFX_CIS_treaty_with_the_hutts-62266"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_treaty_with_the_hutts-62266.dds"
+	}
+
+	##Icon Shine For: Treaty With The Hutts
+	SpriteType = { 
+		name = "GFX_CIS_treaty_with_the_hutts-62266_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_treaty_with_the_hutts-62266.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_treaty_with_the_hutts-62266.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_treaty_with_the_hutts-62266.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Droid Factories
+	SpriteType = { 
+		name = "GFX_CIS_droid_factories-62339"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_droid_factories-62339.dds"
+	}
+
+	##Icon Shine For: Droid Factories
+	SpriteType = { 
+		name = "GFX_CIS_droid_factories-62339_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_droid_factories-62339.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_droid_factories-62339.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_droid_factories-62339.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Form The O-R-I-I
+	SpriteType = { 
+		name = "GFX_CIS_form_the_orii-62320"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_orii-62320.dds"
+	}
+
+	##Icon Shine For: Form The O-R-I-I
+	SpriteType = { 
+		name = "GFX_CIS_form_the_orii-62320_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_orii-62320.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_orii-62320.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_form_the_orii-62320.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Raxus Infrastructure Build up
+	SpriteType = { 
+		name = "GFX_CIS_raxus_infrastructure_build_up-62328"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_infrastructure_build_up-62328.dds"
+	}
+
+	##Icon Shine For: Raxus Infrastructure Build up
+	SpriteType = { 
+		name = "GFX_CIS_raxus_infrastructure_build_up-62328_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_infrastructure_build_up-62328.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_infrastructure_build_up-62328.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_infrastructure_build_up-62328.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Engineers of The Outer Rim
+	SpriteType = { 
+		name = "GFX_CIS_engineers_of_the_outer_rim-62325"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_engineers_of_the_outer_rim-62325.dds"
+	}
+
+	##Icon Shine For: Engineers of The Outer Rim
+	SpriteType = { 
+		name = "GFX_CIS_engineers_of_the_outer_rim-62325_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_engineers_of_the_outer_rim-62325.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_engineers_of_the_outer_rim-62325.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_engineers_of_the_outer_rim-62325.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A Mobilized Outer-rim
+	SpriteType = { 
+		name = "GFX_CIS_a_mobilized_outerrim-62326"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_a_mobilized_outerrim-62326.dds"
+	}
+
+	##Icon Shine For: A Mobilized Outer-rim
+	SpriteType = { 
+		name = "GFX_CIS_a_mobilized_outerrim-62326_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_a_mobilized_outerrim-62326.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_a_mobilized_outerrim-62326.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_a_mobilized_outerrim-62326.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Build up Raxus
+	SpriteType = { 
+		name = "GFX_CIS_build_up_raxus-62321"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_build_up_raxus-62321.dds"
+	}
+
+	##Icon Shine For: Build up Raxus
+	SpriteType = { 
+		name = "GFX_CIS_build_up_raxus-62321_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_build_up_raxus-62321.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_build_up_raxus-62321.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_build_up_raxus-62321.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: ORII Phase 1
+	SpriteType = { 
+		name = "GFX_CIS_orii_phase_1-62322"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_1-62322.dds"
+	}
+
+	##Icon Shine For: ORII Phase 1
+	SpriteType = { 
+		name = "GFX_CIS_orii_phase_1-62322_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_1-62322.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_1-62322.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_1-62322.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: ORII Phase 2
+	SpriteType = { 
+		name = "GFX_CIS_orii_phase_2-62324"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_2-62324.dds"
+	}
+
+	##Icon Shine For: ORII Phase 2
+	SpriteType = { 
+		name = "GFX_CIS_orii_phase_2-62324_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_2-62324.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_2-62324.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_orii_phase_2-62324.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Corporate Militarization
+	SpriteType = { 
+		name = "GFX_CIS_corporate_militarization-62329"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_militarization-62329.dds"
+	}
+
+	##Icon Shine For: Corporate Militarization
+	SpriteType = { 
+		name = "GFX_CIS_corporate_militarization-62329_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_militarization-62329.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_militarization-62329.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_corporate_militarization-62329.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Raxus Dock Yards
+	SpriteType = { 
+		name = "GFX_CIS_raxus_dock_yards-62331"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_dock_yards-62331.dds"
+	}
+
+	##Icon Shine For: Raxus Dock Yards
+	SpriteType = { 
+		name = "GFX_CIS_raxus_dock_yards-62331_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_dock_yards-62331.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_dock_yards-62331.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_raxus_dock_yards-62331.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Economic Walfare
+	SpriteType = { 
+		name = "GFX_CIS_economic_walfare-62323"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_economic_walfare-62323.dds"
+	}
+
+	##Icon Shine For: Economic Walfare
+	SpriteType = { 
+		name = "GFX_CIS_economic_walfare-62323_shine"
+		texturefile = "gfx/interface/goals/CIS_war/GFX_CIS_economic_walfare-62323.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_economic_walfare-62323.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CIS_war/GFX_CIS_economic_walfare-62323.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

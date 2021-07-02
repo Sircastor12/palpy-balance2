@@ -1,0 +1,41 @@
+state={
+	id=304
+	name="STATE_304"
+	provinces={
+		158 425 543 620 922 1199 1308 1627 1890 2018 3586 4279 4640 4996 8478 8496 8503 8507 8514 8525 8537 8538 8544 8562 8563 8568 8580 8585 8590 8594 8595 8610 8611 8618 8624 8628 8632 
+	}
+	manpower=1450
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=18
+		tungsten=0
+		oil=21
+		chromium=0
+	}
+
+  	history = {
+		owner=KES
+		add_core_of = KES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			8624 = {
+				naval_base = 4
+			}
+		}
+	
+		victory_points = {
+			158 50
+		}
+	}
+}
+

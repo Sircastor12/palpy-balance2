@@ -1,0 +1,18 @@
+add_namespace = act
+
+news_event = {
+	id = act.1
+	title = "Test Act"
+	desc = "This is a test"
+	picture = GFX_event_darkreaper
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+	
+     option = {
+		   name = "Our secret discovered"
+		   trigger = { 
+	    }	  
+	    set_global_flag = actone                 
+     }
+ }

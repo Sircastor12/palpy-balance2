@@ -1,0 +1,64 @@
+capital = 412
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	volunteer_only 
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 85
+		fascism = 15
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 10
+		fascism = 90
+	}
+}
+
+create_country_leader = {
+	name = "Candobar Inglet"
+	desc = "Khedive of Sluis Van"
+	picture = "gfx/leaders/SLU/CandobarInglet.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Candobar Inglet"
+	desc = "Khedive of Sluis Van"
+	picture = "gfx/leaders/SLU/CandobarInglet.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}

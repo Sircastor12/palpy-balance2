@@ -1,0 +1,41 @@
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		335 740 868 976 1292 1895 2585 3127 3556 8184 8188 8194 8197 8198 8199 8203 8205 8208 
+	}
+	manpower=650000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	
+	resources={
+		steel=4
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=13
+	}
+
+  	history = {
+		owner=DUR
+		add_core_of = DUR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,45 @@
+state={
+	id=387
+	name="STATE_387"
+	provinces={
+		2100 2273 2387 5006 9911 9926 9934 9937 9938 9945 9946 9951 9959 9962 9963 9969 9979 9987 
+	}
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ERI
+		add_core_of = ERI
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			9963 = {
+				naval_base = 1
+			}
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

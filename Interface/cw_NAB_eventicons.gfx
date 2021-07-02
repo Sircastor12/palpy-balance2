@@ -1,0 +1,7 @@
+spriteTypes = { 
+##Icon For: Padme's Coronation
+ SpriteType = { 
+ name = "GFX_padmescoronation" 
+ texturefile = "gfx/event_pictures/padmecoronation.dds" 
+ } 
+ }

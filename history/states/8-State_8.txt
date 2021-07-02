@@ -1,0 +1,41 @@
+state={
+	id=8
+	name="STATE_8"
+	provinces={
+		271 955 1334 1385 2733 2952 5700 5701 5702 5704 5705 5709 5710 5711 5714 5716 5717 5718 
+	}
+	manpower=85000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=4
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=DAT
+		add_core_of = DAT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			1385 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

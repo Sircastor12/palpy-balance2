@@ -1,0 +1,407 @@
+guiTypes = {
+	containerWindowType = {
+		name = "sith_init_container"
+		position = { x = 1025 y = -3 }
+		
+		buttonType ={
+			name ="sith_open_button"
+			spriteType = "GFX_sith_open_topbar_button"
+			position = { x=180 y=6 }
+			pdx_tooltip = "sith_button_loc"
+		}
+	}
+	
+	containerWindowType = {
+		name = "sith_window"
+		orientation = center
+		position = {x=-400 y=-500}
+		size = { width=1000 height=1000 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_sith_window"
+		}
+
+		iconType = {
+			name = "sith_progress"
+			position = { x=440 y=275 }  
+			spriteType = "GFX_progress_bar_sith"
+		}
+		iconType = {
+			name = "sith_apprentice_progress"
+			position = { x=510 y=275 }  
+			spriteType = "GFX_progress_bar_sith"
+		}
+		iconType = {
+			name = "sith_master"
+			position = { x=601 y=301 }  
+			spriteType = "GFX_sith_palpatine"
+		}
+		iconType = {
+			name = "sith_apprentice"
+			position = { x=133 y=303 }  
+			spriteType = "GFX_sith_tyranus"
+		}
+		buttonType ={
+			name ="sith_apprentice_open_button"
+			spriteType = "GFX_sith_tree_button"
+			position = { x=135 y=228 }
+			buttonFont = "hoi_16mbs"
+			text = "Sith Apprentice Tree"
+		}
+		buttonType ={
+			name ="sith_master_open_button"
+			spriteType = "GFX_sith_tree_button"
+			position = { x=600 y=228 }
+			buttonFont = "hoi_16mbs"
+			text = "Sith Master Tree"
+		}
+		buttonType ={
+			name ="open_sith_alchemy"
+			spriteType = "GFX_sith_D"
+			position = { x=415 y=800 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+		}
+		buttonType = {
+			name = "close_button"
+			position = {x=665 y=10}
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {
+		name = "sith_perks_window"
+		orientation = center
+		position = {x=-700 y=-500}
+		size = { width=1450 height=700 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_sith_tree_sith_perks"
+		}
+
+		buttonType ={
+			name ="sith_apprentice_dathomir_perk_1"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=80 y=78 }
+			buttonFont = "hoi_16mbs"
+			text = "Night Sister Magic"
+		}
+		buttonType ={
+			name ="sith_apprentice_dathomir_perk_2"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=255 y=30 }
+			buttonFont = "hoi_16mbs"
+			text = "Ressurect Dead"
+		}
+		buttonType ={
+			name ="sith_apprentice_dathomir_perk_3"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=255 y=134 }
+			buttonFont = "hoi_16mbs"
+			text = "Conceal Agents"
+		}
+		buttonType ={
+			name ="sith_apprentice_dathomir_perk_4"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=480 y=30 }
+			buttonFont = "hoi_16mbs"
+			text = "Infuse Power"
+		}
+		buttonType ={
+			name ="sith_apprentice_dathomir_perk_5"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=480 y=134 }
+			buttonFont = "hoi_16mbs"
+			text = "Spiderlings"
+		}
+		buttonType ={
+			name ="sith_master_dathomir_perk_1"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=750 y=78 }
+			buttonFont = "hoi_16mbs"
+			text = "Magic Weaponry"
+		}
+		buttonType ={
+			name ="sith_master_dathomir_perk_2"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=900 y=134 }
+			buttonFont = "hoi_16mbs"
+			text = "Rancor Training"
+		}
+		buttonType ={
+			name ="sith_master_dathomir_perk_3"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=900 y=26 }
+			buttonFont = "hoi_16mbs"
+			text = "Make Apprentice"
+		}
+		buttonType ={
+			name ="sith_master_dathomir_perk_4"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=1065 y=78 }
+			buttonFont = "hoi_16mbs"
+			text = "Sith Alchemy"
+		}
+		buttonType ={
+			name ="sith_master_dathomir_perk_5"
+			spriteType = "GFX_sith_tree_dathomir_button"
+			position = { x=1225 y=78 }
+			buttonFont = "hoi_16mbs"
+			text = "Empire of the Night"
+		}
+		buttonType ={
+			name ="sith_apprentice_old_sith_perk_1"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=80 y=291 }
+			buttonFont = "hoi_16mbs"
+			text = "The Old Ways"
+		}
+		buttonType ={
+			name ="sith_apprentice_old_sit_perk_2"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=255 y=237 }
+			buttonFont = "hoi_16mbs"
+			text = "Masterful Dueling"
+		}
+		buttonType ={
+			name ="sith_apprentice_old_sit_perk_3"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=255 y=344 }
+			buttonFont = "hoi_16mbs"
+			text = "Force Lightning"
+		}
+		buttonType ={
+			name ="sith_apprentice_old_sit_perk_4"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=480 y=237 }
+			buttonFont = "hoi_16mbs"
+			text = "Dark Side Droids"
+		}
+		buttonType ={
+			name ="sith_apprentice_old_sit_perk_5"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=480 y=344 }
+			buttonFont = "hoi_16mbs"
+			text = "Ancient technology"
+		}
+		buttonType ={
+			name ="sith_master_old_sit_perk_1"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=750 y=291 }
+			buttonFont = "hoi_16mbs"
+			text = "Abolish Rule of Two"
+		}
+		buttonType ={
+			name ="sith_master_old_sit_perk_2"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=900 y=237 }
+			buttonFont = "hoi_16mbs"
+			text = "See into the Future"
+		}
+		buttonType ={
+			name ="sith_master_old_sit_perk_3"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=900 y=344 }
+			buttonFont = "hoi_16mbs"
+			text = "Resettle Korribaan"
+		}
+		buttonType ={
+			name ="sith_master_old_sit_perk_4"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=1065 y=291 }
+			buttonFont = "hoi_16mbs"
+			text = "Ancient Sith Archives"
+		}
+		buttonType ={
+			name ="sith_master_old_sit_perk_5"
+			spriteType = "GFX_sith_tree_old_sith_button"
+			position = { x=1225 y=291 }
+			buttonFont = "hoi_16mbs"
+			text = "The Sith Empire"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_1"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=80 y=504 }
+			buttonFont = "hoi_16mbs"
+			text = "The Ways Forward"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_2"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=224 y=453 }
+			buttonFont = "hoi_16mbs"
+			text = "Sith Slaves"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_3"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=224 y=562 }
+			buttonFont = "hoi_16mbs"
+			text = "Cloud the Jedi"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_4"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=384 y=453 }
+			buttonFont = "hoi_16mbs"
+			text = "Cult of the Sith"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_5"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=384 y=562 }
+			buttonFont = "hoi_16mbs"
+			text = "Dark Side Acolytes"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_6"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=543 y=453 }
+			buttonFont = "hoi_16mbs"
+			text = "Fanatical Efficiency"
+		}
+		buttonType ={
+			name ="sith_apprentice_new_ways_perk_7"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=543 y=562 }
+			buttonFont = "hoi_16mbs"
+			text = "Suicide Pilots"
+		}
+		buttonType ={
+			name ="sith_master_new_ways_perk_1"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=750 y=504 }
+			buttonFont = "hoi_16mbs"
+			text = "Rule of One"
+		}
+		buttonType ={
+			name ="sith_master_new_ways_perk_2"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=900 y=453 }
+			buttonFont = "hoi_16mbs"
+			text = "Sith Naval Designs"
+		}
+		buttonType ={
+			name ="sith_master_new_ways_perk_3"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=900 y=562 }
+			buttonFont = "hoi_16mbs"
+			text = "Sith Troopers"
+		}
+		buttonType ={
+			name ="sith_master_new_ways_perk_4"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=1065 y=504 }
+			buttonFont = "hoi_16mbs"
+			text = "Establish Inquisition"
+		}
+		buttonType ={
+			name ="sith_master_new_ways_perk_5"
+			spriteType = "GFX_sith_tree_new_sith_button"
+			position = { x=1225 y=504 }
+			buttonFont = "hoi_16mbs"
+			text = "Order 66"
+		}
+
+
+		buttonType = {
+			name = "close_button"
+			position = {x=1385 y=10}
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {
+		name = "sith_alchemy"
+		orientation = center
+		position = {x=-400 y=-500}
+		size = { width=510 height=693 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_sith_alchemy"
+		}
+		buttonType = {
+			name = "close_button"
+			position = {x=460 y=10}
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType ={
+			name ="sith_alchemy_raise_dead"
+			spriteType = "GFX_sith_T"
+			position = { x=11 y=74 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_raise_TOOLTIP"
+		}
+		buttonType ={
+			name ="sith_alchemy_infuse_power"
+			spriteType = "GFX_sith_X"
+			position = { x=331 y=74 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_infuse_TOOLTIP"
+		}
+		buttonType ={
+			name ="sith_alchemy_raise_attack"
+			spriteType = "GFX_sith_S"
+			position = { x=58 y=310 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_attack_TOOLTIP"
+		}
+		buttonType ={
+			name ="sith_alchemy_raise_defense"
+			spriteType = "GFX_sith_C"
+			position = { x=283 y=310 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_defense_TOOLTIP"
+		}
+		buttonType ={
+			name ="sith_alchemy_raise_supply"
+			spriteType = "GFX_sith_R"
+			position = { x=58 y=454 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_supply_TOOLTIP"
+		}
+		buttonType ={
+			name ="sith_alchemy_raise_planning"
+			spriteType = "GFX_sith_H"
+			position = { x=283 y=454 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_planning_TOOLTIP"
+		}
+		buttonType ={
+			name ="sith_make_apprentice"
+			spriteType = "GFX_sith_make_apprentice"
+			position = { x=176 y=32 }
+			buttonFont = "hoi_16mbs"
+			text = ""
+			pdx_tooltip = "sith_apprentice_TOOLTIP"  
+		}
+		iconType = {
+			name = "sith_progress_alchemy"
+			position = { x=23 y=630 }  
+			spriteType = "GFX_progress_bar_sith_alchemy"
+		}
+	}
+}

@@ -1,0 +1,50 @@
+capital = 454
+
+set_research_slots = 0
+set_stability = 0.3
+set_war_support = .1
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	scraping_the_barrel
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1933.7.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1933.7.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+}
+
+create_country_leader = {
+	name = "A'Koba"
+	desc = "A'Koba"
+	picture = "gfx/leaders/TUK/Koba.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}

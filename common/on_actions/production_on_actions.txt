@@ -1,0 +1,1666 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                set_variable = { production_linesused = 0 }
+            }
+            #Production efficiency
+            set_variable = { global.74zefficiency = 0.1 }
+            set_variable = { global.barcefficiency = 0.1 }
+            set_variable = { global.rocketlauncherefficiency = 0.1 }
+            set_variable = { global.inf0efficiency = 0.1 }
+            set_variable = { global.inf1efficiency = 0.1 }
+            set_variable = { global.inf2efficiency = 0.1 }
+            set_variable = { global.inf3efficiency = 0.1 }
+            set_variable = { global.cmg_dsd1efficiency = 0.1 }
+            set_variable = { global.cmg_adsdefficiency = 0.1 }
+            set_variable = { global.cmg_homing_spiderefficiency = 0.1 }
+            set_variable = { global.cmg_diamondefficiency = 0.1 }
+            set_variable = { global.cmg_recusantefficiency = 0.1 }
+            set_variable = { global.cmg_providenceefficiency = 0.1 }
+            set_variable = { global.lucrehulk_freighterefficiency = 0.1 }
+            set_variable = { global.lucrehulk_battleshipefficiency = 0.1 }
+            set_variable = { global.fed_recusantefficiency = 0.1 }
+            set_variable = { global.fed_munificentefficiency = 0.1 }
+            set_variable = { global.lancerefficiency = 0.1 }
+            set_variable = { global.ibc_hailfireefficiency = 0.1 }
+            set_variable = { global.phase_1efficiency = 0.1 }
+            set_variable = { global.phase_2efficiency = 0.1 }
+            set_variable = { global.clone_generalefficiency = 0.1 }
+            set_variable = { global.clone_admiralefficiency = 0.1 }
+            set_variable = { global.z95efficiency = 0.1 }
+            set_variable = { global.v19efficiency = 0.1 }
+            set_variable = { global.arc170efficiency = 0.1 }
+            set_variable = { global.vwingefficiency = 0.1 }
+            set_variable = { global.btlbefficiency = 0.1 }
+            set_variable = { global.laatefficiency = 0.1 }
+            set_variable = { global.laatiefficiency = 0.1 }
+            set_variable = { global.peltaefficiency = 0.1 }
+            set_variable = { global.arquintesefficiency = 0.1 }
+            set_variable = { global.acclamatorefficiency = 0.1 }
+            set_variable = { global.acclamator2efficiency = 0.1 }
+            set_variable = { global.venatorefficiency = 0.1 }
+            set_variable = { global.victoryefficiency = 0.1 }
+            set_variable = { global.mandator1efficiency = 0.1 }
+            set_variable = { global.mandator2efficiency = 0.1 }
+            set_variable = { global.balutarefficiency = 0.1 }
+            set_variable = { global.komrkefficiency = 0.1 }
+            set_variable = { global.buirkalorefficiency = 0.1 }
+            set_variable = { global.fangefficiency = 0.1 }
+            set_variable = { global.cal_dreadnaughtefficiency = 0.1 }
+            set_variable = { global.carrackefficiency = 0.1 }
+            set_variable = { global.hammerheadefficiency = 0.1 }
+            set_variable = { global.ren_dreadnaughtefficiency = 0.1 }
+            set_variable = { global.ren_victoryefficiency = 0.1 }
+            set_variable = { global.ren_providenceefficiency = 0.1 }
+            set_variable = { global.atrtefficiency = 0.1 }
+            set_variable = { global.sphaefficiency = 0.1 }
+            set_variable = { global.atteefficiency = 0.1 }
+            set_variable = { global.tx130efficiency = 0.1 }
+            set_variable = { global.juggernautefficiency = 0.1 }
+            set_variable = { global.supportequipmentefficiency = 0.1 }
+            set_variable = { global.landspeederefficiency = 0.1 }
+            set_variable = { global.soro_fangefficiency = 0.1 }
+            set_variable = { global.oomefficiency = 0.1 }
+            set_variable = { global.b1efficiency = 0.1 }
+            set_variable = { global.b2efficiency = 0.1 }
+            set_variable = { global.bxefficiency = 0.1 }
+            set_variable = { global.tacticalefficiency = 0.1 }
+            set_variable = { global.dwingefficiency = 0.1 }
+            set_variable = { global.stapefficiency = 0.1 }
+            set_variable = { global.droidekaefficiency = 0.1 }
+            set_variable = { global.tec_dsd1efficiency = 0.1 }
+            set_variable = { global.tec_adsdefficiency = 0.1 }
+            set_variable = { global.crabefficiency = 0.1 }
+            set_variable = { global.pacefficiency = 0.1 }
+            set_variable = { global.mttefficiency = 0.1 }
+            set_variable = { global.j1efficiency = 0.1 }
+            set_variable = { global.tec_hailfireefficiency = 0.1 }
+            set_variable = { global.aatefficiency = 0.1 }
+            set_variable = { global.og9efficiency = 0.1 }
+            set_variable = { global.octuparramagnaefficiency = 0.1 }
+            set_variable = { global.octuparracombatefficiency = 0.1 }
+            set_variable = { global.tankdroidefficiency = 0.1 }
+            set_variable = { global.aat2efficiency = 0.1 }
+            set_variable = { global.vultureefficiency = 0.1 }
+            set_variable = { global.c9979efficiency = 0.1 }
+            set_variable = { global.rogueefficiency = 0.1 }
+            set_variable = { global.bellbulab22efficiency = 0.1 }
+            set_variable = { global.trifighterefficiency = 0.1 }
+            set_variable = { global.advanceddroidbomberefficiency = 0.1 }
+            set_variable = { global.hyenaefficiency = 0.1 }
+            set_variable = { global.bellbulab24efficiency = 0.1 }
+            set_variable = { global.hmpgunshipefficiency = 0.1 }
+            set_variable = { global.marauderefficiency = 0.1 }
+            set_variable = { global.tudestroyerefficiency = 0.1 }
+            set_variable = { global.tec_bulwarkefficiency = 0.1 }
+            set_variable = { global.cla_hammerheadefficiency = 0.1 }
+            set_variable = { global.consularefficiency = 0.1 }
+            set_variable = { global.c70efficiency = 0.1 }
+            set_variable = { global.cr70efficiency = 0.1 }
+            set_variable = { global.cr90efficiency = 0.1 }
+            set_variable = { global.dac_recusantefficiency = 0.1 }
+            set_variable = { global.dac_providenceefficiency = 0.1 }
+            set_variable = { global.subjugatorefficiency = 0.1 }
+            #Production efficiency
+            set_variable = { global.74zfactories = 0 }
+            set_variable = { global.barcfactories = 0 }
+            set_variable = { global.rocketlauncherfactories = 0 }
+            set_variable = { global.inf0factories = 0 }
+            set_variable = { global.inf1factories = 0 }
+            set_variable = { global.inf2factories = 0 }
+            set_variable = { global.inf3factories = 0 }
+            set_variable = { global.cmg_dsd1factories = 0 }
+            set_variable = { global.cmg_adsdfactories = 0 }
+            set_variable = { global.cmg_homing_spiderfactories = 0 }
+            set_variable = { global.cmg_diamondfactories = 0 }
+            set_variable = { global.cmg_recusantfactories = 0 }
+            set_variable = { global.cmg_providencefactories = 0 }
+            set_variable = { global.lucrehulk_freighterfactories = 0 }
+            set_variable = { global.lucrehulk_battleshipfactories = 0 }
+            set_variable = { global.fed_recusantfactories = 0 }
+            set_variable = { global.fed_munificentfactories = 0 }
+            set_variable = { global.lancerfactories = 0 }
+            set_variable = { global.ibc_hailfirefactories = 0 }
+            set_variable = { global.phase_1factories = 0 }
+            set_variable = { global.phase_2factories = 0 }
+            set_variable = { global.clone_generalfactories = 0 }
+            set_variable = { global.clone_admiralfactories = 0 }
+            set_variable = { global.z95factories = 0 }
+            set_variable = { global.v19factories = 0 }
+            set_variable = { global.arc170factories = 0 }
+            set_variable = { global.vwingfactories = 0 }
+            set_variable = { global.btlbfactories = 0 }
+            set_variable = { global.laatfactories = 0 }
+            set_variable = { global.laatifactories = 0 }
+            set_variable = { global.peltafactories = 0 }
+            set_variable = { global.arquintesfactories = 0 }
+            set_variable = { global.acclamatorfactories = 0 }
+            set_variable = { global.acclamator2factories = 0 }
+            set_variable = { global.venatorfactories = 0 }
+            set_variable = { global.victoryfactories = 0 }
+            set_variable = { global.mandator1factories = 0 }
+            set_variable = { global.mandator2factories = 0 }
+            set_variable = { global.balutarfactories = 0 }
+            set_variable = { global.komrkfactories = 0 }
+            set_variable = { global.buirkalorfactories = 0 }
+            set_variable = { global.fangfactories = 0 }
+            set_variable = { global.cal_dreadnaughtfactories = 0 }
+            set_variable = { global.carrackfactories = 0 }
+            set_variable = { global.hammerheadfactories = 0 }
+            set_variable = { global.ren_dreadnaughtfactories = 0 }
+            set_variable = { global.ren_victoryfactories = 0 }
+            set_variable = { global.ren_providencefactories = 0 }
+            set_variable = { global.atrtfactories = 0 }
+            set_variable = { global.sphafactories = 0 }
+            set_variable = { global.attefactories = 0 }
+            set_variable = { global.tx130factories = 0 }
+            set_variable = { global.juggernautfactories = 0 }
+            set_variable = { global.supportequipmentfactories = 0 }
+            set_variable = { global.landspeederfactories = 0 }
+            set_variable = { global.soro_fangfactories = 0 }
+            set_variable = { global.oomfactories = 0 }
+            set_variable = { global.b1factories = 0 }
+            set_variable = { global.b2factories = 0 }
+            set_variable = { global.bxfactories = 0 }
+            set_variable = { global.tacticalfactories = 0 }
+            set_variable = { global.dwingfactories = 0 }
+            set_variable = { global.stapfactories = 0 }
+            set_variable = { global.droidekafactories = 0 }
+            set_variable = { global.tec_dsd1factories = 0 }
+            set_variable = { global.tec_adsdfactories = 0 }
+            set_variable = { global.crabfactories = 0 }
+            set_variable = { global.pacfactories = 0 }
+            set_variable = { global.mttfactories = 0 }
+            set_variable = { global.j1factories = 0 }
+            set_variable = { global.tec_hailfirefactories = 0 }
+            set_variable = { global.aatfactories = 0 }
+            set_variable = { global.og9factories = 0 }
+            set_variable = { global.octuparramagnafactories = 0 }
+            set_variable = { global.octuparracombatfactories = 0 }
+            set_variable = { global.tankdroidfactories = 0 }
+            set_variable = { global.aat2factories = 0 }
+            set_variable = { global.vulturefactories = 0 }
+            set_variable = { global.c9979factories = 0 }
+            set_variable = { global.roguefactories = 0 }
+            set_variable = { global.bellbulab22factories = 0 }
+            set_variable = { global.trifighterfactories = 0 }
+            set_variable = { global.advanceddroidbomberfactories = 0 }
+            set_variable = { global.hyenafactories = 0 }
+            set_variable = { global.bellbulab24factories = 0 }
+            set_variable = { global.hmpgunshipfactories = 0 }
+            set_variable = { global.marauderfactories = 0 }
+            set_variable = { global.tudestroyerfactories = 0 }
+            set_variable = { global.tec_bulwarkfactories = 0 }
+            set_variable = { global.cla_hammerheadfactories = 0 }
+            set_variable = { global.consularfactories = 0 }
+            set_variable = { global.c70factories = 0 }
+            set_variable = { global.cr70factories = 0 }
+            set_variable = { global.cr90factories = 0 }
+            set_variable = { global.dac_recusantfactories = 0 }
+            set_variable = { global.dac_providencefactories = 0 }
+            set_variable = { global.subjugatorfactories = 0 }
+            #Weekly production at max efficiency
+            set_variable = { global.74zweeklymax = 30 }
+            set_variable = { global.barcweeklymax = 30 }
+            set_variable = { global.rocketlauncherweeklymax = 30 }
+            set_variable = { global.inf0weeklymax = 8000 }
+            set_variable = { global.inf1weeklymax = 8000 }
+            set_variable = { global.inf2weeklymax = 8000 }
+            set_variable = { global.inf3weeklymax = 8000 }
+            set_variable = { global.cmg_dsd1weeklymax = 50 }
+            set_variable = { global.cmg_adsdweeklymax = 50 }
+            set_variable = { global.cmg_homing_spiderweeklymax = 30 }
+            set_variable = { global.cmg_diamondweeklymax = 0.5 }
+            set_variable = { global.cmg_recusantweeklymax = 0.5 }
+            set_variable = { global.cmg_providenceweeklymax = 0.5 }
+            set_variable = { global.lucrehulk_freighterweeklymax = 0.1 }
+            set_variable = { global.lucrehulk_battleshipweeklymax = 0.1 }
+            set_variable = { global.fed_recusantweeklymax = 0.5 }
+            set_variable = { global.fed_munificentweeklymax = 0.25 }
+            set_variable = { global.lancerweeklymax = 250 }
+            set_variable = { global.ibc_hailfireweeklymax = 30 }
+            set_variable = { global.phase_1weeklymax = 250 }
+            set_variable = { global.phase_2weeklymax = 250 }
+            set_variable = { global.clone_generalweeklymax = 1 }
+            set_variable = { global.clone_admiralweeklymax = 1 }
+            set_variable = { global.z95weeklymax = 60 }
+            set_variable = { global.v19weeklymax = 25 }
+            set_variable = { global.arc170weeklymax = 50 }
+            set_variable = { global.vwingweeklymax = 50 }
+            set_variable = { global.btlbweeklymax = 50 }
+            set_variable = { global.laatweeklymax = 50 }
+            set_variable = { global.laatiweeklymax = 50 }
+            set_variable = { global.peltaweeklymax = 0.5 }
+            set_variable = { global.arquintesweeklymax = 0.5 }
+            set_variable = { global.acclamatorweeklymax = 0.5 }
+            set_variable = { global.acclamator2weeklymax = 0.5 }
+            set_variable = { global.venatorweeklymax = 0.25 }
+            set_variable = { global.victoryweeklymax = 0.25 }
+            set_variable = { global.mandator1weeklymax = 0.02 }
+            set_variable = { global.mandator2weeklymax = 0.02 }
+            set_variable = { global.balutarweeklymax = 50 }
+            set_variable = { global.komrkweeklymax = 25 }
+            set_variable = { global.buirkalorweeklymax = 50 }
+            set_variable = { global.fangweeklymax = 25 }
+            set_variable = { global.cal_dreadnaughtweeklymax = 0.5 }
+            set_variable = { global.carrackweeklymax = 0.5 }
+            set_variable = { global.hammerheadweeklymax = 1 }
+            set_variable = { global.ren_dreadnaughtweeklymax = 0.5 }
+            set_variable = { global.ren_victoryweeklymax = 0.5 }
+            set_variable = { global.ren_providenceweeklymax = 0.25 }
+            set_variable = { global.atrtweeklymax = 50 }
+            set_variable = { global.sphaweeklymax = 18 }
+            set_variable = { global.atteweeklymax = 150 }
+            set_variable = { global.tx130weeklymax = 30 }
+            set_variable = { global.juggernautweeklymax = 25 }
+            set_variable = { global.supportequipmentweeklymax = 500 }
+            set_variable = { global.landspeederweeklymax = 50 }
+            set_variable = { global.soro_fangweeklymax = 25 }
+            set_variable = { global.oomweeklymax = 1000 }
+            set_variable = { global.b1weeklymax = 2000 }
+            set_variable = { global.b2weeklymax = 750 }
+            set_variable = { global.bxweeklymax = 50 }
+            set_variable = { global.tacticalweeklymax = 1 }
+            set_variable = { global.dwingweeklymax = 200 }
+            set_variable = { global.stapweeklymax = 75 }
+            set_variable = { global.droidekaweeklymax = 75 }
+            set_variable = { global.tec_dsd1weeklymax = 50 }
+            set_variable = { global.tec_adsdweeklymax = 50 }
+            set_variable = { global.crabweeklymax = 50 }
+            set_variable = { global.pacweeklymax = 40 }
+            set_variable = { global.mttweeklymax = 30 }
+            set_variable = { global.j1weeklymax = 30 }
+            set_variable = { global.tec_hailfireweeklymax = 30 }
+            set_variable = { global.aatweeklymax = 40 }
+            set_variable = { global.og9weeklymax = 30 }
+            set_variable = { global.octuparramagnaweeklymax = 30 }
+            set_variable = { global.octuparracombatweeklymax = 30 }
+            set_variable = { global.tankdroidweeklymax = 50 }
+            set_variable = { global.aat2weeklymax = 40 }
+            set_variable = { global.vultureweeklymax = 100 }
+            set_variable = { global.c9979weeklymax = 10 }
+            set_variable = { global.rogueweeklymax = 25 }
+            set_variable = { global.bellbulab22weeklymax = 25 }
+            set_variable = { global.trifighterweeklymax = 40 }
+            set_variable = { global.advanceddroidbomberweeklymax = 25 }
+            set_variable = { global.hyenaweeklymax = 60 }
+            set_variable = { global.bellbulab24weeklymax = 25 }
+            set_variable = { global.hmpgunshipweeklymax = 25 }
+            set_variable = { global.marauderweeklymax = 1 }
+            set_variable = { global.tudestroyerweeklymax = 0.5 }
+            set_variable = { global.tec_bulwarkweeklymax = 0.25 }
+            set_variable = { global.cla_hammerheadweeklymax = 1 }
+            set_variable = { global.consularweeklymax = 1 }
+            set_variable = { global.c70weeklymax = 1 }
+            set_variable = { global.cr70weeklymax = 1 }
+            set_variable = { global.cr90weeklymax = 1 }
+            set_variable = { global.dac_recusantweeklymax = 0.25 }
+            set_variable = { global.dac_providenceweeklymax = 0.25 }
+            set_variable = { global.subjugatorweeklymax = 0.02 }
+            #weekly production
+            set_variable = { global.74zweekly = 15 }
+            set_variable = { global.barcweekly = 15 }
+            set_variable = { global.rocketlauncherweekly = 15 }
+            set_variable = { global.inf0weekly = 750 }
+            set_variable = { global.inf1weekly = 750 }
+            set_variable = { global.inf2weekly = 750 }
+            set_variable = { global.inf3weekly = 750 }
+            set_variable = { global.cmg_dsd1weekly = 12.5 }
+            set_variable = { global.cmg_adsdweekly = 12.5 }
+            set_variable = { global.cmg_homing_spiderweekly = 15 }
+            set_variable = { global.cmg_diamondweekly = 0.05 }
+            set_variable = { global.cmg_recusantweekly = 0.05 }
+            set_variable = { global.cmg_providenceweekly = 0.05 }
+            set_variable = { global.lucrehulk_freighterweekly = 0.01 }
+            set_variable = { global.lucrehulk_battleshipweekly = 0.01 }
+            set_variable = { global.fed_recusantweekly = 0.05 }
+            set_variable = { global.fed_munificentweekly = 0.05 }
+            set_variable = { global.lancerweekly = 15 }
+            set_variable = { global.ibc_hailfireweekly = 12.5 }
+            set_variable = { global.phase_1weekly = 50 }
+            set_variable = { global.phase_2weekly = 50 }
+            set_variable = { global.clone_generalweekly = .1 }
+            set_variable = { global.clone_admiralweekly = .1 }
+            set_variable = { global.z95weekly = 5 }
+            set_variable = { global.v19weekly = 5 }
+            set_variable = { global.arc170weekly = 5 }
+            set_variable = { global.vwingweekly = 5 }
+            set_variable = { global.btlbweekly = 5 }
+            set_variable = { global.laatweekly = 5 }
+            set_variable = { global.laatiweekly = 5 }
+            set_variable = { global.peltaweekly = 0.1 }
+            set_variable = { global.arquintesweekly = 0.1 }
+            set_variable = { global.acclamatorweekly = 0.1 }
+            set_variable = { global.acclamator2weekly = 0.1 }
+            set_variable = { global.venatorweekly = 0.05 }
+            set_variable = { global.victoryweekly = 0.05 }
+            set_variable = { global.mandator1weekly = 0.002 }
+            set_variable = { global.mandator2weekly = 0.002 }
+            set_variable = { global.balutarweekly = 10 }
+            set_variable = { global.komrkweekly = 2.5 }
+            set_variable = { global.buirkalorweekly = 10 }
+            set_variable = { global.fangweekly = 2.5 }
+            set_variable = { global.cal_dreadnaughtweekly = 0.05 }
+            set_variable = { global.carrackweekly = 0.1 }
+            set_variable = { global.hammerheadweekly = 0.2 }
+            set_variable = { global.ren_dreadnaughtweekly = 0.1 }
+            set_variable = { global.ren_victoryweekly = 0.05 }
+            set_variable = { global.ren_providenceweekly = 0.05 }
+            set_variable = { global.atrtweekly = 15 }
+            set_variable = { global.sphaweekly = 3.6 }
+            set_variable = { global.atteweekly = 7.5 }
+            set_variable = { global.tx130weekly = 7.5 }
+            set_variable = { global.juggernautweekly = 2.5 }
+            set_variable = { global.supportequipmentweekly = 50 }
+            set_variable = { global.landspeederweekly = 10 }
+            set_variable = { global.soro_fangweekly = 2 }
+            set_variable = { global.oomweekly = 100 }
+            set_variable = { global.b1weekly = 100 }
+            set_variable = { global.b2weekly = 50 }
+            set_variable = { global.bxweekly = 7.5 }
+            set_variable = { global.tacticalweekly = 0.2 }
+            set_variable = { global.dwingweekly = 50 }
+            set_variable = { global.stapweekly = 25 }
+            set_variable = { global.droidekaweekly = 15 }
+            set_variable = { global.tec_dsd1weekly = 17.5 }
+            set_variable = { global.tec_adsdweekly = 10 }
+            set_variable = { global.crabweekly = 10 }
+            set_variable = { global.pacweekly = 7.5 }
+            set_variable = { global.mttweekly = 5 }
+            set_variable = { global.j1weekly = 5 }
+            set_variable = { global.tec_hailfireweekly = 5 }
+            set_variable = { global.aatweekly = 20 }
+            set_variable = { global.og9weekly = 15 }
+            set_variable = { global.octuparramagnaweekly = 7.5 }
+            set_variable = { global.octuparracombatweekly = 15 }
+            set_variable = { global.tankdroidweekly = 20 }
+            set_variable = { global.aat2weekly = 15 }
+            set_variable = { global.vultureweekly = 7.5 }
+            set_variable = { global.c9979weekly = 2.5 }
+            set_variable = { global.rogueweekly = 5 }
+            set_variable = { global.bellbulab22weekly = 2.5 }
+            set_variable = { global.trifighterweekly = 7.5 }
+            set_variable = { global.advanceddroidbomberweekly = 5 }
+            set_variable = { global.hyenaweekly = 10 }
+            set_variable = { global.bellbulab24weekly = 2.5 }
+            set_variable = { global.hmpgunshipweekly = 2.5 }
+            set_variable = { global.marauderweekly = 0.2 }
+            set_variable = { global.tudestroyerweekly = 0.05 }
+            set_variable = { global.tec_bulwarkweekly = 0.05 }
+            set_variable = { global.cla_hammerheadweekly = 0.2 }
+            set_variable = { global.consularweekly = 0.2 }
+            set_variable = { global.c70weekly = 0.2 }
+            set_variable = { global.cr70weekly = 0.2 }
+            set_variable = { global.cr90weekly = 0.2 }
+            set_variable = { global.dac_recusantweekly = 0.05 }
+            set_variable = { global.dac_providenceweekly = 0.05 }
+            set_variable = { global.subjugatorweekly = 0.002 }
+            KUA = {
+                add_to_array = { quick_market_production_array = 26 }
+                add_to_array = { quick_market_production_array = 27 }
+                add_to_array = { quick_market_production_array = 28 }
+                add_to_array = { quick_market_production_array = 29 }
+                add_to_array = { quick_market_production_array = 30 }
+                add_to_array = { quick_market_production_array = 31 }
+                add_to_array = { quick_market_production_array = 32 }
+                add_to_array = { quick_market_production_array = 33 }
+                add_to_array = { quick_market_production_array = 34 }
+                add_to_array = { quick_market_production_array = 35 }
+                add_to_array = { quick_market_production_array = 36 }
+                add_to_array = { quick_market_production_array = 37 }
+                add_to_array = { quick_market_production_array = 38 }
+                add_to_array = { quick_market_production_array = 39 }
+                add_to_array = { quick_market_production_array = 40 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            CMG = {
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { quick_market_production_array = 10 }
+                add_to_array = { quick_market_production_array = 11 }
+                add_to_array = { quick_market_production_array = 12 }
+                add_to_array = { quick_market_production_array = 13 }
+                add_to_array = { quick_market_production_array = 14 }
+                add_to_array = { quick_market_production_array = 15 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            TEC = {
+                add_to_array = { quick_market_production_array = 56 }
+                add_to_array = { quick_market_production_array = 57 }
+                add_to_array = { quick_market_production_array = 58 }
+                add_to_array = { quick_market_production_array = 59 }
+                add_to_array = { quick_market_production_array = 60 }
+                add_to_array = { quick_market_production_array = 61 }
+                add_to_array = { quick_market_production_array = 62 }
+                add_to_array = { quick_market_production_array = 63 }
+                add_to_array = { quick_market_production_array = 64 }
+                add_to_array = { quick_market_production_array = 65 }
+                add_to_array = { quick_market_production_array = 66 }
+                add_to_array = { quick_market_production_array = 67 }
+                add_to_array = { quick_market_production_array = 68 }
+                add_to_array = { quick_market_production_array = 69 }
+                add_to_array = { quick_market_production_array = 70 }
+                add_to_array = { quick_market_production_array = 71 }
+                add_to_array = { quick_market_production_array = 72 }
+                add_to_array = { quick_market_production_array = 73 }
+                add_to_array = { quick_market_production_array = 74 }
+                add_to_array = { quick_market_production_array = 75 }
+                add_to_array = { quick_market_production_array = 76 }
+                add_to_array = { quick_market_production_array = 77 }
+                add_to_array = { quick_market_production_array = 78 }
+                add_to_array = { quick_market_production_array = 79 }
+                add_to_array = { quick_market_production_array = 80 }
+                add_to_array = { quick_market_production_array = 81 }
+                add_to_array = { quick_market_production_array = 82 }
+                add_to_array = { quick_market_production_array = 83 }
+                add_to_array = { quick_market_production_array = 84 }
+                add_to_array = { quick_market_production_array = 85 }
+                add_to_array = { quick_market_production_array = 86 }
+                add_to_array = { quick_market_production_array = 87 }
+                add_to_array = { quick_market_production_array = 88 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            SUL = {
+                add_to_array = { quick_market_production_array = 7 }
+                add_to_array = { quick_market_production_array = 8 }
+                add_to_array = { quick_market_production_array = 9 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            IBC = {
+                add_to_array = { quick_market_production_array = 20 }
+                add_to_array = { quick_market_production_array = 21 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            CAL = {
+                add_to_array = { quick_market_production_array = 45 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            QUA = {
+                add_to_array = { quick_market_production_array = 94 }
+                add_to_array = { quick_market_production_array = 95 }
+                add_to_array = { quick_market_production_array = 96 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            KAM = {
+                add_to_array = { quick_market_production_array = 22 }
+                add_to_array = { quick_market_production_array = 23 }
+                add_to_array = { quick_market_production_array = 24 }
+                add_to_array = { quick_market_production_array = 25 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            MAN = {
+                add_to_array = { quick_market_production_array = 41 }
+                add_to_array = { quick_market_production_array = 42 }
+                add_to_array = { quick_market_production_array = 43 }
+                add_to_array = { quick_market_production_array = 44 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+            }
+            CLA = {
+                add_to_array = { quick_market_production_array = 89 }
+                add_to_array = { quick_market_production_array = 90 }
+                add_to_array = { quick_market_production_array = 91 }
+                add_to_array = { quick_market_production_array = 92 }
+                add_to_array = { quick_market_production_array = 93 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            FED = {
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { quick_market_production_array = 16 }
+                add_to_array = { quick_market_production_array = 17 }
+                add_to_array = { quick_market_production_array = 18 }
+                add_to_array = { quick_market_production_array = 19 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            REN = {
+                add_to_array = { quick_market_production_array = 46 }
+                add_to_array = { quick_market_production_array = 47 }
+                add_to_array = { quick_market_production_array = 48 }
+                add_to_array = { quick_market_production_array = 49 }
+                add_to_array = { quick_market_production_array = 50 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+            CAR = {
+                add_to_array = { quick_market_production_array = 1 }
+                add_to_array = { quick_market_production_array = 2 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+            }
+            ROT = {
+                add_to_array = { quick_market_production_array = 51 }
+                add_to_array = { quick_market_production_array = 52 }
+                add_to_array = { quick_market_production_array = 53 }
+                add_to_array = { quick_market_production_array = 54 }
+                add_to_array = { quick_market_production_array = 55 }
+                set_variable = { production_lines^num = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+                add_to_array = { production = 0 }
+            }
+        }
+    }
+    on_weekly_REP = {
+        effect = {
+            set_variable = { global.74zweekly = global.74zweeklymax }
+            multiply_variable = { global.74zweekly = global.74zefficiency }
+            multiply_variable = { global.74zweekly = global.74zfactories}
+            add_to_variable = { global.ara_74z = global.74zweekly }
+
+            set_variable = { global.barcweekly = global.barcweeklymax }
+            multiply_variable = { global.barcweekly = global.barcefficiency }
+            multiply_variable = { global.barcweekly = global.barcfactories}
+            add_to_variable = { global.ara_barc = global.barcweekly }
+
+            set_variable = { global.rocketlauncherweekly = global.rocketlauncherweeklymax }
+            multiply_variable = { global.rocketlauncherweekly = global.rocketlauncherefficiency }
+            multiply_variable = { global.rocketlauncherweekly = global.rocketlauncherfactories}
+            add_to_variable = { global.ara_rocketlauncher = global.rocketlauncherweekly }
+            
+            set_variable = { global.inf0weekly = global.inf0weeklymax }
+            multiply_variable = { global.inf0weekly = global.inf0efficiency }
+            multiply_variable = { global.inf0weekly = global.inf0factories}
+            add_to_variable = { global.inf0 = global.inf0weekly }
+
+            set_variable = { global.inf1weekly = global.inf1weeklymax }
+            multiply_variable = { global.inf1weekly = global.inf1efficiency }
+            multiply_variable = { global.inf1weekly = global.inf1factories}
+            add_to_variable = { global.inf1 = global.inf1weekly }
+
+            set_variable = { global.inf2weekly = global.inf2weeklymax }
+            multiply_variable = { global.inf2weekly = global.inf2efficiency }
+            multiply_variable = { global.inf2weekly = global.inf2factories}
+            add_to_variable = { global.inf2 = global.inf2weekly }
+
+            set_variable = { global.inf3weekly = global.inf3weeklymax }
+            multiply_variable = { global.inf3weekly = global.inf3efficiency }
+            multiply_variable = { global.inf3weekly = global.inf3factories}
+            add_to_variable = { global.inf3 = global.inf3weekly }
+
+            set_variable = { global.supportequipmentweekly = global.supportequipmentweeklymax }
+            multiply_variable = { global.supportequipmentweekly = global.supportequipmentefficiency }
+            multiply_variable = { global.supportequipmentweekly = global.supportequipmentfactories}
+            add_to_variable = { global.supportequipment = global.supportequipmentweekly }
+
+            set_variable = { global.landspeederweekly = global.landspeederweeklymax }
+            multiply_variable = { global.landspeederweekly = global.landspeederefficiency }
+            multiply_variable = { global.landspeederweekly = global.landspeederfactories}
+            add_to_variable = { global.landspeeder = global.landspeederweekly }
+
+            set_variable = { global.soro_fangweekly = global.soro_fangweeklymax }
+            multiply_variable = { global.soro_fangweekly = global.soro_fangefficiency }
+            multiply_variable = { global.soro_fangweekly = global.soro_fangfactories}
+            add_to_variable = { global.soro_fang = global.soro_fangweekly }
+
+            set_variable = { global.cmg_diamondweekly = global.cmg_diamondweeklymax }
+            multiply_variable = { global.cmg_diamondweekly = global.cmg_diamondefficiency }
+            multiply_variable = { global.cmg_diamondweekly = global.cmg_diamondfactories}
+            add_to_variable = { global.cmg_diamond = global.cmg_diamondweekly }
+
+            set_variable = { global.cmg_recusantweekly = global.cmg_recusantweeklymax }
+            multiply_variable = { global.cmg_recusantweekly = global.cmg_recusantefficiency }
+            multiply_variable = { global.cmg_recusantweekly = global.cmg_recusantfactories}
+            add_to_variable = { global.cmg_recusant = global.cmg_recusantweekly }
+
+            set_variable = { global.cmg_providenceweekly = global.cmg_providenceweeklymax }
+            multiply_variable = { global.cmg_providenceweekly = global.cmg_providenceefficiency }
+            multiply_variable = { global.cmg_providenceweekly = global.cmg_providencefactories}
+            add_to_variable = { global.ren_providence = global.cmg_providenceweekly }
+            
+            set_variable = { global.cmg_dsd1weekly = global.cmg_dsd1weeklymax }
+            multiply_variable = { global.cmg_dsd1weekly = global.cmg_dsd1efficiency }
+            multiply_variable = { global.cmg_dsd1weekly = global.cmg_dsd1factories}
+            add_to_variable = { global.cmg_dsd1 = global.cmg_dsd1weekly }
+
+            set_variable = { global.cmg_adsdweekly = global.cmg_adsdweeklymax }
+            multiply_variable = { global.cmg_adsdweekly = global.cmg_adsdefficiency }
+            multiply_variable = { global.cmg_adsdweekly = global.cmg_adsdfactories}
+            add_to_variable = { global.cmg_adsd = global.cmg_adsdweekly }
+
+            set_variable = { global.cmg_homing_spiderweekly = global.cmg_homing_spiderweeklymax }
+            multiply_variable = { global.cmg_homing_spiderweekly = global.cmg_homing_spiderefficiency }
+            multiply_variable = { global.cmg_homing_spiderweekly = global.cmg_homing_spiderfactories}
+            add_to_variable = { global.cmg_homing_spider = global.cmg_homing_spiderweekly }
+
+            set_variable = { global.lucrehulk_freighterweekly = global.lucrehulk_freighterweeklymax }
+            multiply_variable = { global.lucrehulk_freighterweekly = global.lucrehulk_freighterefficiency }
+            multiply_variable = { global.lucrehulk_freighterweekly = global.lucrehulk_freighterfactories}
+            add_to_variable = { global.lucrehulk_freighter = global.lucrehulk_freighterweekly }
+
+            set_variable = { global.lucrehulk_battleshipweekly = global.lucrehulk_battleshipweeklymax }
+            multiply_variable = { global.lucrehulk_battleshipweekly = global.lucrehulk_battleshipefficiency }
+            multiply_variable = { global.lucrehulk_battleshipweekly = global.lucrehulk_battleshipfactories}
+            add_to_variable = { global.lucrehulk_battleship = global.lucrehulk_battleshipweekly }
+
+            set_variable = { global.fed_recusantweekly = global.fed_recusantweeklymax }
+            multiply_variable = { global.fed_recusantweekly = global.fed_recusantefficiency }
+            multiply_variable = { global.fed_recusantweekly = global.fed_recusantfactories}
+            add_to_variable = { global.fed_recusant = global.fed_recusantweekly }
+
+            set_variable = { global.fed_munificentweekly = global.fed_munificentweeklymax }
+            multiply_variable = { global.fed_munificentweekly = global.fed_munificentefficiency }
+            multiply_variable = { global.fed_munificentweekly = global.fed_munificentfactories}
+            add_to_variable = { global.fed_munificent = global.fed_munificentweekly }
+
+            set_variable = { global.lancerweekly = global.lancerweeklymax }
+            multiply_variable = { global.lancerweekly = global.lancerefficiency }
+            multiply_variable = { global.lancerweekly = global.lancerfactories}
+            add_to_variable = { global.lancer = global.lancerweekly }
+
+            set_variable = { global.ibc_hailfireweekly = global.ibc_hailfireweeklymax }
+            multiply_variable = { global.ibc_hailfireweekly = global.ibc_hailfireefficiency }
+            multiply_variable = { global.ibc_hailfireweekly = global.ibc_hailfirefactories}
+            add_to_variable = { global.ibc_hailfire = global.ibc_hailfireweekly }
+
+            set_variable = { global.phase_1weekly = global.phase_1weeklymax }
+            multiply_variable = { global.phase_1weekly = global.phase_1efficiency }
+            multiply_variable = { global.phase_1weekly = global.phase_1factories}
+            add_to_variable = { global.phase_1 = global.phase_1weekly }
+            
+            set_variable = { global.phase_2weekly = global.phase_2weeklymax }
+            multiply_variable = { global.phase_2weekly = global.phase_2efficiency }
+            multiply_variable = { global.phase_2weekly = global.phase_2factories}
+            add_to_variable = { global.phase_2 = global.phase_2weekly }
+
+            set_variable = { global.clone_generalweekly = global.clone_generalweeklymax }
+            multiply_variable = { global.clone_generalweekly = global.clone_generalefficiency }
+            multiply_variable = { global.clone_generalweekly = global.clone_generalfactories}
+            add_to_variable = { global.clone_general = global.clone_generalweekly }
+
+            set_variable = { global.clone_admiralweekly = global.clone_admiralweeklymax }
+            multiply_variable = { global.clone_admiralweekly = global.clone_admiralefficiency }
+            multiply_variable = { global.clone_admiralweekly = global.clone_admiralfactories}
+            add_to_variable = { global.clone_admiral = global.clone_admiralweekly }
+
+            set_variable = { global.z95weekly = global.z95weeklymax }
+            multiply_variable = { global.z95weekly = global.z95efficiency }
+            multiply_variable = { global.z95weekly = global.z95factories}
+            add_to_variable = { global.z95 = global.z95weekly }
+
+            set_variable = { global.v19weekly = global.v19weeklymax }
+            multiply_variable = { global.v19weekly = global.v19efficiency }
+            multiply_variable = { global.v19weekly = global.v19factories}
+            add_to_variable = { global.v19 = global.v19weekly }
+
+            set_variable = { global.arc170weekly = global.arc170weeklymax }
+            multiply_variable = { global.arc170weekly = global.arc170efficiency }
+            multiply_variable = { global.arc170weekly = global.arc170factories}
+            add_to_variable = { global.arc170 = global.arc170weekly }
+
+            set_variable = { global.vwingweekly = global.vwingweeklymax }
+            multiply_variable = { global.vwingweekly = global.vwingefficiency }
+            multiply_variable = { global.vwingweekly = global.vwingfactories}
+            add_to_variable = { global.vwing = global.vwingweekly }
+
+            set_variable = { global.btlbweekly = global.btlbweeklymax }
+            multiply_variable = { global.btlbweekly = global.btlbefficiency }
+            multiply_variable = { global.btlbweekly = global.btlbfactories}
+            add_to_variable = { global.btlb = global.btlbweekly }
+
+            set_variable = { global.laatweekly = global.laatweeklymax }
+            multiply_variable = { global.laatweekly = global.laatefficiency }
+            multiply_variable = { global.laatweekly = global.laatfactories}
+            add_to_variable = { global.laat = global.laatweekly }
+
+            set_variable = { global.laatiweekly = global.laatiweeklymax }
+            multiply_variable = { global.laatiweekly = global.laatiefficiency }
+            multiply_variable = { global.laatiweekly = global.laatifactories}
+            add_to_variable = { global.laati = global.laatiweekly }
+            
+            set_variable = { global.peltaweekly = global.peltaweeklymax }
+            multiply_variable = { global.peltaweekly = global.peltaefficiency }
+            multiply_variable = { global.peltaweekly = global.peltafactories}
+            add_to_variable = { global.pelta = global.peltaweekly }
+
+            set_variable = { global.arquintesweekly = global.arquintesweeklymax }
+            multiply_variable = { global.arquintesweekly = global.arquintesefficiency }
+            multiply_variable = { global.arquintesweekly = global.arquintesfactories}
+            add_to_variable = { global.arquintes = global.arquintesweekly }
+
+            set_variable = { global.acclamatorweekly = global.acclamatorweeklymax }
+            multiply_variable = { global.acclamatorweekly = global.acclamatorefficiency }
+            multiply_variable = { global.acclamatorweekly = global.acclamatorfactories}
+            add_to_variable = { global.acclamator = global.acclamatorweekly }
+
+            set_variable = { global.acclamator2weekly = global.acclamator2weeklymax }
+            multiply_variable = { global.acclamator2weekly = global.acclamator2efficiency }
+            multiply_variable = { global.acclamator2weekly = global.acclamator2factories}
+            add_to_variable = { global.acclamator2 = global.acclamator2weekly }
+
+            set_variable = { global.venatorweekly = global.venatorweeklymax }
+            multiply_variable = { global.venatorweekly = global.venatorefficiency }
+            multiply_variable = { global.venatorweekly = global.venatorfactories}
+            add_to_variable = { global.venator = global.venatorweekly }
+
+            set_variable = { global.victoryweekly = global.victoryweeklymax }
+            multiply_variable = { global.victoryweekly = global.victoryefficiency }
+            multiply_variable = { global.victoryweekly = global.victoryfactories}
+            add_to_variable = { global.victory = global.victoryweekly }
+
+            set_variable = { global.mandator1weekly = global.mandator1weeklymax }
+            multiply_variable = { global.mandator1weekly = global.mandator1efficiency }
+            multiply_variable = { global.mandator1weekly = global.mandator1factories}
+            add_to_variable = { global.mandator1 = global.mandator1weekly }
+
+            set_variable = { global.mandator2weekly = global.mandator2weeklymax }
+            multiply_variable = { global.mandator2weekly = global.mandator2efficiency }
+            multiply_variable = { global.mandator2weekly = global.mandator2factories}
+            add_to_variable = { global.mandator2 = global.mandator2weekly }
+
+            set_variable = { global.balutarweekly = global.balutarweeklymax }
+            multiply_variable = { global.balutarweekly = global.balutarefficiency }
+            multiply_variable = { global.balutarweekly = global.balutarfactories}
+            add_to_variable = { global.balutar = global.balutarweekly }
+
+            set_variable = { global.komrkweekly = global.komrkweeklymax }
+            multiply_variable = { global.komrkweekly = global.komrkefficiency }
+            multiply_variable = { global.komrkweekly = global.komrkfactories}
+            add_to_variable = { global.komrk = global.komrkweekly }
+            
+            set_variable = { global.buirkalorweekly = global.buirkalorweeklymax }
+            multiply_variable = { global.buirkalorweekly = global.buirkalorefficiency }
+            multiply_variable = { global.buirkalorweekly = global.buirkalorfactories}
+            add_to_variable = { global.buirkalor = global.buirkalorweekly }
+
+            set_variable = { global.fangweekly = global.fangweeklymax }
+            multiply_variable = { global.fangweekly = global.fangefficiency }
+            multiply_variable = { global.fangweekly = global.fangfactories}
+            add_to_variable = { global.fang = global.fangweekly }
+
+            set_variable = { global.cal_dreadnaughtweekly = global.cal_dreadnaughtweeklymax }
+            multiply_variable = { global.cal_dreadnaughtweekly = global.cal_dreadnaughtefficiency }
+            multiply_variable = { global.cal_dreadnaughtweekly = global.cal_dreadnaughtfactories}
+            add_to_variable = { global.cal_dreadnaught = global.cal_dreadnaughtweekly }
+
+            set_variable = { global.carrackweekly = global.carrackweeklymax }
+            multiply_variable = { global.carrackweekly = global.carrackefficiency }
+            multiply_variable = { global.carrackweekly = global.carrackfactories}
+            add_to_variable = { global.carrack = global.carrackweekly }
+
+            set_variable = { global.hammerheadweekly = global.hammerheadweeklymax }
+            multiply_variable = { global.hammerheadweekly = global.hammerheadefficiency }
+            multiply_variable = { global.hammerheadweekly = global.hammerheadfactories}
+            add_to_variable = { global.hammerhead = global.hammerheadweekly }
+
+            set_variable = { global.ren_dreadnaughtweekly = global.ren_dreadnaughtweeklymax }
+            multiply_variable = { global.ren_dreadnaughtweekly = global.ren_dreadnaughtefficiency }
+            multiply_variable = { global.ren_dreadnaughtweekly = global.ren_dreadnaughtfactories}
+            add_to_variable = { global.ren_dreadnaught = global.ren_dreadnaughtweekly }
+
+            set_variable = { global.ren_victoryweekly = global.ren_victoryweeklymax }
+            multiply_variable = { global.ren_victoryweekly = global.ren_victoryefficiency }
+            multiply_variable = { global.ren_victoryweekly = global.ren_victoryfactories}
+            add_to_variable = { global.ren_victory = global.ren_victoryweekly }
+
+            set_variable = { global.ren_providenceweekly = global.ren_providenceweeklymax }
+            multiply_variable = { global.ren_providenceweekly = global.ren_providenceefficiency }
+            multiply_variable = { global.ren_providenceweekly = global.ren_providencefactories}
+            add_to_variable = { global.ren_providence = global.ren_providenceweekly }
+
+            set_variable = { global.atrtweekly = global.atrtweeklymax }
+            multiply_variable = { global.atrtweekly = global.atrtefficiency }
+            multiply_variable = { global.atrtweekly = global.atrtfactories}
+            add_to_variable = { global.atrt = global.atrtweekly }
+
+            set_variable = { global.sphaweekly = global.sphaweeklymax }
+            multiply_variable = { global.sphaweekly = global.sphaefficiency }
+            multiply_variable = { global.sphaweekly = global.sphafactories}
+            add_to_variable = { global.spha = global.sphaweekly }
+            
+            set_variable = { global.atteweekly = global.atteweeklymax }
+            multiply_variable = { global.atteweekly = global.atteefficiency }
+            multiply_variable = { global.atteweekly = global.attefactories}
+            add_to_variable = { global.atte = global.atteweekly }
+
+            set_variable = { global.tx130weekly = global.tx130weeklymax }
+            multiply_variable = { global.tx130weekly = global.tx130efficiency }
+            multiply_variable = { global.tx130weekly = global.tx130factories}
+            add_to_variable = { global.tx130 = global.tx130weekly }
+
+            set_variable = { global.juggernautweekly = global.juggernautweeklymax }
+            multiply_variable = { global.juggernautweekly = global.juggernautefficiency }
+            multiply_variable = { global.juggernautweekly = global.juggernautfactories}
+            add_to_variable = { global.juggernaut = global.juggernautweekly }
+
+            set_variable = { global.vultureweekly = global.vultureweeklymax }
+            multiply_variable = { global.vultureweekly = global.vultureefficiency }
+            multiply_variable = { global.vultureweekly = global.vulturefactories}
+            add_to_variable = { global.vulture = global.vultureweekly }
+
+            set_variable = { global.c9979weekly = global.c9979weeklymax }
+            multiply_variable = { global.c9979weekly = global.c9979efficiency }
+            multiply_variable = { global.c9979weekly = global.c9979factories}
+            add_to_variable = { global.c9979 = global.c9979weekly }
+
+            set_variable = { global.rogueweekly = global.rogueweeklymax }
+            multiply_variable = { global.rogueweekly = global.rogueefficiency }
+            multiply_variable = { global.rogueweekly = global.roguefactories}
+            add_to_variable = { global.rogue = global.rogueweekly }
+
+            set_variable = { global.bellbulab22weekly = global.bellbulab22weeklymax }
+            multiply_variable = { global.bellbulab22weekly = global.bellbulab22efficiency }
+            multiply_variable = { global.bellbulab22weekly = global.bellbulab22factories}
+            add_to_variable = { global.bellbulab22 = global.bellbulab22weekly }
+
+            set_variable = { global.trifighterweekly = global.trifighterweeklymax }
+            multiply_variable = { global.trifighterweekly = global.trifighterefficiency }
+            multiply_variable = { global.trifighterweekly = global.trifighterfactories}
+            add_to_variable = { global.trifighter = global.trifighterweekly }
+
+            set_variable = { global.advanceddroidbomberweekly = global.advanceddroidbomberweeklymax }
+            multiply_variable = { global.advanceddroidbomberweekly = global.advanceddroidbomberefficiency }
+            multiply_variable = { global.advanceddroidbomberweekly = global.advanceddroidbomberfactories}
+            add_to_variable = { global.advanceddroidbomber = global.advanceddroidbomberweekly }
+
+            set_variable = { global.hyenaweekly = global.hyenaweeklymax }
+            multiply_variable = { global.hyenaweekly = global.hyenaefficiency }
+            multiply_variable = { global.hyenaweekly = global.hyenafactories}
+            add_to_variable = { global.hyena = global.hyenaweekly }
+            
+            set_variable = { global.bellbulab24weekly = global.bellbulab24weeklymax }
+            multiply_variable = { global.bellbulab24weekly = global.bellbulab24efficiency }
+            multiply_variable = { global.bellbulab24weekly = global.bellbulab24factories}
+            add_to_variable = { global.bellbulab24 = global.bellbulab24weekly }
+
+            set_variable = { global.hmpgunshipweekly = global.hmpgunshipweeklymax }
+            multiply_variable = { global.hmpgunshipweekly = global.hmpgunshipefficiency }
+            multiply_variable = { global.hmpgunshipweekly = global.hmpgunshipfactories}
+            add_to_variable = { global.hmpgunship = global.hmpgunshipweekly }
+
+            set_variable = { global.marauderweekly = global.marauderweeklymax }
+            multiply_variable = { global.marauderweekly = global.marauderefficiency }
+            multiply_variable = { global.marauderweekly = global.marauderfactories}
+            add_to_variable = { global.marauder = global.marauderweekly }
+
+            set_variable = { global.tudestroyerweekly = global.tudestroyerweeklymax }
+            multiply_variable = { global.tudestroyerweekly = global.tudestroyerefficiency }
+            multiply_variable = { global.tudestroyerweekly = global.tudestroyerfactories}
+            add_to_variable = { global.tudestroyer = global.tudestroyerweekly }
+
+            set_variable = { global.tec_bulwarkweekly = global.tec_bulwarkweeklymax }
+            multiply_variable = { global.tec_bulwarkweekly = global.tec_bulwarkefficiency }
+            multiply_variable = { global.tec_bulwarkweekly = global.tec_bulwarkfactories}
+            add_to_variable = { global.tec_bulwark = global.tec_bulwarkweekly }
+
+            set_variable = { global.oomweekly = global.oomweeklymax }
+            multiply_variable = { global.oomweekly = global.oomefficiency }
+            multiply_variable = { global.oomweekly = global.oomfactories}
+            add_to_variable = { global.oom = global.oomweekly }
+
+            set_variable = { global.b1weekly = global.b1weeklymax }
+            multiply_variable = { global.b1weekly = global.b1efficiency }
+            multiply_variable = { global.b1weekly = global.b1factories}
+            add_to_variable = { global.b1 = global.b1weekly }
+
+            set_variable = { global.b2weekly = global.b2weeklymax }
+            multiply_variable = { global.b2weekly = global.b2efficiency }
+            multiply_variable = { global.b2weekly = global.b2factories}
+            add_to_variable = { global.b2 = global.b2weekly }
+
+            set_variable = { global.bxweekly = global.bxweeklymax }
+            multiply_variable = { global.bxweekly = global.bxefficiency }
+            multiply_variable = { global.bxweekly = global.bxfactories}
+            add_to_variable = { global.bx = global.bxweekly }
+
+            set_variable = { global.tacticalweekly = global.tacticalweeklymax }
+            multiply_variable = { global.tacticalweekly = global.tacticalefficiency }
+            multiply_variable = { global.tacticalweekly = global.tacticalfactories}
+            add_to_variable = { global.tactical = global.tacticalweekly }
+            
+            set_variable = { global.dwingweekly = global.dwingweeklymax }
+            multiply_variable = { global.dwingweekly = global.dwingefficiency }
+            multiply_variable = { global.dwingweekly = global.dwingfactories}
+            add_to_variable = { global.dwing = global.dwingweekly }
+
+            set_variable = { global.stapweekly = global.stapweeklymax }
+            multiply_variable = { global.stapweekly = global.stapefficiency }
+            multiply_variable = { global.stapweekly = global.stapfactories}
+            add_to_variable = { global.stap = global.stapweekly }
+
+            set_variable = { global.droidekaweekly = global.droidekaweeklymax }
+            multiply_variable = { global.droidekaweekly = global.droidekaefficiency }
+            multiply_variable = { global.droidekaweekly = global.droidekafactories}
+            add_to_variable = { global.droideka = global.droidekaweekly }
+
+            set_variable = { global.tec_dsd1weekly = global.tec_dsd1weeklymax }
+            multiply_variable = { global.tec_dsd1weekly = global.tec_dsd1efficiency }
+            multiply_variable = { global.tec_dsd1weekly = global.tec_dsd1factories}
+            add_to_variable = { global.tec_dsd1 = global.tec_dsd1weekly }
+
+            set_variable = { global.tec_adsdweekly = global.tec_adsdweeklymax }
+            multiply_variable = { global.tec_adsdweekly = global.tec_adsdefficiency }
+            multiply_variable = { global.tec_adsdweekly = global.tec_adsdfactories}
+            add_to_variable = { global.tec_adsd = global.tec_adsdweekly }
+
+            set_variable = { global.crabweekly = global.crabweeklymax }
+            multiply_variable = { global.crabweekly = global.crabefficiency }
+            multiply_variable = { global.crabweekly = global.crabfactories}
+            add_to_variable = { global.crab = global.crabweekly }
+
+            set_variable = { global.pacweekly = global.pacweeklymax }
+            multiply_variable = { global.pacweekly = global.pacefficiency }
+            multiply_variable = { global.pacweekly = global.pacfactories}
+            add_to_variable = { global.pac = global.pacweekly }
+
+            set_variable = { global.mttweekly = global.mttweeklymax }
+            multiply_variable = { global.mttweekly = global.mttefficiency }
+            multiply_variable = { global.mttweekly = global.mttfactories}
+            add_to_variable = { global.mtt = global.mttweekly }
+
+            set_variable = { global.j1weekly = global.j1weeklymax }
+            multiply_variable = { global.j1weekly = global.j1efficiency }
+            multiply_variable = { global.j1weekly = global.j1factories}
+            add_to_variable = { global.j1 = global.j1weekly }
+
+            set_variable = { global.tec_hailfireweekly = global.tec_hailfireweeklymax }
+            multiply_variable = { global.tec_hailfireweekly = global.tec_hailfireefficiency }
+            multiply_variable = { global.tec_hailfireweekly = global.tec_hailfirefactories}
+            add_to_variable = { global.tec_hailfire = global.tec_hailfireweekly }
+            
+            set_variable = { global.aatweekly = global.aatweeklymax }
+            multiply_variable = { global.aatweekly = global.aatefficiency }
+            multiply_variable = { global.aatweekly = global.aatfactories}
+            add_to_variable = { global.aat = global.aatweekly }
+
+            set_variable = { global.og9weekly = global.og9weeklymax }
+            multiply_variable = { global.og9weekly = global.og9efficiency }
+            multiply_variable = { global.og9weekly = global.og9factories}
+            add_to_variable = { global.og9 = global.og9weekly }
+
+            set_variable = { global.octuparramagnaweekly = global.octuparramagnaweeklymax }
+            multiply_variable = { global.octuparramagnaweekly = global.octuparramagnaefficiency }
+            multiply_variable = { global.octuparramagnaweekly = global.octuparramagnafactories}
+            add_to_variable = { global.octuparramagna = global.octuparramagnaweekly }
+
+            set_variable = { global.octuparracombatweekly = global.octuparracombatweeklymax }
+            multiply_variable = { global.octuparracombatweekly = global.octuparracombatefficiency }
+            multiply_variable = { global.octuparracombatweekly = global.octuparracombatfactories}
+            add_to_variable = { global.octuparracombat = global.octuparracombatweekly }
+
+            set_variable = { global.tankdroidweekly = global.tankdroidweeklymax }
+            multiply_variable = { global.tankdroidweekly = global.tankdroidefficiency }
+            multiply_variable = { global.tankdroidweekly = global.tankdroidfactories}
+            add_to_variable = { global.tankdroid = global.tankdroidweekly }
+
+            set_variable = { global.aat2weekly = global.aat2weeklymax }
+            multiply_variable = { global.aat2weekly = global.aat2efficiency }
+            multiply_variable = { global.aat2weekly = global.aat2factories}
+            add_to_variable = { global.aat2 = global.aat2weekly }
+
+            set_variable = { global.cla_hammerheadweekly = global.cla_hammerheadweeklymax }
+            multiply_variable = { global.cla_hammerheadweekly = global.cla_hammerheadefficiency }
+            multiply_variable = { global.cla_hammerheadweekly = global.cla_hammerheadfactories}
+            add_to_variable = { global.cla_hammerhead = global.cla_hammerheadweekly }
+
+            set_variable = { global.consularweekly = global.consularweeklymax }
+            multiply_variable = { global.consularweekly = global.consularefficiency }
+            multiply_variable = { global.consularweekly = global.consularfactories}
+            add_to_variable = { global.consular = global.consularweekly }
+
+            set_variable = { global.c70weekly = global.c70weeklymax }
+            multiply_variable = { global.c70weekly = global.c70efficiency }
+            multiply_variable = { global.c70weekly = global.c70factories}
+            add_to_variable = { global.c70 = global.c70weekly }
+
+            set_variable = { global.cr70weekly = global.cr70weeklymax }
+            multiply_variable = { global.cr70weekly = global.cr70efficiency }
+            multiply_variable = { global.cr70weekly = global.cr70factories}
+            add_to_variable = { global.cr70 = global.cr70weekly }
+            
+            set_variable = { global.cr90weekly = global.cr90weeklymax }
+            multiply_variable = { global.cr90weekly = global.cr90efficiency }
+            multiply_variable = { global.cr90weekly = global.cr90factories}
+            add_to_variable = { global.cr90 = global.cr90weekly }
+
+            set_variable = { global.dac_recusantweekly = global.dac_recusantweeklymax }
+            multiply_variable = { global.dac_recusantweekly = global.dac_recusantefficiency }
+            multiply_variable = { global.dac_recusantweekly = global.dac_recusantfactories}
+            add_to_variable = { global.dac_recusant = global.dac_recusantweekly }
+
+            set_variable = { global.dac_providenceweekly = global.dac_providenceweeklymax }
+            multiply_variable = { global.dac_providenceweekly = global.dac_providenceefficiency }
+            multiply_variable = { global.dac_providenceweekly = global.dac_providencefactories}
+            add_to_variable = { global.ren_providence = global.dac_providenceweekly }
+
+            set_variable = { global.subjugatorweekly = global.subjugatorweeklymax }
+            multiply_variable = { global.subjugatorweekly = global.subjugatorefficiency }
+            multiply_variable = { global.subjugatorweekly = global.subjugatorfactories}
+            add_to_variable = { global.subjugator = global.subjugatorweekly }
+        }
+    }
+    on_daily = {
+        effect = {
+            every_country = {
+                set_variable = { cfct = 0 }
+                every_owned_state = {
+                    add_to_variable = { PREV.cfct = building_level@corporate_factory }
+                }
+                set_variable = { cfc = cfct }
+                set_variable = { production^num = cfc }
+            }
+            if = {
+                limit = {
+                    owns_state = 60
+                }
+                add_to_variable = { global.74zefficiency = 0.015 }
+                add_to_variable = { global.barcefficiency = 0.015 }
+                add_to_variable = { global.rocketlauncherefficiency = 0.015 }
+                add_to_variable = { global.inf0efficiency = 0.015 }
+                add_to_variable = { global.inf1efficiency = 0.015 }
+                add_to_variable = { global.inf2efficiency = 0.015 }
+                add_to_variable = { global.inf3efficiency = 0.015 }
+                add_to_variable = { global.cmg_dsd1efficiency = 0.015 }
+                add_to_variable = { global.cmg_adsdefficiency = 0.015 }
+                add_to_variable = { global.cmg_homing_spiderefficiency = 0.015 }
+                add_to_variable = { global.cmg_diamondefficiency = 0.015 }
+                add_to_variable = { global.cmg_recusantefficiency = 0.015 }
+                add_to_variable = { global.cmg_providenceefficiency = 0.015 }
+                add_to_variable = { global.lucrehulk_freighterefficiency = 0.015 }
+                add_to_variable = { global.lucrehulk_battleshipefficiency = 0.015 }
+                add_to_variable = { global.fed_recusantefficiency = 0.015 }
+                add_to_variable = { global.fed_munificentefficiency = 0.015 }
+                add_to_variable = { global.lancerefficiency = 0.015 }
+                add_to_variable = { global.ibc_hailfireefficiency = 0.015 }
+                add_to_variable = { global.phase_1efficiency = 0.015 }
+                add_to_variable = { global.phase_2efficiency = 0.015 }
+                add_to_variable = { global.clone_generalefficiency = 0.015 }
+                add_to_variable = { global.clone_admiralefficiency = 0.015 }
+                add_to_variable = { global.z95efficiency = 0.015 }
+                add_to_variable = { global.v19efficiency = 0.015 }
+                add_to_variable = { global.arc170efficiency = 0.015 }
+                add_to_variable = { global.vwingefficiency = 0.015 }
+                add_to_variable = { global.btlbefficiency = 0.015 }
+                add_to_variable = { global.laatefficiency = 0.015 }
+                add_to_variable = { global.laatiefficiency = 0.015 }
+                add_to_variable = { global.peltaefficiency = 0.015 }
+                add_to_variable = { global.arquintesefficiency = 0.015 }
+                add_to_variable = { global.acclamatorefficiency = 0.015 }
+                add_to_variable = { global.acclamator2efficiency = 0.015 }
+                add_to_variable = { global.venatorefficiency = 0.015 }
+                add_to_variable = { global.victoryefficiency = 0.015 }
+                add_to_variable = { global.mandator1efficiency = 0.015 }
+                add_to_variable = { global.mandator2efficiency = 0.015 }
+                add_to_variable = { global.balutarefficiency = 0.015 }
+                add_to_variable = { global.komrkefficiency = 0.015 }
+                add_to_variable = { global.buirkalorefficiency = 0.015 }
+                add_to_variable = { global.fangefficiency = 0.015 }
+                add_to_variable = { global.cal_dreadnaughtefficiency = 0.015 }
+                add_to_variable = { global.carrackefficiency = 0.015 }
+                add_to_variable = { global.hammerheadefficiency = 0.015 }
+                add_to_variable = { global.ren_dreadnaughtefficiency = 0.015 }
+                add_to_variable = { global.ren_victoryefficiency = 0.015 }
+                add_to_variable = { global.ren_providenceefficiency = 0.015 }
+                add_to_variable = { global.atrtefficiency = 0.015 }
+                add_to_variable = { global.sphaefficiency = 0.015 }
+                add_to_variable = { global.atteefficiency = 0.015 }
+                add_to_variable = { global.tx130efficiency = 0.015 }
+                add_to_variable = { global.juggernautefficiency = 0.015 }
+                add_to_variable = { global.supportequipmentefficiency = 0.015 }
+                add_to_variable = { global.landspeederefficiency = 0.015 }
+                add_to_variable = { global.soro_fangefficiency = 0.015 }
+                add_to_variable = { global.oomefficiency = 0.015 }
+                add_to_variable = { global.b1efficiency = 0.015 }
+                add_to_variable = { global.b2efficiency = 0.015 }
+                add_to_variable = { global.bxefficiency = 0.015 }
+                add_to_variable = { global.tacticalefficiency = 0.015 }
+                add_to_variable = { global.dwingefficiency = 0.015 }
+                add_to_variable = { global.stapefficiency = 0.015 }
+                add_to_variable = { global.droidekaefficiency = 0.015 }
+                add_to_variable = { global.tec_dsd1efficiency = 0.015 }
+                add_to_variable = { global.tec_adsdefficiency = 0.015 }
+                add_to_variable = { global.crabefficiency = 0.015 }
+                add_to_variable = { global.pacefficiency = 0.015 }
+                add_to_variable = { global.mttefficiency = 0.015 }
+                add_to_variable = { global.j1efficiency = 0.015 }
+                add_to_variable = { global.tec_hailfireefficiency = 0.015 }
+                add_to_variable = { global.aatefficiency = 0.015 }
+                add_to_variable = { global.og9efficiency = 0.015 }
+                add_to_variable = { global.octuparramagnaefficiency = 0.015 }
+                add_to_variable = { global.octuparracombatefficiency = 0.015 }
+                add_to_variable = { global.tankdroidefficiency = 0.015 }
+                add_to_variable = { global.aat2efficiency = 0.015 }
+                add_to_variable = { global.vultureefficiency = 0.015 }
+                add_to_variable = { global.c9979efficiency = 0.015 }
+                add_to_variable = { global.rogueefficiency = 0.015 }
+                add_to_variable = { global.bellbulab22efficiency = 0.015 }
+                add_to_variable = { global.trifighterefficiency = 0.015 }
+                add_to_variable = { global.advanceddroidbomberefficiency = 0.015 }
+                add_to_variable = { global.hyenaefficiency = 0.015 }
+                add_to_variable = { global.bellbulab24efficiency = 0.015 }
+                add_to_variable = { global.hmpgunshipefficiency = 0.015 }
+                add_to_variable = { global.marauderefficiency = 0.015 }
+                add_to_variable = { global.tudestroyerefficiency = 0.015 }
+                add_to_variable = { global.tec_bulwarkefficiency = 0.015 }
+                add_to_variable = { global.cla_hammerheadefficiency = 0.015 }
+                add_to_variable = { global.consularefficiency = 0.015 }
+                add_to_variable = { global.c70efficiency = 0.015 }
+                add_to_variable = { global.cr70efficiency = 0.015 }
+                add_to_variable = { global.cr90efficiency = 0.015 }
+                add_to_variable = { global.dac_recusantefficiency = 0.015 }
+                add_to_variable = { global.dac_providenceefficiency = 0.015 }
+                add_to_variable = { global.subjugatorefficiency = 0.015 }
+            }
+            clamp_variable = {	
+                var = global.74zefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.barcefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.rocketlauncherefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.inf0efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.inf1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.inf2efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.inf3efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cmg_dsd1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cmg_adsdefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cmg_homing_spiderefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cmg_diamondefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cmg_recusantefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cmg_providenceefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.lucrehulk_freighterefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.lucrehulk_battleshipefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.fed_recusantefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.fed_munificentefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.lancerefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.ibc_hailfireefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.phase_1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.phase_2efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.clone_generalefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.clone_admiralefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.z95efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.v19efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.arc170efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.vwingefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.btlbefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.laatefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.laatiefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.peltaefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.arquintesefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.acclamatorefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.acclamator2efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.venatorefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.victoryefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.mandator1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.mandator2efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.balutarefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.komrkefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.buirkalorefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.fangefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cal_dreadnaughtefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.carrackefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.hammerheadefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.ren_dreadnaughtefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.ren_victoryefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.ren_providenceefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.atrtefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.sphaefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.atteefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tx130efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.juggernautefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.supportequipmentefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.landspeederefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.soro_fangefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.oomefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.b1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.b2efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.bxefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tacticalefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.dwingefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.stapefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.droidekaefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tec_dsd1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tec_adsdefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.crabefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.pacefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.mttefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.j1efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tec_hailfireefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.aatefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.og9efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.octuparramagnaefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.octuparracombatefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tankdroidefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.aat2efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.vultureefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.c9979efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.rogueefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.bellbulab22efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.trifighterefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.advanceddroidbomberefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.hyenaefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.bellbulab24efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.hmpgunshipefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.marauderefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tudestroyerefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.tec_bulwarkefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cla_hammerheadefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.consularefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.c70efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cr70efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.cr90efficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.dac_recusantefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {	
+                var = global.dac_providenceefficiency
+                min = 0
+                max = 1.0
+            }
+            clamp_variable = {
+                var = global.subjugatorefficiency
+                min = 0
+                max = 1.0
+            }
+        }
+    }
+}

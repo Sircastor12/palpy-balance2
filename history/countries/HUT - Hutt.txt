@@ -1,0 +1,145 @@
+﻿capital = 370
+
+oob = "HUT_3677"
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.9
+
+set_technology = {
+	tech_support = 1
+	militia_HUT = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 100
+set_convoys = 50
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1933.7.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 100
+		neutrality = 0
+		fascism = 0
+	}
+	
+	give_military_access = KES
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1933.7.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 100
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+
+create_country_leader = {
+	name = "The Grand Hutt Council"
+	desc = "The Grand Hutt Council"
+	picture = "gfx/leaders/HUT/HuttCouncil.dds"
+	expire = "2020.1.1"
+	ideology = marxism
+}
+
+create_corps_commander = {
+	name = "Nomaas Tik"
+	portrait_path = "gfx/leaders/HUT/NomaasTik.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "SerMelt"
+	portrait_path = "gfx/leaders/HUT/SerMelt.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Chussido"
+	portrait_path = "gfx/leaders/HUT/Chussido.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mil Turr"
+	portrait_path = "gfx/leaders/HUT/MilTurr.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Xidamosh Skon"
+	portrait_path = "gfx/leaders/HUT/XidamoshSkon.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Silvasu Fi"
+	portrait_path = "gfx/leaders/HUT/SilvasuFi.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Graglupt Nerta"
+	portrait_path = "gfx/leaders/HUT/GragluptNerta.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Banturaut Fum"
+	portrait_path = "gfx/leaders/HUT/BanturautFum.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

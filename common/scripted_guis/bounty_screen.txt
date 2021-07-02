@@ -1,0 +1,1641 @@
+scripted_gui = {
+
+	market_bounty_frame = {
+		context_type = player_context
+		window_name = "market_bounty_frame_container" 
+
+		visible = {
+			has_country_flag = bounty
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = bounty
+			}
+			aceselect_click = {
+				set_country_flag = acemode
+				clr_country_flag = generalmode
+			}
+			generalselect_click = {
+				clr_country_flag = acemode
+				set_country_flag = generalmode
+			}
+		}
+		triggers = {
+			aceselect_visible = {
+				NOT = {
+					has_country_flag = acemode
+				}
+			}
+			generalselect_visible = {
+				NOT = {
+					has_country_flag = generalmode
+				}
+			}
+			aceselected_visible = {
+				has_country_flag = acemode
+			}
+			generalselected_visible = {
+				has_country_flag = generalmode
+			}
+		}
+	}
+
+	market_bounty = {
+		context_type = player_context
+		parent_window_name = "market_bounty_frame_container"
+		window_name = "market_bounty_container" 
+		
+		visible = {
+			has_country_flag = bounty
+		}
+		effects = {
+			Aurasing_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = aurasing
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = aurasing
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Aurra Sing"
+						portrait_path = "gfx/leaders/BountyHunters/Aurasing.dds"
+						traits = {  }
+						skill = 6
+						attack_skill = 5
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+						id = 01
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = aurasing
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = aurasing
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Aurra"
+					    surname = "Sing"
+					    callsign = ""
+					    type = fighter_genius
+					    is_female = yes
+					}
+				}
+			}
+			Boba_Fett_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = boba_fett
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = boba_fett
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Boba Fett"
+						portrait_path = "gfx/leaders/BountyHunters/Boba_Fett.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 2
+						id = 02
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = boba_fett
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = boba_fett
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Boba"
+					    surname = "Fett"
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+			Bric_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = bric
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = bric
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Bric"
+						portrait_path = "gfx/leaders/BountyHunters/Bric.dds"
+						traits = { infantry_officer }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+						id = 03
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = bric
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = bric
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Bric"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+			Bulduga_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = bulduga
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = bulduga
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Bulduga"
+						portrait_path = "gfx/leaders/BountyHunters/Bulduga.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						id = 04
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = bulduga
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = bulduga
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Bulduga"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+			Highsinger_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = Highsinger
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = Highsinger
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "C-21 Highsinger"
+						portrait_path = "gfx/leaders/BountyHunters/Highsinger.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 6
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 3
+						id = 05
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = Highsinger
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = Highsinger
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "C-21 Highsinger"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+			Cad_Bane_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = Cad_Bane
+						}
+						ROOT = {
+							check_variable = { dx > 199.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = Cad_Bane
+					subtract_from_variable = { dx = 200 }
+					create_corps_commander = {
+						name = "Cad Bane"
+						portrait_path = "gfx/leaders/BountyHunters/Cad_Bane.dds"
+						traits = { thorough_planner adaptable }
+						skill = 8
+						attack_skill = 6
+						defense_skill = 1
+						planning_skill = 4
+						logistics_skill = 3
+						id = 06
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = Cad_Bane
+							}
+						}
+						check_variable = { dx > 199.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = Cad_Bane
+					subtract_from_variable = { dx = 200 }
+					add_ace = {
+					    name = "Cad"
+					    surname = "Bane"
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+			Castas_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = castas
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = castas
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Castas"
+						portrait_path = "gfx/leaders/BountyHunters/Castas.dds"
+						traits = {  }
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 1
+						id = 07
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = castas
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = castas
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Castas"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+			Cato_Parasitti_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = cato_parasitti
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = cato_parasitti
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Cato Parasitti"
+						portrait_path = "gfx/leaders/BountyHunters/Cato_Parasitti.dds"
+						traits = { camouflage_expert }
+						skill = 4
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 1
+						logistics_skill = 4
+						id = 08
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = cato_parasitti
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = cato_parasitti
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Cato"
+					    surname = "Parasitti"
+					    callsign = ""
+					    type = fighter_genius
+					    is_female = yes
+					}
+				}
+			}
+	Dengar_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = dengar
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = dengar
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Dengar"
+						portrait_path = "gfx/leaders/BountyHunters/Dengar.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+						id = 09
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = dengar
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = dengar
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Dengar"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Derrown_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = derrown
+						}
+						ROOT = {
+							check_variable = { dx > 149.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = derrown
+					subtract_from_variable = { dx = 150 }
+					create_corps_commander = {
+						name = "Derrown"
+						portrait_path = "gfx/leaders/BountyHunters/Derrown.dds"
+						traits = {  }
+						skill = 6
+						attack_skill = 4
+						defense_skill = 4
+						planning_skill = 1
+						logistics_skill = 3
+						id = 10
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = derrown
+							}
+						}
+						check_variable = { dx > 149.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = derrown
+					subtract_from_variable = { dx = 150 }
+					add_ace = {
+					    name = "Derrown"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	El_Les_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = el_les
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = el_les
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "El-Les"
+						portrait_path = "gfx/leaders/BountyHunters/El_Les.dds"
+						traits = { infantry_officer }
+						skill = 5
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 3
+						logistics_skill = 3
+						id = 11
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = el_les
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = el_les
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "El"
+					    surname = "Les"
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Embo_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = embo
+						}
+						ROOT = {
+							check_variable = { dx > 199.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = embo
+					subtract_from_variable = { dx = 200 }
+					create_corps_commander = {
+						name = "Embo"
+						portrait_path = "gfx/leaders/BountyHunters/Embo.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 5
+						defense_skill = 5
+						planning_skill = 1
+						logistics_skill = 3
+						id = 12
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = embo
+							}
+						}
+						check_variable = { dx > 199.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = embo
+					subtract_from_variable = { dx = 200 }
+					add_ace = {
+					    name = "Embo"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Greedo_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = greedo
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = greedo
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Greedo"
+						portrait_path = "gfx/leaders/BountyHunters/Greedo.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+						id = 13
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = greedo
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = greedo
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Greedo"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+		Bossk_click = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = bossk
+					}
+					ROOT = {
+						check_variable = { dx > 99.9 }
+						has_country_flag = generalmode
+					}
+				}
+				set_global_flag = bossk
+				subtract_from_variable = { dx = 100 }
+				create_corps_commander = {
+					name = "Bossk"
+					portrait_path = "gfx/leaders/BountyHunters/Bossk.dds"
+					traits = {  }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+					id = 133
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_global_flag = bossk
+						}
+					}
+					check_variable = { dx > 99.9 }
+					has_country_flag = acemode
+				}
+				set_global_flag = bossk
+				subtract_from_variable = { dx = 100 }
+				add_ace = {
+				    name = "Bossk"
+				    surname = ""
+				    callsign = ""
+				    type = fighter_genius
+				}
+			}
+		}
+	Helios_3D_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = Helios_3D
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = Helios_3D
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "HELIOS-3D"
+						portrait_path = "gfx/leaders/BountyHunters/Helios_3D.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 3
+						id = 14
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = Helios_3D
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = Helios_3D
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "HELIOS-3D"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Helios_3E_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = Helios_3E
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = Helios_3E
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Helios-3E"
+						portrait_path = ""
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 3
+						logistics_skill = 3
+						id = 15
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = Helios_3E
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = Helios_3E
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Helios-3E"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Jakoli_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = jakoli
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = jakoli
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Jakoli"
+						portrait_path = "gfx/leaders/BountyHunters/Jakoli.dds"
+						traits = {  }
+						skill = 3
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						id = 16
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = jakoli
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = jakoli
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Jakoli"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Kiera_Swan_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = kiera_swan
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = kiera_swan
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Kiera Swan"
+						portrait_path = "gfx/leaders/BountyHunters/Kiera_Swan.dds"
+						traits = {  }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+						id = 17
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = kiera_swan
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = kiera_swan
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Kiera"
+					    surname = "Swan"
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Kronos_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = kronos
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = kronos
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Kronos"
+						portrait_path = "gfx/leaders/BountyHunters/Kronos.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 5
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						id = 18
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = kronos
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = kronos
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Kronos"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Latts_Razzi_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = latts_razzi
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = latts_razzi
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Latts Razzi"
+						portrait_path = "gfx/leaders/BountyHunters/Latts_Razzi.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 5
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+						id = 19
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = latts_razzi
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = latts_razzi
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Latts"
+					    surname = "Razzi"
+					    callsign = ""
+					    type = fighter_genius
+					    is_female = yes
+					}
+				}
+			}
+	Mantu_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = mantu
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = mantu
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Mantu"
+						portrait_path = "gfx/leaders/BountyHunters/Mantu.dds"
+						traits = {  }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+						id = 20
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = mantu
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = mantu
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Mantu"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Moralo_Eval_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = moralo_eval
+						}
+						ROOT = {
+							check_variable = { dx > 199.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = moralo_eval
+					subtract_from_variable = { dx = 200 }
+					create_corps_commander = {
+						name = "Moralo Eval"
+						portrait_path = "gfx/leaders/BountyHunters/Moralo_Eval.dds"
+						traits = { thorough_planner }
+						skill = 8
+						attack_skill = 5
+						defense_skill = 2
+						planning_skill = 6
+						logistics_skill = 3
+						id = 21
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = moralo_eval
+							}
+						}
+						check_variable = { dx > 199.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = moralo_eval
+					subtract_from_variable = { dx = 200 }
+					add_ace = {
+					    name = "Moralo"
+					    surname = "Eval"
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Onca_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = onca
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = onca
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Onca"
+						portrait_path = "gfx/leaders/BountyHunters/Onca.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						id = 22
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = onca
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = onca
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Onca"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Robonino_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = robonino
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = robonino
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Robonino"
+						portrait_path = "gfx/leaders/BountyHunters/Robonino.dds"
+						traits = { fortress_buster }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 4
+						id = 23
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = robonino
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = robonino
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Robonino"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Rumi_Paramita_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = rumi_paramita
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = rumi_paramita
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Rumi Paramita"
+						portrait_path = "gfx/leaders/BountyHunters/Rumi_Paramita.dds"
+						traits = {  }
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 1
+						logistics_skill = 2
+						id = 24
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = rumi_paramita
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = rumi_paramita
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Rumi"
+					    surname = "Paramita"
+					    callsign = ""
+					    type = fighter_genius
+					    is_female = yes
+					}
+				}
+			}
+	Seripas_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = seripas
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = seripas
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Seripas"
+						portrait_path = "gfx/leaders/BountyHunters/Seripas.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 4
+						planning_skill = 1
+						logistics_skill = 3
+						id = 25
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = seripas
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = seripas
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Seripas"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Shahan_Alama_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = shahan_alama
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = shahan_alama
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Shahan alama"
+						portrait_path = "gfx/leaders/BountyHunters/Shahan_Alama.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 3
+						id = 26
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = shahan_alama
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = shahan_alama
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Shahan"
+					    surname = "Alama"
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Sinrich_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = sinrich
+						}
+						ROOT = {
+							check_variable = { dx > 49.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = sinrich
+					subtract_from_variable = { dx = 50 }
+					create_corps_commander = {
+						name = "Sinrich"
+						portrait_path = "gfx/leaders/BountyHunters/Sinrich.dds"
+						traits = {  }
+						skill = 3
+						attack_skill = 3
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 3
+						id = 27
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = sinrich
+							}
+						}
+						check_variable = { dx > 49.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = sinrich
+					subtract_from_variable = { dx = 50 }
+					add_ace = {
+					    name = "Sinrich"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Sixtat_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = sixtat
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = sixtat
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Sixtat"
+						portrait_path = "gfx/leaders/BountyHunters/Sixtat.dds"
+						traits = {  }
+						skill = 4
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+						id = 28
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = sixtat
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = sixtat
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Sixtat"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					}
+				}
+			}
+	Sugi_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = sugi
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = sugi
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Sugi"
+						portrait_path = "gfx/leaders/BountyHunters/Sugi.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 3
+						id = 29
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = sugi
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = sugi
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Sugi"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					    is_female = yes
+					}
+				}
+			}
+	Twazzi_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = twazzi
+						}
+						ROOT = {
+							check_variable = { dx > 99.9 }
+							has_country_flag = generalmode
+						}
+					}
+					set_global_flag = twazzi
+					subtract_from_variable = { dx = 100 }
+					create_corps_commander = {
+						name = "Twazzi"
+						portrait_path = "gfx/leaders/BountyHunters/Twazzi.dds"
+						traits = {  }
+						skill = 5
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 4
+						id = 30
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_global_flag = twazzi
+							}
+						}
+						check_variable = { dx > 99.9 }
+						has_country_flag = acemode
+					}
+					set_global_flag = twazzi
+					subtract_from_variable = { dx = 100 }
+					add_ace = {
+					    name = "Twazzi"
+					    surname = ""
+					    callsign = ""
+					    type = fighter_genius
+					    is_female = yes
+					}
+				}
+			}
+		}
+		triggers = {
+			Aurasing_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = aurasing
+				}
+			}
+			Boba_Fett_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = boba_fett
+				}
+			}
+			Bric_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = bric
+				}
+			}
+			Bulduga_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = bulduga
+				}
+			}
+			Highsinger_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = Highsinger
+				}
+			}
+			Cad_Bane_click_enabled = {
+				check_variable = { dx > 199.9 }
+				NOT = {
+					has_global_flag = Cad_Bane
+				}
+			}
+			Castas_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = castas
+				}
+			}
+			Cato_Parasitti_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = cato_parasitti
+				}
+			}
+			Dengar_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = dengar
+				}
+			}
+			Derrown_click_enabled = {
+				check_variable = { dx > 149.9 }
+				NOT = {
+					has_global_flag = derrown
+				}
+			}
+			El_Les_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = el_les
+				}
+			}
+			Embo_click_enabled = {
+				check_variable = { dx > 199.9 }
+				NOT = {
+					has_global_flag = embo
+				}
+			}
+			Greedo_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = greedo
+				}
+			}
+			Bossk_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = bossk
+				}
+			}
+			Helios_3D_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = Helios_3D
+				}
+			}
+			Helios_3E_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = Helios_3E
+				}
+			}
+			Jakoli_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = jakoli
+				}
+			}
+			Kiera_Swan_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = kiera_swan
+				}
+			}
+			Kronos_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = kronos
+				}
+			}
+			Latts_Razzi_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = latts_razzi
+				}
+			}
+			Mantu_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = mantu
+				}
+			}
+			Moralo_Eval_click_enabled = {
+				check_variable = { dx > 199.9 }
+				NOT = {
+					has_global_flag = moralo_eval
+				}
+			}
+			Onca_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = onca
+				}
+			}
+			Robonino_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = robonino
+				}
+			}
+			Rumi_Paramita_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = rumi_paramita
+				}
+			}
+			Seripas_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = seripas
+				}
+			}
+			Shahan_Alama_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = shahan_alama
+				}
+			}
+			Sinrich_click_enabled = {
+				check_variable = { dx > 49.9 }
+				NOT = {
+					has_global_flag = sinrich
+				}
+			}
+			Sixtat_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = sixtat
+				}
+			}
+			Sugi_click_enabled = {
+				check_variable = { dx > 99.9 }
+				NOT = {
+					has_global_flag = sugi
+				}
+			}
+		Twazzi_click_enabled = {
+				check_variable = { dx > 99.9 }
+			NOT = {
+				has_global_flag = twazzi
+			}
+		}
+	}

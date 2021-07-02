@@ -1,0 +1,41 @@
+state={
+	id=473
+	name="STATE_473"
+	provinces={
+		133 818 883 1908 2160 3033 3503 4316 4702 4915 4966 11265 11266 11267 11270 11272 11275 11278 11279 11287 11288 11289 11300 11303 11308 11312 11315 11316 11321 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=PAN
+		add_core_of = PAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			4966 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			11278 50
+		}
+	}
+}
+

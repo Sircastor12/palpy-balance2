@@ -1,0 +1,56 @@
+scripted_gui = {
+
+	galactic_market_init = {
+		context_type = player_context
+
+		window_name = "market_init_container"
+		
+		visible = {
+			always = yes
+		}
+		
+		effects = {
+			market_init_bg_click = {
+				if = {
+					limit = {
+						has_country_flag = show_market
+					}
+					clr_country_flag = show_market
+				}
+				else = {
+					set_country_flag = show_market
+				}
+			}
+			ibc_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = ibc_loans_babayetu
+					}
+					clr_country_flag = ibc_loans_babayetu
+				}
+				else = {
+					set_country_flag = ibc_loans_babayetu
+				}
+			}
+			bounty_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bounty
+					}
+					clr_country_flag = bounty
+				}
+				else = {
+					set_country_flag = bounty
+				}
+			}
+			senate_open_button_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = show_league_of_nations }
+				set_variable = { show_league_of_nations = show }
+				set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+				clear_array = league_of_nations_possible_voting_targets_array
+			}
+		}
+	}
+}
+

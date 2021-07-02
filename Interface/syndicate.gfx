@@ -1,0 +1,14 @@
+SpriteTypes = {
+	SpriteType = { 
+		name = "GFX_ideology_syndicate_group"
+		texturefile = "gfx/interface/ideologies/syndicate_group.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_black_market"
+		texturefile = "gfx/interface/consortium/black_market_screen.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_black_market_button"
+		texturefile = "gfx/interface/consortium/black_market_buttons.dds" 
+	}
+}

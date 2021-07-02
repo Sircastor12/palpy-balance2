@@ -1,0 +1,41 @@
+state={
+	id=80
+	name="STATE_80"
+	provinces={
+		279 1812 2301 3647 4787 5049 5137 5142 5153 5160 5165 5170 5177 5178 5186 5190 5193 5203 
+	}
+	manpower=55000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=0
+		aluminium=1
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=DAN
+		add_core_of = DAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			5137 = {
+				naval_base = 3
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

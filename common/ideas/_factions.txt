@@ -1,0 +1,46 @@
+ideas = {
+    #############
+    country = {
+		REP_member_prewar = {
+			picture = REP_member
+			allowed = {
+				has_government = democratic
+				NOT = { has_war_with = REP }
+			}
+		    allowed_civil_war = {
+		    	has_government = democratic
+		    }
+		    rule = {
+		    	can_create_factions = no
+		    }
+		    on_add = {
+				set_country_flag = member_of_galactic_senate
+		    }
+			on_remove = {
+				clr_country_flag = member_of_galactic_senate
+			}
+			modifier = {
+				ai_join_ally_desire_factor = -1000.0
+			}
+	    }
+		REP_member = {
+			picture = REP_member
+			allowed = {
+				has_government = democratic
+				NOT = { has_war_with = REP }
+			}
+		    allowed_civil_war = {
+		    	has_government = democratic
+		    }
+		    rule = {
+		    	can_create_factions = no
+		    }
+		    on_add = {
+				set_country_flag = member_of_galactic_senate
+		    }
+			on_remove = {
+				clr_country_flag = member_of_galactic_senate
+			}
+	    }
+    }
+}

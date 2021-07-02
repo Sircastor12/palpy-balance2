@@ -1,0 +1,41 @@
+state={
+	id=193
+	name="STATE_193"
+	provinces={
+		233 259 286 549 607 1873 2490 2816 2980 3576 4201 4314 4360 6786 6815 6842 6858 6863 6867 6876 6877 6887 6892 6902 6912 6915 6916 6934 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=5
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ALD
+		add_core_of = ALD
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,131 @@
+@army_reform_x_pos = -2
+@army_reform_y_pos = -48
+
+guiTypes = {
+	containerWindowType = {
+		name = "alignmentchart_button"
+		position = { x = 1025 y = -3 }
+	
+		buttonType ={
+			name ="alignment_open_button"
+			spriteType = "GFX_alignment_button"
+			position = { x=215 y=6 }
+			pdx_tooltip = "alignment_button_loc"
+		}
+	}
+	containerWindowType = {
+		name = "hoi3_faction_alignment_window"
+		position = { x = -250 y = -400 }
+		size = { width = 900 height = 785 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+
+		orientation = center
+
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_diplomacy_triangle_bg"
+		}
+
+		containerWindowType = {
+			name = "hoi3_faction_alignment_container"
+			position = {x = 155 y = 300}
+			size = {width = 460 height = 540 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			#verticalScrollbar = "right_vertical_slider"
+			
+			# Would be cool if this just used the in game ideology
+			# icons dynamically depending on the faction leader's ideology
+			gridboxtype = { # alignment_array
+				name = "HOI3_tags_grid"
+				position = { x = 3 y = -475 }
+				size = { width = 4 height = 13 }
+				slotsize = { width = 1 height = 20 }
+				orientation = center
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		buttonType = {
+			name = "button_close"
+			position = {x = 710 y = 60 }
+			spriteType = "GFX_NV_btn_close"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		instantTextboxType = {
+			name = "title"
+			position = { x = 270 y = 35 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = chart_button_label
+			maxWidth = 300
+			maxHeight = 20
+			format = left	
+		}	
+	}
+	
+	# this entry will be used to populate the country_grid above
+	containerWindowType = {
+		name = "hoi3_tag_entry"
+		position = { x = 0 y = 0}	
+		
+		buttonType = {
+			name = "flag2"
+			quadTextureSprite = "GFX_flag_smallest"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "flag_alignment_tip"
+			pdx_tooltip_delayed = "main_factions_tip"
+		}		
+	}
+	
+	# Controls the flag gfx for the Main factions list
+	containerWindowType = {
+		name = "hoi3_main_factions_entry"
+		position = { x = -200 y = 0}	
+		size = { width = 422 height = 100 }
+		
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_flag_circle_small"
+			position = { x = 305 y = 20 }
+			Orientation = upper_left
+			pdx_tooltip = "flag_alignment_tip"
+			pdx_tooltip_delayed = "main_factions_tip"
+		}
+	}
+	
+	# Controls the flag gfx and text for the all factions list
+	containerWindowType = {
+		name = "hoi3_all_factions"
+		position = { x = -200 y = 0}	
+		size = { width = 422 height = 100 }
+		
+		buttonType = {
+			name = "flag"
+			quadTextureSprite = "GFX_flag_smallest"
+			position = { x = 305 y = 20 }
+			Orientation = upper_left
+			pdx_tooltip = "flag_alignment_tip"
+			pdx_tooltip_delayed = "main_factions_tip"
+		}
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 332 y = 25 }
+			font = "Arial12"
+			text = "[THIS.GetFactionName]"
+			format = left
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+		}		
+	}
+}

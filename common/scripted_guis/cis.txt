@@ -1,0 +1,65 @@
+scripted_gui = {
+	open_cis_window = {
+		context_type = player_context
+		
+		window_name = "open_cis_window"
+		parent_window_name = countrypoliticsview
+		
+		visible = {
+			is_ai = no
+			has_global_flag = secessionoccured
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+				}
+			}
+			always = no
+		}
+		effects = {
+			cis_senate_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = cis_open
+					}
+					clr_country_flag = cis_open
+				}
+				else = {
+					set_country_flag = cis_open
+				}
+			}
+		}
+		properties = {
+			senateparties = { image = "[Getsenateparty]" }
+		}
+    }
+	cis_window = {
+		context_type = player_context
+		window_name = "cis_window"
+		
+		visible = {
+			has_country_flag = cis_open
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = cis_open
+				}
+			}
+		triggers = {
+
+		}
+		dynamic_lists = {
+			jedi_grid = {
+				array = available_jedi
+				entry_container = jedi_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			cis_idealist_bar = {
+				frame = cis_power_balance
+			  }
+		}
+	}
+}

@@ -1,0 +1,49 @@
+﻿capital = 88
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+set_popularities = {
+        democratic = 10
+        communism = 0
+        fascism = 40
+        neutrality = 50
+
+}
+
+set_politics = {
+	
+	ruling_party = neutrality
+	last_election = "966.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Duke Solha"
+	desc = "Duke of Serenno"
+	picture = "gfx/leaders/SER/dukeser.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Duke Solha"
+	desc = ""
+	picture = "gfx/leaders/SER/dukeser.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Duke Solha"
+	desc = ""
+	picture = "gfx/leaders/SER/dukeser.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}

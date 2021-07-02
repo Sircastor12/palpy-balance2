@@ -1,0 +1,41 @@
+state={
+	id=444
+	name="STATE_444"
+	provinces={
+		653 862 964 1177 2324 2412 5051 10753 10799 10822 10847 10853 10857 10863 10874 10875 10886 10891 10903 10914 10915 10948 10961 10991 10995 11010 11018 11035 11048 11085 
+	}
+	manpower=3400000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CHR
+		add_core_of = CHR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			5051 = {
+				naval_base = 4
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

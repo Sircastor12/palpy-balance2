@@ -1,0 +1,42 @@
+state={
+	id=176
+	name="STATE_176"
+	provinces={
+		700 829 2494 2843 3561 4100 4228 4692 6575 6578 6582 6589 6597 6616 
+	}
+	manpower=206000
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=12
+		aluminium=8
+		rubber=0
+		tungsten=7
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=DEA
+		add_core_of = DEA
+		add_core_of = MAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			6589 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

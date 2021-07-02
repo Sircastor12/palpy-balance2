@@ -1,0 +1,20 @@
+cis_general_decisons = {
+     icon = generic_prospect_for_resources
+	
+available = { 
+	original_tag = CIS
+     }
+allowed = {
+		original_tag = CIS
+	}
+}
+
+cis_missions = {
+     icon = generic_prospect_for_resources
+	available = { 
+		original_tag = CIS
+	}
+	allowed = {
+		original_tag = CIS
+	}
+}

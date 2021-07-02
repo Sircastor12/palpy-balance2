@@ -1,0 +1,198 @@
+guiTypes = {
+    containerWindowType = {
+        name = "ibc_loan_window"
+        orientation = center
+        position = {x=-400 y=-300}
+        size = { width=900 height=900 }
+        moveable = yes
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_ibc_window"
+		}
+		buttonType = {
+			name = "ibc_up" 
+			position = { x = 387 y = 256 }
+			spriteType = "GFX_up_button_ibc"
+			buttonText  = ""
+			buttonFont = "moneyfont"
+			pdx_tooltip = "ibc_up_interest_TOOLTIP"
+		}
+		buttonType = {
+			name = "ibc_down" 
+			position = { x = 387 y = 414 }
+			spriteType = "GFX_down_button_ibc"
+			buttonText  = ""
+			buttonFont = "moneyfont"
+			pdx_tooltip = "ibc_lower_interest_TOOLTIP"
+		}
+        containerWindowType = {
+            name = "ibc_loan_container_gridbox"
+            position = { x=0 y=50 }
+            size = { width=385 height=725 } 
+            margin = { top = 10 bottom = 10 }
+            Orientation = upper_left
+
+            verticalScrollbar = "right_vertical_slider"
+
+            background = {
+                name = "Background"
+                #spriteType ="GFX_tiled_bg"
+            }
+            gridboxtype = {
+                name = "ibc_loan_grid"
+                position = { x = 0 y = 0 }
+                size = { width = 400 height = 725 }
+                slotsize = { width = 200 height = 25 }
+                max_slots_horizontal = 1
+                add_horizontal = yes
+            }
+
+        }
+
+        buttonType = {
+            name = "close_button"
+            position = {x=860 y=10}
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+        instantTextboxType = {
+            name = "ibc_interest_rate"
+            position = { x = 335 y = 320 }
+            font = "hoi_36header"
+            borderSize = {x = 0 y = 0}
+            text = "Y[?Global.interest_rate]%"
+            maxWidth = 240
+            maxHeight = 30
+			format = center
+            pdx_tooltip = "ibc_interest_rate_TOOLTIP"
+        }
+        instantTextboxType = {
+            name = "ibc_total_debt"
+            position = { x = 585 y = 290 }
+            font = "hoi_36header"
+            borderSize = {x = 0 y = 0}
+            text = "R[?Global.debtotal] M"
+            maxWidth = 240
+            maxHeight = 30
+			format = center
+        }
+        instantTextboxType = {
+            name = "ibc_total_debt_national"
+            position = { x = 585 y = 670 }
+            font = "hoi_36header"
+            borderSize = {x = 0 y = 0}
+            text = "R[?debttotal] M"
+            maxWidth = 240
+            maxHeight = 30
+			format = center
+        }
+
+        instantTextboxType = {
+            name = "ibc_total_income"
+            position = { x = 585 y = 135 }
+            font = "hoi_36header"
+            borderSize = {x = 0 y = 0}
+            text = "Y[?IBC.IBC_treasury] M"
+            maxWidth = 240
+            maxHeight = 30
+			format = center
+		}
+        buttonType = {
+			name = "ibc_take_1_loan" 
+			position = { x = 377 y = 478 }
+			spriteType = "GFX_ibc_button"
+			buttonText  = "Take a loan"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "take_out_loan"
+        }
+        buttonType = {
+			name = "ibc_take_10_loans" 
+			position = { x = 377 y = 540 }
+			spriteType = "GFX_ibc_button"
+			buttonText  = "Take 10 loans"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "take_out_loan10"
+        }
+        buttonType = {
+			name = "ibc_pay_1_loan" 
+			position = { x = 377 y = 600 }
+			spriteType = "GFX_ibc_button"
+			buttonText  = "Pay 1 loan"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "pay_off_1"
+        }
+        buttonType = {
+			name = "ibc_pay_10_loan" 
+			position = { x = 377 y = 659 }
+			spriteType = "GFX_ibc_button"
+			buttonText  = "Pay 10 loans"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "pay_off_10"
+        }
+        buttonType = {
+			name = "ibc_pay_all_loan" 
+			position = { x = 377 y = 720 }
+			spriteType = "GFX_ibc_button"
+			buttonText  = "Pay all loans"
+			buttonFont = "hoi_18mbs"
+			pdx_tooltip = "pay_off"
+		}
+    }
+
+    containerWindowType = {
+        name = "ibc_loan_entry"
+        position = {x = -80 y = 0}
+        size = { width = 400 height = 20}
+        instantTextboxType = {
+            name = "ibc_nation_list"
+            position = { x = 0 y = 0 }
+            font = "hoi_18mbs"
+            borderSize = {x = 0 y = 0}
+            text = "[?Global.nation_list^i.GetName][?Global.nation_list^i.GetFlag]"
+            maxWidth = 240
+            maxHeight = 30
+			format = left
+		}
+		instantTextboxType = {
+            name = "ibc_nation_list_2"
+            position = { x = 200 y = 0 }
+            font = "hoi_18mbs"
+            borderSize = {x = 0 y = 0}
+            text = "[?Global.nation_debt_list^i]"
+            maxWidth = 240
+            maxHeight = 30
+			format = left
+            pdx_tooltip = "ibc_debt_TOOLTIP"
+		}
+		instantTextboxType = {
+            name = "ibc_nation_list_3"
+            position = { x = 280 y = 0 }
+            font = "hoi_18mbs"
+            borderSize = {x = 0 y = 0}
+            text = "[?Global.nation_debt_montly_list^i]"
+            maxWidth = 240
+            maxHeight = 30
+			format = left
+            pdx_tooltip = "ibc_debt_daily_TOOLTIP"
+        }
+	}
+    containerWindowType = {
+        name = "ibc_loan_entry2"
+        position = {x = -95 y = -120}
+        size = { width = 400 height = 300}
+        instantTextboxType = {
+            name = "ibc_nation_list2"
+            position = { x = 20 y = 100 }
+            font = "hoi_18mbs"
+            borderSize = {x = 0 y = 0}
+            text = "[?Global.nation_debt_list^i]   [?Global.nation_debt_monthly_list^i]"
+            maxWidth = 240
+            maxHeight = 30
+            format = left
+        }
+    }
+}

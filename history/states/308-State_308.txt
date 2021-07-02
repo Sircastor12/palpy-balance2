@@ -1,0 +1,41 @@
+state={
+	id=308
+	name="STATE_308"
+	provinces={
+		159 198 373 855 1550 1551 1682 1970 2268 3848 4154 4230 8536 8546 8560 8575 8577 8583 8588 8599 8613 8629 8630 8631 8645 8648 8655 
+	}
+	manpower=325
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BOZ
+		add_core_of = BOZ
+
+		buildings = {
+			infrastructure=0
+			arms_factory=0
+			industrial_complex=0
+			dockyard=0
+			air_base=0
+
+			8630 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

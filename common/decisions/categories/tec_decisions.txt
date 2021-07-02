@@ -1,0 +1,17 @@
+tech_level_decisions = {
+
+    icon = generic_political_discourse
+
+
+    visible_when_empty = no
+
+    available = { 
+        OR = {
+            tag = REP
+            tag = CIS
+            REP = {
+                has_country_flag = teching_up
+            }
+        }
+    }
+}

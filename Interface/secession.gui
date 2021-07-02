@@ -1,0 +1,35 @@
+
+guiTypes = {
+    
+	containerWindowType = {
+		name = "secession_container"
+		position = { x = 1465 y = 6 }
+		
+		buttonType ={
+			name ="secession_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		
+		iconType = {
+			name ="secession_icon"
+			spriteType = "GFX_prestige"
+			position = { x= 7 y = 6 }
+		}
+		
+		instantTextBoxType = {
+			name ="secession_text"
+			position = { x= 15 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?secession]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "secession_TOOLTIP"
+			pdx_tooltip_delayed = "secession_TOOLTIP_DELAYED"
+		}
+	}
+}

@@ -1,0 +1,81 @@
+guiTypes = {
+	containerWindowType = {
+		name = "grievous_gui"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=507 height=335 }
+
+		buttonType = {
+			name = "grievous_p" 
+			position = {x=0 y=-20}	
+			spriteType = "GFX_Protector_Full"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = "REP_REFORM_1"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "grievous_w" 
+			position = {x=0 y=-20}	
+			spriteType = "GFX_Warrior_Full"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = "REP_REFORM_1"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "g_arms_w" 
+			position = {x=197 y=40}	
+			spriteType = "GFX_Warrior_Arms"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "g_legs_w" 
+			position = {x=214 y=117}	
+			spriteType = "GFX_Warrior_Legs"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "g_body_w" 
+			position = {x=235 y=47}	
+			spriteType = "GFX_Warrior_Chest"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "g_head_w" 
+			position = {x=235 y=-13}	
+			spriteType = "GFX_Warrior_Head"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "p_arms_w" 
+			position = {x=180 y=28}	
+			spriteType = "GFX_Protector_Arms"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "p_legs_w" 
+			position = {x=217 y=110}	
+			spriteType = "GFX_Protector_Legs"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "p_body_w" 
+			position = {x=245 y=40}
+			spriteType = "GFX_Protector_Chest"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+		buttonType = {
+			name = "p_head_w" 
+			position = {x=245 y=-10}	
+			spriteType = "GFX_Protector_Head"
+			#pdx_tooltip = "REP_REFORM_1"
+			#pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+	}
+}

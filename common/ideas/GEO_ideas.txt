@@ -1,0 +1,265 @@
+ideas = {
+    country = {
+
+        GEO_Industry_1 = {
+        name = GEO_ruined_industry
+
+        allowed = {
+            original_tag = GEO
+        }
+        modifier = {
+            consumer_goods_factor = 0.15
+            production_speed_infrastructure_factor = -0.50
+            production_speed_industrial_complex_factor = -0.50
+            production_speed_arms_factory_factor = -0.50
+            production_speed_dockyard_factor = -0.50
+            stability_factor = -0.30
+        }
+    }
+
+    GEO_Industry_2 = {
+        name = GEO_civilian_recovery
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.25
+            production_speed_industrial_complex_factor = -0.25
+            production_speed_arms_factory_factor = -0.40
+            production_speed_dockyard_factor = -0.40
+            stability_factor = -0.20
+        }
+    }
+    
+    GEO_Industry_3 = {
+        name = GEO_home_development
+
+       allowed ={
+            original_tag = GEO
+        }
+        modifier = {
+            consumer_goods_factor = 0.05
+            production_speed_infrastructure_factor = 0.10
+            production_speed_industrial_complex_factor = 0.10
+            production_speed_arms_factory_factor = -0.20
+            production_speed_dockyard_factor = -0.20
+            #add credit production debuff if possible otherwise kill me :)
+        }
+    } 
+    
+    GEO_Industry_4 = {
+        name = GEO_rapid_development
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            production_speed_infrastructure_factor = 0.25
+            production_speed_industrial_complex_factor = 0.25
+            production_speed_arms_factory_factor = -0.20
+            production_speed_dockyard_factor = -0.10
+            #add slightly bigger credit reduction or else I will commit sucicide infront of a live studio audience
+        }
+    }
+
+    GEO_Industry_5 = {
+        name = GEO_thriving_homeworld
+
+
+       allowed ={
+            original_tag = GEO
+        }
+        modifier = {
+            production_speed_infrastructure_factor = 0.35
+            production_speed_industrial_complex_factor = 0.35
+            production_speed_arms_factory_factor = -0.05
+            production_speed_dockyard_factor = -0.05
+            #add final credit reduction or I will nuke an entire city of orphans
+        }
+    }
+
+    GEO_Industry_6 = {
+        name = GEO_profit_over_population
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.05
+            production_speed_infrastructure_factor = 0.10
+            production_speed_industrial_complex_factor = 0.10
+            production_speed_arms_factory_factor = -0.20
+            production_speed_dockyard_factor = -0.20
+            stability_factor = -0.05
+            #add credit production buff if possible otherwise fuck
+        } 
+    }
+
+    GEO_Industry_7 = {
+        name = GEO_squeeze_them_dry
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = -0.05
+            production_speed_infrastructure_factor = 0.20
+            production_speed_industrial_complex_factor = 0.20
+            production_speed_arms_factory_factor = -0.10
+            production_speed_dockyard_factor = -0.10
+            stability_factor = -0.10
+            #add second credit production buff otherwise I will hold a country of orphans hostage with nuclear weapons
+         }
+    }
+
+    GEO_Industry_8 = {
+        name = GEO_cashflow_and_construction
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = -0.10
+            production_speed_infrastructure_factor = 0.30
+            production_speed_industrial_complex_factor = 0.30
+            production_speed_arms_factory_factor = 0.05
+            production_speed_dockyard_factor = 0.05
+            stability_factor = -0.15
+            #add third credit production buff otherwise that continent of orphans are gonna get orbital strikes 
+         }
+    }
+
+
+    GEO_Industry_9 = {
+        name = GEO_militarising_economy
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.15
+            production_speed_infrastructure_factor = -0.40
+            production_speed_industrial_complex_factor = -0.40
+            production_speed_arms_factory_factor = -0.25
+            production_speed_dockyard_factor = -0.25
+            stability_factor = -0.10
+        }
+    }
+
+    GEO_Industry_10 = {
+        name = GEO_home_army_defence_factor_development
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.30
+            production_speed_industrial_complex_factor = -0.30
+            production_speed_arms_factory_factor = -0.10
+            production_speed_dockyard_factor = -0.10
+            army_defence_factor = 0.05 #strictly Geonosian units
+            army_attack_factor = 0.05 #strictly Geonosian units
+        }
+    }
+
+    GEO_Industry_11 = {
+        name = GEO_new_weapons_and_factories
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.20
+            production_speed_industrial_complex_factor = -0.20
+            production_speed_arms_factory_factor = 0.05
+            production_speed_dockyard_factor = 0.05
+            army_defence_factor = 0.10 #strictly Geonosian units
+            army_attack_factor = 0.10 #strictly Geonosian units
+        }
+    }
+
+    GEO_Industry_12 = {
+        name = GEO_Geonosian_home_army_defence_factor
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.10
+            production_speed_industrial_complex_factor = -0.10
+            production_speed_arms_factory_factor = 0.15
+            production_speed_dockyard_factor = 0.15
+            army_defence_factor = 0.15 #strictly Geonosian units
+            army_attack_factor = 0.15 #strictly Geonosian units
+        }
+    }
+
+    GEO_Industry_13 = {
+        name = GEO_military_focused_exports
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.10
+            production_speed_industrial_complex_factor = -0.10
+            production_speed_arms_factory_factor = 0.15
+            production_speed_dockyard_factor = 0.15
+            #droid production bonus +5%
+        }
+    }
+
+    GEO_Industry_14 = {
+        name = GEO_Droid_production
+
+       allowed ={
+            original_tag = GEO
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.10
+            production_speed_industrial_complex_factor = -0.10
+            production_speed_arms_factory_factor = 0.20
+            production_speed_dockyard_factor = 0.20
+            army_attack_factor = -0.05 #strictly Geonosian units
+            #droid production bonus +7.5%
+        }
+    }
+
+    GEO_Industry_15 = {
+        name = GEO_arms_exports
+
+       allowed ={
+            original_tag = GEO
+        }
+        modifier = {
+            consumer_goods_factor = 0.10
+            production_speed_infrastructure_factor = -0.05
+            production_speed_industrial_complex_factor = -0.05
+            production_speed_arms_factory_factor = 0.25
+            production_speed_dockyard_factor = 0.25
+            army_attack_factor = -0.10 #strictly Geonosian units
+            #droid production bonus +10%
+
+            }
+        }
+    }
+}

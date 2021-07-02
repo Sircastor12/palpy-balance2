@@ -1,0 +1,200 @@
+tech_level_decisions = {
+	rep_tech_level = {
+		icon = generic_political_discourse
+
+		visible = {
+			tag = REP
+			NOT = {
+				has_country_flag = teching_up            
+                has_global_flag = REP_tech_4
+			}
+		}
+
+		allowed = {
+			tag = REP
+            check_variable = { dx > 999 }
+		}
+
+        fire_only_once = no # Will not re-enable after being removed
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                NOT = {
+                    has_global_flag = REP_tech_2
+                }
+                REP = {
+                    has_completed_focus = REP_anticorruption_campaign
+                }
+                add = 30
+            }
+            modifier = {
+                has_global_flag = REP_tech_2
+                NOT = {
+                    has_completed_focus = REP_battle_of_geonosis
+                }
+                add = -100
+            }
+		}
+
+		complete_effect = {
+			subtract_from_variable = { dx = 1000 }
+            set_country_flag = teching_up
+            custom_effect_tooltip = "R1000M Credits"
+		}
+	}
+    rep_tech_level_mission = {
+        icon = generic_construction
+        visible = {
+            always = yes
+        }
+        available = {
+            always = no
+        }
+        days_mission_timeout = 250
+        is_good = yes
+        activation = {
+            REP = {
+                has_country_flag = teching_up
+            }
+        }
+        timeout_effect = {
+            clr_country_flag = teching_up
+            if = {
+                limit = {
+                    has_country_flag = REP_tech_3
+                }
+                clr_country_flag = REP_tech_3
+                set_country_flag =  REP_tech_4
+                set_global_flag = REP_tech_4
+            }
+            if = {
+                limit = {
+                    has_country_flag = REP_tech_2
+                }
+                clr_country_flag = REP_tech_2
+                set_country_flag =  REP_tech_3
+                set_global_flag = REP_tech_3
+            }
+            if = {
+                limit = {
+                    has_country_flag = REP_tech_1
+                }
+                clr_country_flag = REP_tech_1
+                set_country_flag =  REP_tech_2
+                set_global_flag = REP_tech_2
+            }
+        }
+        complete_effect = {
+        }
+    }
+    cis_tech_level = {
+		icon = generic_political_discourse
+
+		visible = {
+			tag = CIS
+			NOT = {
+				has_country_flag = teching_up            
+                has_global_flag = CIS_tech_4
+			}
+		}
+
+		allowed = {
+			tag = CIS
+            check_variable = { dx > 999 }
+		}
+
+        fire_only_once = no # Will not re-enable after being removed
+
+		ai_will_do = {
+			base = 0
+            modifier = {
+                NOT = {
+                    has_global_flag = CIS_tech_2
+                }
+                CIS = {
+                    has_completed_focus = CIS_dac
+                }
+                add = 30
+            }
+            modifier = {
+                has_global_flag = CIS_tech_2
+                NOT = {
+                    has_completed_focus = CIS_the_raxus_address
+                }
+                add = -100
+            }
+		}
+
+		complete_effect = {
+			subtract_from_variable = { dx = 1000 }
+            set_country_flag = teching_up
+            custom_effect_tooltip = "R1000M Credits"
+		}
+	}
+    cis_tech_level_mission = {
+        icon = generic_construction
+        visible = {
+            always = yes
+        }
+        available = {
+            always = no
+        }
+        days_mission_timeout = 250
+        is_good = yes
+        activation = {
+            CIS = {
+                has_country_flag = teching_up
+            }
+        }
+        timeout_effect = {
+            clr_country_flag = teching_up
+            if = {
+                limit = {
+                    has_country_flag = CIS_tech_3
+                }
+                clr_country_flag = CIS_tech_3
+                set_global_flag = CIS_tech_4
+            }
+            if = {
+                limit = {
+                    has_country_flag = CIS_tech_2
+                }
+                clr_country_flag = CIS_tech_1
+                set_country_flag = CIS_tech_3
+                set_global_flag = CIS_tech_3
+                if = {
+                    limit = {
+                        OR = {
+                            has_idea = CIS_member
+                            has_idea = CIS_member_prewar
+                        }
+                    }
+                    set_technology = {
+                        battle_droid_2 = 1
+                    }
+                    division_template = {
+                        name = "B2 Battle Droid"
+                        regiments = {
+                            b2_droid_unit = { x = 0 y = 0 }
+                            b2_droid_unit = { x = 0 y = 1 }
+                            b2_droid_unit = { x = 0 y = 2 }
+                            b2_droid_unit = { x = 0 y = 3 }
+                            b2_droid_unit = { x = 1 y = 0 }
+                            b2_droid_unit = { x = 1 y = 1 }
+                            b2_droid_unit = { x = 1 y = 2 }
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = CIS_tech_1
+                }
+                clr_country_flag = CIS_tech_1
+                set_country_flag =  CIS_tech_2
+                set_global_flag = CIS_tech_2
+            }
+        }
+    }
+}

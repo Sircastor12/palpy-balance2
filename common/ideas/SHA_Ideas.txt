@@ -1,0 +1,186 @@
+ideas = {
+	country = {
+
+SHA_slaves_in_army = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				conscription_factor = 0.2
+				army_org = -0.5
+				
+			}
+		}
+SHA_slaves_labour = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				
+			}
+		}
+SHA_mercenary_cap = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			on_add = {
+				add_to_variable = { dx = 1 }  
+			}
+		}
+SHA_mand_train = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				training_time_army_factor = 0.2
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				
+			}
+		}
+SHA_night_train = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				training_time_army_factor = 0.2
+				army_speed_factor = 0.2
+				supply_consumption_factor = -0.2
+				
+			}
+		}
+SHA_elite = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				special_forces_cap = 0.1
+				justify_war_goal_time = -0.75
+			}
+		}
+SHA_split_power = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+SHA_common_criminal = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				conscription = 0.02 
+				training_time_army_factor = -0.3
+			}
+		}
+SHA_resource_exploitation = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		SHA_night_owl = {
+
+            allowed = {
+		always = no
+            }
+
+            available = {
+            }
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	}
+}

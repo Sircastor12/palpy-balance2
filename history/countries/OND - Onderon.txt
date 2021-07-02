@@ -1,0 +1,66 @@
+capital = 226
+
+oob = "OND_3677"
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = .05
+
+set_technology = {
+	tech_support = 1
+	militia_OND = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar 
+	OND_king_dendup
+	volunteer_only
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+create_country_leader = {
+	name = "Ramsis Dendup"
+	desc = "King of Onderon"
+	picture = "gfx/leaders/OND/RamsisDendup.dds"
+	expire = "4000.1.1"
+	ideology = conservatism	
+}
+
+create_country_leader = {
+	name = "Sanjay Rash"
+	desc = "King of Onderon"
+	picture = "gfx/leaders/OND/SanjayRash.dds"
+	expire = "4000.1.1"
+	ideology = fascism_ideology 
+	traits = { unpopular_monarch }
+		
+}

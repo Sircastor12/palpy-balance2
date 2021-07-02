@@ -1,0 +1,41 @@
+state={
+	id=231
+	name="STATE_231"
+	provinces={
+		280 406 767 1456 3560 4059 4114 4845 7370 7378 7399 7406 7427 7458 7486 7502 7507 7525 7581 7594 7611 7634 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=2
+		rubber=0
+		tungsten=5
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=JAB
+		add_core_of = JAB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			7427 30
+		}
+	}
+}
+

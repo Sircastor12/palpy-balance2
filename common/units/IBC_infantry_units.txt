@@ -1,0 +1,49 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+
+	ig_lancer_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 1
+		
+		#Size Definitions
+		max_strength = 22
+		max_organisation = 35
+		default_morale = 1
+		manpower = 1
+
+		#Misc Abilities
+		training_time = 105
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.01
+
+		can_be_parachuted = yes
+
+		need = {
+			ig_lancer_equip = 100
+		}
+	}
+}

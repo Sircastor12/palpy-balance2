@@ -1,0 +1,140 @@
+﻿division_template = {
+	name = "187th Legion Division"
+	is_locked = yes
+
+	regiments = {
+		REP_187_clone = { x = 0 y = 0 }
+		REP_187_clone = { x = 0 y = 1 }
+		REP_187_clone = { x = 0 y = 2 }
+		REP_187_clone = { x = 0 y = 3 }
+   		REP_187_clone = { x = 1 y = 0 }
+		REP_187_clone = { x = 1 y = 1 }
+		REP_187_clone = { x = 1 y = 2 }
+  		REP_187_clone = { x = 2 y = 0 }
+		REP_187_clone = { x = 2 y = 1 }
+		REP_187_clone = { x = 2 y = 2 }
+	}
+	support = {
+		clone_recon = { x = 0 y = 0 }
+	}
+}
+
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "187th Air Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Sand Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Jo Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Doodle Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Old Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Keesh Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Stone Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Gig Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Chelsea Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Union Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Mahkey Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Lobe Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Donk Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Has Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Kam Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "187th Broke Company"
+		location = 10463 #Kamino
+		division_template = "187th Legion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

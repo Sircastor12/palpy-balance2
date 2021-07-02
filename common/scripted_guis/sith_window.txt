@@ -1,0 +1,720 @@
+scripted_gui = {
+
+	sith_init_container = {
+		context_type = player_context
+		window_name = "sith_init_container"
+
+		visible = {
+			OR = {
+			tag = CIS
+			tag = SID
+			has_country_flag = maul_master
+			}
+			always = no
+		}
+
+		effects = {
+			sith_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = babayet
+					}
+					clr_country_flag = babayet
+				}
+				else = {
+					set_country_flag = babayet
+				}
+			}
+		}
+
+	}
+
+		sith_window = {
+			context_type = player_context
+			window_name = "sith_window"
+	
+			visible = {
+				has_country_flag = babayet
+			}
+
+
+			effects = {
+				close_button_click = {
+					clr_country_flag = babayet
+				}
+				sith_apprentice_open_button_click = {
+					set_country_flag = sith_perks_open
+				}
+				sith_master_open_button_click = {
+					set_country_flag = sith_perks_open
+				}
+				open_sith_alchemy_click = {
+					if = {
+						limit = {
+							has_country_flag = sith_alchemy_open
+						}
+						clr_country_flag = sith_alchemy_open
+					}
+					else = {
+						set_country_flag = sith_alchemy_open
+					}
+				}
+			}
+	
+			triggers = {
+				sith_lvl_1_filled_visible = {
+					check_variable = { sith_power > 10 }
+				}
+				sith_lvl_2_filled_visible = {
+					check_variable = { sith_power > 30 }
+				}
+				sith_lvl_3_filled_visible = {
+					check_variable = { sith_power > 50 }
+				}
+				sith_lvl_4_filled_visible = {
+					check_variable = { sith_power > 70 }
+				}
+				sith_lvl_5_filled_visible = {
+					check_variable = { sith_power > 95 }
+				}
+				open_sith_alchemy_visible = {
+					has_country_flag = night_sister_magic
+				}
+			}
+
+		properties = {
+			sith_progress = {
+			  frame = sith_power
+			}
+			sith_master = { image = "[Getsithmaster]" }
+			sith_apprentice = { image = "[Getsithapprentice]" }
+		}
+	}
+	sith_perks_window = {
+		context_type = player_context
+		window_name = "sith_perks_window"
+
+		visible = {
+			has_country_flag = sith_perks_open
+		}
+
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = sith_perks_open
+			}
+####################### New Ways ###########################################
+			sith_apprentice_new_ways_perk_1_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					set_country_flag = the_way_forward
+					}
+				}
+			sith_apprentice_new_ways_perk_2_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					add_ideas = sith_slaves_sith
+					set_country_flag = sith_slaves
+					}
+				}
+			sith_apprentice_new_ways_perk_3_click = {
+				REP = {
+					add_ideas = cloud_the_jedi
+				}
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					set_country_flag = cloud_the_jedi
+				}
+			}
+			sith_apprentice_new_ways_perk_4_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					add_ideas = cult_of_sith
+					set_country_flag = cult_of_the_sith
+					}
+				}
+			sith_apprentice_new_ways_perk_5_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					add_ideas = dark_side_acolytes
+					set_country_flag = dark_side_acolytes
+					}
+				}
+			sith_apprentice_new_ways_perk_6_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					add_ideas = fanatical_efficiency
+					set_country_flag = fanatical_efficiency
+					}
+				}
+			sith_apprentice_new_ways_perk_7_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+						hidden_effect = {
+							set_rule = {
+								can_use_kamikaze_pilots = yes
+							}
+						}
+					set_country_flag = suicide_pilots
+					}
+				}
+######################## New Ways Master ####################################
+			sith_master_new_ways_perk_1_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					add_ideas = rule_of_one
+					set_country_flag = rule_of_one
+					}
+				}
+			sith_master_new_ways_perk_2_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					add_ideas = sith_naval_designs
+					set_country_flag = sith_naval_designs
+					}
+				}
+			sith_master_new_ways_perk_3_click = {
+				ROOT = {
+					subtract_from_variable = {
+						var = sith_power
+						value = 100
+						}
+					set_technology = {
+						sith_troopers = 1
+					}
+					set_country_flag = sith_troopers
+					}
+				}
+			sith_master_new_ways_perk_4_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				add_ideas = inquisition
+				set_country_flag = inquisition_sith
+				}
+			}
+			sith_master_new_ways_perk_5_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_global_flag = order_66
+				}
+				if = {
+					limit = {
+						any_unit_leader = {
+							has_trait = jedi_knight
+							has_trait = jedi_master
+							retire = yes
+						}
+					}
+				}
+			}
+####################### Old Ways ###########################################
+		sith_apprentice_old_sith_perk_1_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = the_old_ways
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				}
+			}
+		sith_apprentice_old_sit_perk_2_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = masterful_dueling
+					if = {
+						limit = {
+							any_unit_leader = {
+								has_trait = sith
+							}
+						}
+						add_trait = masterful_dueling
+					}
+				}
+			}
+		sith_apprentice_old_sit_perk_3_click = {
+			if = {
+				limit = {
+					any_unit_leader = {
+						has_trait = sith
+					}
+				}
+				add_trait = force_lightning
+			}
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = force_lightning
+			}
+		}
+		sith_apprentice_old_sit_perk_4_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_technology = {
+					dark_side_droids = 1
+				}
+				set_country_flag = dark_side_droids
+				}
+			}
+		sith_apprentice_old_sit_perk_5_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				add_ideas = ancient_technology
+				set_country_flag = ancient_technology_sith
+				}
+			}
+######################## Old Ways Master ####################################
+		sith_master_old_sit_perk_1_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				add_ideas = abolish_rule_of_two
+				set_country_flag = abolish_rule_of_two
+				}
+			}
+		sith_master_old_sit_perk_2_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				add_ideas = see_into_the_future
+				set_country_flag = see_into_the_future
+				}
+			}
+		sith_master_old_sit_perk_3_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = resettle_korribaan
+					annex_country = {
+						target = KOR
+						transfer_troops = no
+					}
+					add_state_core = 108
+					add_state_core = 7
+					add_state_core = 106
+					add_state_core = 105
+					add_state_core = 112
+					add_state_core = 111
+					add_state_core = 114
+				}
+			}
+		sith_master_old_sit_perk_4_click = {
+		ROOT = {
+			subtract_from_variable = {
+				var = sith_power
+				value = 100
+				}
+			add_ideas = ancient_sith_archives
+			set_country_flag = ancient_sith_archives
+			}
+		}
+		sith_master_old_sit_perk_5_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SIT_sith
+				set_country_flag = sith_empire
+				}
+			}
+####################### Night Sister ###########################################
+		sith_apprentice_dathomir_perk_1_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = night_sister_magic
+				set_variable = { sith_general_attack = 1 }
+				set_variable = { sith_general_defense = 1 }
+				set_variable = { sith_general_supply = 1 }
+				set_variable = { sith_general_planning = 1 }
+				}
+			}
+		sith_apprentice_dathomir_perk_2_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				add_ideas = ressurect_dead
+				set_country_flag = ressurect_dead
+
+				}
+			}
+		sith_apprentice_dathomir_perk_3_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				add_ideas = conceal_agents
+				set_country_flag = conceal_agents
+			}
+		}
+		sith_apprentice_dathomir_perk_4_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_technology = {
+					infuse_power = 1
+				}
+				set_country_flag = infuse_power
+				}
+			}
+		sith_apprentice_dathomir_perk_5_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_technology = {
+					spiderlings = 1
+				}
+				set_country_flag = spiderlings
+				}
+			}
+######################## Night Sister Master ####################################
+		sith_master_dathomir_perk_1_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_technology = {
+					magic_weaponry = 1
+				}
+				set_country_flag = magic_weaponry
+				}
+			}
+		sith_master_dathomir_perk_2_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_technology = {
+					rancors = 1
+				}
+				set_country_flag = rancor_training
+				}
+			}
+		sith_master_dathomir_perk_3_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = make_apprentice
+				}
+			}
+		sith_master_dathomir_perk_4_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				set_country_flag = sith_alchemy
+				}
+			}
+		sith_master_dathomir_perk_5_click = {
+			ROOT = {
+				subtract_from_variable = {
+					var = sith_power
+					value = 100
+					}
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = NIT_maul
+				set_country_flag = empire_of_night
+				}
+			}
+###############################	Night Sister End############################################
+		}
+
+		triggers = {
+###############################New Ways Triggers############################################
+			sith_apprentice_new_ways_perk_1_click_enabled = {
+				check_variable = { sith_power > 100 }
+					NOT = {
+						has_country_flag = the_old_ways
+					}
+				}
+			sith_apprentice_new_ways_perk_2_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = the_way_forward
+				}
+			sith_apprentice_new_ways_perk_3_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = the_way_forward
+				}
+			sith_apprentice_new_ways_perk_4_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = sith_slaves
+				}
+			sith_apprentice_new_ways_perk_5_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = cloud_the_jedi
+				}
+			sith_apprentice_new_ways_perk_6_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = cult_of_the_sith
+				}
+			sith_apprentice_new_ways_perk_7_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = dark_side_acolytes
+				}
+######################## New Ways Master Triggers####################################
+			sith_master_new_ways_perk_1_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = fanatical_efficiency
+					has_country_flag = suicide_pilots
+				}
+			sith_master_new_ways_perk_2_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = rule_of_one
+				}
+			sith_master_new_ways_perk_3_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = rule_of_one
+			}
+			sith_master_new_ways_perk_4_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = sith_naval_designs
+					has_country_flag = sith_troopers
+			}
+			sith_master_new_ways_perk_5_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = inquisition_sith
+			}
+###############################Old Ways Triggers############################################
+			sith_apprentice_old_sith_perk_1_click_enabled = {
+				check_variable = { sith_power > 100 }
+					NOT = {
+						has_country_flag = the_way_forward
+					}
+				}
+			sith_apprentice_old_sit_perk_2_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = the_old_ways
+				}
+			sith_apprentice_old_sit_perk_3_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = the_old_ways
+				}
+			sith_apprentice_old_sit_perk_4_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = masterful_dueling
+				}
+			sith_apprentice_old_sit_perk_5_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = force_lightning
+				}
+######################## Old Ways Master Triggers####################################
+			sith_master_old_sit_perk_1_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = dark_side_droids
+					has_country_flag = ancient_technology_sith
+				}
+			sith_master_old_sit_perk_2_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = abolish_rule_of_two
+				}
+			sith_master_old_sit_perk_3_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = abolish_rule_of_two
+			}
+			sith_master_old_sit_perk_4_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = resettle_korribaan
+					has_country_flag = see_into_the_future
+			}
+			sith_master_old_sit_perk_5_click_enabled = {
+				check_variable = { sith_power > 100 }
+					has_country_flag = ancient_sith_archives
+			}
+###############################	Night Sister Triggers############################################
+		sith_apprentice_dathomir_perk_1_click_enabled = {
+			has_country_flag = dathomir_leader
+				check_variable = { sith_power > 100 }
+			}
+		sith_apprentice_dathomir_perk_2_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = night_sister_magic
+			}
+		sith_apprentice_dathomir_perk_3_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = night_sister_magic
+			}
+		sith_apprentice_dathomir_perk_4_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = ressurect_dead
+			}
+		sith_apprentice_dathomir_perk_5_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = conceal_agents
+			}
+######################## Night Sister Triggers####################################
+		sith_master_dathomir_perk_1_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = spiderlings
+				has_country_flag = infuse_power
+			}
+		sith_master_dathomir_perk_2_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = magic_weaponry
+			}
+		sith_master_dathomir_perk_3_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = magic_weaponry
+		}
+		sith_master_dathomir_perk_4_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = rancor_training
+				has_country_flag = make_apprentice
+		}
+		sith_master_dathomir_perk_5_click_enabled = {
+			check_variable = { sith_power > 100 }
+				has_country_flag = sith_alchemy
+		}
+##############################	Night Sister End Triggers######################################
+		}
+	}
+	sith_alchemy = {
+		context_type = player_context
+		window_name = "sith_alchemy"
+
+		visible = {
+			has_country_flag = sith_alchemy_open
+			}
+
+		effects = {
+			sith_make_apprentice_click = {
+				set_country_flag = apprentice_start
+			}
+			sith_alchemy_raise_dead_click = {
+				subtract_from_variable = { sith_power = 30 }
+			}
+			sith_alchemy_infuse_power_click = {
+				subtract_from_variable = { sith_power = 40 }
+			}
+			sith_alchemy_raise_attack_click = {
+				add_to_variable = { sith_general_attack = 1 }
+				subtract_from_variable = { sith_power = 40 }
+			}
+			sith_alchemy_raise_defense_click = {
+				add_to_variable = { sith_general_defense = 1 }
+				subtract_from_variable = { sith_power = 40 }
+			}
+			sith_alchemy_raise_supply_click = {
+				add_to_variable = { sith_general_supply = 1 }
+				subtract_from_variable = { sith_power = 40 }
+			}
+			sith_alchemy_raise_planning_click = {
+				add_to_variable = { sith_general_planning = 1 }
+				subtract_from_variable = { sith_power = 40 }
+			}
+			close_button_click = {
+				clr_country_flag = sith_alchemy_open
+			}
+		}
+		triggers = {
+			sith_alchemy_raise_dead_click_enabled = {
+				check_variable = { sith_power > 29 }
+				has_country_flag = ressurect_dead
+			}
+			sith_alchemy_infuse_power_click_enabled = {
+				check_variable = { sith_power > 39 }
+				has_country_flag = infuse_power
+			}
+			sith_alchemy_raise_attack_click_enabled = {
+				check_variable = { sith_power > 39 }
+				check_variable = { sith_general_attack < 10 }
+				has_country_flag = apprentice_start
+			}
+			sith_alchemy_raise_defense_click_enabled = {
+				check_variable = { sith_power > 39 }
+				check_variable = { sith_general_defense < 10 }
+				has_country_flag = apprentice_start
+			}
+			sith_alchemy_raise_supply_click_enabled = {
+				check_variable = { sith_power > 39 }
+				check_variable = { sith_general_supply < 10 }
+				has_country_flag = apprentice_start
+			}
+			sith_alchemy_raise_planning_click_enabled = {
+				check_variable = { sith_power > 39 }
+				check_variable = { sith_general_planning < 10 }
+				has_country_flag = apprentice_start
+			}
+			sith_make_apprentice_click_enabled = {
+				NOT = {
+					check_variable = { apprentice = 3 }
+				}
+				has_country_flag = make_apprentice
+			}
+		}
+		properties = {
+			sith_progress_alchemy = {
+			  frame = apprentice_progress
+			}
+		}
+	}
+}
+

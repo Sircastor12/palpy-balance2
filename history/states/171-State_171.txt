@@ -1,0 +1,42 @@
+state={
+	id=171
+	name="STATE_171"
+	provinces={
+		187 291 302 1967 2332 2390 2868 2969 3004 3063 3457 3640 4309 4614 6409 6417 6436 6451 6457 6473 6474 6481 6493 6511 6518 6535 6542 6548 6561 6564 6567 6572 
+	}
+	manpower=1228571
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=4
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=5
+			air_base=0
+			corporate_factory = 1
+
+			6564 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			6409 15
+		}
+	}
+}
+

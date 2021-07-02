@@ -1,0 +1,69 @@
+CIS_historical = {
+	name = "CIS Canonical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = CIS
+		is_historical_focus_on = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		CIS_the_sith_plot
+		CIS_the_separatist_council
+		CIS_the_idealists
+		CIS_instigate_separatism_in_the_outer_rim
+		CIS_onderon
+		CIS_jabiim
+		CIS_spread_dissadence
+		CIS_outline_corruption
+		CIS_techno_union
+		CIS_trade_federation
+		CIS_banking_clan
+		CIS_commerce_guild
+		CIS_military_industrial_complex
+		CIS_investments
+		CIS_better_interest_rates
+		CIS_increase_trade
+		CIS_foreign_workers
+		CIS_request_subsidies
+		CIS_indentured_servitude  
+		CIS_learn_their_techniques
+		CIS_request_mar_tuuk
+		CIS_grow_closer
+		CIS_the_commerce_pact
+		CIS_dac
+		CIS_free_volunteer_shipyards
+		CIS_support_the_quaarran_struggle
+		CIS_nute_sambor
+		CIS_riff_tamson
+		CIS_geonosis
+		CIS_council_meeting
+		CIS_aftermath_of_geonosis
+		CIS_the_flares_seen_across_the_galaxy
+		CIS_form_the_separatist_senate
+		CIS_the_face_of_a_large_shadow
+		CIS_corporate_contracts
+		CIS_operation_downfall
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 2.0
+		support_tech = 6.5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+

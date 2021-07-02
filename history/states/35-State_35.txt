@@ -1,0 +1,42 @@
+state={
+	id=35
+	name="STATE_35"
+	provinces={
+		34 200 548 613 677 692 1631 3455 4922 7752 7755 7758 7763 7775 7778 7780 7784 7811 
+	}
+	manpower=5428571
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+			corporate_factory = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

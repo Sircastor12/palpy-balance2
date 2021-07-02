@@ -1,0 +1,34 @@
+ideas = {
+    #############
+    country = {
+		CIS_member_prewar = {
+			picture = CIS_member
+			allowed = {
+				has_government = fascism
+				NOT = { has_war_with = CIS }
+			}
+		    allowed_civil_war = {
+		    	has_government = fascism
+		    }
+		    rule = {
+		    	can_create_factions = no
+		    }
+		    modifier = {
+		    	ai_join_ally_desire_factor = -1000.0
+		    }
+	    }
+		CIS_member = {
+			picture = CIS_member
+			allowed = {
+				has_government = fascism
+				NOT = { has_war_with = CIS }
+			}
+		    allowed_civil_war = {
+		    	has_government = fascism
+		    }
+		    rule = {
+		    	can_create_factions = no
+		    }
+	    }
+    }
+}

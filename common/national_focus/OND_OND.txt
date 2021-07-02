@@ -1,0 +1,943 @@
+focus_tree = {
+	id = OND
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OND
+		}
+	}
+	#Focus for The Throne of Onderon
+	focus = {
+		id = OND_the_throne_of_onderon
+		icon = GFX_goal_unknown
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Proud Military Tradition
+	focus = {
+		id = OND_proud_military_tradition
+		icon = GFX_goal_unknown
+		x = 17
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_throne_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+
+	#Focus for Clearing the Forests
+	focus = {
+		id = OND_clearing_the_forests
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_throne_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		226 = {
+			add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#Focus for Bred for Combat
+	focus = {
+		id = OND_bred_for_combat
+		icon = GFX_goal_unknown
+		x = 8
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_warriors_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = OND_warriors_of_onderon
+				add_idea = OND_bred_for_combat
+			}
+		}
+	}
+
+	#Focus for The Trade Federation
+	focus = {
+		id = OND_the_trade_federation
+		icon = GFX_goal_unknown
+		x = 5
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_a_seat_at_the_table }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Techno Union Support
+	focus = {
+		id = OND_techno_union_support
+		icon = GFX_goal_unknown
+		x = 1
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_a_seat_at_the_table }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Seat at the Table
+	focus = {
+		id = OND_a_seat_at_the_table
+		icon = GFX_goal_unknown
+		x = 3
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_aid_in_the_fight }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_major = yes
+		}
+	}
+
+	#Focus for Aid in the Fight
+	focus = {
+		id = OND_aid_in_the_fight
+		icon = GFX_goal_unknown
+		x = 6
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		available = {
+			CIS = {
+				has_war_with = REP
+			}
+		}
+		prerequisite = { focus = OND_a_new_palace }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = REP
+				type = annex_everything
+			}
+		}
+		
+	}
+
+	#Focus for Expand the Countryside
+	focus = {
+		id = OND_expand_the_countryside
+		icon = GFX_goal_unknown
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_military_factory_expansion 
+		}
+		prerequisite = { 
+			focus = OND_expand_the_citys 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			226 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Return to the Republic
+	focus = {
+		id = OND_return_to_the_republic
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_topple_the_regime }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward ={
+			join_galactic_senate_effect = yes
+		}
+	}
+
+	#Focus for Topple the Regime
+	focus = {
+		id = OND_topple_the_regime
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_the_royal_guard 
+		}
+		prerequisite = { 
+			focus = OND_rescue_the_king 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Royal Guard
+	focus = {
+		id = OND_the_royal_guard
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_jedi_advisors 
+		}
+		prerequisite = { 
+			focus = OND_the_smugglers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Smugglers
+	focus = {
+		id = OND_the_smugglers
+		icon = GFX_goal_unknown
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_rebels_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Onderon Militia
+	focus = {
+		id = OND_the_onderon_militia
+		icon = GFX_goal_unknown
+		x = 19
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_proud_military_tradition }
+		mutually_exclusive = { focus = OND_the_onderon_royal_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_militia
+		}
+	}
+
+	#Focus for The Onderon Royal Military
+	focus = {
+		id = OND_the_onderon_royal_military
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_proud_military_tradition }
+		mutually_exclusive = { focus = OND_the_onderon_militia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_royal_military
+		}
+	}
+
+	#Focus for Our Military Doctrine
+	focus = {
+		id = OND_our_military_doctrine
+		icon = GFX_goal_unknown
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_the_onderon_militia 
+			focus = OND_the_onderon_royal_military 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Laser Lances
+	focus = {
+		id = OND_laser_lances
+		icon = GFX_goal_unknown
+		x = 17
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_our_military_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				laser_lance = 1
+			}
+		}
+	}
+
+	#Focus for The Royal Cavalry
+	focus = {
+		id = OND_the_royal_cavalry
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_onderon_royal_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				laser_cav = 1
+			}
+		}
+	}
+
+	#Focus for Prioritize the Economy
+	focus = {
+		id = OND_prioritize_the_economy
+		icon = GFX_goal_unknown
+		x = 20
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_onderon_militia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_priortized_economy
+		}
+	}
+
+	#Focus for Question the King
+	focus = {
+		id = OND_question_the_king
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_throne_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.1
+			}
+		}
+	}
+
+	#Focus for Separatist Sentiment
+	focus = {
+		id = OND_separatist_sentiment
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_question_the_king }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = move_toward_secession_tt
+			add_to_variable = { secessionpoint = 2 }
+		}
+	}
+
+	#Focus for Question the Republic
+	focus = {
+		id = OND_question_the_republic
+		icon = GFX_goal_unknown
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_question_the_king }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = move_toward_secession_tt
+			add_to_variable = { secessionpoint = 2 }
+		}
+	}
+
+	#Focus for The King's Abdication
+	focus = {
+		id = OND_the_kings_abdication
+		icon = GFX_goal_unknown
+		x = 8
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_question_the_republic 
+		}
+		prerequisite = { 
+			focus = OND_separatist_sentiment 
+		}
+		available = {
+			has_global_flag = secessionoccured
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+			    ideology = fascism
+			    popularity = .10
+			}
+			add_ideas = OND_rebels
+			add_ideas = OND_military_loyalty
+		}
+	}
+
+	#Focus for Extra Rations
+	focus = {
+		id = OND_extra_rations
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_a_benevolent_ruler }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_extra_rations
+		}
+	}
+
+	#Focus for Jedi Advisors
+	focus = {
+		id = OND_jedi_advisors
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_rebels_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Propaganda Campaign
+	focus = {
+		id = OND_propaganda_campaign
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_a_benevolent_ruler }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		swap_ideas = {
+			remove_idea = OND_rebels
+			add_idea = OND_rebels_1
+			}
+		}
+	}
+
+	#Focus for Expand the Citys
+	focus = {
+		id = OND_expand_the_citys
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_clearing_the_forests }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			226 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for A New Palace
+	focus = {
+		id = OND_a_new_palace
+		icon = GFX_goal_unknown
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_execute_the_old_king 
+			focus = OND_exile_the_old_king 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_palace
+		}
+	}
+
+	#Focus for Exile the Old King
+	focus = {
+		id = OND_exile_the_old_king
+		icon = GFX_goal_unknown
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_propaganda_campaign 
+		}
+		prerequisite = { 
+			focus = OND_extra_rations 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = OND_rebels
+			remove_ideas = OND_king_dendup
+		}
+	}
+
+	#Focus for The Shadow Guard
+	focus = {
+		id = OND_the_shadow_guard
+		icon = GFX_goal_unknown
+		x = 7
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_kings_ironfist }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_shadow_guard
+		}
+	}
+
+	#Focus for Stomp out the Rebels
+	focus = {
+		id = OND_stomp_out_the_rebels
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_kings_ironfist }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = OND_rebels
+		}
+	}
+
+	#Focus for The Kings Ironfist
+	focus = {
+		id = OND_the_kings_ironfist
+		icon = GFX_goal_unknown
+		x = 9
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_loyalty_of_the_guard 
+		}
+		prerequisite = { 
+			focus = OND_support_from_the_separatists 
+		}
+		mutually_exclusive = { 
+			focus = OND_a_benevolent_ruler 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ruler_traits = { remove = unpopular_monarch add = autocratic_imperialist }
+		}
+	}
+
+	#Focus for Loyalty of the Guard
+	focus = {
+		id = OND_loyalty_of_the_guard
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_support_the_new_king }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = OND_military_loyalty
+		}
+	}
+
+	#Focus for Support from the Separatists
+	focus = {
+		id = OND_support_from_the_separatists
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_support_the_new_king }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CIS = { country_event = { id = GNT.2 days = 1 } }
+		}
+	}
+
+	#Focus for Rebels of Onderon
+	focus = {
+		id = OND_rebels_of_onderon
+		icon = GFX_goal_unknown
+		x = 15
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_kings_abdication }
+		mutually_exclusive = { focus = OND_support_the_new_king }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_war_support = -0.1
+		}
+	}
+
+	#Focus for Send Volunteers
+	focus = {
+		id = OND_send_volunteers
+		icon = GFX_goal_unknown
+		x = 15
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_expand_our_industries 
+		}
+		prerequisite = { 
+			focus = OND_exporting_weapons 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_volunteers
+		}
+	}
+
+	#Focus for Expand our Industries
+	focus = {
+		id = OND_expand_our_industries
+		icon = GFX_goal_unknown
+		x = 13
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_return_to_the_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			226 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			226 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Support the New King
+	focus = {
+		id = OND_support_the_new_king
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_the_kings_abdication }
+		mutually_exclusive = { focus = OND_rebels_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.1
+		}
+	}
+
+	#Focus for A Benevolent Ruler
+	focus = {
+		id = OND_a_benevolent_ruler
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_loyalty_of_the_guard 
+		}
+		prerequisite = { 
+			focus = OND_support_from_the_separatists 
+		}
+		mutually_exclusive = { focus = OND_the_kings_ironfist }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ruler_traits = { remove = unpopular_monarch add = popular_king }
+		}
+	}
+
+	#Focus for Execute the Old King
+	focus = {
+		id = OND_execute_the_old_king
+		icon = GFX_goal_unknown
+		x = 9
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_the_shadow_guard 
+		}
+		prerequisite = { 
+			focus = OND_stomp_out_the_rebels 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = OND_king_dendup
+			add_stability = -0.2
+		}
+	}
+
+	#Focus for Military Factory Expansion
+	focus = {
+		id = OND_military_factory_expansion
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_clearing_the_forests }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			226 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Rescue the King
+	focus = {
+		id = OND_rescue_the_king
+		icon = GFX_goal_unknown
+		x = 17
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = OND_jedi_advisors 
+		}
+		prerequisite = { 
+			focus = OND_the_smugglers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Warriors of Onderon
+	focus = {
+		id = OND_warriors_of_onderon
+		icon = GFX_goal_unknown
+		x = 10
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_aid_in_the_fight }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = OND_warriors_of_onderon
+		}
+	}
+
+	#Focus for Riders of the King
+	focus = {
+		id = OND_riders_of_the_king
+		icon = GFX_goal_unknown
+		x = 12
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_warriors_of_onderon }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				laser_cav_royal = 1
+			}
+		}
+	}
+
+	#Focus for Exporting Weapons
+	focus = {
+		id = OND_exporting_weapons
+		icon = GFX_goal_unknown
+		x = 17
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = OND_return_to_the_republic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

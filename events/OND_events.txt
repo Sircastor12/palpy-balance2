@@ -1,0 +1,38 @@
+add_namespace = ond
+
+news_event = {
+	id = ond.1
+	title = "Sucession of Onderon"
+	desc = "Onderon has suceeded from the Galactic Republic"
+	picture = GFX_event_tarkinpromoted
+	major = yes
+    
+    is_triggered_only = yes
+
+immediate = {
+OND = {
+set_country_flag = onderonsuceeds
+}
+}
+	
+        option = {
+		   name = "A bright future ahead!"
+		   trigger = { 
+		   tag = OND
+	    }	                   
+     }
+
+     option = {
+		   name = "Oh no, another one."
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+
+     option = {
+		   name = "Sad. But good for them!"
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+   }

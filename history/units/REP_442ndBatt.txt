@@ -1,0 +1,111 @@
+﻿division_template = {
+	name = "442nd Battalion Division"
+	is_locked = yes
+
+	regiments = {
+		REP_442_clone = { x = 0 y = 0 }
+		REP_442_clone = { x = 0 y = 1 }
+		REP_442_clone = { x = 0 y = 2 }
+		REP_442_clone = { x = 0 y = 3 }
+   		REP_442_clone = { x = 1 y = 0 }
+		REP_442_clone = { x = 1 y = 1 }
+		REP_442_clone = { x = 1 y = 2 }
+  		REP_442_clone = { x = 2 y = 0 }
+		REP_442_clone = { x = 2 y = 1 }
+		REP_442_clone = { x = 2 y = 2 }
+	}
+	support = {
+		clone_medic = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "442nd Contender Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Insane Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Artist Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Brave Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Killer Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Pop Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Predictor Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Ape Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Superior Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Mad Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Villian Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "442nd Felice Company"
+		location = 10463 #Kamino
+		division_template = "442nd Battalion Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

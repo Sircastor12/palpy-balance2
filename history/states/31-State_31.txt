@@ -1,0 +1,41 @@
+state={
+	id=31
+	name="STATE_31"
+	provinces={
+		508 1403 1421 1536 1633 2913 3145 3684 3829 4507 5044 7517 7524 7531 7540 7564 7566 7567 7600 
+	}
+	manpower=2428571
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=2
+	}
+
+  	history = {
+		owner=TRA
+		add_core_of = TRA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

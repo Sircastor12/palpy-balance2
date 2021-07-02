@@ -1,0 +1,41 @@
+state={
+	id=67
+	name="STATE_67"
+	provinces={
+		1242 1730 1779 2341 3394 3642 10693 10696 10701 10703 10711 10717 10721 10737 10748 10754 
+	}
+	manpower=114285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=JHT
+		add_core_of = JHT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

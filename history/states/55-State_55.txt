@@ -1,0 +1,41 @@
+state={
+	id=55
+	name="STATE_55"
+	provinces={
+		48 1401 3324 3594 4051 4206 9829 9830 9833 9845 9847 9852 9858 9864 9867 9875 9879 9884 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=1
+	}
+
+  	history = {
+		owner=NAB
+		add_core_of = NAB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

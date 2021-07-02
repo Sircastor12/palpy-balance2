@@ -1,0 +1,41 @@
+state={
+	id=326
+	name="STATE_326"
+	provinces={
+		574 617 846 1218 1350 1640 1751 1822 1909 2523 3057 3522 3549 3874 3979 4598 4833 8895 8899 8907 8909 8924 8927 8930 8948 8959 8962 8966 8973 8974 8980 8991 9015 9032 
+	}
+	manpower=1500000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=BTN
+		add_core_of = BTN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			8927 30
+		}
+	}
+}
+

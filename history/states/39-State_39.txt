@@ -1,0 +1,41 @@
+state={
+	id=39
+	name="STATE_39"
+	provinces={
+		615 1785 2813 3176 3464 3712 8215 8216 8220 8222 8230 8237 8256 8259 8264 8269 
+	}
+	manpower=1450
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=18
+		tungsten=0
+		oil=21
+		chromium=0
+	}
+
+  	history = {
+		owner=KES
+		add_core_of = KES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

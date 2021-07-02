@@ -1,0 +1,40 @@
+state={
+	id=88
+	name="STATE_88"
+	provinces={
+		179 354 447 944 1109 1283 1410 1780 1787 1920 1937 2182 2303 2343 2647 3059 3310 3400 4307 4485 5267 5268 5273 5274 5276 5278 5281 5285 5290 5294 5296 5302 5305 5311 5316 5317 5319 
+	}
+	manpower=1228571
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=ZYG
+		add_core_of = ZYG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			1920 50
+		}
+	}
+}
+

@@ -1,0 +1,41 @@
+state={
+	id=390
+	name="STATE_390"
+	provinces={
+		379 1772 1823 1933 1940 1997 3957 4042 4103 4181 4338 4709 9921 9949 9960 9968 9976 9986 9990 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=1
+	}
+
+  	history = {
+		owner=NAB
+		add_core_of = NAB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			1772 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			379 10
+		}
+	}
+}
+

@@ -1,0 +1,244 @@
+#core_world_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = TEC
+#		TAG = CAR
+#		TAG = REP
+#		TAG = FRE
+#		TAG = ALD
+#		TAG = KUA
+#		TAG = FED
+#		TAG = REN
+#		TAG = CLA
+#		TAG = DUR
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = core_worlds
+#		value = 10
+#	}
+#}
+#
+#mandalore_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = ITH
+#		TAG = TAR
+#		TAG = DAT
+#		TAG = DEA
+#		TAG = MAN
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = mandalore
+#		value = 10
+#	}
+#}
+#
+#banking_clan_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = MYG
+#		TAG = IBC
+#		TAG = DAN
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = banking_clan
+#		value = 10
+#	}
+#}
+#
+#commerce_guild_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = CMG
+#		TAG = KOR
+#		TAG = HON
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = commerce_guild
+#		value = 10
+#	}
+#}
+#
+#upper_hutt_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = ROC 
+#		TAG = CMG 
+#		TAG = JAB
+#		TAG = TET
+#		TAG = CAL
+#		TAG = PAM
+#		TAG = QUA
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = upper_hutt
+#		value = 10
+#	}
+#}
+#
+#lower_hutt_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = BOZ
+#		TAG = KES
+#		TAG = HUT
+#		TAG = TOY
+#		TAG = RUS
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = lower_hutt
+#		value = 10
+#	}
+#}
+#
+#umbara_line_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = MIM
+#		TAG = OND
+#		TAG = KYK
+#		TAG = TRA
+#		TAG = UMB
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = umbara_line
+#		value = 10
+#	}
+#}
+#
+#unknown_regions_planet_focus = {
+#	allowed = {
+#		always = no 
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = unknown_regions
+#		value = 10
+#	}
+#}
+#
+#outer_rim_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = ROD
+#		TAG = CHR
+#		TAG = JHT
+#		TAG = GEO
+#		TAG = RYL
+#		TAG = TEC
+#		TAG = ROT
+#		TAG = KAM
+#		TAG = BOT
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = outer_rim
+#		value = 10
+#	}
+#}
+#
+#
+#lower_core_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = ABR
+#		TAG = TEC
+#		TAG = THY
+#		TAG = BTN
+#		TAG = ATZ
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = lower_core
+#		value = 10
+#	}
+#}
+#
+#
+#expansion_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = BAK
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = expansion
+#		value = 10
+#	}
+#}
+#
+#mid_rim_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = NAB
+#		TAG = GUN
+#		TAG = ERI
+#		TAG = SUL
+#		TAG = MAL
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = mid_rim
+#		value = 10
+#	}
+#}
+#
+#lower_outer_rim_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = POL
+#		TAG = DAG
+#		TAG = UTU
+#		TAG = PAN
+#		TAG = ALZ
+#		TAG = SLU
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = lower_outer_rim
+#		value = 10
+#	}
+#}
+#
+#bespin_planet_focus = {
+#	allowed = {
+#		always = no 
+#		TAG = BES
+#		TAG = HOT
+#		TAG = TEC
+#		TAG = BLA
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = bespin
+#		value = 10
+#	}
+#}
+#
+#do_not_cross_empty_space = {
+#	#When do I use allowed vs enable
+#	allowed = {
+#		always = yes
+#	}
+#	enable = {
+#		always = yes
+#	}
+#	###Wasnt sure if I could use this with an AI_area instead of strategic region as ID
+#	ai_strategy = {
+#		type = naval_avoid_region
+#		id = empty_space
+#		value = 100000
+#	}
+#	ai_strategy = {
+#		type = area_priority
+#		id = empty_space
+#		value = -1000000
+#	}
+#}

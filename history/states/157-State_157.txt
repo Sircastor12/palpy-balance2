@@ -1,0 +1,40 @@
+state={
+	id=157
+	name="STATE_157"
+	provinces={
+		226 329 831 1731 1753 2281 2462 2549 3101 3225 3448 3581 3643 4179 6244 6259 6269 6277 6279 6291 6299 6315 6324 6356 6359 6372 6415 6416 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=8
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CAR
+		add_core_of = CAR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

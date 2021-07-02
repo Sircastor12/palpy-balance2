@@ -1,0 +1,375 @@
+add_namespace = blockade
+
+news_event = {
+	id = blockade.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.1"}
+	title = "Reports of an Illegal Invasion!"
+	desc = blockade.1.d
+	picture = GFX_naboocrisisescalates
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = "Send diplomats to negotiate with the Trade Federation"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes	
+			}
+		}
+		REP = {
+			news_event = {
+				days = 6
+				id = blockade.2
+			}
+		}
+	}
+	option = {
+		name = "Vilify the Trade Federation for these actions"
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+	}
+	option = { 
+		name = "Ignore the Queen's plea for help"
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		FED = {
+			news_event = { 
+				days = 6
+				id = blockade.11
+			}
+		}
+	}
+}
+
+news_event = {
+	id = blockade.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.2"}
+	title = "Diplomatic Ship Destroyed!"
+	desc = "Our diplomatic ship sent to negotiate with the Trade Federation has been destroyed! Luckily we were able to make contact with our Jedi envoy."
+	picture = GFX_diplomaticshipdestroyed
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "This is outrageous."
+		ai_chance = { factor = 1 }
+		REP = {
+			news_event = {
+				days = 6
+				id = blockade.3
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = blockade.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.3"}
+	title = "Queen of Naboo Rescued"
+	desc = "Our Jedi diplomats have rescued the Queen of Naboo, and she will be transported back to Coruscant to speak to the Senate."
+	picture = GFX_nabooqueen
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Perfect."
+		ai_chance = { factor = 1 }
+		REP = {
+			news_event = {
+				days = 10
+				id = blockade.4
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = blockade.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.4"}
+	title = "The Queen of Naboo Speaks"
+	desc = blockade.4.d
+	picture = GFX_event_voteofnoconfidence
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "We must take action."
+		ai_chance = { factor = 1 }
+		REP = {
+			news_event = {
+				days = 6
+				id = blockade.5
+			}
+		}	
+	}
+}
+
+news_event = { #
+	id = blockade.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.5"}
+	title = "Jedi Master Killed!"
+	desc = "One of our Jedi diplomats, Master Qui-Gon Jinn has been killed by a mysterious force user while intervening with the Naboo Crisis. The shadowy figure was killed by the Master Qui-Gon's apprentice, Obi-Wan Kenobi."
+	picture = GFX_duelofthefates
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Tragic."
+		ai_chance = { factor = 1 }
+		REP = {
+			news_event = {
+				days = 10
+				id = blockade.6
+			}
+		}
+	}
+}
+
+news_event = { 
+	id = blockade.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.6"}
+	title = "The Trade Federation Withdraws from Naboo!"
+	desc = "The Trade Federation has withdrawn all of it's forces from Naboo. The sovereignty of the planet has been restored. Although peace has been achieved, cracks in the seems of the Republic have not gone unnoticed."
+	picture = GFX_naboocrisisfixed
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Peace has been restored."
+		ai_chance = { factor = 1 }
+		NAB = {
+			remove_ideas = FED_Blockade
+		}
+		hidden_effect = {
+			FED = {
+				add_to_variable = { secessionpoint = 2 }
+			}
+		}
+		custom_effect_tooltip = fed_huge_secession_tt
+	}
+}
+
+news_event = { #
+	id = blockade.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.7"}
+	title = blockade.7.t
+	desc = blockade.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = blockade.7.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			FED = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = fed_secession_tt
+	}
+}
+
+news_event = { #
+	id = blockade.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.8"}
+	title = blockade.8.t
+	desc = blockade.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = blockade.8.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+news_event = { #
+	id = blockade.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.9"}
+	title = blockade.9.t
+	desc = blockade.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = blockade.9.a
+		ai_chance = { factor = 1 }
+
+		hidden_effect = {
+			FED = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = fed_secession_tt
+	}
+}
+
+news_event = { #
+	id = blockade.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.10"}
+	title = blockade.10.t
+	desc = blockade.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = blockade.10.a
+		ai_chance = { factor = 1 }
+
+		hidden_effect = {
+			FED = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+		}
+		custom_effect_tooltip = fed_secession_tt
+	}
+}
+
+news_event = { #
+	id = blockade.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.11"}
+	title = "The Republic ignores the cries of Naboo!"
+	desc = "Chancellor Valorum of the Galactic Republic has chosen not to intervene in our conquest of Naboo."
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Perfect."
+		ai_chance = { factor = 1 }
+		NAB = {
+			news_event = {
+				id = blockade.13
+			}
+		}
+	}
+}
+
+news_event = {
+	id = blockade.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.12"}
+	title = "Outrage in the Republic Senate"
+	desc = "Senators of the Galactic Republic are outraged at the blatant disregard for the sovereignty of member nations after the Valorum administration's failure to act in the Naboo Crisis. The chambers of the Senate echo with cries for new leadership."
+	picture = GFX_angrysenators
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "A sad day for the Republic."
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			FED = {
+				add_to_variable = { secessionpoint = 3 }
+			}
+			every_country = {
+				limit ={
+					NOT = {
+						is_corporation = yes
+					}
+				}
+				add_to_variable = { secessionpoint = 3 }
+			}
+			FED = {
+				add_to_variable = { secessionpoint = -3 }
+			}
+		}
+		custom_effect_tooltip = fed_huge_secession_tt
+		custom_effect_tooltip = noncorporation_huge_secession_point_tt
+	}
+}
+
+news_event = { #
+	id = blockade.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.12"}
+	title = "The Republic Has Failed Us"
+	desc = "Chancellor Valorum has chosen to ignore our plea for help. We can risk total anhialation and fight, or we can submit to the demands of our occupiers."
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "We must preserve our independence."
+		ai_chance = { factor = 1 }
+		FED = {
+			declare_war_on = {
+    			target = NAB
+    			type = annex_everything
+			}
+			set_global_flag = naboo_about_to_get_messed_up
+		}
+	}
+	option = { #
+		name = "Submit to our occupiers."
+		ai_chance = { factor = 1 }
+		FED = {
+			puppet = NAB
+		}
+	}
+}
+
+news_event = { #
+	id = blockade.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.12"}
+	title = "Vote of No Confidence"
+	desc = "The Queen of Naboo has requested a Vote of No Confidence to remove Valorum from power."
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "A Great Day for the Republic."
+		ai_chance = { factor = 1 }
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Sheev Palpatine"
+			desc = "The newly elected Chancellor of the Galactic Republic"
+			picture = GFX_PALP
+			expire = "5000.1.1"
+			ideology = conservatism
+			traits = {
+			}
+		}
+	}
+}
+
+news_event = { #
+	id = blockade.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event blockade.12"}
+	title = "Vote of No Confidence"
+	desc = blockade.15.d
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+}

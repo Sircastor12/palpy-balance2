@@ -1,0 +1,41 @@
+state={
+	id=213
+	name="STATE_213"
+	provinces={
+		1560 1893 2191 3585 3878 4315 7082 7093 7105 7118 7135 7146 7159 7163 7192 7209 7217 7266 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IEG
+		add_core_of = IEG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

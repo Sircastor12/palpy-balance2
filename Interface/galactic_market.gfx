@@ -1,0 +1,18 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_galactic_market"
+		texturefile = "gfx/interface/galactic_market/galactic_market.dds"
+	}
+	spriteType = {
+		name = "GFX_galactic_market_black_market"
+		texturefile = "gfx/interface/galactic_market/galactic_market_black_market.dds"
+	}
+	spriteType = {
+		name = "GFX_galactic_market_luxury"
+		texturefile = "gfx/interface/galactic_market/galactic_market_luxury.dds"
+	}
+	spriteType = {
+		name = "GFX_galactic_market_necessary"
+		texturefile = "gfx/interface/galactic_market/galactic_market_necessary.dds"
+	}
+}  

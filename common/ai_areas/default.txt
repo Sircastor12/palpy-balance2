@@ -1,0 +1,145 @@
+areas = {
+
+    hutt_space = {
+		strategic_regions = {
+            129
+            123
+			144
+			142
+        }
+    }
+
+    core_ring = {
+		strategic_regions = {
+			29
+			1
+			30
+			2
+			32
+			33
+			34
+			36
+			37
+			31
+        }
+    }
+
+	major_cis_links = {
+		strategic_regions = {
+			98
+			151
+			99
+			96
+			91
+			95
+			148
+			115
+			111
+			71
+			89
+			113
+		}
+	}
+
+	cis_link_to_low_outer_rim = {
+		strategic_regions = {
+			144
+			121
+			119
+			149
+			112
+			111
+			127
+			302
+			133
+			159
+			139
+			158
+			162
+			160
+			169
+			171
+		}
+	}
+
+	neimoidian_core = {
+		strategic_regions = {
+			35
+			303
+			38
+		}
+	}
+
+	naboo_link = {
+		strategic_regions = {
+			178
+			180
+		}
+	}
+
+	corellian_run = {
+		strategic_regions = {
+			37
+			215
+			299
+			137
+		}
+	}
+
+	empty_space = {
+		strategic_regions = {
+			276
+			266
+			267
+			277
+			274
+			269
+			265
+			257
+			245
+			258
+			241
+			259
+			243
+			263
+			275
+			268
+			280
+			227
+			262
+			246
+			249
+			279
+			271
+			270
+			296
+			281
+			272
+			251
+			247
+			234
+			250
+			235
+			236
+			252
+			253
+			285
+			291
+			282
+			254
+			255
+			292
+			288
+			294
+			287
+			295
+			293
+			228
+			229
+			239
+			238
+			244
+			260
+		}
+	}	
+}

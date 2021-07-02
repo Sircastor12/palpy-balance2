@@ -1,0 +1,163 @@
+ideas = {
+
+	country = {
+		naboo_social_security = {
+		    picture = naboo_social_security
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.05
+				political_power_factor = 0.05
+			}
+		}
+	}
+	
+	country = {
+		naboo_jedi_friends = {
+			picture = naboo_jedi_friends
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_surrender_limit_offset = 0.1
+			}
+		}
+	}
+	
+	country = {
+		naboo_diplomatic_convoys = {
+			picture = naboo_diplomatic_convoys
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.010
+			}
+		}
+	}
+	
+	country = {
+		naboo_united_people = {
+			picture = naboo_united_people
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+	}
+	
+	country = {
+		naboo_joint_army = {
+			picture = naboo_joint_army
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defence = 0.05
+				offence = 0.05
+			}
+		}
+	}
+	
+	country = {
+		naboo_senator_padme = {
+			picture = naboo_senator_padme
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.001
+				political_power_gain = 0.010
+			}
+		}
+	}
+	
+	country = {
+		naboo_legacy = {
+			picture = naboo_legacy
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.07
+				political_power_gain = 0.03
+			}
+		}
+	}
+	country = {
+	    naboo_isolated_paradise = {
+			picture = naboo_isolated_paradise
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.08
+				max_surrender_limit_offset = 0.1
+			}
+		}
+	}
+	country = {
+		naboo_protect_nature = {
+			picture = naboo_protect_nature
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.08
+				monthly_population = 0.02
+			}
+		}
+	}
+	country = {
+		naboo_export_art = {
+			picture = naboo_export_art
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.010
+				trade_opinion_factor = 0.05
+			}
+		}
+	}	
+
+}

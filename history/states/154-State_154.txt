@@ -1,0 +1,40 @@
+state={
+	id=154
+	name="STATE_154"
+	provinces={
+		170 339 513 1144 1492 1508 1869 2378 2610 3191 3971 4038 4430 4541 4596 4717 4824 6212 6224 6236 6251 6266 6273 6290 6306 6325 6335 6354 6355 6369 6373 6392 6393 
+	}
+	manpower=1228571
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=4
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			4038 15
+		}
+	}
+}
+

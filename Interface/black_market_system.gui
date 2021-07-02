@@ -1,0 +1,83 @@
+guiTypes = {
+	containerWindowType = {
+		name = "black_market_open_container"
+		position = { x = 1100 y = 2 }
+
+		buttonType ={
+			name ="open_black_market_button"
+			spriteType = "GFX_market_button"
+			position = { x=35 y=7 }
+			shortcut = "ctrl+b"
+		}
+		
+		instantTextBoxType = {
+			name ="black_market_text"
+			position = { x= 50 y = 8 }
+			font = "hoi_18mbs"
+			text = "Notoriety"
+			format = left
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "Opens Black Market panel"
+		}
+	}
+    containerWindowType = {
+        name = "black_market_window"
+        orientation = center
+		position = {x=-400 y=-400}
+        size = { width=936 height=800 }
+		moveable = yes
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_black_market"
+		}
+		containerWindowType = {
+			name = "black_market_container"
+			position = { x=-160 y=60 }
+			size = { width=600 height=800 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			background = {
+				name = "Background"
+				#spriteType ="GFX_tiled_window_1b_border"
+			}
+			buttonType = {
+				name = "first slot"
+				position = {x=205 y=58}
+				spriteType = "GFX_black_market_button"
+				}
+			buttonType = {
+				name = "first slot 2"
+				position = {x=205 y=213}
+				spriteType = "GFX_black_market_button"
+				}
+			buttonType = {
+				name = "first slot 3"
+				position = {x=205 y=368}
+				spriteType = "GFX_black_market_button"
+				}
+			buttonType = {
+				name = "ship"
+				position = {x=209 y=63}
+				spriteType = "GFX_ship"
+			}
+			buttonType = {
+				name = "ship_2"
+				position = {x=209 y=218}
+				spriteType = "GFX_ship_2"
+			}
+			buttonType = {
+				name = "ship_3"
+				position = {x=209 y=373}
+				spriteType = "GFX_ship_3"
+			}
+		}
+	}
+}

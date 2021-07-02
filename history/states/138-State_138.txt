@@ -1,0 +1,41 @@
+state={
+	id=138
+	name="STATE_138"
+	provinces={
+		332 1590 2864 3167 3842 4118 4616 5992 6023 6029 6031 6039 6049 6052 6071 6090 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=4
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=5
+			air_base=0
+
+			332 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

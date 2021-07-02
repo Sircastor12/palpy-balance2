@@ -1,0 +1,161 @@
+#legion gfx
+defined_text = {
+	name = GetDAC_MAP_GUI_State_1_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_1_support > 74 }
+		}
+		localization_key = "GFX_State_1_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_1_support < 26 }
+		}
+		localization_key = "GFX_State_1_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_1_support > 74 } }
+			NOT = { check_variable = { cal_state_1_support < 26 } }
+		}
+		localization_key = "GFX_State_1_Neutral"
+	}
+}
+
+defined_text = {
+	name = GetDAC_MAP_GUI_State_2_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_2_support > 74 }
+		}
+		localization_key = "GFX_State_2_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_2_support < 26 }
+		}
+		localization_key = "GFX_State_2_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_2_support > 74 } }
+			NOT = { check_variable = { cal_state_2_support < 26 } }
+		}
+		localization_key = "GFX_State_2_Neutral"
+	}
+}
+
+defined_text = {
+	name = GetDAC_MAP_GUI_State_3_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_3_support > 74 }
+		}
+		localization_key = "GFX_State_3_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_3_support < 26 }
+		}
+		localization_key = "GFX_State_3_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_3_support > 74 } }
+			NOT = { check_variable = { cal_state_3_support < 26 } }
+		}
+		localization_key = "GFX_State_3_Neutral"
+	}
+}
+
+defined_text = {
+	name = GetDAC_MAP_GUI_State_4_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_4_support > 74 }
+		}
+		localization_key = "GFX_State_4_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_4_support < 26 }
+		}
+		localization_key = "GFX_State_4_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_4_support > 74 } }
+			NOT = { check_variable = { cal_state_4_support < 26 } }
+		}
+		localization_key = "GFX_State_4_Neutral"
+	}
+}
+
+defined_text = {
+	name = GetDAC_MAP_GUI_State_5_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_5_support > 74 }
+		}
+		localization_key = "GFX_State_5_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_5_support < 26 }
+		}
+		localization_key = "GFX_State_5_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_5_support > 74 } }
+			NOT = { check_variable = { cal_state_5_support < 26 } }
+		}
+		localization_key = "GFX_State_5_Neutral"
+	}
+}
+
+defined_text = {
+	name = GetDAC_MAP_GUI_State_6_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_6_support > 74 }
+		}
+		localization_key = "GFX_State_6_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_6_support < 26 }
+		}
+		localization_key = "GFX_State_6_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_6_support > 74 } }
+			NOT = { check_variable = { cal_state_6_support < 26 } }
+		}
+		localization_key = "GFX_State_6_Neutral"
+	}
+}
+
+defined_text = {
+	name = GetDAC_MAP_GUI_State_7_Colour
+	text = {
+		trigger = {
+			check_variable = { cal_state_7_support > 74 }
+		}
+		localization_key = "GFX_State_7_Dac"
+	}
+	text = {
+		trigger = {
+			check_variable = { cal_state_7_support < 26 }
+		}
+		localization_key = "GFX_State_7_Quarren"
+	}
+	text = {
+		trigger = {
+			NOT = { check_variable = { cal_state_7_support > 74 } }
+			NOT = { check_variable = { cal_state_7_support < 26 } }
+		}
+		localization_key = "GFX_State_7_Neutral"
+	}
+}

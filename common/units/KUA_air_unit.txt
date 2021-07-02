@@ -1,0 +1,61 @@
+sub_units = {
+	z95_fighter = {
+		sprite = republic_fighter
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { z95_fighter_equip = 1 }
+		categories = { category_fighter }
+	}
+	blty_bomber = {
+		sprite = ywing_bomber
+		priority = 2
+		active = yes
+		type = { cas tactical_bomber strategic_bomber naval_bomber }
+		need = {blty_bomber_equip = 1 }
+		categories = { category_cas }
+	}
+	tiebomber_unit = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = { cas tactical_bomber strategic_bomber naval_bomber }
+		need = {tiebomber_equipment = 1 }
+		categories = { category_cas }
+	}
+	v19_fighter = {
+		sprite = republic_fighter
+		priority = 2
+		active = yes
+		type = { fighter }
+		need = { v19_fighter_equip = 1 }
+	}
+	arc_fighter = {
+		sprite = republic_fighter_2
+		priority = 2
+		active = yes
+		type = { fighter }
+		need = { arc_fighter_equip = 1 }
+	}
+	vwing_fighter = {
+		sprite = republic_fighter_2
+		priority = 2
+		active = yes
+		type = { fighter }
+		need = { vwing_fighter_equip = 1 }
+	}
+	laat_transport = {
+		sprite = republic_cas
+		priority = 6
+		active = yes
+		type = { air_transport }
+		need = { laat_equip = 1 }
+	}
+	laat_cas_transport = {
+		sprite = republic_cas
+		priority = 2
+		active = yes
+		type = { fighter air_transport cas }
+		need = { laati_equip = 1 }
+	}
+}

@@ -1,0 +1,34 @@
+scripted_gui = {
+	dac_power_struggle_window = {
+		context_type = decision_category
+		
+		window_name = "dac_window"
+		visible = {
+			
+		}
+		properties = {
+			DAC_MAP_GUI_State_1 = {
+				image = "[GetDAC_MAP_GUI_State_1_Colour]"
+			}
+			DAC_MAP_GUI_State_2 = {
+				image = "[GetDAC_MAP_GUI_State_2_Colour]"
+			}
+			DAC_MAP_GUI_State_3 = {
+				image = "[GetDAC_MAP_GUI_State_3_Colour]"
+			}
+			DAC_MAP_GUI_State_4 = {
+				image = "[GetDAC_MAP_GUI_State_4_Colour]"
+			}
+			DAC_MAP_GUI_State_5 = {
+				image = "[GetDAC_MAP_GUI_State_5_Colour]"
+			}
+			DAC_MAP_GUI_State_6 = {
+				image = "[GetDAC_MAP_GUI_State_6_Colour]"
+			}
+			DAC_MAP_GUI_State_7 = {
+				image = "[GetDAC_MAP_GUI_State_7_Colour]"
+			}
+		}
+	}
+}
+

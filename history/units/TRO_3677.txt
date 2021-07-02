@@ -1,0 +1,50 @@
+division_template = {
+	name = "Toydarian Guard"
+
+	regiments = {
+		Toydarian_guard = { x = 0 y = 0 }
+		Toydarian_guard = { x = 0 y = 1 }
+		Toydarian_guard = { x = 0 y = 2 }
+   		Toydarian_guard = { x = 1 y = 0 }
+		Toydarian_guard = { x = 1 y = 1 }
+		Toydarian_guard = { x = 1 y = 2 }
+  		Toydarian_guard = { x = 2 y = 0 }
+		Toydarian_guard = { x = 2 y = 1 }
+		Toydarian_guard = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Toydarian Guard"
+		location = 1393 #Toydaria
+		division_template = "Toydarian Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Toydarian Guard"
+		location = 1393 #Toydaria
+		division_template = "Toydarian Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Toydarian Guard"
+		location = 9332 #Toydaria
+		division_template = "Toydarian Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Toydarian Guard"
+		location = 4814 #Toydaria
+		division_template = "Toydarian Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+}

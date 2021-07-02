@@ -1,0 +1,153 @@
+add_namespace = CABINET
+
+news_event = { #
+	id = CABINET.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CABINET.1"}
+	title = "Choose a Vice Chair"
+	desc = "Choose a Vice Chair to join the Supreme Chancellor's cabinet."
+	picture = GFX_cabinet1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Mas Amedda"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes	
+			}
+		}
+		add_ideas = mas_amedda
+		custom_effect_tooltip = core_minus_secession_point_tt
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = {
+						is_core_world = yes
+					}
+					add_to_variable = { secessionpoint = -1 }
+				}
+			}
+		}
+	}
+	option = { #
+		name = "Orn Free Taa"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		add_ideas = orn_free_taa
+		custom_effect_tooltip = outerrim_minus_secession_point_tt
+		hidden_effect = {
+			every_country = {
+				if = {
+					limit = {
+						is_outterrim_world = yes
+					}
+					add_to_variable = { secessionpoint = -1 }
+				}
+			}
+		}
+	}
+	option = { #
+		name = "Aang"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		add_ideas = aang
+	}
+}
+
+news_event = { #
+	id = CABINET.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CABINET.2"}
+	title = "Choose a Chief of Staff"
+	desc = "Choose a Chief of Staff to join the Supreme Chancellor's cabinet."
+	picture = GFX_cabinet2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = "Sly Moore"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes	
+			}
+		}
+		custom_effect_tooltip = umbara_minus_secession_point_tt
+		add_ideas = sly_moore
+		hidden_effect = {
+			UMB = {
+				add_to_variable = { secessionpoint = -1 }
+			}
+		}
+	}
+	option = { #
+		name = "Jar Jar Binks"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		custom_effect_tooltip = Naboo_minus_secession_point_tt
+		add_ideas = jar_jar_binks
+		hidden_effect = {
+			GUN = {
+				add_to_variable = { secessionpoint = -1 }
+			}
+			NAB = {
+				add_to_variable = { secessionpoint = -1 }
+			}
+		}
+	}
+	option = { #
+		name = "Bail Organa"
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes	
+			}
+		}
+		custom_effect_tooltip = alderaan_minus_secession_point_tt
+		custom_effect_tooltip = pacifist_minus_secession_point_tt
+		custom_effect_tooltip = militarist_secession_point_tt
+		add_ideas = bail_organa
+		hidden_effect = {
+			ALD = {
+				add_to_variable = { secessionpoint = -1 }
+			}
+			every_country = {
+				if = {
+					limit = {
+						is_pacifist = yes
+					}
+					add_to_variable = { secessionpoint = -1 }
+				}
+			}
+			every_country = {
+				if = {
+					limit = {
+						is_militarist = yes
+					}
+					add_to_variable = { secessionpoint = 1 }
+				}
+			}
+		}
+	}
+}
+

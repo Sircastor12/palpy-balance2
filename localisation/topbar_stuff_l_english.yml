@@ -1,0 +1,9 @@
+﻿l_english:
+ market_button_loc:0 "This button opens the market where you can purchase items from the corporations of the galaxy"
+ ibc_button_loc:0 "This button opens the IBC menu where you can take out loans or if you are the IBC you can raise and lower interest rates"
+ bounty_hunter_button_loc:0 "This button opens the Bounty Hunter market where you can hire bounty hunters as either Generals or Fighter Aces"
+ senate_button_loc:0 "This button opens the senate where members of the republic vote on different legislation"
+ sith_button_loc:0 "This button opens the Sith screen where you can grow your power as either a master or apprentice depending on the faction you play"
+ alignment_button_loc:0 "This button opens and refreshes the alignment chart. Once the Raxus address has occured factions on the side of the alignment chart that does not correspond to their ruling government will have a civil war while nations in the right area with the right government will gain their ruling parties support"
+ production_button_loc:0 "This button opens the production screen where you can produce items for the global market"
+ missions_button_loc:0 "This button opens the Palpatine Missions screen where you can see what missions Palpatine has assigned to you"

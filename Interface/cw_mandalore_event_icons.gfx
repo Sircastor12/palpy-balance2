@@ -1,0 +1,44 @@
+spriteTypes = {
+
+spriteType = { 
+	name = "GFX_bmc1" 
+	texturefile = "gfx/event_pictures/bmc1.dds" 
+} 
+spriteType = { 
+	name = "GFX_bmc2" 
+	texturefile = "gfx/event_pictures/bmc2.dds" 
+} 
+spriteType = { 
+	name = "GFX_bmc3" 
+	texturefile = "gfx/event_pictures/bmc3.dds" 
+}
+spriteType = { 
+	name = "GFX_bmc4" 
+	texturefile = "gfx/event_pictures/bmc4.dds" 
+} 
+spriteType = { 
+	name = "GFX_bmc5" 
+	texturefile = "gfx/event_pictures/bmc5.dds" 
+}
+spriteType = { 
+	name = "GFX_bmc6" 
+	texturefile = "gfx/event_pictures/bmc6.dds" 
+} 
+spriteType = { 
+	name = "GFX_bmc7" 
+	texturefile = "gfx/event_pictures/bmc7.dds" 
+} 
+spriteType = { 
+	name = "GFX_bmc8" 
+	texturefile = "gfx/event_pictures/bmc8.dds" 
+}  
+spriteType = { 
+	name = "GFX_bmc9" 
+	texturefile = "gfx/event_pictures/bmc9.dds" 
+}
+spriteType = { 
+	name = "GFX_DC1" 
+	texturefile = "gfx/event_pictures/deathwatchCIS.dds" 
+}
+}
+ 

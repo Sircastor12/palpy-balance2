@@ -1,0 +1,41 @@
+state={
+	id=406
+	name="STATE_406"
+	provinces={
+		721 2066 3199 4170 4344 4364 4917 10152 10169 10170 10177 10180 10187 10193 10196 10200 10209 10214 10223 10226 10234 10238 10241 10243 10256 
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=2
+		rubber=0
+		tungsten=1
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BOT
+		add_core_of = BOT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			3199 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			10234 30
+		}
+	}
+}
+

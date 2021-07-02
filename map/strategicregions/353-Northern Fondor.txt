@@ -1,0 +1,24 @@
+
+strategic_region={
+	id=353
+	name="STRATEGICREGION_353"
+	provinces={
+		35 132 372 401 577 666 1085 1368 1392 1599 2009 2080 2093 2189 2339 2500 2518 2754 2891 2946 2966 2985 3048 3060 3912 3917 4137 4257 4708 8344 8345 8361 8374 8375 8381 8398 8405 8410 8415 8418 8431 8437 8438 8445 8455 8456 8465 8466 8485 8492 8497 8498 8501 8512 8527 8533 8541 8542 8551 8569 8601 
+	}
+	weather={
+		period={
+			between={ 0.0 30.11 }
+			temperature={ -10.0 35.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.250
+			rain_heavy=0.100
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+	}
+}

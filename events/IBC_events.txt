@@ -1,0 +1,206 @@
+add_namespace = IBC
+#REP - IBC has levied our debts against us!
+#country_event = {
+#	id = IBC.1
+#	title = IBC.1.t
+#	desc = IBC.1.d
+#	picture = GFX_event_banking_clan
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.1.a #There's nothing we can do.
+#    	ai_chance = {
+#			base = 75
+#		}
+#		add_ideas = rep_ibc_interest_idea_1
+#    }
+#	option = {
+#    	name = IBC.1.b #This is an outrage! We need to stop loaning from the Banking Clan.
+#    	ai_chance = {
+#			base = 25
+#		}
+#		add_timed_idea = {
+#    		idea = rep_no_loans_idea
+#    		days = 730
+#		}
+#		hidden_effect = {
+#			IBC = { country_event = { id = IBC.2 days = 1 } }
+#			set_global_flag = rep_no_loans_from_ibc	
+#		}
+#    }
+#}
+##IBC - REP has stopped loaning from us due to loan increases
+#country_event = {
+#	id = IBC.2
+#	title = IBC.2.t
+#	desc = IBC.2.d
+#	picture = GFX_event_banking_clan_2
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.2.a #Whatever
+#    	ai_chance = {
+#			base = 100
+#		}
+#		remove_ideas = ibc_charging_republic_interest_idea
+#    }
+#}
+##REP - IBC stops loaning to us!
+#country_event = {
+#	id = IBC.3
+#	title = IBC.3.t
+#	desc = IBC.3.d
+#	picture = GFX_event_banking_clan
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.3.a #Whatever
+#    	ai_chance = {
+#			base = 100
+#		}
+#		add_timed_idea = {
+#    		idea = rep_no_loans_idea2
+#    		days = 730
+#		}
+#    }
+#}
+#
+##REP - IBC claims neutrality to the senate
+#country_event = {
+#	id = IBC.4
+#	title = IBC.4.t
+#	desc = IBC.4.d
+#	picture = GFX_event_banking_clan
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.4.a #Uhhh ok
+#    	ai_chance = {
+#			base = 50
+#		}
+#		add_opinion_modifier = {
+#    		target = IBC
+#    		modifier = medium_increase
+#		}
+#    }
+#    option = {
+#    	name = IBC.4.b #Yeah, right.
+#    	ai_chance = {
+#			base = 50
+#		}
+#    }
+#}
+##CIS - IBC sends us funds
+#country_event = {
+#	id = IBC.5
+#	title = IBC.5.t
+#	desc = IBC.5.d
+#	picture = GFX_event_banking_clan_2
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.5.a #Very cool, thank you!
+#    	ai_chance = {
+#			base = 100
+#		}
+#		add_timed_idea = {
+#    		idea = cis_funds_from_ibc
+#    		days = 730
+#		}
+#    }
+#}
+#
+##IBC - Phlut design systems seized
+#country_event = {
+#	id = IBC.6
+#	title = IBC.6.t
+#	desc = IBC.6.d
+#	picture = GFX_event_banking_clan
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.5.a #Very cool, thank you!
+#    	ai_chance = {
+#			base = 100
+#		}
+#		add_equipment_to_stockpile = {
+#    		type = b1_droid
+#    		amount = 5000
+#    		producer = IBC
+#		}
+#    }
+#}
+#
+##NEWS EVENT - Separatist propaganda on IBC datanet!
+#news_event = {
+#	id = IBC.7
+#	title = IBC.7.t
+#	desc = IBC.7.d
+#	picture = GFX_event_banking_clan_2
+#	major = yes
+#
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.7.a #Okay
+#    	ai_chance = {
+#			base = 100
+#		}
+#    }
+#}
+##NEWS EVENT - IBC joins the Separatist cause!
+#news_event = {
+#	id = IBC.8
+#	title = IBC.8.t
+#	desc = IBC.8.d
+#	picture = GFX_event_banking_clan
+#	major = yes
+#
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.8.a
+#    	trigger = {
+#			NOT = {
+#				TAG = CIS
+#				TAG = REP
+#				TAG = IBC
+#			}
+#		}
+#    }
+#    option = {
+#    	name = IBC.8.b
+#    	trigger = {
+#			OR = {
+#				TAG = CIS
+#				TAG = IBC
+#			}
+#		}
+#    }
+#    option = {
+#    	name = IBC.8.c
+#    	trigger = {
+#			TAG = REP
+#		}
+#    }
+#}
+##IBC - Techno Union paying loan from us
+#country_event = {
+#	id = IBC.9
+#	title = IBC.9.t
+#	desc = IBC.9.d
+#	picture = GFX_event_banking_clan
+#	is_triggered_only = yes 
+#	
+#	option = {
+#    	name = IBC.9.a #Very cool, thank you!
+#    	ai_chance = {
+#			base = 100
+#		}
+#		add_timed_idea = {
+#    		idea = tec_paying_ibc_loans
+#    		days = 200
+#		}
+#    }
+#}
+#

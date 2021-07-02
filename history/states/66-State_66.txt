@@ -1,0 +1,41 @@
+state={
+	id=66
+	name="STATE_66"
+	provinces={
+		1179 1285 1343 2626 3500 4436 10690 10694 10697 10704 10709 10712 10725 10726 10738 10746 
+	}
+	manpower=5700000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	
+	resources={
+		steel=11
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=GEO
+		add_core_of = GEO
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=3
+			air_base=1
+
+			10704 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			2626 20
+		}
+	}
+}
+

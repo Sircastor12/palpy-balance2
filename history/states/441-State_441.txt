@@ -1,0 +1,40 @@
+state={
+	id=441
+	name="STATE_441"
+	provinces={
+		39 295 638 1204 1574 1801 1807 2017 2095 2416 2498 2856 3068 3514 3823 4004 4404 4629 5032 10720 10736 10752 10773 10779 10784 10812 10816 10856 10859 10880 10889 10926 
+	}
+	manpower=3400000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=6
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CHR
+		add_core_of = CHR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			10889 50
+		}
+	}
+}
+

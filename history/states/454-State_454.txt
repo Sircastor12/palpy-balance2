@@ -1,0 +1,41 @@
+state={
+	id=454
+	name="STATE_454"
+	provinces={
+		90 1250 1311 2481 3490 3833 10876 10916 10921 10922 10962 10967 10968 11007 11015 11053 11054 11086 11088 11089 11114 11134 
+	}
+	manpower=114285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=TUK
+		add_core_of = TUK
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			11134 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			3490 10
+		}
+	}
+}
+

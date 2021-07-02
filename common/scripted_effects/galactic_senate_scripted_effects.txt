@@ -1,0 +1,672 @@
+join_galactic_senate_effect = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = member_of_galactic_senate }
+		}
+		set_country_flag = member_of_galactic_senate
+		add_to_array = { global.member_of_galactic_senate_array = THIS.id }
+	}
+}
+join_cis_senate_effect = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = member_of_galactic_senate }
+		}
+		set_country_flag = member_of_cis_senate
+		add_to_array = { global.member_of_cis_senate_array = THIS.id }
+	}
+}
+
+leave_republic_senate = {
+	if = {
+		limit = {
+			has_country_flag = member_of_galactic_senate
+		}
+		clr_country_flag = member_of_galactic_senate
+		remove_from_array = { global.member_of_galactic_senate_array = THIS.id }
+		if = {
+			limit = {
+				has_country_flag = voted_in_noconfidence_vote
+			}
+			clr_country_flag = voted_in_noconfidence_vote
+			subtract_from_variable = { global.num_of_league_of_nations_noconfidence_votes = 1 }
+		}
+		if = {
+			limit = {
+				has_country_flag = league_of_nations_voted_yes
+			}
+			clr_country_flag = league_of_nations_voted_yes
+			subtract_from_variable = { global.num_of_yes_votes_in_league_of_nations_voting = 1 }
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = leader_of_league_of_nations
+						has_country_flag = was_leader_of_league_of_nations
+					}
+				}
+				subtract_from_variable = { global.num_of_yes_votes_in_league_of_nations_voting = 2 }
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = league_of_nations_voted_no
+			}
+			clr_country_flag = league_of_nations_voted_no
+			subtract_from_variable = { global.num_of_no_votes_in_league_of_nations_voting = 1 }
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = leader_of_league_of_nations
+						has_country_flag = was_leader_of_league_of_nations
+					}
+				}
+				subtract_from_variable = { global.num_of_no_votes_in_league_of_nations_voting = 2 }
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = leader_of_league_of_nations
+			}
+			clr_country_flag = leader_of_league_of_nations
+			clear_global_event_target = league_of_nations_leader
+		}
+		if = {
+			limit = {
+				has_global_flag = league_of_nations_map_mode_active
+			}
+			save_cosmetic_tag_before_league_of_nations_map_mode = yes
+			set_cosmetic_tag = NOT_LEAGUE_OF_NATIONS_MEMBER_CT
+		}
+	}
+}
+
+create_galactic_senate = {
+	set_global_flag = galactic_senate_created
+	
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = enable_league_of_nations_at_start
+				option = ENABLE
+			}
+		}
+		if = {
+			limit = {
+				date < 1946.04.19
+			}
+			# Joining of countries:
+			if = {
+				limit = {
+					date > 974.1.1
+				}
+				# Founding Members:
+				if = {
+					limit = {
+						country_exists = ABR
+					}
+					ABR = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ALD
+					}
+					ALD = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BES
+					}
+					BES = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BOT
+					}
+					BOT = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = BTN
+					}
+					BTN = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CAL
+					}
+					CAL = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CAR
+					}
+					CAR = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CHR
+					}
+					CHR = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CLA
+					}
+					CLA = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = CMG
+					}
+					CMG = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DAN
+					}
+					DAN = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = DUR
+					}
+					DUR = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ERI
+					}
+					ERI = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FED
+					}
+					random_country = {
+						limit = {
+							tag = FED
+						}
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = FRE
+					}
+					FRE = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = GEO
+					}
+					GEO = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = IBC
+					}
+					IBC = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ITH
+					}
+					ITH = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = JAB
+					}
+					JAB = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KUA
+					}
+					KUA = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = KYK
+					}
+					KYK = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAN
+					}
+					MAN = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MIM
+					}
+					MIM = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = NAB
+					}
+					NAB = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = OND
+					}
+					OND = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PAM
+					}
+					PAM = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = QUA
+					}
+					QUA = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = REN
+					}
+					REN = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = REP
+					}
+					REP = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ROD
+					}
+					ROD = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = ROT
+					}
+					ROT = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = RUS
+					}
+					RUS = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = RYL
+					}
+					RYL = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SLU
+					}
+					SLU = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = SUL
+					}
+					SUL = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TAR
+					}
+					TAR = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = THY
+					}
+					THY = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TOY
+					}
+					TOY = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TRA
+					}
+					TRA = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = UMB
+					}
+					UMB = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = TEC
+					}
+					TEC = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = MAL
+					}
+					MAL = {
+						join_galactic_senate_effect = yes
+					}
+				}
+				if = {
+					limit = {
+						country_exists = UTU
+					}
+					UTU = {
+						join_galactic_senate_effect = yes
+					}
+				}
+			}
+		}
+			
+			# Leaving of countries:
+			if = {
+				limit = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+					ROOT = {
+						leave_republic_senate = yes
+					}
+				}
+			}
+			
+			# Set leader:
+			if = {
+				limit = {
+					date > 900.12.31
+				}
+				REP = {
+					set_country_flag = leader_of_league_of_nations
+					save_global_event_target_as = league_of_nations_leader
+					add_ideas = league_of_nations_leader_idea
+					if = {
+						limit = {
+							has_global_flag = league_of_nations_map_mode_active
+						}
+						save_cosmetic_tag_before_league_of_nations_map_mode = yes
+						set_cosmetic_tag = LEAGUE_OF_NATIONS_LEADER_CT
+					}
+				}
+			}
+			
+			
+			set_variable = { global.last_lon_election_year = global.year }
+			if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].11.30
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 12 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].10.31
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 11 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].9.30
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 10 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].8.31
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 9 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].7.31
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 8 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].6.30
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 7 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].5.31
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 6 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].4.30
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 5 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].3.31
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 4 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].2.28
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 3 }
+			}
+			else_if = {
+				limit = {
+					meta_trigger = {
+						text = {
+							date > [YEAR].1.31
+						}
+						YEAR = "[GetYear]"
+					}
+				}
+				set_variable = { global.last_lon_election_month = 2 }
+			}
+			else_if = {
+				limit = {
+					always = yes
+				}
+				set_variable = { global.last_lon_election_month = 1 }
+			}
+			
+			# Set first voting regarding Italian-Ethopian War:
+		
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = member_of_galactic_senate
+				}
+			}
+			every_country = {
+				limit = {
+					has_country_flag = member_of_galactic_senate
+					any_other_country = {
+						has_country_flag = member_of_galactic_senate
+						NOT = { has_country_flag = league_of_nations_opinion_set_for_@PREV }
+					}
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = PREV }
+						has_country_flag = member_of_galactic_senate
+						NOT = { has_country_flag = league_of_nations_opinion_set_for_@PREV }
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = league_of_nations_member_opinion
+					}
+					set_country_flag = league_of_nations_opinion_set_for_@PREV
+				}
+			}
+		
+			# Set Focus at start:
+			if = {
+				limit = {
+					date > 1939.08.13
+				}
+				set_global_flag = league_of_nations_focus_1_selected
+				set_global_flag = league_of_nations_focus_1_completed
+				set_variable = { global.frame_of_focus_links_1 = 1 }
+				random_country = {
+					limit = {
+						has_country_flag = leader_of_league_of_nations
+					}
+					add_political_power = 75
+				}
+				every_country = {
+					limit = {
+						has_country_flag = member_of_galactic_senate
+					}
+				}
+			}
+		}
+	}
+
+
+save_cosmetic_tag_before_league_of_nations_map_mode = {
+	set_variable = { has_cosmetic_tag_variable = 0 }
+	clear_variable = has_cosmetic_tag_variable
+}

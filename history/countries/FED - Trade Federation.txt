@@ -1,0 +1,159 @@
+﻿capital = 214
+
+oob = "FED_3677"
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 35
+set_rule = { can_create_factions = yes }
+set_country_flag = no_ideas
+set_country_flag = Hoersch_subsidiary
+
+set_technology = {
+	tech_support = 1
+	battle_droid_0 = 1
+	transport = 1
+	c9979_tech = 1
+	vulture_tech = 1
+	lucrehulk_freighter_tech = 1
+}
+
+add_political_power = 80
+set_convoys = 5000
+
+
+add_ideas = {
+	ruusan_nerf_nav 
+	ruusan_nerf_army
+	pirate_raids
+	REP_member_prewar
+	extensive_conscription
+	corporate_leadership
+}
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 80
+		fascism = 20
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "FED_3677_naval_MTG"
+}
+create_equipment_variant = {
+	name = "Lucrehulk Freighter"
+	type = lucrehulk_freighter_equipment
+	parent_version = 0
+}
+create_country_leader = {
+	name = "Viceroy Hask"
+	desc = "Viceroy of the Trade Federation"
+	picture = "gfx/leaders/FED/FED_Hask.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+create_country_leader = {
+	name = "Nute Gunray"
+	desc = "Viceroy of the Trade Federation"
+	picture = "gfx/leaders/FED/NuteGunray.dds"
+	expire = "2020.1.1"
+	ideology = nazism
+}
+create_field_marshal = {
+	name = "Rune Haako"
+	picture = "RuneHaako.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}		
+create_corps_commander = {
+	name = "Gap Nox"
+	portrait_path = "gfx/leaders/FED/Gap_nox.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Rute Gunnay"
+	portrait_path = "gfx/leaders/FED/RuteGunnay.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Orroon Bota"
+	portrait_path = "gfx/leaders/FED/OrroonBota.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Gunreltitt Camrud"
+	portrait_path = "gfx/leaders/FED/GunreltittCamrud.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_navy_leader = {
+	name = "Luthros Dofine"
+    picture = "LuthrosDofine.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Rune Haako"
+    picture = "RuneHaako.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Sib Canay"
+    picture = "SibCanay.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Tey How"
+    picture = "TeyHow.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+give_guarantee = CIS
+give_military_access = CIS
+

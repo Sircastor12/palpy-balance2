@@ -1,0 +1,70 @@
+toydaria_negotiations = {
+	toydaria_negotiations_rep = {	
+		icon = generic_political_discourse
+
+		visible = {
+			tag = TOY
+			NOT = {
+				has_country_flag = notaligned
+			}
+		}
+
+		allowed = {
+			tag = TOY
+		}
+
+		cost = 0
+        fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			clr_country_flag = notaligned
+			REP = {
+				news_event = {
+					id = TOYDARIA.9
+				}
+			}
+			CIS = {
+				news_event = {
+					id = TOYDARIA.9
+					days = 2
+				}
+			}
+		}
+	}
+	toydaria_negotiations_cis = {	
+		icon = generic_political_discourse
+
+		visible = {
+			tag = TOY
+		}
+
+		allowed = {
+			tag = TOY
+		}
+
+		cost = 0
+        fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			set_country_flag = notaligned
+			REP = {
+				news_event = {
+					id = TOYDARIA.10
+				}
+			}
+			CIS = {
+				news_event = {
+					id = TOYDARIA.10
+				}
+			}
+		}
+	}
+}

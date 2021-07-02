@@ -1,0 +1,40 @@
+state={
+	id=300
+	name="STATE_300"
+	provinces={
+		109 365 637 639 822 1096 1160 1208 1683 2522 2698 2792 3019 3736 4733 8379 8391 8421 8426 8427 8453 8461 8462 8475 8487 8506 8513 8518 8555 8567 
+	}
+	manpower=1450
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		aluminium=0
+		rubber=18
+		tungsten=0
+		oil=21
+		chromium=0
+	}
+
+  	history = {
+		owner=KES
+		add_core_of = KES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

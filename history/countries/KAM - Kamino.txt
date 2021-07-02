@@ -1,0 +1,75 @@
+capital = 423
+
+oob = "KAM_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	militia_KAM = 1
+	transport = 1
+	p1_clone_tech = 1
+	p2_clone_tech = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 500
+
+add_ideas = {
+	cloning_facilities
+	extensive_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+create_country_leader = {
+	name = "Lama Su"
+	desc = "Prime Minister of Kamino"
+	picture = "gfx/leaders/KAM/LamaSu.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Lama Su"
+	desc = "Prime Minister of Kamino"
+	picture = "gfx/leaders/KAM/LamaSu.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+	name = "CT-5764"
+	portrait_path = "gfx/leaders/KAM/Kamino4.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

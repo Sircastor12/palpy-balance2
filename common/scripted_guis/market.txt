@@ -1,0 +1,363 @@
+scripted_gui = {
+
+	galactic_market_full = {
+		context_type = player_context
+		
+		window_name = "market_full_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		ai_test_interval = 20
+		ai_test_variance = 0.5
+
+		ai_check = {
+			always = yes
+		}
+
+		visible = {
+			has_country_flag = show_market
+		}
+
+		effects = {
+			more_button_click = {
+				if = {
+					limit = {
+						has_country_flag = viewneutral
+					}
+					clr_country_flag = viewneutral
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = viewneutral
+						}
+					}
+					set_country_flag = viewneutral
+				}
+			}
+			neutral_air_button_click = {
+				set_country_flag = neutral_air_open
+				clr_country_flag = show_market
+			}
+			neutral_naval_button_click = {
+				set_country_flag = neutral_navy_open
+				clr_country_flag = show_market
+			}
+			neutral_infantry_button_click = {
+				set_country_flag = neutral_infantry_open
+				clr_country_flag = show_market
+			}
+			neutral_army_button_click = {
+				set_country_flag = neutral_army_open
+				clr_country_flag = show_market
+			}
+			REP_naval_button_click = {
+				clr_country_flag = show_market
+				if = {
+					limit = {
+						OR = {
+							tag = REP
+							is_in_faction_with = REP
+						}
+						NOT = {
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = rep_navy_open
+				}
+				clr_country_flag = show_market
+			}
+			REP_air_button_click = {
+				if = {
+					limit = {
+						OR = {
+							tag = REP
+							is_in_faction_with = REP
+						}
+						NOT = {
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = rep_air_open
+				}
+				clr_country_flag = show_market
+			}
+			REP_army_button_click = {
+				if = {
+					limit = {
+						OR = {
+							tag = REP
+							is_in_faction_with = REP
+						}
+						NOT = {
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = rep_army_open
+				}
+				clr_country_flag = show_market
+			}
+			REP_infantry_button_click = {
+				if = {
+					limit = {
+						OR = {
+							tag = REP
+							is_in_faction_with = REP
+						}
+						NOT = {
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = rep_infantry_open
+				}
+				clr_country_flag = show_market
+			}
+			CIS_naval_button_click = {
+				clr_country_flag = show_market
+				if = {
+					limit = {
+						OR = {
+							tag = CIS
+							is_in_faction_with = CIS
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = CIS_navy_open
+				}
+			}
+			CIS_air_button_click = {
+				if = {
+					limit = {
+						OR = {
+							tag = CIS
+							is_in_faction_with = CIS
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = CIS_air_open
+				}
+				clr_country_flag = show_market
+			}
+			CIS_army_button_click = {
+				if = {
+					limit = {
+						OR = {
+							tag = CIS
+							is_in_faction_with = CIS
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = CIS_army_open
+				}
+				clr_country_flag = show_market
+			}
+			CIS_infantry_button_click = {
+				if = {
+					limit = {
+						OR = {
+							tag = CIS
+							is_in_faction_with = CIS
+							tag = TEC
+							tag = IBC
+							tag = FED
+							tag = CMG
+							tag = GEO
+							tag = SER
+						}
+					}
+					set_country_flag = CIS_infantry_open
+				}
+				clr_country_flag = show_market
+			}
+			close_button_click = {
+				clr_country_flag = show_market
+			}
+		}
+		triggers = {
+			more_button_visible = {
+				OR = {
+					is_in_faction_with = REP
+					is_in_faction_with = CIS
+				}
+			}
+			neutral_army_button_visible = {
+				OR = {
+					NOT = {
+						is_in_faction_with = REP
+						is_in_faction_with = CIS
+					}
+					has_country_flag = viewneutral
+				}
+			}
+			neutral_air_button_visible = {
+				OR = {
+					NOT = {
+						is_in_faction_with = REP
+						is_in_faction_with = CIS
+					}
+					has_country_flag = viewneutral
+				}
+			}
+			neutral_naval_button_visible = {
+				OR = {
+					NOT = {
+						is_in_faction_with = REP
+						is_in_faction_with = CIS
+					}
+					has_country_flag = viewneutral
+				}
+			}
+			neutral_infantry_button_visible = {
+				OR = {
+					NOT = {
+						is_in_faction_with = REP
+						is_in_faction_with = CIS
+					}
+					has_country_flag = viewneutral
+				}
+			}
+			REP_naval_button_visible = {
+				OR = {
+					tag = REP
+					is_in_faction_with = REP
+				}
+				NOT = {
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			REP_air_button_visible = {
+				OR = {
+					tag = REP
+					is_in_faction_with = REP
+				}
+				NOT = {
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			REP_army_button_visible = {
+				OR = {
+					tag = REP
+					is_in_faction_with = REP
+				}
+				NOT = {
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			REP_infantry_button_visible = {
+				OR = {
+					tag = REP
+					is_in_faction_with = REP
+				}
+				NOT = {
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			CIS_naval_button_visible = {
+				OR = {
+					tag = CIS
+					is_in_faction_with = CIS
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			CIS_air_button_visible = {
+				OR = {
+					tag = CIS
+					is_in_faction_with = CIS
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			CIS_army_button_visible = {
+				OR = {
+					tag = CIS
+					is_in_faction_with = CIS
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+			CIS_infantry_button_visible = {
+				OR = {
+					tag = CIS
+					is_in_faction_with = CIS
+					tag = TEC
+					tag = IBC
+					tag = FED
+					tag = CMG
+					tag = GEO
+					tag = SER
+				}
+			}
+		}
+	}
+}
+

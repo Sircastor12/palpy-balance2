@@ -1,0 +1,1591 @@
+sub_units = {
+	Standard = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Talz_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Bespin_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Bothan_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Caridian_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Corellian_defense = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Khoonda_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Night_sisters = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		ai_priority = 200
+		active = no
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 35
+		max_organisation = 70
+		default_morale = 1.5
+		manpower = 1000
+		recon = 3 
+		initiative = 0.025
+
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.15
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+
+		forest = {
+			movement = 0.3
+		}
+		hills = {
+			movement = 0.1
+		}
+		mountain = {
+			movement = 0.05
+		}
+		marsh = {
+			movement = 0.05
+		}
+		plains = {
+			movement = 0.2
+		}
+		urban = {
+			movement = 0.2
+		}
+		desert = {
+			movement = 0.05
+		}
+		river = {
+			movement = 0.05
+		}
+		amphibious = {
+			movement = 0.05
+	}
+}
+
+	Duro_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Ewoks = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Geonosian_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Ithorian_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Jabiimi_military = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Jabiimi_commando = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 30
+		max_organisation = 65
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		recon = 2 
+		initiative = 0.025
+
+		
+		supply_consumption = 0.06
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Kaminoan_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Wookiee_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		jungle = {
+			attack = 0.4
+			defence = 0.4
+			movement = 2.0
+		}
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Dug_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Mandalorian_guard = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Mimbanese_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	moncal_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		oceanplanet = {
+			attack = 0.4
+			defence = 0.4
+			movement = 2.0
+		}
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Quarren_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		oceanplanet = {
+			attack = 0.4
+			defence = 0.4
+			movement = 2.0
+		}
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Hutt_enforcer = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Onderon_guard = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Chattza_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Ryloth_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Toydarian_guard = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Trandoshan_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		jungle = {
+			attack = 0.4
+			defence = 0.4
+			movement = 2.0
+		}
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	Umbaran_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 75
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+		Umbara = {
+			attack = 0.4
+			defence = 0.4
+			movement = 0.4
+		}
+	}
+
+	Utupau_warrior = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+
+	ALD_unit_guard = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+	NAB_unit_guard = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+	Pantora_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+	militia_Gungan = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+	Zygerrian_militia = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 1
+		weight = 0.5
+		
+		supply_consumption = 0.07
+
+		can_be_parachuted = yes
+
+		need = {
+			infantry_equipment = 500
+		}
+	}
+	brezak_battalion = {
+		sprite = infantry
+		map_icon_category = infantry
+		
+		priority = 600
+		ai_priority = 150
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 34
+		max_organisation = 60
+		default_morale = 0.3
+		maximum_speed = 1
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 90
+		suppression = 2
+		weight = 0.5
+		
+		supply_consumption = 0.07
+	
+		need = {
+			infantry_equipment = 100
+		}
+
+		forest = {
+			movement = 0.00
+		}
+		hills = {
+			movement = 0.1
+		}
+		mountain = {
+			movement = 0.05
+		}
+		marsh = {
+			movement = 0.05
+		}
+		plains = {
+			movement = 0.2
+		}
+		urban = {
+			movement = 0.2
+		}
+		desert = {
+			movement = 0.05
+		}
+		river = {
+			movement = -0.05
+		}
+		amphibious = {
+			movement = -0.05
+		}
+	}
+
+}

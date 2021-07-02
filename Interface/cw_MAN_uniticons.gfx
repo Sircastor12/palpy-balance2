@@ -1,0 +1,35 @@
+spriteTypes = {
+###Mandalorian_commandos###
+	spriteType = { 
+     name = "GFX_unit_Mandalorian_commandos_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/MAN/commando.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_Mandalorian_commandos_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/MAN/commando.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_Mandalorian_commandos_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/MAN/commando.dds"
+     noOfFrames = 2
+   }
+###JETPACK###
+	spriteType = { 
+     name = "GFX_unit_man_jet_support_icon_medium"       
+     textureFile = "gfx/interface/counters/divisions_large/MAN/jet.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_man_jet_support_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/MAN/jet.dds" 
+     noOfFrames = 2
+   }
+   spriteType = { 
+     name = "GFX_unit_man_jet_support_icon_small"        
+     textureFile = "gfx/interface/counters/divisions_small/MAN/jet.dds"
+     noOfFrames = 2
+   }
+   
+}

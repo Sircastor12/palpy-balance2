@@ -1,0 +1,78 @@
+REP_historical = {
+	name = "Republic Canonical Plan"
+	desc = ""
+
+	enable = {
+		original_tag = REP
+		is_historical_focus_on = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+        REP_1000_years_of_peace
+        REP_anticorruption_stance
+        REP_maintain_galactic_peace
+        REP_the_naboo_crisis
+        REP_vote_of_no_confidence
+        REP_the_jedi_order
+        REP_the_chosen_one
+        REP_transition_of_power
+		REP_anticorruption_campaign
+		REP_senate_guard_commando_initiative
+        REP_judicial_police_reforms
+        REP_crackdown_on_corruption
+		REP_choose_a_vice_chair
+        REP_choose_a_chief_of_staff
+		REP_repeal_ruusan
+		REP_shroud_of_darkness
+		REP_warriors_of_the_republic
+        REP_warriors_of_the_republic
+        REP_chancellorship_elections
+        REP_restore_the_executive_branch
+        REP_senate_reform
+        REP_judicial_reform
+        REP_emergency_powers_act
+        REP_military_creation_act
+        REP_jedi_generalship_program
+        REP_send_jedi_to_protect_padme
+        REP_the_investigation
+        REP_chase_the_bounty_hunter
+        REP_battle_of_geonosis
+		REP_expand_the_clone_army
+		REP_chain_of_command
+		REP_establish_an_order_of_battle
+		REP_infantry_tactics
+		REP_expand_the_fleet
+		REP_integrated_air_support
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 2.0
+		support_tech = 6.5
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

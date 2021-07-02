@@ -1,0 +1,83 @@
+# All infantry equipment
+
+equipments = {
+
+	dwarf_spider_arch = {
+		year = 977
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 20
+		hardness = 1
+		armor_value = 3
+
+		#Offensive Abilities
+		soft_attack = 20
+		hard_attack = 25
+		ap_attack = 6
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.43
+		resources = {
+			steel = 2
+		}
+		
+	}
+
+	#dsd1
+	dsd1_dwarf_equipment = {
+		year = 977
+
+		can_be_produced = {
+			OR = {
+				tag = CMG
+				tag = TEC
+			}
+		}
+	
+		archetype = dwarf_spider_arch
+		priority = 10
+		visual_level = 1
+
+		build_cost_ic = 0.8
+	}
+	#adsd
+	adsd_dwarf_equipment = {
+		year = 981
+
+		can_be_produced = {
+			tag = CMG
+		}
+	
+		archetype = dwarf_spider_arch
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 35
+		breakthrough = 5
+
+		#Offensive Abilities
+		soft_attack = 7
+		hard_attack = 4
+		ap_attack = 5
+		air_attack = 1
+
+		build_cost_ic = 0.9
+	}
+}

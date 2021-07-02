@@ -1,0 +1,112 @@
+add_namespace = market_ren
+
+country_event = { #
+	id = market_ren.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ren.1"}
+	title = market_ren.1.t
+	desc = market_ren.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ren.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ren.1.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_ren.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ren.2"}
+	title = market_ren.2.t
+	desc = market_ren.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ren.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ren.2.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_ren.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ren.3"}
+	title = market_ren.3.t
+	desc = market_ren.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ren.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ren.3.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_ren.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ren.4"}
+	title = market_ren.4.t
+	desc = market_ren.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ren.4.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ren.4.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = market_ren.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_ren.5"}
+	title = market_ren.5.t
+	desc = market_ren.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = market_ren.5.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = market_ren.5.b
+		ai_chance = { factor = 1 }
+		
+	}
+}
+

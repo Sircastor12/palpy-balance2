@@ -1,0 +1,247 @@
+scripted_gui = {
+	grievous_gui = {
+		context_type = decision_category
+
+		window_name = "grievous_gui"
+		visible = {
+
+		}
+
+
+
+		effects = {
+			g_arms_w_click = {
+				set_country_flag = warrior_arm
+				if = {
+					limit ={
+						has_country_flag = warrior_arm
+						has_country_flag = warrior_legs
+						has_country_flag = warrior_body
+						has_country_flag = warrior_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "Grievous.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 10
+						defense_skill = 4
+						planning_skill = 6
+						logistics_skill = 3
+						}
+				}
+				subtract_from_variable = { dx = 20 }
+			}
+			g_legs_w_click = {
+				set_country_flag = warrior_legs
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = warrior_arm
+						has_country_flag = warrior_legs
+						has_country_flag = warrior_body
+						has_country_flag = warrior_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "Grievous.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 10
+						defense_skill = 4
+						planning_skill = 6
+						logistics_skill = 3
+						}
+				}
+			}
+			g_body_w_click = {
+				set_country_flag = warrior_body
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = warrior_arm
+						has_country_flag = warrior_legs
+						has_country_flag = warrior_body
+						has_country_flag = warrior_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "Grievous.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 10
+						defense_skill = 4
+						planning_skill = 6
+						logistics_skill = 3
+						}
+				}
+			}
+			g_head_w_click = {
+				set_country_flag = warrior_head
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = warrior_arm
+						has_country_flag = warrior_legs
+						has_country_flag = warrior_body
+						has_country_flag = warrior_head
+					}
+				create_field_marshal = {
+					name = "Grievous"
+					picture = "Grievous.dds"
+					traits = {  }
+					skill = 8
+					attack_skill = 10
+					defense_skill = 4
+					planning_skill = 6
+					logistics_skill = 3
+					}
+				}
+			}
+			p_arms_w_click = {
+				set_country_flag = protector_arm
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = protector_arm
+						has_country_flag = protector_legs
+						has_country_flag = protector_body
+						has_country_flag = protector_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "GrievousProtector.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 5
+						defense_skill = 10
+						planning_skill = 5
+						logistics_skill = 4
+						}
+				}
+			}
+			p_legs_w_click = {
+				set_country_flag = protector_legs
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = protector_arm
+						has_country_flag = protector_legs
+						has_country_flag = protector_body
+						has_country_flag = protector_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "GrievousProtector.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 5
+						defense_skill = 10
+						planning_skill = 5
+						logistics_skill = 4
+						}
+				}
+			}
+			p_body_w_click = {
+				set_country_flag = protector_body
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = protector_arm
+						has_country_flag = protector_legs
+						has_country_flag = protector_body
+						has_country_flag = protector_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "GrievousProtector.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 5
+						defense_skill = 10
+						planning_skill = 5
+						logistics_skill = 4
+						}
+				}
+			}
+			p_head_w_click = {
+				set_country_flag = protector_head
+				subtract_from_variable = { dx = 20 }
+				if = {
+					limit ={
+						has_country_flag = protector_arm
+						has_country_flag = protector_legs
+						has_country_flag = protector_body
+						has_country_flag = protector_head
+					}
+					create_field_marshal = {
+						name = "Grievous"
+						picture = "GrievousProtector.dds"
+						traits = {  }
+						skill = 8
+						attack_skill = 5
+						defense_skill = 10
+						planning_skill = 5
+						logistics_skill = 4
+					}
+				}
+			}
+		}
+		triggers = {
+			grievous_p_visible = {
+				has_country_flag = protector_grievous
+			}
+			grievous_w_visible = {
+				has_country_flag = warrior_grievous
+			}
+			g_arms_w_visible = {
+				has_country_flag = warrior_grievous
+				NOT = {
+					has_country_flag = warrior_arm
+				}
+			}
+			g_legs_w_visible = {
+				has_country_flag = warrior_grievous
+				NOT = {
+					has_country_flag = warrior_legs
+				}
+			}
+			g_body_w_visible = {
+				has_country_flag = warrior_grievous
+				NOT = {
+					has_country_flag = warrior_body
+				}
+			}
+			g_head_w_visible = {
+				has_country_flag = warrior_grievous
+				NOT = {
+					has_country_flag = warrior_head
+				}
+			}
+			p_arms_w_visible = {
+				has_country_flag = protector_grievous
+				NOT = {
+					has_country_flag = protector_arm
+				}
+			}
+			p_legs_w_visible = {
+				has_country_flag = protector_grievous
+				NOT = {
+					has_country_flag = protector_legs
+				}
+			}
+			p_body_w_visible = {
+				has_country_flag = protector_grievous
+				NOT = {
+					has_country_flag = protector_body
+				}
+			}
+			p_head_w_visible = {
+				has_country_flag = protector_grievous
+				NOT = {
+					has_country_flag = protector_head
+				}
+			}
+		}
+	}
+}

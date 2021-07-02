@@ -1,0 +1,30 @@
+market_is_cmg = {
+	has_tech = cmg_market
+}
+market_is_fed = {
+	has_tech = fed_market
+}
+market_is_hut = {
+	has_tech = hut_market
+}
+market_is_ibc = {
+	has_tech = ibc_market
+}
+market_is_kam = {
+	has_tech = kam_market
+}
+market_is_kua = {
+	has_tech = kua_market
+}
+market_is_cal = {
+	has_tech = cal_market
+}
+market_is_ren = {
+	has_tech = ren_market
+}
+market_is_rot = {
+	has_tech = rot_market
+}
+market_is_tec = {
+	has_tech = tec_market
+}

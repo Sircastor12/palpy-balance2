@@ -1,0 +1,126 @@
+
+defined_text = { # Country
+	name = AurasingTooltip
+	text = {
+		localization_key = AURASING_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = BobaFettTooltip
+	text = {
+		localization_key = Boba_Fett_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = BricTooltip
+	text = {
+		localization_key = Bric_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = BuldugaTooltip
+	text = {
+		localization_key = Bulduga_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = HighsingerTooltip
+	text = {
+		localization_key = Highsinger_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = CadBaneTooltip
+	text = {
+		localization_key = Cad_Bane_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = CastasTooltip
+	text = {
+		localization_key = Castas_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = CatoParasittiTooltip
+	text = {
+		localization_key = Cato_Parasitti_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = DengarTooltip
+	text = {
+		localization_key = Dengar_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = DerrownTooltip
+	text = {
+		localization_key = Derrown_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = El_LesTooltip
+	text = {
+		localization_key = El_Les_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = EmboTooltip
+	text = {
+		localization_key = Embo_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = GreedoTooltip
+	text = {
+		localization_key = Greedo_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = Helios3DTooltip
+	text = {
+		localization_key = Helios_3D_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = Helios3ETooltip
+	text = {
+		localization_key = Helios_3E_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = JakoliTooltip
+	text = {
+		localization_key = Jakoli_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = Kiera_SwanTooltip
+	text = {
+		localization_key = Kiera_Swan_TOOLTIP
+	}
+}
+
+defined_text = { # Country
+	name = KronosTooltip
+	text = {
+		localization_key = Kronos_TOOLTIP
+	}
+}

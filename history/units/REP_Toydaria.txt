@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "Clone Trooper Division - Wave 1"
+	is_locked = yes
+	regiments = {
+		p1_clone = { x = 0 y = 0 }
+		p1_clone = { x = 0 y = 1 }
+		p1_clone = { x = 0 y = 2 }
+   		p1_clone = { x = 1 y = 0 }
+		p1_clone = { x = 1 y = 1 }
+		p1_clone = { x = 1 y = 2 }
+	}
+	support = {
+		anti_tank = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Clone Trooper Division"
+		location = 1913 #Kamino
+		division_template = "Clone Trooper Division - Wave 1"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 1913 #Kamino
+		division_template = "Clone Trooper Division - Wave 1"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 1913 #Kamino
+		division_template = "Clone Trooper Division - Wave 1"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Clone Trooper Division"
+		location = 1913 #Kamino
+		division_template = "Clone Trooper Division - Wave 1"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+}
+

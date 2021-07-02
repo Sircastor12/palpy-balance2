@@ -1,0 +1,262 @@
+spriteTypes = { 
+	##Icon For: Naboo Crisis Escalates!
+	SpriteType = { 
+		name = "GFX_naboocrisisescalates" 
+		texturefile = "gfx/event_pictures/naboocrisisescalates.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_thechase" 
+		texturefile = "gfx/event_pictures/thechase.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_puppetnaboo" 
+		texturefile = "gfx/event_pictures/puppetnaboo.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_angrysenators" 
+		texturefile = "gfx/event_pictures/angrysenators.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_diplomaticshipdestroyed" 
+		texturefile = "gfx/event_pictures/diplomaticshipdestroyed.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_nabooqueen" 
+		texturefile = "gfx/event_pictures/nabooqueen.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_duelofthefates" 
+		texturefile = "gfx/event_pictures/duelofthefates.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_naboocrisisfixed" 
+		texturefile = "gfx/event_pictures/naboocrisisfixed.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_newmandoraids" 
+		texturefile = "gfx/event_pictures/newmandoraids.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_galidraanbattle" 
+		texturefile = "gfx/event_pictures/galidraanbattle.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_dorvallaincident" 
+		texturefile = "gfx/event_pictures/dorvallaincident.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_valorumsproposal" 
+		texturefile = "gfx/event_pictures/valorumsproposal.dds" 
+	} 
+	SpriteType = { 
+		name = "GFX_intelligencereport" 
+		texturefile = "gfx/event_pictures/intelligencereport.dds" 
+	} 
+	SpriteType = { 
+		name = "GFX_symptoms" 
+		texturefile = "gfx/event_pictures/symptoms.dds" 
+	} 
+	SpriteType = { 
+		name = "GFX_cipher" 
+		texturefile = "gfx/event_pictures/cipher.dds" 
+	} 
+	SpriteType = { 
+		name = "GFX_corelliaclosesborders" 
+		texturefile = "gfx/event_pictures/corelliaclosesborders.dds" 
+	} 
+	SpriteType = { 
+		name = "GFX_event_banking_clan" 
+		texturefile = "gfx/event_pictures/banking_clan.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_banking_clan_2" 
+		texturefile = "gfx/event_pictures/banking_clan2.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_clonearmy" 
+		texturefile = "gfx/event_pictures/clonearmy.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_droidarmy" 
+		texturefile = "gfx/event_pictures/clonearmy.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_senatecorpsupport" 
+		texturefile = "gfx/event_pictures/senatesupportcorp.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_dexter" 
+		texturefile = "gfx/event_pictures/dexter.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_kamino" 
+		texturefile = "gfx/event_pictures/Kamino.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_cabinet1" 
+		texturefile = "gfx/event_pictures/cabinet1.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_cabinet2" 
+		texturefile = "gfx/event_pictures/cabinet2.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_geoarmydiscovered" 
+		texturefile = "gfx/event_pictures/geoarmydiscovered.dds" 
+     }
+	SpriteType = { 
+		name = "GFX_jangofettkamino" 
+		texturefile = "gfx/event_pictures/jangofettkamino.dds" 
+     }
+	#CloneWarsBegin(ing)
+	SpriteType = { 
+		name = "GFX_event_padmeamidalassas2" 
+		texturefile = "gfx/event_pictures/assassinationofpadme2.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_padmeamidalaalive" 
+		texturefile = "gfx/event_pictures/padmelives.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_padmeamidalassas" 
+		texturefile = "gfx/event_pictures/assassinationofpadme.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_clonesdiscovered" 
+		texturefile = "gfx/event_pictures/clonearmyonkamino.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_sanctions" 
+		texturefile = "gfx/event_pictures/sanctions.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_policepowersact" 
+		texturefile = "gfx/event_pictures/policepowersact.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_emergencypowers" 
+		texturefile = "gfx/event_pictures/emergencypowers.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_dangerousideas" 
+		texturefile = "gfx/event_pictures/dangerousideas.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_clonearmy_agreementreached" 
+		texturefile = "gfx/event_pictures/clonearmy_agreementreached.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_padmecapturedgeo" 
+		texturefile = "gfx/event_pictures/padmecapturedgeo.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_separatiststronghold" 
+		texturefile = "gfx/event_pictures/separatiststronghold.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_jedislaughterongeo" 
+		texturefile = "gfx/event_pictures/jedislaughterongeonosis.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_battleofgeonosis" 
+		texturefile = "gfx/event_pictures/battleofgeonosis.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_tarkinpromoted" 
+		texturefile = "gfx/event_pictures/tarkinpromoted.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_rottaborn" 
+		texturefile = "gfx/event_pictures/rottaborn.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_palpatineelected" 
+		texturefile = "gfx/event_pictures/chancellorpalpatine.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_voteofnoconfidence" 
+		texturefile = "gfx/event_pictures/voteofnoconfidence.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_sheevandvalorum" 
+		texturefile = "gfx/event_pictures/sheevandvalorum.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_palpatinereelected" 
+		texturefile = "gfx/event_pictures/palpatinereelected.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_palpatineemergencypowers" 
+		texturefile = "gfx/event_pictures/palpatineemergencypowers.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_darkreaper" 
+		texturefile = "gfx/event_pictures/darkreaper.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_newgalacticempire" 
+		texturefile = "gfx/event_pictures/newgalacticempire.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_jedicoup" 
+		texturefile = "gfx/event_pictures/jedicoup.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_jedidissolved" 
+		texturefile = "gfx/event_pictures/jedidissolved.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_seprev" 
+		texturefile = "gfx/event_pictures/separatistrevolution.dds" 
+	}
+	##Toydaria
+	SpriteType = { 
+		name = "GFX_toydaria1" 
+		texturefile = "gfx/event_pictures/GFX_toydaria1.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria2" 
+		texturefile = "gfx/event_pictures/GFX_toydaria2.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria3" 
+		texturefile = "gfx/event_pictures/GFX_toydaria3.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria4" 
+		texturefile = "gfx/event_pictures/GFX_toydaria4.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria5" 
+		texturefile = "gfx/event_pictures/GFX_toydaria5.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria6" 
+		texturefile = "gfx/event_pictures/GFX_toydaria6.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria7" 
+		texturefile = "gfx/event_pictures/GFX_toydaria7.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria8" 
+		texturefile = "gfx/event_pictures/GFX_toydaria8.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria9" 
+		texturefile = "gfx/event_pictures/GFX_toydaria9.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_toydaria10" 
+		texturefile = "gfx/event_pictures/GFX_toydaria10.dds" 
+	}
+	SpriteType = { 
+ 		name = "GFX_eventclonearmy" 
+ 		texturefile = "gfx/interface/event_pictures/clonearmy.dds" 
+ 	}
+ 	SpriteType = { 
+ 		name = "GFX_eventdroidarmy" 
+ 		texturefile = "gfx/interface/event_pictures/droidarmy.dds" 
+ 	}
+}
+ 

@@ -1,0 +1,123 @@
+﻿division_template = {
+	name = "Judicial Division"
+
+	regiments = {
+		Judicial_forces = { x = 0 y = 0 }
+		Judicial_forces = { x = 0 y = 1 }
+		Judicial_forces = { x = 0 y = 2 }
+   		Judicial_forces = { x = 1 y = 0 }
+		Judicial_forces = { x = 1 y = 1 }
+		Judicial_forces = { x = 1 y = 2 }
+  		Judicial_forces = { x = 2 y = 0 }
+		Judicial_forces = { x = 2 y = 1 }
+		Judicial_forces = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Speeder Truck Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Judicial Security Force 1"
+		location = 8 #Coruscant
+		division_template = "Judicial Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force 2"
+		location = 46 #Coruscant
+		division_template = "Judicial Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Speeder Infantry"
+		location = 8 #Coruscant
+		division_template = "Speeder Truck Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Speeder Infantry"
+		location = 46 #Coruscant
+		division_template = "Speeder Truck Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force 3"
+		location = 360 #Coruscant
+		division_template = "Judicial Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force 4"
+		location = 748 #Coruscant
+		division_template = "Judicial Division"
+		start_experience_factor = 1.0   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force 5"
+		location = 993 #Coruscant
+		division_template = "Judicial Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force 6"
+		location = 1334 #Coruscant
+		division_template = "Judicial Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force (BYS)"
+		location = 499 #Byss
+		division_template = "Judicial Division"
+		start_experience_factor = .1  #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force (COR)"
+		location = 1631 #Corellia
+		division_template = "Judicial Division"
+		start_experience_factor = 0.8   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force (TAR)"
+		location = 1257 #Taris
+		division_template = "Judicial Division"
+		start_experience_factor = 0.7   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Speeder Infantry"
+		location = 1257 #Coruscant
+		division_template = "Speeder Truck Division"
+		start_experience_factor = .5   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force (TAR)"
+		location = 361 #Taris
+		division_template = "Judicial Division"
+		start_experience_factor = 0.8   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Judicial Security Force (ERI)"
+		location = 623 #Eriadu
+		division_template = "Judicial Division"
+		start_experience_factor = .8   #optional, otherwise starts with 0 expereince
+	}
+}

@@ -1,0 +1,55 @@
+﻿division_template = {
+	name = "332nd Company Division"
+	is_locked = yes
+
+	regiments = {
+		REP_332_clone = { x = 0 y = 0 }
+		REP_332_clone = { x = 0 y = 1 }
+		REP_332_clone = { x = 0 y = 2 }
+		REP_332_clone = { x = 0 y = 3 }
+   		REP_332_clone = { x = 1 y = 0 }
+		REP_332_clone = { x = 1 y = 1 }
+		REP_332_clone = { x = 1 y = 2 }
+  		REP_332_clone = { x = 2 y = 0 }
+		REP_332_clone = { x = 2 y = 1 }
+		REP_332_clone = { x = 2 y = 2 }
+	}
+	support = {
+		clone_medic = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "332nd Tano Company" 
+		location = 10463 #Kamino
+		division_template = "332nd Company Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "332nd Rex Company"
+		location = 10463 #Kamino
+		division_template = "332nd Company Division"
+		start_experience_factor = 0.8   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "332nd Vaughn Company"
+		location = 10463 #Kamino
+		division_template = "332nd Company Division"
+		start_experience_factor = 0.8  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "332nd Ash Company"
+		location = 10463 #Kamino
+		division_template = "332nd Company Division"
+		start_experience_factor = 0.5   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

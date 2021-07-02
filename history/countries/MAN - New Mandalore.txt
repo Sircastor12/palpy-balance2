@@ -1,0 +1,134 @@
+﻿capital = 160
+
+oob = "MAN_3677"
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = .2
+set_country_flag = not_corp
+
+set_technology = {
+	tech_support = 1
+	militia_MAN = 1
+	transport = 1
+	infantry_weapons = 1
+	
+	mandalorian_commando_0 = 1
+	dura_armor = 1
+	westar_gun_20 = 1
+}
+
+add_ideas = { 
+	MAN_idea_severe_depopulation
+	MAN_idea_recovering_from_the_civil_war
+	disarmed_nation
+    MAN_idea_new_mandelorians
+	MAN_idea_poverty
+	ruusan_nerf_army
+	ruusan_nerf_nav
+}
+	
+add_political_power = 75
+set_convoys = 50
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 100
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 100
+		fascism = 0
+	}
+}
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = DEA
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	else = {
+		puppet = DEA
+	}
+}
+
+create_country_leader = {
+	name = "Satine Kryze"
+	desc = "Duchess of Mandalore"
+	picture = "gfx/leaders/MAN/Satine.dds"
+	expire = "2020.1.1"
+	ideology = Moderatism
+}
+
+create_country_leader = {
+	name = "Satine Kryze"
+	desc = "Duchess of Mandalore"
+	picture = "gfx/leaders/MAN/Satine.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Almec"
+	desc = "Prime Minister of Mandalore"
+	picture = "gfx/leaders/MAN/almec.dds"
+	expire = "2020.1.1"
+	ideology = marxism
+}
+
+create_country_leader = {
+	name = "Almec"
+	desc = "Prime Minister of Mandalore"
+	picture = "gfx/leaders/MAN/almec.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_corps_commander = {
+	name = "Cen Horn"
+	portrait_path = "gfx/leaders/MAN/POL2.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+
+create_corps_commander = {
+	name = "Hyike Fern"
+	portrait_path = "gfx/leaders/MAN/POL1.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}

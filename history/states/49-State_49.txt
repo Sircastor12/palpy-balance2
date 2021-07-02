@@ -1,0 +1,41 @@
+state={
+	id=49
+	name="STATE_49"
+	provinces={
+		1098 1447 1914 2817 3489 3669 3785 4501 9200 9206 9207 9212 9222 9230 9235 9245 9248 9257 9261 
+	}
+	manpower=3333333
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=7
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=25
+		chromium=0
+	}
+
+  	history = {
+		owner=MAL
+		add_core_of = MAL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,65 @@
+capital = 18
+
+oob = "DEA_3677"
+set_research_slots = 2
+set_stability = 0.70
+set_war_support = .05
+
+set_technology = {
+	westar_gun_20 = 1
+	dura_armor = 1
+	mandalorian_commando_0 = 1
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	scraping_the_barrel
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		neutrality = 79
+		communism = 21
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		neutrality = 79
+		communism = 21
+	}
+}
+
+create_country_leader = {
+	name = "Pre Vizla"
+	desc = "Governor of Concordia"
+	picture = "gfx/leaders/DEA/previzla.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Darth Maul"
+	desc = "Dark Side User"
+	picture = GFX_maul
+	expire = "2020.1.1"
+	ideology = consortium
+}

@@ -1,0 +1,31 @@
+add_namespace = hut
+
+news_event = {
+	id = hut.1
+	title = "The Heir to the Clan"
+	desc = "Rotta is born to Jabba on Tatooine"
+	picture = GFX_event_rottaborn
+	major = no
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+
+    trigger = {
+    OR = {
+    HUT = {has_completed_focus = HUT_lords_of_the_underworld }
+    HUT = {has_completed_focus = HUT_corporate_sponsorship }
+    }
+    }
+
+immediate = {
+HUT = {
+set_country_flag = rottaborn
+}
+}
+	
+        option = {
+		   name = "One day he will be a great leader for our people."
+		   trigger = { 
+	    }	                   
+     }
+   }

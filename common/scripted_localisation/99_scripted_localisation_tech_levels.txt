@@ -1,0 +1,54 @@
+defined_text = {
+	name = GetCIStech
+	text = {
+		trigger = {
+			has_global_flag = CIS_tech_4
+		}
+		localization_key = "GFX_CIS_tech_4"
+	}
+	text = {
+		trigger = {
+			has_global_flag = CIS_tech_3
+		}
+		localization_key = "GFX_CIS_tech_3"
+	}
+	text = {
+		trigger = {
+			has_global_flag = CIS_tech_2
+		}
+		localization_key = "GFX_CIS_tech_2"
+	}
+	text = {
+		trigger = {
+			has_global_flag = CIS_tech_1
+		}
+		localization_key = "GFX_CIS_tech_1"
+	}
+}
+defined_text = {
+	name = GetREPtech
+	text = {
+		trigger = {
+			has_global_flag = REP_tech_4
+		}
+		localization_key = "GFX_REP_tech_4"
+	}
+	text = {
+		trigger = {
+			has_global_flag = REP_tech_3
+		}
+		localization_key = "GFX_REP_tech_3"
+	}
+	text = {
+		trigger = {
+			has_global_flag = REP_tech_2
+		}
+		localization_key = "GFX_REP_tech_2"
+	}
+	text = {
+		trigger = {
+			has_global_flag = REP_tech_1
+		}
+		localization_key = "GFX_REP_tech_1"
+	}
+}

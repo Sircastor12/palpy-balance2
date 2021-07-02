@@ -1,0 +1,41 @@
+
+attack_christophsis = {
+	enable = {
+		TAG = CIS
+		CIS = {
+			has_war_with = REP
+			is_in_faction_with = GEO
+		}
+		CHR = {
+			has_idea = REP_member
+		}
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "CHR"
+		value = 500
+	}
+	ai_strategy = {
+		type = invade
+		id = "CHR"
+		value = 500
+	}	
+}
+
+return_to_GEO = {
+	enable = {
+		TAG = CIS
+		has_active_mission = return_to_GEO
+	}
+	ai_strategy = {
+	 	type = invasion_unit_request
+		state = 442
+		state = 460
+		state = 446
+		state = 66
+		state = 437
+		state = 449
+		state = 462
+		value = 400
+	}
+}

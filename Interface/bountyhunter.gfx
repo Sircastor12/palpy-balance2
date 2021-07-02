@@ -1,0 +1,158 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_bountyhunter"
+		texturefile = "gfx/interface/bountyhunterfolder/bountyhunterback.dds"
+	} 
+	spriteType = {
+		name = "GFX_open_button_bounty"
+		texturefile = "gfx/interface/bountyhunterfolder/open_button_bounty.dds"
+	} 
+	spriteType = {
+		name = "GFX_bountyhunter_frame"
+		texturefile = "gfx/interface/bountyhunterfolder/bountyhunterframe.dds"
+	}
+	spriteType = {
+		name = "GFX_aceselected"
+		texturefile = "gfx/interface/bountyhunterfolder/ace_selected.dds"
+	} 
+	spriteType = {
+		name = "GFX_aceselect"
+		texturefile = "gfx/interface/bountyhunterfolder/ace_select.dds"
+	}
+	spriteType = {
+		name = "GFX_generalselected"
+		texturefile = "gfx/interface/bountyhunterfolder/general_selected.dds" 
+	} 
+	spriteType = {
+		name = "GFX_generalselect"
+		texturefile = "gfx/interface/bountyhunterfolder/general_select.dds"
+	}
+	spriteType = {
+		name = "GFX_Aurasing"
+		texturefile = "gfx/interface/bountyhunterfolder/Aurasing.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Boba Fett"
+		texturefile = "gfx/interface/bountyhunterfolder/Boba Fett.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Bric"
+		texturefile = "gfx/interface/bountyhunterfolder/Bric.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Bossk"
+		texturefile = "gfx/interface/bountyhunterfolder/Bossk.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Bulduga"
+		texturefile = "gfx/interface/bountyhunterfolder/Bulduga.dds" 
+	} 
+	spriteType = {
+		name = "GFX_C-21 Highsinger"
+		texturefile = "gfx/interface/bountyhunterfolder/C-21 Highsinger.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Cad Bane"
+		texturefile = "gfx/interface/bountyhunterfolder/Cad Bane.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Castas"
+		texturefile = "gfx/interface/bountyhunterfolder/Castas.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Cato Parasitti"
+		texturefile = "gfx/interface/bountyhunterfolder/Cato Parasitti.dds" 
+	}
+	spriteType = {
+		name = "GFX_Dengar"
+		texturefile = "gfx/interface/bountyhunterfolder/Dengar.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Derrown"
+		texturefile = "gfx/interface/bountyhunterfolder/Derrown.dds" 
+	} 
+	spriteType = {
+		name = "GFX_El-Les"
+		texturefile = "gfx/interface/bountyhunterfolder/El-Les.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Embo"
+		texturefile = "gfx/interface/bountyhunterfolder/Embo.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Greedo" 
+		texturefile = "gfx/interface/bountyhunterfolder/Greedo.dds" 
+	} 
+	spriteType = {
+		name = "GFX_HELIOS-3D"
+		texturefile = "gfx/interface/bountyhunterfolder/HELIOS-3D.dds" 
+	} 
+	spriteType = {
+		name = "GFX_HELIOS-3E"
+		texturefile = "gfx/interface/bountyhunterfolder/HELIOS-3E.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Jakoli"
+		texturefile = "gfx/interface/bountyhunterfolder/Jakoli.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Kiera Swan"
+		texturefile = "gfx/interface/bountyhunterfolder/Kiera Swan.dds" 
+	} 
+	spriteType = {
+		name = "GFX_KRONOS-327"
+		texturefile = "gfx/interface/bountyhunterfolder/KRONOS-327.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Latts Razzi"
+		texturefile = "gfx/interface/bountyhunterfolder/Latts Razzi.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Mantu"
+		texturefile = "gfx/interface/bountyhunterfolder/Mantu.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Moralo Eval"
+		texturefile = "gfx/interface/bountyhunterfolder/Moralo Eval.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Onca"
+		texturefile = "gfx/interface/bountyhunterfolder/Onca.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Robonino"
+		texturefile = "gfx/interface/bountyhunterfolder/Robonino.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Rumi Paramita"
+		texturefile = "gfx/interface/bountyhunterfolder/Rumi Paramita.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Seripas"
+		texturefile = "gfx/interface/bountyhunterfolder/Seripas.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Shahan Alama"
+		texturefile = "gfx/interface/bountyhunterfolder/Shahan Alama.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Sinrich"
+		texturefile = "gfx/interface/bountyhunterfolder/Sinrich.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Sixtat"
+		texturefile = "gfx/interface/bountyhunterfolder/Sixtat.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Sugi"
+		texturefile = "gfx/interface/bountyhunterfolder/Sugi.dds" 
+	} 
+	spriteType = {
+		name = "GFX_Twazzi"
+		texturefile = "gfx/interface/bountyhunterfolder/Twazzi.dds" 
+	} 
+	spriteType = {
+		name = "GFX_bountybutton"
+		texturefile = "gfx/interface/bountyhunterfolder/bountybutton.dds"   
+	} 
+}  

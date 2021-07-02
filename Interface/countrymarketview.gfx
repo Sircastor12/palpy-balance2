@@ -1,0 +1,1073 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_market_selections"
+		texturefile = "gfx/interface/market/market_selection.dds"
+	}
+	spriteType = {
+		name = "GFX_market_open_button" 
+		texturefile = "gfx/interface/market/market_open_button.dds"
+	}
+	spriteType = {
+		name = "GFX_market_more_button" 
+		texturefile = "gfx/interface/market/market_more_button.dds"
+	}
+	spriteType = {
+		name = "GFX_naval_button_market"
+		texturefile = "gfx/interface/market/naval_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_market_autobuy"
+		texturefile = "gfx/interface/market/autobuy.dds"
+	}
+	spriteType = {
+		name = "GFX_market_autobuy_on"
+		texturefile = "gfx/interface/market/autobuy_on.dds"
+	}
+	spriteType = {
+		name = "GFX_air_button_market"
+		texturefile = "gfx/interface/market/air_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_army_button_market" 
+		texturefile = "gfx/interface/market/army_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_button_market"
+		texturefile = "gfx/interface/market/rep_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_nnaval_button_market"
+		texturefile = "gfx/interface/market/nnaval_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_nair_button_market"
+		texturefile = "gfx/interface/market/nair_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_narmy_button_market" 
+		texturefile = "gfx/interface/market/narmy_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_ninfantry_button_market"
+		texturefile = "gfx/interface/market/n_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_naval_button_market"
+		texturefile = "gfx/interface/market/CIS_naval_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_air_button_market"
+		texturefile = "gfx/interface/market/CIS_air_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_army_button_market"
+		texturefile = "gfx/interface/market/CIS_army_button_market.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_infantry_button_market"
+		texturefile = "gfx/interface/market/CIS_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_market_screen_product"
+		texturefile = "gfx/interface/market/market_screen_product.dds"
+	}
+	spriteType = {
+		name = "GFX_market_init"
+		texturefile = "gfx/interface/market_init.dds"
+	}
+	spriteType = {
+		name = "GFX_market_bg"
+		texturefile = "gfx/interface/market/market_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_market_frame"
+		texturefile = "gfx/interface/market/market_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_market_frame_l"
+		texturefile = "gfx/interface/market/market_frame_l.dds"
+	}
+	###Tech Slots###
+	spriteType = {
+		name = "GFX_slot_1"
+		texturefile = "gfx/interface/market/tech slots/slot1.dds"
+	}
+	spriteType = {
+		name = "GFX_slot_2"
+		texturefile = "gfx/interface/market/tech slots/slot2.dds"
+	}
+	spriteType = {
+		name = "GFX_slot_3"
+		texturefile = "gfx/interface/market/tech slots/slot3.dds"
+	}
+	spriteType = {
+		name = "GFX_slot_4"
+		texturefile = "gfx/interface/market/tech slots/slot4.dds"
+	}
+	###			 ###
+	spriteType = {
+		name = "GFX_close_button_1"
+		texturefile = "gfx/interface/main_close_button.dds"
+	}
+	spriteType = {
+		name = "GFX_return_button"
+		texturefile = "gfx/interface/backbutton32.dds"
+	}
+	spriteType = {
+		name = "GFX_naval_products"
+		texturefile = "gfx/interface/market/naval_product_container.dds"
+	}
+	spriteType = {
+		name = "GFX_ground_products"
+		texturefile = "gfx/interface/market/ground_product_container.dds"
+	}
+	spriteType = {
+		name = "GFX_starfighter_products"
+		texturefile = "gfx/interface/market/starfighter_container.dds"
+	}
+	spriteType = {
+		name = "GFX_market_place_order"
+		texturefile = "gfx/interface/market/market_place_order.dds"
+	}
+	spriteType = {
+		name = "GFX_market_place_order_blue"
+		texturefile = "gfx/interface/market/market_place_order_blue.dds"
+	}
+	spriteType = {
+		name = "GFX_filter_button"
+		texturefile = "gfx/interface/filter.dds"
+	}
+	spriteType = {
+		name = "GFX_favorited"
+		texturefile = "GFX/interface/market/favorited.dds"
+	}
+	spriteType = {
+		name = "GFX_unfavorited"
+		texturefile = "GFX/interface/market/unfavorited.dds"
+	}
+	spriteType = {
+		name = "GFX_armor_filter"
+		texturefile = "GFX/interface/market/filter_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_filter"
+		texturefile = "GFX/interface/market/filter_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_other_filter"
+		texturefile = "GFX/interface/market/filter_other.dds"
+	}
+	###Corporation Pages###
+	spriteType = {
+		name = "GFX_market_aratech_full"
+		texturefile = "gfx/interface/market/Aratech/market_aratech_bg.tga"
+	}
+	spriteType = {
+		name = "GFX_market_baktoid"
+		texturefile = "gfx/interface/market/TEC/market_baktoid_tile.tga"
+	}
+	spriteType = {
+		name = "GFX_market_b1"
+		texturefile = "gfx/interface/market/TEC/market_b1.dds"
+	}
+	spriteType = {
+		name = "GFX_market_b2"
+		texturefile = "gfx/interface/market/TEC/market_b2.dds"
+	}
+	spriteType = {
+		name = "GFX_market_bx"
+		texturefile = "gfx/interface/market/TEC/market_bx.dds"
+	}
+	spriteType = {
+		name = "GFX_market_aratech"
+		texturefile = "gfx/interface/market/Aratech/market_aratech_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_blastech"
+		texturefile = "gfx/interface/market/Blastech/market_blastech_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_commerce_guild"
+		texturefile = "gfx/interface/market/CMG/market_cmg_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_commerce_guild_warships"
+		texturefile = "gfx/interface/market/CMG/market_bg_cmg_warships.dds"
+	}
+	spriteType = {
+		name = "GFX_market_commerce_guild_vehicles"
+		texturefile = "gfx/interface/market/CMG/market_bg_cmg_vehicles.dds"
+	}
+	spriteType = {
+		name = "GFX_market_hutt"
+		texturefile = "gfx/interface/market/Hutt/market_hutt_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_FED"
+		texturefile = "gfx/interface/market/FED/market_FED_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_IBC"
+		texturefile = "gfx/interface/market/IBC/market_IBC_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_KAM"
+		texturefile = "gfx/interface/market/KAM/market_kamino_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_clone_frame"
+		texturefile = "gfx/interface/clone/cloneframe.dds"
+	}
+	spriteType = {
+		name = "GFX_new_clone"
+		texturefile = "gfx/interface/clone/new_clone.dds"
+	}
+	spriteType = {
+		name = "GFX_clonetrooper"
+		texturefile = "gfx/interface/clone/cloneback.dds"
+	}
+	spriteType = {
+		name = "GFX_clone_button"
+		texturefile = "gfx/interface/clone/clone.dds"
+	}
+	spriteType = {
+		name = "GFX_market_KUA"
+		texturefile = "gfx/interface/market/KUA/market_kuat_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_Mandalmotor"
+		texturefile = "gfx/interface/market/Mandalmotor/market_mandal_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_moncal"
+		texturefile = "gfx/interface/market/moncal/market_moncal_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_rendili"
+		texturefile = "gfx/interface/market/rendili/market_rendili_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_rothana"
+		texturefile = "gfx/interface/market/rothana/market_rothana_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_sorosuub"
+		texturefile = "gfx/interface/market/SoroSuub/market_sorosuub_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_corellia"
+		texturefile = "gfx/interface/market/CLA/market_cla_tile.dds"
+	}
+	spriteType = {
+		name = "GFX_market_dac"
+		texturefile = "gfx/interface/market/DAC/market_dac_tile.dds"
+	}
+
+##Aratech##
+	spriteType = {
+		name = "GFX_74z_card"
+		texturefile = "gfx/interface/market/Aratech/uc_z74.dds"
+	}
+	spriteType = {
+		name = "GFX_barc_card"
+		texturefile = "gfx/interface/market/Aratech/uc_barc.dds"
+	}
+##Blastech##
+	spriteType = {
+		name = "GFX_inf0_card"
+		texturefile = "gfx/interface/market/Blastech/inf0.dds"
+	}
+	spriteType = {
+		name = "GFX_inf1_card"
+		texturefile = "gfx/interface/market/Blastech/inf1.dds"
+	}
+	spriteType = {
+		name = "GFX_inf2_card"
+		texturefile = "gfx/interface/market/Blastech/inf2.dds"
+	}
+	spriteType = {
+		name = "GFX_inf3_card"
+		texturefile = "gfx/interface/market/Blastech/inf3.dds"
+	}
+##Commerce Guild##
+	spriteType = {
+		name = "GFX_diamond_card"
+		texturefile = "gfx/interface/market/CMG/diamond.dds"
+	}
+	spriteType = {
+		name = "GFX_recusant_card"
+		texturefile = "gfx/interface/market/CMG/recusant.dds"
+	}
+	spriteType = {
+		name = "GFX_providence_card"
+		texturefile = "gfx/interface/market/CMG/providence.dds"
+	}
+	spriteType = {
+		name = "GFX_dsd1_card"
+		texturefile = "gfx/interface/market/CMG/dsd1.dds"
+	}
+	spriteType = {
+		name = "GFX_adsd_card"
+		texturefile = "gfx/interface/market/CMG/adsd.dds"
+	}
+	spriteType = {
+		name = "GFX_homing_spider_card"
+		texturefile = "gfx/interface/market/CMG/homing_spider.dds"
+	}
+##Hoersch-kessel##
+	spriteType = {
+		name = "GFX_lucrehulk_freighter_card"
+		texturefile = "gfx/interface/market/FED/lucrehulk_freighter.dds"
+	}
+	spriteType = {
+		name = "GFX_lucrehulk_battleship_card"
+		texturefile = "gfx/interface/market/FED/lucrehulk_battleship.dds"
+	}
+	spriteType = {
+		name = "GFX_munificent_card"
+		texturefile = "gfx/interface/market/FED/munificent.dds"
+	}
+##IBC##
+	spriteType = {
+		name = "GFX_lancer_card"
+		texturefile = "gfx/interface/market/IBC/lancer.dds"
+	}
+	spriteType = {
+		name = "GFX_hailfire_card"
+		texturefile = "gfx/interface/market/TEC/hailfire.dds"
+	}
+	spriteType = {
+		name = "GFX_loan_container"
+		texturefile = "gfx/interface/market/IBC/IBC_loans.dds"
+	}
+##Kamino cloning##
+	spriteType = {
+		name = "GFX_phase_1_card"
+		texturefile = "gfx/interface/market/KAM/p1.dds"
+	}
+	spriteType = {
+		name = "GFX_phase_2_card"
+		texturefile = "gfx/interface/market/KAM/p2.dds"
+	}
+	spriteType = {
+		name = "GFX_stormtrooper_card"
+		texturefile = "gfx/interface/market/KAM/stormtrooper.dds"
+	}
+	spriteType = {
+		name = "GFX_clone_general_card"
+		texturefile = "gfx/interface/market/KAM/general.dds"
+	}
+	spriteType = {
+		name = "GFX_clone_admiral_card"
+		texturefile = "gfx/interface/market/KAM/admiral.dds"
+	}
+	spriteType = {
+		name = "GFX_naval_crew_card"
+		texturefile = "gfx/interface/market/KAM/crew.dds"
+	}
+##Kuat drive yards##
+	spriteType = {
+		name = "GFX_z95_card"
+		texturefile = "gfx/interface/market/KUA/z95.dds"
+	}
+	spriteType = {
+		name = "GFX_v19_card"
+		texturefile = "gfx/interface/market/KUA/v19.dds"
+	}
+	spriteType = {
+		name = "GFX_arc170_card"
+		texturefile = "gfx/interface/market/KUA/arc170.dds"
+	}
+	spriteType = {
+		name = "GFX_vwing_card"
+		texturefile = "gfx/interface/market/KUA/vwing.dds"
+	}
+	spriteType = {
+		name = "GFX_btlb_card"
+		texturefile = "gfx/interface/market/KUA/btlb.dds"
+	}
+	spriteType = {
+		name = "GFX_laat_card"
+		texturefile = "gfx/interface/market/KUA/laat.dds"
+	}
+	spriteType = {
+		name = "GFX_laati_card"
+		texturefile = "gfx/interface/market/KUA/laati.dds"
+	}
+	spriteType = {
+		name = "GFX_laatc_card"
+		texturefile = "gfx/interface/market/KUA/laatc.dds"
+	}
+	#Ships
+	spriteType = {
+		name = "GFX_pelta_card"
+		texturefile = "gfx/interface/market/KUA/pelta.dds"
+	}
+	spriteType = {
+		name = "GFX_stealthship_card"
+		texturefile = "gfx/interface/market/KUA/stealth.dds"
+	}
+	spriteType = {
+		name = "GFX_tief_card"
+		texturefile = "gfx/interface/market/KUA/tief.dds"
+	}
+	spriteType = {
+		name = "GFX_tieb_card"
+		texturefile = "gfx/interface/market/KUA/tieb.dds"
+	}
+	spriteType = {
+		name = "GFX_stardestroyer_card"
+		texturefile = "gfx/interface/market/KUA/stardestroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_arquintes_card"
+		texturefile = "gfx/interface/market/KUA/arquintes.dds"
+	}
+	spriteType = {
+		name = "GFX_acclamator_card"
+		texturefile = "gfx/interface/market/KUA/acclamator.dds"
+	}
+	spriteType = {
+		name = "GFX_acclamator2_card"
+		texturefile = "gfx/interface/market/KUA/acclamator2.dds"
+	}
+	spriteType = {
+		name = "GFX_venator_card"
+		texturefile = "gfx/interface/market/KUA/venator.dds"
+	}
+	spriteType = {
+		name = "GFX_victory_card"
+		texturefile = "gfx/interface/market/KUA/victory.dds"
+	}
+	spriteType = {
+		name = "GFX_mandator1_card"
+		texturefile = "gfx/interface/market/KUA/mandator.dds"
+	}
+	spriteType = {
+		name = "GFX_mandator2_card"
+		texturefile = "gfx/interface/market/KUA/mandator2.dds"
+	}
+##Mandalmotors##
+	spriteType = {
+		name = "GFX_balutar_card"
+		texturefile = "gfx/interface/market/Mandalmotor/balutar.dds"
+	}
+	spriteType = {
+		name = "GFX_komrk_card"
+		texturefile = "gfx/interface/market/Mandalmotor/komrk.dds"
+	}
+	spriteType = {
+		name = "GFX_buirkalor_card"
+		texturefile = "gfx/interface/market/Mandalmotor/buirkalor.dds"
+	}
+	spriteType = {
+		name = "GFX_fang_card"
+		texturefile = "gfx/interface/market/Mandalmotor/fang.dds"
+	}
+##Mon Calamari shipyards##
+	spriteType = {
+		name = "GFX_dreadnaught_card"
+		texturefile = "gfx/interface/market/moncal/dreadnaught.dds"
+	}
+##Rendili##
+	spriteType = {
+		name = "GFX_carrack_card"
+		texturefile = "gfx/interface/market/rendili/carrack.dds"
+	}
+	spriteType = {
+		name = "GFX_hammerhead_card"
+		texturefile = "gfx/interface/market/rendili/hammerhead.dds"
+	}
+##Rothana##
+	spriteType = {
+		name = "GFX_rocketlauncher_card"
+		texturefile = "gfx/interface/market/rothana/launcher.dds"
+	}
+	spriteType = {
+		name = "GFX_atrt_card"
+		texturefile = "gfx/interface/market/rothana/atrt.dds"
+	}
+	spriteType = {
+		name = "GFX_spha_card"
+		texturefile = "gfx/interface/market/rothana/spha.dds"
+	}
+	spriteType = {
+		name = "GFX_atte_card"
+		texturefile = "gfx/interface/market/rothana/atte.dds"
+	}
+	spriteType = {
+		name = "GFX_tx130_card"
+		texturefile = "gfx/interface/market/rothana/tx130.dds"
+	}
+	spriteType = {
+		name = "GFX_juggernaut_card"
+		texturefile = "gfx/interface/market/rothana/juggernaut.dds"
+	}
+	spriteType = {
+		name = "GFX_rx200_card"
+		texturefile = "gfx/interface/market/rothana/rx200.dds"
+	}
+	spriteType = {
+		name = "GFX_atap_card"
+		texturefile = "gfx/interface/market/KUA/Atap.dds"
+	}
+##Sorosuub##
+	spriteType = {
+		name = "GFX_supportequipment_card"
+		texturefile = "gfx/interface/market/SoroSuub/supportequipment.dds"
+	}
+	spriteType = {
+		name = "GFX_aa5_card"
+		texturefile = "gfx/interface/market/SoroSuub/aa5.dds"
+	}
+##TEC##
+	spriteType = {
+		name = "GFX_armor_container"
+		texturefile = "gfx/interface/market/TEC/tec_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_infantry_container"
+		texturefile = "gfx/interface/market/TEC/tec_infantry.dds"
+	}
+	##Infantry
+	spriteType = {
+		name = "GFX_oom_card"
+		texturefile = "gfx/interface/market/TEC/oom.dds"
+	}
+	spriteType = {
+		name = "GFX_b1_card"
+		texturefile = "gfx/interface/market/TEC/b1.dds"
+	}
+	spriteType = {
+		name = "GFX_b2_card"
+		texturefile = "gfx/interface/market/TEC/b2.dds"
+	}
+	spriteType = {
+		name = "GFX_b3_card"
+		texturefile = "gfx/interface/market/TEC/b3.dds"
+	}
+	spriteType = {
+		name = "GFX_bx_card"
+		texturefile = "gfx/interface/market/TEC/bx.dds"
+	}
+	spriteType = {
+		name = "GFX_aqua_card"
+		texturefile = "gfx/interface/market/TEC/aqua.dds"
+	}
+	spriteType = {
+		name = "GFX_tactical_card"
+		texturefile = "gfx/interface/market/TEC/tactical.dds"
+	}
+	spriteType = {
+		name = "GFX_supertactical_card"
+		texturefile = "gfx/interface/market/TEC/supertactical.dds"
+	}
+	spriteType = {
+		name = "GFX_dwing_card"
+		texturefile = "gfx/interface/market/TEC/dwing.dds"
+	}
+	spriteType = {
+		name = "GFX_stap_card"
+		texturefile = "gfx/interface/market/TEC/stap.dds"
+	}
+	spriteType = {
+		name = "GFX_droideka_card"
+		texturefile = "gfx/interface/market/TEC/droideka.dds"
+	}
+	spriteType = {
+		name = "GFX_adsd_card"
+		texturefile = "gfx/interface/market/TEC/adsd.dds"
+	}
+	spriteType = {
+		name = "GFX_crab_card"
+		texturefile = "gfx/interface/market/TEC/crab.dds"
+	}
+	spriteType = {
+		name = "GFX_pac_card"
+		texturefile = "gfx/interface/market/TEC/pac.dds"
+	}
+	spriteType = {
+		name = "GFX_mtt_card"
+		texturefile = "gfx/interface/market/TEC/mtt.dds"
+	}
+	spriteType = {
+		name = "GFX_j1_card"
+		texturefile = "gfx/interface/market/TEC/j1.dds"
+	}
+	spriteType = {
+		name = "GFX_aat_card"
+		texturefile = "gfx/interface/market/TEC/aat.dds"
+	}
+	spriteType = {
+		name = "GFX_octuparramagna_card"
+		texturefile = "gfx/interface/market/TEC/octuparramagna.dds"
+	}
+	spriteType = {
+		name = "GFX_octuparracombat_card"
+		texturefile = "gfx/interface/market/TEC/octuparracombat.dds"
+	}
+	spriteType = {
+		name = "GFX_tankdroid_card"
+		texturefile = "gfx/interface/market/TEC/tankdroid.dds"
+	}
+	spriteType = {
+		name = "GFX_aat2_card"
+		texturefile = "gfx/interface/market/TEC/aat2.dds"
+	}
+	##Naval products
+	spriteType = {
+		name = "GFX_vulture_card"
+		texturefile = "gfx/interface/market/TEC/vulture.dds"
+	}
+	spriteType = {
+		name = "GFX_buzz_droids_card"
+		texturefile = "gfx/interface/market/TEC/buzz.dds"
+	}
+	spriteType = {
+		name = "GFX_nantex_card"
+		texturefile = "gfx/interface/market/TEC/nantex.dds"
+	}
+	spriteType = {
+		name = "GFX_c9979_card"
+		texturefile = "gfx/interface/market/TEC/c9979.dds"
+	}
+	spriteType = {
+		name = "GFX_rogue_card"
+		texturefile = "gfx/interface/market/TEC/rogue.dds"
+	}
+	spriteType = {
+		name = "GFX_bellbulab22_card"
+		texturefile = "gfx/interface/market/TEC/bellbulab22.dds"
+	}
+	spriteType = {
+		name = "GFX_trifighter_card"
+		texturefile = "gfx/interface/market/TEC/trifighter.dds"
+	}
+	spriteType = {
+		name = "GFX_advanceddroidbomber_card"
+		texturefile = "gfx/interface/market/TEC/advanceddroidbomber.dds"
+	}
+	spriteType = {
+		name = "GFX_hyena_card"
+		texturefile = "gfx/interface/market/TEC/hyena.dds"
+	}
+	spriteType = {
+		name = "GFX_bellbulab24_card"
+		texturefile = "gfx/interface/market/TEC/bellbulab24.dds"
+	}
+	spriteType = {
+		name = "GFX_hmpgunship_card"
+		texturefile = "gfx/interface/market/TEC/hmpgunship.dds"
+	}
+	#ships
+	spriteType = {
+		name = "GFX_marauder_card"
+		texturefile = "gfx/interface/market/TEC/marauder.dds"
+	}
+	spriteType = {
+		name = "GFX_tudestroyer_card"
+		texturefile = "gfx/interface/market/TEC/tudestroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_saboath_card"
+		texturefile = "gfx/interface/market/FED/saboath.dds"
+	}
+	spriteType = {
+		name = "GFX_bulwark_card"
+		texturefile = "gfx/interface/market/TEC/bulwark.dds"
+	}
+##Corellia##
+	spriteType = {
+		name = "GFX_logo_corellia"
+		texturefile = "gfx/interface/market/Corellia.dds"
+	}
+	spriteType = {
+		name = "GFX_consular_card"
+		texturefile = "gfx/interface/market/CLA/consular.dds"
+	}
+	spriteType = {
+		name = "GFX_c70_card"
+		texturefile = "gfx/interface/market/CLA/c70.dds"
+	}
+	spriteType = {
+		name = "GFX_cr70_card"
+		texturefile = "gfx/interface/market/CLA/cr70.dds"
+	}
+	spriteType = {
+		name = "GFX_cr90_card"
+		texturefile = "gfx/interface/market/CLA/cr90.dds"
+	}
+##Dac##
+	spriteType = {
+		name = "GFX_subjugator_card"
+		texturefile = "gfx/interface/market/DAC/subjugator.dds"
+	}
+##########Production Icons############
+	##Aratech##
+	spriteType = {
+		name = "GFX_74z_card_P"
+		texturefile = "gfx/interface/production/Aratech/uc_z74.dds"
+	}
+	spriteType = {
+		name = "GFX_barc_card_P"
+		texturefile = "gfx/interface/production/Aratech/uc_barc.dds"
+	}
+	##Blastech##
+	spriteType = {
+		name = "GFX_inf0_card_P"
+		texturefile = "gfx/interface/production/Blastech/inf0.dds"
+	}
+	spriteType = {
+		name = "GFX_inf1_card_P"
+		texturefile = "gfx/interface/production/Blastech/inf1.dds"
+	}
+	spriteType = {
+		name = "GFX_inf2_card_P"
+		texturefile = "gfx/interface/production/Blastech/inf2.dds"
+	}
+	spriteType = {
+		name = "GFX_inf3_card_P"
+		texturefile = "gfx/interface/production/Blastech/inf3.dds"
+	}
+	##Commerce Guild##
+	spriteType = {
+		name = "GFX_diamond_card_P"
+		texturefile = "gfx/interface/production/CMG/diamond.dds"
+	}
+	spriteType = {
+		name = "GFX_recusant_card_P"
+		texturefile = "gfx/interface/production/CMG/recusant.dds"
+	}
+	spriteType = {
+		name = "GFX_providence_card_P"
+		texturefile = "gfx/interface/production/CMG/providence.dds"
+	}
+	spriteType = {
+		name = "GFX_dsd1_card_P"
+		texturefile = "gfx/interface/production/CMG/dsd1.dds"
+	}
+	spriteType = {
+		name = "GFX_adsd_card_P"
+		texturefile = "gfx/interface/production/CMG/adsd.dds"
+	}
+	spriteType = {
+		name = "GFX_homing_spider_card_P"
+		texturefile = "gfx/interface/production/CMG/homing_spider.dds"
+	}
+	##Hoersch-kessel##
+	spriteType = {
+		name = "GFX_lucrehulk_freighter_card_P"
+		texturefile = "gfx/interface/production/FED/lucrehulk_freighter.dds"
+	}
+	spriteType = {
+		name = "GFX_lucrehulk_battleship_card_P"
+		texturefile = "gfx/interface/production/FED/lucrehulk_battleship.dds"
+	}
+	spriteType = {
+		name = "GFX_munificent_card_P"
+		texturefile = "gfx/interface/production/FED/munificent.dds"
+	}
+	##IBC##
+	spriteType = {
+		name = "GFX_lancer_card_P"
+		texturefile = "gfx/interface/production/IBC/lancer.dds"
+	}
+	spriteType = {
+		name = "GFX_hailfire_card_P"
+		texturefile = "gfx/interface/production/IBC/hailfire.dds"
+	}
+	##Kamino cloning##
+	spriteType = {
+		name = "GFX_phase_1_card_P"
+		texturefile = "gfx/interface/production/KAM/p1.dds"
+	}
+	spriteType = {
+		name = "GFX_phase_2_card_P"
+		texturefile = "gfx/interface/production/KAM/p2.dds"
+	}
+	spriteType = {
+		name = "GFX_clone_general_card_P"
+		texturefile = "gfx/interface/production/KAM/general.dds"
+	}
+	spriteType = {
+		name = "GFX_clone_admiral_card_P"
+		texturefile = "gfx/interface/production/KAM/admiral.dds"
+	}
+	##Kuat drive yards##
+	spriteType = {
+		name = "GFX_z95_card_P"
+		texturefile = "gfx/interface/production/KUA/z95.dds"
+	}
+	spriteType = {
+		name = "GFX_v19_card_P"
+		texturefile = "gfx/interface/production/KUA/v19.dds"
+	}
+	spriteType = {
+		name = "GFX_arc170_card_P"
+		texturefile = "gfx/interface/production/KUA/arc170.dds"
+	}
+	spriteType = {
+		name = "GFX_vwing_card_P"
+		texturefile = "gfx/interface/production/KUA/vwing.dds"
+	}
+	spriteType = {
+		name = "GFX_btlb_card_P"
+		texturefile = "gfx/interface/production/KUA/btlb.dds"
+	}
+	spriteType = {
+		name = "GFX_laat_card_P"
+		texturefile = "gfx/interface/production/KUA/laat.dds"
+	}
+	spriteType = {
+		name = "GFX_laati_card_P"
+		texturefile = "gfx/interface/production/KUA/laati.dds"
+	}
+	#Ships
+	spriteType = {
+		name = "GFX_pelta_card_P"
+		texturefile = "gfx/interface/production/KUA/pelta.dds"
+	}
+	spriteType = {
+		name = "GFX_arquintes_card_P"
+		texturefile = "gfx/interface/production/KUA/arquintes.dds"
+	}
+	spriteType = {
+		name = "GFX_acclamator_card_P"
+		texturefile = "gfx/interface/production/KUA/acclamator.dds"
+	}
+	spriteType = {
+		name = "GFX_acclamator2_card_P"
+		texturefile = "gfx/interface/production/KUA/acclamator2.dds"
+	}
+	spriteType = {
+		name = "GFX_venator_card_P"
+		texturefile = "gfx/interface/production/KUA/venator.dds"
+	}
+	spriteType = {
+		name = "GFX_victory_card_P"
+		texturefile = "gfx/interface/production/KUA/victory.dds"
+	}
+	spriteType = {
+		name = "GFX_mandator1_card_P"
+		texturefile = "gfx/interface/production/KUA/mandator.dds"
+	}
+	spriteType = {
+		name = "GFX_mandator2_card_P"
+		texturefile = "gfx/interface/production/KUA/mandator2.dds"
+	}
+	##Mandalmotors##
+	spriteType = {
+		name = "GFX_balutar_card_P"
+		texturefile = "gfx/interface/production/Mandalmotor/balutar.dds"
+	}
+	spriteType = {
+		name = "GFX_komrk_card_P"
+		texturefile = "gfx/interface/production/Mandalmotor/komrk.dds"
+	}
+	spriteType = {
+		name = "GFX_buirkalor_card_P"
+		texturefile = "gfx/interface/production/Mandalmotor/buirkalor.dds"
+	}
+	spriteType = {
+		name = "GFX_fang_card_P"
+		texturefile = "gfx/interface/production/Mandalmotor/fang.dds"
+	}
+	##Mon Calamari shipyards##
+	spriteType = {
+		name = "GFX_dreadnaught_card_P"
+		texturefile = "gfx/interface/production/moncal/dreadnaught.dds"
+	}
+	##Rendili##
+	spriteType = {
+		name = "GFX_carrack_card_P"
+		texturefile = "gfx/interface/production/rendili/carrack.dds"
+	}
+	spriteType = {
+		name = "GFX_hammerhead_card_P"
+		texturefile = "gfx/interface/production/rendili/hammerhead.dds"
+	}
+	##Rothana##
+	spriteType = {
+		name = "GFX_atrt_card_P"
+		texturefile = "gfx/interface/production/rothana/atrt.dds"
+	}
+	spriteType = {
+		name = "GFX_spha_card_P"
+		texturefile = "gfx/interface/production/rothana/spha.dds"
+	}
+	spriteType = {
+		name = "GFX_atte_card_P"
+		texturefile = "gfx/interface/production/rothana/atte.dds"
+	}
+	spriteType = {
+		name = "GFX_tx130_card_P"
+		texturefile = "gfx/interface/production/rothana/tx130.dds"
+	}
+	spriteType = {
+		name = "GFX_juggernaut_card_P"
+		texturefile = "gfx/interface/production/rothana/juggernaut.dds"
+	}
+	##Sorosuub##
+	spriteType = {
+		name = "GFX_supportequipment_card_P"
+		texturefile = "gfx/interface/production/SoroSuub/supportequipment.dds"
+	}
+	spriteType = {
+		name = "GFX_aa5_card_P"
+		texturefile = "gfx/interface/production/SoroSuub/aa5.dds"
+	}
+	##TEC##
+	##Infantry
+	spriteType = {
+		name = "GFX_oom_card_P"
+		texturefile = "gfx/interface/production/TEC/oom.dds"
+	}
+	spriteType = {
+		name = "GFX_b1_card_P"
+		texturefile = "gfx/interface/production/TEC/b1.dds"
+	}
+	spriteType = {
+		name = "GFX_b2_card_P"
+		texturefile = "gfx/interface/production/TEC/b2.dds"
+	}
+	spriteType = {
+		name = "GFX_bx_card_P"
+		texturefile = "gfx/interface/production/TEC/bx.dds"
+	}
+	spriteType = {
+		name = "GFX_tactical_card_P"
+		texturefile = "gfx/interface/production/TEC/tactical.dds"
+	}
+	spriteType = {
+		name = "GFX_dwing_card_P"
+		texturefile = "gfx/interface/production/TEC/dwing.dds"
+	}
+	spriteType = {
+		name = "GFX_stap_card_P"
+		texturefile = "gfx/interface/production/TEC/stap.dds"
+	}
+	spriteType = {
+		name = "GFX_droideka_card_P"
+		texturefile = "gfx/interface/production/TEC/droideka.dds"
+	}
+	spriteType = {
+		name = "GFX_adsd_card_P"
+		texturefile = "gfx/interface/production/CMG/adsd.dds"
+	}
+	spriteType = {
+		name = "GFX_crab_card_P"
+		texturefile = "gfx/interface/production/TEC/crab.dds"
+	}
+	spriteType = {
+		name = "GFX_pac_card_P"
+		texturefile = "gfx/interface/production/TEC/pac.dds"
+	}
+	spriteType = {
+		name = "GFX_mtt_card_P"
+		texturefile = "gfx/interface/production/TEC/mtt.dds"
+	}
+	spriteType = {
+		name = "GFX_j1_card_P"
+		texturefile = "gfx/interface/production/TEC/j1.dds"
+	}
+	spriteType = {
+		name = "GFX_aat_card_P"
+		texturefile = "gfx/interface/production/TEC/aat.dds"
+	}
+	spriteType = {
+		name = "GFX_octuparramagna_card_P"
+		texturefile = "gfx/interface/production/TEC/octuparramagna.dds"
+	}
+	spriteType = {
+		name = "GFX_octuparracombat_card_P"
+		texturefile = "gfx/interface/production/TEC/octuparracombat.dds"
+	}
+	spriteType = {
+		name = "GFX_tankdroid_card_P"
+		texturefile = "gfx/interface/production/TEC/tankdroid.dds"
+	}
+	spriteType = {
+		name = "GFX_aat2_card_P"
+		texturefile = "gfx/interface/production/TEC/aat2.dds"
+	}
+	##Naval products
+	spriteType = {
+		name = "GFX_vulture_card_P"
+		texturefile = "gfx/interface/production/TEC/vulture.dds"
+	}
+	spriteType = {
+		name = "GFX_c9979_card_P"
+		texturefile = "gfx/interface/production/TEC/c9979.dds"
+	}
+	spriteType = {
+		name = "GFX_rogue_card_P"
+		texturefile = "gfx/interface/production/TEC/rogue.dds"
+	}
+	spriteType = {
+		name = "GFX_bellbulab22_card_P"
+		texturefile = "gfx/interface/production/TEC/bellbulab22.dds"
+	}
+	spriteType = {
+		name = "GFX_trifighter_card_P"
+		texturefile = "gfx/interface/production/TEC/trifighter.dds"
+	}
+	spriteType = {
+		name = "GFX_advanceddroidbomber_card_P"
+		texturefile = "gfx/interface/production/TEC/advanceddroidbomber.dds"
+	}
+	spriteType = {
+		name = "GFX_hyena_card_P"
+		texturefile = "gfx/interface/production/TEC/hyena.dds"
+	}
+	spriteType = {
+		name = "GFX_bellbulab24_card_P"
+		texturefile = "gfx/interface/production/TEC/bellbulab24.dds"
+	}
+	spriteType = {
+		name = "GFX_hmpgunship_card_P"
+		texturefile = "gfx/interface/production/TEC/hmpgunship.dds"
+	}
+	#ships
+	spriteType = {
+		name = "GFX_marauder_card_P"
+		texturefile = "gfx/interface/production/TEC/marauder.dds"
+	}
+	spriteType = {
+		name = "GFX_tudestroyer_card_P"
+		texturefile = "gfx/interface/production/TEC/tudestroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_bulwark_card_P"
+		texturefile = "gfx/interface/production/TEC/bulwark.dds"
+	}
+	##Corellia##
+	spriteType = {
+		name = "GFX_consular_card_P"
+		texturefile = "gfx/interface/production/CLA/consular.dds"
+	}
+	spriteType = {
+		name = "GFX_c70_card_P"
+		texturefile = "gfx/interface/production/CLA/c70.dds"
+	}
+	spriteType = {
+		name = "GFX_cr70_card_P"
+		texturefile = "gfx/interface/production/CLA/cr70.dds"
+	}
+	spriteType = {
+		name = "GFX_cr90_card_P"
+		texturefile = "gfx/interface/production/CLA/cr90.dds"
+	}
+	##Dac##
+	spriteType = {
+		name = "GFX_subjugator_card_P"
+		texturefile = "gfx/interface/production/DAC/subjugator.dds"
+	}
+	spriteType = {
+		name = "GFX_market_button"
+		texturefile = "gfx/interface/market/market_button.dds"
+	}
+	spriteType = {
+		name = "GFX_production_topbar"
+		texturefile = "gfx/interface/production/production_topbar.dds"
+	}
+}

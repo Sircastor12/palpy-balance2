@@ -1,0 +1,88 @@
+# All equipment based on medium tank chassis
+equipments = {
+
+	cmg_tank_arch = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_medium_tank_equipment		
+		is_buildable = no
+		is_convertable = yes
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			tank_gun_upgrade
+		}
+		
+		#Misc Abilities
+		maximum_speed = 20
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 64
+		armor_value = 100
+
+		#Offensive Abilities
+		soft_attack = 50
+		hard_attack = 30
+		ap_attack = 82
+		air_attack = 1
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 12 
+		resources = {
+			#oil = 1
+			tungsten = 2
+			steel = 2
+		}
+		
+		fuel_consumption = 3.6
+	}
+
+
+	# 1941
+	OG9_equipment = {
+		year = 1941
+
+		can_be_produced = {
+			tag = CMG
+			tag = TEC
+		}
+
+		archetype = cmg_tank_arch
+		priority = 50
+		visual_level = 1
+		is_convertable = yes
+						
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 35
+		breakthrough = 35
+		hardness = 1.0
+		armor_value = 6
+
+		#Offensive Abilities
+		soft_attack = 35
+		hard_attack = 15
+		ap_attack = 2
+		air_attack = 1
+
+		build_cost_ic = 20
+		resources = {
+			#oil = 1
+			tungsten = 2
+			steel = 3
+		}	
+	}
+}

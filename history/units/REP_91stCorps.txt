@@ -1,0 +1,139 @@
+division_template = {
+	name = "91st Mobile Reconnaissance Corps"
+	is_locked = yes
+
+	regiments = {
+		REP_91_clone = { x = 0 y = 0 }
+		REP_91_clone = { x = 0 y = 1 }
+		REP_91_clone = { x = 0 y = 2 }
+		REP_91_clone = { x = 0 y = 3 }
+   		REP_91_clone = { x = 1 y = 0 }
+		REP_91_clone = { x = 1 y = 1 }
+		REP_91_clone = { x = 1 y = 2 }
+		BARC_unit = { x = 2 y = 0 }
+		BARC_unit = { x = 2 y = 1 }
+		BARC_unit = { x = 2 y = 2 }
+	}
+	support = {
+		clone_recon = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "91st Lightning Squadron"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Razor Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Neyo Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Ponds Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Stak Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Guard Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Razor Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Lost Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Maze Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Soul Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Birth Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Crash Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Built Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Mirror Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Fury Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "91st Sound Company"
+		location = 10463 #Kamino
+		division_template = "91st Mobile Reconnaissance Corps"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

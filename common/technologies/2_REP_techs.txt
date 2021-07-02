@@ -1,0 +1,850 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+	#REP Level 1
+	consular_tech = {
+
+		enable_equipments = {
+			consular_equipment
+		}
+
+		enable_subunits = {
+			consular_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	z95_tech = {
+
+		enable_equipments = {
+			z95_fighter_equip
+		}
+
+		enable_subunits = {
+			z95_fighter
+		}
+		
+		path = {
+			leads_to_tech = v19_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rocketlauncher_tech = {
+
+		enable_equipments = {
+			rocketlauncher_equipment
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rocketlauncher_unit_tech = {
+
+		enable_subunits = {
+			rocketlauncher_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#REP Level 2
+	venator_tech = {
+
+		enable_equipments = {
+			venator_equipment
+		}
+
+		enable_subunits = {
+			venator_unit
+		}
+		
+		path = {
+			leads_to_tech = victory_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 10 }
+		}
+		folder = {
+			name = ren_folder
+			position = { x = 1 y = 14 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	acclamator_tech = {
+
+		enable_equipments = {
+			acclamator_1_equipment
+		}
+
+		enable_subunits = {
+			acclamator_unit
+		}
+		
+		path = {
+			leads_to_tech = acclamator_II_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 7 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pelta_tech = {
+
+		enable_equipments = {
+			pelta_equipment
+		}
+
+		enable_subunits = {
+			pelta_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	republic_frigate_tech = {
+
+		enable_equipments = {
+			republic_frigate_equipment
+		}
+
+		enable_subunits = {
+			rep_frigate_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	v19_tech = {
+
+		enable_equipments = {
+			v19_fighter_equip
+		}
+
+		enable_subunits = {
+			v19_fighter
+		}
+		
+		path = {
+			leads_to_tech = arc170_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 6 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	laat_tech = {
+
+		enable_equipments = {
+			laati_equip
+		}
+
+		enable_subunits = {
+			laat_cas_transport
+		}
+		
+		path = {
+			leads_to_tech = laati_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 4 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#laati_tech = {
+	#	enable_equipments = {
+	#		laati_equip
+	#	}
+	#	enable_subunits = {
+	#		laat_cas_transport
+	#	}
+	#	
+	#	path = {
+	#		research_cost_coeff = 1
+	#	}		
+	#	research_cost = 1.5
+	#	start_year = 977
+	#	folder = {
+	#		name = kua_folder
+	#		position = { x = 0 y = 7 }
+	#	}
+	#
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	dreadnaught_tech = {
+
+		enable_equipments = {
+			dreadnaught_equipment
+		}
+
+		enable_subunits = {
+			dreadnaught_unit
+		}
+		
+		path = {
+			leads_to_tech = carrack_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 970
+		folder = {
+			name = ren_folder
+			position = { x = 0 y = -2 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ywing_tech = {
+
+		enable_equipments = {
+			blty_bomber_equip
+		}
+
+		enable_subunits = {
+			blty_bomber
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 10 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	p1_clone_tech = {
+
+		enable_equipments = {
+			p1_clone_equip
+		}
+
+		enable_subunits = {
+			p1_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	REP_rocket_launchers = {
+		enable_equipments = {
+			rocketlauncher_equipment
+		}
+
+		enable_subunits = {
+			rocketlauncher_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	atte_tech = {
+
+		enable_equipments = {
+			atte_equipment
+		}
+
+		enable_subunits = {
+			atte_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ATOT_tech = {
+
+		enable_equipments = {
+			ATOT_equipment
+		}
+
+		enable_subunits = {
+			ATOT_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ATUT_tech = {
+
+		enable_equipments = {
+			ATUT_equipment
+		}
+
+		enable_subunits = {
+			ATUT_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SPHA_tech = {
+
+		enable_equipments = {
+			SPHA_equipment
+		}
+
+		enable_subunits = {
+			SPHA_unit
+			SPHA_brigade
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	av7_tech = {
+
+		enable_equipments = {
+			av7_aa_equip
+			av7_at_equip
+		}
+
+		enable_subunits = {
+			av7_aa_unit
+			av7_aa_brigade
+			av7_at_unit
+			av7_at_brigade
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	atrt_tech = {
+
+		enable_equipments = {
+			atrt_equipment
+		}
+
+		enable_subunits = {
+			atrt_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	barc_tech = {
+
+		enable_equipments = {
+			BARC_equipment
+		}
+
+		enable_subunits = {
+			BARC_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rx200_tech = {
+
+		enable_equipments = {
+			rx200_equipment
+		}
+
+		enable_subunits = {
+			rx200_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#REP Level 3
+	victory_tech = {
+
+		enable_equipments = {
+			victory_equipment
+		}
+
+		enable_subunits = {
+			victory_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 15 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stealth_corvette_tech = {
+
+		enable_equipments = {
+			stealthship_equipment
+		}
+
+		enable_subunits = {
+			stealthship_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 980
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	arquintes_tech = {
+
+		enable_equipments = {
+			arquintes_equipment
+		}
+
+		enable_subunits = {
+			arquintes_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 10 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mandator_II_tech = {
+
+		enable_equipments = {
+			mandator_equipment
+		}
+
+		enable_subunits = {
+			mandator_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 10 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	arc170_tech = {
+
+		enable_equipments = {
+			arc_fighter_equip
+		}
+
+		enable_subunits = {
+			arc_fighter 
+		}
+		
+		path = {
+			leads_to_tech = vwing_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 9 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	vwing_tech = {
+
+		enable_equipments = {
+			vwing_fighter_equip
+		}
+
+		enable_subunits = {
+			vwing_fighter
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 981
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 15 }
+		}	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	p2_clone_tech = {
+
+		enable_equipments = {
+			p2_clone_equip
+		}
+
+		enable_subunits = {
+			p2_clone
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+	
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	jugg_tech = {
+
+		enable_equipments = {
+			jugg_equipment
+		}
+
+		enable_subunits = {
+			jugg_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tx130_tech = {
+
+		enable_equipments = {
+			tx130_equipment
+		}
+
+		enable_subunits = {
+			tx130_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#REP Level 4
+	stardestroyer_tech = {
+
+		enable_equipments = {
+			stardestroyer_equipment
+		}
+
+		enable_subunits = {
+			stardestroyer_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tiefighter_tech = {
+
+		enable_equipments = {
+			tiefighter_equipment
+		}
+
+		enable_subunits = {
+			tiefighter_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tiebomber_tech = {
+
+		enable_equipments = {
+			tiebomber_equipment
+		}
+
+		enable_subunits = {
+			tiebomber_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	acclamator_II_tech = {
+
+		enable_equipments = {
+			acclamator_2_equipment
+		}
+
+		enable_subunits = {
+			acclamator_2_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = kua_folder
+			position = { x = 0 y = 13 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stormtrooper_tech = {
+
+		enable_equipments = {
+			storm_trooper_equip
+		}
+
+		enable_subunits = {
+			storm_trooper
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

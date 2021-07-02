@@ -1,0 +1,146 @@
+add_namespace = cis
+#DEBUG EVENT (If you ever need to form the CIS in the first bookmark)
+news_event = {
+	id = cis.1
+	title = "The Raxus Address"
+	desc = cis.1.desc
+	picture = GFX_raxus
+	major = yes
+
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	immediate = {
+		CIS = {
+			transfer_state = 16
+		}
+	}
+}
+
+#Flavour Event that happens soon after the blockade of Naboo
+country_event = {
+	id = cis.2
+	title = "The Raxus Address"
+	desc = cis.2.desc
+	picture = GFX_raxus
+	major = yes
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = nabooblockaded
+	}
+	
+	immediate = {
+		news_event = {
+			id = cis.1
+			days = 2
+			random = 20
+		}
+	}
+}
+
+news_event = { #Players make a decision. I'll code in some stuff to make sure the AI does the default action
+	id = cis.3
+	title = "Dooku Calls the Galaxy to Arms!"
+	desc = "Across the galaxy, billions upon billions will hear Dooku's call to action against the oppressive Republic regime."
+	picture = GFX_raxus
+	major = yes
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		set_global_flag = separatistrevolutiontriggered
+	}
+
+	option = { #Option keeps planet loyalist
+	name = "[root.getname] will never betray the Republic!"
+	custom_effect_tooltip = youjointherep
+hidden_effect = {
+	remove_ideas = {
+		cis_member
+	}
+	add_ideas = {
+		standwiththerepublic
+		rep_member
+	}
+	set_country_flag = republicmember
+	clr_country_flag = lefthecis
+	clr_country_flag = joinedthecis
+	clr_country_flag = succeededfromrep
+}
+}
+
+	option = {   #Option Turns the planet separatist
+		name = "[root.getname] will side with the Confederacy!"
+		trigger = {
+			#check_variable = {
+				#var = successionpoints
+				#value = 1
+				#compare = greater_than
+			#}
+		}
+		custom_effect_tooltip = youjointhecis
+		hidden_effect = {
+		remove_ideas = {
+			rep_member
+		}
+		add_ideas = {
+			cis_member
+		}
+		set_country_flag = joinedthecis
+		set_country_flag = succeededfromrep
+		clr_country_flag = lefthecis
+		clr_country_flag = republicmember
+	}
+
+	#Changing Government
+	set_politics = {
+		ruling_party = fascism
+	}
+	set_popularities = {
+		democratic = 0
+		neutrality = 0
+		fascism = 100
+		communism = 0
+	}
+	set_party_name = { 
+		ideology = fascism 
+		long_name = separatistcollab_long 
+		name = separatistcollab 
+	}
+
+	}
+
+	option = { #Option keeps planet loyalist
+		name = "[root.getname] will continue to bide it's time"
+		custom_effect_tooltip = remainneutralfornow
+	}
+	}
+
+country_event = { #This is for the CIS player, just so he knows that the call to arms has been sent - and he will get a response soon
+	id = cis.4
+	title = "Transmission Sent"
+	desc = "Thanks to millions of separatist comrades across the galaxy, we've been able to once again infiltrate the galactic holofeed network and send out a call to arms to the nations of the galaxy."
+	picture = GFX_raxus
+	major = no
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		news_event = {
+			id = cis.3
+			days = 2
+			random = 20
+		}
+	}
+}

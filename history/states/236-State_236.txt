@@ -1,0 +1,41 @@
+state={
+	id=236
+	name="STATE_236"
+	provinces={
+		72 243 246 331 1431 1669 1678 2067 2171 2207 2502 2516 2586 3301 3975 4303 5068 7392 7395 7421 7454 7471 7477 7479 7487 7494 7498 7499 7513 7516 7535 7541 7548 7561 7577 7592 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 0
+		chromium = 0
+	}
+
+  	history = {
+		owner = PAM
+		add_core_of = QUA
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+			corporate_factory = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			7498 50
+		}
+	}
+}
+

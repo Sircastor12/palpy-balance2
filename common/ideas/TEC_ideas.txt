@@ -1,0 +1,267 @@
+ideas = {
+	country = {
+		battledroids = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			on_add = {
+				set_technology = {
+					battle_droid_1 = 1
+				}
+			}
+		}
+		tec_shipyards_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		tec_shipyards_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				political_power_gain = 0.1
+				spotting_chance = 0.05
+			}
+		}
+		improved_droid_models_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				army_morale_factor = 0.06
+				army_attack_factor = 0.06
+			}
+		}
+		improved_droid_models_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				army_morale_factor = 0.12
+				army_attack_factor = 0.12
+			}
+		}
+		tec_droid_manufacturers_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		tec_droid_manufacturers_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.1
+			}
+		}
+		tec_droid_manufacturers_idea_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.15
+			}
+		}
+		tec_further_control_the_companies_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.2
+				war_support_weekly = 0.03
+			}
+		}
+		tec_delegate_power_to_the_companies_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_weekly = 0.03
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		tec_research_and_development_wing_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		tec_rally_the_populace_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				fascism_drift = 0.15
+			}
+		}
+		tec_rally_the_populace_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				fascism_drift = 0.15
+				democratic_drift = -0.15
+			}
+		}
+		tec_prediction_algorithm = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				planning_speed = 0.25
+				max_planning = 0.25
+			}
+			targeted_modifier = {
+				tag = REP
+				attack_bonus_against = 0.1
+			}
+		}
+		tec_paying_ibc_loans = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.4
+			}
+		}
+		integrated_with_seppy_council_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				fascism_drift = 0.10
+				political_advisor_cost_factor = -0.20	
+				max_command_power = 50
+			}
+		}
+		tec_integrated_with_seppy_council_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				fascism_drift = 0.10
+				political_advisor_cost_factor = -0.20
+				max_command_power = 50
+				industrial_capacity_factory = 0.1
+				political_power_gain = 0.3	
+			}
+		}
+	}
+}

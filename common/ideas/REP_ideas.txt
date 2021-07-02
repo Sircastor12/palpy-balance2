@@ -1,0 +1,724 @@
+ideas = {
+	country = {
+		weakened_executive = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_weakened_executive
+			
+			modifier = {
+				stability_factor = -0.3  
+				political_power_gain = -0.5
+			}
+		}
+		judicial_police_reform = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+		1000_years_peace = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				stability_factor = 0.35  
+				war_support_weekly = -0.005 
+				mobilization_speed = -0.1
+				conscription_factor = -0.1
+			}
+		}
+		lower_levels = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_lower_levels
+			
+			modifier = {
+				production_speed_buildings_factor = -0.20
+				production_factory_max_efficiency_factor = -0.10
+			}
+		}
+		decentralized_govt = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_decentralized_govt
+			
+			modifier = {
+				drift_defence_factor = -0.25	
+				resistance_target = 0.05	
+			}
+		}
+		technologicalplateau = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_technologicalplateau
+			
+			modifier = {
+				research_speed_factor = -0.10
+			}
+		}
+		unrestricted_crime = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_unrestricted_crime
+			
+			modifier = {
+				stability_factor = -0.2  
+				political_power_gain = -0.25
+			}
+		}
+		unrestricted_crime_reduced = {
+			allowed = {
+				always = no
+			}
+			 
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				stability_factor = -0.1  
+				political_power_gain = -0.10
+			}
+		}
+
+		rep_infra = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		rep_naval_academy = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				navy_max_range_factor = 0.05
+				experience_gain_navy = 0.05
+				naval_speed_factor = 0.05
+			}
+		}
+
+		budgetreduced = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+			}
+		}
+		universitycrackdown = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+		holofeedcrackdown = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				stability_weekly = -0.001	
+			}
+		}
+		surveillancestate = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				resistance_damage_to_garrison = -0.1	
+			}
+		}
+		looming_enemy = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				stability_factor = -0.20
+			}
+		}
+		internal_corruption = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_internal_corruption
+			on_add = {
+				set_country_flag = internal_corruption
+			}
+			modifier = {
+				stability_factor = -0.3
+            	political_power_gain = -0.5
+				custom_modifier_tooltip = cost_20day_tt
+			}
+		}
+		core_investments = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_internal_corruption
+			
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		internal_corruption_reduced = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_internal_corruption
+			
+			on_add = {
+				set_country_flag = internal_corruption_reduced
+			}
+
+			modifier = {
+				stability_factor = -0.2
+            	political_power_gain = -0.25
+				custom_modifier_tooltip = cost_15day_tt
+			}
+		}
+		internal_corruption_reduced_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_internal_corruption
+			
+			on_add = {
+				set_country_flag = internal_corruption_reduced_2				
+			}
+
+			modifier = {
+				stability_factor = -0.1
+            	political_power_gain = -0.1
+				custom_modifier_tooltip = cost_10day_tt
+			}
+		}
+		core_world_markets = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				political_power_gain = 1.20
+			}
+		}
+		equal_taxation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 1.3
+
+			}
+		}
+		nebulon_gone = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+			drift_defence_factor = 0.05
+			democratic_drift = 0.05
+			}
+		}
+		democratic_arsenal = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+			drift_defence_factor = 0.05
+			army_morale_factor = 0.1
+			}
+		}
+		outerrim_taxation = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 2.0
+
+			}
+		}
+		outerrim_taxrec = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -0.3
+
+			}
+		}
+		aggressive_expansion = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+				training_time_army_factor = 0.05
+				experience_gain_army_factor = -0.10
+			}
+		}
+		budget_savings = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+			political_power_gain = 1.5
+			}
+		}
+		assertive_control = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+			command_power_gain = 0.25
+			resistance_target = -0.10
+			}
+		}
+		trade_protected = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = unknown
+			
+			modifier = {
+			political_power_gain = 0.25
+			convoy_escort_efficiency = 0.10
+			}
+		}
+
+		rep_defense = {
+		    allowed = {
+		        always = no
+		        original_tag = REP
+		    }
+		    available = {
+		    }
+		    modifier = {
+		        army_defence_factor = 0.1
+		    }
+		}	
+
+		corporate_yeet = {
+
+			allowed = {
+				always = no 
+			}
+
+			removal_cost = -1
+
+			picture = unknown
+			modifier = {
+				trade_opinion_factor = 0.10
+			}
+		}
+	}
+	political_advisor = {
+		orn_free_taa = {
+			
+			allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+			     trade_opinion_factor = 0.60
+				 consumer_goods_factor = -0.02	
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		mas_amedda = {
+			
+			allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				defensive_war_stability_factor = 0.2
+				offensive_war_stability_factor = 0.2
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		aang = {
+			
+			allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+				add_war_support = 0.10
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		sly_moore = {
+			
+			allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				political_power_factor = 0.30	
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		jar_jar_binks = {
+			
+			allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+				add_stability = 0.02
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.02
+				mobilization_speed = 0.02
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		bail_organa = {
+			
+			allowed = {
+				always = no 
+			}
+
+			available = {
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		amidala = {
+
+			allowed = {
+				original_tag = REP
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.10
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		bail_antilles = {
+
+			allowed = {
+				original_tag = REP
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				political_power_gain = 0.50
+			}
+
+			ai_will_do = {
+				base = 5
+			}
+		}
+
+	}
+	theorist = {
+		yularen = {
+			ledger = navy
+
+			allowed = {
+				original_tag = REP
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+
+			traits = { naval_theorist }
+		}
+		tarkin = {
+			ledger = navy
+
+			allowed = {
+				original_tag = REP
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+
+			traits = { naval_theorist }
+		}
+	}
+
+	air_chief  = {
+		anakin = {
+			allowed = {
+				original_tag = REP
+			}
+			available = {
+				has_completed_focus = REP_the_chosen_one
+			}
+			traits = { air_air_combat_training_3 }
+			ai_will_do = {
+				factor = 0.5
+				}
+			}
+		}
+	navy_chief  = {
+		yularen_chief = {
+			allowed = {
+				original_tag = REP
+			}
+			traits = { navy_chief_decisive_battle_2 }
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		rothana_heavy_engineering = {
+			allowed = {
+				original_tag = REP
+			}
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	high_command = {
+
+		mace_windu = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = REP
+			}
+			available = {
+				has_completed_focus = REP_jedi_generalship_program
+			}
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		kit_fisto = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = REP
+			}
+			available = {
+				has_completed_focus = REP_jedi_generalship_program
+			}
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+	}
+}

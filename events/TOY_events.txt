@@ -1,0 +1,28 @@
+############################
+## Toydarian Neutrality
+############################
+
+
+add_namespace = TOY
+
+
+
+
+news_event = { #Toydaria event chain
+	id = TOY.1
+	title =  "Toydaria's stance on the war"
+	desc =  "The question of of Toydaria's neutrality is rising as we are in one of the most central areas of the galaxy. This has made Toydaria a very valuable place for both sides"
+	picture = GFX_bmc1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  "Let us contact the Jedi about a possible alliance" 
+		
+		hidden_effect = {
+		    REP = {
+			    news_event = { id = bmc.2 days = 4 } #Yoda is called to Toydaria
+		    }
+		}
+	}
+}

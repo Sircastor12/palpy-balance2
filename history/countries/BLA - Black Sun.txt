@@ -1,0 +1,93 @@
+capital = 465
+
+oob = "BLA_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_HUT = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+set_country_flag = no_ideas
+
+add_ideas = {
+	all_adults_serve
+	black_market_economy
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 100
+		neutrality = 0
+		fascism = 0  
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 100
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Xomit Grunseit"
+	desc = "Leader of The Black Sun"
+	picture = "gfx/leaders/BLA/XomitGrunseit.dds"
+	expire = "2020.1.1"
+	ideology = marxism
+}
+
+create_field_marshal = {
+	name = "Xomit Grunseit"
+	picture = "XomitGrunseit.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+	}
+
+create_corps_commander = {
+	name = "Ziton Moj"
+	portrait_path = "gfx/leaders/BLA/ZitonMoj.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tost Ged"
+	portrait_path = "gfx/leaders/BLA/TostGed.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

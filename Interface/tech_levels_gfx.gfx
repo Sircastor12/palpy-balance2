@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_CIS_tech_1"
+		texturefile = "gfx/tech_levels/CIS_tech_1.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_tech_2"
+		texturefile = "gfx/tech_levels/CIS_tech_2.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_tech_3"
+		texturefile = "gfx/tech_levels/CIS_tech_3.dds"
+	}
+	spriteType = {
+		name = "GFX_CIS_tech_4"
+		texturefile = "gfx/tech_levels/CIS_tech_4.dds"
+	}
+	spriteType = {
+		name = "GFX_REP_tech_1"
+		texturefile = "gfx/tech_levels/REP_tech_1.dds"
+	}
+	spriteType = {
+		name = "GFX_REP_tech_2"
+		texturefile = "gfx/tech_levels/REP_tech_2.dds"
+	}
+	spriteType = {
+		name = "GFX_REP_tech_3"
+		texturefile = "gfx/tech_levels/REP_tech_3.dds"
+	}
+	spriteType = {
+		name = "GFX_REP_tech_4"
+		texturefile = "gfx/tech_levels/REP_tech_4.dds"
+	}
+}

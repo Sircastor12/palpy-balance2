@@ -1,0 +1,42 @@
+state={
+	id=61
+	name="STATE_61"
+	provinces={
+		1103 4534 10356 10357 10362 10369 10373 10377 10385 10395 10425 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=1
+		chromium=0
+	}
+
+  	history = {
+		owner=KAM
+		add_core_of = KAM
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+			corporate_factory = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

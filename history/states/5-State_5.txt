@@ -1,0 +1,41 @@
+state={
+	id=5
+	name="STATE_5"
+	provinces={
+		898 1318 1691 2176 2472 2957 3046 3636 3750 4394 5415 5416 5419 5428 5431 5433 5435 5441 5449 
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IBC
+		add_core_of = IBC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

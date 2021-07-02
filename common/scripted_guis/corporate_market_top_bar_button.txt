@@ -1,0 +1,27 @@
+scripted_gui = {
+
+	galactic_corporate_market_init = {
+		context_type = player_context
+		
+		window_name = "corporate_market_init_container"
+		
+		visible = {
+            is_market_corporation = yes
+		}
+		
+		effects = {
+			corporate_market_init_bg_click = {
+				if = {
+					limit = {
+						has_country_flag = production_screen_open
+					}
+					clr_country_flag = production_screen_open
+				}
+				else = {
+					set_country_flag = production_screen_open
+				}
+			}
+		}
+	}   
+}
+

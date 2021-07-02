@@ -1,0 +1,147 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = { # Senate Faction Name
+	name = senatefactionnoun
+	text = {
+		trigger = {
+			has_country_flag = corefaction
+		}
+		localization_key = rep_politics_innerrim_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = rimfaction
+		}
+		localization_key = rep_politics_outerrim_name
+	}
+  }
+
+defined_text = { # Senate Faction Adjective
+	name = senatefactionadj
+	text = {
+		trigger = {
+			has_country_flag = corefaction
+		}
+		localization_key = rep_politics_innerrim_adj
+	}
+	text = {
+		trigger = {
+			has_country_flag = rimfaction
+		}
+		localization_key = rep_politics_outerrim_adj
+	}
+}
+
+defined_text = { # Senate Subfaction Name (Core Faction)
+	name = senatesubfactionname
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_coreprogressive
+		}
+		localization_key = rep_rimfaction_coreprogressive_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_extreme
+		}
+		localization_key = rep_rimfaction_extreme_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_centrist
+		}
+		localization_key = rep_rimfaction_centrist_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_progressive
+		}
+		localization_key = rep_rimfaction_progressive_name
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_moderate
+		}
+		localization_key = rep_rimfaction_moderate_name
+	}
+}
+
+defined_text = { # Senate Subfaction Description (Core Faction)
+	name = senatesubfactiondesc
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_coreprogressive
+		}
+		localization_key = rep_rimfaction_coreprogressive_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_extreme
+		}
+		localization_key = rep_rimfaction_extreme_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_centrist
+		}
+		localization_key = rep_rimfaction_centrist_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_progressive
+		}
+		localization_key = rep_rimfaction_progressive
+	}
+	text = {
+		trigger = {
+			has_country_flag = member_rimfaction_moderate
+		}
+		localization_key = rep_rimfaction_moderate_desc
+	}
+}
+
+defined_text = { # Senate Faction Name
+	name = whatsenate
+	text = {
+		trigger = {
+			OR = {
+				has_idea = REP_member_prewar
+				has_idea = REP_member
+			}
+		}
+		localization_key = rep_senate
+	 }
+  }
+
+  defined_text = { # Senate Faction Name
+	name = actinprogress
+	text = {
+		trigger = {
+			has_global_flag = actone
+		}
+		localization_key = rep_act_1_name
+	}
+  }
+
+  defined_text = { # Senate Faction Name
+  name = socialpolscore
+  text = {
+	  localization_key = polsoc
+  }
+}
+
+defined_text = { # Senate Faction Name
+  name = statepolscore
+  text = {
+	  localization_key = polsta
+  }
+}
+  

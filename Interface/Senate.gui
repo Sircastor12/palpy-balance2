@@ -1,0 +1,619 @@
+guiTypes = {
+	containerWindowType = {
+		name = "open_league_of_nations_window"
+		position = { x = -35 y = -272 }
+		size = { width = 50 height = 50 }
+		orientation = lower_right
+
+		fade_time = 2000
+		fade_type = linear
+	}
+	containerWindowType = {
+			name = "alignment_chart"
+			position = { x = 0 y = 0 }
+			size = { width = 330 height = 70 }
+			clipping = no
+
+		buttonType = { 
+			name = "button_open"
+			position = { x = 1840 y = 805 }
+			quadTextureSprite ="GFX_alignment_button"
+			buttonText = chart_button_label
+		}
+
+
+		iconType = {
+			name = "open_league_of_nations_window_icon_glow_frame"
+			spriteType = "GFX_red_alert_glow"
+			position = { x = 1840 y = 805 }
+			scale = 0.9
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "league_of_nations_window"
+		position = { x = -20 y = -20 }
+		size = { width = 580 height = 520 }
+		orientation = center
+		origo = center
+		moveable = yes
+
+		fade_time = 300
+		fade_type = linear
+		click_to_front = yes
+		clipping = no
+
+		background = {
+			name = "league_of_nations_window_background"
+			spriteType = "GFX_league_of_nations_window"
+		}
+
+		buttonType = {
+			name = "league_of_nations_info_button"
+			spriteType = "GFX_league_of_nations_info_button"
+			position = { x = 568 y = 49 }
+			web_link = "https://starwars.fandom.com/wiki/Galactic_Republic"
+			pdx_tooltip = "OPEN_LEAGUE_OF_NATIONS_WIKI_PAGE"
+			scale = 1.5
+		}
+
+		buttonType = {
+			name = "league_of_nations_button"
+			spriteType = "GFX_senate_button"
+			position = { x = 431 y = 70 }
+			pdx_tooltip = "OPEN_LEAGUE_OF_NATIONS_FOCUSES"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "senate_corporate_button"
+			spriteType = "GFX_senate_corporate_button"
+			position = { x = 120 y = 390 }
+			pdx_tooltip = "corporate_button_TOOLTIP"
+			scale = 1
+		}
+		buttonType = {
+			name = "senate_outerrim_button"
+			spriteType = "GFX_senate_outerrim_button"
+			position = { x = 590 y = 390 }
+			pdx_tooltip = "outerrim_button_TOOLTIP"
+			scale = 1
+		}
+		buttonType = {
+			name = "senate_military_button"
+			spriteType = "GFX_senate_military_button"
+			position = { x = 808 y = 390 }
+			pdx_tooltip = "military_button_TOOLTIP"
+			scale = 1
+		}
+		buttonType = {
+			name = "senate_peace_button"
+			spriteType = "GFX_senate_peace_button"
+			position = { x = 345 y = 390 }
+			pdx_tooltip = "peace_button_TOOLTIP"
+			scale = 1
+		}
+
+		buttonType = {
+			name = "leader_flag"
+			quadTextureSprite = "GFX_shield_medium"
+			position = { x = 459 y = 259 }
+			pdx_tooltip = "LEAGUE_OF_NATIONS_LEADER"
+			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_FLAG_OVERLAY_BUTTON_TT"
+		}
+		
+
+		instantTextBoxType = {
+			name = "republic_senate_title"
+			position = { x = 378 y = 18 }
+			font = "hoi_30header"
+			maxWidth = 240
+			maxHeight = 10
+			text = "LEAGUE_OF_NATIONS_TITLE"
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "republic_senate_members_title"
+			position = { x = 72 y = 62 }
+			font = "hoi_18mbs"
+			maxWidth = 265
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_MEMBERS_TITLE"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_MEMBERS_LIST_DESC"
+		}
+		containerWindowType = {
+			name = "senate_corporations"
+			position = { x = 67 y = 470 }
+			size = { width = 187 height = 275 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			verticalScrollbar = "league_of_nations_slider"
+
+			background = {
+				name = "league_of_nations_members_list_background"
+			}
+
+			# gridboxtype of members
+			gridboxtype = {
+				name = "senate_corporations_list_gridbox"
+				position = { x = 0 y = 0 }
+				size = { width = 259 height = 37 }
+				slotsize = { width = 259 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		containerWindowType = {
+			name = "senate_peace"
+			position = { x = 291 y = 470 }
+			size = { width = 187 height = 275 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			verticalScrollbar = "league_of_nations_slider"
+
+			background = {
+				name = "league_of_nations_members_list_background"
+			}
+
+			# gridboxtype of members
+			gridboxtype = {
+				name = "senate_peace_list_gridbox"
+				position = { x = 0 y = 0 }
+				size = { width = 259 height = 37 }
+				slotsize = { width = 259 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		containerWindowType = {
+			name = "senate_outer_rim"
+			position = { x = 537 y = 470 }
+			size = { width = 187 height = 275 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			verticalScrollbar = "league_of_nations_slider"
+
+			background = {
+				name = "league_of_nations_members_list_background"
+			}
+
+			# gridboxtype of members
+			gridboxtype = {
+				name = "senate_outer_rim_list_gridbox"
+				position = { x = 0 y = 0 }
+				size = { width = 259 height = 37 }
+				slotsize = { width = 259 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		containerWindowType = {
+			name = "senate_militarist"
+			position = { x = 755 y = 470 }
+			size = { width = 187 height = 275 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			verticalScrollbar = "league_of_nations_slider"
+
+			background = {
+				name = "league_of_nations_members_list_background"
+			}
+			# gridboxtype of members
+			gridboxtype = {
+				name = "senate_militarist_list_gridbox"
+				position = { x = 0 y = 0 }
+				size = { width = 259 height = 37 }
+				slotsize = { width = 259 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_current_voting_title"
+			position = { x = 670 y = 62 }
+			font = "hoi_18mbs"
+			maxWidth = 265
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_CURRENT_VOTING_TITLE"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_current_voting_desc"
+			position = { x = 670 y = 120 }
+			font = "hoi_18mbs"
+			maxWidth = 265
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_CURRENT_VOTING_DESC"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_CURRENT_VOTING_DESC_TT"
+		}
+
+		buttonType = {
+			name = "actonfloor_yes"
+			position = { x = 700 y = 195 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTE_YES_TT"
+			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_VOTING_TIME"
+		}
+
+		buttonType = {
+			name = "actonfloor_no"
+			position = { x = 700 y = 230 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTE_NO_TT"
+			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_VOTING_TIME"
+		}
+
+		iconType = {
+			name = "actonfloor_yes_glow"
+			spriteType = "GFX_league_of_nations_vote_button_glow"
+			position = { x = 700 y = 195 }
+		}
+
+		iconType = {
+			name = "actonfloor_no_glow"
+			spriteType = "GFX_league_of_nations_vote_button_glow"
+			position = { x = 700 y = 230 }
+		}
+
+		buttonType = {
+			name = "days_remaining"
+			position = { x = 700 y = 290 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			text = "Days Remaining : [?global.days_remaining]"
+			font = "hoi_18mbs"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "actonfloor_yes_button_text"
+			position = { x = 700 y = 200 }
+			font = "hoi_18mbs"
+			maxWidth = 200
+			maxHeight = 20
+			text = "Vote Yes"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "actonfloor_no_button_text"
+			position = { x = 700 y = 235 }
+			font = "hoi_18mbs"
+			maxWidth = 200
+			maxHeight = 20
+			text = "Vote No"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "actonfloor_info_box_bg"
+			position = { x = 765 y = 325 }
+			spriteType = "GFX_league_of_nations_blue_box"
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTING_INFO_BOX_TT"
+		}
+
+		instantTextBoxType = {
+			name = "actonfloor_info_box_text"
+			position = { x = 768 y = 330 }
+			font = "hoi_18mbs"
+			maxWidth = 70
+			maxHeight = 20
+			text = "[?global.yay]/[?global.nay]"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "league_of_nations_close_button"
+			position = { x = 760 y = 760 }
+			spriteType = "GFX_league_of_nations_button_blue_box"
+			font = "hoi_18mbs"
+			text = "DIPLOMACY_CLOSE"
+			format = center
+			pdx_tooltip = "DIPLOMACY_CLOSE"
+			shortcut = "ESCAPE"
+		}
+	}
+	
+	containerWindowType = {
+		name = "league_of_nations_member_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 259 height = 37 }
+		
+		# entry background: normal
+		iconType = {
+			name = "league_of_nations_member_entry_bg"
+			spriteType = "GFX_league_of_nations_member_list_entry"
+			position = { x = 0 y = 0 }
+		}
+
+		# entry background: not allowed to vote
+		iconType = {
+			name = "league_of_nations_member_entry_bg_grey"
+			spriteType = "GFX_league_of_nations_member_list_entry_grey"
+			position = { x = 0 y = 0 }
+		}
+
+		# entry background: voted YES
+		iconType = {
+			name = "league_of_nations_member_entry_bg_green"
+			spriteType = "GFX_league_of_nations_member_list_entry_green"
+			position = { x = 0 y = 0 }
+		}
+
+		# entry background: voted NO
+		iconType = {
+			name = "league_of_nations_member_entry_bg_red"
+			spriteType = "GFX_league_of_nations_member_list_entry_red"
+			position = { x = 0 y = 0 }
+		}
+		
+		# member flag
+		buttonType = {
+			name = "member_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 5 y = 6 }
+			pdx_tooltip = "LEAGUE_OF_NATIONS_FLAG_OVERLAY_BUTTON_TT"
+			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_FLAG_OVERLAY_BUTTON_TT_DELAYED"
+		}
+
+		iconType = {
+			name = "member_flag_border"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x = 2 y = 1 }
+			alwaystransparent = yes
+		}
+		
+		# member name
+		instantTextboxType = {
+			name = "member_name"
+			position = { x = 57 y = 8 }
+			font = "hoi_18mbs"
+			text = "[This.GetNameDefCap]"
+			maxWidth = 170
+			maxHeight = 10
+			format = left
+			fixedsize = yes
+			pdx_tooltip = "LEAGUE_OF_NATIONS_MEMBER_ENTRY_TT"
+			pdx_tooltip_delayed = "LEAGUE_OF_NATIONS_MEMBER_ENTRY_TT_DELAYED"
+		}
+		
+		# button to support member as leader
+	}
+
+	containerWindowType = {
+		name = "league_of_nations_sanctions_types_window"
+		position = { x = 572 y = 240 }
+		size = { width = 232 height = 180 }
+
+		fade_time = 300
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "league_of_nations_sanctions_types_window_background"
+			spriteType = "GFX_tiled_blue_lon_window"
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_vote_for_sanction_type"
+			position = { x = 18 y = 20 }
+			font = "hoi_18mbs"
+			maxWidth = 195
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_VOTE_FOR_SANCTION_TYPE"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTING_TIME"
+		}
+
+		buttonType = {
+			name = "league_of_nations_vote_sanction_type_trade_sanctions"
+			position = { x = 15 y = 70 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTE_FOR_TRADE_SANCTIONS_TT"
+		}
+
+		iconType = {
+			name = "league_of_nations_vote_sanction_type_trade_sanctions_glow"
+			spriteType = "GFX_league_of_nations_vote_button_glow"
+			position = { x = 13 y = 70 }
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_vote_sanction_type_trade_sanctions_text"
+			position = { x = 14 y = 74 }
+			font = "hoi_18mbs"
+			maxWidth = 200
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_VOTE_FOR_TRADE_SANCTIONS"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "league_of_nations_vote_sanction_type_war"
+			position = { x = 15 y = 100 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTE_FOR_WAR_TT"
+		}
+
+		iconType = {
+			name = "league_of_nations_vote_sanction_type_war_glow"
+			spriteType = "GFX_league_of_nations_vote_button_glow"
+			position = { x = 13 y = 100 }
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_vote_sanction_type_war_text"
+			position = { x = 14 y = 104 }
+			font = "hoi_18mbs"
+			maxWidth = 200
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_VOTE_FOR_WAR"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "league_of_nations_vote_sanction_type_kick_out_of_league_of_nations"
+			position = { x = 15 y = 130 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTE_FOR_KICK_OUT_OF_LEAGUE_OF_NATIONS_TT"
+		}
+
+		buttonType = {
+			name = "league_of_nations_vote_sanction_type_form_coalition"
+			position = { x = 15 y = 130 }
+			spriteType = "GFX_league_of_nations_blue_button"
+			font = "hoi_18mbs"
+			format = center
+			pdx_tooltip = "LEAGUE_OF_NATIONS_VOTE_FOR_FORM_COALITION_TT"
+		}
+
+		iconType = {
+			name = "league_of_nations_vote_sanction_type_kick_out_of_league_of_nations_glow"
+			spriteType = "GFX_league_of_nations_vote_button_glow"
+			position = { x = 13 y = 130 }
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_vote_sanction_type_kick_out_of_league_of_nations_text"
+			position = { x = 14 y = 134 }
+			font = "hoi_18mbs"
+			maxWidth = 200
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_VOTE_FOR_KICK_OUT_OF_LEAGUE_OF_NATIONS"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "league_of_nations_vote_sanction_type_form_coalition_text"
+			position = { x = 14 y = 134 }
+			font = "hoi_18mbs"
+			maxWidth = 200
+			maxHeight = 20
+			text = "LEAGUE_OF_NATIONS_VOTE_FOR_FORM_COALITION"
+			format = center
+			alwaystransparent = yes
+			fixedsize = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "league_of_nations_start_voting_country_list_window"
+		position = { x = 572 y = 254 }
+		size = { width = 290 height = 258 }
+
+		fade_time = 300
+		fade_type = linear
+		click_to_front = yes
+		
+		background = {
+			name = "league_of_nations_start_voting_country_list_window_background"
+			spriteType = "GFX_tiled_blue_lon_window"
+		}
+		
+		instantTextBoxType = {
+			name = "league_of_nations_choose_country_to_start_voting_on_title"
+			position = { x = 12 y = 11 }
+			font = "hoi_18mbs"
+			maxWidth = 250
+			maxHeight = 10
+			text = "LEAGUE_OF_NATIONS_STARTING_BUTTON_TEXT"
+			format = center
+			fixedsize = yes
+		}
+		
+		buttonType = {
+			name = "league_of_nations_start_voting_country_list_window_close_button"
+			spriteType = "GFX_league_of_nations_blue_close_button"
+			position = { x = 268 y = 5 }
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+		}
+		
+		containerWindowType = {
+			name = "league_of_nations_start_voting_country_list_sub_window_background"
+			position = { x = 5 y = 35 }
+			size = { width = 279 height = 223 }
+			margin = { top = 4 left = 4 bottom = 4 right = 4 }
+			verticalScrollbar = "league_of_nations_slider"
+
+			background = {
+				name = "league_of_nations_start_voting_country_list_sub_window_background"
+				spriteType = "GFX_league_of_nations_member_list_bg"
+			}
+			
+			# gridboxtype for countries
+			gridboxtype = {
+				name = "league_of_nations_possible_voting_targets_list_gridbox"
+				position = { x = 0 y = 0 }
+				size = { width = 259 height = 37 }
+				slotsize = { width = 259 height = 1 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "league_of_nations_possible_voting_targets_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 259 height = 37 }
+		
+		# background
+		buttonType = {
+			name = "entry_bg"
+			spriteType = "GFX_league_of_nations_member_list_entry"
+			position = { x = 0 y = 0 }
+		}
+
+		# flag
+		buttonType = {
+			name = "entry_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 5 y = 6 }
+			pdx_tooltip = "LEAGUE_OF_NATIONS_FLAG_OVERLAY_BUTTON_TT"
+		}
+
+		iconType = {
+			name = "entry_flag_border"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x = 2 y = 1 }
+			alwaystransparent = yes
+		}
+		
+		# name
+		instantTextboxType = {
+			name = "entry_name"
+			position = { x = 57 y = 8 }
+			font = "hoi_18mbs"
+			text = "[This.GetName]"
+			maxWidth = 130
+			maxHeight = 10
+			format = left
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+}

@@ -1,0 +1,667 @@
+ideas = {
+	country = {
+		senate_ties_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.20
+			}
+		}
+		senate_ties_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.50
+				research_speed_factor = 0.02
+			}
+		}
+		loyalist_effort_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				democratic_drift = 0.10
+				democratic_acceptance = 85
+			}
+		}
+		separatist_effort_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				fascism_drift = 0.10
+				fascism_acceptance = 85
+			}
+		}
+		separatist_effort_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				fascism_drift = 0.15
+				fascism_acceptance = 85
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		separatist_effort_idea_sith = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				fascism_drift = 0.15
+				fascism_acceptance = 85
+				offence = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		hutt_aligned_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				communism_drift = 0.10
+				communism_acceptance = 85
+			}
+		}
+		sovereign_planet_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				stability_weekly = 0.003
+				drift_defence_factor = 0.25	
+				ai_get_ally_desire_factor = -50
+			}
+		}
+		sovereign_planet_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				stability_weekly = 0.003
+				drift_defence_factor = 0.25	
+				ai_get_ally_desire_factor = -50
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		bounty_hunter_leadership = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_deal_with_the_devil
+			
+			modifier = {
+				army_leader_start_level = 1	
+				army_defence_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		support_the_jedi_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_deal_with_the_devil2
+			
+			modifier = {
+				democratic_drift = 0.03
+				war_support_weekly = 0.002
+			}
+		}
+		support_the_jedi_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_deal_with_the_devil2
+			
+			modifier = {
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+				democratic_drift = 0.05
+				war_support_weekly = 0.004
+			}
+		}
+		underworld_connections_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				political_power_gain = 0.50
+			}
+		}
+		condemned_republic_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				democratic_drift = -0.10
+				democratic_acceptance = -50
+			}
+		}
+		trade_federation_contact_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_free_trade
+			
+			modifier = {
+				political_power_gain = 0.50
+			}
+		}
+		republic_trade = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_free_trade
+			
+			modifier = {
+				trade_opinion_factor = 0.33
+			}
+		}
+		separatist_cause_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = hun_secret_rearmament
+			
+			targeted_modifier = {
+				tag = REP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+			modifier = {
+				war_support_weekly = 0.004
+			}
+		}
+		member_of_rtc = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				
+			}
+		}
+		republic_trade = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		member_of_rrc = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		talented_scientists = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		member_of_rmc = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				experience_gain_army = 0.2
+			}
+		}
+		joint_training_exercises = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				experience_gain_army = 0.5
+			}
+		}
+		free_trade_zone = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				
+			}
+		}
+		defense_force = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		contracts_with_rothana = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				
+			}
+		}
+		contracts_with_kuat = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				
+			}
+		}
+		republic_propoganda = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				war_support_weekly = 0.003
+			}
+		}
+		secret_police = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				fascism_drift = -0.05
+			}
+		}
+		neutral_rep = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				ai_join_ally_desire_factor = -100
+			}
+		}
+		proclaim_neutrality = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+			}
+		}
+		bringing_down_giants = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		trade_deals_with_rep = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		armed_neutrality = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				join_faction_tension = 2
+				guarantee_tension = 2
+			}
+		}
+		peaceful_society = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = -0.005
+			}
+		}
+		trade_deals_with_cis = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		hired_gun_training = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+			minimum_training_level = -0.15 
+			}
+		}
+		general_program = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+			max_command_power = 20
+			}
+		}
+		collaborative_minds = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		retooling_investment = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.3
+			}
+		}
+		cis_military_subsidies = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+			}
+		}
+		established_militia = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				conscription = 0.04
+			}
+		}
+		jedi_advisors = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				max_command_power_mult = 0.2
+				experience_loss_factor = -0.1
+			}
+		}
+		droid_army = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				
+			}
+		}
+	}
+	hidden_ideas = {
+		sidious = {
+
+		allowed = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		picture = hun_secret_rearmament
+
+		modifier = {
+			enemy_justify_war_goal_time = 100
+			}
+		}
+	}
+}
+

@@ -1,0 +1,115 @@
+﻿capital = 403
+
+oob = "BOT_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_BOT = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar 
+	limited_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 56
+		neutrality = 32
+	    fascism = 7
+	    communism = 5
+	}
+}
+
+0978.8.8 = {
+
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 56
+		neutrality = 44
+	    fascism = 0
+	    communism = 0
+	       
+	}
+}
+
+	create_country_leader = {
+		name = "Desark Fey'lya"
+		desc = "Leader of Bothawui"
+		picture = "gfx/leaders/BOT/Desark.dds"
+		expire = "2020.1.1"
+		ideology = conservatism
+	}
+
+	create_country_leader = {
+		name = "Tram Korran"
+		desc = "Leader of Bothawui"
+		picture = "gfx/leaders/BOT/TramKorran.dds"
+		expire = "2020.1.1"
+		ideology = fascism_ideology
+	}
+
+	create_corps_commander = {
+		name = "Odrok Bwaqale"
+		portrait_path = "gfx/leaders/BOT/OdrokBwaqale.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Gok Hoqus"
+		portrait_path = "gfx/leaders/BOT/GokHoqus.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_navy_leader = {
+		name = "Kudrersk Tresome"
+    	picture = "KudrerskTresome.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "In Surrave"
+    	picture = "InSurrave.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}

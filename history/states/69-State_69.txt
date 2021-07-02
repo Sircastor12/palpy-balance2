@@ -1,0 +1,41 @@
+state={
+	id=69
+	name="STATE_69"
+	provinces={
+		445 1952 2236 2838 3958 4872 10882 10883 10888 10897 10908 10918 10920 10924 10927 10938 10976 10982 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=TEC
+		add_core_of = TEC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

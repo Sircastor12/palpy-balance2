@@ -1,0 +1,42 @@
+state={
+	id=209
+	name="STATE_209"
+	provinces={
+		336 934 1596 2084 2545 4127 4448 7014 7024 7039 7045 7064 7071 7080 7100 7124 7125 7152 7179 7195 7200 7231 7234 
+	}
+	manpower=5666666
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=5
+		chromium=6
+	}
+
+  	history = {
+		owner=KUA
+		add_core_of = KUA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=10
+			air_base=0
+			corporate_factory = 1
+
+			7200 = {
+				naval_base = 4
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

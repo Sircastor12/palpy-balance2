@@ -1,0 +1,38 @@
+bitmapfonts = { 
+    bitmapfont = {
+        name = "moneyfont"
+        path = "gfx/fonts/moneyfont"   
+        color = 0xffffffff
+        textcolors = {
+           G = { 86 172 91 }
+           R = { 222 86 70 }
+           Y = { 238 201 35 }
+           H = { 238 203 35 }
+           T = { 255 255 255 }
+        }
+    }
+        bitmapfont = {
+        name = "AurebeshEnglish"
+        path = "gfx/fonts/AurebeshEnglish"   
+        color = 0xffffffff
+        textcolors = {
+           G = { 86 172 91 }
+           R = { 222 86 70 }
+           Y = { 238 201 35 }
+           H = { 238 203 35 }
+           T = { 255 255 255 }
+        }
+    }
+        bitmapfont = {
+        name = "Aurebesh32"
+        path = "gfx/fonts/Aurebesh32"   
+        color = 0xffffffff
+        textcolors = {
+           G = { 86 172 91 }
+           R = { 222 86 70 }
+           Y = { 238 201 35 }
+           H = { 238 203 35 }
+           T = { 255 255 255 }
+        }
+    }
+}

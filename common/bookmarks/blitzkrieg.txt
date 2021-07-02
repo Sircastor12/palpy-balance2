@@ -1,0 +1,56 @@
+bookmarks = {
+	bookmark = {
+		name = "DO NOT PLAY"
+		desc = "DO NOT PLAY"
+		date = 0978.8.8.8
+		picture = "GFX_select_date_left"
+		default_country = "REP"
+	
+		#Major
+		"REP" = {
+			ideology = democratic
+			history = "REP_BLITZKRIEG_DESC"
+		}
+		"CIS" = {
+			ideology = fascism
+			history = "Before the formation of the CIS, take control of the movement and push certain planets towards secession to join our cause."
+		}
+		"HUT" = {
+			ideology = communism
+			history = "HUT_BLITZKRIEG_DESC"
+		}
+		"SID" = {
+			ideology = fascism
+			history = "Sidious"
+		}
+		"MAN" = {
+			ideology = democratic
+			history = "MAN_the_gathering_storm"
+		}
+		"FED" = {
+			ideology = democratic
+			history = "FED_the_gathering_storm"
+		}
+		"CMG" = {
+			ideology = democratic
+			history = "CMG_the_gathering_storm"
+		}
+		
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+		
+		#Minor		
+		"HUT" = {
+			ideology = communism
+		    minor = yes
+			history = "HUT_BLITZKRIEG_DESC"
+		}
+		
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

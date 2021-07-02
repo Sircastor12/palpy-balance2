@@ -1,0 +1,41 @@
+state={
+	id=491
+	name="STATE_491"
+	provinces={
+		783 812 1264 1593 1939 2319 2750 3901 4333 4550 11514 11525 11552 11560 11563 11568 11571 11577 11578 11582 11584 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ALZ
+		add_core_of = ALZ
+
+		buildings = {
+			infrastructure=2
+			arms_factory=0
+			industrial_complex=0
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,1147 @@
+focus_tree = {
+	id = tec_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = TEC
+		}
+	}
+	# Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and 
+	# so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side
+	# of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did.
+	# Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. Ironic. He could save others from death, but not himself.
+
+	focus = {
+		id = tec_begin_consolidating_the_subsidaries
+		icon = GFX_goal_generic_propaganda
+		x = 9
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	focus = {
+		id = tec_droid_manufacturers
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_begin_consolidating_the_subsidaries }
+		x = -8
+		y = 1
+		relative_position_id = tec_begin_consolidating_the_subsidaries
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_droid_manufacturers_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_consolidate_baktoid_armor_workshop
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_droid_manufacturers }
+		x = 0
+		y = 2
+		relative_position_id = tec_droid_manufacturers
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = tec_droid_manufacturers_idea
+    			add_idea = tec_droid_manufacturers_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_shipyards
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_begin_consolidating_the_subsidaries }
+		x = -6
+		y = 1
+		relative_position_id = tec_begin_consolidating_the_subsidaries
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_shipyards_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_control_arakyd_industries
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_shipyards }
+		x = 0
+		y = 2
+		relative_position_id = tec_shipyards
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = tec_shipyards_idea
+    			add_idea = tec_shipyards_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_sienar_fleet_systems
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_droid_manufacturers }
+		prerequisite = { focus = tec_shipyards }
+		x = 1
+		y = 1
+		relative_position_id = tec_droid_manufacturers
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			add_command_power = 10
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_expand_production
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_consolidate_baktoid_armor_workshop }
+		prerequisite = { focus = tec_sienar_fleet_systems }
+		prerequisite = { focus = tec_control_arakyd_industries }
+		x = 0
+		y = 2
+		relative_position_id = tec_sienar_fleet_systems
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = tec_droid_manufacturers_idea_2
+    			add_idea = tec_droid_manufacturers_idea_3
+			}
+			add_equipment_to_stockpile = {
+    			type = b1_droid_equip
+    			amount = 5000
+    			producer = TEC
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_further_control_the_companies
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_expand_production }
+		mutually_exclusive = { focus = tec_delegate_power_to_the_companies }
+		x = -1
+		y = 1
+		relative_position_id = tec_expand_production
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_further_control_the_companies_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_delegate_power_to_the_companies
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_expand_production }
+		mutually_exclusive = { focus = tec_further_control_the_companies }
+		x = 1
+		y = 1
+		relative_position_id = tec_expand_production
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_delegate_power_to_the_companies_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_expand_the_fondor_academy_of_engineering
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = tec_further_control_the_companies focus = tec_delegate_power_to_the_companies }
+		x = 1
+		y = 1
+		relative_position_id = tec_further_control_the_companies
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = tec_pledge_support_to_the_separatists
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_begin_consolidating_the_subsidaries }
+		x = 0
+		y = 1
+		relative_position_id = tec_begin_consolidating_the_subsidaries
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+   				ideology = fascism
+    			popularity = 0.2
+			}
+			CIS = { country_event = { id = TEC.30 days = 1 }}
+			hidden_effect = {
+				news_event = { id = TEC.34 days = 1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_research_and_development_wing
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_pledge_support_to_the_separatists }
+		x = 6
+		y = 1
+		relative_position_id = tec_pledge_support_to_the_separatists
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_research_and_development_wing_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_develop_a_prediction_algorithm
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_research_and_development_wing }
+		prerequisite = { focus = tec_joining_the_confederacy }
+		x = 0
+		y = 2
+		relative_position_id = tec_research_and_development_wing
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_prediction_algorithm
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_secret_weapons_research
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_develop_a_prediction_algorithm }
+		x = -1
+		y = 2
+		relative_position_id = tec_develop_a_prediction_algorithm
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 3
+				category = electronics
+				category = nuclear
+				category = rocketry
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_alternate_infantry_research
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_develop_a_prediction_algorithm }
+		x = 1
+		y = 2
+		relative_position_id = tec_develop_a_prediction_algorithm
+		cost = 15
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_befriend_the_commerce_guilds
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_pledge_support_to_the_separatists }
+		x = -3
+		y = 1
+		relative_position_id = tec_pledge_support_to_the_separatists
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			CMG = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_increase
+				}
+			}
+			IBC = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_increase
+				}
+			}
+			FED = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_increase
+				}
+			}
+			add_political_power = 50
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_secure_funding_for_production
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_pledge_support_to_the_separatists }
+		x = 3
+		y = 1
+		relative_position_id = tec_pledge_support_to_the_separatists
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tec_secure_funding_for_production_tt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_loyalty_to_the_separatist_council
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_pledge_support_to_the_separatists }
+		x = 0
+		y = 1
+		relative_position_id = tec_pledge_support_to_the_separatists
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+   				ideology = fascism
+    			popularity = 0.2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_joining_the_confederacy
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_befriend_the_commerce_guilds }
+		prerequisite = { focus = tec_secure_funding_for_production }
+		prerequisite = { focus = tec_loyalty_to_the_separatist_council }
+		available = {
+			country_exists = CIS
+			CIS = { is_faction_leader = yes }
+		}
+		x = 0
+		y = 2
+		relative_position_id = tec_pledge_support_to_the_separatists
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_ruling_party = fascism
+			add_ideas = CIS_member_prewar
+			CIS = { country_event = { id = TEC.31 days = 1 }}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_rally_the_populace
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_joining_the_confederacy }
+		x = -3
+		y = 1
+		relative_position_id = tec_joining_the_confederacy
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = tec_rally_the_populace_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_anti_republic_propaganda
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_rally_the_populace }
+		x = 0
+		y = 1
+		relative_position_id = tec_rally_the_populace
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			REP = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_decrease
+				}
+			}
+			add_opinion_modifier = {
+    			target = REP
+    			modifier = large_decrease
+			}
+			swap_ideas = {
+    			remove_idea = tec_rally_the_populace_idea
+    			add_idea = tec_rally_the_populace_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_fortify_fondor
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_joining_the_confederacy }
+		x = 3
+		y = 1
+		relative_position_id = tec_joining_the_confederacy
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		available = {
+			has_full_control_of_state = 43
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = tec_fortify_fondor_tt
+			hidden_effect = {
+				43 = {
+					add_building_construction = {
+	    				type = coastal_bunker
+	    				level = 5
+	    				instant_build = yes
+	    				province = {
+	        				is_coastal = yes
+	    				}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_hypori_fortifications
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_fortify_fondor }
+		x = 0
+		y = 1
+		relative_position_id = tec_fortify_fondor
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		available = {
+			has_full_control_of_state = 69
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = tec_fortify_hypori_tt
+			hidden_effect = {
+				69 = {
+					add_building_construction = {
+	    				type = coastal_bunker
+	    				level = 5
+	    				instant_build = yes
+	    				province = {
+	        				is_coastal = yes
+	    				}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_integrate_with_the_separatist_council
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_joining_the_confederacy }
+		x = 0
+		y = 2
+		relative_position_id = tec_joining_the_confederacy
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = integrated_with_seppy_council_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_loyalty_to_sidious
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_integrate_with_the_separatist_council }
+		prerequisite = { focus = tec_anti_republic_propaganda }
+		prerequisite = { focus = tec_hypori_fortifications }
+		
+		mutually_exclusive = { focus = tec_loyalty_to_dooku_alone }
+		x = -2
+		y = 1
+		relative_position_id = tec_integrate_with_the_separatist_council
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tec_loyalty_to_sidious_tt
+			hidden_effect = {
+				set_country_flag = tec_loyalty_to_sidious_flag	
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_defined_chain_of_command
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_loyalty_to_sidious focus = tec_further_deals_with_the_confederacy }
+		x = 2
+		y = 2
+		relative_position_id = tec_loyalty_to_sidious
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_command_power = 50
+			add_stability = 0.15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_post_mustafar_survival
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_defined_chain_of_command }
+		x = 0
+		y = 1
+		relative_position_id = tec_defined_chain_of_command
+		cost = 30
+		
+		available_if_capitulated = yes
+		allow_branch = {
+			has_country_flag = mustafar_slaughter_flag
+		}
+
+		completion_reward = {	
+		##Will remove debuff that significantly weakens the techno union once/if wat tambor is killed on mustafar
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_loyalty_to_dooku_alone
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_integrate_with_the_separatist_council }
+		prerequisite = { focus = tec_anti_republic_propaganda }
+		prerequisite = { focus = tec_hypori_fortifications }
+		mutually_exclusive = { focus = tec_loyalty_to_sidious }
+		x = 2
+		y = 1
+		relative_position_id = tec_integrate_with_the_separatist_council
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = tec_loyalty_to_dooku_alone_tt
+			hidden_effect = {
+				set_country_flag = tec_loyalty_to_dooku_alone_flag	
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_further_deals_with_the_confederacy
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = tec_loyalty_to_dooku_alone }
+		x = 0
+		y = 1
+		relative_position_id = tec_loyalty_to_dooku_alone
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = integrated_with_seppy_council_idea
+    			add_idea = tec_integrated_with_seppy_council_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_put_our_products_to_use
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 22
+		y = 0
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	focus = {
+		id = tec_improve_our_droids_programming
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_put_our_products_to_use }
+		x = -3
+		y = 1
+		relative_position_id = tec_put_our_products_to_use
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_doctrine_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improve_our_droids_programming }
+		x = -1
+		y = 1
+		relative_position_id = tec_improve_our_droids_programming
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_doctrine_effort_2
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_doctrine_effort }
+		x = 0
+		y = 2
+		relative_position_id = tec_doctrine_effort
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_improved_droid_models
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improve_our_droids_programming }
+		x = 1
+		y = 1
+		relative_position_id = tec_improve_our_droids_programming
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = improved_droid_models_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_improved_artillery_focus
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improved_droid_models }
+		x = 1
+		y = 1
+		relative_position_id = tec_improved_droid_models
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_further_artillery_improvements
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improved_artillery_focus }
+		x = 0
+		y = 2
+		relative_position_id = tec_improved_artillery_focus
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_smarter_b1s
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improved_droid_models }
+		x = 0
+		y = 2
+		relative_position_id = tec_improved_droid_models
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = improved_droid_models_idea
+    			add_idea = improved_droid_models_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_transport_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improve_our_droids_programming }
+		x = 0
+		y = 2
+		relative_position_id = tec_improve_our_droids_programming
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Transport Focus"
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_tank_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_transport_effort }
+		x = 0
+		y = 2
+		relative_position_id = tec_transport_effort
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_improved_fighter_droid_programming
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_put_our_products_to_use }
+		x = 1
+		y = 1
+		relative_position_id = tec_put_our_products_to_use
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_fighter_model_research
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improved_fighter_droid_programming }
+		x = 0
+		y = 2
+		relative_position_id = tec_improved_fighter_droid_programming
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Spacefighter Research"
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_spacefighter_doctrine_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improved_fighter_droid_programming }
+		x = -1
+		y = 1
+		relative_position_id = tec_improved_fighter_droid_programming
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Aircraft Doctrine Research"
+				bonus = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_spacefighter_doctrine_effort_2
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_spacefighter_doctrine_effort }
+		x = 0
+		y = 2
+		relative_position_id = tec_spacefighter_doctrine_effort
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Aircraft Doctrine Research"
+				bonus = 0.75
+				uses = 2
+				category = air_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_fighter_droid_modifications
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_improved_fighter_droid_programming }
+		x = 1
+		y = 1
+		relative_position_id = tec_improved_fighter_droid_programming
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 30
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_naval_officer_training
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_put_our_products_to_use }
+		x = 7
+		y = 1
+		relative_position_id = tec_put_our_products_to_use
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_capital_ship_designs
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_naval_officer_training }
+		x = -2
+		y = 1
+		relative_position_id = tec_naval_officer_training
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_naval_doctrine
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_naval_officer_training }
+		x = 0
+		y = 1
+		relative_position_id = tec_naval_officer_training
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Fleet Strategic Studies"
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_naval_doctrine_2
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_naval_doctrine }
+		x = 0
+		y = 1
+		relative_position_id = tec_naval_doctrine
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = "Fleet Strategic Studies"
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = tec_escort_designs
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = tec_naval_officer_training }
+		x = 2
+		y = 1
+		relative_position_id = tec_naval_officer_training
+		cost = 8
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

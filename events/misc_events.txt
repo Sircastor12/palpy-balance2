@@ -1,0 +1,59 @@
+############################
+## Hoth
+############################
+
+
+add_namespace = vis
+
+
+news_event = { 
+	id = vis.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.1"}
+	title =  "Attack of the Yeezus"
+	desc =  "I am God all by myself
+I don't need any help
+I can handle things on my own
+I am the first and the last
+Whatever you need just ask
+For I am, I am, I am God
+I was there in the beginning
+And I'll be there when you get to the end
+I am all seeing, all knowing
+Almighty, ever showing
+For I am, I am, I am God
+I was there in the beginning
+And I'll be there when you get to the end
+I am all seeing, all knowing
+Almighty, ever showing
+For I am, I am, for I am, I am
+For I am, I am, for I am, I am
+For I am, I am, I am God
+All of…"
+	picture = GFX_bmc2
+	is_triggered_only = yes
+	fire_only_once = yes
+	play_song = "selah"
+
+    immediate = {
+        play_song = "selah"
+    }    
+
+	option = { #
+		name =  "Bow before the great and powerful yeezus"
+		add_political_power = 10000
+		add_stability = 1	
+		
+		hidden_effect =  {
+			create_country_leader = {
+				name = "Yeezus"
+				desc = "Bow before the great and powerful Yeezus"
+				picture = GFX_Portrait_2020
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+		    }
+		}
+	}
+}
+

@@ -1,0 +1,5361 @@
+purchase_rocketlauncher = {
+	if = {
+		limit = {
+			check_variable = {
+				var = global.rocketlauncher 
+				value = global.rocketlauncherq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > rocketlauncher_pricem }
+			}
+			ROOT = {
+				has_tech = rocketlauncher_tech
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = rocketlauncher_equipment
+				 amount = global.rocketlauncherq
+			 }
+			 subtract_from_variable = { dx = rocketlauncher_pricem }
+			}
+		subtract_from_variable = { global.rocketlauncher = global.rocketlauncherq}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.rocketlauncher 
+				value = global.rocketlauncherq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > rocketlauncher_pricem }
+			}
+			ROOT = {
+				NOT = {
+					has_tech = rocketlauncher_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				rocketlauncher_tech = 1
+				rocketlauncher_unit_tech = 1
+			}
+			add_equipment_to_stockpile = {
+				type = rocketlauncher_equipment
+				 amount = global.rocketlauncherq
+			 }
+			 subtract_from_variable = { dx = rocketlauncher_pricem }
+			}
+		subtract_from_variable = { global.rocketlauncher = global.rocketlauncherq}
+	}
+}
+purchase_74z = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.ara_74z 
+				value = global.ara_74zq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > 74z_pricem }
+			}
+			ROOT = {
+				has_tech = cal_weapons
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = speeder_bike_basic
+				 amount = global.ara_74zq
+			 }
+			 subtract_from_variable = { dx = 74z_pricem }
+			}
+		subtract_from_variable = { global.ara_74z = global.ara_74zq}
+	}
+}
+purchase_barc = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+				NOT = {
+					has_tech = barc_tech 
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				barc_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.ara_barc 
+				value = global.ara_barcq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > barc_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = BARC_equipment
+				 amount = 150
+			 }
+			 subtract_from_variable = { dx = barc_pricem }
+			}
+		subtract_from_variable = { global.ara_barc = 150}
+	}
+}
+purchase_inf0 = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.inf0 
+				value = global.inf0q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > inf0_pricem }
+			}
+			ROOT = {
+				has_tech = infantry_weapons
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				 amount = global.inf0q
+			 }
+			 subtract_from_variable = { dx = inf0_pricem }
+		}
+		subtract_from_variable = { global.inf0 = global.inf0q}
+	}
+}
+purchase_inf1 = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.inf1 
+				value = global.inf1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > inf1_pricem }
+			}
+			ROOT = {
+				has_tech = infantry_weapons1
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				 amount = global.inf1q
+			 }
+			 subtract_from_variable = { dx = inf1_pricem }
+		}
+		subtract_from_variable = { global.inf1 = global.inf1q}
+	}
+}
+purchase_inf2 = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.inf2 
+				value = global.inf2q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > inf2_pricem }
+			}
+			ROOT = {
+				has_tech = improved_infantry_weapons
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				 amount = global.inf2q
+			 }
+			 subtract_from_variable = { dx = inf2_pricem }
+			}
+		subtract_from_variable = { global.inf2 = global.inf2q}
+	}
+}
+purchase_inf3 = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.inf3 
+				value = global.inf3q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > inf3_pricem }
+			}
+			ROOT = {
+				has_tech = advanced_infantry_weapons
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_3
+				 amount = global.inf3q
+			 }
+			 subtract_from_variable = { dx = inf3_pricem }
+			}
+		subtract_from_variable = { global.inf3 = global.inf3q}
+	}
+}
+purchase_supportequipment = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.supportequipment 
+				value = global.supportequipmentq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > supportequipment_pricem }
+			}
+			ROOT = {
+				has_tech = tech_support
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				 amount = global.supportequipmentq
+			 }
+			 subtract_from_variable = { dx = supportequipment_pricem }
+			}
+		subtract_from_variable = { global.supportequipment = global.supportequipmentq}
+	}
+}
+purchase_landspeeder = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.landspeeder 
+				value = global.landspeederq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > landspeeder_pricem }
+			}
+			ROOT = {
+				has_tech = motorised_infantry
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				 amount = global.landspeederq
+			 }
+			 subtract_from_variable = { dx = landspeeder_pricem }
+			}
+		subtract_from_variable = { global.landspeeder = global.landspeederq}
+	}
+}
+purchase_soro_fang = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.soro_fang 
+				value = global.soro_fangq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > soro_fang_pricem }
+			}
+			ROOT = {
+				has_tech = fang_tech
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = fang_fighter_equip
+				 amount = global.soro_fangq
+			 }
+			 subtract_from_variable = { dx = soro_fang_pricem }
+			}
+		subtract_from_variable = { global.soro_fang = global.soro_fangq}
+	}
+}
+purchase_cmg_diamond = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+				NOT = {
+					has_tech = diamond_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				diamond_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.cmg_diamond 
+				value = global.cmg_diamondq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cmg_diamond_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = diamond_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cmg_diamond_pricem }
+		}
+		subtract_from_variable = { global.cmg_diamond = global.cmg_diamondq}
+		add_to_variable = { global.cmg_diamond_sold = global.cmg_diamondq}
+		CMG = {
+			add_to_variable = { dx = cmg_diamond_pricem }
+		}
+	}
+}
+purchase_cmg_recusant = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+				NOT = {
+					has_tech = recusant_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				recusant_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cmg_recusant 
+				value = global.cmg_recusantq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cmg_recusant_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = recusant_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cmg_recusant_pricem }
+		}
+		subtract_from_variable = { global.cmg_recusant = global.cmg_recusantq}
+		add_to_variable = { global.cmg_recusant_sold = global.cmg_recusantq}
+		FED = {
+			add_to_variable = { dx = cmg_recusant_pricem }
+		}
+	}
+}
+purchase_cmg_providence = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+				NOT = {
+					has_tech = providence_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				providence_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cmg_providence
+				value = global.cmg_providenceq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cmg_providence_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = providence_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cmg_providence_pricem }
+		}
+		subtract_from_variable = { global.cmg_providence = global.cmg_providenceq}
+		add_to_variable = { global.cmg_providence_sold = global.cmg_providenceq}
+		CMG = {
+			add_to_variable = { dx = cmg_providence_pricem }
+		}
+	}
+}
+purchase_cmg_dsd1 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 154
+				}
+				NOT = {
+					has_tech = dsd1_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				dsd1_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.cmg_dsd1
+				value = global.cmg_dsd1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cmg_dsd1_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = dsd1_dwarf_equipment
+				 amount = global.cmg_dsd1q
+			 }
+			 subtract_from_variable = { dx = cmg_dsd1_pricem }
+			}
+		subtract_from_variable = { global.cmg_dsd1 = global.cmg_dsd1q}
+		add_to_variable = { global.cmg_dsd1_sold = global.cmg_dsd1q}
+		TEC = {
+			add_to_variable = { dx = cmg_dsd1_pricem }
+		}
+	}
+}
+purchase_cmg_adsd = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+				NOT = {
+					has_tech = adsd_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				adsd_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cmg_adsd
+				value = global.cmg_adsdq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cmg_adsd_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = adsd_dwarf_equipment
+				 amount = global.cmg_adsdq
+			 }
+			 subtract_from_variable = { dx = cmg_adsd_pricem }
+			}
+		subtract_from_variable = { global.cmg_adsd = global.cmg_adsdq}
+		add_to_variable = { global.cmg_adsd_sold = global.cmg_adsdq}
+		CMG = {
+			add_to_variable = { dx = cmg_adsd_pricem }
+		}
+	}
+}
+purchase_cmg_homing_spider = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+				NOT = {
+					has_tech = cis_tank_2
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cis_tank_2 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cmg_homing_spider
+				value = global.cmg_homing_spiderq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cmg_homing_spider_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 154
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = OG9_equipment
+				 amount = global.cmg_homing_spiderq
+			 }
+			 subtract_from_variable = { dx = cmg_homing_spider_pricem }
+		}
+		subtract_from_variable = { global.cmg_homing_spider = global.cmg_homing_spiderq}
+		add_to_variable = { global.cmg_homing_spider_sold = global.cmg_homing_spiderq}
+		CMG = {
+			add_to_variable = { dx = cmg_homing_spider_pricem }
+		}
+	}
+}
+purchase_lucrehulk_freighter = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					TAG = FED
+					owns_state = 27
+				}
+				NOT = {
+					has_tech = lucrehulk_freighter_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				lucrehulk_freighter_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.lucrehulk_freighter
+				value = global.lucrehulk_freighterq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > lucrehulk_freighter_pricem }
+			}
+			ROOT = {
+				OR = {
+					TAG = FED
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = lucrehulk_freighter_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = lucrehulk_freighter_pricem }
+		}
+		subtract_from_variable = { global.lucrehulk_freighter = global.lucrehulk_freighterq}
+		add_to_variable = { global.lucrehulk_freighter_sold = global.lucrehulk_freighterq}
+		FED = {
+			add_to_variable = { dx = lucrehulk_freighter_pricem }
+		}
+	}
+}
+purchase_lucrehulk_battleship = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					TAG = FED
+					owns_state = 12
+				}
+				NOT = {
+					has_tech = lucrehulk_battleship_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				lucrehulk_battleship_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.lucrehulk_battleship
+				value = global.lucrehulk_battleshipq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > lucrehulk_battleship_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					TAG = FED
+					owns_state = 27
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = lucrehulk_battleship_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = lucrehulk_battleship_pricem }
+		}
+		subtract_from_variable = { global.lucrehulk_battleship = global.lucrehulk_battleshipq}
+		add_to_variable = { global.lucrehulk_battleship_sold = global.lucrehulk_battleshipq}
+		FED = {
+			add_to_variable = { dx = lucrehulk_battleship_pricem }
+		}
+	}
+}
+purchase_fed_recusant = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+				NOT = {
+					has_tech = recusant_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				recusant_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.fed_recusant
+				value = global.fed_recusantq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > fed_recusant_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = recusant_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = fed_recusant_pricem }
+		}
+		subtract_from_variable = { global.fed_recusant = global.fed_recusantq}
+		add_to_variable = { global.fed_recusant_sold = global.fed_recusantq}
+		FED = {
+			add_to_variable = { dx = fed_recusant_pricem }
+		}
+	}
+}
+purchase_fed_munificent = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+				NOT = {
+					has_tech = munificent_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				munificent_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.fed_munificent
+				value = global.fed_munificentq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > fed_munificent_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = munificent_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = fed_munificent_pricem }
+		}
+		subtract_from_variable = { global.fed_munificent = global.fed_munificentq}
+		add_to_variable = { global.fed_munificent_sold = global.fed_munificentq}
+		FED = {
+			add_to_variable = { dx = fed_munificent_pricem }
+		}
+	}
+}
+purchase_lancer = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 1
+				}
+				NOT = {
+					has_tech = lancer_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				lancer_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.lancer
+				value = global.lancerq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > lancer_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 1
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = ig_lancer_equip
+				 amount = global.lancerq
+			 }
+			 subtract_from_variable = { dx = lancer_pricem }
+			}
+		subtract_from_variable = { global.lancer = global.lancerq }
+		add_to_variable = { global.lancer_sold = global.lancerq}
+		IBC = {
+			add_to_variable = { dx = lancer_pricem }
+		}
+	}
+}
+purchase_ibc_hailfire = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 1
+				}
+				NOT = {
+					has_tech = hailfire_droid
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				hailfire_droid = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.ibc_hailfire
+				value = global.ibc_hailfireq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > ibc_hailfire_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 1
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = hailfire_equipment
+				 amount = global.ibc_hailfireq
+			 }
+			 subtract_from_variable = { dx = ibc_hailfire_pricem }
+			}
+		subtract_from_variable = { global.ibc_hailfire = global.ibc_hailfireq }
+		add_to_variable = { global.ibc_hailfire_sold = global.ibc_hailfireq}
+		IBC = {
+			add_to_variable = { dx = ibc_hailfire_pricem }
+		}
+	}
+}
+purchase_phase_1 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+				NOT = {
+					has_tech = p1_clone_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				p1_clone_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.phase_1
+				value = global.phase_1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > phase_1_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = p1_clone_equip
+				 amount = global.phase_1q
+			 }
+			 subtract_from_variable = { dx = phase_1_pricem }
+			}
+		subtract_from_variable = { global.phase_1 = global.phase_1q}
+		add_to_variable = { global.phase_1_sold = global.phase_1q}
+		KAM = {
+			add_to_variable = { dx = phase_1_pricem }
+		}
+	}
+}
+purchase_phase_2 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+				NOT = {
+					has_tech = p2_clone_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				p2_clone_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.phase_2
+				value = global.phase_2q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > phase_2_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+			}
+		}
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = p2_clone_equip
+				 amount = global.phase_2q
+			 }
+			 subtract_from_variable = { dx = phase_2_pricem }
+		}
+		subtract_from_variable = { global.phase_2 = global.phase_2q}
+		add_to_variable = { global.phase_2_sold = global.phase_2q}
+		KAM = {
+			add_to_variable = { dx = phase_2_pricem }
+		}
+	}
+}
+purchase_clone_general = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+				NOT = {
+					has_tech = p1_clone_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				p1_clone_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.clone_general
+				value = global.clone_generalq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > clone_general_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+			}
+		}
+		Root = {
+			create_corps_commander = {
+				 name = "Clone Commander"
+				 portrait_path = "gfx/leaders/REP/Generic P1.dds"
+				 traits = { }
+				skill = 3
+				 attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			 subtract_from_variable = { dx = clone_general_pricem }
+		}
+		subtract_from_variable = { global.clone_general = global.clone_generalq}
+		add_to_variable = { global.clone_general_sold = global.clone_generalq}
+		KAM = {
+			add_to_variable = { dx = clone_general_pricem }
+		}
+	}
+}
+purchase_clone_admiral = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+				NOT = {
+					has_tech = p1_clone_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				p1_clone_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.clone_admiral
+				value = global.clone_admiralq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > clone_admiral_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 60
+				}
+			}
+		}
+		Root = {
+			create_navy_leader = {
+				name = "Naval Officer"
+				picture = "officer.dds"
+				traits = {  }
+				skill = 2
+				coordination_skill = 2
+				maneuvering_skill = 2
+				defense_skill = 2
+				attack_skill = 2
+			}
+			 subtract_from_variable = { dx = clone_admiral_pricem }
+		}
+		subtract_from_variable = { global.clone_admiral = global.clone_admiralq}
+		add_to_variable = { global.clone_admiral_sold = global.clone_admiralq}
+		KAM = {
+			add_to_variable = { dx = clone_admiral_pricem }
+		}
+	}
+}
+purchase_z95 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = z95_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				z95_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.z95
+				value = global.z95q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > z95_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = z95_fighter_equip
+				 amount = global.z95q
+			 }
+			 subtract_from_variable = { dx = z95_pricem }
+		}
+		subtract_from_variable = { global.z95 = global.z95q }
+		add_to_variable = { global.z95_sold = global.z95q}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Incom_idea
+				}
+				add_to_variable = { dx = z95_pricem }
+			}
+		}
+	}
+}
+purchase_v19 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = v19_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				v19_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.v19
+				value = global.v19q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > v19_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = v19_fighter_equip
+				 amount = global.v19q
+			 }
+			 subtract_from_variable = { dx = v19_pricem }
+		}
+		subtract_from_variable = { global.v19 = global.v19q}
+		add_to_variable = { global.v19_sold = global.v19q}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Slayn_and_korpil_idea
+				}
+				add_to_variable = { dx = v19_pricem }
+			}
+		}
+	}
+}
+purchase_arc170 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = arc170_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				arc170_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.arc170
+				value = global.arc170q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > arc170_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = arc_fighter_equip
+				 amount = global.arc170q
+			 }
+			 subtract_from_variable = { dx = arc170_pricem }
+		}
+		subtract_from_variable = { global.arc170 = global.arc170q}
+		add_to_variable = { global.arc170_sold = global.arc170q}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Incom_idea
+				}
+				add_to_variable = { dx = arc170_pricem }
+			}
+		}
+	}
+}
+purchase_vwing = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = vwing_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				vwing_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = {
+				var = global.vwing
+				value = global.vwingq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > vwing_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = vwing_fighter_equip
+				 amount = global.vwingq
+			 }
+			 subtract_from_variable = { dx = vwing_pricem }
+		}
+		subtract_from_variable = { global.vwing = global.vwingq}
+		add_to_variable = { global.vwing_sold = global.vwingq}
+		KUA = {
+			add_to_variable = { dx = vwing_pricem }
+		}
+	}
+}
+purchase_btlb = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = ywing_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				ywing_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.btlb
+				value = global.btlbq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > btlb_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = blty_bomber_equip
+				 amount = global.btlbq
+			 }
+			 subtract_from_variable = { dx = btlb_pricem }
+		}
+		subtract_from_variable = { global.btlb = global.btlbq}
+		add_to_variable = { global.btlb_sold = global.btlbq}
+		KUA = {
+			add_to_variable = { dx = btlb_pricem }
+		}
+	}
+}
+purchase_laat = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = laat_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				laat_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.laat
+				value = global.laatq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > laat_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = laati_equip
+				amount = global.laatq
+			 }
+			 subtract_from_variable = { dx = laat_pricem }
+		}
+		subtract_from_variable = { global.laat = global.laatq}
+		add_to_variable = { global.laat_sold = global.laatq}
+		KUA = {
+			add_to_variable = { dx = laat_pricem }
+		}
+	}
+}
+purchase_laati = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = laati_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				laati_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.laati
+				value = global.laatiq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > laati_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = laati_equip
+				 amount = global.laatiq
+			 }
+			 subtract_from_variable = { dx = laati_pricem }
+		}
+		subtract_from_variable = { global.laati = global.laatiq}
+		add_to_variable = { global.laati_sold = global.laatiq}
+		KUA = {
+			add_to_variable = { dx = laati_pricem }
+		}
+	}
+}
+purchase_pelta = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = pelta_tech
+				}
+			}
+		}
+		Root = {
+			Root = {
+				set_technology = {
+					pelta_tech = 1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.pelta
+				value = global.peltaq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > pelta_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type =pelta_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			subtract_from_variable = { dx = pelta_pricem }
+		}
+		subtract_from_variable = { global.pelta = global.peltaq}
+		add_to_variable = { global.pelta_sold = global.peltaq}
+		KUA = {
+			add_to_variable = { dx = pelta_pricem }
+		}
+	}
+}
+purchase_arquintes = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = arquintes_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				arquintes_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.arquintes
+				value = global.arquintesq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > arquintes_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = arquintes_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = arquintes_pricem }
+		}
+		subtract_from_variable = { global.arquintes = global.arquintesq}
+		add_to_variable = { global.arquintes_sold = global.arquintesq}
+		KUA = {
+			add_to_variable = { dx = arquintes_pricem }
+		}
+	}
+}
+purchase_acclamator = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = acclamator_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				acclamator_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.acclamator
+				value = global.acclamatorq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > acclamator_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = acclamator_1_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = acclamator_pricem }
+		}
+		subtract_from_variable = { global.acclamator = global.acclamatorq}
+		add_to_variable = { global.acclamator_sold = global.acclamatorq}
+		KUA = {
+			add_to_variable = { dx = acclamator_pricem }
+		}
+	}
+}
+purchase_acclamator2 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = acclamator_II_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				acclamator_II_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_4
+			check_variable = { 
+				var = global.acclamator2
+				value = global.acclamator2q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > acclamator2_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = acclamator_2_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = acclamator2_pricem }
+		}
+		subtract_from_variable = { global.acclamator2 = global.acclamator2q}
+		add_to_variable = { global.acclamator2_sold = global.acclamator2q}
+		KUA = {
+			add_to_variable = { dx = acclamator2_pricem }
+		}
+	}
+}
+purchase_venator = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = venator_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				venator_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.venator
+				value = global.venatorq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > venator_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = venator_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = venator_pricem }
+		}
+		subtract_from_variable = { global.venator = global.venatorq}
+		add_to_variable = { global.venator_sold = global.venatorq}
+		KUA = {
+			add_to_variable = { dx = venator_pricem }
+		}
+	}
+}
+purchase_victory = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = victory_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				victory_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.victory
+				value = global.victoryq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > victory_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = victory_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = victory_pricem }
+		}
+		subtract_from_variable = { global.victory = global.victoryq}
+		add_to_variable = { global.victory_sold = global.victoryq}
+		KUA = {
+			add_to_variable = { dx = victory_pricem }
+		}
+	}
+}
+purchase_mandator1 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = mandator_I_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				mandator_I_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.mandator1
+				value = global.mandator1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > mandator1_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = mandator1_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = mandator1_pricem }
+		}
+		subtract_from_variable = { global.mandator1 = global.mandator1q}
+		add_to_variable = { global.mandator1_sold = global.mandator1q}
+		KUA = {
+			add_to_variable = { dx = mandator1_pricem }
+		}
+	}
+}
+purchase_mandator2 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+				NOT = {
+					has_tech = mandator_II_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				mandator_II_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.mandator2
+				value = global.mandator2q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > mandator2_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = mandator_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = mandator2_pricem }
+		}
+		subtract_from_variable = { global.mandator2 = global.mandator2q}
+		add_to_variable = { global.mandator2_sold = global.mandator2q}
+		KUA = {
+			add_to_variable = { dx = mandator2_pricem }
+		}
+	}
+}
+purchase_balutar = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+				NOT = {
+					has_tech = swoop_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				swoop_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.balutar
+				value = global.balutarq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > balutar_pricem }
+			}
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = mand_swoop_equipment
+				 amount = 150
+			 }
+			 subtract_from_variable = { dx = balutar_pricem }
+		}
+		subtract_from_variable = { global.balutar = global.balutarq}
+		add_to_variable = { global.balutar_sold = global.balutarq}
+		MAN = {
+			add_to_variable = { dx = balutar_pricem }
+		}
+	}
+}
+purchase_komrk = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+				NOT = {
+					has_tech = gauntlet_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				gauntlet_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.komrk
+				value = global.komrkq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > komrk_pricem }
+			}
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = gauntlet_fighter_equip
+				 amount = 50
+			 }
+			 subtract_from_variable = { dx = komrk_pricem }
+		}
+		subtract_from_variable = { global.komrk = global.komrkq}
+		add_to_variable = { global.komrk_sold = global.komrkq}
+		MAN = {
+			add_to_variable = { dx = komrk_pricem }
+		}
+	}
+}
+purchase_buirkalor = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+				NOT = {
+					has_tech = buirk_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				buirk_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.buirkalor
+				value = global.buirkalorq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > buirkalor_pricem }
+			}
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = buirk_equipment
+				 amount = 150
+			 }
+			 subtract_from_variable = { dx = buirkalor_pricem }
+		}
+		subtract_from_variable = { global.buirkalor = global.buirkalorq}
+		add_to_variable = { global.buirkalor_sold = global.buirkalorq}
+		MAN = {
+			add_to_variable = { dx = buirkalor_pricem }
+		}
+	}
+}
+purchase_fang = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+				NOT = {
+					has_tech = fang_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				fang_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.fang
+				value = global.fangq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > fang_pricem }
+			}
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = fang_fighter_equip
+				 amount = 50
+			 }
+			 subtract_from_variable = { dx = fang_pricem }
+		}
+		subtract_from_variable = { global.fang = global.fangq}
+		add_to_variable = { global.fang_sold = global.fangq}
+		MAN = {
+			add_to_variable = { dx = fang_pricem }
+		}
+	}
+}
+purchase_cal_dreadnaught = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 25
+				}
+				NOT = {
+					has_tech = dreadnaught_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				dreadnaught_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cal_dreadnaught
+				value = global.cal_dreadnaughtq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cal_dreadnaught_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 25
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = dreadnaught_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cal_dreadnaught_pricem }
+		}
+		subtract_from_variable = { global.cal_dreadnaught = global.cal_dreadnaughtq}
+		add_to_variable = { global.cal_dreadnaught_sold = global.cal_dreadnaughtq}
+		CAL = {
+			add_to_variable = { dx = cal_dreadnaught_pricem }
+		}
+	}
+}
+purchase_carrack = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+				NOT = {
+					has_tech = carrack_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				carrack_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.carrack
+				value = global.carrackq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > carrack_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = carrack_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = carrack_pricem }
+		}
+		subtract_from_variable = { global.carrack = global.carrackq}
+		add_to_variable = { global.carrack_sold = global.carrackq}
+		REN = {
+			add_to_variable = { dx = carrack_pricem }
+		}
+	}
+}
+purchase_hammerhead = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.hammerhead
+				value = global.hammerheadq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > hammerhead_pricem }
+			}
+			ROOT = {
+				has_tech = early_destroyer
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = hammerhead_pricem }
+		}
+		subtract_from_variable = { global.hammerhead = global.hammerheadq}
+		add_to_variable = { global.hammerhead_sold = global.hammerheadq}
+		REN = {
+			add_to_variable = { dx = hammerhead_pricem }
+		}
+	}
+}
+purchase_ren_dreadnaught = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+				NOT = {
+					has_tech = dreadnaught_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				dreadnaught_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.ren_dreadnaught
+				value = global.ren_dreadnaughtq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > ren_dreadnaught_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = dreadnaught_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = ren_dreadnaught_pricem }
+		}
+		subtract_from_variable = { global.ren_dreadnaught = global.ren_dreadnaughtq}
+		add_to_variable = { global.ren_dreadnaught_sold = global.ren_dreadnaughtq}
+		REN = {
+			add_to_variable = { dx = ren_dreadnaught_pricem }
+		}
+	}
+}
+purchase_ren_victory = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+				NOT = {
+					has_tech = victory_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				victory_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.ren_victory
+				value = global.ren_victoryq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > ren_victory_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = victory_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = ren_victory_pricem }
+		}
+		subtract_from_variable = { global.ren_victory = global.ren_victoryq}
+		add_to_variable = { global.ren_victory_sold = global.ren_victoryq}
+		REN = {
+			add_to_variable = { dx = ren_victory_pricem }
+		}
+	}
+}
+purchase_ren_providence = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					is_in_faction_with = CIS
+					TAG = CIS
+					owns_state = 30
+				}
+				NOT = {
+					has_tech = providence_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				providence_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.ren_providence
+				value = global.ren_providenceq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > ren_providence_pricem }
+			}
+			ROOT = {
+				has_tech = providence_tech
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = providence_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = ren_providence_pricem }
+		}
+		subtract_from_variable = { global.ren_providence = global.ren_providenceq}
+		add_to_variable = { global.ren_providence_sold = global.ren_providenceq}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Free_dac_idea
+				}
+				add_to_variable = { dx = ren_providence_pricem }
+			}
+		}
+	}
+}
+purchase_atrt = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+				NOT = {
+					has_tech = atrt_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				atrt_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.atrt
+				value = global.atrtq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > atrt_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = ATRT_equipment
+				 amount = global.atrtq
+			 }
+			 subtract_from_variable = { dx = atrt_pricem }
+			}
+		subtract_from_variable = { global.atrt = global.atrtq}
+		add_to_variable = { global.atrt_sold = global.atrtq}
+		ROT = {
+			add_to_variable = { dx = atrt_pricem }
+		}
+	}
+}
+purchase_spha = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+				NOT = {
+					has_tech = SPHA_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				SPHA_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.spha
+				value = global.sphaq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > spha_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = SPHA_equipment
+				 amount = global.sphaq
+			 }
+			 subtract_from_variable = { dx = spha_pricem }
+			}
+		subtract_from_variable = { global.spha = global.sphaq}
+		add_to_variable = { global.spha_sold = global.sphaq}
+		ROT = {
+			add_to_variable = { dx = spha_pricem }
+		}
+	}
+}
+purchase_atte = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+				NOT = {
+					has_tech = atte_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				atte_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.atte
+				value = global.atteq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > atte_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = atte_equipment
+				 amount = global.atteq
+			 }
+			 subtract_from_variable = { dx = atte_pricem }
+			}
+		subtract_from_variable = { global.atte = global.atteq}
+		add_to_variable = { global.atte_sold = global.atteq}
+		ROT = {
+			add_to_variable = { dx = atte_pricem }
+		}
+	}
+}
+purchase_tx130 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+				NOT = {
+					has_tech = tx130_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				tx130_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.tx130
+				value = global.tx130q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tx130_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = tx130_equipment
+				 amount = global.tx130q
+			 }
+			 subtract_from_variable = { dx = tx130_pricem }
+			}
+		subtract_from_variable = { global.tx130 = global.tx130q}
+		add_to_variable = { global.tx130_sold = global.tx130q}
+		ROT = {
+			add_to_variable = { dx = tx130_pricem }
+		}
+	}
+}
+purchase_juggernaut = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+				NOT = {
+					has_tech = jugg_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				jugg_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_3
+			check_variable = { 
+				var = global.juggernaut
+				value = global.juggernautq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > juggernaut_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = jugg_equipment
+				 amount = global.juggernautq
+			 }
+			 subtract_from_variable = { dx = juggernaut_pricem }
+			}
+		subtract_from_variable = { global.juggernaut = global.juggernautq}
+		add_to_variable = { global.juggernaut_sold = global.juggernautq}
+		ROT = {
+			add_to_variable = { dx = juggernaut_pricem }
+		}
+	}
+}
+purchase_vulture = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = vulture_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				vulture_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.vulture
+				value = global.vultureq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > vulture_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = vulture_fighter_equip
+				 amount = global.vultureq
+			 }
+			 subtract_from_variable = { dx = vulture_pricem }
+		}
+		subtract_from_variable = { global.vulture = global.vultureq}
+		add_to_variable = { global.vulture_sold = global.vultureq}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Haor_idea
+				}
+				add_to_variable = { dx = vulture_pricem }
+			}
+		}
+	}
+}
+purchase_c9979 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = c9979_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				c9979_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.c9979
+				value = global.c9979q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > c9979_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = C9979_equip
+				 amount = global.c9979q
+			 }
+			 subtract_from_variable = { dx = c9979_pricem }
+		}
+		subtract_from_variable = { global.c9979 = global.c9979q}
+		add_to_variable = { global.c9979_sold = global.c9979q}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Haor_idea
+				}
+				add_to_variable = { dx = vulture_pricem }
+			}
+		}
+	}
+}
+purchase_rogue = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = rogue_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				rogue_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.rogue
+				value = global.rogueq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > rogue_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = rogue_fighter_equip
+				 amount = global.rogueq
+			 }
+			 subtract_from_variable = { dx = rogue_pricem }
+		}
+		subtract_from_variable = { global.rogue = global.rogueq}
+		add_to_variable = { global.rogue_sold = global.rogueq}
+		TEC = {
+			add_to_variable = { dx = rogue_pricem }
+		}
+	}
+}
+purchase_bellbulab22 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = bellbulab22_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				bellbulab22_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.bellbulab22
+				value = global.bellbulab22q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > bellbulab22_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = belb_fighter_equip
+				 amount = global.bellbulab22q
+			 }
+			 subtract_from_variable = { dx = bellbulab22_pricem }
+		}
+		subtract_from_variable = { global.bellbulab22 = global.bellbulab22q}
+		add_to_variable = { global.bellbulab22_sold = global.bellbulab22q}
+		TEC = {
+			add_to_variable = { dx = bellbulab22_pricem }
+		}
+	}
+}
+purchase_trifighter = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = trifighter_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				trifighter_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.trifighter
+				value = global.trifighterq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > trifighter_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = tri_fighter_equip
+				 amount = global.trifighterq
+			 }
+			 subtract_from_variable = { dx = trifighter_pricem }
+		}
+		subtract_from_variable = { global.trifighter = global.trifighterq}
+		add_to_variable = { global.trifighter_sold = global.trifighterq}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Colicoid_idea
+				}
+				add_to_variable = { dx = trifighter_pricem }
+			}
+		}
+	}
+}
+purchase_advanceddroidbomber = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = advanceddroidbomber_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				advanceddroidbomber_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.advanceddroidbomber
+				value = global.advanceddroidbomberq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > advanceddroidbomber_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = droid_bomber_equip
+				 amount = global.advanceddroidbomberq
+			 }
+			 subtract_from_variable = { dx = advanceddroidbomber_pricem }
+		}
+		subtract_from_variable = { global.advanceddroidbomber = global.advanceddroidbomberq}
+		add_to_variable = { global.advanceddroidbomber_sold = global.advanceddroidbomberq}
+		TEC = {
+			add_to_variable = { dx = advanceddroidbomber_pricem }
+		}
+	}
+}
+purchase_hyena = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = hyena_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				hyena_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.hyena
+				value = global.hyenaq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > hyena_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = hyena_bomber_equip
+				 amount = global.hyenaq
+			 }
+			 subtract_from_variable = { dx = hyena_pricem }
+		}
+		subtract_from_variable = { global.hyena = global.hyenaq}
+		add_to_variable = { global.hyena_sold = global.hyenaq}
+		TEC = {
+			add_to_variable = { dx = hyena_pricem }
+		}
+	}
+}
+purchase_bellbulab24 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = bellbulab24_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				bellbulab24_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.bellbulab24
+				value = global.bellbulab24q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > bellbulab24_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = belb_bomber_equip
+				 amount = global.bellbulab24q
+			 }
+			 subtract_from_variable = { dx = bellbulab24_pricem }
+		}
+		subtract_from_variable = { global.bellbulab24 = global.bellbulab24q}
+		add_to_variable = { global.bellbulab24_sold = global.bellbulab24q}
+		TEC = {
+			add_to_variable = { dx = bellbulab24_pricem }
+		}
+	}
+}
+purchase_hmpgunship = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = hmpgunship_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				hmpgunship_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.hmpgunship
+				value = global.hmpgunshipq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > hmpgunship_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = hmp_equip
+				 amount = global.hmpgunshipq
+			 }
+			 subtract_from_variable = { dx = hmpgunship_pricem }
+		}
+		subtract_from_variable = { global.hmpgunship = global.hmpgunshipq}
+		add_to_variable = { global.hmpgunship_sold = global.hmpgunshipq}
+		TEC = {
+			add_to_variable = { dx = hmpgunship_pricem }
+		}
+	}
+}
+purchase_marauder = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = marauder_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				marauder_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.marauder
+				value = global.marauderq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > marauder_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = marauder_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = marauder_pricem }
+		}
+		subtract_from_variable = { global.marauder = global.marauderq}
+		add_to_variable = { global.marauder_sold = global.marauderq}
+		TEC = {
+			add_to_variable = { dx = marauder_pricem }
+		}
+	}
+}
+purchase_tudestroyer = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = tec_destroyer_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				tec_destroyer_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.tudestroyer
+				value = global.tudestroyerq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tudestroyer_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = tec_destroyer_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = tudestroyer_pricem }
+		}
+		subtract_from_variable = { global.tudestroyer = global.tudestroyerq}
+		add_to_variable = { global.tudestroyer_sold = global.tudestroyerq}
+		TEC = {
+			add_to_variable = { dx = tudestroyer_pricem }
+		}
+	}
+}
+purchase_tec_bulwark = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = bulwark_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				bulwark_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.tec_bulwark
+				value = global.tec_bulwarkq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tec_bulwark_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = bulwark_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = tec_bulwark_pricem }
+		}
+		subtract_from_variable = { global.tec_bulwark = global.tec_bulwarkq}
+		add_to_variable = { global.tec_bulwark_sold = global.tec_bulwarkq}
+			if = {
+				limit = {
+					has_idea = TransGalMegIndustriesIncorporated_idea
+				}
+			add_to_variable = { dx = tec_bulwark_pricem }
+		}
+	}
+}
+purchase_oom = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = battle_droid_0
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				battle_droid_0 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.oom
+				value = global.oomq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > oom_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = oom_droid_equipment
+				 amount = global.oomq
+			 }
+			 subtract_from_variable = { dx = oom_pricem }
+			}
+		subtract_from_variable = { global.oom = global.oomq}
+		add_to_variable = { global.oom_sold = global.oomq}
+		TEC = {
+			add_to_variable = { dx = oom_pricem }
+		}
+	}
+}
+purchase_b1 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = battle_droid_1
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				battle_droid_1 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.b1
+				value = global.b1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > b1_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = b1_droid_equip
+				 amount = global.b1q
+			 }
+			 subtract_from_variable = { dx = b1_pricem }
+			}
+		subtract_from_variable = { global.b1 = global.b1q}
+		add_to_variable = { global.b1_sold = global.b1q}
+		TEC = {
+			add_to_variable = { dx = b1_pricem }
+		}
+	}
+}
+purchase_b2 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = battle_droid_2
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				battle_droid_2 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.b2
+				value = global.b2q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > b2_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = b2_droid_equip
+				 amount = global.b2q
+			 }
+			 subtract_from_variable = { dx = b2_pricem }
+			}
+		subtract_from_variable = { global.b2 = global.b2q}
+		add_to_variable = { global.b2_sold = global.b2q}
+		TEC = {
+			add_to_variable = { dx = b2_pricem }
+		}
+	}
+}
+purchase_bx = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = bx_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				bx_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.bx
+				value = global.bxq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > bx_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = bx_battle_droid_equipment
+				 amount = global.bxq
+			 }
+			 subtract_from_variable = { dx = bx_pricem }
+			}
+		subtract_from_variable = { global.bx = global.bxq}
+		add_to_variable = { global.bx_sold = global.bxq}
+		TEC = {
+			add_to_variable = { dx = bx_pricem }
+		}
+	}
+}
+purchase_tactical = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = battle_droid_1
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				battle_droid_1 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.tactical
+				value = global.tacticalq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tactical_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			create_corps_commander = {
+				name = "Tactical Droid"
+				portrait_path = "gfx/leaders/Market/tactical driod 1.dds"
+				traits = { }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 5
+			}
+			 subtract_from_variable = { dx = tactical_pricem }
+			}
+		subtract_from_variable = { global.tactical = global.tacticalq}
+		add_to_variable = { global.tactical_sold = global.tacticalq}
+		TEC = {
+			add_to_variable = { dx = tactical_pricem }
+		}
+	}
+}
+purchase_dwing = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = d_wing_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				d_wing_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.dwing
+				value = global.dwingq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > dwing_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = dw_droid_equip
+				 amount = global.dwingq
+			 }
+			 subtract_from_variable = { dx = dwing_pricem }
+			}
+		subtract_from_variable = { global.dwing = global.dwingq}
+		add_to_variable = { global.dwing_sold = global.dwingq}
+		TEC = {
+			add_to_variable = { dx = dwing_pricem }
+		}
+	}
+}
+purchase_stap = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = stap_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				stap_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.stap
+				value = global.stapq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > stap_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = STAP_equip
+				 amount = global.stapq
+			 }
+			 subtract_from_variable = { dx = stap_pricem }
+		}
+		subtract_from_variable = { global.stap = global.stapq}
+		add_to_variable = { global.stap_sold = global.stapq}
+		TEC = {
+			add_to_variable = { dx = stap_pricem }
+		}
+	}
+}
+purchase_droideka = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = droideka_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				droideka_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.droideka
+				value = global.droidekaq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > droideka_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = destroyer_battle_droid
+				 amount = global.droidekaq
+			 }
+			 subtract_from_variable = { dx = droideka_pricem }
+		}
+		subtract_from_variable = { global.droideka = global.droidekaq}
+		add_to_variable = { global.droideka_sold = global.droidekaq}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Colicoid_idea
+				}
+				add_to_variable = { dx = droideka_pricem }
+			}
+		}
+	}
+}
+purchase_tec_dsd1 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = dsd1_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				dsd1_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.tec_dsd1
+				value = global.tec_dsd1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tec_dsd1_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = dsd1_dwarf_equipment
+				 amount = global.tec_dsd1q
+			 }
+			 subtract_from_variable = { dx = tec_dsd1_pricem }
+		}
+		subtract_from_variable = { global.tec_dsd1 = global.tec_dsd1q}
+		add_to_variable = { global.tec_dsd1_sold = global.tec_dsd1q}
+		TEC = {
+			add_to_variable = { dx = tec_dsd1_pricem }
+		}
+	}
+}
+purchase_tec_adsd = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = adsd_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				adsd_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.tec_adsd
+				value = global.tec_adsdq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tec_adsd_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = adsd_dwarf_equipment
+				 amount = global.tec_adsdq
+			 }
+			 subtract_from_variable = { dx = tec_adsd_pricem }
+		}
+		subtract_from_variable = { global.tec_adsd = global.tec_adsdq}
+		add_to_variable = { global.tec_adsd_sold = global.tec_adsdq}
+		TEC = {
+			add_to_variable = { dx = tec_adsd_pricem }
+		}
+	}
+}
+purchase_crab = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = crab_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				crab_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.crab
+				value = global.crabq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > crab_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = crab_droid_equip
+				 amount = global.crabq
+			 }
+			 subtract_from_variable = { dx = crab_pricem }
+		}
+		subtract_from_variable = { global.crab = global.crabq}
+		add_to_variable = { global.crab_sold = global.crabq}
+		TEC = {
+			add_to_variable = { dx = crab_pricem }
+		}
+	}
+}
+purchase_pac = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = pac_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				pac_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.pac
+				value = global.pacq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > pac_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = PAC_equipment_1
+				 amount = global.pacq
+			 }
+			 subtract_from_variable = { dx = pac_pricem }
+		}
+		subtract_from_variable = { global.pac = global.pacq}
+		add_to_variable = { global.pac_sold = global.pacq}
+		TEC = {
+			add_to_variable = { dx = pac_pricem }
+		}
+	}
+}
+purchase_mtt = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = mtt_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				mtt_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.mtt
+				value = global.mttq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > mtt_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = MTT_equipment_1
+				 amount = global.mttq
+			 }
+			 subtract_from_variable = { dx = mtt_pricem }
+		}
+		subtract_from_variable = { global.mtt = global.mttq}
+		add_to_variable = { global.mtt_sold = global.mttq}
+		TEC = {
+			add_to_variable = { dx = mtt_pricem }
+		}
+	}
+}
+purchase_j1 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = j1_artillery
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				j1_artillery = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.j1
+				value = global.j1q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > j1_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = j1_equipment
+				 amount = global.j1q
+			 }
+			 subtract_from_variable = { dx = j1_pricem }
+		}
+		subtract_from_variable = { global.j1 = global.j1q}
+		add_to_variable = { global.j1_sold = global.j1q}
+		TEC = {
+			add_to_variable = { dx = j1_pricem }
+		}
+	}
+}
+purchase_tec_hailfire = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = hailfire_droid
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				hailfire_droid = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.tec_hailfire
+				value = global.tec_hailfireq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tec_hailfire_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = hailfire_equipment
+				 amount = global.tec_hailfireq
+			 }
+			 subtract_from_variable = { dx = tec_hailfire_pricem }
+		}
+		subtract_from_variable = { global.tec_hailfire = global.tec_hailfireq}
+		add_to_variable = { global.tec_hailfire_sold = global.tec_hailfireq}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Haor_idea
+				}
+				add_to_variable = { dx = tec_hailfire_pricem }
+			}
+		}
+	}
+}
+purchase_aat = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = cis_tank_1
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cis_tank_1 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_1
+			check_variable = { 
+				var = global.aat
+				value = global.aatq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > aat_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = AAT_equipment
+				 amount = global.aatq
+			 }
+			 subtract_from_variable = { dx = aat_pricem }
+		}
+		subtract_from_variable = { global.aat = global.aatq}
+		add_to_variable = { global.aat_sold = global.aatq}
+		TEC = {
+			add_to_variable = { dx = aat_pricem }
+		}
+	}
+}
+purchase_og9 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = cis_tank_2
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cis_tank_2 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.og9
+				value = global.og9q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > og9_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = OG9_equipment
+				 amount = global.og9q
+			 }
+			 subtract_from_variable = { dx = og9_pricem }
+		}
+		subtract_from_variable = { global.og9 = global.og9q}
+		add_to_variable = { global.og9_sold = global.og9q}
+		TEC = {
+			add_to_variable = { dx = og9_pricem }
+		}
+	}
+}
+purchase_octuparramagna = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = TEC_magna_tri
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				TEC_magna_tri = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.octuparramagna
+				value = global.octuparramagnaq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > octuparramagna_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = magna_tri_droid_equip
+				 amount = global.octuparramagnaq
+			 }
+			 subtract_from_variable = { dx = octuparramagna_pricem }
+		}
+		subtract_from_variable = { global.octuparramagna = global.octuparramagnaq}
+		add_to_variable = { global.octuparramagna_sold = global.octuparramagnaq}
+		TEC = {
+			add_to_variable = { dx = octuparramagna_pricem }
+		}
+	}
+}
+purchase_octuparracombat = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = TEC_combat_tri
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				TEC_combat_tri = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.octuparracombat
+				value = global.octuparracombatq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > octuparracombat_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = combat_tri_droid_equip
+				 amount = global.octuparracombatq
+			 }
+			 subtract_from_variable = { dx = octuparracombat_pricem }
+		}
+		subtract_from_variable = { global.octuparracombat = global.octuparracombatq}
+		add_to_variable = { global.octuparracombat_sold = global.octuparracombatq}
+		TEC = {
+			add_to_variable = { dx = octuparracombat_pricem }
+		}
+	}
+}
+purchase_tankdroid = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = cis_tank_3
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cis_tank_3 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.tankdroid
+				value = global.tankdroidq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > tankdroid_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = tankdroid_equipment
+				 amount = global.tankdroidq
+			 }
+			 subtract_from_variable = { dx = tankdroid_pricem }
+		}
+		subtract_from_variable = { global.tankdroid = global.tankdroidq}
+		add_to_variable = { global.tankdroid_sold = global.tankdroidq}
+		TEC = {
+			add_to_variable = { dx = tankdroid_pricem }
+		}
+	}
+}
+purchase_aat2 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					has_government = fascism
+					TAG = FED
+					owns_state = 22
+				}
+				NOT = {
+					has_tech = cis_tank_4
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cis_tank_4 = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_4
+			check_variable = { 
+				var = global.aat2
+				value = global.aat2q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > aat2_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_government = fascism
+					TAG = FED
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		Root = {
+			add_equipment_to_stockpile = {
+				type = aat2_equipment
+				 amount = global.aat2q
+			 }
+			 subtract_from_variable = { dx = aat2_pricem }
+		}
+		subtract_from_variable = { global.aat2 = global.aat2q}
+		add_to_variable = { global.aat2_sold = global.aat2q}
+		TEC = {
+			add_to_variable = { dx = aat2_pricem }
+		}
+	}
+}
+purchase_cla_hammerhead = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cla_hammerhead
+				value = global.cla_hammerheadq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cla_hammerhead_pricem }
+			}
+			ROOT = {
+				has_tech = early_destroyer 
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = destroyer_1
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cla_hammerhead_pricem }
+		}
+		subtract_from_variable = { global.cla_hammerhead = global.cla_hammerheadq}
+		add_to_variable = { global.cla_hammerhead_sold = global.cla_hammerheadq}
+		CLA = {
+			add_to_variable = { dx = cla_hammerhead_pricem }
+		}
+	}
+}
+purchase_consular = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+				NOT = {
+					has_tech = consular_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				consular_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.consular
+				value = global.consularq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > consular_pricem }
+			}
+			ROOT = {
+				has_tech = consular_tech
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = consular_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = consular_pricem }
+		}
+		subtract_from_variable = { global.consular = global.consularq}
+		add_to_variable = { global.consular_sold = global.consularq}
+		CLA = {
+			add_to_variable = { dx = consular_pricem }
+		}
+	}
+}
+purchase_c70 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+				NOT = {
+					has_tech = republic_frigate_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				republic_frigate_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = REP_tech_2
+			check_variable = { 
+				var = global.c70
+				value = global.c70q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > c70_pricem }
+			}
+			ROOT = {
+				has_tech = republic_frigate_tech
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = republic_frigate_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = c70_pricem }
+		}
+		subtract_from_variable = { global.c70 = global.c70q}
+		add_to_variable = { global.c70_sold = global.c70q}
+		CLA = {
+			add_to_variable = { dx = c70_pricem }
+		}
+	}
+}
+purchase_cr70 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+				NOT = {
+					has_tech = cr70_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cr70_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cr70
+				value = global.cr70q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cr70_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = cr70_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cr70_pricem }
+		}
+		subtract_from_variable = { global.cr70 = global.cr70q}
+		add_to_variable = { global.cr70_sold = global.cr70q}
+		CLA = {
+			add_to_variable = { dx = cr70_pricem }
+		}
+	}
+}
+purchase_cr90 = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+				NOT = {
+					has_tech = cr90_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				cr90_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { 
+				var = global.cr90
+				value = global.cr90q
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > cr90_pricem }
+			}
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = cr90_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = cr90_pricem }
+		}
+		subtract_from_variable = { global.cr90 = global.cr90q}
+		add_to_variable = { global.cr90_sold = global.cr90q}
+		CLA = {
+			add_to_variable = { dx = cr90_pricem }
+		}
+	}
+}
+purchase_dac_recusant = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 15
+				}
+				NOT = {
+					has_tech = recusant_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				recusant_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_2
+			check_variable = { 
+				var = global.dac_recusant
+				value = global.dac_recusantq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > dac_recusant_pricem }
+			}
+			ROOT = {
+				has_tech = recusant_tech
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = recusant_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = dac_recusant_pricem }
+		}
+		subtract_from_variable = { global.dac_recusant = global.dac_recusantq}
+		add_to_variable = { global.dac_recusant_sold = global.dac_recusantq}
+		QUA = {
+			add_to_variable = { dx = dac_recusant_pricem }
+		}
+	}
+}
+purchase_dac_providence = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 15
+				}
+				NOT = {
+					has_tech = providence_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				providence_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.dac_providence
+				value = global.dac_providenceq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > dac_providence_pricem }
+			}
+			ROOT = {
+				has_tech = providence_tech
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = providence_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = dac_providence_pricem }
+		}
+		subtract_from_variable = { global.dac_providence = global.dac_providenceq}
+		add_to_variable = { global.dac_providence_sold = global.dac_providenceq}
+		QUA = {
+			add_to_variable = { dx = dac_providence_pricem }
+		}
+	}
+}
+purchase_subjugator = {
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 15
+				}
+				NOT = {
+					has_tech = subjugator_tech
+				}
+			}
+		}
+		Root = {
+			set_technology = {
+				subjugator_tech = 1
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = CIS_tech_3
+			check_variable = { 
+				var = global.subjugator
+				value = global.subjugatorq
+				compare = greater_than_or_equals
+			}
+			ROOT = {
+				check_variable = { dx > subjugator_pricem }
+			}
+			ROOT = {
+				has_tech = subjugator_tech
+			}
+		}
+		Root = {
+			add_equipment_production = {
+				equipment = {
+					type = subjugator_equipment
+				}
+				requested_factories = 1
+				progress = 1.00
+				amount = 1
+			}
+			 subtract_from_variable = { dx = subjugator_pricem }
+		}
+		subtract_from_variable = { global.subjugator = global.subjugatorq}
+		add_to_variable = { global.subjugator_sold = global.subjugatorq}
+		every_country = {
+			if = {
+				limit = {
+					has_idea = Free_dac_idea
+				}
+				add_to_variable = { dx = subjugator_pricem }
+			}
+		}
+	}
+}

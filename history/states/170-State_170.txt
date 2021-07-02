@@ -1,0 +1,41 @@
+state={
+	id=170
+	name="STATE_170"
+	provinces={
+		4 91 153 304 735 948 981 994 1948 1973 2173 2210 2461 2758 3020 3133 3326 3928 4220 4278 4578 6396 6404 6414 6422 6443 6450 6463 6490 6523 6524 6528 6529 6532 6538 6550 6553 6560 6562 6563 6580 6592 6601 
+	}
+	manpower=700000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=8
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CAR
+		add_core_of = CAR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			170 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			4 30
+		}
+	}
+}
+

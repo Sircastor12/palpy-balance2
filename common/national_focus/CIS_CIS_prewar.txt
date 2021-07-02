@@ -1,0 +1,1398 @@
+focus_tree = {
+	id = CIS_prewar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CIS
+		}
+	}
+	continuous_focus_position = { x = 400 y = 2800 }
+	#Focus for The Sith Plot
+	focus = {
+		id = CIS_the_sith_plot
+		icon = GFX_CIS_the_sith_plot-57183
+		x = 13
+		y = 0
+		cost = 5.8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.05
+		}
+	}
+
+	#Focus for The Idealists
+	focus = {
+		id = CIS_the_idealists
+		icon = GFX_CIS_the_idealists-57184
+		x = 7
+		y = 1
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_sith_plot }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Jabiim
+	focus = {
+		id = CIS_jabiim
+		icon = GFX_CIS_jabiim-57186
+		x = 4
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_idealists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = jab_secession_point_tt
+			JAB = {
+				add_to_variable = { secessionpoint = 2 }
+			}
+			REP = {
+				add_war_support = 0.05
+			}
+		}
+	}
+
+	#Focus for Instigate Separatism in the Outer Rim
+	focus = {
+		id = CIS_instigate_separatism_in_the_outer_rim
+		icon = GFX_CIS_instigate_separatism_in_the_outer_rim-57185
+		x = 7
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_idealists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 250
+			add_war_support = 0.05
+		}
+	}
+
+	#Focus for Onderon
+	focus = {
+		id = CIS_onderon
+		icon = GFX_CIS_onderon-57187
+		x = 10
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_idealists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = ond_secession_point_tt
+			OND = {
+				add_to_variable = { secessionpoint = 2 }
+			}
+			REP = {
+				add_war_support = 0.05
+			}
+		}
+	}
+
+	#Focus for Spread Dissadence
+	focus = {
+		id = CIS_spread_dissadence
+		icon = GFX_CIS_spread_dissadence-57188
+		x = 7
+		y = 3
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_instigate_separatism_in_the_outer_rim }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Outline Corruption
+	focus = {
+		id = CIS_outline_corruption
+		icon = GFX_CIS_outline_corruption-57189
+		x = 7
+		y = 4
+		cost = 5.8
+		available_if_capitulated = yes
+		available = {
+			check_variable = { dx > 50 }
+		}
+		prerequisite = { focus = CIS_spread_dissadence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = cost_150
+			add_stability = 0.10
+			custom_effect_tooltip = all_secession_point_tt
+			REP = {
+				add_stability = -0.05
+			}
+			hidden_effect = {
+				add_to_variable = { dx = -150 }
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+					add_to_variable = { secessionpoint = 1 }
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for The Separatist Council
+	focus = {
+		id = CIS_the_separatist_council
+		icon = GFX_CIS_the_separatist_council-57190
+		x = 19
+		y = 1
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_sith_plot }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = the_council_tt
+			hidden_effect = {
+				every_country = {
+					if = {
+						limit = {
+							canonical_separatist_council_member = yes
+						}
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Techno Union
+	focus = {
+		id = CIS_techno_union
+		icon = GFX_CIS_techno_union-57191
+		x = 15
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_separatist_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			TEC = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+			add_political_power = 50
+			custom_effect_tooltip = TEC_secession_point_tt
+		}
+	}
+
+	#Focus for Military Industrial Complex
+	focus = {
+		id = CIS_military_industrial_complex
+		icon = GFX_CIS_military_industrial_complex-57192
+		x = 15
+		y = 3
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_techno_union }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+			remove_ideas = {
+				unprepared_industry
+			}
+			army_experience = 50
+		}
+	}
+
+	#Focus for Nute Sambor
+	focus = {
+		id = CIS_nute_sambor
+		icon = GFX_CIS_nute_sambor-57194
+		x = 15
+		y = 5
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_learn_their_techniques }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = nute_sambor
+		}
+	}
+
+	#Focus for Learn Their Techniques
+	focus = {
+		id = CIS_learn_their_techniques
+		icon = GFX_CIS_learn_their_techniques-57193
+		x = 15
+		y = 4
+		cost = 5.8
+		available_if_capitulated = yes
+		available = {
+			has_political_power > 150
+		}
+		prerequisite = { focus = CIS_military_industrial_complex }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = canproduceoom
+			set_country_flag = canproduceb1
+			custom_effect_tooltip = canproduceb1
+		}
+	}
+
+	#Focus for Trade Federation
+	focus = {
+		id = CIS_trade_federation
+		icon = GFX_CIS_trade_federation-57195
+		x = 17
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_separatist_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FED = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+			add_political_power = 50
+			custom_effect_tooltip = FED_secession_point_tt
+		}
+	}
+
+	#Focus for Investments
+	focus = {
+		id = CIS_investments
+		icon = GFX_CIS_investments-57196
+		x = 17
+		y = 3
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_trade_federation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = trade_ties
+		}
+	}
+
+	#Focus for Indentured Servitude
+	focus = {
+		id = CIS_indentured_servitude
+		icon = GFX_CIS_indentured_servitude-57197
+		x = 17
+		y = 4
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = indentured_servitude
+		}
+	}
+
+	#Focus for Request Mar Tuuk
+	focus = {
+		id = CIS_request_mar_tuuk
+		icon = GFX_CIS_request_mar_tuuk-57198
+		x = 17
+		y = 5
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_indentured_servitude }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_navy_leader = {
+				name = "Mar Tuuk"
+				portrait_path = "gfx/leaders/CIS/MarTuuk.dds"
+				traits = {  }
+				skill = 8
+				attack_skill = 8
+				defense_skill = 6
+				maneuvering_skill = 8
+				coordination_skill = 5
+			}
+		}
+	}
+
+	#Focus for Dac
+	focus = {
+		id = CIS_dac
+		icon = GFX_CIS_dac-57199
+		x = 19
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_separatist_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.10
+			activate_mission = qua_independence
+		}
+	}
+
+	#Focus for Free Volunteer Shipyards
+	focus = {
+		id = CIS_free_volunteer_shipyards
+		icon = GFX_CIS_free_volunteer_shipyards-57200
+		x = 19
+		y = 3
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_dac }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = dockyard
+				level = 3
+			}
+		}
+	}
+
+	#Focus for Support the Quaarran Struggle
+	focus = {
+		id = CIS_support_the_quaarran_struggle
+		icon = GFX_CIS_support_the_quaarran_struggle-57201
+		x = 19
+		y = 4
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_free_volunteer_shipyards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CAL = { news_event = CAL.1 }
+			give_guarantee = QUA
+			army_experience = 50
+		}
+	}
+
+	#Focus for Riff Tamson
+	focus = {
+		id = CIS_riff_tamson
+		icon = GFX_CIS_riff_tamson-57202
+		x = 19
+		y = 5
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_support_the_quaarran_struggle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_corps_commander = {
+				name = "Riff Tamson"
+				picture = "Riff_Tamson.dds"
+				traits = {  }
+				skill = 6
+				attack_skill = 7
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 4
+			}
+		}
+	}
+
+	#Focus for Banking Clan
+	focus = {
+		id = CIS_banking_clan
+		icon = GFX_CIS_banking_clan-57203
+		x = 21
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_separatist_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			IBC = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+			add_political_power = 50
+			custom_effect_tooltip = IBC_secession_point_tt
+		}
+	}
+
+	#Focus for Better Interest Rates
+	focus = {
+		id = CIS_better_interest_rates
+		icon = GFX_CIS_better_interest_rates-57204
+		x = 21
+		y = 3
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_banking_clan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = better_interest
+			add_political_power = 50
+			custom_effect_tooltip = better_interest_tt
+		}
+	}
+
+	#Focus for Request Subsidies
+	focus = {
+		id = CIS_request_subsidies
+		icon = GFX_CIS_request_subsidies-57205
+		x = 21
+		y = 4
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_better_interest_rates }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = man_steel_mine_upgrade
+			custom_effect_tooltip =  "You will get some subsidies from the YIBC"
+		}
+	}
+
+	#Focus for Grow Closer
+	focus = {
+		id = CIS_grow_closer
+		icon = GFX_CIS_grow_closer-57206
+		x = 21
+		y = 5
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_request_subsidies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = san_hill
+		}
+	}
+
+	#Focus for Commerce Guild
+	focus = {
+		id = CIS_commerce_guild
+		icon = GFX_CIS_commerce_guild-57207
+		x = 23
+		y = 2
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_separatist_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CMG = {
+				add_to_variable = { secessionpoint = 1 }
+			}
+			add_political_power = 50
+			custom_effect_tooltip = CMG_secession_point_tt
+		}
+	}
+
+	#Focus for Increase Trade
+	focus = {
+		id = CIS_increase_trade
+		icon = GFX_CIS_increase_trade-57208
+		x = 23
+		y = 3
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_commerce_guild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = free_trade
+		}
+	}
+
+	#Focus for Foreign Workers
+	focus = {
+		id = CIS_foreign_workers
+		icon = GFX_CIS_foreign_workers-57209
+		x = 23
+		y = 4
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_increase_trade }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = foreign_workers
+		}
+	}
+
+	#Focus for The Commerce Pact
+	focus = {
+		id = CIS_the_commerce_pact
+		icon = GFX_CIS_the_commerce_pact-57210
+		x = 23
+		y = 5
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_foreign_workers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CIS = {
+				set_capital = 135
+				custom_effect_tooltip = commercepact_tt
+				add_to_variable = { dx = -250 }
+				add_opinion_modifier = {
+					target = CMG
+					modifier = huge_increase
+				}
+				hidden_effect = {
+					transfer_state = 11
+					add_state_core = 11
+					transfer_state = 129
+					add_state_core = 129
+					transfer_state = 135
+					add_state_core = 135
+					transfer_state = 140
+					add_state_core = 140
+					transfer_state = 143
+					add_state_core = 143
+					transfer_state = 145
+					add_state_core = 145
+					transfer_state = 138
+					add_state_core = 138
+					transfer_state = 127
+					add_state_core = 127
+				}
+			}
+			CMG = {
+				add_to_variable = { dx = 250 }
+				news_event = {
+					id = CMG.5
+				}
+				add_opinion_modifier = {
+					target = CIS
+					modifier = huge_increase
+				}
+			}
+		}
+	}
+
+	#Focus for Council Meeting
+	focus = {
+		id = CIS_council_meeting
+		icon = GFX_CIS_council_meeting-57211
+		x = 19
+		y = 7
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_geonosis
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = the_council_tt
+			hidden_effect = {
+				every_country = {
+					if = {
+						limit = { 
+							canonical_separatist_council_member = yes
+						}
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+			}		
+		}
+	}
+	focus = {
+		id = CIS_raxus_address
+		icon = GFX_CIS_council_meeting-57211
+		x = 19
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_council_meeting
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			load_focus_tree = CIS_war
+			custom_effect_tooltip = CIS_raxus_address_tooltip
+			#hidden_effect = {
+					add_threat = 50
+					set_global_flag = secessionoccured
+					CIS = {
+						army_experience = 100
+					}
+					every_country = {
+						set_country_flag = raxussuperevent
+							news_event = {
+								id = super.3
+							}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 1 }
+							}
+							
+							if = {
+								limit = {
+									has_government = fascism
+									OR = {
+										has_idea = REP_member_prewar
+										has_idea = REP_member
+									}
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.10
+								}
+							}
+							if = {
+								limit = {
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+									has_government = democratic
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 0.5
+								}
+							}
+
+							If = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+								leave_republic_senate = yes
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 2 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.20
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 0.6
+								}
+							}
+							If = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+								leave_republic_senate = yes
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 3 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.40
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 0.7
+								}
+							}
+							If = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								leave_republic_senate = yes
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 4 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.40
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 0.8
+								}
+							}
+							If = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+								leave_republic_senate = yes
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 5 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							set_politics = {
+								ruling_party = fascism
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.50
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 0.85
+								}
+							}
+							if = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+								leave_republic_senate = yes
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 6 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.60
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 0.90
+								}
+							}
+							if = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+								leave_republic_senate = yes
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 7 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								add_popularity = {
+									ideology = fascism
+									popularity = 0.70
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+									NOT = {
+										TAG = TEC
+										TAG = IBC
+									}
+								}
+								start_civil_war = {
+									ideology = fascism
+									size = 1
+								}
+							}
+							If = {
+								limit = {
+									NOT = {
+										tag = TEC
+										tag = IBC
+									}
+								}
+								remove_from_array = {
+									array = global.militarist_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.peace_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.corporate_list
+									value = THIS.id
+								}
+								remove_from_array = {
+									array = global.outer_rim_list
+									value = THIS.id
+								}
+								leave_republic_senate = yes
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -1 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.10
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 0.5
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -2 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.20
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 0.6
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -3 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.30
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 0.7
+								}
+							}
+							
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -4 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.40
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 0.8
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -5 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.50
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 0.85
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -6 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.60
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 0.9
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = -7 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							if = {
+								limit = {
+									has_government = democratic
+								}
+								add_popularity = {
+									ideology = democratic
+									popularity = 0.70
+								}
+							}
+							if = {
+								limit = {
+									has_government = fascism
+								}
+								start_civil_war = {
+									ideology = democratic
+									size = 1
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint = 0 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							set_popularities = {
+								democratic = 50
+								neutrality = 0
+								fascism = 50
+							}	
+						}
+						if = {
+							limit = {
+								check_variable = { secessionpoint > 0 }
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+							}
+							remove_ideas = {
+								REP_member
+								REP_member_prewar
+							}
+							add_ideas = {
+								CIS_member
+								CIS_member_prewar
+							}
+						}
+						if = {
+							limit = {
+								tag = TEC
+							}
+							set_politics = {
+								ruling_party = fascism
+							}
+							set_popularities = {
+								democratic = 0
+								neutrality = 0
+								fascism = 100
+							}
+						}
+						if = {
+							limit = {
+								AND = {
+									has_government = democratic
+									NOT = {
+										is_in_faction_with = REP
+									}
+								}
+							}
+							REP = {
+								add_to_faction = PREV
+							}
+						}
+						if = {
+							limit = {
+								AND = {
+									is_in_faction_with = REP
+									NOT = {
+										has_government = democratic
+									}
+								}
+							}
+							leave_faction = yes
+						}
+						if = {
+							limit = {
+								AND = {
+									has_government = fascism
+									NOT = {
+										is_in_faction_with = CIS
+									}
+								}
+							}
+							CIS = {
+								add_to_faction = PREV
+							}
+						}
+						if = {
+							limit = {
+								AND = {
+									is_in_faction_with = CIS
+									NOT = {
+										has_government = fascism
+									}
+								}
+							}
+							leave_faction = yes
+						}
+					}
+				}
+			#}		
+		}
+
+	#Focus for Geonosis
+	focus = {
+		id = CIS_geonosis
+		icon = GFX_CIS_geonosis-57213
+		x = 19
+		y = 6
+		cost = 5.8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_the_commerce_pact
+		}
+		prerequisite = { 
+			focus = CIS_nute_sambor 
+			focus = CIS_request_mar_tuuk 
+			focus = CIS_riff_tamson 
+			focus = CIS_grow_closer 
+		} 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GEO = {
+				news_event = {
+					id = CIS_tree.4
+				}
+			}
+		}
+	}
+
+#End of focuses 
+ }

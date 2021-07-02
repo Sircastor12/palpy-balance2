@@ -1,0 +1,40 @@
+state={
+	id=370
+	name="STATE_370"
+	provinces={
+		255 726 1055 1479 1632 1710 1746 2491 2569 3283 3305 3469 4476 4530 4624 9591 9594 9605 9607 9618 9619 9621 9633 9641 9648 9651 9654 9660 9661 9662 9673 9674 9686 9689 9690 9691 9699 9705 9712 
+	}
+	manpower=14285714
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=11
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=QUN
+		add_core_of = QUN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			9674 50
+		}
+	}
+}
+

@@ -1,0 +1,210 @@
+division_template = {
+	name = "Escarte Guard"
+
+	regiments = {
+		Escarte_unit = { x = 0 y = 0 }
+		Escarte_unit = { x = 0 y = 1 }
+		Escarte_unit = { x = 0 y = 2 }
+		Escarte_unit = { x = 0 y = 3 }
+   		Escarte_unit = { x = 1 y = 0 }
+		Escarte_unit = { x = 1 y = 1 }
+		Escarte_unit = { x = 1 y = 2 }
+  		Escarte_unit = { x = 1 y = 3 }
+		Escarte_unit = { x = 2 y = 0 }
+		Escarte_unit = { x = 2 y = 1 }
+  		Escarte_unit = { x = 2 y = 2 }
+		Escarte_unit = { x = 2 y = 3 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "B2 Battledroid"
+
+	regiments = {
+		b2_droid_unit = { x = 0 y = 0 }
+		b2_droid_unit = { x = 0 y = 1 }
+		b2_droid_unit = { x = 0 y = 2 }
+		b2_droid_unit = { x = 0 y = 3 }
+   		b2_droid_unit = { x = 1 y = 0 }
+		b2_droid_unit = { x = 1 y = 1 }
+		b2_droid_unit = { x = 1 y = 2 }
+  		b2_droid_unit = { x = 1 y = 3 }
+		b2_droid_unit = { x = 2 y = 0 }
+		b2_droid_unit = { x = 2 y = 1 }
+  		b2_droid_unit = { x = 2 y = 2 }
+		b2_droid_unit = { x = 2 y = 3 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Light Armor Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Dwarf Droid Division"
+
+	regiments = {
+		dsd1_unit = { x = 0 y = 0 }
+		dsd1_unit = { x = 0 y = 1 }
+		dsd1_unit = { x = 0 y = 2 }
+		dsd1_unit = { x = 1 y = 0 }
+		dsd1_unit = { x = 1 y = 1 }
+		dsd1_unit = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Homing Spider Division"
+
+	regiments = {
+		OG9_unit = { x = 0 y = 0 }
+		OG9_unit = { x = 0 y = 1 }
+		OG9_unit = { x = 0 y = 2 }
+		OG9_unit = { x = 1 y = 0 }
+		OG9_unit = { x = 1 y = 1 }
+		OG9_unit = { x = 1 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+	}
+}
+
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Escarte Guard"
+		location = 765 #Felucia
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.9   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Escarte Guard"
+		location = 765 #Felucia
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Escarte Guard"
+		location = 1283 #Felucia
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Dwarf Spider Division"
+		location = 1283 #Felucia
+		division_template = "Dwarf Droid Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Escarte Guard"
+		location = 1276 #Felucia
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Escarte Guard"
+		location = 1276 #Felucia
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "OG9 Homing Spider Division"
+		location = 1276 #Felucia
+		division_template = "Homing Spider Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "OG9 Homing Spider Division"
+		location = 1276 #Felucia
+		division_template = "Homing Spider Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Dwarf Spider Division"
+		location = 1276 #Felucia
+		division_template = "Dwarf Droid Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Escarte Guard"
+		location = 303 #Saleucami
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Escarte Guard"
+		location = 31 #Saleucami
+		division_template = "Escarte Guard"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "OG9 Homing Spider Division"
+		location = 303 #Saleucami
+		division_template = "Homing Spider Division"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Dwarf Spider Division"
+		location = 303 #Saleucami
+		division_template = "Dwarf Droid Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Dwarf Spider Division"
+		location = 1283 #Felucia
+		division_template = "Dwarf Droid Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "B2 Battledroid Division"
+		location = 1211 #korriban
+		division_template = "B2 Battledroid"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "B2 Battledroid Division"
+		location = 697 #korriban
+		division_template = "B2 Battledroid"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "B2 Battledroid Division"
+		location = 610 #korriban
+		division_template = "B2 Battledroid"
+		start_experience_factor = 0.4   #optional, otherwise starts with 0 expereince
+	}
+###Geo
+	division= {	
+		name = "B2 Battledroid Division"
+		location = 2216 #geo
+		division_template = "B2 Battledroid"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "B2 Battledroid Division"
+		location = 2216 #geo
+		division_template = "B2 Battledroid"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+}

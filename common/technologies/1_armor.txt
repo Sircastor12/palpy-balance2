@@ -1,0 +1,252 @@
+technologies = {
+	flash_speeder_tech = {
+
+		enable_subunits = {
+			Flash_speeder_unit
+		}
+
+		enable_equipments = {
+			flash_speeder_equipment
+        }
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gwtank = { #gw
+
+		enable_subunits = {
+			gen_tank_unit
+		}
+
+		enable_equipments = {
+			light_tank_1
+		}
+
+		on_research_complete = {
+			division_template = {
+				name = "Repulsor Tank Division"
+				priority = 0
+				regiments = {
+					gen_tank_unit = { x = 0 y = 0 }
+					gen_tank_unit = { x = 0 y = 1 }
+					gen_tank_unit = { x = 0 y = 2 }
+					gen_tank_unit = { x = 0 y = 3 }
+				}
+			}
+		}
+	
+		path = {
+			leads_to_tech = basic_light_tank
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 970
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = -1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "996.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "997.1.1"
+			}
+			
+			modifier = {
+				factor = 1.2
+				date > "998.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	basic_light_tank = { #tank 1
+
+		enable_equipments = {
+			light_tank_2 
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+				}
+			}
+		}
+		
+		path = {
+			leads_to_tech = improved_light_tank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 976
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2.5
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "996.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "997.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "998.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	improved_light_tank = { #tank 2
+
+		enable_equipments = {
+			light_tank_3 
+		}
+		
+		path = {
+			leads_to_tech = advanced_light_tank
+			research_cost_coeff = 1
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.5
+		start_year = 979
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 10 #you are embarassing yourself
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "996.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "997.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "998.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	advanced_light_tank = { # tank 3
+
+		enable_equipments = {
+			light_tank_4 
+		}	
+		
+		research_cost = 2.5
+		start_year = 981
+		
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "981.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "982.1.1"
+			}
+			
+			modifier = {
+				factor = 1.1
+				date > "983.1.1"
+			}
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+}

@@ -1,0 +1,40 @@
+state={
+	id=262
+	name="STATE_262"
+	provinces={
+		428 669 1031 1219 1852 2673 2973 3103 4093 4508 4813 4998 7822 7833 7834 7852 7853 7863 7875 7893 7897 7913 7918 7930 7931 7945 7948 7954 7963 7991 7992 
+	}
+	manpower=643000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=1
+		chromium=0
+	}
+
+  	history = {
+		owner=ABR
+		add_core_of = ABR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			7948 50
+		}
+	}
+}
+

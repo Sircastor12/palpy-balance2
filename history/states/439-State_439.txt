@@ -1,0 +1,41 @@
+state={
+	id=439
+	name="STATE_439"
+	provinces={
+		152 675 1361 1734 3062 3187 10745 10757 10774 10775 10787 10800 10805 10806 10817 10845 
+	}
+	manpower=114285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=JAW
+		add_core_of = JAW
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

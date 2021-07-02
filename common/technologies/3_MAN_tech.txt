@@ -1,0 +1,266 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+	mandalorian_commando_0 = {
+
+		enable_subunits = {
+			Mandalorian_commandos
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	westar_gun_20 = {
+
+		enable_equipments = {
+			mandalore_gun_equipment_0
+		}
+		
+		path = {
+			leads_to_tech = westar_gun_34
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 970
+		folder = {
+			name = mand_folder
+			position = { x = 1 y = -1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	westar_gun_34 = {
+
+		enable_equipments = {
+			mandalore_gun_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = westar_gun_35
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = distrupt_gun
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = mand_folder
+			position = { x = 1 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	westar_gun_35 = {
+		enable_equipments = {
+			mandalore_gun_equipment_2
+		}
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = mand_folder
+			position = { x = 1 y = 9 }
+		}
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	distrupt_gun = {
+
+		enable_equipments = {
+			mandalore_distrupstion_equipment
+		}	
+
+		research_cost = 2.5
+		start_year = 978
+		folder = {
+			name = mand_folder
+			position = { x = 3 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dura_armor = {
+
+		enable_equipments = {
+			man_durasteel_equipment_0
+		}
+		
+		path = {
+			leads_to_tech = beskar_armor
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+		folder = {
+			name = mand_folder
+			position = { x = 5 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	beskar_armor = {
+
+		enable_equipments = {
+			man_beskar_equipment_0
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = mand_folder
+			position = { x = 5 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jetpack_tech = {
+
+		enable_equipments = {
+			man_jetpack
+		}
+		enable_subunits = {
+			man_jet_support
+		}
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = mand_folder
+			position = { x = 7 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	swoop_tech = {
+
+		enable_equipments = {
+			mand_swoop_equipment
+		}
+		
+		enable_subunits = {
+			mand_swoop_unit
+		}		
+
+		path = {
+			leads_to_tech = buirk_tech
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = mand_folder
+			position = { x = 10 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	buirk_tech = {
+
+		enable_equipments = {
+			buirk_equipment
+		}
+		
+		enable_subunits = {
+			buirk_unit
+		}		
+
+		
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = mand_folder
+			position = { x = 10 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gauntlet_tech = {
+
+		enable_equipments = {
+			gauntlet_fighter_equip
+		}
+		
+
+		path = {
+			leads_to_tech = fang_tech
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = mand_folder
+			position = { x = 13 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	fang_tech = {
+
+		enable_equipments = {
+			fang_fighter_equip
+		}
+			
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = mand_folder
+			position = { x = 13 y = 11 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

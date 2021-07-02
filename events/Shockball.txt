@@ -1,0 +1,257 @@
+#add_namespace = sball
+### 3677ATC/24BBY
+## Shockball 975 is on!
+#news_event = {
+#	id = sball.1
+#	title = "975 Galactic Shockball Tournament"
+#	desc = sball.1.desc
+#	picture = GFX_shockball
+#	major = yes
+#    
+#    is_triggered_only = yes
+#
+#immediate = {
+#set_global_flag = galacticshockballtournament
+#}
+#	
+#        option = {
+#		   name = "Go team [Root.GetName]!"
+#		   trigger = { 
+#		     NOT = {
+#				TAG = REP
+#				TAG = HUT
+#				TAG = TEC
+#				TAG = UNI
+#				TAG = VER
+#				TAG = POL
+#				TAG = ROC
+#				TAG = KAM
+#				TAG = UNI
+#				TAG = IBC
+#				TAG = FED
+#			}
+#	    }	                   
+#     }
+#
+#     option = {
+#		   name = "A great opportunity to make some credits."
+#		   trigger = {
+#		   OR = { 
+#
+#		   TAG = HUT
+#		   TAG = FED
+#		   TAG = IBC 
+#
+#		   }
+#		   }	 
+#		  add_ideas = shockballtournament_gamblingprofits
+#		  set_country_flag = shockballninesevenfive_notparticipating                   
+#     }
+#
+#     option = {
+#		   name = "We have this in the bag!"
+#		   trigger = {
+#		   OR = {
+#		   tag = ERI
+#		   TAG = KUA
+#             }
+#		   }
+#		   add_ideas = shockballtournament_arealchance 	                   
+#     }
+#
+#     option = {
+#		   name = "Let the games begin!"
+#		   trigger = {
+#		   TAG = REP
+#		   }	                   
+#     }
+#
+#     option = {
+#		   name = "Let's hope this can act as a stabilising force for the galaxy."
+#		   trigger = {
+#		  OR = {
+#		   TAG = REP
+#          }
+#		}   	                   
+#     }
+#
+#     option = {
+#		   name = "It will be interesting to see which nation wins."
+#		   trigger = {
+#		   OR = { 
+#		        TAG = HUT 
+#		        TAG = KAM
+#		        TAG = TEC
+#		        TAG = CMG
+#		        TAG = UNI
+#		        TAG = RUS
+#				TAG = VER
+#				TAG = POL
+#				TAG = ROC
+#				TAG = FED
+#				TAG = IBC
+#				}
+#
+#		   }
+#		   set_country_flag = shockballninesevenfive_notparticipating	                   
+#     }
+#   }
+#
+#
+#country_event = {
+#	id = sball.2
+#	title = "Third Round Approaches!"
+#	desc = "If you can see this event, something has gone terribly wrong."
+#	picture = GFX_shockball2
+#	fire_only_once = yes
+#	hidden = yes
+#    
+#    is_triggered_only = no
+#   
+#   trigger = {
+#    AND = {
+#    has_global_flag = galacticshockballtournament
+#    date > 975.4.1
+#    }
+#    }
+#
+#    immediate = {
+#    news_event = { 
+#    id = sball.3
+#    days = 1
+#    random = 1
+#    }
+#    }
+#	
+#        option = {
+#		   name = "I hope they enjoy second divison"
+#		   trigger = { 
+#	    }	                   
+#     }
+#
+#         option = {
+#		   name = "Go team [Root.GetName]!"
+#		   trigger = { 
+#	    }	                   
+#     } 
+#}
+#
+#
+#news_event = {
+#	id = sball.3
+#	title = "The Third Round Approaches!"
+#	desc = sball.3.desc
+#	picture = GFX_shockball2
+#	major = yes
+#	fire_only_once = no
+#    
+#    is_triggered_only = yes
+#
+#        option = {
+#		   name = "Go team [Root.GetName]!"
+#		   trigger = { 
+#            NOT = {
+#		   ROOT = { has_country_flag = shockballninesevenfive_notparticipating}
+#		   }
+#	    }	
+#	   }                   
+#
+#        option = {
+#		   name = "Sullust and Byss, of course! Enjoy relegation."
+#		   trigger = { 
+#	    }	                   
+#     }
+#  }
+#
+#news_event = {
+#	id = sball.4
+#	title = "Kuat Champions!"
+#	desc = sball.4.desc
+#	picture = GFX_shockball2
+#	major = yes
+#	fire_only_once = no
+#    
+#    is_triggered_only = yes
+#
+#        option = {
+#		   name = "A wildy lucrative tournament this year"
+#		   trigger = { 
+#           AND = {
+#		   ROOT = { 
+#		   has_country_flag = shockballninesevenfive_notparticipating
+#		   }
+#		 }
+#	   }
+#	 }	                   
+#
+#        option = {
+#		   name = "Congratulations Kuat!"
+#		   trigger = { 
+#		   NOT = {
+#		   tag = KUA
+#		   tag = ERI
+#		   ROOT = { 
+#		   has_country_flag = shockballninesevenfive_notparticipating
+#		   }
+#		   }
+#	    }   	                   
+#     }
+#
+#     option = {
+#		   name = "This is unacceptable."
+#		   trigger = { 
+#		   AND = {
+#		   tag = ERI
+#		   }
+#	    }   	                   
+#     }
+#   }
+#
+#news_event = {
+#	id = sball.50
+#	title = "Separatist Revolution on Eriadu!"
+#	desc = sball.50.desc
+#	picture = GFX_shockball2
+#	major = yes
+#	fire_only_once = no
+#    
+#    is_triggered_only = yes
+#
+#    immediate = { 
+#    ESF = { 
+#    load_oob = ShockballRevolution
+#    set_province_controller = 2074
+#    set_province_controller = 2082
+#    set_province_controller = 2076
+#    set_province_controller = 209
+#    set_state_owner = 80
+#    }
+#    ERI = { 
+#create_wargoal = {
+#    type = annex_everything
+#    target = ESF
+#}
+#    declare_war_on = {
+#    target = ESF
+#    type = annex_everything
+#}
+#}
+#    }
+#
+#        option = {
+#		   name = "A wildy lucrative tournament this year"
+#		   trigger = { 
+#	  }	                   
+#
+#        option = {
+#		   name = "Congratulations Kuat!"
+#		   trigger = {   
+#		 }	                   
+#     }
+#
+#     option = {
+#		   name = "This is unacceptable."
+#		   trigger = { 
+#	    }   	                   
+#     }
+#  }

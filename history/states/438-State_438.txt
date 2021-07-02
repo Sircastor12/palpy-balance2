@@ -1,0 +1,41 @@
+state={
+	id=438
+	name="STATE_438"
+	provinces={
+		61 400 711 908 1448 2592 2715 3146 3240 3705 10732 10740 10763 10780 10795 10796 10807 10839 10848 
+	}
+	manpower=114285
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=JHT
+		add_core_of = JHT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

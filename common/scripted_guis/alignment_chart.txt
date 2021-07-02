@@ -1,0 +1,175 @@
+scripted_gui = {
+	alignmentchart_button = {
+		context_type = player_context
+		window_name = "alignmentchart_button"
+			visible = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+				}
+			}
+		effects = {
+				alignment_open_button_click = {
+					##############
+					#Vanilla Code#			
+					##############
+						clear_array = alignment_array
+						every_country = {
+							limit = {
+								OR = {
+									has_idea = REP_member_prewar
+									has_idea = REP_member
+								}
+								NOT = {
+									tag = REP
+								}
+							}
+							add_to_array = { ROOT.alignment_array = THIS }
+							set_variable = {
+								alignment_array_X = secessionpoint
+							}
+							set_variable = {
+								alignment_array_Y = PREV.alignment_array^num 
+							}
+							multiply_variable = {
+								alignment_array_X = 40
+							}
+							multiply_variable = {
+								alignment_array_Y = 15
+							}
+						}
+						set_country_flag = triangle_window_open
+						add_to_variable = {
+						HOI3_alignment_grid_dirty = 1
+					}
+				}
+			}
+		}
+	HOI3_alignment_gui = {
+		context_type = player_context
+		window_name = "open_secession_window"
+		parent_window_name = countrypoliticsview
+
+		visible = {
+			OR = {
+				has_idea = REP_member_prewar
+				has_idea = REP_member
+				tag = CIS
+			}
+		}
+		ai_check = {
+			always = no
+		}
+		effects = {
+			button_open_click = {
+			##############
+			#Vanilla Code#			
+			##############
+				clear_array = alignment_array
+				every_country = {
+					limit = {
+						OR = {
+							has_idea = REP_member_prewar
+							has_idea = REP_member
+						}
+						NOT = {
+							tag = REP
+						}
+					}
+					add_to_array = { ROOT.alignment_array = THIS }
+					set_variable = {
+						alignment_array_X = secessionpoint
+					}
+					set_variable = {
+						alignment_array_Y = PREV.alignment_array^num 
+					}
+					multiply_variable = {
+						alignment_array_X = 40
+					}
+					multiply_variable = {
+						alignment_array_Y = 15
+					}
+				}
+				
+				set_country_flag = triangle_window_open
+				add_to_variable = {
+					HOI3_alignment_grid_dirty = 1
+				}
+			 }
+		 }
+	}
+
+
+	HOI3_alignment_grid = {
+		context_type = player_context
+		window_name = "hoi3_faction_alignment_window"
+
+		visible = {
+			has_country_flag = triangle_window_open
+		}
+
+		dirty = HOI3_alignment_grid_dirty
+
+		dynamic_lists = {
+			HOI3_tags_grid = {
+				array = alignment_array
+				change_scope = yes
+
+				entry_container = hoi3_tag_entry
+			}
+			
+			HOI3_tags_grid7 = {
+				array = factions_array
+				change_scope = yes
+
+				entry_container = hoi3_all_factions
+			}				
+		}
+
+		effects = {
+			button_close_click = {
+				clr_country_flag = triangle_window_open
+			}
+			flag_click = {
+				capital_scope = {
+					ROOT = {
+						goto_state = PREV
+					}
+				}
+			}
+			flag2_click = {
+				capital_scope = {
+					ROOT = {
+						goto_state = PREV
+					}
+				}
+			}
+			flag2_right_click = {
+				remove_from_array = {
+					ROOT.alignment_array = THIS
+				}
+				add_to_array = {
+					array = ROOT.alignment_array
+					index = 0
+					value = THIS
+				}
+				add_to_variable = {
+					ROOT.HOI3_alignment_grid_dirty = 1
+				}
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+			flag2 = {
+				image = "[This.GetFlag]"
+				x = alignment_array_X?-1000
+				y = alignment_array_Y
+			}
+		}
+	}
+}

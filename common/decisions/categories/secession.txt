@@ -1,0 +1,9 @@
+secession = {
+	icon = generic_prospect_for_resources
+	visible = { 
+    }
+	available = { 
+   }
+	allowed = {
+		}
+}

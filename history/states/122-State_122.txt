@@ -1,0 +1,41 @@
+state={
+	id=122
+	name="STATE_122"
+	provinces={
+		411 463 1083 3540 3551 3863 4304 4400 4420 4566 4727 5813 5821 5822 5844 5857 5864 5887 
+	}
+	manpower=15000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=8
+		aluminium=0
+		rubber=10
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BLA
+		add_core_of = BLA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=3
+			air_base=0
+
+			5857 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			4566 30
+		}
+	}
+}
+

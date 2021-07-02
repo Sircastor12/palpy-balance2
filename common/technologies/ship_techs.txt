@@ -1,0 +1,137 @@
+technologies = {
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	cr70_tech = {
+
+		enable_equipments = {
+			cr70_equipment
+		}
+
+		enable_subunits = {
+			cr70_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cr90_tech = {
+
+		enable_equipments = {
+			cr90_equipment
+		}
+
+		enable_subunits = {
+			cr90_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 981
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mc25_tech = {
+
+		enable_equipments = {
+			mc25_equipment
+		}
+
+		enable_subunits = {
+			mc25_unit
+		}
+		
+		path = {
+			leads_to_tech = mc80_tech
+			research_cost_coeff = 1
+		}		
+
+		path = {
+			leads_to_tech = mc75_tech
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = cal_folder
+			position = { x = 2 y = 12 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mc75_tech = {
+
+		enable_equipments = {
+			mc75_equipment
+		}
+
+		enable_subunits = {
+			mc75_unit
+		}
+		
+		path = {
+			
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 981
+		folder = {
+			name = cal_folder
+			position = { x = 3 y = 21 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mc80_tech = {
+
+		enable_equipments = {
+			mc80_equipment
+		}
+
+		enable_subunits = {
+			mc80_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 981
+		folder = {
+			name = cal_folder
+			position = { x = 1 y = 21 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

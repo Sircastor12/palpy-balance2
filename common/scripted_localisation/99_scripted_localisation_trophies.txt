@@ -1,0 +1,75 @@
+defined_text = {
+	name = Gettrophyimage
+	text = {
+		trigger = {
+			state = 1
+		}
+		localization_key = "GFX_Generic1"
+	}
+	text = {
+		trigger = {
+			state = 2
+		}
+		localization_key = "GFX_Generic2"
+	}
+	text = {
+		trigger = {
+			state = 3
+		}
+		localization_key = "GFX_WhipZYG"
+	}
+	text = {
+		trigger = {
+			state = 4
+		}
+		localization_key = "GFX_AngelIEG"
+	}
+	text = {
+		trigger = {
+			state = 5
+		}
+		localization_key = "GFX_BanehelmetKOR"
+	}
+	text = {
+		trigger = {
+			state = 6
+		}
+		localization_key = "GFX_BeskarMAN"
+	}
+	text = {
+		trigger = {
+			state = 7
+		}
+		localization_key = "GFX_BespincapeBES"
+	}
+	text = {
+		trigger = {
+			state = 8
+		}
+		localization_key = "GFX_BluevirusNAB"
+	}
+	text = {
+		trigger = {
+			state = 9
+		}
+		localization_key = "GFX_BoomaGUN"
+	}
+	text = {
+		trigger = {
+			state = 10
+		}
+		localization_key = "GFX_BrainWormGEO"
+	}
+	text = {
+		trigger = {
+			state = 11
+		}
+		localization_key = "GFX_CommandohelmetKAM"
+	}
+	text = {
+		trigger = {
+			state = 12
+		}
+		localization_key = "GFX_DarkSaberDEA"
+	}
+}

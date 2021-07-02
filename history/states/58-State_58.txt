@@ -1,0 +1,41 @@
+state={
+	id=58
+	name="STATE_58"
+	provinces={
+		292 942 1911 3261 3601 4482 4556 4809 10003 10004 10005 10034 10037 10038 10049 10056 10068 
+	}
+	manpower=1400000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=2
+		rubber=0
+		tungsten=1
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BOT
+		add_core_of = BOT
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

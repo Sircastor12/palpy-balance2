@@ -1,0 +1,1763 @@
+focus_tree = {
+	id = CIS_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = CIS
+		}
+	}
+	continuous_focus_position = { x = 400 y = 2800 }
+	#Focus for Legitimize The Senate
+	focus = {
+		id = CIS_legitimize_the_senate
+		icon = GFX_CIS_legitimize_the_senate-62295
+		x = 15
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_power_to_the_senate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_stability = 0.10
+		}
+	}
+
+	#Focus for Promises of Economic Equality
+	focus = {
+		id = CIS_promises_of_economic_equality
+		icon = GFX_CIS_promises_of_economic_equality-62300
+		x = 16
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_guarantee_of_racial_equality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = economic_equality
+		}
+	}
+
+	#Focus for Guarantee of Racial Equality
+	focus = {
+		id = CIS_guarantee_of_racial_equality
+		icon = GFX_CIS_guarantee_of_racial_equality-62297
+		x = 16
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_legitimize_the_senate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_stability = 0.05
+		}
+	}
+
+	#Focus for The Face of a Large Shadow
+	focus = {
+		id = CIS_the_face_of_a_large_shadow
+		icon = GFX_CIS_the_face_of_a_large_shadow-62307
+		x = 19
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_idealists_of_the_galaxy }
+		mutually_exclusive = { focus = CIS_power_to_the_senate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_ideas = shadow_face
+		}
+	}
+
+	#Focus for Deal with the Idealists
+	focus = {
+		id = CIS_deal_with_the_idealists
+		icon = GFX_CIS_deal_with_the_idealists-62314
+		x = 22
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_power_to_the_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_stability = -0.10
+		}
+	}
+
+	#Focus for Education in The Outer rim
+	focus = {
+		id = CIS_education_in_the_outer_rim
+		icon = GFX_CIS_education_in_the_outer_rim-62301
+		x = 16
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_promises_of_economic_equality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_research_slot = 1
+		}
+	}
+
+	#Focus for The Army of Dreamers
+	focus = {
+		id = CIS_the_army_of_dreamers
+		icon = GFX_CIS_the_army_of_dreamers-62292
+		x = 2
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_battle_hardened_modules 
+		}
+		prerequisite = { 
+			focus = CIS_raxus_officer_schools 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = land_doctrine
+            }
+			add_ideas = army_dreamers
+		}
+	}
+
+	#Focus for The Army of Cold Metal
+	focus = {
+		id = CIS_the_army_of_cold_metal
+		icon = GFX_CIS_the_army_of_cold_metal-62293
+		x = 8
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_mass_assault_tactics 
+		}
+		prerequisite = { 
+			focus = CIS_1001_ratio 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = cold_metal
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+		}
+	}
+
+	#Focus for Fortify Ruusan
+	focus = {
+		id = CIS_fortify_ruusan
+		icon = GFX_CIS_fortify_ruusan-62274
+		x = 12
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_set_up_base_on_ruusan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			45 = {
+				add_building_construction = {
+                    type = bunker
+                    level = 8
+                    instant_build = yes
+				}
+            }
+		}
+	}
+
+	#Focus for Extend Our Reach
+	focus = {
+		id = CIS_extend_our_reach
+		icon = GFX_CIS_extend_our_reach-62264
+		x = 11
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_mobilize_the_movement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    add_political_power = 100
+			add_war_support = 0.05
+		}
+	}
+
+	#Focus for Central Command Structure
+	focus = {
+		id = CIS_central_command_structure
+		icon = GFX_CIS_central_command_structure-62278
+		x = 10
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_grand_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 1
+                category = land_doctrine
+            }
+			army_experience = 50
+		}
+	}
+
+	#Focus for Superior Programming
+	focus = {
+		id = CIS_superior_programming
+		icon = GFX_CIS_superior_programming-62280
+		x = 4
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_quality_droids }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = superior_programming
+		}
+	}
+
+	#Focus for Quality Droids
+	focus = {
+		id = CIS_quality_droids
+		icon = GFX_CIS_quality_droids-62276
+		x = 4
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_integrated_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = quality_droids
+		}
+	}
+
+	#Focus for Volunteer Forces
+	focus = {
+		id = CIS_volunteer_forces
+		icon = GFX_CIS_volunteer_forces-62275
+		x = 1
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_integrated_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+
+	#Focus for Take Over Boz Pity
+	focus = {
+		id = CIS_take_over_boz_pity
+		icon = GFX_CIS_take_over_boz_pity-62269
+		x = 10
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_extend_our_reach }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country = {
+                target = BOZ
+                transfer_troops = yes
+            }
+		}
+	}
+
+	#Focus for Open Borders
+	focus = {
+		id = CIS_open_borders
+		icon = GFX_CIS_open_borders-62296
+		x = 14
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_legitimize_the_senate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = open_borders
+		}
+	}
+
+	#Focus for Long Live The Confederacy
+	focus = {
+		id = CIS_long_live_the_confederacy
+		icon = GFX_CIS_long_live_the_confederacy-62332
+		x = 33
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_raxus_dock_yards 
+		}
+		prerequisite = { 
+			focus = CIS_civilian_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = confederacy
+		}
+	}
+
+	#Focus for The Steps That Strike Fear
+	focus = {
+		id = CIS_the_steps_that_strike_fear
+		icon = GFX_CIS_the_steps_that_strike_fear-62268
+		x = 7
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_mobilize_the_movement }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+
+	#Focus for Mobilize The Movement
+	focus = {
+		id = CIS_mobilize_the_movement
+		icon = GFX_CIS_mobilize_the_movement-62260
+		x = 9
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_flares_seen_across_the_galaxy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = mobilize
+		}
+	}
+
+	#Focus for Form the separatist senate
+	focus = {
+		id = CIS_form_the_separatist_senate
+		icon = GFX_CIS_form_the_separatist_senate-62261
+		x = 17
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_flares_seen_across_the_galaxy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	#Focus for The Idealist's of The Galaxy
+	focus = {
+		id = CIS_the_idealists_of_the_galaxy
+		icon = GFX_CIS_the_idealists_of_the_galaxy-62267
+		x = 17
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_form_the_separatist_senate }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = idealists
+		}
+	}
+
+	#Focus for Numbers Over Quality
+	focus = {
+		id = CIS_numbers_over_quality
+		icon = GFX_CIS_numbers_over_quality-62277
+		x = 7
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_grand_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = cat_mass_assault
+            }
+		}
+	}
+
+	#Focus for Artificial Planning
+	focus = {
+		id = CIS_artificial_planning
+		icon = GFX_CIS_artificial_planning-62283
+		x = 10
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_central_command_structure }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ai_planning
+		}
+	}
+
+	#Focus for The Grand Droid Army
+	focus = {
+		id = CIS_the_grand_droid_army
+		icon = GFX_CIS_the_grand_droid_army-62272
+		x = 8
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_steps_that_strike_fear }
+		mutually_exclusive = { focus = CIS_integrated_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = infantry_tech
+            }
+			army_experience = 50
+		}
+	}
+
+	#Focus for The Flares seen across the galaxy
+	focus = {
+		id = CIS_the_flares_seen_across_the_galaxy
+		icon = GFX_CIS_the_flares_seen_across_the_galaxy-62259
+		x = 17
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_aftermath_of_geonosis }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Buildup of Elite Units
+	focus = {
+		id = CIS_buildup_of_elite_units
+		icon = GFX_CIS_buildup_of_elite_units-62279
+		x = 1
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_integrated_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = marine_tech
+            }
+			hidden_effect = {
+                87 = {
+                    create_unit = {
+                        division = "name = \"B1 Battledroid Division\" division_template = \"B1 Battledroid\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+                        owner = CIS
+                    }
+				}
+			}
+		}
+	}
+
+	#Focus for Power to The Senate
+	focus = {
+		id = CIS_power_to_the_senate
+		icon = GFX_CIS_power_to_the_senate-62294
+		x = 15
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_idealists_of_the_galaxy }
+		mutually_exclusive = { focus = CIS_the_face_of_a_large_shadow }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.10
+			}
+		}
+	}
+
+	#Focus for Integrated Army
+	focus = {
+		id = CIS_integrated_army
+		icon = GFX_CIS_integrated_army-62271
+		x = 3
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_steps_that_strike_fear }
+		mutually_exclusive = { focus = CIS_the_grand_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+
+	#Focus for Aftermath of Geonosis
+	focus = {
+		id = CIS_aftermath_of_geonosis
+		icon = GFX_CIS_aftermath_of_geonosis-62258
+		x = 17
+		y = 0
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -150
+			add_stability = -0.15
+		}
+	}
+
+	#Focus for Extensive Militarization
+	focus = {
+		id = CIS_extensive_militarization
+		icon = GFX_CIS_extensive_militarization-62310
+		x = 19
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_shadow_feed_propaganda }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = extensive_militarization
+		}
+	}
+
+	#Focus for Anti Corruption Initiatives
+	focus = {
+		id = CIS_anti_corruption_initiatives
+		icon = GFX_CIS_anti_corruption_initiatives-62299
+		x = 14
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_fair_taxation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+                ideology = democratic
+                popularity = -0.10
+			}
+		}
+	}
+
+	#Focus for Specialized Models
+	focus = {
+		id = CIS_specialized_models
+		icon = GFX_CIS_specialized_models-62284
+		x = 4
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_superior_programming }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = infantry_tech
+            }
+		}
+	}
+
+	#Focus for Raxus Officer Schools
+	focus = {
+		id = CIS_raxus_officer_schools
+		icon = GFX_CIS_raxus_officer_schools-62287
+		x = 1
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_sentient_command }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = raxus_officers
+		}
+	}
+
+	#Focus for Battle Hardened Modules
+	focus = {
+		id = CIS_battle_hardened_modules
+		icon = GFX_CIS_battle_hardened_modules-62289
+		x = 4
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_specialized_models }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = modules
+		}
+	}
+
+	#Focus for Sentient Command
+	focus = {
+		id = CIS_sentient_command
+		icon = GFX_CIS_sentient_command-62281
+		x = 1
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_buildup_of_elite_units }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+			add_manpower = 10000
+		}
+	}
+
+	#Focus for Friends in High Places
+	focus = {
+		id = CIS_friends_in_high_places
+		icon = GFX_CIS_friends_in_high_places-62327
+		x = 28
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_power_to_the_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	#Focus for Disposable Army
+	focus = {
+		id = CIS_disposable_army
+		icon = GFX_CIS_disposable_army-62286
+		x = 10
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_artificial_planning }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = disposable_army
+		}
+	}
+
+	#Focus for Set up Base on Ruusan
+	focus = {
+		id = CIS_set_up_base_on_ruusan
+		icon = GFX_CIS_set_up_base_on_ruusan-62270
+		x = 12
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_extend_our_reach }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			annex_country = {
+                target = RUS
+                transfer_troops = yes
+            }
+			144 = {
+				set_building_level = {
+                    type = infrastructure
+                    level = 5
+                    instant_build = yes
+				}
+				set_building_level = {
+                    type = naval_base
+                    level = 5
+                    instant_build = yes
+				}
+				set_building_level = {
+                    type = air_base
+                    level = 5
+                    instant_build = yes
+				}
+			}
+        }
+	}
+
+	#Focus for Recycle Damaged Droids
+	focus = {
+		id = CIS_recycle_damaged_droids
+		icon = GFX_CIS_recycle_damaged_droids-62282
+		x = 7
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_numbers_over_quality }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = recycled_droids
+		}
+	}
+
+	#Focus for Power to The Council
+	focus = {
+		id = CIS_power_to_the_council
+		icon = GFX_CIS_power_to_the_council-62317
+		x = 22
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_the_face_of_a_large_shadow 
+			focus = CIS_ensure_war_profits 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+			}
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Begin Industrialization
+	focus = {
+		id = CIS_begin_industrialization
+		icon = GFX_CIS_begin_industrialization-62319
+		x = 29
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                bonus = 0.50
+                uses = 2
+                category = industry
+            }
+		}
+	}
+
+	#Focus for 100-1 Ratio
+	focus = {
+		id = CIS_1001_ratio
+		icon = GFX_CIS_1001_ratio-62291
+		x = 10
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_disposable_army }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+            87 = {
+                create_unit = {
+                    division = "name = \"B1 Battledroid Division\" division_template = \"B1 Battledroid\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+                    owner = CIS
+                }
+				create_unit = {
+                    division = "name = \"B1 Battledroid Division\" division_template = \"B1 Battledroid\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+                    owner = CIS
+                }
+				create_unit = {
+                    division = "name = \"B1 Battledroid Division\" division_template = \"B1 Battledroid\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+                    owner = CIS
+                }
+			}
+		}
+	}
+
+	#Focus for Mass Production
+	focus = {
+		id = CIS_mass_production
+		icon = GFX_CIS_mass_production-62285
+		x = 7
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_recycle_damaged_droids }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = cis_mass_production
+		}
+	}
+
+	#Focus for Loyalty Over Integrity
+	focus = {
+		id = CIS_loyalty_over_integrity
+		icon = GFX_CIS_loyalty_over_integrity-62308
+		x = 19
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_face_of_a_large_shadow }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = -0.10
+		}
+	}
+
+	#Focus for Fortify Boz Pity
+	focus = {
+		id = CIS_fortify_boz_pity
+		icon = GFX_CIS_fortify_boz_pity-62273
+		x = 10
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_take_over_boz_pity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			296 = {
+				add_building_construction = {
+                    type = bunker
+                    level = 5
+                    instant_build = yes
+				}
+            }
+		}
+	}
+
+	#Focus for Mass Assault Tactics
+	focus = {
+		id = CIS_mass_assault_tactics
+		icon = GFX_CIS_mass_assault_tactics-62290
+		x = 7
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_mass_production }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Fair Taxation
+	focus = {
+		id = CIS_fair_taxation
+		icon = GFX_CIS_fair_taxation-62298
+		x = 14
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_open_borders }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = fair_taxation
+		}
+	}
+
+	#Focus for Corporate Subsidies
+	focus = {
+		id = CIS_corporate_subsidies
+		icon = GFX_CIS_corporate_subsidies-62315
+		x = 21
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_flatter_the_separatist_council }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "This will send a total of Y500 million dollars to the corporations"
+			subtract_from_variable = { dx = 500 }
+			TEC = {
+				add_to_variable = { dx = 100 }
+			}
+			FED = {
+				add_to_variable = { dx = 100 }
+			}
+			IBC = {
+				add_to_variable = { dx = 100 }
+			}
+			GEO = {
+				add_to_variable = { dx = 100 }
+			}
+			QUA = {
+				add_to_variable = { dx = 100 }
+			}
+		}
+	}
+
+	#Focus for Shadow Feed Propaganda
+	focus = {
+		id = CIS_shadow_feed_propaganda
+		icon = GFX_CIS_shadow_feed_propaganda-62309
+		x = 19
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_loyalty_over_integrity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 10
+		}
+	}
+
+	#Focus for Bury Any Peace Talks
+	focus = {
+		id = CIS_bury_any_peace_talks
+		icon = GFX_CIS_bury_any_peace_talks-62312
+		x = 22
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_stage_terror_attacks }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = bury_peace_talks
+		}
+	}
+
+	#Focus for A Hope For a Better Tomorrow
+	focus = {
+		id = CIS_a_hope_for_a_better_tomorrow
+		icon = GFX_CIS_a_hope_for_a_better_tomorrow-62302
+		x = 15
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_education_in_the_outer_rim 
+		}
+		prerequisite = { 
+			focus = CIS_anti_corruption_initiatives 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stage Terror Attacks
+	focus = {
+		id = CIS_stage_terror_attacks
+		icon = GFX_CIS_stage_terror_attacks-62313
+		x = 22
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_deal_with_the_idealists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			REP = {
+				add_stability = -0.15
+				add_war_support = -0.05
+			}
+		}
+	}
+
+	#Focus for Ensure War Profits
+	focus = {
+		id = CIS_ensure_war_profits
+		icon = GFX_CIS_ensure_war_profits-62316
+		x = 21
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_corporate_subsidies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { dx = 200 }
+			custom_effect_tooltip = "This will give you 200 M to invest in the market"
+		}
+	}
+
+	#Focus for The Commerce Guild
+	focus = {
+		id = CIS_the_commerce_guild
+		icon = GFX_CIS_the_commerce_guild-62334
+		x = 25
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_friends_in_high_places }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guild Resources
+	focus = {
+		id = CIS_guild_resources
+		icon = GFX_CIS_guild_resources-62335
+		x = 25
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_commerce_guild }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 200 }
+			154 = {
+		        add_resource = {
+		            type = tungsten
+		            amount = 14
+		        }
+		       add_resource = {
+		        	type = chromium
+		        	amount = 14
+				}
+				add_resource = {
+		        	type = steel
+		        	amount = 19
+			    }
+			}
+			custom_effect_tooltip = "This will cost R200 M credits"
+		}
+	}
+
+	#Focus for Flatter The Separatist Council
+	focus = {
+		id = CIS_flatter_the_separatist_council
+		icon = GFX_CIS_flatter_the_separatist_council-62262
+		x = 21
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_the_flares_seen_across_the_galaxy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FED = {
+				add_political_power = 50
+			}
+			TEC = {
+				add_political_power = 50
+			}
+			CMG = {
+				add_political_power = 50
+			}
+			IBC = {
+				add_political_power = 50
+			}
+		}
+	}
+
+	#Focus for Corporate Contracts
+	focus = {
+		id = CIS_corporate_contracts
+		icon = GFX_CIS_corporate_contracts-62311
+		x = 19
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_extensive_militarization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = corporatecontracts
+			custom_effect_tooltip = "This will enable the YCorporate Contract Decisions"
+		}
+	}
+
+	#Focus for A Toast to Our Friends
+	focus = {
+		id = CIS_a_toast_to_our_friends
+		icon = GFX_CIS_a_toast_to_our_friends-62306
+		x = 21
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_bury_any_peace_talks 
+		}
+		prerequisite = { 
+			focus = CIS_corporate_contracts 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Further The Sith Plot
+	focus = {
+		id = CIS_further_the_sith_plot
+		icon = GFX_CIS_further_the_sith_plot-62305
+		x = 18
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_a_hope_for_a_better_tomorrow 
+			focus = CIS_a_toast_to_our_friends 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tie up Loose Ends
+	focus = {
+		id = CIS_tie_up_loose_ends
+		icon = GFX_CIS_tie_up_loose_ends-62304
+		x = 18
+		y = 11
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_further_the_sith_plot }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Operation Downfall
+	focus = {
+		id = CIS_operation_downfall
+		icon = GFX_CIS_operation_downfall-62303
+		x = 18
+		y = 12
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_tie_up_loose_ends }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Techno Union
+	focus = {
+		id = CIS_techno_union_2
+		icon = GFX_CIS_techno_union_2-62337
+		x = 27
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_friends_in_high_places }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Trade Federation
+	focus = {
+		id = CIS_trade_federation_2
+		icon = GFX_CIS_trade_federation_2-62340
+		x = 29
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_friends_in_high_places }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for InterGalactic Banking Clan
+	focus = {
+		id = CIS_intergalactic_banking_clan
+		icon = GFX_CIS_intergalactic_banking_clan-62343
+		x = 31
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_friends_in_high_places }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Envoy to The Under world
+	focus = {
+		id = CIS_envoy_to_the_under_world
+		icon = GFX_CIS_envoy_to_the_under_world-62263
+		x = 4
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_mobilize_the_movement }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Techno Union Think Tank
+	focus = {
+		id = CIS_techno_union_think_tank
+		icon = GFX_CIS_techno_union_think_tank-62338
+		x = 27
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_droid_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Further R-I-I Funding
+	focus = {
+		id = CIS_further_rii_funding
+		icon = GFX_CIS_further_rii_funding-62341
+		x = 29
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_trade_federation_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 150 }
+			FED = {
+				add_to_variable = { dx = 150 }
+			}
+			custom_effect_tooltip = "This will send 150 m to the Trade Federation"
+		}
+	}
+
+	#Focus for Ship Contracts
+	focus = {
+		id = CIS_ship_contracts
+		icon = GFX_CIS_ship_contracts-62342
+		x = 29
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_further_rii_funding }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			FED = {
+				random_owned_state = {
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = cost_15
+			hidden_effect = {
+				CIS = {
+					subtract_from_variable = { dx = 15 }
+				}
+			}
+		}
+	}
+
+	#Focus for Civilian Factories
+	focus = {
+		id = CIS_civilian_factories
+		icon = GFX_CIS_civilian_factories-62330
+		x = 31
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_raxus_infrastructure_build_up }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			135 = {
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+				}
+            }
+		}
+	}
+
+	#Focus for Raxus Drilling Initiative
+	focus = {
+		id = CIS_raxus_drilling_initiative
+		icon = GFX_CIS_raxus_drilling_initiative-62336
+		x = 25
+		y = 9
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_guild_resources }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			135 = {
+		        add_resource = {
+		            type = tungsten
+		            amount = 24
+		        }
+		       add_resource = {
+		        	type = chromium
+		        	amount = 17
+				}
+				add_resource = {
+		        	type = steel
+		        	amount = 14
+			    }
+			}
+		}
+	}
+
+	#Focus for Pyke Rhydonium Deal
+	focus = {
+		id = CIS_pyke_rhydonium_deal
+		icon = GFX_CIS_pyke_rhydonium_deal-62265
+		x = 3
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_envoy_to_the_under_world }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		KES = {
+			add_to_variable = { dx = 100 }
+		}
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 39
+			}
+		KES = {
+			give_resource_rights = { receiver = CIS state = 39 }
+			}
+		}
+	}
+
+	#Focus for Treaty With The Hutts
+	focus = {
+		id = CIS_treaty_with_the_hutts
+		icon = GFX_CIS_treaty_with_the_hutts-62266
+		x = 5
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_envoy_to_the_under_world }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation = {
+				country = QUN
+				relation = docking_rights
+				active = yes
+			}
+			diplomatic_relation = {
+				country = GOR
+				relation = docking_rights
+				active = yes
+			}
+			diplomatic_relation = {
+				country = JHT
+				relation = docking_rights
+				active = yes
+			}
+			diplomatic_relation = {
+				country = BEA
+				relation = docking_rights
+				active = yes
+			}
+		}
+	}
+
+	#Focus for Droid Factories
+	focus = {
+		id = CIS_droid_factories
+		icon = GFX_CIS_droid_factories-62339
+		x = 27
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_techno_union_2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			TEC = {
+				random_owned_state = {
+					add_building_construction = {
+						type = corporate_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			custom_effect_tooltip = cost_15
+			hidden_effect = {
+				CIS = {
+					subtract_from_variable = { dx = 15 }
+				}
+			}
+		}
+	}
+
+	#Focus for Form The O-R-I-I
+	focus = {
+		id = CIS_form_the_orii
+		icon = GFX_CIS_form_the_orii-62320
+		x = 25
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_begin_industrialization }
+		mutually_exclusive = { focus = CIS_build_up_raxus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+		}
+	}
+
+	#Focus for Raxus Infrastructure Build up
+	focus = {
+		id = CIS_raxus_infrastructure_build_up
+		icon = GFX_CIS_raxus_infrastructure_build_up-62328
+		x = 31
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_build_up_raxus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			135 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			140 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			143 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			145 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			138 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			127 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			11 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+			129 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 8
+   					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Engineers of The Outer Rim
+	focus = {
+		id = CIS_engineers_of_the_outer_rim
+		icon = GFX_CIS_engineers_of_the_outer_rim-62325
+		x = 27
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_economic_walfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = CIS_engineers_of_the_outer_rim
+		}
+	}
+
+	#Focus for A Mobilized Outer-rim
+	focus = {
+		id = CIS_a_mobilized_outerrim
+		icon = GFX_CIS_a_mobilized_outerrim-62326
+		x = 25
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CIS_orii_phase_2 
+		}
+		prerequisite = { 
+			focus = CIS_engineers_of_the_outer_rim 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build up Raxus
+	focus = {
+		id = CIS_build_up_raxus
+		icon = GFX_CIS_build_up_raxus-62321
+		x = 32
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_begin_industrialization }
+		mutually_exclusive = { focus = CIS_form_the_orii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			11 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			135 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			127 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			129 = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+
+	#Focus for ORII Phase 1
+	focus = {
+		id = CIS_orii_phase_1
+		icon = GFX_CIS_orii_phase_1-62322
+		x = 24
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_form_the_orii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 500 }
+			custom_effect_tooltip = "R500 M Credits"
+			custom_effect_tooltip = "YThis will unlock focuses for the Generic Tree"
+		}
+	}
+
+	#Focus for ORII Phase 2
+	focus = {
+		id = CIS_orii_phase_2
+		icon = GFX_CIS_orii_phase_2-62324
+		x = 24
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_orii_phase_1 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 500 }
+			custom_effect_tooltip = "R500 M Credits"
+			custom_effect_tooltip = "YThis will unlock focuses for the Generic Tree"
+		}
+	}
+
+	#Focus for Corporate Militarization
+	focus = {
+		id = CIS_corporate_militarization
+		icon = GFX_CIS_corporate_militarization-62329
+		x = 34
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_build_up_raxus }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			135 = {
+				add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+				}
+			}
+			129 = {
+				add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+				}
+            }
+		}
+	}
+
+	#Focus for Raxus Dock Yards
+	focus = {
+		id = CIS_raxus_dock_yards
+		icon = GFX_CIS_raxus_dock_yards-62331
+		x = 34
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_corporate_militarization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			143 = {
+				add_building_construction = {
+                    type = dockyard
+                    level = 6
+                    instant_build = yes
+				}
+            }
+		}
+	}
+
+	#Focus for Economic Walfare
+	focus = {
+		id = CIS_economic_walfare
+		icon = GFX_CIS_economic_walfare-62323
+		x = 27
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = CIS_form_the_orii }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = economic_walfare
+		}
+	}
+
+#End of focuses 
+ }

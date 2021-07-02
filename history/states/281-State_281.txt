@@ -1,0 +1,41 @@
+state={
+	id=281
+	name="STATE_281"
+	provinces={
+		43 290 471 864 1173 1176 1581 1685 2102 2877 3404 3579 3667 3803 5066 8165 8167 8170 8173 8174 8179 8180 8183 8185 8187 8191 8192 8193 
+	}
+	manpower=2857142
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=0
+		aluminium=7
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=KYK
+		add_core_of = KYK
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			8193 = {
+				naval_base = 1
+			}
+		}
+	
+		victory_points = {
+			1685 25
+		}
+	}
+}
+

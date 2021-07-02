@@ -1,0 +1,20 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			REP = {
+				for_loop_effect = {
+					start = 1
+					end = 14
+					value = jj
+					add_to_array = { available_jedi_array = jj }
+				}
+				for_loop_effect = {
+					start = 1
+					end = 16
+					value = cl
+					add_to_array = { clone_legions_arrays = cl }
+				}
+			}
+		}
+	}
+}

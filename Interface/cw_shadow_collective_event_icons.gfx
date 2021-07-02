@@ -1,0 +1,36 @@
+spriteTypes = {
+
+	spriteType = { 
+		name = "GFX_blacksunshadow" 
+		texturefile = "gfx/event_pictures/blacksunshadow.dds" 
+	} 
+	spriteType = { 
+		name = "GFX_pykeshadow" 
+		texturefile = "gfx/event_pictures/pykeshadow.dds" 
+	} 
+	spriteType = { 
+		name = "GFX_ohnakashadow" 
+		texturefile = "gfx/event_pictures/ohnakashadow.dds" 
+	}
+	spriteType = { 
+		name = "GFX_huttshadow1" 
+		texturefile = "gfx/event_pictures/huttshadow1.dds" 
+	} 
+	spriteType = { 
+		name = "GFX_shadowcriminals" 
+		texturefile = "gfx/event_pictures/shadowcriminals.dds" 
+	} 
+	spriteType = { 
+		name = "GFX_shadowduel" 
+		texturefile = "gfx/event_pictures/shadowduel.dds" 
+	} 
+	spriteType = { 
+		name = "GFX_shadowprep" 
+		texturefile = "gfx/event_pictures/shadowprep.dds" 
+	}
+	spriteType = { 
+		name = "GFX_shadowsave" 
+		texturefile = "gfx/event_pictures/shadowsave.dds" 
+	} 
+}
+ 

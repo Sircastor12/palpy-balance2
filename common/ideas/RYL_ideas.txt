@@ -1,0 +1,375 @@
+ideas = {
+
+	country = {
+		slave_raids = {
+			picture = slave_raids
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.05
+				political_power_factor = -0.10
+			}
+		}
+	}
+	
+	country = {
+		lack_of_recourses = {
+			picture = lack_of_recourses
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.10
+			}
+		}
+	}
+	
+
+	country = {
+		cham_syndulla_insurgent = {
+			picture = cham_syndulla_insurgent
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.01
+				stability_weekly = -0.001
+			}
+		}
+	}
+	
+	
+	country = {
+		twilek_spirit_to_endure = {
+			picture = twilek_spirit_to_endure
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.15
+				stability_weekly = 0.001
+				army_infantry_defence_factor = 0.15
+			}
+		}
+	}
+	
+	
+	country = {
+		the_countess_of_ryloth = {
+			picture = the_countess_of_ryloth
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.001
+		        monthly_population = 0.05
+				political_power_factor = -0.05
+			}
+		}
+	}	
+	country = {
+		home_of_the_twilek = {
+			picture = home_of_the_twilek
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.20
+			}
+		}
+	}
+	country = {
+		twilek_ressistance = {
+			picture = twilek_ressistance
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.08
+			}
+		}
+	}	
+	country = {
+		never_slaves_again = {
+			picture = never_slaves_again
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = 0.01
+				army_core_defence_factor = 0.05
+				surrender_limit = 0.10
+			}
+		}
+	}
+	country = {
+		cham_syndulla_hero_of_ryloth = {
+			picture = cham_syndulla_hero_of_ryloth
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    stability_weekly = 0.001
+				political_power_factor = 0.01
+				trade_opinion_factor = -0.15
+				join_faction_tension = 0.20
+			}
+		}
+	}
+	country = {
+		jedi_heroes = {
+			picture = jedi_heroes
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				surrender_limit = 0.05
+				war_support_weekly = -0.01
+			}
+		}
+	}
+	country = {
+		republic_strategy = {
+			picture = republic_strategy
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_infantry_attack_factor = 0.10
+				army_infantry_defence_factor = 0.15
+			}
+		}
+	}
+	country = {
+		republic_influence = {
+			picture = republic_influence
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+	}
+	country = {
+		strong_republic_influence = {
+			picture = strong_republic_influence
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+	country = {
+		severe_republic_influence = {
+			picture = severe_republic_influence
+			
+			allowed = {
+				tag = RYL
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+	}	
+}

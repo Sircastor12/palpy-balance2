@@ -1,0 +1,949 @@
+# Adjacency rules determine if an army, navy or trade can pass through the adjacency (e.g. a canal or strait).
+#
+# If two countries at war control provinces in the adjacency it is considered contested.
+# The optional triggers is_enemy, is_friend and is_neutral are evaluated in order and if one evaluates to true the corresponding rule is used.
+# If is_enemy and is_friend evaluates to false the neutral rule is used. In this case the is_neutral trigger will not be evaluated at all.
+# If is_friend and is_neutral evaluates to false the enemy rule is used.
+# If is_enemy and is_neutral evaluates to false the friend rule is used.
+# If any adjacency province controller is at war with the country the enemy rule is used, unless is_enemy evaluates to false, then the neutral rule is used.
+# If any adjacency province controller is an ally of is giving military access to the country the friend rule is used, unless is_friend evaluates to false, then the neutral rule is used.
+# Otherwise the neutral rule is used, unless is_neutral evaluates to false, then the enemy rule is used.
+#
+# The 'name' property is how you refer to the rule in adjacencies.csv
+
+#Coruscant Anaxes
+#adjacency_rule
+#{
+#	name = "CORUSCANT_ANAXES"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6814 6384 }
+#	
+#	icon = 12132	
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Coruscant Alderaan
+#adjacency_rule
+#{
+#	name = "CORUSCANT_ALDERAAN"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6814 6807 }
+#	
+#	icon = 12131	
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Coruscant Kuat
+#adjacency_rule
+#{
+#	name = "CORUSCANT_KUAT"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6814 7166 }
+#	
+#	icon = 12130	
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Anaxes Ord Mantell
+#adjacency_rule
+#{
+#	name = "ANAXES_ORDMANTELL"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6384 1220 }
+#	
+#	icon = 12133	
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Coruscant Fresia
+#adjacency_rule
+#{
+#	name = "CORUSCANT_FRESIA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7054 6814 }
+#	
+#	icon = 11885	
+#	offset = { 90.0 -10.0 60.0 }
+#}
+##Anaxes Alderaan
+#adjacency_rule
+#{
+#	name = "ANAXES_ALDERAAN"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6384 6807 }
+#	
+#	icon = 11837	
+#	offset = { 45.0 -10.0 -90.0 }
+#}
+##ALDERAAN KUAT
+#adjacency_rule
+#{
+#	name = "ALDERAAN_KUAT"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6807 7166 }
+#	
+#	icon = 11763	
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Anaxes Skako
+#adjacency_rule
+#{
+#	name = "SKAKO_ANAXES"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6384 6514 }
+#	
+#	icon = 12129
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Skako Alderaan
+#adjacency_rule
+#{
+#	name = "ALDERAAN_SKAKO"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6807 6514 }
+#	
+#	icon = 12128
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Skako Carida
+#adjacency_rule
+#{
+#	name = "SKAKO_CARIDA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6514 1411 }
+#	
+#	icon = 12141
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Skako Neimoidia
+#adjacency_rule
+#{
+#	name = "SKAKO_NEIMOIDIA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6514 7167 }
+#	
+#	icon = 12126
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Alderaan Neimoidia
+#adjacency_rule
+#{
+#	name = "ALDERAAN_NEIMOIDIA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7167 6807 }
+#	
+#	icon = 12127
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Kuat Rendili
+#adjacency_rule
+#{
+#	name = "KUAT_RENDILI"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7562 7199 }
+#	
+#	icon = 11763
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Rendili Neimoidia
+#adjacency_rule
+#{
+#	name = "RENDILI_NEIMOIDIA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7562 7167 }
+#	
+#	icon = 11875
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Rendili Corellia
+#adjacency_rule
+#{
+#	name = "RENDILI_CORELLIA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7562 7890 }
+#	
+#	icon = 11848
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Rendili Cato
+#adjacency_rule
+#{
+#	name = "RENDILI_CATO"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7562 4313 }
+#	
+#	icon = 12137
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Neimoidia Cato
+#adjacency_rule
+#{
+#	name = "NEIMOIDIA_CATO"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 4313 7167 }
+#	
+#	icon = 12147
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Neimoidia Onderon
+#adjacency_rule
+#{
+#	name = "NEIMOIDIA_ONDERON"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 7167 7390 }
+#	
+#	icon = 12138
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Cato Onderon
+#adjacency_rule
+#{
+#	name = "CATO_ONDERON"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 4313 7390 }
+#	
+#	icon = 12146
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Onderon taris
+#adjacency_rule
+#{
+#	name = "ONDERON_TARIS"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 6681 7390 }
+#	
+#	icon = 12145
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Onderon kashyyyk
+#adjacency_rule
+#{
+#	name = "ONDERON_KASHYYYK"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 2396 7390 }
+#	
+#	icon = 12144
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Onderon umbara
+#adjacency_rule
+#{
+#	name = "ONDERON_UMBARA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 2127 7390 }
+#	
+#	icon = 12148
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Onderon Cato
+#adjacency_rule
+#{
+#	name = "ONDERON_CATO"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 4313 7390 }
+#	
+#	icon = 12146
+#	offset = { 0.0 0.0 0.0 }
+#}
+##Taris Carida
+#adjacency_rule
+#{
+#	name = "TARIS_CARIDA"
+#
+#	contested =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 1411 6681 }
+#	
+#	icon = 12139
+#	offset = { 0.0 0.0 0.0 }
+#}

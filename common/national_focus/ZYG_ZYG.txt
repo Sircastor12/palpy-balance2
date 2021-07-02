@@ -1,0 +1,783 @@
+focus_tree = {
+	id = ZYG
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZYG
+		}
+	}
+	#Focus for Reforming the Militia
+	focus = {
+		id = ZYG_reforming_the_militia
+		icon = GFX_goal_unknown
+		x = 21
+		y = 1
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_dreams_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+
+	#Focus for Zygerrian Fighters
+	focus = {
+		id = ZYG_zygerrian_fighters
+		icon = GFX_goal_unknown
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ZYG_brezak_riders 
+		}
+		prerequisite = { 
+			focus = ZYG_shock_whips 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				zyg_fighter = 1
+			}
+		}
+	}
+
+	#Focus for The Zygerrian Rifle
+	focus = {
+		id = ZYG_the_zygerrian_rifle
+		icon = GFX_goal_unknown
+		x = 21
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_zygerrian_fighters }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				zyg_rifle = 1
+			}
+		}
+	}
+
+	#Focus for Dreams of an Empire
+	focus = {
+		id = ZYG_dreams_of_an_empire
+		icon = GFX_goal_unknown
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Dooku
+	focus = {
+		id = ZYG_dooku
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ZYG_appoint_a_prime_minister 
+		}
+		prerequisite = { 
+			focus = ZYG_the_royal_archivists 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_to_variable = { secessionpoint = 3 }
+			custom_effect_tooltip = move_toward_secession_tt
+		}
+	}
+
+	#Focus for Rekindle Imperial Sentiment
+	focus = {
+		id = ZYG_rekindle_imperial_sentiment
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_dreams_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}
+	}
+
+	#Focus for Increase the Infrastructure
+	focus = {
+		id = ZYG_increase_the_infrastructure
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_dreams_of_an_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for The Royal Archivists
+	focus = {
+		id = ZYG_the_royal_archivists
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_rekindle_imperial_sentiment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = royal_archivists
+		}
+	}
+
+	#Focus for Creating a Trade Hub
+	focus = {
+		id = ZYG_creating_a_trade_hub
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_increase_the_infrastructure }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		88 = {
+			if = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	#Focus for Invest into Civilian industry
+	focus = {
+		id = ZYG_invest_into_civilian_industry
+		icon = GFX_goal_unknown
+		x = 1
+		y = 3
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_creating_a_trade_hub }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Invest into Military industry
+	focus = {
+		id = ZYG_invest_into_military_industry
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_creating_a_trade_hub }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Old Building Techniques
+	focus = {
+		id = ZYG_old_building_techniques
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ZYG_invest_into_military_industry 
+		}
+		prerequisite = { 
+			focus = ZYG_invest_into_civilian_industry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = old_building_techniques
+		}
+	}
+
+	#Focus for Appoint a Prime Minister
+	focus = {
+		id = ZYG_appoint_a_prime_minister
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_rekindle_imperial_sentiment }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = atai_molec
+		}
+	}
+
+	#Focus for Brezak Riders
+	focus = {
+		id = ZYG_brezak_riders
+		icon = GFX_goal_unknown
+		x = 23
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_reforming_the_militia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				brezak_battalion = 1
+			} 
+		}
+	}
+
+	#Focus for An Empire Reborn
+	focus = {
+		id = ZYG_an_empire_reborn
+		icon = GFX_goal_unknown
+		x = 11
+		y = 4
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_dooku }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = zygerria_empire
+		}
+	}
+
+	#Focus for Shock Whips
+	focus = {
+		id = ZYG_shock_whips
+		icon = GFX_goal_unknown
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_reforming_the_militia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				zyggerian_whip = 1
+			}
+		}
+	}
+
+	#Focus for Reinstitute Slavery
+	focus = {
+		id = ZYG_reinstitute_slavery
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_an_empire_reborn }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = slave_economy
+		}
+	} 
+
+	#Focus for A Hub of Slavery
+	focus = {
+		id = ZYG_a_hub_of_slavery
+		icon = GFX_goal_unknown
+		x = 7
+		y = 6
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_reinstitute_slavery }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = slavery_hub
+			add_ideas = slavery_hub
+		}
+	}
+
+	#Focus for The Zygerrian Language
+	focus = {
+		id = ZYG_the_zygerrian_language
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_an_empire_reborn }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = zygerrian_lang
+		}
+	}
+
+	#Focus for Prisoners of War
+	focus = {
+		id = ZYG_prisoners_of_war
+		icon = GFX_goal_unknown
+		x = 7
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_a_hub_of_slavery }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = POW
+		}
+	}
+
+	#Focus for Expanding our Empire
+	focus = {
+		id = ZYG_expanding_our_empire
+		icon = GFX_goal_unknown
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_the_zygerrian_language }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Separatist Council
+	focus = {
+		id = ZYG_the_separatist_council
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_an_empire_reborn }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = separatist_council
+		}
+	}
+
+	#Focus for The Great Temples of Zygerria
+	focus = {
+		id = ZYG_the_great_temples_of_zygerria
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ZYG_reinstitute_slavery 
+		}
+		prerequisite = { 
+			focus = ZYG_the_zygerrian_language 
+		}
+		prerequisite = { 
+			focus = ZYG_the_separatist_council 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Strength and Intelligence
+	focus = {
+		id = ZYG_strength_and_intelligence
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_the_great_temples_of_zygerria }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = strength_intelligence
+		}
+	}
+
+	#Focus for The Slave War Machine
+	focus = {
+		id = ZYG_the_slave_war_machine
+		icon = GFX_goal_unknown
+		x = 11
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ZYG_prisoners_of_war 
+		}
+		prerequisite = { 
+			focus = ZYG_help_the_separatists 
+		}
+		prerequisite = { 
+			focus = ZYG_strength_and_intelligence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+						}
+					}
+				}
+		}
+	}
+
+	#Focus for Help the Separatists
+	focus = {
+		id = ZYG_help_the_separatists
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_expanding_our_empire }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Give 200 M credits to the CIS"
+			subtract_from_variable = {
+				dx = 200
+			}
+			CIS = {
+				add_to_variable = { dx = 200 }
+			}
+		}
+	}
+
+	#Focus for Our Military Doctrine
+	focus = {
+		id = ZYG_our_military_doctrine
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_the_zygerrian_rifle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	#Focus for Slaves of Kyros
+	focus = {
+		id = ZYG_slaves_of_kyros
+		icon = GFX_goal_unknown
+		x = 11
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_the_slave_war_machine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = slaves_of_kyros
+		}
+	}
+
+	#Focus for Revenge for the Collapse
+	focus = {
+		id = ZYG_revenge_for_the_collapse
+		icon = GFX_goal_unknown
+		x = 11
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_slaves_of_kyros }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = REP
+			}
+		}
+	}
+
+	#Focus for Supervise the Population
+	focus = {
+		id = ZYG_supervise_the_population
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_old_building_techniques }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+					add_building_construction = {
+						type = radar_station
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for Heavy Industry Development
+	focus = {
+		id = ZYG_heavy_industry_development
+		icon = GFX_goal_unknown
+		x = 8
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_revenge_for_the_collapse }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			88 = {
+				if = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+						}
+					}
+				}
+		}
+	}
+
+	#Focus for New Droid Factories
+	focus = {
+		id = ZYG_new_droid_factories
+		icon = GFX_goal_unknown
+		x = 14
+		y = 11
+		cost = 9
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_revenge_for_the_collapse }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fear Modules
+	focus = {
+		id = ZYG_fear_modules
+		icon = GFX_goal_unknown
+		x = 14
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_new_droid_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_technology = {
+			fear_module = 1
+			}
+		}
+	}
+
+	#Focus for A Slave Army
+	focus = {
+		id = ZYG_a_slave_army
+		icon = GFX_goal_unknown
+		x = 11
+		y = 11
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_revenge_for_the_collapse }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_technology = {
+			zyggerian_slave_army = 1
+			}
+		}
+	}
+
+	#Focus for Contracts with the Corporations
+	focus = {
+		id = ZYG_contracts_with_the_corporations
+		icon = GFX_goal_unknown
+		x = 8
+		y = 12
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = ZYG_heavy_industry_development }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

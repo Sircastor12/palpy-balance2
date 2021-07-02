@@ -1,0 +1,42 @@
+state={
+	id=18
+	name="STATE_18"
+	provinces={
+		911 959 1042 2114 2936 3951 4164 6424 6435 6455 6467 6468 6480 6496 6497 6516 6517 6533 6547 
+	}
+	manpower=206000
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=12
+		aluminium=8
+		rubber=0
+		tungsten=7
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=DEA
+		add_core_of = DEA
+		add_core_of = MAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			3951 45
+		}
+	}
+}
+

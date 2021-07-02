@@ -1,0 +1,41 @@
+state={
+	id=324
+	name="STATE_324"
+	provinces={
+		2451 3153 4292 4729 8869 8880 8892 8898 8901 8910 8911 8913 8916 8925 8934 8939 8946 8949 8953 8967 
+	}
+	manpower=250
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 0
+		chromium = 0
+	}
+
+  	history = {
+		owner = RUS
+		add_core_of = RUS
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

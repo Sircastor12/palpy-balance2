@@ -1,0 +1,60 @@
+guiTypes = {
+	containerWindowType = {
+		name = "trophy_container"
+		position = { x = 1255 y = 2 }
+		
+		buttonType ={
+			name ="trophy_open_button"
+			spriteType = "GFX_trophies_button"
+			position = { x=-1200 y=500 }
+			scale = 0.8
+		}
+	}
+	
+	containerWindowType = {
+		name = "trophy_window"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=800 height=900 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_trophies"
+		}
+
+		buttonType = {
+            name = "close_button"
+            position = {x=705 y=35}
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+		}
+
+		gridboxtype = {
+			name = "trophy_grid"
+			position = { x = 70 y = 0 }
+			slotsize = { width = 150 height = 80 }
+			max_slots_horizontal = 3 }
+		}
+	containerWindowType = {
+		name = "trophy_entry"
+		position = { x=0 y=0 }	
+		size = { width=550 height=300 } 
+		margin = { top = 10 bottom = 10 }
+		Orientation = upper_left
+		verticalScrollbar = "right_vertical_slider"
+
+		buttonType = {
+			name = "trophies"
+			position = { x = 100 y = 12 }
+			quadTextureSprite ="GFX_trophies_button"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			text = ""
+			}
+		}
+	}

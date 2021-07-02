@@ -1,0 +1,28 @@
+# All infantry equipment
+
+equipments = {
+	# Improved weapons  ~1939
+	laser_lance = {
+		year = 975
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_1
+		priority = 10
+		visual_level = 2
+		
+		#Defensive Abilities
+		defense = 28
+		breakthrough = 8
+
+		#Offensive Abilities
+		soft_attack = 11
+		hard_attack = 1.5
+		ap_attack = 6
+		air_attack = 0
+		
+		build_cost_ic = 0.58
+		resources = {
+			steel = 3
+		}
+	}
+}

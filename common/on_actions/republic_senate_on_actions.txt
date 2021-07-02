@@ -1,0 +1,279 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            set_variable = { global.days_remaining = 0 }
+            if = {
+                limit = {
+                    OR = {
+                        has_idea = REP_member
+                        has_idea = REP_member_prewar
+                    }
+                }
+                ROOT = {
+                    join_galactic_senate_effect = yes
+                }
+            }
+        }
+    }
+    on_weekly = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_idea = REP_member
+                        has_idea = REP_member_prewar
+                    }
+                }
+                ROOT = {
+                    join_galactic_senate_effect = yes
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_idea = CIS_member
+                    }
+                }
+                ROOT = {
+                    join_cis_senate_effect = yes
+                }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining < -2 }
+                }
+                clr_global_flag = actonfloor
+                set_variable = { global.yay = 0 }
+                set_variable = { global.nay = 0 }
+                every_country = {
+                    clr_country_flag = league_of_nations_voted_yes
+                    clr_country_flag = league_of_nations_voted_no
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining < 0 }
+                }
+                REP = {
+                    clr_country_flag = AI_lobby_please
+                }
+            }
+            if = {
+                limit = {
+                    owns_state = 60
+                    has_global_flag = actonfloor
+                }
+                subtract_from_variable = { global.days_remaining = 1 }
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = militarycreationacttofloor
+                    }
+                    check_variable = { global.yay > global.nay }
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.1
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = emergencypowersacttofloor
+                    }
+                    check_variable = { global.yay > global.nay }
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.12
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = dangerousideasacttofloor
+                    }
+                    check_variable = { global.yay > global.nay }  
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.2
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = increasedpolicepowersacttofloor
+                    }
+                    check_variable = { global.yay > global.nay }  
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.3
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = corporatesanctionsacttofloor
+                    }
+                    check_variable = { global.yay > global.nay }  
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.4
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = ruusanreformationfloor
+                    }
+                    check_variable = { global.yay > global.nay }
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.11
+                    }
+                }
+            }
+#####
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = militarycreationacttofloor
+                    }
+                    check_variable = { 
+                        var = global.yay 
+                        value = global.nay
+                        compare = less_than_or_equals
+                    }  
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.19
+                    }
+                    clr_country_flag = militarycreationacttofloor
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = emergencypowersacttofloor
+                    }
+                    check_variable = { 
+                        var = global.yay 
+                        value = global.nay
+                        compare = less_than_or_equals
+                    } 
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.21
+                    }
+                    clr_country_flag = emergencypowersacttofloor
+                }
+            }
+            if = {
+                limit = {
+                    AND = {
+                        check_variable = { global.days_remaining = 0 }
+                        REP = {
+                            has_country_flag = dangerousideasacttofloor
+                        }
+                        check_variable = { 
+                            var = global.yay 
+                            value = global.nay
+                            compare = less_than_or_equals
+                        }
+                    }
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.25
+                    }
+                    clr_country_flag = dangerousideasacttofloor
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = increasedpolicepowersacttofloor
+                    }
+                    check_variable = { 
+                        var = global.yay 
+                        value = global.nay
+                        compare = less_than_or_equals
+                    }   
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.27
+                    }
+                    clr_country_flag = increasedpolicepowersacttofloor
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = corporatesanctionsacttofloor
+                    }
+                    check_variable = { 
+                        var = global.yay 
+                        value = global.nay
+                        compare = less_than_or_equals
+                    }   
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.29
+                    }
+                    clr_country_flag = corporatesanctionsacttofloor
+                }
+            }
+            if = {
+                limit = {
+                    check_variable = { global.days_remaining = 0 }
+                    REP = {
+                        has_country_flag = ruusanreformationfloor
+                    }
+                    check_variable = { 
+                        var = global.yay 
+                        value = global.nay
+                        compare = less_than_or_equals
+                    }
+                }
+                REP = {
+                    news_event = {
+                        id = REFORM.23
+                    }
+                    clr_country_flag = ruusanreformationfloor
+                }
+            }
+        }
+    }
+}

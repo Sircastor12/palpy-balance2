@@ -1,0 +1,1014 @@
+﻿focus_tree = {
+	id = rodia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROD
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+	focus = {
+		id = ROD_our_place_in_the_galaxy
+		icon =  GFX_goal_unknown
+		#prerequisite = { focus = ITA_anti_uk_war_goals }
+
+		x = 10
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+		focus = {
+		id = ROD_friends_in_the_senate
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_our_place_in_the_galaxy }
+
+		x = 10
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+			focus = {
+		id = ROD_trade_harrased_food_dwindelling
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_friends_in_the_senate }
+
+		x = 10
+		y = 3
+		cost = 6
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+			add_manpower = -50
+			add_political_power = -100
+		}
+	}
+				focus = {
+		id = ROD_our_people_starving
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_trade_harrased_food_dwindelling }
+
+		x = 9
+		y = 4
+		cost = 6
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+			add_manpower = -8000
+		}
+	}
+				focus = {
+		id = ROD_left_alone
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_trade_harrased_food_dwindelling }
+
+		x = 11
+		y = 4
+		cost = 6
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    add_political_power = -50 
+		}	
+	}
+		focus = {
+		id = ROD_our_shipments_destroyed
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_left_alone }
+		prerequisite = { focus = ROD_our_people_starving }
+
+		x = 10
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    add_stability = -0.05
+		}	
+	}
+		focus = {
+		id = ROD_plead_for_help
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_our_shipments_destroyed}
+
+		x = 10
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    add_opinion_modifier = { target = CIS modifier = medium_increase }
+			add_opinion_modifier = { target = REP modifier = medium_increase }
+		}	
+	}
+		focus = {
+		id = ROD_call_on_our_friends_from_naboo
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_plead_for_help}
+		
+		mutually_exclusive = { focus = ROD_make_a_deal_with_nute_gunray }
+
+		x = 9
+		y = 7
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    add_political_power = -50
+		}	
+	}
+		focus = {
+		id = ROD_naboo_sends_aid
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_call_on_our_friends_from_naboo}
+
+		x = 9
+		y = 8
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		421 = {
+		    add_extra_state_shared_building_slots = 2
+		    add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+				
+                }
+		    }    	
+	    }
+    }
+		focus = {
+		id = ROD_limited_aid_from_the_republic
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_naboo_sends_aid}
+
+		x = 9
+		y = 9
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+            remove_ideas = pirates_rodia  	
+	    }
+    }
+		focus = {
+		id = ROD_secure_trade_routes
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_limited_aid_from_the_republic}
+
+		x = 9
+		y = 10
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		421 = {
+		    add_extra_state_shared_building_slots = 1
+            add_stability = 0.05  	
+	        }
+        }
+    }
+		focus = {
+		id = ROD_slowly_recovering
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_secure_trade_routes}
+
+		x = 9
+		y = 11
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+        remove_ideas = starvation_rodia		
+	    }
+    }
+		focus = {
+		id = ROD_stopping_the_piracy
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_slowly_recovering}
+
+		x = 9
+		y = 12
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+        421 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+            }		
+	    }
+      }
+    }
+		focus = {
+		id = ROD_a_stable_rodia
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_stopping_the_piracy}
+
+		x = 9
+		y = 13
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+        add_stability = 0.10
+		add_political_power = 100
+      }
+    }
+		focus = {
+		id = ROD_make_a_deal_with_nute_gunray
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_plead_for_help}
+		
+		mutually_exclusive = { focus = ROD_call_on_our_friends_from_naboo }
+
+		x = 12
+		y = 7
+		cost = 10 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+        add_stability = -0.10
+		add_political_power = -100
+		421 = {
+		    add_extra_state_shared_building_slots = 2
+		    add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+                }
+		    }
+        } 
+    }
+		focus = {
+		id = ROD_the_best_for_the_rodian_people
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_make_a_deal_with_nute_gunray}
+
+		x = 12
+		y = 8
+		cost = 10 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+        add_war_support = 0.10		
+        } 
+    }
+		focus = {
+		id = ROD_the_time_gas_come
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_the_best_for_the_rodian_people}
+
+		x = 12
+		y = 9
+		cost = 4 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+        add_political_power = 25	
+        } 
+    }
+		focus = {
+		id = ROD_double_cross_nute_gunray
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_the_time_gas_come}
+		
+		mutually_exclusive = { focus = ROD_betray_padme }
+
+		x = 12
+		y = 10
+		cost = 4 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    add_opinion_modifier = { target = CIS modifier = medium_decrease }
+			add_opinion_modifier = { target = REP modifier = medium_increase }	
+        } 
+    }
+		focus = {
+		id = ROD_aid_at_last
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_double_cross_nute_gunray}
+
+		x = 12
+		y = 11
+		cost = 4 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    remove_ideas = starvation_rodia
+        } 
+    }
+		focus = {
+		id = ROD_stop_the_pirates
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_aid_at_last}
+
+		x = 12
+		y = 12
+		cost = 10 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    add_manpower = -1000
+		    remove_ideas = pirates_rodia
+        } 
+    }
+		focus = {
+		id = ROD_rely_on_the_republic
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_stop_the_pirates}
+
+		x = 12
+		y = 13
+		cost = 10 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		REP = { puppet = ROD }
+		421 = {
+		    add_extra_state_shared_building_slots = 2
+		    add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+				}
+            }
+		}		    
+    }
+		focus = {
+		id = ROD_betray_padme
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_the_time_gas_come}
+		
+		mutually_exclusive = { focus = ROD_double_cross_nute_gunray }
+
+		x = 15
+		y = 10
+		cost = 4 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    remove_ideas = starvation_rodia
+            add_stability = -0.15
+		}		    
+    }
+		focus = {
+		id = ROD_aid_as_promised
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_betray_padme}
+
+		x = 15
+		y = 11
+		cost = 10 
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		    remove_ideas = pirates_rodia
+		421 = {
+		    add_extra_state_shared_building_slots = 3
+		    add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+				}
+            }
+		}		    
+    }
+		focus = {
+		id = ROD_our_gratitude
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_aid_as_promised}
+
+		x = 15
+		y = 12
+		cost = 5
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+            add_political_power = 50
+		    add_opinion_modifier = { target = CIS modifier = medium_increase }			
+		}		    
+    }
+		focus = {
+		id = ROD_protected_nute_gunray_himself
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_our_gratitude}
+
+		x = 15
+		y = 13
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		CIS = { puppet = ROD }
+		421 = {
+		    add_extra_state_shared_building_slots = 3
+		    add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+				}
+            }		
+		}		    
+    }
+		focus = {
+		id = ROD_build_bridges_and_roads
+		icon =  GFX_goal_unknown
+		#prerequisite = { focus = ROD_the_time_gas_come}
+
+		x = 22
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		421 = {
+		    add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+				}
+            }		
+		}		    
+    }
+		focus = {
+		id = ROD_incresea_production_output
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_build_bridges_and_roads}
+
+		x = 20
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		add_extra_state_shared_building_slots = 1		
+		421 = {
+		    add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+				}
+            }		
+		}		    
+    }
+		focus = {
+		id = ROD_manufactor_our_own_arms
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_incresea_production_output}
+
+		x = 20
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		add_extra_state_shared_building_slots = 1		
+		421 = {
+		    add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+				}
+            }		
+		}		    
+    }
+		focus = {
+		id = ROD_use_our_natural_rescourses
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_build_bridges_and_roads}
+
+		x = 24
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {
+		add_extra_state_shared_building_slots = 1		
+		421 = {
+		    add_resource = {
+			    type = oil
+				amount = 8
+            }		
+		}
+      }		
+    }
+		focus = {
+		id = ROD_expand_our_port_facilities
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_use_our_natural_rescourses}
+
+		x = 24
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {	
+		421 = {
+		add_building_construction = {
+		    type = naval_base
+		    level = 2			
+		    instant_build = yes
+			    }		
+            }    		
+        }
+    }
+		focus = {
+		id = ROD_expand_our_trade_capacity
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_manufactor_our_own_arms}
+		prerequisite = { focus = ROD_expand_our_port_facilities}
+
+		x = 22
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {	
+            add_equipment_to_stockpile = {
+
+            type = convoy
+
+            amount = 50		
+        }
+    }
+}	
+		focus = {
+		id = ROD_our_investments_yields_profit
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_expand_our_trade_capacity}
+
+		x = 22
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {	
+		add_extra_state_shared_building_slots = 3		
+		421 = {
+		    add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+				}
+            }		
+		}
+    }
+		focus = {
+		id = ROD_our_expand_our_security_forces
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_our_investments_yields_profit}
+
+		x = 22
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {	
+		add_extra_state_shared_building_slots = 2		
+		421 = {
+		    add_building_construction = {
+                type = arms_factory
+                level = 2
+                instant_build = yes
+				}
+            }		
+		}
+    }
+		focus = {
+		id = ROD_improve_our_capital_infrastructure
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_our_expand_our_security_forces}
+
+		x = 22
+		y = 7
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			421 = {
+		    	set_building_level = {
+            		type = infrastructure
+            		level = 3
+            		instant_build = yes
+            	}
+			}
+			add_research_slot = 1
+        }	
+    }
+	focus = {
+		id = ROD_rodian_experience_from_abroad
+		icon =  GFX_goal_unknown
+		#prerequisite = { focus = ROD_our_expand_our_security_forces}
+
+		x = 15
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+		    army_experience = 30
+        }	
+    }
+		focus = {
+		id = ROD_rodian_mercs
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_rodian_experience_from_abroad}
+
+		x = 15
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_advanced_artillery
+			    bonus = 0.50
+			    uses = 1
+			    category = land_doctrine
+			    category = naval_doctrine
+			    category = air_doctrine
+			}
+        }	
+    }
+		focus = {
+		id = ROD_knowing_our_jungles
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_rodian_mercs}
+
+		x = 14
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_military_vehicles
+			    bonus = 1.0
+			    uses = 1
+			    category = motorized_equipment
+			}
+        }	
+    }
+		focus = {
+		id = ROD_knowing_blaster
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_knowing_our_jungles}
+
+		x = 14
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_advanced_artillery
+			    bonus = 0.50
+			    uses = 2
+			    category = artillery
+			}
+        }	
+    }
+		focus = {
+		id = ROD_enhance_our_military_knowledge
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_knowing_blaster}
+
+		x = 14
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_advanced_artillery
+			    bonus = 0.50
+			    uses = 1
+			    category = land_doctrine
+			}
+        }	
+    }
+		focus = {
+		id = ROD_experienced_rodian_pilots
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_rodian_mercs}
+
+		x = 16
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_advanced_artillery
+			    bonus = 0.50
+			    uses = 1
+			    category = air_doctrine
+			}
+        }	
+    }
+		focus = {
+		id = ROD_rodian_pilots
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_experienced_rodian_pilots}
+
+		x = 16
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_light_aircraft_focus
+			    bonus = 1.0
+			    uses = 1
+			    category = light_air
+			}
+        }	
+    }
+		focus = {
+		id = ROD_rodian_pilot_designs
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_rodian_pilots}
+
+		x = 16
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			air_experience = 25
+        }	
+    }
+		focus = {
+		id = ROD_patrol_our_space
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_rodian_pilot_designs}
+
+		x = 16
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+		421 = {
+		    set_building_level = {
+            type = radar_station
+            level = 2
+            instant_build = yes
+                }	
+		    }
+        }		
+    }
+		focus = {
+		id = ROD_hutt_tech
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_experienced_rodian_pilots}
+
+		x = 18
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_tech_bonus = {
+				name = ROD_national_cruiser_production
+			    bonus = 0.75
+			    uses = 1
+			    category = cl_tech	   
+			}
+        }		
+    }
+		focus = {
+		id = ROD_hire_rodian_freighter_capteins
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_rodian_pilots}
+
+		x = 18
+		y = 5
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			navy_experience = 30
+        }		
+    }
+		focus = {
+		id = ROD_macklunky
+		icon =  GFX_goal_unknown
+		prerequisite = { focus = ROD_enhance_our_military_knowledge}
+
+		x = 14
+		y = 6
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}			
+		completion_reward = {			
+			add_ideas = macklunky_rodia
+        }		
+    }	
+}

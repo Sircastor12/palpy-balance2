@@ -1,0 +1,124 @@
+capital = 310
+
+oob = "KES_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+set_country_flag = no_ideas
+create_intelligence_agency = yes
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	all_adults_serve
+	black_market_economy
+}
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+	
+	give_military_access = HUT
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+}
+
+create_country_leader = {
+	name = "Lom Pyke"
+	desc = "Leader of The Pyke Syndicate"
+	picture = "gfx/leaders/KES/LomPyke.dds"
+	expire = "2020.1.1"
+	ideology = marxism
+}
+
+create_corps_commander = {
+	name = "Fife"
+	portrait_path = "gfx/leaders/KES/Fife.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Fife"
+	portrait_path = "gfx/leaders/KES/Fife.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Fife"
+	portrait_path = "gfx/leaders/KES/Fife.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Rakka"
+	portrait_path = "gfx/leaders/KES/rakka.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Rakka"
+	portrait_path = "gfx/leaders/KES/rakka.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lupa"
+	portrait_path = "gfx/leaders/KES/lupa.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}

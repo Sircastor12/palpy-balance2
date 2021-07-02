@@ -1,0 +1,76 @@
+add_namespace = TEC
+#CIS - TEC has pledged their loyalty to us!
+country_event = {
+	id = TEC.30
+	title = TEC.30.t
+	desc = TEC.30.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.30.a #Cool
+    	ai_chance = {
+			base = 100
+		}
+		add_opinion_modifier = {
+    		target = TEC
+    		modifier = large_increase
+		}
+    }
+}
+#CIS - TEC wants to join the Separatist Alliance
+country_event = {
+	id = TEC.31
+	title = TEC.31.t
+	desc = TEC.31.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.31.a #Yea sure
+    	ai_chance = {
+			base = 100
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = TEC.32 hours = 6 }}
+    }
+    option = {
+    	name = TEC.31.b #Nah
+    	ai_chance = {
+			base = 0
+		}
+		FROM = { country_event = { id = TEC.33 hours = 6 }}
+    }
+}
+#TEC - CIS says yah
+country_event = {
+	id = TEC.32
+	title = TEC.32.t
+	desc = TEC.32.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.32.a #Yea sure
+    }
+}
+#TEC - CIS says nah
+country_event = {
+	id = TEC.33
+	title = TEC.33.t
+	desc = TEC.33.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.33.a #Yea sure
+    }
+}
+
+#NEWS - Techno Union pledges support to CIS
+news_event = {
+	id = TEC.34
+	title = TEC.34.t
+	desc = TEC.34.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.34.a #ok
+    }
+}

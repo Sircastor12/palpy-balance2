@@ -1,0 +1,41 @@
+state={
+	id=394
+	name="STATE_394"
+	provinces={
+		1587 1696 1958 2643 2664 3820 4772 5057 10006 10018 10029 10040 10060 10071 10076 10083 
+	}
+	manpower=850000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=14
+		chromium=0
+	}
+
+  	history = {
+		owner=BES
+		add_core_of = BES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			4772 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

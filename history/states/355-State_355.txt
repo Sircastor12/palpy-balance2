@@ -1,0 +1,41 @@
+state={
+	id=355
+	name="STATE_355"
+	provinces={
+		299 926 938 950 1223 1306 1729 2003 2170 2934 2982 3070 3074 4024 4117 4999 9355 9357 9375 9379 9382 9411 9417 9434 9437 9445 9446 9447 9449 9457 9460 9467 9475 9478 9484 9485 
+	}
+	manpower=3333333
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=7
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=25
+		chromium=0
+	}
+
+  	history = {
+		owner=MAL
+		add_core_of = MAL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,41 @@
+state={
+	id=405
+	name="STATE_405"
+	provinces={
+		156 439 1412 2596 3230 3597 4005 4461 4757 10128 10130 10141 10150 10158 10173 10174 10185 10191 10195 10201 10210 10212 10221 10228 10235 
+	}
+	manpower=850000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=14
+		chromium=0
+	}
+
+  	history = {
+		owner=BES
+		add_core_of = BES
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			10221 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

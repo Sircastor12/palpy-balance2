@@ -1,0 +1,227 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mainmenu_back"
+		texturefile = "gfx/animated_background/mainmenuoutscirts.dds"
+		}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_01"
+		texturefile = "gfx/animated_background/1clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_02"
+		texturefile = "gfx/animated_background/2clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_03"
+		texturefile = "gfx/animated_background/3clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_04"
+		texturefile = "gfx/animated_background/4clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_05"
+		texturefile = "gfx/animated_background/5clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_06"
+		texturefile = "gfx/animated_background/6clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_07"
+		texturefile = "gfx/animated_background/7clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_08"
+		texturefile = "gfx/animated_background/8clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_09"
+		texturefile = "gfx/animated_background/9clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_10"
+		texturefile = "gfx/animated_background/10clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_11"
+		texturefile = "gfx/animated_background/11clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_12"
+		texturefile = "gfx/animated_background/12clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_13"
+		texturefile = "gfx/animated_background/13clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_14"
+		texturefile = "gfx/animated_background/14clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_15"
+		texturefile = "gfx/animated_background/15clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_16"
+		texturefile = "gfx/animated_background/16clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_17"
+		texturefile = "gfx/animated_background/17clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_18"
+		texturefile = "gfx/animated_background/18clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_19"
+		texturefile = "gfx/animated_background/19clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_frontend_bg_tile_20"
+		texturefile = "gfx/animated_background/20clone.dds"
+		noOfFrames = 145
+		animation_rate_fps = 24
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	
+}

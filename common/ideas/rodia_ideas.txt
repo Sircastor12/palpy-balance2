@@ -1,0 +1,81 @@
+ideas = {
+
+	country = {
+		starvation_rodia = {
+			picture = starvation_rodia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.15
+			}
+		}
+    }
+	country = {
+		pirates_rodia = {
+			picture = pirates_rodia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001
+				consumer_goods_factor = 0.01
+			}
+		}
+    }
+	country = {
+		bad_reputaion = {
+			picture = bad_reputaion
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+			}
+		}
+    }
+	country = {
+		macklunky_rodia = {
+			picture = macklunky_rodia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.08
+				army_attack_factor = -0.15
+			}
+		}
+    }	
+}

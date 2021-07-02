@@ -1,0 +1,40 @@
+state={
+	id=256
+	name="STATE_256"
+	provinces={
+		300 894 1052 1533 1634 1804 2286 3941 4305 4313 4465 5048 7759 7764 7767 7783 7787 7789 7808 7809 7824 7825 7842 7849 7861 7871 7872 7894 7928 7933 7950 
+	}
+	manpower=285714
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=4
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=3
+	}
+
+  	history = {
+		owner=FED
+		add_core_of = FED
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			4313 40
+		}
+	}
+}
+

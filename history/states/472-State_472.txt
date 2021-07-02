@@ -1,0 +1,41 @@
+state={
+	id=472
+	name="STATE_472"
+	provinces={
+		489 654 1056 3294 3373 3772 3798 4398 11246 11250 11264 11286 11295 11297 11302 11310 11313 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=PAN
+		add_core_of = PAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=1
+
+			11313 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			11295 30
+		}
+	}
+}
+

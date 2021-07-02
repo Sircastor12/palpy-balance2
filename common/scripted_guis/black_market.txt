@@ -1,0 +1,49 @@
+scripted_gui = {
+	open_black_market_window = {
+		context_type = player_context
+
+		window_name = "black_market_open_container"
+		parent_window_name = topbar
+
+		visible = {
+			ROOT = {
+				OR = {
+				has_government = communism
+				has_government = syndicate
+			}
+			always = no
+		}
+	}
+		effects = {
+			open_black_market_button_click = {
+				if = {
+					limit = {
+						has_country_flag = black_market_open
+					}
+					clr_country_flag = black_market_open
+				}
+				else = {
+					set_country_flag = black_market_open
+				}
+			}
+		}
+    }
+	black_market_window = {
+		context_type = player_context
+		window_name = "black_market_window"
+		
+		visible = {
+			has_country_flag = black_market_open
+		}
+
+		effects = {
+			notoriety_random_click = {
+
+				}
+			}
+		triggers = {
+
+		}
+	}
+}
+

@@ -1,0 +1,41 @@
+state={
+	id=361
+	name="STATE_361"
+	provinces={
+		785 1797 2531 2772 2820 3198 3607 3624 4592 4688 4985 9450 9451 9453 9461 9468 9481 9482 9486 9490 9491 9495 9499 9505 9506 9509 9516 9522 9526 9531 9537 
+	}
+	manpower=128571
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=3
+		aluminium=2
+		rubber=2
+		tungsten=2
+		oil=7
+		chromium=0
+	}
+
+  	history = {
+		owner=MIM
+		add_core_of = MIM
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

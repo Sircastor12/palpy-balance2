@@ -1,0 +1,117 @@
+#on_actions = {
+#    	on_startup = {
+#            effect = {
+#         #   set_variable = { durelium_price = 12 }
+#         #   set_variable = { vehicles_price = 12 }
+#         #   set_variable = { weapon_gas_price = 12 }
+#         #   set_variable = { bacta_price = 12 }
+#         #   set_variable = { kaibur_crystal_price = 12 }
+#         #   set_variable = { telecoms_price = 12 }
+#         #   set_variable = { droids_price = 12 }
+#         #   set_variable = { food_price = 12 }
+#         #   set_variable = { carbonite_price = 12 }
+#         #   set_variable = { luxury_price = 12 }
+#         #   set_variable = { beskar_price = 12 }
+#         #   set_variable = { coaxium_price = 12 }
+#         #   set_variable = { drugs_price = 12 }
+#         #   set_variable = { slaves_price = 12 }
+#         #   set_variable = { illegal_weapons_price = 12 }
+#            every_country = {
+#                  set_variable = { total_demand_lux = max_manpower_k }
+#                  set_variable = { total_demand_nec = max_manpower_k }
+#                  set_variable = { total_demand_illegal = max_manpower_k }
+#      
+#                  multiply_variable = { total_demand_lux = 0.25 }
+#                  multiply_variable = { total_demand_nec = 0.85 }
+#                  multiply_variable = { total_demand_illegal = 0.35 }
+#                  if = {
+#                    limit = {
+#                      tag = REP
+#                    }
+#                    multiply_variable = { total_demand_lux = 0.25 }
+#                    multiply_variable = { total_demand_nec = 0.25 }
+#                    multiply_variable = { total_demand_illegal = 0.25 }
+#                  }
+#                  round_variable = total_demand_lux
+#                  round_variable = total_demand_nec
+#                  round_variable = total_demand_illegal
+#
+#                  set_variable = { consumer_goods = num_of_civilian_factories }
+#                  subtract_from_variable = { consumer_goods = num_of_available_civilian_factories }
+#      
+#               #  set_variable = { nec_demand = nec_demand }
+#               #  set_variable = { illegal_demand = total_demand_illegal }
+#          }
+#      }
+#  }
+#    on_weekly = {
+#      every_country = {
+#        set_variable = { consumer_goods = num_of_civilian_factories }
+#        subtract_from_variable = { consumer_goods = num_of_available_civilian_factories }
+#      }
+#    }
+#    on_monthly = {
+#		effect = {
+#
+#            for_loop_effect = {
+#                start = 1
+#                end = 17
+#                add = 1
+#                compare = less_than
+#                value = resource_type
+#                meta_effect = {
+#                    text = {
+#                        set_temp_variable = { resource_type_need = [Resource_Type]_need }
+#                        set_temp_variable = { resource_type_supply = [Resource_Type]_supply }
+#                        set_temp_variable = { resource_type_demand = [Resource_Type]_demand }
+#                        set_temp_variable = { resource_type_base_price = [Resource_Type]_base_price }
+#                        set_temp_variable = { resource_type_price = [Resource_Type]_price }
+#                        }
+#                      Resource_Type = "[?resource_type.GetResourceCode]"
+#                    }
+#
+#                    set_temp_variable = { resource_type_need = max_manpower_k }
+#                    divide_temp_variable = { resource_type_need = 1000 }
+#                    set_temp_variable = { resource_type_demand = resource_type_need }
+#                    divide_temp_variable = { resource_type_demand = resource_type_price }
+#
+#                    set_temp_variable  = { resource_type_price = resource_type_base_price }
+#                    multiply_temp_variable = { resource_type_price = resource_type_demand }
+#                    divide_temp_variable = { resource_type_price = resource_type_supply }
+#                    meta_effect = {
+#                        text = {
+#                            set_variable = { [Resource_Type]_need = resource_type_need }
+#                            set_variable = { [Resource_Type]_supply = resource_type_supply }
+#                            set_variable = { [Resource_Type]_demand = resource_type_demand }
+#                            set_variable = { [Resource_Type]_base_price = resource_type_base_price }
+#                            set_variable = { [Resource_Type]_price = resource_type_price }
+#                            }
+#                          Resource_Type = "[?resource_type.GetResourceCode]"
+#                        }
+#                }
+#            for_loop_effect = {
+#                start = 1
+#                end = 17
+#                add = 1
+#                compare = less_than
+#                value = resource_type
+#
+#            meta_effect = {
+#                text = {
+#                    set_temp_variable = { excess_supply_temp = [Resource_Type]_supply }
+#                    subtract_from_temp_variable = { excess_supply_temp = [Resource_Type]_need }
+#                    add_to_variable = { global.[Resource_Type] = excess_supply_temp }
+#                    
+#                    }
+#                  Resource_Type = "[?resource_type.GetResourceCode]"
+#                }
+#            }
+#        }
+#    }
+#}
+#
+#
+###multiply_variable = { loans = interest_rate }
+#on_weekly = {
+#  set_variable = 
+#}

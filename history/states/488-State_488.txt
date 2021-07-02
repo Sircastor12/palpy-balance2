@@ -1,0 +1,40 @@
+state={
+	id=488
+	name="STATE_488"
+	provinces={
+		86 195 397 522 1238 1269 1337 1577 1609 2143 2148 2418 2629 2688 2694 2799 3417 3547 4086 4506 4645 4810 4877 11453 11456 11457 11471 11483 11492 11503 11504 11506 11512 11513 11524 11532 11537 11538 11541 11546 11551 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ALZ
+		add_core_of = ALZ
+
+		buildings = {
+			infrastructure=2
+			arms_factory=0
+			industrial_complex=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			11513 50
+		}
+	}
+}
+

@@ -1,0 +1,24 @@
+
+strategic_region={
+	id=299
+	name="Central Coruscant"
+	provinces={
+		111 143 194 319 441 1259 1446 1544 1567 1738 1906 2308 2337 2463 2656 2714 2815 3126 3583 3626 3949 4187 4575 4768 4863 6669 6676 6683 6684 6691 6693 6699 6700 6715 6731 6732 6756 6760 6777 6780 6782 6785 6803 6806 6814 6831 6832 6838 6853 6856 6870 6874 
+	}
+	weather={
+		period={
+			between={ 0.0 30.11 }
+			temperature={ -10.0 35.0 }
+			temperature_day_night={ 2.0 -2.0 }
+			no_phenomenon=1.500
+			rain_light=0.440
+			rain_heavy=0.100
+			snow=0.000
+			blizzard=0.000
+			arctic_water=0.000
+			mud=0.000
+			sandstorm=0.000
+			min_snow_level=0.000
+		}
+	}
+}

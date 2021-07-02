@@ -1,0 +1,472 @@
+CIS_stagei_unit_training = {
+	enable = {
+		OR = {
+			tag = CIS
+			tag = FED
+			tag = TEC
+		}
+		date < 973.06.10
+	}
+	abort = {
+		date > 975.06.10
+	}
+	ai_strategy = {
+        type = role_ratio
+        id = cis_armor
+        value = 20
+    }
+	ai_strategy = {
+        type = build_army
+        id = battle_droid
+        value = 500
+    }
+	ai_strategy = {
+        type = build_army
+        id = cis_armor
+        value = 400
+    }
+}
+CIS_stageii_unit_training = {
+	enable = {
+		AND = {
+			OR = {
+				tag = CIS
+				tag = FED
+				tag = TEC
+			}
+			AND = {
+				date > 975.06.10
+				date < 978.02.01
+			}
+		}
+	}
+	abort = {
+		date > 978.02.01
+	}
+	ai_strategy = { 
+		type = role_ratio
+		id = battle_droid
+		value = 80
+	}
+	ai_strategy = {
+        type = role_ratio
+        id = cis_armor
+        value = 20
+    }
+	ai_strategy = { 
+		type = build_army
+		id = battle_droid
+		value = 800
+	}
+	ai_strategy = {
+        type = build_army
+        id = cis_armor
+        value = 300
+    }
+}
+CIS_stageiii_unit_training = {
+	enable = {
+		AND = {
+			OR = {
+				tag = CIS
+				tag = FED
+				tag = TEC
+			}
+			AND = {
+				date > 978.02.01
+				date < 979.02.01
+			}
+		}
+	}
+	abort = {
+		date > 979.02.01
+	}
+	ai_strategy = {
+        type = role_ratio
+        id = battle_droid
+        value = 500
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = cis_armor
+        value = 300
+    }
+	ai_strategy = {
+		type = role_ratio
+		id = cis_armor
+		value = 100
+	}
+}
+CIS_stageiv_unit_training = {
+	enable = {
+		AND = {
+			OR = {
+				tag = CIS
+				tag = FED
+				tag = TEC
+			}
+			date > 979.02.01
+		}
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+        type = role_ratio
+        id = battle_droid
+        value = 400
+    }
+	ai_strategy = {
+        type = role_ratio
+        id = cis_armor
+        value = 400
+    }
+}
+#Prewar stuff
+CIS_prewar_diplomacy = {
+	enable = {
+		tag = CIS
+		CIS = {
+			has_war = no
+		}
+	}
+	abort = {
+		CIS = {
+			has_war = yes
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = FED
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = CMG
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = TEC
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = GEO
+		value = 150
+	}
+}
+CIS_QUA_civil_war = {
+	enable = {
+		tag = CIS
+		QUA = {
+			has_war_with = CAL
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = alliance
+		id = QUA
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = QUA
+		value = 300
+	}
+}
+CIS_GEO_garrison = {
+	enable = {
+		tag = CIS
+		owns_state = 446
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+
+			states = { 
+				437
+				442
+				446
+				449
+				66
+				460
+				462
+			}
+	}
+}
+#War
+CIS_frontlines = {
+	enable = {
+		tag = CIS
+		CIS = {
+			has_war_with = REP
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+		ratio = 0.5
+		tag = REP
+	}
+}
+CIS_use_your_navy = {
+	enable = {
+		tag = CIS
+		CIS = {
+			has_war = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = { type = naval_mission_threshold id = "MISSION_PATROL" value = 1 }
+	ai_strategy = { type = naval_mission_threshold id = "MISSION_STRIKE_FORCE" value = 1 }
+	ai_strategy = { type = naval_mission_threshold id = "MISSION_CONVOY_ESCORT" value = 1 }
+	ai_strategy = { type = naval_mission_threshold id = "MISSION_CONVOY_RAIDING" value = 1 }
+}
+CIS_return_to_GEO = {
+	enable = {
+		tag = CIS
+		REP = {
+			owns_state = 437
+			owns_state = 442
+			owns_state = 446
+			owns_state = 449
+			owns_state = 66
+			owns_state = 460
+			owns_state = 462
+		}
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		ratio = 0.25
+		states = {
+			437
+			442
+			446
+			449
+			66
+			460
+			462
+		}
+	}
+}
+#Generic stuff
+CIS_pp_spend_amount_presecession = {
+	enable = {
+		tag = CIS
+	}
+
+	abort = {
+		has_global_flag = secessionoccured
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 130
+	}
+}
+CIS_pp_spend_amount_secessionleadup = {
+	enable = {
+		tag = CIS
+		CIS = {
+			has_completed_focus = CIS_geonosis
+		}
+	}
+
+	abort = {
+		has_global_flag = secessionoccured
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea 
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = -100
+	}
+}
+CIS_pp_spend_amount_postsecession = {
+	enable = {
+		tag = CIS
+		has_global_flag = secessionoccured
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 100
+	}
+}
+#Default
+CIS_convoy_voy_voy_voy = {
+	enable = {
+		tag = CIS
+		has_dlc = "Man the Guns"
+		convoy_threat > 0.2
+	}
+	abort = {
+		convoy_threat < 0.2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 30
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 25
+	}
+}
+CIS_garrison_production = {
+	enable = {
+		tag = CIS
+		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
+	}
+	abort = {
+		tag = CIS
+		ai_wants_divisions < 13 #Massively decreasing the amount of garrison and suppression the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+	
+	# Old garrison system against resistance
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = suppression
+	# 	value = 2
+	# }
+}
+CIS_stockpile_management = {
+	enable = {
+		tag = CIS
+		num_divisions > 150
+	}
+
+	abort = {
+		tag = CIS
+		num_divisions < 130
+	}
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 35 # double base stockpile #from 25 to 35
+	}
+}
+CIS_save_admiral_pp_for_later = {
+	enable = {
+		tag = CIS
+		has_war = no
+		threat < 0.3
+		has_political_power < 200		
+	}
+	abort = {
+		OR = {
+			has_war = yes	
+			threat > 0.3
+			has_political_power > 200
+		}
+	}
+
+	ai_strategy = { # dont burn PP on admirals (can still get free ones)
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+}
+CIS_ask_foreign_manpower_as_major = {
+	enable = {
+		tag = CIS
+		garrison_manpower_need > 200000
+	}
+	
+	abort = {
+		garrison_manpower_need < 100000
+	}
+
+	ai_strategy = {
+		type = asking_foreign_garrison
+		value = 100
+		# id = ITA # id is optionnal. If it is filled, the value will just apply for this country. If not, the value will apply for all countries.
+	}
+}
+CIS_more_upgrades_as_spymaster = {
+
+	enable = {
+		tag = CIS
+		is_spymaster = yes
+	}
+	
+	abort = {
+		is_spymaster = no
+	}
+
+	ai_strategy = {
+		type = agency_ai_base_num_factories_factor
+		value = -50    # -50% on the define
+	}
+
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -25    # -25% on the define
+	}
+}
+CIS_put_garrisons_on_high_prio = {
+	enable = {
+		tag = CIS
+		always = yes
+	}
+	
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100 # positive is high prio, negative is low prio
+	}
+}

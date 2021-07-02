@@ -1,0 +1,42 @@
+state={
+	id=224
+	name="STATE_224"
+	provinces={
+		161 558 643 1341 2234 2594 2773 2984 3203 4035 7198 7221 7225 7239 7241 7252 7298 7303 7322 7338 7339 7350 7375 7410 
+	}
+	manpower=5666666
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=6
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=5
+		chromium=6
+	}
+
+  	history = {
+		owner=KUA
+		add_core_of = KUA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=10
+			air_base=0
+			corporate_factory = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			7303 30
+		}
+	}
+}
+

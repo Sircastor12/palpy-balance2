@@ -1,0 +1,11 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_event_repgovernment" 
+		texturefile = "gfx/event_pictures/repgovernment.dds" 
+	}
+	SpriteType = { 
+		name = "GFX_event_senatemoney" 
+		texturefile = "gfx/event_pictures/senatemoney.dds" 
+	}
+}
+ 

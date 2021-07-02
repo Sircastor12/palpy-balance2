@@ -1,0 +1,10 @@
+closeclaborders = {
+     icon = generic_prospect_for_resources
+	
+available = { 
+	tag = CLA
+     }
+allowed = {
+		original_tag = CLA
+	}
+}

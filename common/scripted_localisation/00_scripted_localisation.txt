@@ -1,0 +1,6912 @@
+######Aratech speeders#####
+#
+#
+#
+#####rocketlauncher order
+defined_text = {
+	name = rocketlauncher_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.rocketlauncher 
+				value = global.rocketlauncherq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.rocketlauncher < global.rocketlauncherq }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = rocketlauncher_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > rocketlauncher_pricem }
+			}
+		}
+		localization_key = rocketlauncher_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < rocketlauncher_pricem }
+			}
+		}
+		localization_key = rocketlauncher_pricenotmet
+	}
+}
+defined_text = {
+	name = rocketlauncher_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = cal_weapons
+			}
+		}
+		localization_key = rocketlauncher_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = cal_weapons
+				}
+			}
+		}
+		localization_key = rocketlauncher_technotmet
+	}
+}
+#####74z Speeder order
+defined_text = {
+	name = 74z_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.ara_74z 
+				value = global.ara_74zq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ara_74z < global.ara_74zq }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = speeder_74z_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > 74z_pricem }
+			}
+		}
+		localization_key = 74z_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < 74z_pricem }
+			}
+		}
+		localization_key = 74z_pricenotmet
+	}
+}
+defined_text = {
+	name = 74z_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = cal_weapons
+			}
+		}
+		localization_key = 74z_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = cal_weapons
+				}
+			}
+		}
+		localization_key = 74z_technotmet
+	}
+}
+#####BARC Order
+defined_text = {
+	name = barc_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.ara_barc 
+				value = global.ara_barcq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ara_barc < global.ara_barcq }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = speeder_barc_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > barc_pricem }
+			}
+		}
+		localization_key = barc_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < barc_pricem }
+			}
+		}
+		localization_key = barc_pricenotmet
+	}
+}
+defined_text = {
+	name = barc_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+				}
+			}
+		}
+		localization_key = barc_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+					}
+				}
+			}
+		}
+		localization_key = barc_technotmet
+	}
+}
+##########################Blastech#####################
+#####INF0 Order
+defined_text = {
+	name = inf0_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.inf0 
+				value = global.inf0q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.inf0 < global.inf0q }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = inf0_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > inf0_pricem }
+			}
+		}
+		localization_key = inf0_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < inf0_pricem }
+			}
+		}
+		localization_key = inf0_pricenotmet
+	}
+}
+defined_text = {
+	name = inf0_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = infantry_weapons 
+			}
+		}
+		localization_key = inf0_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = infantry_weapons 
+				}
+			}
+		}
+		localization_key = inf0_technotmet
+	}
+}
+#####inf1 Order
+defined_text = {
+	name = inf1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.inf1 
+				value = global.inf1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.inf1 < global.inf1q }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = inf1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > inf1_pricem }
+			}
+		}
+		localization_key = inf1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < inf1_pricem }
+			}
+		}
+		localization_key = inf1_pricenotmet
+	}
+}
+defined_text = {
+	name = inf1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = infantry_weapons1 
+			}
+		}
+		localization_key = inf1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = infantry_weapons1 
+				}
+			}
+		}
+		localization_key = inf1_technotmet
+	}
+}
+#####inf2 Order
+defined_text = {
+	name = inf2_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.inf2 
+				value = global.inf2q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.inf2 < global.inf2q }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = inf2_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > inf2_pricem }
+			}
+		}
+		localization_key = inf2_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < inf2_pricem }
+			}
+		}
+		localization_key = inf2_pricenotmet
+	}
+}
+defined_text = {
+	name = inf2_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = infantry_weapons2
+			}
+		}
+		localization_key = inf2_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = infantry_weapons2
+				}
+			}
+		}
+		localization_key = inf2_technotmet
+	}
+}
+#####inf3 Order
+defined_text = {
+	name = inf3_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.inf3 
+				value = global.inf3q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.inf3 < global.inf3q }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = inf3_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > inf3_pricem }
+			}
+		}
+		localization_key = inf3_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < inf3_pricem }
+			}
+		}
+		localization_key = inf3_pricenotmet
+	}
+}
+defined_text = {
+	name = inf3_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = improved_infantry_weapons
+			}
+		}
+		localization_key = inf3_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = improved_infantry_weapons
+				}
+			}
+		}
+		localization_key = inf3_technotmet
+	}
+}
+##########################Commerce Guild###############
+#
+#
+#
+##### Diamond_cruiser
+defined_text = {
+	name = diamond_cruiser_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cmg_diamond 
+				value = global.cmg_diamondq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = diamond_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cmg_diamond < global.cmg_diamondq }
+		}
+		localization_key = diamond_cruiser_outstock
+	}
+}
+defined_text = {
+	name = diamond_cruiser_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cmg_diamond_pricem }
+			}
+		}
+		localization_key = diamond_cruiser_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cmg_diamond_pricem }
+			}
+		}
+		localization_key = diamond_cruiser_pricenotmet
+	}
+}
+defined_text = {
+	name = diamond_cruiser_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+						has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 12
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+######recusant destroyer order
+defined_text = {
+	name = recusant_destroyer_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cmg_recusant 
+				value = global.cmg_recusantq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = recusant_destroyer_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cmg_recusant < global.cmg_recusantq }
+		}
+		localization_key = recusant_destroyer_outstock
+	}
+}
+defined_text = {
+	name = recusant_destroyer_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cmg_recusant_pricem }
+			}
+		}
+		localization_key = recusant_destroyer_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cmg_recusant_pricem }
+			}
+		}
+		localization_key = recusant_destroyer_pricenotmet
+	}
+}
+defined_text = {
+	name = recusant_destroyer_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 12
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+######providence dreadnaught order
+defined_text = {
+	name = providence_dreadnaught_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cmg_providence
+				value = global.cmg_providenceq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = providence_dreadnaught_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cmg_providence < global.cmg_providenceq }
+		}
+		localization_key = providence_dreadnaught_outstock
+	}
+}
+defined_text = {
+	name = providence_dreadnaught_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cmg_providence_pricem }
+			}
+		}
+		localization_key = providence_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cmg_providence_pricem }
+			}
+		}
+		localization_key = providence_dreadnaught_pricenotmet
+	}
+}
+defined_text = {
+	name = providence_dreadnaught_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 12
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+######dsd1
+defined_text = {
+	name = dsd1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cmg_dsd1
+				value = global.cmg_dsd1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = dsd1_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cmg_dsd1 < global.cmg_dsd1q }
+		}
+		localization_key = dsd1_outstock
+	}
+}
+defined_text = {
+	name = dsd1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cmg_dsd1_pricem }
+			}
+		}
+		localization_key = dsd1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cmg_dsd1_pricem }
+			}
+		}
+		localization_key = dsd1_pricenotmet
+	}
+}
+defined_text = {
+	name = dsd1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 12
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+######adsd
+defined_text = {
+	name = adsd_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cmg_adsd
+				value = global.cmg_adsdq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = adsd_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cmg_adsd < global.cmg_adsdq }
+		}
+		localization_key = adsd_outstock
+	}
+}
+defined_text = {
+	name = adsd_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cmg_adsd_pricem }
+			}
+		}
+		localization_key = adsd_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cmg_adsd_pricem }
+			}
+		}
+		localization_key = adsd_pricenotmet
+	}
+}
+defined_text = {
+	name = adsd_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 12
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+######homing_spider
+defined_text = {
+	name = homing_spider_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cmg_homing_spider
+				value = global.cmg_homing_spiderq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = homing_spider_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cmg_homing_spider < global.cmg_homing_spiderq }
+		}
+		localization_key = homing_spider_outstock
+	}
+}
+defined_text = {
+	name = homing_spider_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cmg_homing_spider_pricem }
+			}
+		}
+		localization_key = homing_spider_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cmg_homing_spider_pricem }
+			}
+		}
+		localization_key = homing_spider_pricenotmet
+	}
+}
+defined_text = {
+	name = homing_spider_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 12
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 12
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################Hoersch kessel###############
+#
+#
+#
+##### Lucrehulk freighter
+defined_text = {
+	name = lucrehulk_freighter_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.lucrehulk_freighter
+				value = global.lucrehulk_freighterq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = lucrehulk_freighter_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.lucrehulk_freighter < global.lucrehulk_freighterq }
+		}
+		localization_key = lucrehulk_freighter_outstock
+	}
+}
+defined_text = {
+	name = lucrehulk_freighter_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > lucrehulk_freighter_pricem }
+			}
+		}
+		localization_key = lucrehulk_freighter_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < lucrehulk_freighter_pricem }
+			}
+		}
+		localization_key = lucrehulk_freighter_pricenotmet
+	}
+}
+defined_text = {
+	name = lucrehulk_freighter_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 27
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### Lucrehulk battleship
+defined_text = {
+	name = lucrehulk_battleship_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.lucrehulk_battleship
+				value = global.lucrehulk_battleshipq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = lucrehulk_battleship_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.lucrehulk_battleship < global.lucrehulk_battleshipq }
+		}
+		localization_key = lucrehulk_battleship_outstock
+	}
+}
+defined_text = {
+	name = lucrehulk_battleship_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > lucrehulk_battleship_pricem }
+			}
+		}
+		localization_key = lucrehulk_battleship_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < lucrehulk_battleship_pricem }
+			}
+		}
+		localization_key = lucrehulk_battleship_pricenotmet
+	}
+}
+defined_text = {
+	name = lucrehulk_battleship_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 27
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### recusant
+defined_text = {
+	name = fed_recusant_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.fed_recusant
+				value = global.fed_recusantq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = fed_recusant_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.fed_recusant < global.fed_recusantq }
+		}
+		localization_key = fed_recusant_outstock
+	}
+}
+defined_text = {
+	name = fed_recusant_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > fed_recusant_pricem }
+			}
+		}
+		localization_key = fed_recusant_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < fed_recusant_pricem }
+			}
+		}
+		localization_key = fed_recusant_pricenotmet
+	}
+}
+defined_text = {
+	name = fed_recusant_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 27
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### munificent
+defined_text = {
+	name = fed_munificent_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.fed_munificent
+				value = global.fed_munificentq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = fed_munificent_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.fed_munificent < global.fed_munificentq }
+		}
+		localization_key = fed_munificent_outstock
+	}
+}
+defined_text = {
+	name = fed_munificent_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > fed_munificent_pricem }
+			}
+		}
+		localization_key = fed_munificent_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < fed_munificent_pricem }
+			}
+		}
+		localization_key = fed_munificent_pricenotmet
+	}
+}
+defined_text = {
+	name = fed_munificent_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 27
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 27
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################IBC###############
+#
+#
+#
+##### lancer
+defined_text = {
+	name = lancer_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.lancer
+				value = global.lancerq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = lancer_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.lancer < global.lancerq }
+		}
+		localization_key = lancer_outstock
+	}
+}
+defined_text = {
+	name = lancer_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > lancer_pricem }
+			}
+		}
+		localization_key = lancer_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < lancer_pricem }
+			}
+		}
+		localization_key = lancer_pricenotmet
+	}
+}
+defined_text = {
+	name = lancer_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 1
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 1
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### hailfire
+defined_text = {
+	name = ibc_hailfire_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.ibc_hailfire
+				value = global.ibc_hailfireq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ibc_hailfire_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ibc_hailfire < global.ibc_hailfireq }
+		}
+		localization_key = ibc_hailfire_outstock
+	}
+}
+defined_text = {
+	name = ibc_hailfire_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > ibc_hailfire_pricem }
+			}
+		}
+		localization_key = ibc_hailfire_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < ibc_hailfire_pricem }
+			}
+		}
+		localization_key = ibc_hailfire_pricenotmet
+	}
+}
+defined_text = {
+	name = ibc_hailfire_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 1
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 1
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################Kamino###############
+#
+#
+#
+##### p1 clones
+defined_text = {
+	name = phase_1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.phase_1
+				value = global.phase_1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = phase_1_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.phase_1 < global.phase_1q }
+		}
+		localization_key = phase_1_outstock
+	}
+}
+defined_text = {
+	name = phase_1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > phase_1_pricem }
+			}
+		}
+		localization_key = phase_1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < phase_1_pricem }
+			}
+		}
+		localization_key = phase_1_pricenotmet
+	}
+}
+defined_text = {
+	name = phase_1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					AND = {
+						TAG = REP
+						has_global_flag = kaminodiscovered
+					}
+					owns_state = 60
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							TAG = REP
+							has_global_flag = kaminodiscovered
+						}
+						owns_state = 60
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### p2 clones
+defined_text = {
+	name = phase_2_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.phase_2
+				value = global.phase_2q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = phase_2_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.phase_2 < global.phase_2q }
+		}
+		localization_key = phase_2_outstock
+	}
+}
+defined_text = {
+	name = phase_2_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > phase_2_pricem }
+			}
+		}
+		localization_key = phase_2_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < phase_2_pricem }
+			}
+		}
+		localization_key = phase_2_pricenotmet
+	}
+}
+defined_text = {
+	name = phase_2_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					AND = {
+						TAG = REP
+						has_global_flag = kaminodiscovered
+					}
+					owns_state = 60
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							TAG = REP
+							has_global_flag = kaminodiscovered
+						}
+						owns_state = 60
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####clone general
+defined_text = {
+	name = clone_general_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.clone_general
+				value = global.clone_generalq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = clone_general_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.clone_general < global.clone_generalq }
+		}
+		localization_key = clone_general_outstock
+	}
+}
+defined_text = {
+	name = clone_general_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > clone_general_pricem }
+			}
+		}
+		localization_key = clone_general_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < clone_general_pricem }
+			}
+		}
+		localization_key = clone_general_pricenotmet
+	}
+}
+defined_text = {
+	name = clone_general_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					AND = {
+						TAG = REP
+						has_global_flag = kaminodiscovered
+					}
+					owns_state = 60
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							TAG = REP
+							has_global_flag = kaminodiscovered
+						}
+						owns_state = 60
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####clone admiral
+defined_text = {
+	name = clone_admiral_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.clone_admiral
+				value = global.clone_admiralq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = clone_admiral_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.clone_admiral < global.clone_admiralq }
+		}
+		localization_key = clone_admiral_outstock
+	}
+}
+defined_text = {
+	name = clone_admiral_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > clone_admiral_pricem }
+			}
+		}
+		localization_key = clone_admiral_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < clone_admiral_pricem }
+			}
+		}
+		localization_key = clone_admiral_pricenotmet
+	}
+}
+defined_text = {
+	name = clone_admiral_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					AND = {
+						TAG = REP
+						has_global_flag = kaminodiscovered
+					}
+					owns_state = 60
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						AND = {
+							TAG = REP
+							has_global_flag = kaminodiscovered
+						}
+						owns_state = 60
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################KUAT###############
+#
+#
+#
+##### z-95
+defined_text = {
+	name = z95_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.z95
+				value = global.z95q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = z95_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.z95 < global.z95q }
+		}
+		localization_key = z95_outstock
+	}
+}
+defined_text = {
+	name = z95_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > z95_pricem }
+			}
+		}
+		localization_key = z95_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < z95_pricem }
+			}
+		}
+		localization_key = z95_pricenotmet
+	}
+}
+defined_text = {
+	name = z95_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### v19
+defined_text = {
+	name = v19_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.v19
+				value = global.v19q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = v19_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.v19 < global.v19q }
+		}
+		localization_key = v19_outstock
+	}
+}
+defined_text = {
+	name = v19_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > v19_pricem }
+			}
+		}
+		localization_key = v19_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < v19_pricem }
+			}
+		}
+		localization_key = v19_pricenotmet
+	}
+}
+defined_text = {
+	name = v19_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####arc170
+defined_text = {
+	name = arc170_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.arc170
+				value = global.arc170q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = arc170_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.arc170 < global.arc170q }
+		}
+		localization_key = arc170_outstock
+	}
+}
+defined_text = {
+	name = arc170_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > arc170_pricem }
+			}
+		}
+		localization_key = arc170_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < arc170_pricem }
+			}
+		}
+		localization_key = arc170_pricenotmet
+	}
+}
+defined_text = {
+	name = arc170_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####vwing
+defined_text = {
+	name = vwing_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.vwing
+				value = global.vwingq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = vwing_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.vwing < global.vwingq }
+		}
+		localization_key = vwing_outstock
+	}
+}
+defined_text = {
+	name = vwing_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > vwing_pricem }
+			}
+		}
+		localization_key = vwing_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < vwing_pricem }
+			}
+		}
+		localization_key = vwing_pricenotmet
+	}
+}
+defined_text = {
+	name = vwing_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####btlb
+defined_text = {
+	name = btlb_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.btlb
+				value = global.btlbq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = btlb_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.btlb < global.btlbq }
+		}
+		localization_key = btlb_outstock
+	}
+}
+defined_text = {
+	name = btlb_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > btlb_pricem }
+			}
+		}
+		localization_key = btlb_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < btlb_pricem }
+			}
+		}
+		localization_key = btlb_pricenotmet
+	}
+}
+defined_text = {
+	name = btlb_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####laat
+defined_text = {
+	name = laat_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.laat
+				value = global.laatq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = laat_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.laat < global.laatq }
+		}
+		localization_key = laat_outstock
+	}
+}
+defined_text = {
+	name = laat_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > laat_pricem }
+			}
+		}
+		localization_key = laat_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < laat_pricem }
+			}
+		}
+		localization_key = laat_pricenotmet
+	}
+}
+defined_text = {
+	name = laat_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####laati
+defined_text = {
+	name = laati_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.laati
+				value = global.laatiq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = laati_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.laati < global.laatiq }
+		}
+		localization_key = laati_outstock
+	}
+}
+defined_text = {
+	name = laati_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > laati_pricem }
+			}
+		}
+		localization_key = laati_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < laati_pricem }
+			}
+		}
+		localization_key = laati_pricenotmet
+	}
+}
+defined_text = {
+	name = laati_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+###### laatc
+#defined_text = {
+#	name = laatc_stock
+#	text = {
+#		trigger = {
+#			check_variable = { global.laatc > 49 }
+#		}
+#		localization_key = laatc_instock
+#	}
+#	text = {
+#		trigger = {
+#			check_variable = { global.laatc < 50 }
+#		}
+#		localization_key = laatc_outstock
+#	}
+#}
+#defined_text = {
+#	name = laatc_price
+#	text = {
+#		trigger = {
+#			ROOT = {
+#				check_variable = { dx > laatc_pricem }
+#			}
+#		}
+#		localization_key = laatc_pricemet
+#	}
+#	text = {
+#		trigger = {
+#			ROOT = {
+#				check_variable = { dx < laatc_pricem }
+#			}
+#		}
+#		localization_key = laatc_pricenotmet
+#	}
+#}
+#defined_text = {
+#	name = laatc_tech
+#	text = {
+#		trigger = {
+#			ROOT = {
+#				OR = {
+#						has_idea = REP_member
+#						has_idea = REP_member_prewar
+#					TAG = REP
+#					owns_state = 24
+#				}
+#			}
+#		}
+#		localization_key = phase_1_techmet
+#	}
+#	text = {
+#		trigger = {
+#			ROOT = {
+#				NOT = {
+#					OR = {
+#					has_idea = REP_member
+#						has_idea = REP_member_prewar
+#						TAG = REP
+#						owns_state = 24
+#					}
+#				}
+#			}
+#		}
+#		localization_key = phase_1_technotmet
+#	}
+#}
+##### pelta
+defined_text = {
+	name = pelta_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.pelta
+				value = global.peltaq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = pelta_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pelta < global.peltaq }
+		}
+		localization_key = pelta_outstock
+	}
+}
+defined_text = {
+	name = pelta_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > pelta_pricem }
+			}
+		}
+		localization_key = pelta_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < pelta_pricem }
+			}
+		}
+		localization_key = pelta_pricenotmet
+	}
+}
+defined_text = {
+	name = pelta_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### arquintes
+defined_text = {
+	name = arquintes_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.arquintes
+				value = global.arquintesq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = arquintes_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.arquintes < global.arquintesq }
+		}
+		localization_key = arquintes_outstock
+	}
+}
+defined_text = {
+	name = arquintes_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > arquintes_pricem }
+			}
+		}
+		localization_key = arquintes_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < arquintes_pricem }
+			}
+		}
+		localization_key = arquintes_pricenotmet
+	}
+}
+defined_text = {
+	name = arquintes_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### acclamator
+defined_text = {
+	name = acclamator_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.acclamator
+				value = global.acclamatorq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = acclamator_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.acclamator < global.acclamatorq }
+		}
+		localization_key = acclamator_outstock
+	}
+}
+defined_text = {
+	name = acclamator_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > acclamator_pricem }
+			}
+		}
+		localization_key = acclamator_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < acclamator_pricem }
+			}
+		}
+		localization_key = acclamator_pricenotmet
+	}
+}
+defined_text = {
+	name = acclamator_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### acclamator2
+defined_text = {
+	name = acclamator2_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.acclamator2
+				value = global.acclamator2q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = acclamator2_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.acclamator2 < global.acclamator2q }
+		}
+		localization_key = acclamator2_outstock
+	}
+}
+defined_text = {
+	name = acclamator2_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > acclamator2_pricem }
+			}
+		}
+		localization_key = acclamator2_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < acclamator2_pricem }
+			}
+		}
+		localization_key = acclamator2_pricenotmet
+	}
+}
+defined_text = {
+	name = acclamator2_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### venator
+defined_text = {
+	name = venator_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.venator
+				value = global.venatorq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = venator_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.venator < global.venatorq }
+		}
+		localization_key = venator_outstock
+	}
+}
+defined_text = {
+	name = venator_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > venator_pricem }
+			}
+		}
+		localization_key = venator_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < venator_pricem }
+			}
+		}
+		localization_key = venator_pricenotmet
+	}
+}
+defined_text = {
+	name = venator_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### victory
+defined_text = {
+	name = victory_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.victory
+				value = global.victoryq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = victory_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.victory < global.victoryq }
+		}
+		localization_key = victory_outstock
+	}
+}
+defined_text = {
+	name = victory_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > victory_pricem }
+			}
+		}
+		localization_key = victory_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < victory_pricem }
+			}
+		}
+		localization_key = victory_pricenotmet
+	}
+}
+defined_text = {
+	name = victory_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### mandator1
+defined_text = {
+	name = mandator1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.mandator1
+				value = global.mandator1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = mandator1_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.mandator1 < global.mandator1q }
+		}
+		localization_key = mandator1_outstock
+	}
+}
+defined_text = {
+	name = mandator1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > mandator1_pricem }
+			}
+		}
+		localization_key = mandator1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < mandator1_pricem }
+			}
+		}
+		localization_key = mandator1_pricenotmet
+	}
+}
+defined_text = {
+	name = mandator1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####mandator2
+defined_text = {
+	name = mandator2_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.mandator2
+				value = global.mandator2q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = mandator2_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.mandator2 < global.mandator2q }
+		}
+		localization_key = mandator2_outstock
+	}
+}
+defined_text = {
+	name = mandator2_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > mandator2_pricem }
+			}
+		}
+		localization_key = mandator2_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < mandator2_pricem }
+			}
+		}
+		localization_key = mandator2_pricenotmet
+	}
+}
+defined_text = {
+	name = mandator2_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 24
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 24
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################Mandalmotors###############
+#
+#
+#
+#####komrk
+defined_text = {
+	name = komrk_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.komrk
+				value = global.komrkq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = komrk_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.komrk < global.komrkq }
+		}
+		localization_key = komrk_outstock
+	}
+}
+defined_text = {
+	name = komrk_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > komrk_pricem }
+			}
+		}
+		localization_key = komrk_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < komrk_pricem }
+			}
+		}
+		localization_key = komrk_pricenotmet
+	}
+}
+defined_text = {
+	name = komrk_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		localization_key = arquintes_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						is_in_faction_with = MAN
+						TAG = MAN
+						owns_state = 14
+					}
+				}
+			}
+		}
+		localization_key = arquintes_technotmet
+	}
+}
+#####balutar
+defined_text = {
+	name = balutar_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.balutar
+				value = global.balutarq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = balutar_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.balutar < global.balutarq }
+		}
+		localization_key = balutar_outstock
+	}
+}
+defined_text = {
+	name = balutar_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > balutar_pricem }
+			}
+		}
+		localization_key = balutar_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < balutar_pricem }
+			}
+		}
+		localization_key = balutar_pricenotmet
+	}
+}
+defined_text = {
+	name = balutar_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		localization_key = arquintes_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						is_in_faction_with = MAN
+						TAG = MAN
+						owns_state = 14
+					}
+				}
+			}
+		}
+		localization_key = arquintes_technotmet
+	}
+}
+#####buirkalor
+defined_text = {
+	name = buirkalor_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.buirkalor
+				value = global.buirkalorq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = buirkalor_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.buirkalor < global.buirkalorq }
+		}
+		localization_key = buirkalor_outstock
+	}
+}
+defined_text = {
+	name = buirkalor_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > buirkalor_pricem }
+			}
+		}
+		localization_key = buirkalor_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < buirkalor_pricem }
+			}
+		}
+		localization_key = buirkalor_pricenotmet
+	}
+}
+defined_text = {
+	name = buirkalor_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		localization_key = arquintes_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						is_in_faction_with = MAN
+						TAG = MAN
+						owns_state = 14
+					}
+				}
+			}
+		}
+		localization_key = arquintes_technotmet
+	}
+}
+#####fang
+defined_text = {
+	name = fang_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.fang
+				value = global.fangq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = fang_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.fang < global.fangq }
+		}
+		localization_key = fang_outstock
+	}
+}
+defined_text = {
+	name = fang_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > fang_pricem }
+			}
+		}
+		localization_key = fang_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < fang_pricem }
+			}
+		}
+		localization_key = fang_pricenotmet
+	}
+}
+defined_text = {
+	name = fang_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					is_in_faction_with = MAN
+					TAG = MAN
+					owns_state = 14
+				}
+			}
+		}
+		localization_key = arquintes_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						is_in_faction_with = MAN
+						TAG = MAN
+						owns_state = 14
+					}
+				}
+			}
+		}
+		localization_key = arquintes_technotmet
+	}
+}
+##########################mon cal###############
+#
+#
+#
+#####dreadnaught
+defined_text = {
+	name = cal_dreadnaught_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cal_dreadnaught
+				value = global.cal_dreadnaughtq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = cal_dreadnaught_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cal_dreadnaught < global.cal_dreadnaughtq }
+		}
+		localization_key = cal_dreadnaught_outstock
+	}
+}
+defined_text = {
+	name = cal_dreadnaught_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cal_dreadnaught_pricem }
+			}
+		}
+		localization_key = cal_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cal_dreadnaught_pricem }
+			}
+		}
+		localization_key = cal_dreadnaught_pricenotmet
+	}
+}
+defined_text = {
+	name = cal_dreadnaught_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 25
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 25
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################rendili###############
+#
+#
+#
+#####carrack
+defined_text = {
+	name = carrack_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.carrack
+				value = global.carrackq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = carrack_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.carrack < global.carrackq }
+		}
+		localization_key = carrack_outstock
+	}
+}
+defined_text = {
+	name = carrack_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > carrack_pricem }
+			}
+		}
+		localization_key = carrack_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < carrack_pricem }
+			}
+		}
+		localization_key = carrack_pricenotmet
+	}
+}
+defined_text = {
+	name = carrack_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 30
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####hammerhead
+defined_text = {
+	name = hammerhead_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.hammerhead
+				value = global.hammerheadq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = hammerhead_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.hammerhead < global.hammerheadq }
+		}
+		localization_key = hammerhead_outstock
+	}
+}
+defined_text = {
+	name = hammerhead_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > hammerhead_pricem }
+			}
+		}
+		localization_key = hammerhead_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < hammerhead_pricem }
+			}
+		}
+		localization_key = hammerhead_pricenotmet
+	}
+}
+defined_text = {
+	name = hammerhead_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = early_destroyer
+			}
+		}
+		localization_key = hammerhead_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = early_destroyer
+				}
+			}
+		}
+		localization_key = hammerhead_technotmet
+	}
+}
+#####dreadnaught
+defined_text = {
+	name = ren_dreadnaught_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.ren_dreadnaught
+				value = global.ren_dreadnaughtq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ren_dreadnaught_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ren_dreadnaught < global.ren_dreadnaughtq }
+		}
+		localization_key = ren_dreadnaught_outstock
+	}
+}
+defined_text = {
+	name = ren_dreadnaught_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > ren_dreadnaught_pricem }
+			}
+		}
+		localization_key = ren_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < ren_dreadnaught_pricem }
+			}
+		}
+		localization_key = ren_dreadnaught_pricenotmet
+	}
+}
+defined_text = {
+	name = ren_dreadnaught_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 30
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####ren_victory
+defined_text = {
+	name = ren_victory_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.ren_victory
+				value = global.ren_victoryq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ren_victory_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ren_victory < global.ren_victoryq }
+		}
+		localization_key = ren_victory_outstock
+	}
+}
+defined_text = {
+	name = ren_victory_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > ren_victory_pricem }
+			}
+		}
+		localization_key = ren_victory_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < ren_victory_pricem }
+			}
+		}
+		localization_key = ren_victory_pricenotmet
+	}
+}
+defined_text = {
+	name = ren_victory_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 30
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 30
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####providence
+defined_text = {
+	name = providence_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.ren_providence
+				value = global.ren_providenceq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = providence_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.ren_providence < global.ren_providenceq }
+		}
+		localization_key = providence_outstock
+	}
+}
+defined_text = {
+	name = providence_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > ren_providence_pricem }
+			}
+		}
+		localization_key = providence_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < ren_providence_pricem }
+			}
+		}
+		localization_key = providence_pricenotmet
+	}
+}
+defined_text = {
+	name = providence_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 30
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 30
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#############################Rothana##############################
+#
+#
+#####atrt
+defined_text = {
+	name = atrt_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.atrt
+				value = global.atrtq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = atrt_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.atrt < global.atrtq }
+		}
+		localization_key = atrt_outstock
+	}
+}
+defined_text = {
+	name = atrt_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > atrt_pricem }
+			}
+		}
+		localization_key = atrt_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < atrt_pricem }
+			}
+		}
+		localization_key = atrt_pricenotmet
+	}
+}
+defined_text = {
+	name = atrt_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 65
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####spha
+defined_text = {
+	name = spha_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.spha
+				value = global.sphaq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = spha_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.spha < global.sphaq }
+		}
+		localization_key = spha_outstock
+	}
+}
+defined_text = {
+	name = spha_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > spha_pricem }
+			}
+		}
+		localization_key = spha_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < spha_pricem }
+			}
+		}
+		localization_key = spha_pricenotmet
+	}
+}
+defined_text = {
+	name = spha_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 65
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####atte
+defined_text = {
+	name = atte_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.atte
+				value = global.atteq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = atte_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.atte < global.atteq }
+		}
+		localization_key = atte_outstock
+	}
+}
+defined_text = {
+	name = atte_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > atte_pricem }
+			}
+		}
+		localization_key = atte_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < atte_pricem }
+			}
+		}
+		localization_key = atte_pricenotmet
+	}
+}
+defined_text = {
+	name = atte_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 65
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tx130
+defined_text = {
+	name = tx130_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tx130
+				value = global.tx130q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tx130_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tx130 < global.tx130q }
+		}
+		localization_key = tx130_outstock
+	}
+}
+defined_text = {
+	name = tx130_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tx130_pricem }
+			}
+		}
+		localization_key = tx130_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tx130_pricem }
+			}
+		}
+		localization_key = tx130_pricenotmet
+	}
+}
+defined_text = {
+	name = tx130_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 65
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####juggernaut
+defined_text = {
+	name = juggernaut_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.juggernaut
+				value = global.juggernautq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = juggernaut_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.juggernaut < global.juggernautq }
+		}
+		localization_key = juggernaut_outstock
+	}
+}
+defined_text = {
+	name = juggernaut_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > juggernaut_pricem }
+			}
+		}
+		localization_key = juggernaut_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < juggernaut_pricem }
+			}
+		}
+		localization_key = juggernaut_pricenotmet
+	}
+}
+defined_text = {
+	name = juggernaut_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 65
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 65
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#############################Sorosuub##############################
+#
+#
+defined_text = {
+	name = supportequipment_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.supportequipment 
+				value = global.supportequipmentq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = supportequipment_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.supportequipment < global.supportequipmentq }
+		}
+		localization_key = supportequipment_outstock
+	}
+}
+defined_text = {
+	name = supportequipment_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > supportequipment_pricem }
+			}
+		}
+		localization_key = supportequipment_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < supportequipment_pricem }
+			}
+		}
+		localization_key = supportequipment_pricenotmet
+	}
+}
+defined_text = {
+	name = supportequipment_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = tech_support
+			}
+		}
+		localization_key = supportequipment_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = tech_support
+				}
+			}
+		}
+		localization_key = supportequipment_technotmet
+	}
+}
+#####landspeeder
+defined_text = {
+	name = landspeeder_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.landspeeder 
+				value = global.landspeederq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = landspeeder_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.landspeeder < global.landspeederq }
+		}
+		localization_key = landspeeder_outstock
+	}
+}
+defined_text = {
+	name = landspeeder_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > landspeeder_pricem }
+			}
+		}
+		localization_key = landspeeder_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < landspeeder_pricem }
+			}
+		}
+		localization_key = landspeeder_pricenotmet
+	}
+}
+defined_text = {
+	name = landspeeder_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = motorised_infantry
+			}
+		}
+		localization_key = landspeeder_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = motorised_infantry
+				}
+			}
+		}
+		localization_key = landspeeder_technotmet
+	}
+}
+#####soro_fang
+defined_text = {
+	name = soro_fang_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.soro_fang 
+				value = global.soro_fangq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = soro_fang_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.soro_fang < global.soro_fangq }
+		}
+		localization_key = soro_fang_outstock
+	}
+}
+defined_text = {
+	name = soro_fang_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > soro_fang_pricem }
+			}
+		}
+		localization_key = soro_fang_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < soro_fang_pricem }
+			}
+		}
+		localization_key = soro_fang_pricenotmet
+	}
+}
+defined_text = {
+	name = soro_fang_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = fang_tech
+			}
+		}
+		localization_key = soro_fang_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = fang_tech
+				}
+			}
+		}
+		localization_key = soro_fang_technotmet
+	}
+}
+#############################techno union##############################
+#
+#
+#####vulture
+defined_text = {
+	name = vulture_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.vulture
+				value = global.vultureq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = vulture_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.vulture < global.vultureq }
+		}
+		localization_key = vulture_outstock
+	}
+}
+defined_text = {
+	name = vulture_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > vulture_pricem }
+			}
+		}
+		localization_key = vulture_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < vulture_pricem }
+			}
+		}
+		localization_key = vulture_pricenotmet
+	}
+}
+defined_text = {
+	name = vulture_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####c9979
+defined_text = {
+	name = c9979_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.c9979
+				value = global.c9979q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = c9979_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.c9979 < global.c9979q }
+		}
+		localization_key = c9979_outstock
+	}
+}
+defined_text = {
+	name = c9979_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > c9979_pricem }
+			}
+		}
+		localization_key = c9979_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < c9979_pricem }
+			}
+		}
+		localization_key = c9979_pricenotmet
+	}
+}
+defined_text = {
+	name = c9979_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####rogue
+defined_text = {
+	name = rogue_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.rogue
+				value = global.rogueq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = rogue_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.rogue < global.rogueq }
+		}
+		localization_key = rogue_outstock
+	}
+}
+defined_text = {
+	name = rogue_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > rogue_pricem }
+			}
+		}
+		localization_key = rogue_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < rogue_pricem }
+			}
+		}
+		localization_key = rogue_pricenotmet
+	}
+}
+defined_text = {
+	name = rogue_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####bellbulab22
+defined_text = {
+	name = bellbulab22_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.bellbulab22
+				value = global.bellbulab22q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = bellbulab22_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.bellbulab22 < global.bellbulab22q }
+		}
+		localization_key = bellbulab22_outstock
+	}
+}
+defined_text = {
+	name = bellbulab22_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > bellbulab22_pricem }
+			}
+		}
+		localization_key = bellbulab22_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < bellbulab22_pricem }
+			}
+		}
+		localization_key = bellbulab22_pricenotmet
+	}
+}
+defined_text = {
+	name = bellbulab22_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####trifighter
+defined_text = {
+	name = trifighter_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.trifighter
+				value = global.trifighterq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = trifighter_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.trifighter < global.trifighterq }
+		}
+		localization_key = trifighter_outstock
+	}
+}
+defined_text = {
+	name = trifighter_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > trifighter_pricem }
+			}
+		}
+		localization_key = trifighter_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < trifighter_pricem }
+			}
+		}
+		localization_key = trifighter_pricenotmet
+	}
+}
+defined_text = {
+	name = trifighter_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####advanceddroidbomber
+defined_text = {
+	name = advanceddroidbomber_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.advanceddroidbomber
+				value = global.advanceddroidbomberq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = advanceddroidbomber_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.advanceddroidbomber < global.advanceddroidbomberq }
+		}
+		localization_key = advanceddroidbomber_outstock
+	}
+}
+defined_text = {
+	name = advanceddroidbomber_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > advanceddroidbomber_pricem }
+			}
+		}
+		localization_key = advanceddroidbomber_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < advanceddroidbomber_pricem }
+			}
+		}
+		localization_key = advanceddroidbomber_pricenotmet
+	}
+}
+defined_text = {
+	name = advanceddroidbomber_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####hyena
+defined_text = {
+	name = hyena_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.hyena
+				value = global.hyenaq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = hyena_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.hyena < global.hyenaq }
+		}
+		localization_key = hyena_outstock
+	}
+}
+defined_text = {
+	name = hyena_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > hyena_pricem }
+			}
+		}
+		localization_key = hyena_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < hyena_pricem }
+			}
+		}
+		localization_key = hyena_pricenotmet
+	}
+}
+defined_text = {
+	name = hyena_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####bellbulab24
+defined_text = {
+	name = bellbulab24_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.bellbulab24
+				value = global.bellbulab24q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = bellbulab24_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.bellbulab24 < global.bellbulab24q }
+		}
+		localization_key = bellbulab24_outstock
+	}
+}
+defined_text = {
+	name = bellbulab24_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > bellbulab24_pricem }
+			}
+		}
+		localization_key = bellbulab24_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < bellbulab24_pricem }
+			}
+		}
+		localization_key = bellbulab24_pricenotmet
+	}
+}
+defined_text = {
+	name = bellbulab24_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####hmpgunship
+defined_text = {
+	name = hmpgunship_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.hmpgunship
+				value = global.hmpgunshipq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = hmpgunship_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.hmpgunship < global.hmpgunshipq }
+		}
+		localization_key = hmpgunship_outstock
+	}
+}
+defined_text = {
+	name = hmpgunship_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > hmpgunship_pricem }
+			}
+		}
+		localization_key = hmpgunship_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < hmpgunship_pricem }
+			}
+		}
+		localization_key = hmpgunship_pricenotmet
+	}
+}
+defined_text = {
+	name = hmpgunship_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####marauder corvette
+defined_text = {
+	name = marauder_cruiser_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.marauder
+				value = global.marauderq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = marauder_cruiser_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.marauder < global.marauderq }
+		}
+		localization_key = marauder_cruiser_outstock
+	}
+}
+defined_text = {
+	name = marauder_cruiser_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > marauder_pricem }
+			}
+		}
+		localization_key = marauder_cruiser_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < marauder_pricem }
+			}
+		}
+		localization_key = marauder_cruiser_pricenotmet
+	}
+}
+defined_text = {
+	name = marauder_cruiser_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tudestroyer
+defined_text = {
+	name = tudestroyer_destroyer_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tudestroyer
+				value = global.tudestroyerq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tudestroyer_destroyer_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tudestroyer < global.tudestroyerq }
+		}
+		localization_key = tudestroyer_destroyer_outstock
+	}
+}
+defined_text = {
+	name = tudestroyer_destroyer_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tudestroyer_pricem }
+			}
+		}
+		localization_key = tudestroyer_destroyer_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tudestroyer_pricem }
+			}
+		}
+		localization_key = tudestroyer_destroyer_pricenotmet
+	}
+}
+defined_text = {
+	name = tudestroyer_destroyer_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####bulwark dreadnaught
+defined_text = {
+	name = bulwark_dreadnaught_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tec_bulwark
+				value = global.tec_bulwarkq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = bulwark_dreadnaught_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tec_bulwark < global.tec_bulwarkq }
+		}
+		localization_key = bulwark_dreadnaught_outstock
+	}
+}
+defined_text = {
+	name = bulwark_dreadnaught_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tec_bulwark_pricem }
+			}
+		}
+		localization_key = bulwark_dreadnaught_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tec_bulwark_pricem }
+			}
+		}
+		localization_key = bulwark_dreadnaught_pricenotmet
+	}
+}
+defined_text = {
+	name = bulwark_dreadnaught_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####OOM
+defined_text = {
+	name = oom_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.oom
+				value = global.oomq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = oom_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.oom < global.oomq }
+		}
+		localization_key = oom_outstock
+	}
+}
+defined_text = {
+	name = oom_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > oom_pricem }
+			}
+		}
+		localization_key = oom_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < oom_pricem }
+			}
+		}
+		localization_key = oom_pricenotmet
+	}
+}
+defined_text = {
+	name = oom_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####b1
+defined_text = {
+	name = b1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.b1
+				value = global.b1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = b1_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.b1 < global.b1q }
+		}
+		localization_key = b1_outstock
+	}
+}
+defined_text = {
+	name = b1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > b1_pricem }
+			}
+		}
+		localization_key = b1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < b1_pricem }
+			}
+		}
+		localization_key = b1_pricenotmet
+	}
+}
+defined_text = {
+	name = b1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					TAG = FED
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####b2
+defined_text = {
+	name = b2_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.b2
+				value = global.b2q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = b2_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.b2 < global.b2q }
+		}
+		localization_key = b2_outstock
+	}
+}
+defined_text = {
+	name = b2_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > b2_pricem }
+			}
+		}
+		localization_key = b2_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < b2_pricem }
+			}
+		}
+		localization_key = b2_pricenotmet
+	}
+}
+defined_text = {
+	name = b2_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####bx
+defined_text = {
+	name = bx_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.bx
+				value = global.bxq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = bx_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.bx < global.bxq }
+		}
+		localization_key = bx_outstock
+	}
+}
+defined_text = {
+	name = bx_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > bx_pricem }
+			}
+		}
+		localization_key = bx_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < bx_pricem }
+			}
+		}
+		localization_key = bx_pricenotmet
+	}
+}
+defined_text = {
+	name = bx_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tactical
+defined_text = {
+	name = tactical_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tactical
+				value = global.tacticalq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tactical_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tactical < global.tacticalq }
+		}
+		localization_key = tactical_outstock
+	}
+}
+defined_text = {
+	name = tactical_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tactical_pricem }
+			}
+		}
+		localization_key = tactical_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tactical_pricem }
+			}
+		}
+		localization_key = tactical_pricenotmet
+	}
+}
+defined_text = {
+	name = tactical_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####dwing
+defined_text = {
+	name = dwing_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.dwing
+				value = global.dwingq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = dwing_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.dwing < global.dwingq }
+		}
+		localization_key = dwing_outstock
+	}
+}
+defined_text = {
+	name = dwing_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > dwing_pricem }
+			}
+		}
+		localization_key = dwing_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < dwing_pricem }
+			}
+		}
+		localization_key = dwing_pricenotmet
+	}
+}
+defined_text = {
+	name = dwing_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####stap
+defined_text = {
+	name = stap_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.stap
+				value = global.stapq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = stap_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.stap < global.stapq }
+		}
+		localization_key = stap_outstock
+	}
+}
+defined_text = {
+	name = stap_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > stap_pricem }
+			}
+		}
+		localization_key = stap_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < stap_pricem }
+			}
+		}
+		localization_key = stap_pricenotmet
+	}
+}
+defined_text = {
+	name = stap_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####droideka
+defined_text = {
+	name = droideka_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.droideka
+				value = global.droidekaq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = droideka_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.droideka < global.droidekaq }
+		}
+		localization_key = droideka_outstock
+	}
+}
+defined_text = {
+	name = droideka_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > droideka_pricem }
+			}
+		}
+		localization_key = droideka_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < droideka_pricem }
+			}
+		}
+		localization_key = droideka_pricenotmet
+	}
+}
+defined_text = {
+	name = droideka_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tec_dsd1
+defined_text = {
+	name = tec_dsd1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tec_dsd1
+				value = global.tec_dsd1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tec_dsd1_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tec_dsd1 < global.tec_dsd1q }
+		}
+		localization_key = tec_dsd1_outstock
+	}
+}
+defined_text = {
+	name = tec_dsd1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tec_dsd1_pricem }
+			}
+		}
+		localization_key = tec_dsd1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tec_dsd1_pricem }
+			}
+		}
+		localization_key = tec_dsd1_pricenotmet
+	}
+}
+defined_text = {
+	name = tec_dsd1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tec_adsd
+defined_text = {
+	name = tec_adsd_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tec_adsd
+				value = global.tec_adsdq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tec_adsd_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tec_adsd < global.tec_adsdq }
+		}
+		localization_key = tec_adsd_outstock
+	}
+}
+defined_text = {
+	name = tec_adsd_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tec_adsd_pricem }
+			}
+		}
+		localization_key = tec_adsd_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tec_adsd_pricem }
+			}
+		}
+		localization_key = tec_adsd_pricenotmet
+	}
+}
+defined_text = {
+	name = tec_adsd_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####crab
+defined_text = {
+	name = crab_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.crab
+				value = global.crabq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = crab_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.crab < global.crabq }
+		}
+		localization_key = crab_outstock
+	}
+}
+defined_text = {
+	name = crab_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > crab_pricem }
+			}
+		}
+		localization_key = crab_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < crab_pricem }
+			}
+		}
+		localization_key = crab_pricenotmet
+	}
+}
+defined_text = {
+	name = crab_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####pac
+defined_text = {
+	name = pac_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.pac
+				value = global.pacq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = pac_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.pac < global.pacq }
+		}
+		localization_key = pac_outstock
+	}
+}
+defined_text = {
+	name = pac_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > pac_pricem }
+			}
+		}
+		localization_key = pac_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < pac_pricem }
+			}
+		}
+		localization_key = pac_pricenotmet
+	}
+}
+defined_text = {
+	name = pac_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####mtt
+defined_text = {
+	name = mtt_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.mtt
+				value = global.mttq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = mtt_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.mtt < global.mttq }
+		}
+		localization_key = mtt_outstock
+	}
+}
+defined_text = {
+	name = mtt_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > mtt_pricem }
+			}
+		}
+		localization_key = mtt_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < mtt_pricem }
+			}
+		}
+		localization_key = mtt_pricenotmet
+	}
+}
+defined_text = {
+	name = mtt_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####j1
+defined_text = {
+	name = j1_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.j1
+				value = global.j1q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = j1_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.j1 < global.j1q }
+		}
+		localization_key = j1_outstock
+	}
+}
+defined_text = {
+	name = j1_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > j1_pricem }
+			}
+		}
+		localization_key = j1_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < j1_pricem }
+			}
+		}
+		localization_key = j1_pricenotmet
+	}
+}
+defined_text = {
+	name = j1_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tec_hailfire
+defined_text = {
+	name = tec_hailfire_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tec_hailfire
+				value = global.tec_hailfireq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tec_hailfire_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tec_hailfire < global.tec_hailfireq }
+		}
+		localization_key = tec_hailfire_outstock
+	}
+}
+defined_text = {
+	name = tec_hailfire_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tec_hailfire_pricem }
+			}
+		}
+		localization_key = tec_hailfire_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tec_hailfire_pricem }
+			}
+		}
+		localization_key = tec_hailfire_pricenotmet
+	}
+}
+defined_text = {
+	name = hailfire_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####aat
+defined_text = {
+	name = aat_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.aat
+				value = global.aatq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = aat_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.aat < global.aatq }
+		}
+		localization_key = aat_outstock
+	}
+}
+defined_text = {
+	name = aat_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > aat_pricem }
+			}
+		}
+		localization_key = aat_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < aat_pricem }
+			}
+		}
+		localization_key = aat_pricenotmet
+	}
+}
+defined_text = {
+	name = aat_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####og9
+defined_text = {
+	name = og9_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.og9
+				value = global.og9q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = og9_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.og9 < global.og9q }
+		}
+		localization_key = og9_outstock
+	}
+}
+defined_text = {
+	name = og9_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > og9_pricem }
+			}
+		}
+		localization_key = og9_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < og9_pricem }
+			}
+		}
+		localization_key = og9_pricenotmet
+	}
+}
+defined_text = {
+	name = og9_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####octuparramagna
+defined_text = {
+	name = octuparramagna_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.octuparramagna
+				value = global.octuparramagnaq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = octuparramagna_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.octuparramagna < global.octuparramagnaq }
+		}
+		localization_key = octuparramagna_outstock
+	}
+}
+defined_text = {
+	name = octuparramagna_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > octuparramagna_pricem }
+			}
+		}
+		localization_key = octuparramagna_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < octuparramagna_pricem }
+			}
+		}
+		localization_key = octuparramagna_pricenotmet
+	}
+}
+defined_text = {
+	name = octuparramagna_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####octuparracombat
+defined_text = {
+	name = octuparracombat_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.octuparracombat
+				value = global.octuparracombatq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = octuparracombat_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.octuparracombat < global.octuparracombatq }
+		}
+		localization_key = octuparracombat_outstock
+	}
+}
+defined_text = {
+	name = octuparracombat_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > octuparracombat_pricem }
+			}
+		}
+		localization_key = octuparracombat_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < octuparracombat_pricem }
+			}
+		}
+		localization_key = octuparracombat_pricenotmet
+	}
+}
+defined_text = {
+	name = octuparracombat_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####tankdroid
+defined_text = {
+	name = tankdroid_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.tankdroid
+				value = global.tankdroidq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = tankdroid_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.tankdroid < global.tankdroidq }
+		}
+		localization_key = tankdroid_outstock
+	}
+}
+defined_text = {
+	name = tankdroid_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > tankdroid_pricem }
+			}
+		}
+		localization_key = tankdroid_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < tankdroid_pricem }
+			}
+		}
+		localization_key = tankdroid_pricenotmet
+	}
+}
+defined_text = {
+	name = tankdroid_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####aat2
+defined_text = {
+	name = aat2_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.aat2
+				value = global.aat2q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = aat2_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.aat2 < global.aat2q }
+		}
+		localization_key = aat2_outstock
+	}
+}
+defined_text = {
+	name = aat2_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > aat2_pricem }
+			}
+		}
+		localization_key = aat2_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < aat2_pricem }
+			}
+		}
+		localization_key = aat2_pricenotmet
+	}
+}
+defined_text = {
+	name = aat2_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 22
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 22
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#######################Corellia
+#
+#
+#####hammerhead
+defined_text = {
+	name = cla_hammerhead_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cla_hammerhead
+				value = global.cla_hammerheadq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = cla_hammerhead_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cla_hammerhead < global.cla_hammerheadq }
+		}
+		localization_key = cla_hammerhead_outstock
+	}
+}
+defined_text = {
+	name = cla_hammerhead_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cla_hammerhead_pricem }
+			}
+		}
+		localization_key = cla_hammerhead_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cla_hammerhead_pricem }
+			}
+		}
+		localization_key = cla_hammerhead_pricenotmet
+	}
+}
+defined_text = {
+	name = cla_hammerhead_tech
+	text = {
+		trigger = {
+			ROOT = {
+				has_tech = early_destroyer
+			}
+		}
+		localization_key = cla_hammerhead_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					has_tech = early_destroyer
+				}
+			}
+		}
+		localization_key = cla_hammerhead_technotmet
+	}
+}
+#####consular
+defined_text = {
+	name = consular_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.consular
+				value = global.consularq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = consular_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.consular < global.consularq }
+		}
+		localization_key = consular_outstock
+	}
+}
+defined_text = {
+	name = consular_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > consular_pricem }
+			}
+		}
+		localization_key = consular_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < consular_pricem }
+			}
+		}
+		localization_key = consular_pricenotmet
+	}
+}
+defined_text = {
+	name = consular_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+					has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 35
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####c70
+defined_text = {
+	name = c70_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.c70
+				value = global.c70q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = c70_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.c70 < global.c70q }
+		}
+		localization_key = c70_outstock
+	}
+}
+defined_text = {
+	name = c70_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > c70_pricem }
+			}
+		}
+		localization_key = c70_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < c70_pricem }
+			}
+		}
+		localization_key = c70_pricenotmet
+	}
+}
+defined_text = {
+	name = c70_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 35
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####cr70
+defined_text = {
+	name = cr70_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cr70
+				value = global.cr70q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = cr70_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cr70 < global.cr70q }
+		}
+		localization_key = cr70_outstock
+	}
+}
+defined_text = {
+	name = cr70_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cr70_pricem }
+			}
+		}
+		localization_key = cr70_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cr70_pricem }
+			}
+		}
+		localization_key = cr70_pricenotmet
+	}
+}
+defined_text = {
+	name = cr70_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 35
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+#####cr90
+defined_text = {
+	name = cr90_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.cr90
+				value = global.cr90q
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = cr90_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.cr90 < global.cr90q }
+		}
+		localization_key = cr90_outstock
+	}
+}
+defined_text = {
+	name = cr90_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > cr90_pricem }
+			}
+		}
+		localization_key = cr90_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < cr90_pricem }
+			}
+		}
+		localization_key = cr90_pricenotmet
+	}
+}
+defined_text = {
+	name = cr90_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = REP_member
+					has_idea = REP_member_prewar
+					TAG = REP
+					owns_state = 35
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = REP_member
+						has_idea = REP_member_prewar
+						TAG = REP
+						owns_state = 35
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##########################free dac###############
+#
+#
+#
+##### dac_recusant
+defined_text = {
+	name = dac_recusant_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.dac_recusant
+				value = global.dac_recusantq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = dac_recusant_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.dac_recusant < global.dac_recusantq }
+		}
+		localization_key = dac_recusant_outstock
+	}
+}
+defined_text = {
+	name = dac_recusant_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > dac_recusant_pricem }
+			}
+		}
+		localization_key = dac_recusant_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < dac_recusant_pricem }
+			}
+		}
+		localization_key = dac_recusant_pricenotmet
+	}
+}
+defined_text = {
+	name = dac_recusant_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 15
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 15
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### dac_providence
+defined_text = {
+	name = dac_providence_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.dac_providence
+				value = global.dac_providenceq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = dac_providence_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.dac_providence < global.dac_providenceq }
+		}
+		localization_key = dac_providence_outstock
+	}
+}
+defined_text = {
+	name = dac_providence_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > dac_providence_pricem }
+			}
+		}
+		localization_key = dac_providence_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < dac_providence_pricem }
+			}
+		}
+		localization_key = dac_providence_pricenotmet
+	}
+}
+defined_text = {
+	name = dac_providence_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 15
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 15
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+##### subjugator
+defined_text = {
+	name = subjugator_stock
+	text = {
+		trigger = {
+			check_variable = { 
+				var = global.subjugator
+				value = global.subjugatorq
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = subjugator_instock
+	}
+	text = {
+		trigger = {
+			check_variable = { global.subjugator < global.subjugatorq }
+		}
+		localization_key = subjugator_outstock
+	}
+}
+defined_text = {
+	name = subjugator_price
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx > subjugator_pricem }
+			}
+		}
+		localization_key = subjugator_pricemet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				check_variable = { dx < subjugator_pricem }
+			}
+		}
+		localization_key = subjugator_pricenotmet
+	}
+}
+defined_text = {
+	name = subjugator_tech
+	text = {
+		trigger = {
+			ROOT = {
+				OR = {
+					has_idea = CIS_member
+					has_idea = CIS_member_prewar
+					has_idea = CIS_equipped
+					TAG = CIS
+					owns_state = 15
+				}
+			}
+		}
+		localization_key = phase_1_techmet
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				NOT = {
+					OR = {
+						has_idea = CIS_member
+					has_idea = CIS_member_prewar
+						has_idea = CIS_equipped
+						TAG = CIS
+						owns_state = 15
+					}
+				}
+			}
+		}
+		localization_key = phase_1_technotmet
+	}
+}
+
+###############################Corporate Side#########################
+defined_text = {
+	name = cmg_dsd1_push
+	text = {
+		trigger = {
+			check_variable = { num_equipment@dsd1_dwarf_equipment > 249 }
+		}
+		localization_key = cmg_dsd1_canpush
+	}
+	text = {
+		trigger = {
+			check_variable = { num_equipment@dsd1_dwarf_equipment < 250 }
+		}
+		localization_key = cmg_dsd1_nopush
+	}
+}

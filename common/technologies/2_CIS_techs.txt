@@ -1,0 +1,988 @@
+technologies = {
+	#CIS Level 1
+	c9979_tech = {
+
+		enable_equipments = {
+			C9979_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = hmpgunship_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	nantex_fighter_tech = {
+		
+		enable_equipments = {
+			nantex_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	vulture_tech = {
+
+		enable_equipments = {
+			vulture_fighter_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_air_improved_weapons
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	diamond_tech = {
+
+		enable_equipments = {
+			diamond_equipment
+		}
+
+		enable_subunits = {
+			diamond_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	marauder_tech = { 
+
+		enable_equipments = {
+			marauder_equipment
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = tec_destroyer_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lucrehulk_freighter_tech = {
+
+		enable_equipments = {
+			lucrehulk_freighter_equipment
+		}
+
+		enable_subunits = {
+			lucrehulk_freighter_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	battle_droid_0 = {
+
+		enable_equipments = {
+			oom_droid_equipment
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = battle_droid_1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	battle_droid_1 = {
+
+		enable_equipments = {
+			b1_droid_equip
+		}
+
+		enable_subunits = {
+			b1_droid_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_droid_adv_programming
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 3 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mtt_tech = {
+
+		enable_equipments = {
+			MTT_equipment_1 
+		}
+
+		enable_subunits = {
+			MTT_Unit 
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_mob_improved_propulsion
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stap_tech = {
+
+		enable_equipments = {
+			STAP_equip  
+		}
+
+		enable_subunits = {
+			STAP_unit  
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_mob_improved_repulsor
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pac_tech = {
+
+		enable_equipments = {
+			PAC_equipment_1 
+		}
+
+		enable_subunits = {
+			PAC_unit 
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_mob_defensive_weapons
+		}	
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cis_tank_1 = {
+		enable_equipments = {
+			AAT_equipment
+		}
+		enable_subunits = {
+			AAT_unit
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_armor_improved_weapons
+		}
+		research_cost = 1.5
+		start_year = 970
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 3 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	droideka_tech = {
+
+		enable_equipments = {
+			destroyer_battle_droid 
+		}
+
+		enable_subunits = {
+			destroyer_droid_unit 
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_droideka_improved_shielding
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	#CIS Level 2
+	bulwark_tech = {
+
+		enable_equipments = {
+			bulwark_equipment
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 18 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	munificent_tech = {
+
+		enable_equipments = {
+			munificent_equipment
+		}
+
+		enable_subunits = {
+			munificent_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lucrehulk_battleship_tech = {
+
+		enable_equipments = {
+			lucrehulk_battleship_equipment
+		}
+
+		enable_subunits = {
+			lucrehulk_battleship_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tec_destroyer_tech = {
+
+		enable_equipments = {
+			tec_destroyer_equipment
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = tec_improved_naval_weapons
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 6 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	saboath_tech = {
+
+		enable_equipments = {
+			saboath_equipment
+		}
+
+		enable_subunits = {
+			saboath_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hyena_tech = {
+
+		enable_equipments = {
+			hyena_bomber_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = bellbulab24_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 12 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hailfire_droid = {
+
+		enable_equipments = {
+			hailfire_equipment
+		}
+
+		enable_subunits = {
+			hailfire_artillery
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_combat_tri
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = cis_tank_3
+		}	
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 12 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bx_tech = {
+
+		enable_equipments = {
+			bx_battle_droid_equipment
+		}
+
+		enable_subunits = {	
+			bx_battle_droid_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = battle_droid_1
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cis_tank_2 = {
+
+		enable_equipments = {
+			OG9_equipment
+		}
+
+		enable_subunits = {
+			OG9_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = hailfire_droid
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dsd1_tech = {
+
+		enable_equipments = {
+			dsd1_dwarf_equipment 
+		}
+
+		enable_subunits = {
+			dsd1_unit 
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = crab_tech
+		}	
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = j1_artillery
+		}	
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 9 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	cis_super_tank = {
+
+		enable_equipments = {
+			supertank_equipment_1
+		}
+
+		enable_subunits = {
+			supertank_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	aqua_droid_tech = {
+
+		enable_equipments = {
+			aqua_droid_equip
+		}
+
+		enable_subunits = {
+			aqua_droid_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_droid_adv_programming
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 3 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	j1_artillery = {
+
+		enable_equipments = {
+			j1_equipment
+		}
+
+		enable_subunits = {
+			j1_artillery_unit
+			j1_artillery_brigade
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+
+		folder = {
+			name = tec_folder
+			position = { x = 2 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TEC_magna_tri = {
+
+		enable_equipments = {
+			magna_tri_droid_equip
+		}
+
+		enable_subunits = {
+			magna_tri_droid_unit
+		}		
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = 1 y = 18 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lancer_tech = {
+
+		enable_equipments = {
+			ig_lancer_equip
+		}
+
+		enable_subunits = {
+			ig_lancer_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+		folder = {
+			name = ibc_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#CIS Level 3
+	providence_tech = {
+
+		enable_equipments = {
+			providence_equipment
+		}
+
+		enable_subunits = {
+			providence_unit
+		}
+		
+		path = {
+			leads_to_tech = ren_victory_tech
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = ren_folder
+			position = { x = 1 y = 9 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	subjugator_tech = {
+
+		enable_equipments = {
+			subjugator_equipment
+		}
+
+		enable_subunits = {
+			subjugator_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 977
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	recusant_tech = {
+
+		enable_equipments = {
+			recusant_equipment
+		}
+
+		enable_subunits = {
+			recusant_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	buzz_droid = {
+
+		enable_equipments = {
+			buzz_droid_equipment
+		}
+
+		enable_subunits = {
+			buzz_droid_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	trifighter_tech = {
+
+		enable_equipments = {
+			tri_fighter_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_air_improved_propulsion
+		}		
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 18 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	rogue_tech = {
+
+		enable_equipments = {
+			rogue_fighter_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = bellbulab22_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 12 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hmpgunship_tech = {
+
+		enable_equipments = {
+			hmp_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_guided_missiles
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 15 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	trident_transport_tech = {
+		enable_equipments = {
+			trident_transport_equip
+		}
+
+		enable_subunits = {
+			trident_transport_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	battle_droid_2 = {
+		enable_equipments = {
+			b2_droid_equip
+		}
+		enable_subunits = {
+			b2_droid_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_droid_launcher_arms
+		}		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_b2_rocket_tech
+		}	
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	d_wing_tech = {
+
+		enable_equipments = {
+			dw_droid_equip
+		}
+
+		enable_subunits = {
+			dw_droid_unit
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 981
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 21 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	crab_tech = {
+
+		enable_equipments = {
+			crab_droid_equip 
+		}
+
+		enable_subunits = {
+			crab_droid_unit 
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_inf2_compact_weapons
+		}		
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = 15 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cis_tank_3 = {
+		enable_equipments = {
+			tankdroid_equipment
+		}
+		enable_subunits = {
+			tankdroid_unit
+		}
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = cis_tank_4
+		}	
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = tec_folder
+			position = { x = -1 y = 15 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#CIS Level 4
+	battle_droid_3 = {
+
+		enable_equipments = {
+			b3_droid_equip
+		}
+
+		enable_subunits = {
+			b3_droid_unit
+		}	
+
+		research_cost = 1.5
+		start_year = 989
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	cis_tank_4 = {
+
+		enable_equipments = {
+			aat2_equipment
+		}
+
+		enable_subunits = {
+			AAT2_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 981
+		folder = {
+			name = tec_folder
+			position = { x = -1 y = 21 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

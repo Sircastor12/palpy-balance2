@@ -1,0 +1,1585 @@
+#Clone Wars Alignment System
+guiTypes = {
+     containerWindowType = {
+		name = "clonewarsalignment_container"
+		position = { x = 1240 y = 400 }
+		
+		buttonType ={
+			name ="clonewarsalignment_button"
+			spriteType = "GFX_market_init"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+a+s"
+		}
+		
+		instantTextBoxType = {
+			name ="market_text"
+			position = { x= 70 y = 6 }
+			font = "hoi_18mbs"
+			text = "Separatist Crisis Alignment"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "Access the Clone Wars Alignment System"
+		}
+	}
+
+     containerWindowType = {
+		name = "clonewarsalignment_full_container"
+		position = {x=550 y=125}
+		size = { width=800 height=800 }
+
+		fade_time = 0
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_clonewarsalignment_bg"
+		}
+		buttonType = {
+			name = "production_frame" 
+			position = {x=422 y=175}	
+			spriteType = "GFX_corporate_production_frame"
+			pdx_tooltip = "CAT_commerce_guild"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 10 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {
+		name = "corporate_market_logistics_screen_TEC"
+		position = {x=550 y=125}
+		size = { width=800 height=800 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_corporate_logistics_bg"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 10 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "Return to Galactic Market home screen"
+		}
+		instantTextBoxType = {
+			name ="quantity_text"
+			position = { x= 191 y = 70 }
+			font = "hoi_18mbs"
+			text = "Quantity"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="price_text"
+			position = { x= 301 y = 70 }
+			font = "hoi_18mbs"
+			text = "Price"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="prodrate_text"
+			position = { x= 391 y = 70 }
+			font = "hoi_18mbs"
+			text = "Production Rate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="unitssold_text"
+			position = { x= 541 y = 70 }
+			font = "hoi_18mbs"
+			text = "Units Sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="revenue_text"
+			position = { x= 651 y = 70 }
+			font = "hoi_18mbs"
+			text = "Revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#b1
+		buttonType = {
+			name = "b1_logistics" 
+			position = {x=155 y=100}
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="b1_text"
+			position = { x= 40 y = 105 }
+			font = "hoi_18mbs"
+			text = "B1 Battle Droid"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b1_count"
+			position = { x= 200 y = 105 }
+			font = "hoi_18mbs"
+			text = "b1_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b1_price"
+			position = { x= 305 y = 105 }
+			font = "hoi_18mbs"
+			text = "100"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b1_prodrate"
+			position = { x= 423 y = 105 }
+			font = "hoi_18mbs"
+			text = "b1_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b1_sold"
+			position = { x= 555 y = 105 }
+			font = "hoi_18mbs"
+			text = "b1_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b1_revenue"
+			position = { x= 655 y = 105 }
+			font = "hoi_18mbs"
+			text = "b1_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#b2
+		buttonType = {
+			name = "b2_logistics" 
+			position = {x=155 y=155}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="b2_text"
+			position = { x= 40 y = 160 }
+			font = "hoi_18mbs"
+			text = "B2 Battle Droid"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b2_count"
+			position = { x= 200 y = 160 }
+			font = "hoi_18mbs"
+			text = "b2_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b2_price"
+			position = { x= 305 y = 160 }
+			font = "hoi_18mbs"
+			text = "150"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b2_prodrate"
+			position = { x= 423 y = 160 }
+			font = "hoi_18mbs"
+			text = "b2_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b2_sold"
+			position = { x= 555 y = 160 }
+			font = "hoi_18mbs"
+			text = "b2_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b2_revenue"
+			position = { x= 655 y = 160 }
+			font = "hoi_18mbs"
+			text = "b2_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#bx
+		buttonType = {
+			name = "bx_logistics" 
+			position = {x=155 y=210}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="bx_text"
+			position = { x= 40 y = 215 }
+			font = "hoi_18mbs"
+			text = "BX Battle Droid"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="bx_count"
+			position = { x= 200 y = 215 }
+			font = "hoi_18mbs"
+			text = "bx_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="bx_price"
+			position = { x= 305 y = 215 }
+			font = "hoi_18mbs"
+			text = "170"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="bx_prodrate"
+			position = { x= 423 y = 215 }
+			font = "hoi_18mbs"
+			text = "bx_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="bx_sold"
+			position = { x= 555 y = 215 }
+			font = "hoi_18mbs"
+			text = "bx_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="bx_revenue"
+			position = { x= 655 y = 215 }
+			font = "hoi_18mbs"
+			text = "bx_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#Tseries
+		buttonType = {
+			name = "tseries_logistics" 
+			position = {x=155 y=265}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="tseries_text"
+			position = { x= 40 y = 270 }
+			font = "hoi_18mbs"
+			text = "T Series Tactical"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tseries_count"
+			position = { x= 200 y = 270 }
+			font = "hoi_18mbs"
+			text = "tseries_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tseries_price"
+			position = { x= 305 y = 270 }
+			font = "hoi_18mbs"
+			text = "100"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tseries_prodrate"
+			position = { x= 423 y = 270 }
+			font = "hoi_18mbs"
+			text = "tseries_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tseries_sold"
+			position = { x= 555 y = 270 }
+			font = "hoi_18mbs"
+			text = "tseries_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tseries_revenue"
+			position = { x= 655 y = 270 }
+			font = "hoi_18mbs"
+			text = "tseries_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#PAC
+		buttonType = {
+			name = "pac_logistics" 
+			position = {x=155 y=320}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="pac_text"
+			position = { x= 40 y = 325 }
+			font = "hoi_18mbs"
+			text = "Platoon Craft"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="pac_count"
+			position = { x= 200 y = 325 }
+			font = "hoi_18mbs"
+			text = "pac_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="pac_price"
+			position = { x= 305 y = 325 }
+			font = "hoi_18mbs"
+			text = "125"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="pac_prodrate"
+			position = { x= 423 y = 325 }
+			font = "hoi_18mbs"
+			text = "pac_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="pac_sold"
+			position = { x= 555 y = 325 }
+			font = "hoi_18mbs"
+			text = "pac_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="pac_revenue"
+			position = { x= 655 y = 325 }
+			font = "hoi_18mbs"
+			text = "pac_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#MTT
+		buttonType = {
+			name = "mtt_logistics" 
+			position = {x=155 y=375}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="mtt_text"
+			position = { x= 40 y = 380 }
+			font = "hoi_18mbs"
+			text = "MTT"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="mtt_count"
+			position = { x= 200 y = 380 }
+			font = "hoi_18mbs"
+			text = "mtt_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="mtt_price"
+			position = { x= 305 y = 380 }
+			font = "hoi_18mbs"
+			text = "175"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="mtt_prodrate"
+			position = { x= 423 y = 380 }
+			font = "hoi_18mbs"
+			text = "mtt_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="mtt_sold"
+			position = { x= 555 y = 380 }
+			font = "hoi_18mbs"
+			text = "mtt_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="mtt_revenue"
+			position = { x= 655 y = 380 }
+			font = "hoi_18mbs"
+			text = "mtt_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#AAT
+		buttonType = {
+			name = "aat_logistics" 
+			position = {x=155 y=430}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="aat_text"
+			position = { x= 40 y = 435 }
+			font = "hoi_18mbs"
+			text = "AAT"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="aat_count"
+			position = { x= 200 y = 435 }
+			font = "hoi_18mbs"
+			text = "aat_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="aat_price"
+			position = { x= 305 y = 435 }
+			font = "hoi_18mbs"
+			text = "150"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="aat_prodrate"
+			position = { x= 423 y = 435 }
+			font = "hoi_18mbs"
+			text = "aat_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="aat_sold"
+			position = { x= 555 y = 435 }
+			font = "hoi_18mbs"
+			text = "aat_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="aat_revenue"
+			position = { x= 655 y = 435 }
+			font = "hoi_18mbs"
+			text = "aat_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#Tank Droid
+		buttonType = {
+			name = "tank_droid_logistics" 
+			position = {x=155 y=485}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="tank_droid_text"
+			position = { x= 40 y = 490 }
+			font = "hoi_18mbs"
+			text = "NR-N99"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tank_droid_count"
+			position = { x= 200 y = 490 }
+			font = "hoi_18mbs"
+			text = "tank_droid_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tank_droid_price"
+			position = { x= 305 y = 490 }
+			font = "hoi_18mbs"
+			text = "250"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tank_droid_prodrate"
+			position = { x= 423 y = 490 }
+			font = "hoi_18mbs"
+			text = "tank_droid_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tank_droid_sold"
+			position = { x= 555 y = 490 }
+			font = "hoi_18mbs"
+			text = "tank_droid_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tank_droid_revenue"
+			position = { x= 655 y = 490 }
+			font = "hoi_18mbs"
+			text = "tank_droid_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#Super Tank
+		buttonType = {
+			name = "super_tank_logistics" 
+			position = {x=155 y=540}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="super_tank_text"
+			position = { x= 40 y = 545 }
+			font = "hoi_18mbs"
+			text = "Super Tank"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="super_tank_count"
+			position = { x= 200 y = 545 }
+			font = "hoi_18mbs"
+			text = "super_tank_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="super_tank_price"
+			position = { x= 305 y = 545 }
+			font = "hoi_18mbs"
+			text = "500"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="super_tank_prodrate"
+			position = { x= 423 y = 545 }
+			font = "hoi_18mbs"
+			text = "super_tank_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="super_tank_sold"
+			position = { x= 555 y = 545 }
+			font = "hoi_18mbs"
+			text = "super_tank_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="super_tank_revenue"
+			position = { x= 655 y = 545 }
+			font = "hoi_18mbs"
+			text = "super_tank_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#Vulture
+		buttonType = {
+			name = "vulture_logistics" 
+			position = {x=155 y=595}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="vulture_text"
+			position = { x= 40 y = 600 }
+			font = "hoi_18mbs"
+			text = "Vulture Droid"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="vulture_count"
+			position = { x= 200 y = 600 }
+			font = "hoi_18mbs"
+			text = "vulture_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="vulture_price"
+			position = { x= 305 y = 600 }
+			font = "hoi_18mbs"
+			text = "100"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="vulture_prodrate"
+			position = { x= 423 y = 600 }
+			font = "hoi_18mbs"
+			text = "vulture_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="vulture_sold"
+			position = { x= 555 y = 600 }
+			font = "hoi_18mbs"
+			text = "vulture_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="vulture_revenue"
+			position = { x= 655 y = 600 }
+			font = "hoi_18mbs"
+			text = "vulture_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#Hyena
+		buttonType = {
+			name = "hyena_logistics" 
+			position = {x=155 y=650}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="hyena_text"
+			position = { x= 40 y = 655 }
+			font = "hoi_18mbs"
+			text = "Hyena Bomber"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="hyena_count"
+			position = { x= 200 y = 655 }
+			font = "hoi_18mbs"
+			text = "hyena_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="hyena_price"
+			position = { x= 305 y = 655 }
+			font = "hoi_18mbs"
+			text = "100"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="hyena_prodrate"
+			position = { x= 423 y = 655 }
+			font = "hoi_18mbs"
+			text = "hyena_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="hyena_sold"
+			position = { x= 555 y = 655 }
+			font = "hoi_18mbs"
+			text = "hyena_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="hyena_revenue"
+			position = { x= 655 y = 655 }
+			font = "hoi_18mbs"
+			text = "hyena_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		#C9979
+		buttonType = {
+			name = "c9979_logistics" 
+			position = {x=155 y=705}	
+			spriteType = "GFX_corporate_logistics_gridbox"
+		}
+		instantTextBoxType = {
+			name ="c9979_text"
+			position = { x= 40 y = 710 }
+			font = "hoi_18mbs"
+			text = "C9979"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="c9979_count"
+			position = { x= 200 y = 710 }
+			font = "hoi_18mbs"
+			text = "c9979_count"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="C9979_price"
+			position = { x= 305 y = 710 }
+			font = "hoi_18mbs"
+			text = "150"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="C9979_prodrate"
+			position = { x= 423 y = 710 }
+			font = "hoi_18mbs"
+			text = "C9979_prodrate"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="C9979_sold"
+			position = { x= 555 y = 710 }
+			font = "hoi_18mbs"
+			text = "C9979_sold"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="C9979_revenue"
+			position = { x= 655 y = 710 }
+			font = "hoi_18mbs"
+			text = "C9979_revenue"
+			format = left
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+	###########TEC Production#############
+	containerWindowType = {
+		name = "production_tec_container"
+		position = {x=550 y=125}
+		size = { width=800 height=800 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_corporate_market_bg"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "Return to Galactic Market home screen"
+		}
+		buttonType = {
+			name = "autamata" 
+			position = {x=220 y=250}	
+			spriteType = "GFX_baktoid_combat"
+			pdx_tooltip = "CAT_technounion_infantry"
+		}
+		instantTextBoxType = {
+			name ="TEC_text_infantry"
+			position = { x= 180 y = 360 }
+			font = "hoi_18mbs"
+			text = "Baktoid Combat Autamata"
+			format = left
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "armor" 
+			position = {x=440 y=250}	
+			spriteType = "GFX_baktoid_armor"
+		}
+		instantTextBoxType = {
+			name ="TEC_text_armor"
+			position = { x=420 y =360 }
+			font = "hoi_18mbs"
+			text = "Baktoid Armor Workshop"
+			format = left
+			maxWidth = 200
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+###Baktoid autamata###
+	containerWindowType = {
+		name = "production_tec_baktoid_autamata_container"
+		position = {x=550 y=125}
+		size = { width=800 height=800 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_baktoid_combat_bg"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "Return to Galactic Market home screen"
+		}
+		instantTextBoxType = {
+			name ="b1"
+			position = { x=301 y =230 }
+			font = "hoi_18mbs"
+			text = "B1"
+			format = center
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="b2"
+			position = { x=411 y =230 }
+			font = "hoi_18mbs"
+			text = "B2"
+			format = center
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="bX"
+			position = { x=520 y =230 }
+			font = "hoi_18mbs"
+			text = "BX"
+			format = center
+			maxWidth = 20
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="tseries"
+			position = { x=590 y =230 }
+			font = "hoi_18mbs"
+			text = "T-Series"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="shutdown"
+			position = { x=680 y =230 }
+			font = "hoi_18mbs"
+			text = "OFF"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name ="Hypori1"
+			position = { x=100 y =280 }
+			font = "hoi_18mbs"
+			text = "Hypori"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "hypori1_b1" 
+			position = {x=296 y=275}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori1_b1_checked" 
+			position = {x=296 y=275}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori1_b2" 
+			position = {x=406 y=275}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori1_b2_checked" 
+			position = {x=406 y=275}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori1_bx" 
+			position = {x=515 y=275}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori1_bx_checked" 
+			position = {x=515 y=275}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori1_tseries" 
+			position = {x=625 y=275}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori1_tseries_checked" 
+			position = {x=625 y=275}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori1_off" 
+			position = {x=715 y=275}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori1_off_checked" 
+			position = {x=715 y=275}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Hypori2"
+			position = { x=100 y =330 }
+			font = "hoi_18mbs"
+			text = "Hypori"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "hypori2_b1" 
+			position = {x=296 y=325}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori2_b1_checked" 
+			position = {x=296 y=325}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori2_b2" 
+			position = {x=406 y=325}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori2_b2_checked" 
+			position = {x=406 y=325}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori2_bx" 
+			position = {x=515 y=325}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori2_bx_checked" 
+			position = {x=515 y=325}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori2_tseries" 
+			position = {x=625 y=325}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori2_tseries_checked" 
+			position = {x=625 y=325}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori2_off" 
+			position = {x=715 y=325}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori2_off_checked" 
+			position = {x=715 y=325}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Hypori3"
+			position = { x=100 y =380 }
+			font = "hoi_18mbs"
+			text = "Hypori"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "hypori3_b1" 
+			position = {x=296 y=375}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori3_b1_checked" 
+			position = {x=296 y=375}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori3_b2" 
+			position = {x=406 y=375}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori3_b2_checked" 
+			position = {x=406 y=375}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori3_bx" 
+			position = {x=515 y=375}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori3_bx_checked" 
+			position = {x=515 y=375}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori3_tseries" 
+			position = {x=625 y=375}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori3_tseries_checked" 
+			position = {x=625 y=375}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori3_off" 
+			position = {x=715 y=375}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori3_off_checked" 
+			position = {x=715 y=375}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Hypori4"
+			position = { x=100 y =430 }
+			font = "hoi_18mbs"
+			text = "Hypori"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "hypori4_b1" 
+			position = {x=296 y=425}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori4_b1_checked" 
+			position = {x=296 y=425}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori4_b2" 
+			position = {x=406 y=425}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori4_b2_checked" 
+			position = {x=406 y=425}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori4_bx" 
+			position = {x=515 y=425}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori4_bx_checked" 
+			position = {x=515 y=425}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori4_tseries" 
+			position = {x=625 y=425}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori4_tseries_checked" 
+			position = {x=625 y=425}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "hypori4_off" 
+			position = {x=715 y=425}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "hypori4_off_checked" 
+			position = {x=715 y=425}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Geonosis1"
+			position = { x=100 y =480 }
+			font = "hoi_18mbs"
+			text = "Geonosis"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "Geonosis1_b1" 
+			position = {x=296 y=475}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis1_b1_checked" 
+			position = {x=296 y=475}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis1_b2" 
+			position = {x=406 y=475}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis1_b2_checked" 
+			position = {x=406 y=475}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis1_bx" 
+			position = {x=515 y=475}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis1_bx_checked" 
+			position = {x=515 y=475}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis1_tseries" 
+			position = {x=625 y=475}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis1_tseries_checked" 
+			position = {x=625 y=475}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis1_off" 
+			position = {x=715 y=475}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis1_off_checked" 
+			position = {x=715 y=475}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Geonosis2"
+			position = { x=100 y =530 }
+			font = "hoi_18mbs"
+			text = "Geonosis"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "Geonosis2_b1" 
+			position = {x=296 y=525}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis2_b1_checked" 
+			position = {x=296 y=525}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis2_b2" 
+			position = {x=406 y=525}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis2_b2_checked" 
+			position = {x=406 y=525}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis2_bx" 
+			position = {x=515 y=525}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis2_bx_checked" 
+			position = {x=515 y=525}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis2_tseries" 
+			position = {x=625 y=525}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis2_tseries_checked" 
+			position = {x=625 y=525}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis2_off" 
+			position = {x=715 y=525}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis2_off_checked" 
+			position = {x=715 y=525}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Geonosis3"
+			position = { x=100 y =580 }
+			font = "hoi_18mbs"
+			text = "Geonosis"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "Geonosis3_b1" 
+			position = {x=296 y=575}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis3_b1_checked" 
+			position = {x=296 y=575}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis3_b2" 
+			position = {x=406 y=575}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis3_b2_checked" 
+			position = {x=406 y=575}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis3_bx" 
+			position = {x=515 y=575}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis3_bx_checked" 
+			position = {x=515 y=575}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis3_tseries" 
+			position = {x=625 y=575}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis3_tseries_checked" 
+			position = {x=625 y=575}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis3_off" 
+			position = {x=715 y=575}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis3_off_checked" 
+			position = {x=715 y=575}	
+			spriteType = "GFX_tick_checked"
+		}
+		instantTextBoxType = {
+			name ="Geonosis4"
+			position = { x=100 y =630 }
+			font = "hoi_18mbs"
+			text = "Geonosis"
+			format = center
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+		}
+		buttonType = {
+			name = "Geonosis4_b1" 
+			position = {x=296 y=625}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis4_b1_checked" 
+			position = {x=296 y=625}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis4_b2" 
+			position = {x=406 y=625}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis4_b2_checked" 
+			position = {x=406 y=625}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis4_bx" 
+			position = {x=515 y=625}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis4_bx_checked" 
+			position = {x=515 y=625}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis4_tseries" 
+			position = {x=625 y=625}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis4_tseries_checked" 
+			position = {x=625 y=625}	
+			spriteType = "GFX_tick_checked"
+		}
+		buttonType = {
+			name = "Geonosis4_off" 
+			position = {x=715 y=625}	
+			spriteType = "GFX_tick_unchecked"
+		}
+		buttonType = {
+			name = "Geonosis4_off_checked" 
+			position = {x=715 y=625}	
+			spriteType = "GFX_tick_checked"
+		}
+	}
+###Baktoid armor###
+	containerWindowType = {
+		name = "production_tec_baktoid_armor_container"
+		position = {x=550 y=125}
+		size = { width=800 height=800 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_baktoid_armor_bg"
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "Return to Galactic Market home screen"
+		}
+	}
+}

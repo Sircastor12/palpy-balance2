@@ -1,0 +1,348 @@
+guiTypes = {
+    
+	containerWindowType = {
+		name = "republic_reform_screen_gui"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=800 height=600 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_senate_reforms"
+		}
+		
+		instantTextboxType = {
+			name = "republic_title"
+			position = { x = 20 y = 8 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Senate Action"
+			maxWidth = 350
+			maxHeight = 20
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "republic_reform_1"
+			position = { x = 30 y = 180 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Military Creation Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_2"
+			position = { x = 230 y = 180 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Dangerous Ideas Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_3"
+			position = { x = 410 y = 180 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Increased Police Powers Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_4"
+			position = { x = 620 y = 180 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Corporate Sanctions Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_5"
+			position = { x = 40 y = 300 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "The Security Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_6"
+			position = { x = 210 y = 300 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Galactic Militarization Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_7"
+			position = { x = 440 y = 300 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Fire with Fire act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_8"
+			position = { x = 630 y = 300 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Financial Reform Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_9"
+			position = { x = 10 y = 420 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Military Enhancement Bill"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_10"
+			position = { x = 210 y = 420 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Sector Governance Decree"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_11"
+			position = { x = 413 y = 420 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Repeal Ruusan Reformation"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_12" 
+			position = { x = 626 y = 420 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Emergency Powers Act"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_13"
+			position = { x = 40 y = 540 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Republic Reform 1"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_14"
+			position = { x = 240 y = 540 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Republic Reform 1"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_15"
+			position = { x = 440 y = 540 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Republic Reform 1"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		instantTextboxType = {
+			name = "republic_reform_16" 
+			position = { x = 640 y = 540 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Republic Reform 1"
+			maxWidth = 350
+			maxHeight = 20
+		}
+		buttonType = {
+			name = "Reform_1" 
+			position = {x=40 y=80}	
+			spriteType = "GFX_reform_1"
+			pdx_tooltip = "REP_REFORM_1"
+			pdx_tooltip_delayed = " REP_REFORM_1"
+		}
+        
+		buttonType = {
+			name = "Reform_2" 
+			position = {x=240 y=80}	
+			spriteType = "GFX_reform_2"
+			pdx_tooltip = "REP_REFORM_2"
+			pdx_tooltip_delayed = "REP_REFORM_2"
+		}
+
+		buttonType = {
+			name = "Reform_3" 
+			position = {x=440 y=80}	
+			spriteType = "GFX_reform_3"
+			pdx_tooltip = "REP_REFORM_3"
+			pdx_tooltip_delayed = "REP_REFORM_3"
+		}
+        
+		buttonType = {
+			name = "Reform_4" 
+			position = {x=640 y=80}	
+			spriteType = "GFX_reform_4"
+			pdx_tooltip = "REP_REFORM_4"
+			pdx_tooltip_delayed = "REP_REFORM_4"
+		}
+
+		buttonType = {
+			name = "Reform_5" 
+			position = {x=40 y=200}	
+			spriteType = "GFX_reform_5"
+			pdx_tooltip = "REP_REFORM_5"
+			pdx_tooltip_delayed = " REP_REFORM_5"
+		}
+        
+		buttonType = {
+			name = "Reform_6" 
+			position = {x=240 y=200}	
+			spriteType = "GFX_reform_6"
+			pdx_tooltip = "REP_REFORM_6"
+			pdx_tooltip_delayed = "REP_REFORM_6"
+		} 
+
+		buttonType = {
+			name = "Reform_7" 
+			position = {x=440 y=200}	
+			spriteType = "GFX_reform_7"
+			pdx_tooltip = "REP_REFORM_7"
+			pdx_tooltip_delayed = "REP_REFORM_7"
+		}
+        
+		buttonType = {
+			name = "Reform_8" 
+			position = {x=640 y=200}	
+			spriteType = "GFX_reform_8"
+			pdx_tooltip = "REP_REFORM_8"
+			pdx_tooltip_delayed = "REP_REFORM_8"
+		}
+		buttonType = {
+			name = "Reform_9" 
+			position = {x=40 y=320}	
+			spriteType = "GFX_reform_9"
+			pdx_tooltip = "REP_REFORM_9"
+			pdx_tooltip_delayed = " REP_REFORM_9"
+		}
+        
+		buttonType = {
+			name = "Reform_10" 
+			position = {x=240 y=320}	
+			spriteType = "GFX_reform_10"
+			pdx_tooltip = "REP_REFORM_10"
+			pdx_tooltip_delayed = "REP_REFORM_10"
+		}
+
+		buttonType = {
+			name = "Reform_11" 
+			position = {x=440 y=320}	
+			spriteType = "GFX_reform_11"
+			pdx_tooltip = "REP_REFORM_11"
+			pdx_tooltip_delayed = "REP_REFORM_11"
+		}
+        
+		buttonType = {
+			name = "Reform_12" 
+			position = {x=640 y=320}	
+			spriteType = "GFX_reform_12"
+			pdx_tooltip = "REP_REFORM_12"
+			pdx_tooltip_delayed = "REP_REFORM_12"
+		}
+
+		buttonType = {
+			name = "Reform_13" 
+			position = {x=40 y=440}	
+			spriteType = "GFX_reform_13"
+			pdx_tooltip = "REP_REFORM_1"
+			pdx_tooltip_delayed = " REP_REFORM_2"
+		}
+        
+		buttonType = {
+			name = "Reform_14" 
+			position = {x=240 y=440}	
+			spriteType = "GFX_reform_14"
+			pdx_tooltip = "REP_REFORM_1"
+			pdx_tooltip_delayed = "REP_REFORM_1"
+		}
+
+		buttonType = {
+			name = "Reform_15" 
+			position = {x=440 y=440}	
+			spriteType = "GFX_reform_15"
+			pdx_tooltip = "REP_REFORM_1"
+			pdx_tooltip_delayed = "REP_REFORM_1"
+		}
+        
+		buttonType = {
+			name = "Reform_16" 
+			position = {x=640 y=440}	
+			spriteType = "GFX_reform_16"
+			pdx_tooltip = "REP_REFORM_1"
+			pdx_tooltip_delayed = "REP_REFORM_1"
+		}
+		instantTextboxType = {
+			name = "reform_1"
+			position = { x = 20 y = 8 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Soldier Boy"
+			maxWidth = 300
+			maxHeight = 100
+		}
+		buttonType = {
+			name = "close_button"
+			position = {x=755 y=10}
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+
+	containerWindowType = {
+		name = "republic_reform_button_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 255 height = 60 }
+		clipping = no
+
+		buttonType ={
+			name ="republic_reform_button"
+			spriteType = "GFX_dismantle_faction_button"
+			position = { x = 604 y = 45 }
+			shortcut = "ctrl+r"
+		}		
+	}
+}

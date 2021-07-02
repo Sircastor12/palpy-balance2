@@ -1,0 +1,400 @@
+ideas = {
+	country = {
+		FED_loan = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.5 
+			}
+		}
+		ibc_align_affiliated_manufacturers_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				fascism_acceptance = 50
+			}
+		}
+		rep_no_loans_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -1.0
+			}
+		}
+		rep_no_loans_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -1.0
+			}
+		}
+		rep_ibc_interest_idea_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = -0.2
+			}
+		}
+		ibc_debts_levied = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.2
+				fascism_drift = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ibc_align_affiliated_manufacturers_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.10
+				fascism_acceptance = 85
+			}
+		}
+		phlut_design_systems_seized_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		ibc_charging_republic_interest_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.4
+			}
+		}
+		ibc_neutral_zone_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.4
+				drift_defence_factor = 0.50
+				ai_join_ally_desire_factor = -100
+			}
+		}
+		ibc_neutral_zone_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.4
+				drift_defence_factor = 0.75
+				production_speed_buildings_factor = 0.1
+				industry_repair_factor = 0.5
+				war_support_weekly = -0.003
+				ai_join_ally_desire_factor = -100
+			}
+		}
+		ibc_loaning_to_both_sides_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 1.0
+			}
+		}
+		ibc_cis_army_leadership_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				planning_speed = 0.15
+				max_planning = 0.25
+			}
+		}
+		cis_funds_from_ibc = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.4
+			}
+		}
+		ibc_new_currencies_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.25
+				stability_weekly = 0.003
+				war_support_weekly = 0.003
+				consumer_goods_factor = -0.05
+			}
+		}
+		ibc_new_currencies_idea_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.5
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				consumer_goods_factor = -0.07
+			}
+		}
+		ibc_new_currencies_idea_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.65
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				consumer_goods_factor = -0.10
+			}
+		}
+		ibc_new_currencies_idea_4 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				political_power_gain = 0.75
+				stability_weekly = 0.006
+				war_support_weekly = 0.006
+				consumer_goods_factor = -0.10
+				max_command_power = 50
+			}
+		}
+		
+		Local_managment = {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+		modifier = {
+				production_speed_buildings_factor = 0.1
+			}	
+	}
+		central_managment = {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+		modifier = {
+		industrial_capacity_factory = 0.05
+			}	
+	}
+	 muun_officer_corps = {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+		modifier = {
+				army_org_factor = 0.05
+				army_core_defence_factor = 0.05
+			}	
+	}
+	igseries_battle_droid_army = {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+		modifier = {
+				army_attack_factor = 0.1
+				
+			}	
+	}
+	advanced_agility= {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			picture = trade_tax
+
+			modifier = {
+			navy_carrier_air_agility_factor = 0.05
+			air_strategic_bomber_agility_factor = 0.02
+			air_close_air_support_agility_factor = 0.02
+			air_air_superiority_agility_factor = 0.02
+			air_interception_agility_factor = 0.02
+			naval_strike_agility_factor = 0.02
+			}
+	}
+	 advanced_engines = {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+			
+			modifier = {
+				air_range_factor = 0.1
+			}
+	}
+	 carrier_mission = {
+		
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+
+			modifier = {
+				navy_carrier_air_attack_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.05
+
+			}
+	}
+	capital_mission = {
+
+		allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = trade_tax
+
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+			
+			}				
+		}
+	}
+}

@@ -1,0 +1,237 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+                set_variable = { secessionpoint = 0}
+                clamp_variable = {
+    				var = secessionpoint
+    				min = -7
+    				max = 7
+				}
+            }
+            REP = {
+                set_variable = { secessionpoint = -7}
+            }
+            OND = {
+                set_variable = { secessionpoint = -2 }
+            }
+            TEC = {
+                set_variable = { secessionpoint = 3}
+            }
+            CMG = {
+                set_variable = { secessionpoint = 3}
+            }
+            KUA = {
+                set_variable = { secessionpoint = -4}
+            }
+            ALD = {
+                set_variable = { secessionpoint = -3}
+            }
+            CAR = {
+                set_variable = { secessionpoint = -2}
+            }
+            REN = {
+                set_variable = { secessionpoint = -4}
+            }
+            PAN = {
+                set_variable = { secessionpoint = -2}
+            }
+            GEO = {
+                set_variable = { secessionpoint = 4}
+            }
+            ROT = {
+                set_variable = { secessionpoint = -3}
+            }
+            KAM = {
+                set_variable = { secessionpoint = -7}
+            }
+            JAB = {
+                set_variable = { secessionpoint = 0}
+            }
+            MAN = {
+                set_variable = { secessionpoint = -2}
+            }
+            IBC = {
+                set_variable = { secessionpoint = 1}
+            }
+            RYL = {
+                set_variable = { secessionpoint = -2}
+            }
+            KYK = {
+                set_variable = { secessionpoint = -4}
+            }
+            UMB = {
+                set_variable = { secessionpoint = -2}
+            }
+            NAB = {
+                set_variable = { secessionpoint = -4}
+            }
+            MAL = {
+                set_variable = { secessionpoint = -3}
+            }
+            CLA = {
+                set_variable = { secessionpoint = -4}
+            }
+            CHR = {
+                set_variable = { secessionpoint = -1}
+            }
+        }
+    }
+    on_daily = {
+        effect = {
+            every_country = {
+                #Join or leave REP
+                if = {
+                    limit = {
+                        has_government = democratic
+                        NOT = {
+                            is_in_faction_with = REP
+                            tag = CAL
+                        }
+                    }
+                    REP = {
+                        add_to_faction = PREV
+                    }
+                }
+                if = {
+                    limit = {
+                        has_government = democratic
+                        NOT = {
+                            has_idea = REP_member_prewar
+                            REP = {
+                                has_completed_focus = REP_battle_of_geonosis
+                            }
+                        }
+                    }
+                    add_ideas = {
+                        REP_member_prewar
+                    }
+                    remove_ideas = {
+                        CIS_member
+                        CIS_member_prewar
+                        REP_member
+                    }
+                }
+                if = {
+                    limit = {
+                        has_government = democratic
+                        REP = {
+                            has_completed_focus = REP_battle_of_geonosis
+                        }
+                        NOT = {
+                            has_idea = REP_member
+                        }
+                    }
+                    add_ideas = {
+                        REP_member
+                    }
+                    remove_ideas = {
+                        CIS_member
+                    }
+                }
+                if = {
+                    limit = {
+                        has_government = neutrality
+                    }
+                    remove_ideas = {
+                        CIS_member_prewar
+                        REP_member_prewar
+                        REP_member
+                        CIS_member
+                    }
+                }
+                if = {
+                    limit = {
+                        is_in_faction_with = REP
+                        NOT = {
+                            has_government = democratic
+                        }
+                    }
+                    REP = {
+                        remove_from_faction = PREV
+                    }
+                }
+                #Join or leave CIS
+                if = {
+                    limit = {
+                        has_government = fascism
+                        NOT = {
+                            is_in_faction_with = CIS
+                            tag = QUA
+                        }
+                    }
+                    CIS = {
+                        add_to_faction = PREV
+                    }
+                }
+                if = {
+                    limit = {
+                        has_government = fascism
+                        NOT = {
+                            has_idea = CIS_member_prewar
+                            REP = {
+                                has_completed_focus = REP_battle_of_geonosis
+                            }
+                        }
+                    }
+                    CIS = {
+                        add_to_faction = PREV
+                    }
+                    ROOT = {
+                        add_ideas = {
+                            CIS_member_prewar
+                        }
+                        remove_ideas = {
+                            REP_member_prewar
+                            REP_member
+                            CIS_member
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        has_government = fascism
+                        REP = {
+                            has_completed_focus = REP_battle_of_geonosis
+                        }
+                        NOT = {
+                            has_idea = CIS_member
+                        }
+                    }
+                    CIS = {
+                        add_to_faction = PREV
+                    }
+                    ROOT = {
+                        add_ideas = {
+                            CIS_member
+                        }
+                        remove_ideas = {
+                            REP_member
+                            REP_member_prewar
+                            CIS_member_prewar
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        is_in_faction_with = CIS
+                        NOT = {
+                            has_government = fascism
+                        }
+                    }
+                    leave_faction = yes
+                    ROOT = {
+                        remove_ideas = CIS_member
+                    }
+                }
+            }
+            clamp_variable = {
+            	var = secessionpoint
+            	min = -7
+            	max = 7
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,148 @@
+#add_namespace = galgames
+### 26 BBY/977 ATC
+## 
+#news_event = {
+#	id = galgames.1
+#	title = "The Galactic Games Are Coming!"
+#	desc = "Every 7 years the Galaxy comes together to celebrate The Galatic Games. During the Games, an athlte from each planet playes on their planet's team, competing in 20 different sponsored events. Only the galaxy's fastest and most skilled individuals compete at the Games in a variety of races and contests, all of them exciting and dangerous. This year the 5 time champion Maxo Vista will compete to bring glory to his homeworld of Euceron. "
+#	picture = GFX_shockball
+#	major = yes
+#    
+#    is_triggered_only = yes
+#    fire_only_once = no
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#		option = {
+#				   name = "This is where the fun begins!"
+#				   trigger = {
+#				  
+#
+#				   }	                   
+#			 }
+#		
+#        option = {
+#		   name = "Go team [Root.GetName]!"
+#		   trigger = {
+#		     NOT = {
+#				TAG = REP
+#				TAG = HUT
+#				TAG = TEC
+#				TAG = UNI
+#				TAG = VER
+#				TAG = ROC
+#				TAG = KAM
+#				TAG = UNI
+#				TAG = IBC
+#				TAG = FED
+#				TAG = CMG
+#			}
+#	    }	                   
+#     }
+#
+#     option = {
+#		   name = "A great opportunity to make some credits."
+#		   trigger = {
+#		   OR = { 
+#
+#		   TAG = HUT
+#		   TAG = FED
+#		   TAG = IBC
+#
+#		   }
+#
+#		   }	                   
+#     }
+#
+#     option = {
+#		   name = "We have this in the bag."
+#		   trigger = {
+#		   OR = {
+#		   TAG = SUL
+#		   TAG = NAB
+#		   TAG = ALD
+#		   TAG = CAL
+#		   TAG = CLA
+#		   TAG = ALD
+#		   TAG = DUR
+#             }
+#		   }	                   
+#     }
+#
+#     option = {
+#		   name = "Let the games begin!"
+#		   trigger = {
+#
+#		   TAG = REP
+#
+#		   }	                   
+#     }
+#	 
+#	 option = {
+#		   name = "All according to plan..."
+#		   trigger = {
+#
+#		   TAG = CMG
+#
+#		   }	                   
+#     }
+#
+#     option = {
+#		   name = "Let's hope this can act as a stabilising force for the galaxy."
+#		   trigger = {
+#		  OR = {
+#		   TAG = REP
+#          }
+#		}   	                   
+#     }
+#	 
+#
+#     option = {
+#		   name = "It will be interesting to see which nation wins."
+#		   trigger = {
+#		   OR = { 
+#				TAG = REP
+#				TAG = HUT
+#				TAG = TEC
+#				TAG = UNI
+#				TAG = VER
+#				TAG = POL
+#				TAG = ROC
+#				TAG = KAM
+#				TAG = UNI
+#				TAG = IBC
+#				TAG = FED
+#				}
+#
+#		   }	                   
+#     }
+#}
+#
+#news_event = {
+#	id = galgames.2
+#	title = "Explosion at the Galactic Games!"
+#	desc = "Horror struck at the Galactic Games when a podracer collided into the spectator-filled stands, taking many lives. While it remains unknown wether or not it was an accident, a plot by the republic, or a conspiracy by separatist, it is most definitely a tradegy. "
+#	picture = GFX_shockball
+#	major = yes
+#    
+#    is_triggered_only = yes
+#    fire_only_once = no
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#        option = {
+#		   name = "Oh, the humanity!"                   
+#     }
+#		 
+#		 option = {
+#			name = "The plan was a success"    
+#			trigger = {
+#			OR = { 
+#				TAG = CMG              
+#		 }
+#	 }
+#	}
+#}

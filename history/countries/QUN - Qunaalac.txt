@@ -1,0 +1,175 @@
+capital = 370
+
+oob = "HUT_3677"
+set_country_flag = no_ideas
+
+add_ideas = {
+	all_adults_serve
+	black_market_economy
+}
+
+set_technology = {
+	tech_support = 1
+	militia_HUT = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1933.7.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 100
+		neutrality = 0
+		fascism = 0
+	}
+	
+	give_military_access = KES
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1933.7.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 100
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+set_convoys = 10
+
+set_popularities = {
+        democratic = 0
+        communism = 100
+        fascism = 0
+        neutrality = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Marlo"
+	desc = "Marlo"
+	picture = "gfx/leaders/QUN/Marlo.dds"
+	expire = "2020.1.1"
+	ideology = marxism
+}
+
+
+create_field_marshal = {
+	name = "Gorga Desilijic Aarrpo"
+	picture = "Gorga.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Bib Fortuna"
+	portrait_path = "gfx/leaders/JHT/BibFortuna.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Barada"
+	portrait_path = "gfx/leaders/JHT/Barada.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ghana"
+	portrait_path = "gfx/leaders/JHT/Ghana.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tessek"
+	portrait_path = "gfx/leaders/JHT/Tessek.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vizam"
+	portrait_path = "gfx/leaders/JHT/Vizam.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_navy_leader = {
+	name = "4-LOM"
+    picture = "lom.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Joltag Pann"
+    picture = "JoltagPann.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Udil Kun"
+    picture = "UdilKun.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

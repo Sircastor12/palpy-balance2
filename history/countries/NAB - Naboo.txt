@@ -1,0 +1,161 @@
+﻿capital = 388
+
+oob = "NAB_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .40
+
+set_technology = {
+	tech_support = 1
+	militia_NAB = 1
+	transport = 1
+	flash_speeder_tech = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	volunteer_only
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Padmé Amidala" ##She has lost the will to live
+	desc = "Queen of Naboo"
+	picture = "gfx/leaders/NAB/Queenpadme.dds"
+	expire = "2020.1.1"
+	ideology = liberalism
+}
+
+create_corps_commander = {
+	name = "Nathaniel Camaran"
+	portrait_path = "gfx/leaders/NAB/NathanielCamaran.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gregar Typho"
+	portrait_path = "gfx/leaders/NAB/GregarTypho.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tobias Pall"
+	portrait_path = "gfx/leaders/NAB/TobiasPall.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Quarsh Panaka"
+	portrait_path = "gfx/leaders/NAB/QuarshPanaka.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jerus Jannick"
+	portrait_path = "gfx/leaders/NAB/JerusJannick.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Danzal Galak Sr"
+	portrait_path = "gfx/leaders/NAB/DanzalGalakSr.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Gavyn Sykes"
+    picture = "GavynSykes.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+#hods a buncha wankies
+create_navy_leader = {
+	name = "Dinee Ellberger"
+    picture = "DineeEllberger.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Ric Olie"
+    picture = "RicOlie.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

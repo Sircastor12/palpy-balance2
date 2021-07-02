@@ -1,0 +1,41 @@
+state={
+	id=4
+	name="STATE_4"
+	provinces={
+		747 2367 3291 4626 5291 5292 5295 5297 5298 5301 5303 5309 5310 5314 5318 5324 
+	}
+	manpower=714285
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IBC
+		add_core_of = IBC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,41 @@
+state={
+	id=98
+	name="STATE_98"
+	provinces={
+		1 283 490 732 1545 1917 2819 2831 2974 3035 3425 3646 4255 4722 5418 5421 5422 5427 5429 5434 5437 5438 5444 5448 5454 5455 5458 5460 
+	}
+	manpower=714285
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=6
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=IBC
+		add_core_of = IBC
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

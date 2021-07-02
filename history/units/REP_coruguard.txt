@@ -1,0 +1,83 @@
+﻿division_template = {
+	name = "Coruscant Guard Division"
+	is_locked = yes
+
+	regiments = {
+		REP_cguard_clone = { x = 0 y = 0 }
+		REP_cguard_clone = { x = 0 y = 1 }
+		REP_cguard_clone = { x = 0 y = 2 }
+		REP_cguard_clone = { x = 0 y = 3 }
+   		REP_cguard_clone = { x = 1 y = 0 }
+		REP_cguard_clone = { x = 1 y = 1 }
+		REP_cguard_clone = { x = 1 y = 2 }
+  		REP_cguard_clone = { x = 2 y = 0 }
+		REP_cguard_clone = { x = 2 y = 1 }
+		REP_cguard_clone = { x = 2 y = 2 }
+	}
+	support = {
+		clone_dog_massif = { x = 0 y = 0 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Coruscant Guard Fox Company" 
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Thire Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Stone Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Thorn Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Hound Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Devito Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Sunny Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Coruscant Guard Coke Company"
+		location = 10463 #Kamino
+		division_template = "Coruscant Guard Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

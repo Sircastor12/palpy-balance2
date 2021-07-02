@@ -1,0 +1,19 @@
+defined_text = {
+	name = Get_mission_loc
+	text = {
+		trigger = {
+			has_country_flag = attack_mission_clicked
+			tag = CIS
+			has_country_flag = international_mission_issued
+		}
+		localization_key = "invasion_button_cis_desc"
+	}
+	text = {
+		trigger = {
+			has_country_flag = attack_mission_clicked
+			tag = REP
+			has_country_flag = international_mission_issued
+		}
+		localization_key = "invasion_button_rep_desc"
+	}
+}

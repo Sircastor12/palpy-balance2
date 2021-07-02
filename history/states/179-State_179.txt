@@ -1,0 +1,41 @@
+state={
+	id=179
+	name="STATE_179"
+	provinces={
+		247 281 935 1612 1700 2225 2497 4105 4836 4847 6629 6638 6644 6648 6649 6655 6658 6670 6695 
+	}
+	manpower=6166666
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=TAR
+		add_core_of = TAR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			6670 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

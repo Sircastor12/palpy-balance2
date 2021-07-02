@@ -1,0 +1,231 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_followersofta"
+		texturefile = "gfx/interface/ideas/followersofta.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_neutral_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_export_focus.dds"
+	}
+###CIS ideas###
+	spriteType = {
+		name = "GFX_idea_CIS_member"
+		texturefile = "gfx/interface/ideas/CIS_member.dds"
+	}
+####Republic ideas###
+	
+	spriteType = {
+		name = "GFX_idea_sith_order"
+		texturefile = "gfx/interface/ideas/idea_sith_order.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_jedi_order"
+		texturefile = "gfx/interface/ideas/idea_jedi_order.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_human_leaders"
+		texturefile = "gfx/interface/ideas/idea_human_leaders.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_jedi_question"
+		texturefile = "gfx/interface/ideas/idea_jedi_question.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_looming_enemy"
+		texturefile = "gfx/interface/ideas/idea_looming_enemy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_clone_reliance"
+		texturefile = "gfx/interface/ideas/idea_clone_reliance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cloning_facilities"
+		texturefile = "gfx/interface/ideas/cloning_facilities.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_internal_corruption" 
+		texturefile = "gfx/interface/ideas/idea_internal_corruption.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_core_world_markets"
+		texturefile = "gfx/interface/ideas/idea_core_world_markets.dds"
+	}
+###Neutral Ideas icons####
+	spriteType = {
+		name = "GFX_idea_neutral_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_export_focus.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_NET_fortify_the_borders"
+		texturefile = "gfx/interface/ideas/idea_generic_fortify_the_borders.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NET_democratic_influence"
+		texturefile = "gfx/interface/ideas/idea_republic_alignment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NET_trade_opinions"
+		texturefile = "gfx/interface/ideas/idea_trade_factor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NET_fascist_influence"
+		texturefile = "gfx/interface/ideas/idea_separatist_alignment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NET_dooku_opinion"
+		texturefile = "gfx/interface/ideas/idea_chi_war_of_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_net_tf_investors"
+		texturefile = "gfx/interface/ideas/idea_net_tf_investors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NET_republic_investor"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_REP_member"
+		texturefile = "gfx/interface/ideas/REP_member.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NET_neutral_focus"
+		texturefile = "gfx/interface/ideas/idea_neutral_alignment.dds"
+	}
+	spriteType = {	
+		name = "GFX_idea_NET_volunters_send"
+		texturefile = "gfx/interface/ideas/idea_net_volunteers_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_net_organa"
+		texturefile = "gfx/interface/ideas/idea_net_organa.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_net_naboo_house"
+		texturefile = "gfx/interface/ideas/idea_net_naboo_house.dds"
+	}		
+
+##Trade Federation##
+	spriteType = {
+		name = "GFX_idea_trade_tax"
+		texturefile = "gfx/interface/ideas/idea_core_world_markets.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_corporate_leadership"
+		texturefile = "gfx/interface/ideas/idea_internal_corruption.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pirate_raids"
+		texturefile = "gfx/interface/ideas/idea_pirate_raids.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ruusan_nerf_nav" 
+		texturefile = "gfx/interface/ideas/idea_ruusan_nerf_nav.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ruusan_nerf_army"
+		texturefile = "gfx/interface/ideas/idea_ruusan_nerf_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sith_backing"
+		texturefile = "gfx/interface/ideas/sith.dds"
+	}
+
+	##Council of Neutral Systems##
+	spriteType = {
+		name = "councilofneutralsystemsmember"
+		texturefile = "gfx/interface/ideas/councilofneutralsystems.dds"
+	}
+	##Mandalore##
+	spriteType = {
+		name = "GFX_idea_mandalore_manpower"
+		texturefile = "gfx/interface/ideas/idea_mandalore_manpower.dds"
+	}
+	### CONSCRIPTION LAWS
+	spriteType = {
+		name = "GFX_idea_disarmed_nation"
+		texturefile = "gfx/interface/ideas/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_only"
+		texturefile = "gfx/interface/ideas/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_conscription"
+		texturefile = "gfx/interface/ideas/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_extensive_conscription"
+		texturefile = "gfx/interface/ideas/idea_extensive_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_service_by_requirement"
+		texturefile = "gfx/interface/ideas/idea_service_by_requirement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_all_adults_serve"
+		texturefile = "gfx/interface/ideas/idea_all_adults_serve.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scraping_the_barrel"
+		texturefile = "gfx/interface/ideas/idea_scraping_the_barrel.dds"
+	}
+	
+	### ECONOMY LAWS
+	spriteType = {
+		name = "GFX_idea_undisturbed_isolation"
+		texturefile = "gfx/interface/ideas/idea_undisturbed_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_isolation"
+		texturefile = "gfx/interface/ideas/idea_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_civilian_economy"
+		texturefile = "gfx/interface/ideas/idea_civilian_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_low_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/idea_low_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_partial_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/idea_partial_economic_mobilisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_war_economy"
+		texturefile = "gfx/interface/ideas/idea_war_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tot_economic_mobilisation"
+		texturefile = "gfx/interface/ideas/idea_tot_economic_mobilisation.dds"
+	}
+	### GENERIC economic ideas
+
+	spriteType = {
+		name = "GFX_idea_closed_economy"
+		texturefile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_limited_exports"
+		texturefile = "gfx/interface/ideas/idea_generic_limited_exports.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_idea_free_trade"
+		texturefile = "gfx/interface/ideas/idea_generic_free_trade.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_export_focus"
+		texturefile = "gfx/interface/ideas/idea_generic_export_focus.dds"
+	}	
+	
+}

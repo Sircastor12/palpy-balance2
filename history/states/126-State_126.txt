@@ -1,0 +1,41 @@
+state={
+	id=126
+	name="STATE_126"
+	provinces={
+		461 606 2314 2477 2685 2740 2869 2979 4774 4822 5839 5843 5852 5855 5891 5914 
+	}
+	manpower=115000
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=10
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=HON
+		add_core_of = HON
+
+		buildings = {
+			infrastructure=2
+			arms_factory=1
+			industrial_complex=1
+			dockyard=1
+			air_base=0
+
+			5843 = {
+				naval_base = 2
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

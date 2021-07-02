@@ -1,0 +1,149 @@
+﻿capital = 154
+
+oob = "CMG_3677"
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 35
+set_rule = { can_create_factions = yes }
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	flash_speeder_tech = 1
+	infantry_weapons = 1
+}
+
+
+add_ideas = { 
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	extensive_conscription 
+}
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 0
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+
+	oob = "CMG_3687"
+
+	set_technology = {
+		tech_support = 1
+		transport = 1
+		flash_speeder_tech = 1
+		cis_tank_2 = 1
+		dsd1_tech = 1
+		battle_droid_2 = 1
+	}
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 0
+		fascism = 100
+	}
+}
+
+create_country_leader = {
+	name = "Shu Mai"
+	desc = "Presidente of the Commerce Guild"
+	picture = "gfx/leaders/CMG/ShuMai.dds"
+	expire = "4000.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Shu Mai"
+	desc = "Presidente of the Commerce Guild"
+	picture = "gfx/leaders/CMG/ShuMai.dds"
+	expire = "4000.1.1"
+	ideology = conservatism
+}
+
+
+create_corps_commander = {
+	name = "Jenna Zan Arbor"
+	portrait_path = "gfx/leaders/CMG/JennaZanArbor.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "An Sovv"
+	portrait_path = "gfx/leaders/CMG/AnSovv.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Cuto hao"
+	portrait_path = "gfx/leaders/CMG/Cutohao.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Schal Noah"
+	portrait_path = "gfx/leaders/CMG/Schalnoah.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Dua Ningo"
+    picture = "duaningo.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Kaiusar"
+    picture = "kaiusar.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

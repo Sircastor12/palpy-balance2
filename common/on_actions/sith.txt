@@ -1,0 +1,22 @@
+on_actions = {
+    on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = apprentice_start
+				}
+				add_to_variable = { apprentice_progress = 1 }
+			}
+			if = {
+				limit = {
+					has_country_flag = apprentice_start
+					check_variable = { apprentice_progress > 99 }
+				}
+				clr_country_flag = apprentice_start
+				set_variable = { apprentice_progress = 0 }
+				add_to_variable = { apprentice = 1 }
+				apprentice_making_sith = yes
+			}
+		}
+	}
+}

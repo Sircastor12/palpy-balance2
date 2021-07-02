@@ -1,0 +1,229 @@
+scripted_gui = {
+	open_jedi_window = {
+		context_type = player_context
+		
+		window_name = "open_jedi_window"
+		parent_window_name = countrypoliticsview
+		
+		visible = {
+			tag = REP
+			always = no
+		}
+		effects = {
+			open_jedi_button_click = {
+				if = {
+					limit = {
+						has_country_flag = jedi_open
+					}
+					clr_country_flag = jedi_open
+				}
+				else = {
+					set_country_flag = jedi_open
+				}
+			}
+		}
+		properties = {
+			senateparties = { image = "[Getsenateparty]" }
+		}
+    }
+	jedi_window = {
+		context_type = player_context
+		window_name = "jedi_window"
+		
+		visible = {
+			has_country_flag = jedi_open
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = jedi_open
+				}
+				open_1_button_jedi_click = {
+					if = {
+						limit = {
+							has_country_flag = available_jedi_click
+						}
+						clr_country_flag = available_jedi_click
+					}
+					else = {
+						set_country_flag = available_jedi_click
+						set_variable = { selected_button = 1 }
+					}
+				}
+				open_2_button_jedi_click = {
+					if = {
+						limit = {
+							has_country_flag = available_jedi_click
+						}
+						clr_country_flag = available_jedi_click
+					}
+					else = {
+						set_country_flag = available_jedi_click
+						set_variable = { selected_button = 2 }
+					}
+				}
+				open_3_button_jedi_click = {
+					if = {
+						limit = {
+							has_country_flag = available_jedi_click
+						}
+						clr_country_flag = available_jedi_click
+					}
+					else = {
+						set_country_flag = available_jedi_click
+						set_variable = { selected_button = 3 }
+					}
+				}
+				open_4_button_jedi_click = {
+					if = {
+						limit = {
+							has_country_flag = available_jedi_click
+						}
+						clr_country_flag = available_jedi_click
+					}
+					else = {
+						set_country_flag = available_jedi_click
+						set_variable = { selected_button = 4 }
+					}
+				}
+				open_5_button_jedi_click = {
+					if = {
+						limit = {
+							has_country_flag = available_jedi_click
+						}
+						clr_country_flag = available_jedi_click
+					}
+					else = {
+						set_country_flag = available_jedi_click
+						set_variable = { selected_button = 5 }
+					}
+				}
+				open_6_button_jedi_click = {
+					if = {
+						limit = {
+							has_country_flag = available_jedi_click
+						}
+						clr_country_flag = available_jedi_click
+					}
+					else = {
+						set_country_flag = available_jedi_click
+						set_variable = { selected_button = 6 }
+					}
+				}
+			}
+		triggers = {
+			open_1_button_jedi_visible = {
+				NOT = {
+					has_variable = seat_1
+				}
+			}
+			open_2_button_jedi_visible = {
+				NOT = {
+					has_variable = seat_2
+				}
+			}
+			open_3_button_jedi_visible = {
+				NOT = {
+					has_variable = seat_3
+				}
+			}
+			open_4_button_jedi_visible = {
+				NOT = {
+					has_variable = seat_4
+				}
+			}
+			open_5_button_jedi_visible = {
+				NOT = {
+					has_variable = seat_5
+				}
+			}
+			open_6_button_jedi_visible = {
+				NOT = {
+					has_variable = seat_6
+				}
+			}
+		}
+		dynamic_lists = {
+			jedi_grid = {
+				array = available_jedi
+				entry_container = jedi_entry
+				change_scope = yes
+			}
+		}
+	}
+	jedi_container = {
+		context_type = player_context
+		
+		window_name = "jedi_container"
+
+		visible = {
+			has_country_flag = available_jedi_click
+		}
+
+		effects = {
+			jedi_button_select_click = {
+				ROOT = {
+					set_temp_variable = { temp_id = PREV.id }
+					add_to_temp_variable = { temp_id = 1073741.824 }
+					multiply_temp_variable = { temp_id = 1000 }
+					if = {
+						limit = {
+							check_variable = { selected_button = 1 }
+						}
+						set_variable = { seat_1 = temp_id }
+						remove_from_array = { available_jedi_array = temp_id }
+						clr_country_flag = available_jedi_click
+					}
+					else_if = {
+						limit = {
+							check_variable = { selected_button = 2 }
+						}
+						set_variable = { seat_2 = temp_id }
+						remove_from_array = { available_jedi_array = temp_id }
+						clr_country_flag = available_jedi_click
+					}
+					else_if = {
+						limit = {
+							check_variable = { selected_button = 3 }
+						}
+						set_variable = { seat_3 = temp_id }
+						remove_from_array = { available_jedi_array = temp_id }
+						clr_country_flag = available_jedi_click
+					}
+					else_if = {
+						limit = {
+							check_variable = { selected_button = 4 }
+						}
+						set_variable = { seat_4 = temp_id }
+						remove_from_array = { available_jedi_array = temp_id }
+						clr_country_flag = available_jedi_click
+					}
+					else_if = {
+						limit = {
+							check_variable = { selected_button = 5 }
+						}
+						set_variable = { seat_5 = temp_id }
+						remove_from_array = { available_jedi_array = temp_id }
+						clr_country_flag = available_jedi_click
+					}
+					else_if = {
+						limit = {
+							check_variable = { selected_button = 6 }
+						}
+						set_variable = { seat_6 = temp_id }
+						remove_from_array = { available_jedi_array = temp_id }
+						clr_country_flag = available_jedi_click
+					}
+				}
+			}
+		}
+
+		dynamic_lists = {
+			jedi_grid = {
+				array = available_jedi_array 
+				entry_container = jedi_entry
+				change_scope = yes
+			}
+		}
+	}
+}

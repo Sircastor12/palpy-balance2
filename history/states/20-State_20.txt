@@ -1,0 +1,45 @@
+state={
+	id=20
+	name="STATE_20"
+	provinces={
+		240 743 1126 1744 2257 2618 2828 3016 3641 3802 4264 6635 6636 6640 6646 6653 6660 
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=5
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ALD
+		add_core_of = ALD
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=1
+			air_base=0
+
+			6646 = {
+				naval_base = 1
+			}
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

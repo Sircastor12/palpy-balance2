@@ -1,0 +1,300 @@
+############################
+## Shadow Collective
+############################
+
+add_namespace = SHA
+
+
+
+news_event = { #The Pykes
+	id = SHA.1
+	title =  "The Pyke Syndicate"
+	desc =  "The Pyke Syndicate has come to us offering to join our alliance of syndicates"
+	picture = GFX_pykeshadow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #Reunite
+		name =  "The more we have the easier the plan will be" 
+		41 = {
+			if = {
+				limit = { is_owned_by = KES }
+				add_core_of = DEA
+			}
+		}
+		46 = {
+			if = {
+				limit = { is_owned_by = KES }
+				add_core_of = DEA
+			}
+		}
+		DEA = {
+			annex_country = { target = KES transfer_troops = yes }
+		}
+	}
+}
+
+news_event = { #The Hutts
+	id = SHA.2
+	title =  "The Hutts"
+	desc =  "The Hutts are a proud people who have maintained control of a vast amount of the galaxy. They control many important shipping lanes that would be useful for us"
+	picture = GFX_huttshadow1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #
+		name =  "They will also fall" 
+		    HUT = {
+			    news_event = { id = SHA.3 days = 4 }
+	}
+	}
+}
+news_event = { 
+	id = SHA.3
+	title =  "The Shadow Collective Demands our Annexation"
+	desc =  "The Shadow Collective a large group of criminals lead by Maul a former Sith has come to us demanding our annexation."
+	picture = GFX_huttshadow1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "We Shall Submit" 
+		53 = {
+			if = {
+				limit = { is_owned_by = HUT }
+				add_core_of = DEA
+			}
+		}
+		DEA = {
+			annex_country = { target = HUT transfer_troops = yes }
+		}
+	}
+	
+	option = { #Welcome the exiles
+		name =  "We will fight"
+
+		    DEA = {
+			    news_event = { id = SHA.4 days = 4 }
+		}
+	}
+}
+
+news_event = { #The Hutts
+	id = SHA.4
+	title =  "The Hutts Refuse"
+	desc =  "The Hutts have refused to submit to us and would rather die than become our subjects"
+	picture = GFX_huttshadow1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #Turned away exiles
+		name =  "Then we shall force them into submition" 
+
+		create_wargoal = {
+			type = take_state_focus
+			target = HUT
+			generator = { 53 }
+		}
+	}
+}
+
+news_event = { #The Black Sun
+	id = SHA.5
+	title =  "The Black Sun"
+	desc =  "The Black Sun are a strong organization. With some persuasion we can most likely sway them to our cause"
+	picture = GFX_blacksunshadow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #Reunite
+		name =  "They will join us or they will suffer" 
+		hidden_effect = {
+		    DEA = {
+			    news_event = { id = SHA.6 days = 4 } #Black Sun Refused
+		    }
+		}
+	}
+}
+news_event = { #The Black Sun
+	id = SHA.6
+	title =  "The New Lord in the Sun"
+	desc =  "The Black Sun needed to be persuaded by force however their new leader is much more cooperative. He will make a fine general in our armies"
+	picture = GFX_blacksunshadow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #Reunite
+		name =  "Another one joins the fold" 
+		79 = {
+			if = {
+				limit = { is_owned_by = BLA }
+				add_core_of = DEA
+			}
+		}
+		DEA = {
+			annex_country = { target = BLA transfer_troops = yes }
+		}
+	}
+}
+
+news_event = { #The Crimson Dawn
+	id = SHA.7
+	title =  "The Crimson Dawn"
+	desc =  "The Crimson Dawn have been impressed by our strength and the power of our syndicate. They have offered to join us in order to obtain a higher amount of prestige and wealth"
+	picture = GFX_galidraanbattle
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "More bodys for our army" 
+		create_corps_commander = {
+			name = "Dryden Vos"
+			portrait_path = "gfx/leaders/SHA/Dryden Vos.dds"
+			traits = { trait_reckless, inflexible_strategist }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			}
+		}
+	}
+
+news_event = { #Ohnaka's Gang
+	id = SHA.8
+	title =  "Ohnaka's Gang"
+	desc =  "Ohnaka's Gang brought us to their planet in order to discuss the submission of their gang into our collective"
+	picture = GFX_ohnakashadow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #
+		name =  "We shall see what comes of this" 
+		hidden_effect = {
+		    if = {
+				limit = {
+					DEA = {
+						has_country_flag = hondo_good
+					}
+				}
+				DEA = {
+					news_event = { id = SHA.9 days = 4 } #Ohnaka accepts		   			
+				}
+			}
+			else = {
+				DEA = {
+					news_event = { id = SHA.10 days = 4} #Ohnaka Refused
+				}
+			}
+		}
+	}
+}
+
+news_event = { #Ohnaka Refuses
+	id = SHA.9
+	title =  "Hondo Refuses"
+	desc =  "Hondo feels so proud by his troops mutinying but yet so betrayed and decided to fight alongside Jedi who arrived to attack Maul"
+	picture = GFX_ohnakashadow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "They shall all pay" 
+
+		}
+	}
+
+news_event = { #Ohnaka Agrees
+	id = SHA.10
+	title =  "Hondo Agrees"
+	desc =  "With the promise of mass amounts of wealth and relative autonamy Hondo has agreed to join in the Shadow collective as a kind of associate"
+	picture = GFX_ohnakashadow
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "This shall suit us nicely" 
+		}
+	}
+news_event = { #Invasion
+	id = SHA.11
+	title =  "Preparations for the Invasion"
+	desc =  "The plan is almost ready to be set in motion. Soon Mandalore will once again be in control of people who respect their old traditions"
+	picture = GFX_shadowprep
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "Lets hope this works" 
+		hidden_effect = {
+		    DEA = {
+			    news_event = { id = SHA.12 days = 12 } 
+		    }
+		}
+		}
+	}
+news_event = { #Criminals
+	id = SHA.12
+	title =  "Send in the Criminals"
+	desc =  "It is time to send in the criminals to cause chaos within Mandalore. All the criminal organizations have been ordered to strike different parts of the city"
+	picture = GFX_shadowcriminals
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "Their defences shall be overwhelmed" 
+		set_country_flag = criminals_on_mandalore
+		}
+	}
+news_event = { #
+	id = SHA.13
+	title =  "Mandalore is Saved"
+	desc =  "The Mandelorian defences were quickly overwhelmed letting deathwatch take control of the planet. The people of Mandalore welcomed their new overlords with open arms"
+	picture = GFX_shadowsave
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "Now for the final stage" 
+		hidden_effect = {
+		14 = {
+			if = {
+				limit = { is_owned_by = MAN }
+				add_core_of = DEA
+			}
+		}
+				DEA = {
+					annex_country = { target = MAN transfer_troops = no }
+				}
+			}
+		}
+	}
+news_event = { 
+	id = SHA.14
+	title =  "The Duel"
+	desc =  "After being imprisoned by Pre Vizla, Maul decided to challenge him to a duel. Although Pre Vizla put up a fight he was defeated and killed by Maul making him the leader of Mandalore. Although not everyone is happy to hear this"
+	picture = GFX_shadowduel
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { 
+		name =  "This rebellion shall be crushed" 
+		add_ideas = SHA_night_owl
+		set_major = yes
+		remove_ideas = SHA_split_power
+		}
+	}

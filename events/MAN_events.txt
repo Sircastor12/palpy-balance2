@@ -1,0 +1,499 @@
+############################
+## Mandalore Black Market Crisis Event Chain
+############################
+
+
+add_namespace = bmc
+add_namespace = mcv
+add_namespace = exi
+add_namespace = con
+
+
+
+news_event = { #Crisis on Mandalore
+	id = bmc.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.1"}
+	title =  "Crisis on Mandalore"
+	desc =  "Mandalore has been in a crisis for a long time due to this war. The need for supplies on the planet has caused Black markets to open on mandalore in order to meet the necessitys of the people"
+	picture = GFX_bmc2
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  "Crisis On Mandalore"
+		add_political_power = -50
+		add_stability = -0.10	
+		
+		hidden_effect = {
+		    MAN = {
+				news_event = {
+					id = bmc.2 
+					days = 4 
+				} #Padmé Amidala is invited to come to Mandalore
+		    }
+		}
+	}
+}
+
+news_event = { #Padmé's visit
+	id = bmc.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.2"}
+	title =  "Padme comes to Mandalore"
+	desc =  "Padme has come to visit Mandalore. Her visit is welcoming for the people letting them know the senate has not forgotten them. She is also a close confidont of Satine"
+	picture = GFX_bmc1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  "A suprise to be sure, but a welcome one"
+		add_stability = 0.05
+
+	    hidden_effect = {
+		    MAN = {
+			    news_event = { id = bmc.3 days = 4 } #Visit at the hospital
+		    }
+		}
+	}
+}
+
+news_event = { #Poisoning 
+	id = bmc.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.3"}
+	title =  "Poisoning at the hosptial"
+	desc =  "During a visit to a local hospital it was discovered that many children have been found poisoned. The cause for the poisoning is yet to be determined"
+	picture = GFX_bmc3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  "We must discover the cause of this"
+        Add_manpower = -500 #Deaths or Sickness due to poisoning
+	
+	    hidden_effect = {
+		    MAN = {
+			    news_event = { id = bmc.4 days = 4 } #Investigation launched
+		    }
+		}
+	}
+}
+
+news_event = { #Investigation 
+	id = bmc.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.4"}
+	title =  "The Investigation"
+	desc =  "When investigating the issue it was discovered that the drinks that the children had contained an ingredient that if used to an excess cause poisoning. It was also discovered that these shipments were coming in through the docks"
+	picture = GFX_bmc4
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  "We must shut down this operation immidiately!"
+
+	    hidden_effect = {
+		    MAN = {
+			    news_event = { id = bmc.5 days = 4 } #Dockyard Police raid 
+		    }
+		}
+	}
+}
+
+news_event = { #Dockyard police raid 
+	id = bmc.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.5"}
+	title =  "The Raid"
+	desc =  "Satine and Padme went to the docks with some royal guard and the police chief to find some payed off policemen and a smuggling operation. A firefight began between the smugglers and Satine's retinue resulting in the criminals being arrested"
+	picture = GFX_bmc5
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Smuggling operation is such down
+		name =  "I wonder what other black market dealings are going on here" 
+		add_stability = 0.1
+		}
+	}
+
+#####################
+###Event Chain 2#####
+#####################
+
+news_event = { #Tano comes to Mandalore to teach the Cadets
+	id = bmc.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.6"}
+	title =  "The Arrival of Ashoka Tano"
+	desc =  "Under the invitation of Satine Padawan Ahsokha Tano has arrived in order to teach the youth of mandalore about the threat of corruption to society"
+	picture = GFX_bmc6
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = "Interesting" 
+		add_stability = 0.03
+	    hidden_effect = {
+		    MAN = {
+			    news_event = { id = bmc.7 days = 4 } 
+		    }
+		}
+	}
+}
+
+news_event = { #Mandalore's prime minister's secret gets discovered 
+	id = bmc.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.7"}
+	title =  "The Prime Minister"
+	desc =  "Although Almec has proven to be a good prime minister in the past it has been discovered by Ashoka and a few of her students that Almec is behind the Black Markets dealings on Mandalore!"
+	picture = GFX_bmc7
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = "Something must be done" 
+	    hidden_effect = {
+		    MAN = {
+			    news_event = { id = bmc.8 days = 4 }
+		    }
+		}
+	}
+}
+
+news_event = { #Almec attempts a coup d'état and Satine is jailed
+	id = bmc.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.7"}
+	title =  "The Coup"
+	desc =  "Ashoka and the students arrived at Satines home to find her guards killed and her gone. Almec currently has her jailed and is attempting a coup. What will come of this?"
+	picture = GFX_bmc8
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name =  "Only time will tell" 
+
+	    hidden_effect = {
+		    MAN = {
+			    news_event = { id = bmc.9 days = 4 }
+		    }
+		}
+	}
+}
+
+news_event = { #Almec attempts a coup d'état and Satine is jailed
+	id = bmc.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.7"}
+	title =  "Ashoka's plan"
+	desc =  "Ashoka has devised a plan in order to rescue Satine and to restore power back to her and immidiately stop the coup. Her and the rest of the students are brought in a room where Satine is imprisoned as a part of the plan"
+	picture = GFX_bmc9
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Ashoka's Plan succeeds and Almec is Imprisoned
+		name =  "Ashoka's plan succeeds" 
+
+	    set_country_flag = ALMEC_IS_EMPRISONED
+		ai_chance = {
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				add = 100
+			}
+		}
+	}
+	
+	option = { #Ashoka's Plan fails and she, along with the Cadets and Satine are Imprisoned
+		name =  "Ashoka's plan fails"
+		
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.50
+		}
+		set_country_flag = ALMEC_IS_IN_POWER
+		ai_chance = {
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				add = -200
+			}
+		}
+	}
+}
+
+news_event = { #Crisis on Mandalore
+	id = mcv.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.1"}
+	title =  "Test civil war"
+	desc =  "Civil war"
+	picture = GFX_galidraanbattle
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #
+		name =  "Only time will tell" 
+
+		hidden_effect = {
+		    MAN = {
+			    set_country_flag = MAN_spanish_elections_flag
+		    }
+		}
+	}
+}
+
+news_event = { #Crisis on Mandalore
+	id = mcv.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.1"}
+	title =  "Test civil war"
+	desc =  "Civil war"
+	picture = GFX_galidraanbattle
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #
+		name =  "Only time will tell" 
+
+		    }
+		}
+
+news_event = { #Exiles
+	id = exi.1
+	title =  "The Exiles"
+	desc =  "Many exiled warriors have expressed interest in returning to Mandalore. They want to see their homes and familys once again."
+	picture = GFX_galidraanbattle
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #Turned away exiles
+		name =  "Turn away the exiles" 
+		add_stability = 0.05
+	    set_country_flag = EXILES_TURNED_AWAY
+	}
+	
+	option = { #Welcome the exiles
+		name =  "Let us welcome the exiles back into our peaceful society"
+
+		add_stability = -0.05
+		add_war_support = 0.05
+		set_country_flag = EXILES_WELCOMED	
+	}
+		
+
+	option = { #The exiles are recruited
+		name =  "We should recruit these exiles into our defense force" 
+		
+		add_stability = -0.15
+		custom_effect_tooltip = exiles_recruited_tt
+		set_country_flag = EXILES_RECRUITED
+		hidden_effect = { load_oob = exiles }
+
+	}
+} 
+
+news_event = { #The Exiles of Concordia
+	id = con.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.7"}
+	title =  "The Exiles of Concordia"
+	desc =  "The exiles of concordia have long been a splinter group of terrorists. They must be taught a lesson in order to end these constant attacks"
+	picture = GFX_bmc8
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Turned away exiles
+		name =  "End the Insurgency" 
+
+		create_wargoal = {
+			type = take_state_focus
+			target = DEA
+			generator = { 18 }
+		}
+	    set_country_flag = CONCORDIA_EXILES_AGGRO
+
+	}
+	
+	option = { #Welcome the exiles
+		name =  "Let us try to peacefully bring them in"
+		    DEA = {
+			    news_event = { id = con.2 days = 4 }
+		set_country_flag = CONCORDIA_EXILES_WELCOMED	
+		}
+	}
+}
+
+news_event = { #Concordia Question
+	id = con.2
+	title =  "Mandalore Offers Confederation"
+	desc =  "Mandalore has offered confederation due to their return to a more militaristic society."
+	picture = GFX_galidraanbattle
+
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	option = { #Reunite
+		name =  "Let us re unite with our fellow warrior breatheren" 
+		add_stability = 0.05
+		13 = {
+			if = {
+				limit = { is_owned_by = DEA }
+				add_core_of = MAN
+			}
+		}
+		MAN = {
+			annex_country = { target = DEA transfer_troops = yes }
+		}
+	}
+	
+	option = { #Welcome the exiles
+		name =  "The only thing they will unite with is death"
+
+		    MAN = {
+			    news_event = { id = con.3 days = 4 }
+		}
+	}
+}
+
+news_event = { #The Exiles of Concordia
+	id = con.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event  bmc.7"}
+	title =  "Concordia refuses"
+	desc =  "Concordia refused to be integrated by us and therefore has chosen the option of war"
+	picture = GFX_bmc8
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Turned away exiles
+		name =  "Time to put an end to this insurgency" 
+
+		create_wargoal = {
+			type = take_state_focus
+			target = DEA
+			generator = { 13 }
+		}
+
+	}
+}
+
+news_event = {
+	id = con.4
+	title = "A Peach tree"
+	desc = "while our troops were patrolling around Ithor they discovered a tree. This was no ordinary tree it was a peach tree. One of our troops yelled out that we must have made a wrong turn accidentally. All the sudden we hear someone say. There are no accidents"
+	picture = GFX_report_event_polish_tanks_01
+	fire_only_once = yes
+	trigger = {
+		tag = MAN
+		has_completed_focus = Mandalore_peace_in_our_time
+		has_government = neutrality
+		NOT = { is_in_faction_with = REP }
+
+			divisions_in_state = {
+				state = 5
+				size > 0
+			}
+
+		}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "There are no accidents"
+		custom_effect_tooltip = MASTER_OOGWAY
+		hidden_effect = {
+			kill_country_leader = yes
+			create_corps_commander = {
+				name = "Master Oogway"
+				portrait_path = "GFX_oogway_g"
+				traits = { bearer_of_artillery }
+				skill = 8
+				attack_skill = 1
+				defense_skill = 10
+				planning_skill = 10
+				logistics_skill = 10
+			}
+			set_country_flag = MAN_OOGWAY
+					create_country_leader = {
+						name = "YMaster Oogway"
+						desc = "Kung Fu Master"
+						picture = GFX_OOGWAY
+						expire = "2020.1.1"
+						ideology = despotism
+						traits = {}
+			}
+					create_country_leader = {
+						name = "YMaster Oogway"
+						desc = "Kung Fu Master"
+						picture = GFX_OOGWAY
+						expire = "2020.1.1"
+						ideology = conservatism
+						traits = {}
+			}
+		}
+	}
+}
+news_event = {
+	id = con.5
+	title = "The Assassination"
+	desc = "While Satine was on her pleasure craft with Obi Wan Kenobi an assassination attempt was made on her life. Although the perpetrator was caught Satine mortally wounded called on Obi Wan in her dying words to preserve Mandalores new future"
+	picture = GFX_report_event_polish_tanks_01
+	fire_only_once = yes
+	trigger = {
+		tag = MAN
+		has_completed_focus = Mandalore_this_is_the_way
+		has_government = neutrality
+		has_completed_focus = Mandalore_establish_the_council_of_neutral_systems
+		has_ideas = tal_merrik
+		}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = "I will do what I must"
+		hidden_effect = {
+			kill_country_leader = yes
+			create_corps_commander = {
+				name = "Obi Wan Kenobi"
+				portrait_path = "gfx/leaders/MAN/kenobi.dds"
+				traits = {  }
+				skill = 8
+				attack_skill = 6
+				defense_skill = 7
+				planning_skill = 5
+				logistics_skill = 4
+			}
+					create_country_leader = {
+						name = "YObi Wan Kenobi"
+						desc = "Former Jedi and Leader of Mandalore"
+						picture = "gfx/leaders/MAN/obi.dds"
+						expire = "2020.1.1"
+						ideology = despotism
+						traits = {}
+			}
+					create_country_leader = {
+						name = "YObi Wan Kenobi"
+						desc = "Former Jedi and Leader of Mandalore"
+						picture = "gfx/leaders/MAN/obi.dds"
+						expire = "2020.1.1"
+						ideology = conservatism
+						traits = {}
+			}
+		}
+	}
+}

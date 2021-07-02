@@ -1,0 +1,40 @@
+state={
+	id=134
+	name="STATE_134"
+	provinces={
+		608 1209 2202 2583 3312 4611 4635 4959 5962 5990 5996 6006 6014 6025 6043 6058 6062 
+	}
+	manpower=5714285
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=0
+		tungsten=2
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ITH
+		add_core_of = ITH
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

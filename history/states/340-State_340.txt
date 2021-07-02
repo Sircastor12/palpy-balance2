@@ -1,0 +1,41 @@
+state={
+	id=340
+	name="STATE_340"
+	provinces={
+		2186 2194 3086 3160 3401 3504 4814 9134 9148 9159 9165 9166 9171 9178 9184 9189 9193 9195 9204 9208 9218 9223 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 0
+		chromium = 0
+	}
+
+  	history = {
+		owner = TOY
+		add_core_of = TOY
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 1
+			air_base = 0
+
+			9159 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			4814 30
+		}
+	}
+}
+

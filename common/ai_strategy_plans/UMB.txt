@@ -1,0 +1,61 @@
+UMB_historical = {
+	name = "Umbara Canonical Plan"
+	desc = ""
+
+	enable = {
+		is_historical_focus_on = yes
+		TAG = UMB
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+        Umbara_the_umbaran_spirit
+		Umbara_adapt_to_our_climate
+		Umbara_an_industrial_umbara
+		Umbara_technological_superiority
+		Umbara_expand_our_research
+		Umbara_pacify_the_wildlife
+		Umbara_advance_or_perish
+		Umbara_build_taller
+		Umbara_land_clearance
+		Umbara_arms_industry
+		Umbara_our_military
+		Umbara_a_militia
+		Umbara_defend_our_homeland
+		Umbara_a_modern_umbara
+		Umbara_work_on_our_doctrine
+		Umbara_support_the_clone_war
+		Umbara_mee_deechi
+		Umbara_switch_sides
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 2.0
+		support_tech = 6.5
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

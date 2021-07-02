@@ -1,0 +1,7 @@
+﻿l_english:
+ RULE_ENABLE_LEAGUE_OF_NATIONS_AT_START: "Enable the Galactic Senate"
+ LEAGUE_OF_NATIONS_MOD_RULES_GROUP: "Galactic Senate Rules"
+ 
+ ENABLE_LEAGUE_OF_NATIONS_AT_START_DESC: "Enable the §YGalactic Senate§! at the start of the game. \n\nThis means the §YGalactic Senate§! will exist at the start of the game and be populated with the historical members."
+ DISABLE_LEAGUE_OF_NATIONS_AT_START_DESC: "Disable the §YGalactic Senate§! at the start of the game. \n\nThis means the §YGalactic Senate§! will NOT exist at the start of the game and can be founded with a decision."
+ 

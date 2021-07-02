@@ -1,0 +1,63 @@
+capital = 441
+
+oob = "CHR_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	volunteer_only
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+give_military_access = REP
+}
+
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+	create_country_leader = {
+		name = "Mish Teru"
+		desc = "Leader of Christophsis"
+		picture = "gfx/leaders/CHR/MishTeru.dds"
+		expire = "4000.1.1"
+		ideology = conservatism
+	}
+give_military_access = REP

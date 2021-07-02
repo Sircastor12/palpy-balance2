@@ -1,0 +1,81 @@
+﻿capital = 88
+
+oob = "ZYG_3677"
+set_research_slots = 3
+set_stability = 0.65
+set_war_support = .25
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	infantry_weapons = 1
+	militia_ZYG = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	limited_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 47
+		neutrality = 29
+	    fascism = 21
+		communism = 3
+	}
+}
+
+#0978.8.8 = {
+#	set_politics = {
+#		ruling_party = democratic
+#		last_election = "1932.11.8"
+#		election_frequency = 240
+#		elections_allowed = no
+#	}
+#	set_popularities = {
+#		democratic = 47
+#		communism = 8
+#	    fascism = 21
+#	    neutrality = 24
+#	}
+#}
+#
+#create_country_leader = {
+#	name = "Garm Bel Iblis "
+#	desc = "The Governor of Corellia"
+#	picture = "gfx/leaders/CLA/garmbeliblis.dds"
+#	expire = "2020.1.1"
+#	ideology = conservatism
+#	traits = {	
+#	}
+#}
+create_country_leader = {
+	name = "Miraj Scintel"
+	desc = "Queen of Zyggeria"
+	picture = "gfx/leaders/ZYG/Miraj_Scintel.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+create_country_leader = {
+	name = "Miraj Scintel"
+	desc = "Queen of Zyggeria"
+	picture = "gfx/leaders/ZYG/Miraj_Scintel.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+create_country_leader = {
+	name = "Miraj Scintel"
+	desc = "Queen of Zyggeria"
+	picture = "gfx/leaders/ZYG/Miraj_Scintel.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}

@@ -1,0 +1,41 @@
+state={
+	id=416
+	name="STATE_416"
+	provinces={
+		213 351 1044 1556 1850 2435 2888 4874 10343 10354 10366 10372 10386 10409 10412 10429 10434 
+	}
+	manpower=6000000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=2
+		aluminium=1
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=ROD
+		add_core_of = ROD
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=2
+			air_base=0
+
+			10386 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			10409 10
+		}
+	}
+}
+

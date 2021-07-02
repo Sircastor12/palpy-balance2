@@ -1,0 +1,41 @@
+state={
+	id=84
+	name="STATE_84"
+	provinces={
+		1287 3482 4473 4697 4718 5217 5222 5228 5234 5238 5248 5249 5250 5251 5258 5260 5263 5275 5277 5286 
+	}
+	manpower=1228571
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=6
+		chromium=0
+	}
+
+  	history = {
+		owner=ZYG
+		add_core_of = ZYG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

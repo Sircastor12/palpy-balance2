@@ -1,0 +1,306 @@
+on_actions = {
+	# Not run on a specific country.
+	on_startup = {
+		effect = {
+			# create LoN
+			random_country = {
+				limit = {
+					is_ai = yes
+				}
+				country_event = { id = league_of_nations_events.1 }
+			}
+			# set threat at start
+		every_country = {
+			if = {
+				limit = {
+					is_militarist = yes
+				}
+				add_to_array = { global.militarist_list = THIS.id }
+			}
+			if = {
+				limit = {
+					is_pacifist = yes
+				}
+				add_to_array = { global.peace_list = THIS.id }
+			}
+			if = {
+				limit = {
+					is_corporation = yes
+				}
+				add_to_array = { global.corporate_list = THIS.id }
+			}
+			if = {
+				limit = {
+					is_outterrim_faction = yes
+			}
+				add_to_array = { global.outer_rim_list = THIS.id }
+			}
+		}
+	}
+}
+	
+	# ROOT is country
+	on_daily = {
+		effect = {
+			# adding/removing flags for being at war with someone (needed for state control change check, since ownership is granted after peace treaty and thus "has_war_with" is not good enough)
+			if = {
+				limit = {
+					any_other_country = {
+						has_war_with = ROOT
+						NOT = { has_country_flag = has_war_with_@ROOT }
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_war_with = ROOT
+						NOT = { has_country_flag = has_war_with_@ROOT }
+					}
+					set_country_flag = has_war_with_@ROOT
+				}
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						NOT = { has_war_with = ROOT }
+						has_country_flag = has_war_with_@ROOT
+					}
+				}
+				every_other_country = {
+					limit = {
+						NOT = { has_war_with = ROOT }
+						has_country_flag = has_war_with_@ROOT
+					}
+					clr_country_flag = has_war_with_@ROOT
+				}
+			}
+			
+			# Remove trade sanctions / reduce running time of trade sanctions
+			
+			# Stuff for the LoN leader
+			if = {
+				limit = {
+					has_country_flag = leader_of_league_of_nations
+				}
+				# Reduce time til voting ends
+				if = {
+					limit = {
+						check_variable = { global.league_of_nations_voting_time > 0 }
+					}
+					subtract_from_variable = { global.league_of_nations_voting_time = 1 }
+				}
+				# Reduce time til next possible voting
+				if = {
+					limit = {
+						check_variable = { global.time_til_next_possible_league_of_nations_voting > 0 }
+					}
+					subtract_from_variable = { global.time_til_next_possible_league_of_nations_voting = 1 }
+				}
+				# LoN focus stuff
+				if = {
+					limit = {
+						has_global_flag = league_of_nations_focus_active
+					}
+					if = {
+						limit = {
+							check_variable = { global.time_til_league_of_nations_focus_is_completed > 0 }
+						}
+						subtract_from_variable = { global.time_til_league_of_nations_focus_is_completed = 1 }
+						add_to_variable = { global.league_of_nations_focus_progress = 1 }
+						if = {
+							limit = {
+								OR = {
+									AND = {
+										has_global_flag = league_of_nations_focus_7_selected
+										NOT = { has_global_flag = league_of_nations_focus_7_completed }
+									}
+									AND = {
+										has_global_flag = league_of_nations_focus_8_selected
+										NOT = { has_global_flag = league_of_nations_focus_8_completed }
+									}
+								}
+								check_variable = { global.time_til_league_of_nations_focus_is_completed > 0 }
+								has_war = yes
+							}
+							if = {
+								limit = {
+									has_global_flag = league_of_nations_focus_7_selected
+									NOT = { has_global_flag = league_of_nations_focus_7_completed }
+								}
+								clr_global_flag = league_of_nations_focus_7_selected
+								country_event = { id = league_of_nations_focuses_events.11 }
+							}
+							else_if = {
+								limit = {
+									has_global_flag = league_of_nations_focus_8_selected
+									NOT = { has_global_flag = league_of_nations_focus_8_completed }
+								}
+								clr_global_flag = league_of_nations_focus_8_selected
+								country_event = { id = league_of_nations_focuses_events.11 }
+							}
+							clr_global_flag = league_of_nations_focus_active
+							set_variable = { global.time_til_league_of_nations_focus_is_completed = 210 }
+							set_variable = { global.league_of_nations_focus_progress = 0 }
+						}
+					}
+					if = {
+						limit = {
+							has_global_flag = league_of_nations_focus_active
+							check_variable = { global.time_til_league_of_nations_focus_is_completed < 1 }
+						}
+						if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_1_selected
+								NOT = { has_global_flag = league_of_nations_focus_1_completed }
+							}
+							set_global_flag = league_of_nations_focus_1_completed
+							country_event = { id = league_of_nations_focuses_events.1 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_2_selected
+								NOT = { has_global_flag = league_of_nations_focus_2_completed }
+							}
+							set_global_flag = league_of_nations_focus_2_completed
+							country_event = { id = league_of_nations_focuses_events.2 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_3_selected
+								NOT = { has_global_flag = league_of_nations_focus_3_completed }
+							}
+							set_global_flag = league_of_nations_focus_3_completed
+							country_event = { id = league_of_nations_focuses_events.3 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_4_selected
+								NOT = { has_global_flag = league_of_nations_focus_4_completed }
+							}
+							set_global_flag = league_of_nations_focus_4_completed
+							country_event = { id = league_of_nations_focuses_events.4 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_5_selected
+								NOT = { has_global_flag = league_of_nations_focus_5_completed }
+							}
+							set_global_flag = league_of_nations_focus_5_completed
+							country_event = { id = league_of_nations_focuses_events.5 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_6_selected
+								NOT = { has_global_flag = league_of_nations_focus_6_completed }
+							}
+							set_global_flag = league_of_nations_focus_6_completed
+							country_event = { id = league_of_nations_focuses_events.6 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_7_selected
+								NOT = { has_global_flag = league_of_nations_focus_7_completed }
+							}
+							set_global_flag = league_of_nations_focus_7_completed
+							country_event = { id = league_of_nations_focuses_events.7 }
+						}
+						else_if = {
+							limit = {
+								has_global_flag = league_of_nations_focus_8_selected
+								NOT = { has_global_flag = league_of_nations_focus_8_completed }
+							}
+							set_global_flag = league_of_nations_focus_8_completed
+							country_event = { id = league_of_nations_focuses_events.8 }
+						}
+						clr_global_flag = league_of_nations_focus_active
+					}
+				}
+				# LoN voting ended
+				if = {
+					limit = {
+						has_global_flag = league_of_nations_voting
+						OR = {
+							check_variable = { global.league_of_nations_voting_time < 1 }
+							event_target:target_of_league_of_nations_voting = {
+								exists = no
+							}
+						}
+					}
+					country_event = { id = league_of_nations_events.4 }
+				}
+			
+				
+				# start historical voting: Winter War
+			}
+			
+			# Reduce cooldown time for being a valid target of a LoN voting
+			if = {
+				limit = {
+					check_variable = { cooldown_for_league_of_nations_voting > 0 }
+				}
+				subtract_from_variable = { cooldown_for_league_of_nations_voting = 1 }
+			}
+			# Reduce cooldown time for being able to join the LoN
+			if = {
+				limit = {
+					check_variable = { cooldown_join_league_of_nations > 0 }
+				}
+				subtract_from_variable = { cooldown_join_league_of_nations = 1 }
+			}
+			
+			# Set opinion between members
+			if = {
+				limit = {
+					has_country_flag = member_of_galactic_senate
+					any_other_country = {
+						has_country_flag = member_of_galactic_senate
+						NOT = { has_country_flag = league_of_nations_opinion_set_for_@ROOT }
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_country_flag = member_of_galactic_senate
+						NOT = { has_country_flag = league_of_nations_opinion_set_for_@ROOT }
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = league_of_nations_member_opinion
+					}
+					set_country_flag = league_of_nations_opinion_set_for_@ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = member_of_galactic_senate }
+					any_other_country = {
+						has_country_flag = league_of_nations_opinion_set_for_@ROOT
+					}
+				}
+				every_other_country = {
+					limit = {
+						has_country_flag = league_of_nations_opinion_set_for_@ROOT
+					}
+					remove_opinion_modifier = {
+						target = ROOT
+						modifier = league_of_nations_member_opinion
+					}
+					clr_country_flag = league_of_nations_opinion_set_for_@ROOT
+				}
+			}
+	# ROOT is winner, FROM gets annexed - This will also fire on_annex
+	on_civil_war_end_before_annexation = {
+		effect = {
+			set_country_flag = civil_war_small_aggressiveness_penalty_for_annexing
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			# join the LoN if enemy in civil war (former country) was a member
+			if = {
+				limit = {
+					FROM = { has_country_flag = member_of_galactic_senate }
+				}
+				join_galactic_senate_effect = yes
+			}
+		}
+	}
+}

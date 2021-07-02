@@ -1,0 +1,135 @@
+Economic_spending = {
+	Infrastructure_Investment = {
+		icon = generic_political_discourse
+        allowed = { always = yes }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 50
+
+        available = {
+            check_variable = { dx > 100 }
+        }
+        
+
+		cost = 25
+
+		ai_will_do = {
+			base = 0
+		}
+        complete_effect = {
+            subtract_from_variable = {dx = 100 }
+            custom_effect_tooltip = Infrastructure_Investment_TT
+		}
+        modifier = {
+			production_speed_infrastructure_factor = 0.20
+	    }
+    }
+
+    Education_Investment = {
+		icon = generic_political_discourse
+        allowed = { always = yes }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 50
+
+        available = {
+            check_variable = { dx > 70 }
+        }        
+
+		cost = 15 
+
+		ai_will_do = {
+			base = 0
+		}
+        complete_effect = {
+            custom_effect_tooltip = Education_Investment_TT
+			subtract_from_variable = {dx = 70 }
+		}
+        modifier = {
+			research_speed_factor = 0.10
+	    }
+    }
+
+    Military_Investment = {
+		icon = generic_political_discourse
+        allowed = { always = yes }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 50
+
+        available = {
+            check_variable = { dx > 80 }
+        }
+        
+
+		cost = 15 
+
+		ai_will_do = {
+			base = 0
+		}
+        complete_effect = {
+            custom_effect_tooltip = Military_Investment_TT
+			subtract_from_variable = {dx = 80 }
+		}
+        modifier = {
+			production_speed_arms_factory_factor = 0.15
+	    }
+    }
+
+    Civilian_Investment = {
+		icon = generic_political_discourse
+        allowed = { always = yes }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 50
+
+        available = {
+            check_variable = { dx > 80 }
+        }
+        
+
+		cost = 15 
+
+		ai_will_do = {
+			base = 0
+		}
+        complete_effect = {
+            custom_effect_tooltip = Civilian_Investment_TT
+			subtract_from_variable = {dx = 80 }
+		}
+        modifier = {
+			production_speed_industrial_complex_factor = 0.15
+	    }
+    }
+
+    Shipyard_Investment = {
+		icon = generic_political_discourse
+        allowed = { always = yes }
+
+        fire_only_once = no
+        days_remove = 120
+        days_re_enable = 50
+
+        available = {
+            check_variable = { dx > 80 }
+        }
+        
+
+		cost = 15 
+
+		ai_will_do = {
+			base = 0
+		}
+        complete_effect = {
+            custom_effect_tooltip = Shipyard_Investment_TT
+			subtract_from_variable = {dx = 80 }
+		}
+        modifier = {
+			production_speed_dockyard_factor = 0.15
+	    }
+    }
+}

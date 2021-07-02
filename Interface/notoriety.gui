@@ -1,0 +1,115 @@
+guiTypes = {
+	containerWindowType = {
+		name = "notoriety_open_container"
+		position = { x = 1100 y = 2 }
+
+		buttonType ={
+			name ="open_notoriety_button"
+			spriteType = "GFX_market_button"
+			position = { x=35 y=7 }
+			shortcut = "ctrl+m"
+			scale = 0.6
+		}
+		
+		instantTextBoxType = {
+			name ="notoriety_text"
+			position = { x= 50 y = 8 }
+			font = "hoi_18mbs"
+			text = "Notoriety"
+			format = left
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "Opens Notoriety panel"
+		}
+	}
+    containerWindowType = {
+        name = "notoriety_window"
+        orientation = center
+		position = {x=200 y=-1600}
+		show_position = {x=200 y=-500}
+        size = { width=1200 height=900 }
+		moveable = no
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_notoriety"
+		}
+		containerWindowType = {
+			name = "notoriety_container"
+			position = { x=-160 y=60 }
+			size = { width=600 height=800 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			background = {
+				name = "Background"
+				#spriteType ="GFX_tiled_window_1b_border"
+			}
+
+			gridboxtype = {
+				name = "notoriety_grid"
+				position = { x = 260 y = 0 }
+				slotsize = { width = 200 height = 70 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+				}
+			}
+			buttonType = {
+				name = "notoriety_bronze"
+				position = {x=240 y=220}
+				spriteType = "GFX_rank_bronze"
+				scale = 0.8
+				}
+			buttonType = {
+				name = "notoriety_silver"
+				position = {x=240 y=150}
+				spriteType = "GFX_rank_silver"
+				scale = 0.8
+			}
+			buttonType = {
+				name = "notoriety_gold"
+				position = {x=240 y=80}
+				spriteType = "GFX_rank_gold"
+				scale = 0.8
+			}
+		}
+		containerWindowType = {
+			name = "notoriety_entry"
+			position = { x=0 y=0 }	
+			size = { width=550 height=300 } 
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+			verticalScrollbar = "right_vertical_slider"
+	
+			buttonType = {
+				name = "notoriety_random" 
+				position = {x=0 y=0}	
+				spriteType = "GFX_rank_gold"
+		}
+		instantTextboxType = {
+			name = "notoriety_country"
+			position = { x = 100 y = 12 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[This.GetName]"
+			maxWidth = 240
+			maxHeight = 30
+			format = left
+		}
+		instantTextboxType = {
+			name = "notoriety_number_country"
+			position = { x = 100 y = 32 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = " C[?notoriety]"
+			maxWidth = 240
+			maxHeight = 30
+			format = left
+		}
+	}
+}

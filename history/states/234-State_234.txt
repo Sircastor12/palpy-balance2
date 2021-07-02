@@ -1,0 +1,42 @@
+state={
+	id=234
+	name="STATE_234"
+	provinces={
+		203 346 381 712 1282 1480 1499 2916 4373 4647 7403 7418 7445 7456 7481 7495 7529 7538 7557 7614 7638 
+	}
+	manpower=6000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=2
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=5
+	}
+
+  	history = {
+		owner=REN
+		add_core_of = REN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=4
+			air_base=0
+			corporate_factory = 1
+
+			203 = {
+				naval_base = 4
+			}
+		}
+	
+		victory_points = {
+			7481 30
+		}
+	}
+}
+

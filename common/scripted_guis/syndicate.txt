@@ -1,0 +1,93 @@
+scripted_gui = {
+
+	syndicate_1_window = {
+		context_type = player_context
+		
+		window_name = "open_syndicate_window"
+		parent_window_name = countrypoliticsview
+		
+		visible = { 
+			OR = {
+				has_government = syndicate
+				has_government = communism
+			}
+			always = no
+		}
+		effects = {
+			open_syndicate_button_click = {
+				if = {
+					limit = {
+						has_country_flag = syndicate_open
+					}
+					clr_country_flag = syndicate_open
+				}
+				else = {
+					set_country_flag = syndicate_open
+				}
+			}
+		}
+    }
+	syndicate_window = {
+			context_type = player_context
+			window_name = "syndicate_window"
+		
+		visible = {
+			has_country_flag = syndicate_open
+		}
+
+	effects = {
+		close_button_click = {
+			clr_country_flag = syndicate_open
+			}
+
+		}
+	triggers = {
+			low_loyalty_sha_blk_visible = {
+				has_country_flag = low_loyalty_blk
+			}
+			medium_loyalty_sha_blk_visible = {
+				has_country_flag = medium_loyalty_blk
+			}
+			high_loyalty_sha_blk_visible = {
+				has_country_flag = high_loyalty_blk
+			}
+			low_loyalty_sha_man_visible = {
+				has_country_flag = low_loyalty_man
+			}
+			medium_loyalty_sha_man_visible = {
+				has_country_flag = medium_loyalty_man
+			}
+			high_loyalty_sha_man_visible = {
+				has_country_flag = high_loyalty_man
+			}
+			low_loyalty_sha_pyk_visible = {
+				has_country_flag = low_loyalty_pyk
+			}
+			medium_loyalty_sha_pyk_visible = {
+				has_country_flag = medium_loyalty_pyk
+			}
+			high_loyalty_sha_pyk_visible = {
+				has_country_flag = high_loyalty_pyk
+			}
+			low_loyalty_sha_cri_visible = {
+				has_country_flag = low_loyalty_cri
+			}
+			medium_loyalty_sha_cri_visible = {
+				has_country_flag = medium_loyalty_cri
+			}
+			high_loyalty_sha_cri_visible = {
+				has_country_flag = high_loyalty_cri
+			}
+			low_loyalty_sha_hut_visible = {
+				has_country_flag = low_loyalty_hut
+			}
+			medium_loyalty_sha_hut_visible = {
+				has_country_flag = medium_loyalty_hut
+			}
+			high_loyalty_sha_hut_visible = {
+				has_country_flag = high_loyalty_hut
+			}
+		}
+	}
+}
+

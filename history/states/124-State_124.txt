@@ -1,0 +1,40 @@
+state={
+	id=124
+	name="STATE_124"
+	provinces={
+		446 488 502 647 787 947 1333 1422 2088 2099 2619 2919 4147 4223 4471 5775 5794 5805 5807 5809 5819 5826 5838 5842 5847 5854 5868 5870 5877 5890 5895 5901 5919 5923 5930 5941 
+	}
+	manpower=115000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=2
+		aluminium=0
+		rubber=10
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=HON
+		add_core_of = HON
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=1
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			5838 50
+		}
+	}
+}
+

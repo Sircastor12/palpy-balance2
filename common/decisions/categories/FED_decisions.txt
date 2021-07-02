@@ -1,0 +1,35 @@
+espionage_ministry = {
+     icon = generic_prospect_for_resources
+	
+	available = { 
+		tag = FED 
+	}
+	allowed = {
+		original_tag = FED
+	}
+}
+
+IBC_loans = {
+     icon = generic_prospect_for_resources
+	
+	available = { 
+		tag = FED 
+	}
+	allowed = {
+		original_tag = FED
+	}
+}
+
+MAL_fuel = {
+     icon = generic_prospect_for_resources
+	visible = {
+		tag = FED
+		has_global_flag = MALignoresfed
+	}
+	available = { 
+		tag = FED
+	}
+	allowed = {
+		original_tag = FED
+	}
+}

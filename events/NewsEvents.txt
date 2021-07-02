@@ -1,0 +1,81 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+#Tax evasion by fed
+news_event = {
+	id = news.1
+	title = "The Trade Federation Evades Republic Taxes"
+	desc = "The Trade Federation has refused to pay newly created taxes on Outer Rim commerce. It is not yet known if the Republic will act on this decision."
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "These are confusing times."
+		trigger = {
+			NOT = {
+				TAG = FED
+			}
+		}
+	}
+}
+
+#Staged assassination
+news_event = {
+	id = news.2
+	title = "Trade Federation Diplomats Killed!"
+	desc = "Several Trade Federation diplomats have been killed after their unarmed commerce vessel was ransacked destroyed by pirates. This has placed more pressure on the Galactic Senate to repeal clauses in the Ruusan Reformation limiting military capabilities of vessels. Some say this was a scheme made up by the Trade Federation to legally militarize their trade fleet."
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	fire_for_sender = no
+
+	option = {
+		name = "These are scary times."
+		trigger = {
+			NOT = {
+				TAG = FED
+			}
+		}
+	}
+}
+
+# Fed refuses to adhere to Ruusan
+news_event = {
+	id = news.3
+	title = "Trade Federation Refuses to Adhere to the Ruusan Reformation!"
+	desc = "After losing hundreds of defenseless trade ships to piracy, the Trade Federation decided they had enough. They will no longer put their ships, crews, and cargo in danger by leaving their ships defenseless."
+	picture = GFX_news_event_002
+	
+	major = yes
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			has_global_flag = fedwontadhere
+			NOT = {
+				TAG = REP
+				TAG = FED
+			}
+		}	
+	}
+	
+	option = {
+		name = "Interesting."
+		trigger = {
+			NOT = {
+				TAG = REP
+				TAG = FED
+			}
+		}
+	}
+}

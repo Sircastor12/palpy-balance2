@@ -1,0 +1,41 @@
+state={
+	id=188
+	name="STATE_188"
+	provinces={
+		415 484 1650 3129 3195 6748 6770 6792 6796 6801 6816 6817 6827 6841 6850 6855 6861 6872 6875 6884 
+	}
+	manpower=4000000
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=1
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=2
+	}
+
+  	history = {
+		owner=CAL
+		add_core_of = CAL
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=5
+			air_base=0
+
+			6817 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			484 50
+		}
+	}
+}
+

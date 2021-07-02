@@ -1,0 +1,41 @@
+state={
+	id=360
+	name="STATE_360"
+	provinces={
+		320 554 626 953 990 2662 4299 4760 4936 9459 9470 9473 9498 9508 9514 9527 9532 9538 9544 9545 
+	}
+	manpower=9000000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 8
+		chromium = 2
+	}
+
+  	history = {
+		owner = SUL
+		add_core_of = SUL
+
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			554 25
+		}
+	}
+}
+

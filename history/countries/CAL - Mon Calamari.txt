@@ -1,0 +1,211 @@
+capital = 195
+
+oob = "CAL_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	cal_market = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	limited_conscription 
+}
+
+set_variable = { cal_state_1_support = 100 }
+set_variable = { cal_state_2_support = 100 }
+set_variable = { cal_state_3_support = 100 }
+set_variable = { cal_state_4_support = 100 }
+set_variable = { cal_state_5_support = 75 }
+set_variable = { cal_state_6_support = 50 }
+set_variable = { cal_state_7_support = 25 }
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+	
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Prince Lee-Char"
+	desc = "Lee-Char was a male Mon Calamari who served as the leader of Mon Cala during the Clone Wars."
+	picture = "gfx/leaders/CAL/Lee_char.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+   }
+
+create_country_leader = {
+	name = "King Yos Kolina"
+	desc = ""
+	picture = "gfx/leaders/CAL/Yos Kolina.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_field_marshal = {
+	name = "Captain Ackbar"
+	id = 800
+	picture = "Gial Ackbar.dds"
+	traits = { harsh_leader commando }
+	skill = 7
+
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+ 	name = "Broil"
+ 	portrait_path = "gfx/leaders/CAL/Broil.dds"
+	 traits = { panzer_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Bubba"
+ 	portrait_path = "gfx/leaders/CAL/Bubba.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 2 
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Herpies"
+ 	portrait_path = "gfx/leaders/CAL/Herpies.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Raddus"
+ 	portrait_path = "gfx/leaders/CAL/Raddus.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Shallan"
+	portrait_path = "gfx/leaders/CAL/Shallan.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Captain Ackbar"
+    picture = "Gial Ackbar.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Broil"
+    picture = "Broil.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Bubba"
+    picture = "Bubba.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Herpies"
+    picture = "Herpies.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Raddus"
+    picture = "Raddus.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Shallan"
+    picture = "Shallan.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

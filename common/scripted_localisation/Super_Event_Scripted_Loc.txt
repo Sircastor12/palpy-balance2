@@ -1,0 +1,81 @@
+defined_text = { #SUPER EVENT TITLES
+    name = get_super_event_title
+
+    text = { 
+        trigger = {
+            has_country_flag = REP_clone_wars_begun
+        }
+        localization_key = GFX_CLONE_WARS
+    }
+    text = { 
+        trigger = {
+            has_country_flag = FED_naboo_invasion
+        }
+        localization_key = GFX_NABOO_INVASION
+    }
+    text = { 
+        trigger = {
+            has_country_flag = Super_Event_raxus_address
+        }
+        localization_key = GFX_RAXUS_ADDRESS
+    }
+    text = { 
+        trigger = {
+            has_country_flag = REP_order_66
+        }
+        localization_key = GFX_ORDER_66
+    }
+     text = { 
+        trigger = {
+            has_country_flag = REP_empire
+        }
+        localization_key = GFX_EMPIRE
+    }
+    text = { 
+        trigger = {
+            has_country_flag = CIS_victory
+        }
+        localization_key = GFX_CIS_VICTORY
+    }
+}
+
+defined_text = { #SUPER EVENT QUOTES
+    name = get_superevent_quote
+
+    text = { 
+        trigger = {
+            has_country_flag = REP_clone_wars_begun
+        }
+        localization_key = GFX_CLONE_WARS_TEXT
+    }
+    text = { 
+        trigger = {
+            has_country_flag = FED_naboo_invasion
+        }
+        localization_key = GFX_NABOO_INVASION_TEXT
+    }
+      text = { 
+        trigger = {
+            has_country_flag = Super_Event_raxus_address
+        }
+        localization_key = GFX_RAXUS_ADDRESS_TEXT
+    }
+     text = { 
+        trigger = {
+            has_country_flag = REP_order_66
+        }
+        localization_key = GFX_ORDER_66_TEXT
+    }
+     text = { 
+        trigger = {
+            has_country_flag = REP_empire
+        }
+        localization_key = GFX_EMPIRE_TEXT
+    }
+    text = { 
+        trigger = {
+            has_country_flag = CIS_victory
+        }
+        localization_key = GFX_CIS_VICTORY_TEXT
+    }
+}

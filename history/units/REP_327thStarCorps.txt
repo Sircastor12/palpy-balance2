@@ -1,0 +1,152 @@
+﻿division_template = {
+	name = "327th Star Corps Division"
+	is_locked = yes
+
+	regiments = {
+		REP_327_clone = { x = 0 y = 0 }
+		REP_327_clone = { x = 0 y = 1 }
+		REP_327_clone = { x = 0 y = 2 }
+		REP_327_clone = { x = 0 y = 3 }
+   		REP_327_clone = { x = 1 y = 0 }
+		REP_327_clone = { x = 1 y = 1 }
+		REP_327_clone = { x = 1 y = 2 }
+  		REP_327_clone = { x = 2 y = 0 }
+		REP_327_clone = { x = 2 y = 1 }
+		REP_327_clone = { x = 2 y = 2 }
+	}
+	support = {
+		clone_recon = { x = 0 y = 0 }
+	}
+}
+
+
+division_template = { 						
+	name = "327th Jungle Division"
+
+	regiments = {
+		REP_327_para = { x = 0 y = 0 }
+		REP_327_para = { x = 0 y = 1 }
+		REP_327_para = { x = 0 y = 2 }
+		REP_327_para = { x = 1 y = 0 }
+		REP_327_para = { x = 1 y = 1 }
+	}
+}
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "327th Star Corps 1st division"
+		location = 10463 #Kamino
+		division_template = "327th Star Corps Division"
+		start_experience_factor = 0.752   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {
+		name = "327th Star Corps 2nd division"
+		location = 10463 #Kamino
+		division_template = "327th Star Corps Division"
+		start_experience_factor = 0.752   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Cameron Division"
+		location = 10463 #Kamino
+		division_template = "327th Star Corps Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Flash Division"
+		location = 10463 #Kamino
+		division_template = "327th Star Corps Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Luck Division"
+		location = 10463 #Kamino
+		division_template = "327th Star Corps Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Galle Division"
+		location = 10463 #Kamino
+		division_template = "327th Star Corps Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 1st Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 2nd Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 3rd Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 4th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 5th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 6th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 7th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 8th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 9th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "327th Star Corps 10th Jungle"
+		location = 10463 #Kamino
+		division_template = "327th Jungle Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+	}
+}
+

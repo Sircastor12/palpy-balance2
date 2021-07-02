@@ -1,0 +1,221 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+#improved weapons
+	TEC_air_improved_weapons = {
+		
+		fighter = {
+			air_attack = 0.10
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = rogue_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @976 }
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#bellbulab22
+	bellbulab22_tech = {
+
+		enable_equipments = {
+			belb_fighter_equip
+		}
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = trifighter_tech
+		}	
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @979 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#improved propulsion
+	TEC_air_improved_propulsion = {
+		
+		vulture_fighter = {
+			hard_attack = 0.10
+			breakthrough = 0.05
+		}
+
+		tri_fighter = {
+			hard_attack = 0.10
+			breakthrough = 0.05
+		}	
+
+		research_cost = 1.5
+		start_year = 981
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @981 }
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#advanced droid bomber
+	advanceddroidbomber_tech = {
+
+		enable_equipments = {
+			droid_bomber_equip
+		}
+		
+		
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_air_targetting_computer
+		}		
+
+		research_cost = 1.5
+		start_year = 974
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @974 }
+		}
+
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#targetting computer
+	TEC_air_targetting_computer = {
+		
+		cas = {
+			naval_strike_targetting = 0.10
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = TEC_air_guided_bombs
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @975 }
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#Guided bombs
+	TEC_air_guided_bombs = {
+		
+		air_cas_present_factor = 0.10
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = hyena_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @976 }
+		}
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#bellbulab24
+	bellbulab24_tech = {
+
+		enable_equipments = {
+			belb_bomber_equip
+		}
+
+		research_cost = 1.5
+		start_year = 979
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @979 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#Guided missiles
+	TEC_guided_missiles = {
+	
+		air_cas_present_factor = 0.20
+
+		research_cost = 1.5
+		start_year = 980
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @980 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+#tec naval weapons
+	tec_improved_naval_weapons = {
+		
+		battleship = {
+			max_organisation = 10			
+		}
+		battle_cruiser = {
+			max_organisation = 10			
+		}
+		heavy_cruiser = {
+			max_organisation = 10			
+		}
+		light_cruiser = {
+			surface_detection = 0.10
+		}
+		destroyer = {
+			surface_detection = 0.10
+		}
+
+		path = {
+			research_cost_coeff = 1
+			leads_to_tech = bulwark_tech
+		}		
+
+		research_cost = 1.5
+		start_year = 978
+		folder = {
+			name = tec_folder
+			position = { x = 0 y = @978 }
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+}

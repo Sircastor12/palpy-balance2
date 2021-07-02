@@ -1,0 +1,172 @@
+﻿division_template = {
+	name = "21st Nova Corps Division"
+	is_locked = yes
+	
+	regiments = {
+		REP_21_clone = { x = 0 y = 0 }
+		REP_21_clone = { x = 0 y = 1 }
+		REP_21_clone = { x = 0 y = 2 }
+   		REP_21_clone = { x = 1 y = 0 }
+		REP_21_clone = { x = 1 y = 1 }
+		REP_21_clone = { x = 1 y = 2 }
+		ATOT_unit = { x = 3 y = 0 }
+		ATUT_unit = { x = 2 y = 0 }
+		ATUT_unit = { x = 2 y = 1 }
+	}
+	support = {
+		clone_engineer = { x = 0 y = 0 }
+	}
+}
+
+
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "21st Nova Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Bacara Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Forsaken Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Waxer Platoon"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.4  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Guardian Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Dragon Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Cobra Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Scorpion Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Anvil Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Tornado Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Stone Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Flight Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Hollow Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Horde Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Goku Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+	division= {	
+		name = "21st Ki Company"
+		location = 10463 #Kamino
+		division_template = "21st Nova Corps Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p2_clone_equip = { owner = "KAM" } }
+		force_equipment_variants = { ATOT_equipment = { owner = "KUA" } }
+		force_equipment_variants = { ATUT_equipment = { owner = "KUA" } }
+	}
+}
+

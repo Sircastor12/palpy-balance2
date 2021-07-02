@@ -1,0 +1,39 @@
+guiTypes = {
+    containerWindowType = {
+        name = "cis_window"
+        orientation = center
+        position = {x=-400 y=-300}
+        size = { width=1000 height=712 }
+        moveable = yes
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_cis_screen"
+        }
+
+        buttonType = {
+            name = "close_button"
+            position = {x=940 y=48}
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "cis_not_ideal"
+			spriteType = "GFX_cis_not_ideal"
+			position = { x= 230 y = 45 }
+		}
+		buttonType = {
+			name = "cis_ideal"
+			spriteType = "GFX_cis_ideal"
+			position = { x= 730 y = 45 }
+		}
+        iconType = {
+			name = "cis_idealist_bar"
+			position = { x=29 y=655 }  
+			spriteType = "GFX_cis_idealist_bar"
+		}
+    }
+}

@@ -1,0 +1,1665 @@
+focus_tree = {
+	id = ibc_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = IBC
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+
+	focus = {
+		id = ibc_spread_separatist_propaganda
+		icon = GFX_goal_generic_propaganda
+		mutually_exclusive = { focus = ibc_maintain_bank_neutrality }
+		x = -1
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+			hidden_effect = {
+				news_event = { id = IBC.7 days = 1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	focus = {
+		id = ibc_distancing_from_the_republic
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_spread_separatist_propaganda }
+		x = -1
+		y = 1
+		relative_position_id = ibc_spread_separatist_propaganda
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+    			ideology = democratic
+    			popularity = -0.2
+			}
+			add_opinion_modifier = {
+    			target = CIS
+    			modifier = large_increase
+			}
+			CIS = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_increase
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+	}
+	focus = {
+		id = ibc_pledge_droids_to_the_separatists
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_spread_separatist_propaganda }
+		x = 1
+		y = 1
+		relative_position_id = ibc_spread_separatist_propaganda
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+	}
+	focus = {
+		id = ibc_align_affiliated_manufacturers
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_pledge_droids_to_the_separatists }
+		prerequisite = { focus = ibc_distancing_from_the_republic }
+		x = 1
+		y = 1
+		relative_position_id = ibc_distancing_from_the_republic
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ibc_align_affiliated_manufacturers_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_seize_phlut_design_systems
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_align_affiliated_manufacturers }
+		prerequisite = { focus = ibc_collections_and_security_division }
+		x = 2
+		y = 1
+		relative_position_id = ibc_align_affiliated_manufacturers
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = phlut_design_systems_seized_idea
+			hidden_effect = {
+				country_event = { id = IBC.6 days = 3 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_techno_union_manufacturing
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_align_affiliated_manufacturers }
+		x = -2
+		y = 1
+		relative_position_id = ibc_align_affiliated_manufacturers
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_opinion_modifier = {
+    			target = TEC
+    			modifier = large_increase
+			}
+			TEC = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_increase
+				}
+			}
+			swap_ideas = {
+    			remove_idea = ibc_align_affiliated_manufacturers_idea
+    			add_idea = ibc_align_affiliated_manufacturers_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_support_the_cis
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_align_affiliated_manufacturers }
+		x = 0
+		y = 1
+		relative_position_id = ibc_align_affiliated_manufacturers
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.15
+			}
+			CIS = { country_event = { id = GNT.4 days = 1 } }
+			hidden_effect = {
+				news_event = { id = IBC.8 days = 1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = CIS
+			CIS = { is_faction_leader = yes }
+		}
+		bypass = {
+			has_government = fascism
+		}
+	}
+	focus = {
+		id = ibc_republic_interest_hikes
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_support_the_cis }
+		mutually_exclusive = { focus = ibc_ban_republic_loans }
+		x = -1
+		y = 1
+		relative_position_id = ibc_support_the_cis
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { Global.interest_rate = 1 }
+			custom_effect_tooltip = "This will raise interest rates by 1%"
+			REP = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = medium_decrease
+				}
+			}
+			hidden_effect = {
+				REP = { country_event = { id = IBC.1 days = 3 } }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_manipulate_the_senate
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_republic_interest_hikes }
+		x = -1
+		y = 1
+		relative_position_id = ibc_republic_interest_hikes
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			REP = {
+				add_political_power = -100
+			}
+		}
+		bypass = {
+			OR = {	
+				has_war_with = REP
+				has_global_flag = rep_no_loans_from_ibc
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_levy_republic_debts
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_republic_interest_hikes }
+		x = 1
+		y = 1
+		relative_position_id = ibc_republic_interest_hikes
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+    			idea = ibc_debts_levied
+    			days = 360
+			}
+		}
+		bypass = {
+			OR = {	
+				has_war_with = REP
+				has_global_flag = rep_no_loans_from_ibc
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_conspire_with_clovis
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_manipulate_the_senate }
+		prerequisite = { focus = ibc_levy_republic_debts }
+		x = 1
+		y = 1
+		relative_position_id = ibc_manipulate_the_senate
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_ban_republic_loans
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_support_the_cis }
+		mutually_exclusive = { focus = ibc_republic_interest_hikes }
+		x = 2
+		y = 1
+		relative_position_id = ibc_support_the_cis
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.3
+			}
+			add_political_power = -100
+			REP = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = large_decrease
+				}
+			}
+			hidden_effect = {
+				REP = { country_event = { id = IBC.3 days = 3 } }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_invite_cis_leadership
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_ban_republic_loans }
+		x = 0
+		y = 1
+		relative_position_id = ibc_ban_republic_loans
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ibc_cis_army_leadership_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_expand_cis_funding
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_invite_cis_leadership }
+		x = 0
+		y = 1
+		relative_position_id = ibc_invite_cis_leadership
+		cost = 10
+		
+		available_if_capitulated = yes
+		available = {
+			country_exists = CIS
+		}
+		bypass = {
+			NOT = {
+				country_exists = CIS
+			}
+		}
+		completion_reward = {
+			add_political_power = -100
+			custom_effect_tooltip = "This will give the CIS 1 B Credits"
+			CIS = {
+				add_to_variable = { dx = 1000 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_replace_san_hill
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_conspire_with_clovis focus = ibc_expand_cis_funding }
+		x = 1
+		y = 1
+		relative_position_id = ibc_conspire_with_clovis
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Rush Clovis"
+				desc = "Chairman of the Intergalactic Banking Clan"
+				picture = "Clovis.dds"
+				expire = "2020.1.1"
+				ideology = nazism
+				traits = {
+					dealbroker
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_maintain_bank_neutrality
+		icon = GFX_goal_generic_propaganda
+		mutually_exclusive = { focus = ibc_spread_separatist_propaganda }
+		x = 8
+		y = 0
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+			add_popularity = {
+    			ideology = neutrality
+    			popularity = 0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ibc_create_the_neutral_zone
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_maintain_bank_neutrality }
+		x = 0
+		y = 1
+		relative_position_id = ibc_maintain_bank_neutrality
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ibc_neutral_zone_idea
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	focus = {
+		id = ibc_root_out_corruption
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_create_the_neutral_zone }
+		x = 0
+		y = 1
+		relative_position_id = ibc_create_the_neutral_zone
+		cost = 10
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			add_command_power = 20
+		}
+
+		ai_will_do = {
+			factor = 25
+		}
+	}
+	focus = {
+		id = ibc_war_profiteering
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_root_out_corruption }
+		mutually_exclusive = { focus = ibc_refuse_to_fund_wars }
+
+		x = -1
+		y = 1
+		relative_position_id = ibc_root_out_corruption
+		cost = 15
+		available = {
+			country_exists = CIS
+			country_exists = REP
+			CIS = { has_war_with = REP }
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = ibc_loaning_to_both_sides_idea
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_increase_interest_rates_for_all
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_war_profiteering }
+
+		x = 0
+		y = 1
+		relative_position_id = ibc_war_profiteering
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			REP = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = small_decrease
+				}
+			}
+			CIS = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = small_decrease
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_refuse_to_fund_wars
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_root_out_corruption }
+		mutually_exclusive = { focus = ibc_war_profiteering }
+		x = 1
+		y = 1
+		relative_position_id = ibc_root_out_corruption
+		cost = 15
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+    			remove_idea = ibc_neutral_zone_idea
+    			add_idea = ibc_neutral_zone_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	focus = {
+		id = ibc_long_live_the_banks
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ibc_increase_interest_rates_for_all focus = ibc_refuse_to_fund_wars }
+		x = 1
+		y = 1
+		relative_position_id = ibc_increase_interest_rates_for_all
+		cost = 10
+		available = {
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.2
+			add_political_power = 50
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_introduce_new_currencies
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = ibc_spread_separatist_propaganda focus = ibc_maintain_bank_neutrality }
+		x = 5
+		y = 1
+		relative_position_id = ibc_spread_separatist_propaganda
+		cost = 5
+		
+		available_if_capitulated = yes
+		available = {
+		    has_political_power > 150
+		}
+		completion_reward = {
+			add_political_power = -150
+			add_ideas = ibc_new_currencies_idea
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	focus = {
+		id = ibc_expand_the_exchange_system
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = ibc_introduce_new_currencies }
+		x = 1
+		y = 1
+		relative_position_id = ibc_introduce_new_currencies
+		cost = 5
+		
+		available_if_capitulated = yes
+		available = {
+		    has_political_power > 300
+		}
+		completion_reward = {
+			add_political_power = -300
+			swap_ideas = {
+    			remove_idea = ibc_new_currencies_idea
+    			add_idea = ibc_new_currencies_idea_2
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_collections_and_security_division
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = ibc_introduce_new_currencies }
+		x = -1
+		y = 1
+		relative_position_id = ibc_introduce_new_currencies
+		cost = 5
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_command_power = 25
+			add_war_support = 0.1
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_push_for_deregulation
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = ibc_expand_the_exchange_system }
+		prerequisite = { focus = ibc_collections_and_security_division }
+		x = 1
+		y = 1
+		relative_position_id = ibc_collections_and_security_division
+		cost = 5
+		
+		available_if_capitulated = yes
+		available = {
+		    has_political_power > 100
+		}
+		completion_reward = {
+			add_political_power = -100
+			swap_ideas = {
+    			remove_idea = ibc_new_currencies_idea_2
+    			add_idea = ibc_new_currencies_idea_3
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = ibc_expand_the_main_vault
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = ibc_push_for_deregulation }
+		x = 0
+		y = 1
+		relative_position_id = ibc_push_for_deregulation
+		cost = 5
+		
+		available_if_capitulated = yes
+		available = {
+		    has_political_power > 100
+		}
+
+		completion_reward = {
+			add_political_power = -100
+			swap_ideas = {
+    			remove_idea = ibc_new_currencies_idea_3
+    			add_idea = ibc_new_currencies_idea_4
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Local Management
+	focus = {
+		id = IBC_local_manegment
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_Civilian_Construction }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = Local_managment
+		}
+	}
+
+	#Focus for Central Management
+	focus = {
+		id = IBC_central_management
+		icon = GFX_goal_unknown
+		x = 11
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_military_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = central_managment
+		}
+		
+	}
+
+	#Focus for Expand the Muun Arsenals
+	focus = {
+		id = IBC_expand_the_muun_arsenals
+		icon = GFX_goal_unknown
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_local_manegment 
+			focus = IBC_central_management 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_equipment_to_stockpile = {
+
+        type = b1_droid
+
+        amount = 1000
+
+		}
+
+			79 = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Military Construction
+	focus = {
+		id = IBC_military_construction
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_military_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+
+		76 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Focus for Military Investments
+	focus = {
+		id = IBC_military_investments
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_invest_in_muunilinst_industry }
+		mutually_exclusive = { focus = IBC_civilian_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+
+		1 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Focus for Civilian Investments
+	focus = {
+		id = IBC_civilian_investments
+		icon = GFX_goal_unknown
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_invest_in_muunilinst_industry }
+		mutually_exclusive = { focus = IBC_military_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = { 
+		1 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Focus for Improve Light Industry
+	focus = {
+		id = IBC_improve_light_industry
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_civilian_investments 
+			focus = IBC_military_investments 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = { 
+
+		1 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}		
+			}
+		}
+	}
+
+	#Focus for Invest in Muunilinst Infrastructure
+	focus = {
+		id = IBC_invest_in_muunilinst_infrastructure
+		icon = GFX_goal_unknown
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_investing_our_profits }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			1 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Focus for Support Civilian Industry
+	focus = {
+		id = IBC_support_civilian_industry
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_invest_in_muunilinst_infrastructure }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = { 
+
+		1 = {
+		add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			}
+		}
+	}
+	
+	#Focus for Mygeetan Infrastructure
+	focus = {
+		id = IBC_mygeetan_infrastructure
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_invest_in_muunilinst_infrastructure }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			76 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+	}
+
+	#Focus for BAS Research & Development
+	focus = {
+		id = IBC_bas_research__development
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_support_civilian_industry 
+		}
+		prerequisite = { 
+			focus = IBC_mygeetan_infrastructure 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Investing Our Profits
+	focus = {
+		id = IBC_investing_our_profits
+		icon = GFX_goal_unknown
+		x = 13
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	#Focus for Invest in Muunilinst Industry
+	focus = {
+		id = IBC_invest_in_muunilinst_industry
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_bas_research__development }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	#Focus for Civilian Investments
+	focus = {
+		id = IBC_Civilian_Construction
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_civilian_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = { 
+		
+		76 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			}
+		}
+		
+	}
+	#Focus for Planetary Defences
+	focus = {
+		id = IBC_planetary_defences
+		icon = GFX_goal_unknown
+		x = 30
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_spaceport_construction }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = defence.1
+		hidden_effect ={
+			1 = {
+				add_building_construction = {
+				    type = anti_air_building
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			1 = {
+				add_building_construction = {
+				    type = coastal_bunker
+				    level = 2
+				    instant_build = yes
+					province = 1113
+				}
+			}
+			1 = {
+				add_building_construction = {
+				    type = coastal_bunker
+				    level = 2
+				    instant_build = yes
+					province = 1096
+				}
+			}
+		
+			}
+			}
+			}
+	
+	#Focus for Spaceport Construction
+	focus = {
+		id = IBC_spaceport_construction
+		icon = GFX_goal_unknown
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_shipyard_construction_effort 
+		}
+		prerequisite = { 
+			focus = IBC_starfighter_production 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		1 = {
+				add_building_construction = {
+				    type = naval_base
+				    level = 4
+				    instant_build = yes
+				}
+			}
+		1 = {
+				add_building_construction = {
+				    type = air_base
+				    level = 2
+				    instant_build = yes
+				}
+			}
+		}
+	}
+	#Focus for Advanced Engines
+	focus = {
+		id = IBC_advanced_engines
+		icon = GFX_goal_unknown
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_starfighter_production }
+		mutually_exclusive = { focus = IBC_advanced_agility }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = engine.1
+			hidden_effect = {
+ 			add_ideas = advanced_engines 
+			}
+		}
+	}
+	## cobble is gay
+	#Focus for Advanced Agility
+	focus = {
+		id = IBC_advanced_agility
+		icon = GFX_goal_unknown
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_starfighter_production }
+		mutually_exclusive = { focus = IBC_advanced_engines }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		custom_effect_tooltip = agility.1
+			hidden_effect = {
+ 			add_ideas = advanced_agility
+			}
+		}
+	}
+	#Focus for Separatist Naval Technology
+	focus = {
+		id = IBC_separatist_naval_technology
+		icon = GFX_goal_unknown
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_carrier_missions 
+			focus = IBC_capital_ship_improvments 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus= {
+			bonus = 1
+			uses = 1 
+			category = ca_tech
+		}
+			add_tech_bonus= {
+			bonus = 1 
+			uses = 1 
+			category = cl_tech
+		}
+		add_tech_bonus= {
+			bonus = 1 
+			uses = 1 
+			category = bb_tech
+		}
+		}
+	}
+
+	#Focus for Capital Ship Improvments
+	focus = {
+		id = IBC_capital_ship_improvments
+		icon = GFX_goal_unknown
+		x = 34
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_fleet_in_being }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = capital_mission
+		}
+	}
+	#Focus for Carrier Missions
+	focus = {
+		id = IBC_carrier_missions
+		icon = GFX_goal_unknown
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_carrier_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = carrier_mission
+		}
+	}
+	#Focus for Carrier Warfare
+	focus = {
+		id = IBC_carrier_warfare
+		icon = GFX_goal_unknown
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_intergalactic_banking_clan_defense_navy }
+		mutually_exclusive = { focus = IBC_fleet_in_being }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.5
+				uses = 1
+				category = cat_base_strike
+			}
+		}
+	}
+	#Focus for Fleet In Being
+	focus = {
+		id = IBC_fleet_in_being
+		icon = GFX_goal_unknown
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_intergalactic_banking_clan_defense_navy }
+		mutually_exclusive = { focus = IBC_carrier_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.5
+				uses = 1
+				category = cat_fleet_in_being
+			}
+		}
+	}
+
+	#Focus for Gwori Revolutionary Industries
+	focus = {
+		id = IBC_gwori_revolutionary_industries
+		icon = GFX_goal_unknown
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_carrier_warfare 
+			focus = IBC_fleet_in_being 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			1 = {
+				add_building_construction = {
+				    type = dockyard
+				    level = 4
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+	#Focus for InterGalactic Banking Clan Defense Navy
+	focus = {
+		id = IBC_intergalactic_banking_clan_defense_navy
+		icon = GFX_goal_unknown
+		x = 33
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for IG-series Battle Droid Army
+	focus = {
+		id = IBC_igseries_battle_droid_army
+		icon = GFX_goal_unknown
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_iotran_guard 
+		}
+		prerequisite = { 
+			focus = IBC_muun_officer_corps 
+		}
+		mutually_exclusive = { focus = IBC_separatist_technology }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = igseries_battle_droid_army
+		}
+	}
+	#Focus for IG Lancer Droids
+	focus = {
+		id = IBC_ig_lancer_droids
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_igseries_battle_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Fortify the Vault
+	focus = {
+		id = IBC_fortify_the_vault
+		icon = GFX_goal_unknown
+		x = 19
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_doctrine_training }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		custom_effect_tooltip = vault.1
+		hidden_effect = {
+				add_building_construction = {
+				    type = bunker
+				    level = 4
+				    instant_build = yes
+					province = 1101
+				}
+			
+			}
+			}
+	}
+	#Focus for IG-227 Hailfire-Class Droid Tanks
+	focus = {
+		id = IBC_ig227_hailfireclass_droid_tanks
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_igseries_battle_droid_army }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Iotran Guard
+	focus = {
+		id = IBC_iotran_guard
+		icon = GFX_goal_unknown
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_royal_vault_guards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_corps_commander = {
+					name = "Captian Tost"
+					portrait_path = "gfx/leaders/IBC/CaptainTost.dds"
+					skill = 3
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 4
+					logistics_skill = 4
+					traits = { infantry_officer }
+			}
+		}	
+	}
+	#Focus for Royal Vault Guards
+	focus = {
+		id = IBC_royal_vault_guards
+		icon = GFX_goal_unknown
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_collections_and_security_division }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = { 
+		custom_effect_tooltip = gamer.1
+		hidden_effect = {
+                division_template = {
+                    name = "Muunilinst Vault Guards"
+					is_locked = yes
+                    regiments = {
+                        Standard = { x = 0 y = 0 }
+                        Standard = { x = 0 y = 1 }
+                        Standard = { x = 0 y = 2 }
+                        Standard = { x = 0 y = 3 }
+
+                        Standard = { x = 1 y = 0 }
+                        Standard = { x = 1 y = 1 }
+                        Standard = { x = 1 y = 2 }
+                        Standard = { x = 0 y = 3 }
+
+                        Standard = { x = 2 y = 0 }
+                        Standard = { x = 2 y = 1 }
+                        Standard = { x = 2 y = 2 }
+                    }
+                }
+
+            random_state = {
+                limit = { 
+                    AND = { 
+                        is_capital = yes
+                        is_controlled_by = IBC
+                    }
+                }
+                create_unit = {
+                    division = "name = \"1. Muunilinst Vault Guards\" division_template = \"Muunilinst Vault Guards\" start_experience_factor = 0.2" 
+                    owner = FROM
+                }
+                create_unit = {
+                    division = "name = \"2. Muunilinst Vault Guards\" division_template = \"Muunilinst Vault Guards\" start_experience_factor = 0.2" 
+                    owner = FROM
+                }
+			}		
+		}
+		}
+	}
+	#Focus for Doctrine Training
+	focus = {
+		id = IBC_doctrine_training
+		icon = GFX_goal_unknown
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_army_training }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	#Focus for Army Training
+	focus = {
+		id = IBC_army_training
+		icon = GFX_goal_unknown
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_collections_and_security_division }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	
+	
+	#Focus for Separatist Technology
+	focus = {
+		id = IBC_separatist_technology
+		icon = GFX_goal_unknown
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_separatist_military_cooperation }
+		mutually_exclusive = { 
+			focus = IBC_igseries_battle_droid_army 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_tech_bonus= {
+			bonus = 1
+			uses = 1 
+			category = infantry_weapons
+		}
+			add_tech_bonus= {
+			bonus = 1 
+			uses = 1 
+			category = support_tech
+		}
+		add_tech_bonus= {
+			bonus = 1 
+			uses = 1 
+			category = armor
+		}
+		}
+	}
+	#Focus for Collections and Security Division
+	focus = {
+		id = IBC_collections_and_security_division
+		icon = GFX_goal_unknown
+		x = 21
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 30
+
+		}
+	}
+	#Focus for Muun Officer Corps
+	focus = {
+		id = IBC_muun_officer_corps
+		icon = GFX_goal_unknown
+		x = 24
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_royal_vault_guards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = muun_officer_corps
+		}
+	}
+	#Focus for Separatist Military Cooperation
+	focus = {
+		id = IBC_separatist_military_cooperation
+		icon = GFX_goal_unknown
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_doctrine_training }
+		available = { is_in_faction_with = CIS}
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+	#Focus for Munificent-Class Star Frigate
+	focus = {
+		id = IBC_munificentclass_star_frigate
+		icon = GFX_goal_unknown
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_gwori_revolutionary_industries }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for Capital Shipyards``
+	focus = {
+		id = IBC_capital_shipyards
+		icon = GFX_goal_unknown
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_intergalactic_banking_clan_defense_navy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			1 = {
+				add_building_construction = {
+				    type = dockyard
+				    level = 2
+				    instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	#Focus for Starfighter Production
+	focus = {
+		id = IBC_starfighter_production
+		icon = GFX_goal_unknown
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = IBC_intergalactic_banking_clan_defense_navy 
+			focus = IBC_collections_and_security_division 
+		}
+		ai_will_do = {
+			factor = 1`
+		}
+		completion_reward = {
+		air_experience = 40
+		add_tech_bonus = {
+    		bonus = 1.5
+    		uses = 1
+    		category = air_doctrine
+			}
+		}
+	}
+	#Focus for Shipyard Construction Effort
+	focus = {
+		id = IBC_shipyard_construction_effort
+		icon = GFX_goal_unknown
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IBC_capital_shipyards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = dockyard_construction
+			}
+	}
+	}
+}

@@ -1,0 +1,238 @@
+ideas = {
+    #############
+    country = {
+        OND_rebels = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                stability_weekly = -0.01
+                war_support_weekly = -0.01
+            }
+        }
+        OND_rebels_1 = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+            }
+        }
+        OND_royal_military = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                special_forces_min = 40
+            }
+
+        }
+        OND_militia = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                conscription = 0.02
+                defence = 0.1
+            }
+
+        }
+        OND_military_loyalty = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                war_support_factor = -0.10
+                surrender_limit = -0.4
+            }
+
+        }
+        OND_priortized_economy = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+            }
+
+        }
+        OND_warriors_of_onderon = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                army_org = 3
+                army_morale_factor = 0.1
+                army_defence_factor = 0.1
+            }
+        }
+        OND_bred_for_combat = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                army_org = 4
+                army_morale_factor = 0.2
+                army_defence_factor = 0.2
+            }
+
+        }
+        OND_extra_rations = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                MONTHLY_POPULATION = 0.5
+                stability_factor = 0.10
+                consumer_goods_factor = 0.05
+            }
+
+        }
+        OND_volunteers = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                send_volunteer_size = 10
+                send_volunteer_divisions_required = -0.25
+                send_volunteers_tension = -0.20
+            }
+
+        }
+        OND_shadow_guard = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                resistance_target = -0.2
+            }
+
+        }
+        OND_king_dendup = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                stability_factor = 0.10
+            }
+
+        }
+        OND_palace = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = OND
+            }
+
+            available = {
+            }
+
+            modifier = {
+                political_power_gain = 0.5
+                stability_factor = 0.10
+            }
+
+        }
+
+    }
+}

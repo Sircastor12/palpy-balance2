@@ -1,0 +1,38 @@
+add_namespace = market_generic
+
+news_event = { #
+	id = market_generic.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_generic.1"}
+	title = market_generic.1.t
+	desc = market_generic.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { #
+		name = "Fantastic."
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+
+news_event = { #
+	id = market_generic.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event market_generic.2"}
+	title = market_generic.2.t
+	desc = market_generic.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = no
+	
+	option = { #
+		name = "Very Unfortunate."
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+

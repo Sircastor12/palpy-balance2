@@ -1,0 +1,100 @@
+add_namespace = naboo
+## 975ARR/33BBY
+# Padme Elected Queen
+country_event = {
+	id = naboo.1
+	title = "Coronation of Queen Amidala" 
+	desc = "Padmé Naberrie, the 14 year old Apprentice Legislator alumni has been elected in a landslide over the encumbent King Veruna. This stunning display of political skill has shocked political analysts across Naboo. Naberrie has held the Theed mandate for the last two years, and this experience will hopefully quell fears of immaturity."
+	picture = GFX_padmescoronation
+	hidden = no
+
+	fire_only_once = yes
+
+    trigger = {
+         date > 0975.2.1
+         date < 0975.3.1
+         tag = NAB
+         NOT = { has_country_flag = padmecoronated}
+    }
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+	NAB = { 
+
+	   create_country_leader = {
+	name = "Padmé Amidala" ##She has lost the will to live
+	desc = "Queen of Naboo"
+	picture = "gfx/leaders/NAB/Queenpadme.dds"
+	expire = "2020.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+	}
+	}
+	
+        option = {
+		   name = "Congratulations to her!"
+		   trigger = { }
+		   set_country_flag = padmecoronated
+	    }
+
+       option = {
+		   name = "Weird, she really came out of nowhere"
+		   trigger = { }
+		   set_country_flag = padmecoronated
+	    }
+}
+
+news_event = {
+    id = naboo.30
+    title = "A Second Attempt!"
+    desc = "it is happening"
+    picture = GFX_event_padmeamidalassas2
+    fire_only_once = yes
+    hidden = no
+    
+    is_triggered_only = yes
+
+    immediate = {
+    news_event = {
+      id = cwb.1
+      days = 6
+      random = 10                   
+     } 
+    }
+    
+        option = {
+           name = "Oh my goodness!"
+           trigger = { 
+           NOT = { 
+           has_country_flag = separatistpig
+           }
+        }                      
+     }
+
+         option = {
+           name = "So close. We will get her eventually"
+           trigger = { 
+           AND = { 
+           has_country_flag = separatistpig
+           }
+        }                      
+     }   
+
+     option = {
+           name = "A second faliure, I hope Dooku knows what he is doing"
+           trigger = { 
+           AND = { 
+           has_country_flag = separatistpig
+           }
+           NOT = { 
+           tag = CIS
+           }
+        }                      
+     } 
+}

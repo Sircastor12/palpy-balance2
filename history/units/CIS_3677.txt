@@ -1,0 +1,30 @@
+division_template = {
+	name = "B1 Battle Droid"
+
+	regiments = {
+		b1_droid_unit = { x = 0 y = 0 }
+		b1_droid_unit = { x = 0 y = 1 }
+		b1_droid_unit = { x = 0 y = 2 }
+		b1_droid_unit = { x = 0 y = 3 }
+   		b1_droid_unit = { x = 1 y = 0 }
+		b1_droid_unit = { x = 1 y = 1 }
+		b1_droid_unit = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "AAT Tank Division"
+
+	regiments = {
+		AAT_unit = { x = 0 y = 0 }
+		AAT_unit = { x = 0 y = 1 }
+		AAT_unit = { x = 0 y = 2 }
+		AAT_unit = { x = 1 y = 0 }
+		AAT_unit = { x = 1 y = 1 }
+		AAT_unit = { x = 1 y = 2 }
+		MTT_Unit = { x = 2 y = 0 }
+		MTT_Unit = { x = 2 y = 1 }
+		MTT_Unit = { x = 2 y = 2 }
+		MTT_Unit = { x = 2 y = 3 }
+	}
+}

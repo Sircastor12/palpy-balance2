@@ -1,0 +1,6 @@
+Economic_spending = {
+
+icon = generic_political_discourse
+        allowed = { always = yes }
+
+}

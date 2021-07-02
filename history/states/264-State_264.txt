@@ -1,0 +1,41 @@
+state={
+	id=264
+	name="STATE_264"
+	provinces={
+		285 496 1863 3513 4361 4778 7906 7926 7947 7965 7968 7995 7996 8023 8029 8030 
+	}
+	manpower=2857142
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=0
+		aluminium=7
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=KYK
+		add_core_of = KYK
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

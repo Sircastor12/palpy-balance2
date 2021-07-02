@@ -1,0 +1,41 @@
+state={
+	id=270
+	name="STATE_270"
+	provinces={
+		125 140 220 239 882 1584 2255 2683 3082 3587 4273 4628 4920 4933 7975 7984 7998 8002 8018 8027 8028 8036 8042 8055 8060 8061 8063 8082 8084 8099 8108 
+	}
+	manpower=285714
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=4
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=3
+	}
+
+  	history = {
+		owner=FED
+		add_core_of = FED
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=5
+			air_base=0
+
+			4933 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			140 10
+		}
+	}
+}
+

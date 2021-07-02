@@ -1,0 +1,87 @@
+capital = 488
+
+oob = "ALZ_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = 0.1
+
+set_technology = {
+	tech_support = 1
+	militia_ALZ = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	scraping_the_barrel
+}
+
+0975.1.2 = {
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+	create_country_leader = {
+		name = "Thi-Sen"
+		desc = "Chief of Alzoc"
+		picture = "gfx/leaders/ALZ/ThiSen.dds"
+		expire = "2020.1.1"
+		ideology = despotism
+	}
+
+	create_field_marshal = {
+		name = "Thi-Sen"
+		picture = "ThiSen.dds"
+		traits = {  }
+		skill = 5
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+	}
+
+	create_corps_commander = {
+		name = "Be Ban"
+		portrait_path = "gfx/leaders/ALZ/BeBan.dds"
+		traits = {  }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Titzol Sik"
+		portrait_path = "gfx/leaders/ALZ/TitzolSik.dds"
+		traits = {  }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	}

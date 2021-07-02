@@ -1,0 +1,41 @@
+state={
+	id=163
+	name="STATE_163"
+	provinces={
+		114 134 238 1037 1066 1445 2653 2935 3169 3354 3907 4777 4818 6294 6305 6321 6330 6345 6353 6383 6388 6391 6405 6427 6430 6456 6500 6530 
+	}
+	manpower=1228571
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=4
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=CMG
+		add_core_of = CMG
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			6391 15
+		}
+	}
+}
+

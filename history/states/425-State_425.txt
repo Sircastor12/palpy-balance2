@@ -1,0 +1,40 @@
+state={
+	id=425
+	name="STATE_425"
+	provinces={
+		100 561 1870 2269 2466 2693 2987 3001 3013 3034 3316 3849 3980 4013 4348 4751 4955 10467 10479 10500 10504 10517 10520 10521 10522 10528 10535 10539 10545 10553 10560 10561 10565 10569 10574 10575 10578 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	
+	resources={
+		steel = 0
+		aluminium = 0
+		rubber = 0
+		tungsten = 0
+		oil = 0
+		chromium = 0
+	}
+
+  	history = {
+		owner = HOT
+		add_core_of = HOT
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

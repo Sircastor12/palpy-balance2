@@ -1,0 +1,13 @@
+toydaria_negotiations = {
+	icon = generic_prospect_for_resources
+	
+	visible = {
+		TAG = TOY
+		REP = {
+			has_country_flag = Toydariatroopssent
+		}
+		CIS = {
+			has_country_flag = Toydariatroopssent
+		}
+	}
+}

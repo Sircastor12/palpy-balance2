@@ -1,0 +1,41 @@
+state={
+	id=105
+	name="STATE_105"
+	provinces={
+		135 1174 1265 1662 2124 3317 3389 4686 5512 5529 5533 5536 5543 5546 5555 5567 5571 5575 5576 5585 5586 
+	}
+	manpower=285
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	
+	resources={
+		steel=3
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=4
+		chromium=2
+	}
+
+  	history = {
+		owner=KOR
+		add_core_of = KOR
+
+		buildings = {
+			infrastructure=2
+			arms_factory=0
+			industrial_complex=0
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

@@ -1,0 +1,102 @@
+#########################################################################
+# PALPATINES GAMBLE OPINION MODIFIER
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	tax_evader = {
+		value = -30
+		decay = 1
+		months = 24
+	}
+	law_abiding_corp = {
+		value = 10
+	}
+	tax_evasion = {
+		value = -20
+	}
+	possible_plot = {
+		value = -20
+		months = 24
+		decay = 1
+	}
+	caring_government = {
+		value = 10
+	}
+	corporate_member = {
+		value = -20
+	}
+	league_member = {
+		value = 20
+	}
+	tech_investor = {
+		value = 10
+	}
+	galactic_hiring = {
+		value = 5
+	}
+	hope_beacon = {
+		value = 20
+	}
+	major_corporation = {
+		value = -20
+	}
+	major_corporation_plus = {
+		value = 20
+	}
+	corporate_influence = {
+		value = -20
+	}
+	outerrimtax = {
+		value = -10
+	}
+	secessionist = {
+		value = -60
+	}
+	failed_the_people = {
+		value = -15
+	}
+	broke_ruusan = {
+		value = -85
+	}
+	#
+	##Used in PG focus trees
+	small_decrease = {
+		value = -10
+	}
+
+	medium_decrease = {
+		value = -25
+	}
+
+	large_decrease = {
+		value = -50
+	}
+
+	small_increase = {
+		value = 5
+	}
+
+	medium_increase = {
+		value = 15
+	}
+
+	large_increase = {
+		value = 25
+	}
+	
+	huge_increase = {
+		value = 50
+	}
+	##
+
+	trade_competitor = {
+		value = -10
+	}
+}

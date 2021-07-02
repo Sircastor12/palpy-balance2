@@ -1,0 +1,16 @@
+#################
+#### MAN ####
+#################
+
+MAN_CONFLICT = {
+	icon = MAN_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		OR = {
+			original_tag = MAN
+			original_tag = DEA
+		}
+	}
+}

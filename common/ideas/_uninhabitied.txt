@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		
+		
+		uninhabited_idea = {
+		
+		allowed = {
+				always = no
+			}
+			
+		removal_cost = -1
+		
+		modifier = {
+			min_export = 0
+			political_power_factor = -1
+		}
+	
+		}
+	
+	}
+}	

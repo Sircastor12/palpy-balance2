@@ -1,0 +1,18 @@
+sub_units = {
+	zyg_fighter = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { zyg_fighter_equip = 1 }
+		categories = { category_fighter }
+	}
+	umb_plane = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter cas naval_bomber }
+		need = { umb_plane = 1 }
+		categories = { category_fighter }
+	}
+}

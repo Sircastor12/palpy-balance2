@@ -1,0 +1,39 @@
+﻿capital = 3
+
+set_research_slots = 1
+set_stability = 0.8
+set_war_support = 0.2
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 10
+set_convoys = 20
+
+add_ideas = {
+	REP_member_prewar 
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1837.11.8"
+	election_frequency = 1200
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 60
+	neutrality = 40
+}
+
+
+create_country_leader = {
+	name = "Lurmen Council"
+	desc = "The Lurmen Council"
+	picture = "gfx/leaders/MYG/Lurmen.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}

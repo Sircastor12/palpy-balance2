@@ -1,0 +1,54 @@
+
+defined_text = { # Country
+	name = GetMoneyTooltip
+	text = {
+		localization_key = MONEY_TOOLTIP_BASE
+	}
+}
+defined_text = { # Country
+	name = GetMoneyAmount
+	text = {
+		trigger = {
+				check_variable = { nmn > 0 }
+		}
+		localization_key = positive_balance
+	}
+	text = {
+		trigger = {
+				check_variable = { nmn < 0 }
+		}
+		localization_key = negative_balance
+	}
+}
+defined_text = { # Country
+	name = GetMoneyAmountTotal
+	text = {
+		trigger = {
+				check_variable = { dx > 0 }
+		}
+		localization_key = positive_dx_balance
+	}
+	text = {
+		trigger = {
+				check_variable = { dx < 0 }
+		}
+		localization_key = negative_dx_balance
+	}
+}
+defined_text = { # Country
+	name = Getdailydebt
+	text = {
+		trigger = {
+			tag = IBC
+		}
+		localization_key = ibc_interest
+	}
+	text = {
+		trigger = {
+			NOT = {
+				tag = IBC
+			}
+		}
+		localization_key = regular_interest
+	}
+}

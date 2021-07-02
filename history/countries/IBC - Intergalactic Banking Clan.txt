@@ -1,0 +1,174 @@
+﻿capital = 76
+
+oob = "IBC_3677"
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 35
+set_rule = { can_create_factions = yes }
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	battle_droid_0 = 1
+	cis_tank_1 = 1
+}
+
+add_political_power = 50
+set_convoys = 2000
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	REP_member_prewar
+	limited_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+
+0978.8.8 = {
+
+	oob = "IBC_3687"
+
+	set_technology = {
+		battle_droid_0 = 1
+		hailfire_droid = 1
+		cis_tank_1 = 1
+	}
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
+	}
+}
+
+
+create_country_leader = {
+	name = "San Hill"
+	desc = "Chairman of the Intergalactic Banking Clan"
+	picture = "gfx/leaders/IBC/SanHill.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "The Core Five"
+	desc = "Core Five of The Intergalactic Banking Clan"
+	picture = "gfx/leaders/IBC/CoreFive.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+	name = "Riklon Tost"
+	portrait_path = "gfx/leaders/IBC/RiklonTost.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Clu Lesser"
+	portrait_path = "gfx/leaders/IBC/Clulesser.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "IG-15"
+	portrait_path = "gfx/leaders/IBC/IG15.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Brarsh Chaill"
+	portrait_path = "gfx/leaders/IBC/BrarshChaill.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Mak Plain"
+	portrait_path = "gfx/leaders/IBC/MakPlain.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Nix Card"
+	portrait_path = "gfx/leaders/IBC/NixCard.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Callals Piq"
+    picture = "CallalsPiq.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Pors Tonith"
+    picture = "Porstonith.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Sa Laput"
+    picture = "SaLaput.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

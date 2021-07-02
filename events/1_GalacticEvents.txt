@@ -1,0 +1,566 @@
+add_namespace = swcw
+## 376ATC/24BBY
+# Dorvalla Incident
+news_event = {
+	id = swcw.1
+	title = swcw.1.title
+	desc = swcw.1.desc
+	picture = GFX_dorvallaincident
+	major = yes
+
+	fire_only_once = yes
+
+    trigger = {
+         has_global_flag = dorvallacincidenttriggered 
+    }
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+        option = {
+		   name = "This is blatantly a staged attack"
+		   trigger = { TAG = REP }
+		   set_global_flag = dorvallacincidentnewstriggered
+	    }
+
+       option = {
+		   name = "This will only strengthen Separatist sentiment"
+		   trigger = { TAG = REP }
+		   set_global_flag = dorvallacincidentnewstriggered
+	    }
+
+        option = {
+		   name = "This is bound to cause a diplomatic incident"
+		   set_global_flag = dorvallacincidentnewstriggered
+		   trigger = {
+			NOT = {
+				TAG = REP
+	     }
+
+		}
+	}
+}
+
+## 376ATC/24BBY
+# Naboo Crisis Escalates!
+news_event = {
+	id = swcw.2
+	title = "Naboo Crisis Escalates!"
+	desc = "There is talk in the Republic Senate of a Trade Federation blockade of Naboo."
+	picture = GFX_dorvallaincident
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+			has_global_flag = nabooblockaded
+		} 
+	
+        option = {
+		   name = swpg.1.a
+	    }
+
+       option = {
+		   name = swpg.1.b
+		   trigger = { TAG = REP }
+	    }
+
+        option = {
+		   name = swpg.1.c
+		   trigger = {
+			NOT = {
+				TAG = REP
+	     }
+	     
+		}
+	}
+}
+
+## 376ATC/24BBY
+# Valorum's Response
+news_event = {
+	id = swcw.3
+	title = swcw.3.title
+	desc = swcw.3.desc
+	picture = GFX_valorumsproposal
+	major = yes
+
+	fire_only_once = yes
+
+    trigger = {
+         has_global_flag = dorvallacincidentnewstriggered
+    }
+	
+	mean_time_to_happen = {
+		days = 12
+	}
+	
+        option = {
+		   name = swpg.1.a
+		   trigger = { TAG = REP }
+	    }
+
+        option = {
+		   name = swpg.1.b
+		   trigger = {
+			NOT = {
+				TAG = REP
+	     }
+
+		}
+	}
+}
+##Malastare Narrows##
+country_event = {
+	id = swcw.4
+	title = "Malastare Fuel Allocations"
+	desc = "Members of the Corporate Alliance have been hit by a reallocation of fuel sales from Malastare fuel companies. This has reduced our profit margins as we settle for higher priced fuel. How should we respond?"
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = FED
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+	}
+	
+    option = {
+		name = "Take diplomatic action."
+		trigger = { 
+			TAG = FED 
+		}
+		MAL = {
+			country_event = {
+		   		id = swcw.5
+		   	}
+		}
+	}
+    option = {
+		name = "It is the cost of doing business."
+		trigger = { TAG = FED }
+		set_global_flag = FEDignoresmal
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = swcw.5
+	title = "Trade Federation Negotiations"
+	desc = "The Trade Federation has taken a hit after we reallocated our fuel exports to more profitable markets. They would like to open negotiations to settle new pricing and distribution options. How should we respond?"
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = MAL
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+	}
+	
+    option = {
+		name = "Cancel the reallocation."
+		trigger = { 
+			TAG = MAL 
+		}
+		MAL = { remove_ideas = fuel_reallocation }
+		FED = { remove_ideas = FED_fuelreallocation }
+		FED = {
+			country_event = {
+				id = swcw.8
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+    option = {
+		name = "Compromise." 
+		trigger = { TAG = MAL }
+		MAL = { remove_ideas = fuel_reallocation }
+		MAL = { add_ideas = nerf_fuel_reallocation }
+		FED = { remove_ideas = FED_fuelreallocation }
+		FED = { add_ideas = nerf_FED_fuelreallocation }
+		set_global_flag = MALignoresfed
+		FED = {
+			country_event = {
+				id = swcw.7
+			}
+		}
+	}
+    option = {
+		name = "It is the cost of doing business."
+		trigger = { TAG = MAL }
+		set_global_flag = MALignoresfed
+		hidden_effect = {
+			FED = {
+				country_event = {
+						id = swcw.6
+				}
+			}
+		}
+	}
+	ai_chance = {
+		base = 200
+	}
+}
+country_event = {
+	id = swcw.6
+	title = "Malastare Fuel Export Reallocation Continues as Planned."
+	desc = "Malastare has chosen to ignore our diplomatic resolution to their fuel export reallocation. Our profits will continue to take a hit if no action is taken."
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = FED
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+	}
+	
+    option = {
+		name = "Very unfortunate."
+		trigger = { 
+		    TAG = FED 
+		}
+		set_global_flag = MALignoresfed
+	}
+}
+
+country_event = {
+	id = swcw.7
+	title = "Malastare has drafted a compromise to the fuel crisis."
+	desc = "Owners of Malastare fuel exports have drafted a resolution to the fuel dispute. Should we sign it?"
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = FED
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+	}
+	
+    option = {
+		name = "Sign the compromise."
+		trigger = { TAG = FED }
+		MAL = {
+		    country_event = {
+		   		id = swcw.5
+		   	}
+		}
+		set_global_flag = MALignoresfed
+	}
+    option = {
+		name = "Unacceptable. Military action should be taken."
+		trigger = { TAG = FED }
+		set_global_flag = MALignoresfed
+	}
+	ai_chance = {
+		base = 0
+	}
+}
+country_event = {
+	id = swcw.8
+	title = "Malastare Cancels Fuel Export Reallocation"
+	desc = "Malastare has chosen to cancel the fuel export reallocations."
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = FED
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+    option = {
+		name = "Perfect."
+		trigger = { 
+			TAG = FED 
+		}
+	}
+}
+country_event = {
+	id = swcw.9
+	title = "Trade Federation Blockade!"
+	desc = "The Trade Federation has placed a blockade on our planet severely limiting trade."
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = MAL
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+    option = {
+		name = "Contact the Galactic Republic."
+		trigger = { 
+			TAG = MAL 
+		}
+		REP = {
+			country_event = {
+				id = swcw.10
+			}
+		}
+	}
+    option = {
+		name = "Cancel the reallocation."
+		trigger = { 
+			TAG = MAL 
+		}
+		MAL = { remove_ideas = fuel_reallocation }
+		FED = { remove_ideas = FED_fuelreallocation }
+		FED = {
+			country_event = {
+				id = swcw.8
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = swcw.10
+	title = "Malastare Requests Help from the Republic"
+	desc = "The Trade Federation has placed a blockade on Malastare severely limiting trade."
+	picture = GFX_valorumsproposal
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = { 
+	     tag = REP
+    }
+
+
+	mean_time_to_happen = {
+		days = 10
+	}
+    option = {
+		name = "Dispatch a fleet to Malastare."
+		trigger = { 
+			TAG = REP
+		}
+		news_event = {
+			id = swcw.11
+		}
+	}
+    option = {
+		name = "Malastare is responsible for their own security."
+		trigger = { 
+			TAG = REP
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+news_event = {
+	id = swcw.11
+	title = "Battle of Malastare Narrows"
+	desc = "After a fuel export dispute, the Trade Federation blockaded the planet Malastare. In response, the Republic dispatched a fleet to clear the blockade. Although the blockade was cleared, it was costly a costly victory for the Republic."
+	picture = GFX_dorvallaincident
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+
+	immediate = {
+		MAL = {
+			transfer_state = 211
+			remove_ideas = Blockade
+		}
+		REP = {
+			add_war_support = -0.1
+			add_manpower = -6100
+		}
+		FED = {
+			add_equipment_to_stockpile = {
+    			type = convoy_1
+    			amount = -160
+    			producer = FED
+			}
+		}
+	}
+
+    option = {
+		name = "A Republic Victory?"
+		trigger = { TAG = REP }
+	}
+
+    option = {
+		name = "Interesting."
+		trigger = {
+			NOT = {
+				TAG = REP
+				TAG = FED
+				TAG = MAL
+	    	} 
+		}
+	}
+    option = {
+		name = "Interesting."
+		trigger = {
+			TAG = MAL
+		}
+	}
+    option = {
+		name = "Very Unfortunate."
+		trigger = {
+			TAG = FED
+		}
+	}
+}
+
+news_event = {
+	id = swcw.12
+	title = "Corellia Closes its Borders"
+	desc = swcw.12.desc
+	picture = GFX_corelliaclosesborders
+	major = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+	}
+
+    option = {
+		name = "This is not good."
+		trigger = { 
+		    TAG = REP
+		 }
+	}
+    option = {
+		name = "Interesting."
+		trigger = {
+			TAG = MAL
+		}
+	}
+    option = {
+		name = "The Republic continues to fracture."
+		trigger = {
+           ROOT = { 
+              is_in_faction_with = CIS 
+            }
+		}
+	}
+}
+
+news_event = {
+	id = swcw.13
+	title = "Sheev Palpatine Voted Chancellor" 
+	desc = "Palpatine has been elected Chancellor"
+	picture = GFX_padmescoronation
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {}
+
+	fire_only_once = no
+	
+        option = {
+		   name = "Congratulations Sheev!"
+		   trigger = { is_in_faction_with = REP }
+	    }
+
+       option = {
+		   name = "Times are changing in the Republic"
+		   trigger = { }
+	    }
+}
+
+news_event = {
+	id = swcw.14
+	title = "Valorum stays in Power!" 
+	desc = "Valorum has been elected Chancellor yet again."
+	picture = GFX_padmescoronation
+	major = yes
+	is_triggered_only = yes
+
+		trigger = {}
+
+	fire_only_once = no
+	
+        option = {
+		   name = "Congratulations Valorum!"
+		   trigger = { is_in_faction_with = REP }
+	    }
+
+       option = {
+		   name = "The Republic remains stagnant"
+		   trigger = { }
+	    }
+}
+
+news_event = {
+	id = swcw.15
+	title = "The Raxus Address" 
+	desc = "The CIS has been formed on Raxus."
+	picture = GFX_padmescoronation
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		CIS = {
+			transfer_state = 16
+		}
+		country_event = {
+			id = CIS.2
+		}
+	}
+	
+        option = {
+		   name = "Oh my goodness."
+		   trigger = { is_in_faction_with = REP }
+	    }
+
+       option = {
+		   name = "Long live the Confederacy!"
+		   trigger = { is_in_faction_with = CIS }
+	    }
+}

@@ -1,0 +1,40 @@
+state={
+	id=480
+	name="STATE_480"
+	provinces={
+		580 802 891 1649 1930 2514 3005 3094 3334 3791 4295 4308 4442 4457 4591 5007 11364 11382 11398 11413 11417 11426 11430 11434 11442 
+	}
+	manpower=1428571
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=4
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=UTU
+		add_core_of = UTU
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			11426 50
+		}
+	}
+}
+

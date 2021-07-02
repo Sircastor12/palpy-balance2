@@ -1,0 +1,112 @@
+﻿division_template = {
+	name = "Monnk Company Division"
+	is_locked = yes
+
+	regiments = {
+		REP_monnk_clone = { x = 0 y = 0 }
+		REP_monnk_clone = { x = 0 y = 1 }
+		REP_monnk_clone = { x = 0 y = 2 }
+		REP_monnk_clone = { x = 0 y = 3 }
+		REP_monnk_clone = { x = 1 y = 0 }
+		REP_monnk_clone = { x = 1 y = 1 }
+		REP_monnk_clone = { x = 1 y = 2 }
+		REP_monnk_clone = { x = 2 y = 0 }
+		REP_monnk_clone = { x = 2 y = 1 }
+		REP_monnk_clone = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+
+
+
+###########################################UNITS###########################################
+
+units = {
+	division= {	
+		name = "Monnk's Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 1  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Otter Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Crab Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3   #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Seel Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3 #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Cuddlefish Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Squid Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Octopus Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Jellyfish Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Shark Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Urchin Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Barnicle Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	division= {	
+		name = "Whale Company"
+		location = 10463 #Kamino
+		division_template = "Monnk Company Division"
+		start_experience_factor = 0.3  #optional, otherwise starts with 0 expereince
+		force_equipment_variants = { p1_clone_equip = { owner = "KAM" } }
+	}
+	
+}
+

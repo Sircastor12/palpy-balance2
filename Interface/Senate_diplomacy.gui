@@ -1,0 +1,17 @@
+guiTypes = {
+	containerWindowType = {
+		name = "start_league_of_nations_voting_window"
+		position = { x = 485 y = 120 }
+		size = { width = 50 height = 50 }
+
+		fade_time = 2000
+		fade_type = linear
+
+		buttonType = {
+			name = "start_league_of_nations_voting_button"
+			spriteType = "GFX_start_league_of_nations_voting_button_icon"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "START_LEAGUE_OF_NATIONS_VOTING_ON_THIS_COUNTRY"
+		}
+	}
+}

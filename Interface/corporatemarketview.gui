@@ -1,0 +1,519 @@
+#Corporate markets
+guiTypes = {
+	containerWindowType = {
+		name = "corporate_market_init_container"
+		position = { x = 1025 y = -3 }
+		
+		buttonType ={
+			name ="corporate_market_init_bg"
+			spriteType = "GFX_production_open_button"
+			position = { x=180 y=6 }
+			pdx_tooltip = "production_button_loc"
+		}
+	}
+
+###Commerce Guild CMG###
+	containerWindowType = {
+			name = "corporate_cmg_container"
+			position = {x=0 y=0}
+			size = { width=800 height=800 }
+	
+			moveable = yes
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_market_combo"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "close_button"
+				position = { x = -34 y = 0 }
+				quadTextureSprite ="GFX_close_button_1"
+				buttonFont = "hoi_16mbs"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}
+		buttonType = {
+			name = "CMG_warships" 
+			position = {x=145 y=200}	
+			spriteType = "GFX_naval_products"
+			pdx_tooltip = "CAT_cmg_ships"
+		}
+		buttonType = {
+			name = "CMG_vehicles" 
+			position = {x=435 y=200}
+			spriteType = "GFX_ground_products"
+			pdx_tooltip = "CAT_cmg_vehicles"
+		}
+	}
+	###CMG Warships###
+	containerWindowType = {
+		name = "market_cmg_warships_corporate"
+		position = {x=0 y=0}
+		size = { width=800 height=800 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_combo"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -34 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "market_return"
+		}
+
+		##Slot 1
+		containerWindowType = {
+			name = "CMG_slot_1"
+			position = {x=110 y=100}
+			size = { width=800 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_shipselect"
+			}
+
+			instantTextBoxType = {
+				name ="slot1_title"
+				position = { x=20 y =3 }
+				font = "hoi_18mbs"
+				text = "Naval Production Slot"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "slot1_place_order" 
+				position = {x=28 y=51}	
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_cmghnounion_infantry"
+			}
+			iconType = {
+				name = "research_progressbar_frame_icon"
+				spriteType = "GFX_research_progressbar_frame"
+				position = { x=27 y=75 }		
+			}		
+
+			iconType = {
+				name = "research_progressbar"
+				spriteType = "Gfx_research_progressbar"
+				position = { x=30 y=77 }		
+			}
+		}
+
+		##Slot 3
+		containerWindowType = {
+			name = "CMG_slot_2"
+			position = {x=110 y=200}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_shipselect"
+			}
+
+			instantTextBoxType = {
+				name ="slot2_title"
+				position = { x=10 y =3 }
+				font = "hoi_18mbs"
+				text = "Naval Production Slot"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "slot2_place_order" 
+				position = {x=7 y=65}
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		##Slot 3
+		containerWindowType = {
+			name = "CMG_slot_3"
+			position = {x=110 y=300}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_shipselect"
+			}
+
+			instantTextBoxType = {
+				name ="slot3_title"
+				position = { x=11 y =3 }
+				font = "hoi_18mbs"
+				text = "Naval Production Slot"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "slot3_place_order" 
+				position = {x=7 y=65}
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		##Slot 4
+		containerWindowType = {
+			name = "CMG_slot_4"
+			position = {x=110 y=400}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_shipselect"
+			}
+
+			instantTextBoxType = {
+				name ="slot4_title"
+				position = { x=11 y =3 }
+				font = "hoi_18mbs"
+				text = "Naval Production Slot"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "slot4_place_order" 
+				position = {x=7 y=65}
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		##Slot 5
+		containerWindowType = {
+			name = "CMG_slot_5"
+			position = {x=110 y=500}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_shipselect"
+			}
+
+			instantTextBoxType = {
+				name ="slot5_title"
+				position = { x=11 y =3 }
+				font = "hoi_18mbs"
+				text = "Naval Production Slot"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "slot5_place_order" 
+				position = {x=7 y=65}
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		##Slot 6
+		containerWindowType = {
+			name = "CMG_slot_6"
+			position = {x=110 y=600}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_shipselect"
+			}
+
+			instantTextBoxType = {
+				name ="slot6_title"
+				position = { x=11 y =3 }
+				font = "hoi_18mbs"
+				text = "Naval Production Slot"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "slot6_place_order" 
+				position = {x=7 y=65}
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+	###CMG Vehicles###
+	containerWindowType = {
+		name = "market_cmg_vehicles_corporate"
+		position = {x=0 y=0}
+		size = { width=800 height=800 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_combo"
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -34 y = 0 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+			name = "return_button" 
+			position = {x=3 y=3}	
+			spriteType = "GFX_return_button"
+			pdx_tooltip = "market_return"
+		}
+
+		##Dsd1
+		containerWindowType = {
+			name = "market_dsd1"
+			position = {x=80 y=115}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_dsd1_card"
+			}
+
+			instantTextBoxType = {
+				name ="dsd1_title"
+				position = { x=20 y =3 }
+				font = "hoi_18mbs"
+				text = "DSD-1 Droid"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="dsd1_stock"
+				position = { x=45 y =175 }
+				font = "hoi_18mbs"
+				text = "cmg_dsd1_stockpile"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="dsd1_count"
+				position = { x=63 y =193 }
+				font = "hoi_18mbs"
+				text = "dsd1_batch_size"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="dsd1_price"
+				position = { x=15 y =211 }
+				font = "hoi_18mbs" 
+				text = "cmg_dsd1_in_market"
+				format = right
+				maxWidth = 150
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="dsd1_purchase_rights"
+				position = { x=64 y =228 }
+				font = "hoi_18mbs"
+				text = "cmg_dsd1_sold" 
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "dsd1_place_order" 
+				position = {x=7 y=250}	
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_cmghnounion_infantry"
+			}
+		}
+		##adsd
+		containerWindowType = {
+			name = "market_adsd"
+			position = {x=310 y=115}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_adsd_card"
+			}
+
+			instantTextBoxType = {
+				name ="adsd_title"
+				position = { x=18 y =3 }
+				font = "hoi_18mbs"
+				text = "Advanced DSD-1 Droid"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="adsd_stock"
+				position = { x=45 y =175 }
+				font = "hoi_18mbs"
+				text = "adsd_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="adsd_count"
+				position = { x=73 y =193 }
+				font = "hoi_18mbs"
+				text = "adsd_count"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="adsd_price"
+				position = { x=30 y =211 }
+				font = "hoi_18mbs"
+				text = "adsd_price"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="adsd_purchase_rights"
+				position = { x=60 y =228 }
+				font = "hoi_18mbs"
+				text = "adsd_tech" 
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "adsd_place_order" 
+				position = {x=7 y=250}
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+		##homing spider
+		containerWindowType = {
+			name = "market_homing_spider"
+			position = {x=540 y=115}
+			size = { width=188 height=279 }
+			
+			background = {
+				name = "Background"
+				spriteType = "GFX_homing_spider_card"
+			}
+
+			instantTextBoxType = {
+				name ="homing_spider_title"
+				position = { x=18 y =3 }
+				font = "hoi_18mbs"
+				text = "Homing Spider Droid"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="homing_spider_stock"
+				position = { x=45 y =175 }
+				font = "hoi_18mbs"
+				text = "homing_spider_stock"
+				format = right
+				maxWidth = 120
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="homing_spider_count"
+				position = { x=73 y =193 }
+				font = "hoi_18mbs"
+				text = "homing_spider_count"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="homing_spider_price"
+				position = { x=50 y =211 }
+				font = "hoi_18mbs"
+				text = "homing_spider_price"
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			instantTextBoxType = {
+				name ="homing_spider_purchase_rights"
+				position = { x=58 y =228 }
+				font = "hoi_18mbs"
+				text = "homing_spider_tech" 
+				format = left
+				maxWidth = 220
+				maxHeight = 24
+				fixedsize = yes
+			}
+			buttonType = {
+				name = "homing_spider_place_order" 
+				position = {x=7 y=250}	
+				spriteType = "GFX_send_batch"
+				pdx_tooltip = "CAT_aratechhnounion_infantry"
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "corporate_market_full_container"
+		position = {x=550 y=125}
+		size = { width=800 height=800 }
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_market_combo"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -40 y = 20 }
+			quadTextureSprite ="GFX_close_button_1"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			}
+		}
+	}

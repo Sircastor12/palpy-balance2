@@ -1,0 +1,51 @@
+add_namespace = dr
+
+news_event = {
+	id = dr.1
+	title = "Separatist Superweapon Discovered"
+	desc = "A separatist superweapon dubbed the 'Dark Reaper' has been uncovered by Republic spies on the planet of Rhen Var!"
+	picture = GFX_event_darkreaper
+	major = yes
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+	
+     option = {
+		   name = "Our secret discovered"
+		   trigger = { 
+		   has_country_flag = separatistpig
+	    }	                   
+     }
+
+     option = {
+		   name = "Oh no, another one."
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+
+     option = {
+		   name = "Sad. But good for them!"
+		   trigger = { 
+		   has_country_flag = loyalistbitch
+	    }	                   
+     }
+ }
+
+news_event = {
+	id = dr.2
+	title = "The Dark Reaper destroyed"
+	desc = "A separatist superweapon dubbed the 'Dark Reaper' has been destroyed by Republic jedi operatives the planet of Rhen Var!"
+	picture = GFX_event_darkreaper
+	major = yes
+	fire_only_once = yes
+    
+    is_triggered_only = yes
+	
+     option = {
+		   name = "Our secret discovered"
+		   trigger = { 
+		   has_country_flag = separatistpig
+	    }	                   
+     }
+ }

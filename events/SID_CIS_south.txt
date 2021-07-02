@@ -1,0 +1,103 @@
+add_namespace = SCS
+
+news_event = {
+	id = SCS.1
+	title =  "Directions From Lord Sidious"
+	desc =  "In order to keep the war moving in our favor, Lord Sidious requests that we invade the planet Christophsis within 150 days."
+	picture = GFX_event_christophsis
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name =  "Yes, my lord."
+		declare_war_on = {
+		    target = CHR
+		    type = annex_everything
+		}
+		SID = {
+			news_event = {
+				id = SCS.2
+			}
+		}
+		set_global_flag = geo_christophsis
+		transfer_state = 212
+		transfer_state = 213
+		transfer_state = 230
+		CIS = {
+			set_province_controller = 2188
+		}
+
+
+		ai_chance = {
+			base = 100
+		}
+		trigger = {
+			tag = CIS
+		}
+	}
+	option = {
+		name =  "We cannot accept." 
+		add_political_power = -50
+		ai_chance = {
+			base = 0
+		}
+		trigger = {
+			tag = CIS
+		}
+	}
+}
+
+news_event = {
+	id = SCS.2
+	title =  "Dooku has accepted your mission."
+	desc =  "Count Dooku has accepted your mission to invade Christophsis."
+
+	picture = GFX_event_christophsis
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name =  "Notify the Republic of the imminent attack."
+		add_political_power = -10
+		REP = {
+			news_event = {
+				SCS.3
+			}
+		}
+	}
+	option = {
+		name =  "Give the Republic false information."
+	}
+}
+
+news_event = {
+	id = SCS.4
+	title =  "Republic Intelligence Reports an Attack is Iminent."
+	desc =  "Republic intelligence has reported an attack is imminent on the planet Christophsis."
+
+	picture = GFX_CIS_mob
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name =  "Forces should be mobilized immediately."
+		trigger = {
+			tag = REP
+		}
+		set_country_flag = defend_chr
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name =  "The reports are false."
+		trigger = {
+			tag = REP
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}

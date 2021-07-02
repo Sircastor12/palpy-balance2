@@ -1,0 +1,110 @@
+capital = 332
+
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	volunteer_only
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 80
+		communism = 0
+		neutrality = 0
+		fascism = 20
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
+	    }
+}
+
+create_country_leader = {
+	name = "Xucphra Corporation"
+	desc = "Xucphra Corporation"
+	picture = "gfx/leaders/THY/Xucphra.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Zalk't"
+	desc = "Chief Operating Officer of Thyferra"
+	picture = "gfx/leaders/THY/Viaba.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_corps_commander = {
+	name = "Ci Zithe"
+	portrait_path = "gfx/leaders/THY/CiZithe.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Manti Goring"
+	portrait_path = "gfx/leaders/THY/Mantigoring.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Chan Aegon"
+	portrait_path = "gfx/leaders/THY/Chanaegon.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Viaba Mclaren"
+	id = 702
+	picture = "Viaba.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}

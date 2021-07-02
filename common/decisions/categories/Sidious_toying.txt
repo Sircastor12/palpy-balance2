@@ -1,0 +1,39 @@
+sidious_cis_formation = {
+	icon = generic_prospect_for_resources
+	
+	visible = {
+		TAG = CIS
+	}
+}
+
+sidious_influence = {
+	icon = generic_prospect_for_resources
+	
+	visible = {
+		TAG = SID
+	}
+}
+
+sidious_cis_north = {
+     icon = generic_prospect_for_resources
+	
+	visible = {
+		TAG = SID
+	}
+}
+
+sidious_cis_south = {
+     icon = generic_prospect_for_resources
+	
+	visible = {
+		TAG = SID
+	}
+}
+
+cis_south = {
+     icon = generic_prospect_for_resources
+	
+	visible = {
+		TAG = CIS
+	}
+}

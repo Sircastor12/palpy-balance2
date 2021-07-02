@@ -1,0 +1,40 @@
+state={
+	id=275
+	name="STATE_275"
+	provinces={
+		2 343 847 1196 1475 2396 2501 2505 2932 3028 3071 3890 4382 4417 4627 4861 8022 8040 8046 8056 8071 8079 8092 8096 8111 8117 8124 8128 8130 8134 8143 8152 8155 
+	}
+	manpower=2857142
+	buildings_max_level_factor=1.000
+	state_category=town
+	
+	resources={
+		steel=0
+		aluminium=7
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=KYK
+		add_core_of = KYK
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			2396 50
+		}
+	}
+}
+

@@ -1,0 +1,26 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_super_event_background"
+		texturefile = "gfx/super_events/super_event_background.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_raxus_address_super_event"
+		texturefile = "gfx/super_events/raxus_address.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_naboo_crisis_super_event"
+		texturefile = "gfx/super_events/naboo_crisis.dds"
+		legacy_lazy_load = no
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_thin_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_window_thin_border.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		}
+	}

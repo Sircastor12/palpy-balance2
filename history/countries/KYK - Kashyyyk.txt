@@ -1,0 +1,170 @@
+﻿capital = 275
+
+oob = "KYK_3677"
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = .05
+
+set_technology = {
+	tech_support = 1
+	militia_KYK = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 100
+set_convoys = 50
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 10000
+
+}
+add_ideas = {
+	REP_member_prewar 
+	scraping_the_barrel
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	KYK_peaceful_giants
+}
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+
+create_country_leader = {
+	name = "Tarfful"
+	picture = "gfx/leaders/KYK/Tarfful.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+	name = "Grabow"
+	portrait_path = "gfx/leaders/KYK/KYK_Grabow.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Chewbacca"
+	portrait_path = "gfx/leaders/KYK/Chewbacca.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Grakchawwaa"
+	portrait_path = "gfx/leaders/KYK/Grakchawwaa.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Guanta"
+	portrait_path = "gfx/leaders/KYK/Eugroothwa.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Lachichuk"
+	portrait_path = "gfx/leaders/KYK/Lachichuk.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Merumeru"
+	portrait_path = "gfx/leaders/KYK/Merumeru.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Salporin"
+	portrait_path = "gfx/leaders/KYK/Salporin.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wookiee Warrior"
+	portrait_path = "gfx/leaders/KYK/Generic.dds"
+	traits = { trait_mountaineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Wookiee Warrior"
+	portrait_path = "gfx/leaders/KYK/Generic.dds"
+	traits = { trait_mountaineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Wookiee Warrior"
+	portrait_path = "gfx/leaders/KYK/Generic.dds"
+	traits = { trait_mountaineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

@@ -1,0 +1,307 @@
+﻿l_english:
+ DECISIONVIEW_TITLE:0 "Events and Decisions"
+ DECISIONSVIEW_EVENT_HEADER:0 "Events"
+ POPUP_NEWS:0 "News Popup"
+ POPUP_EVENTS:0 "Event Popup"
+ CATEGORY_COLLAPSE_DESC:0 "§GClick§! to collapse"
+ CATEGORY_EXPAND_DESC:0 "§GClick§! to expand"
+ DECISION_KEEP_NOTIFIED:1 "§HNotify§!\n\n§GClick§! to §Rnot be notified§! when it is possible to take this decision.\n"
+ DECISION_NOT_KEEP_NOTIFIED:1 "§HNotify§!\n\n§GClick§! to §Gbe notified§! when it is possible to take this decision.\n"
+ TAKE_DECISION_HEADER:0 "§HTake decision§!\n\n"
+ DECISION_COST_DESC:0 "It costs £pol_power $VAL|H0$ to take the decision"
+ DECISION_COST_NOT_ENOUGH:0 "It costs £pol_power $VAL|HR0$ to take the decision"
+ ON_MAP_DECISION_NAME_DEFAULT:0 "Find decisions on the map."
+ ADD_DAYS_TO_DECISION:0 "Add $DAYS|H$ days to Decision $DECISION|H$"
+ REMOVE_DAYS_TO_DECISION:0 "Remove $DAYS|H$ days from Decision $DECISION|H$"
+ ADD_DAYS_TO_MISSION:0 "Add $DAYS|H$ days to Mission $MISSION|H$"
+ REMOVE_DAYS_TO_MISSION:0 "Remove $DAYS|H$ days from Mission $MISSION|H$"
+ CLICK_TO_TOGGLE_ALL_CATEGORY_DECISION_TRACKING:0 "§GClick§! to toggle notification status for all decisions under this category."
+
+
+#
+subfaction_summary:0 "§Y[root.senatesubfactionname]§! Summary"
+previousbills_summary:0 "Previous Bills Summary"
+ongoingvote_summary:0 "Ongoing Vote Summary"
+
+#
+rep_senate_floor:0 "Republic Senate Politics"
+rep_senate_floor_tt:0 "Why is this not showing up?"
+rep_senate_floor_desc:0 "\n\nCurrently, the is [root.whatsenate] considering these acts of government;\n §C[root.actinprogress]§! (§Y[root.senatesubfactionname]§!: [?0.08|%G])\n\n If you'd like to consider the act yourself, read it yourself below.\n"
+rep_senate_alignment:0 "Republic Senate Alignment"
+rep_senate_alignment_desc:0 "[root.GetName] is aligned with the §Y[root.senatesubfactionname]§!.\n[root.senatesubfactiondesc] \n\nYour alignment with the §Y[root.senatesubfactionname]§! will determine how you vote on acts in the Senate.  \n\nThe §Y[root.senatesubfactionname]§! roughly aligns with the ideals of the greater §G[root.senatefactionnoun]§!, and it would be wise for [root.GetName] to find political allies of a similar ideology. \n\nSOCIAL: [root.socialpolscore] STATE: [root.statepolscore]"
+
+#SOCANDSTATESCORE
+polsoc:0 "[?root.politics_social]"
+polsta:0 "[?root.politics_state]"
+
+#Greivous
+build_a_grievous:0 "Grievous"
+#Sucession
+secessioncis:0 "Add one secession point to this nation."
+secessionrep:0 "Remove one secession point from this nation."
+secession:0 "Republic/CIS Debug Menu"
+secession_desc:0 "Switch nations to either side (CIS/REP)"
+secession_independence:0 "Secede From the Republic"
+join_the_cis:0 "Join the Confederacy of Independent Systems"
+request_reentrance_rep:0 "Request Re-Entrance to the Republic"
+succeededfromrep:0 "Has seceded (Exited) from the Republic"
+republicmember:0 "Is a member of the Republic"
+joinedthecis:0 "Has joined the Confederacy"
+leave_the_cis:0 "Leave the Confederacy of Independent Systems"
+
+# Factions
+ rep_senate:0 "Galactic Senate"
+ rep_politics_outerrim_name:0 "Outer Rim Faction"
+ rep_politics_outerrim_adj:0 "Outer Rim"
+ rep_politics_outerrim_desc:0 "The Outer Rim faction is much more progressive and shit you know."
+ rep_politics_innerrim_name:0 "Core Faction"
+ rep_politics_innerrim_name_tt:0 "Core Faction"
+ rep_politics_innerrim_adj:0 "Core"
+ rep_politics_innerrim_adj_tt:0 "Core"
+ rep_politics_innerrim_desc:0 "The Inner Rim faction is much more conservative and shit you know."
+
+# Outer Rim Sub-Factions
+ rep_rimfaction_coreprogressive_name:0 "Free Alliance"
+ rep_rimfaction_extreme_name:0 "Free Outer Rim"
+ rep_rimfaction_centrist_name:0 "Centralist"
+ rep_rimfaction_progressive_name:0 "Prosperity"
+ rep_rimfaction_moderate_name:0 "New Dawn"
+  # Outer Rim Sub-Factions Descriptions
+ rep_rimfaction_coreprogressive_desc:0 "The Core Progressive Front"
+ rep_rimfaction_extreme_desc:0 "The Human First Society is really, really cool."
+ rep_rimfaction_centrist_desc:0 "The Centrist Rim faction "
+ rep_rimfaction_progressive_desc:0 "The Pacifist Front is really, really cool."
+ rep_rimfaction_moderate_desc:0 "The New Dawn is a alien-first rim faction that advocates for the rights of non-humans across the galaxy."
+
+ # Core Sub-Factions
+ rep_faction_coreprogressive_name:0 "Corporate League"
+ rep_corefaction_extreme_name:0 "Human Alliance"
+ rep_corefaction_centrist_name:0 "Republican"
+ rep_corefaction_progressive_name:0 "Forge"
+ rep_corefaction_moderate_name:0 "Tarbmont"
+  # Outer Rim Sub-Factions Descriptions
+ rep_corefaction_corporate_desc:0 "The Core Progressive Front"
+ rep_corefaction_extreme_desc:0 "The Human First Society is really, really cool."
+ rep_corefaction_centrist_desc:0 "The Centrist Rim faction "
+ rep_corefaction_progressive_desc:0 "The Pacifist Front is really, really cool."
+ rep_corefaction_moderate_desc:0 "The Loyalist Front is really, really cool."
+
+ # Republic Senate Acts
+ rep_act_1_name:0 "The Fuck You Cobblestone Act"
+
+#Space State Transfer
+ gss_transfer:0 "Space Control"
+ gss_transfer_desc:0 "During wartime, select for which nation you will capture space. By default, you will not capture space."
+ no_transfer:0 "Peacetime - No Transfer"
+ REP_transfer:0 "Expand Republic Space (Default)"
+ CIS_transfer:0 "Expand Separatist Space (Default)"
+ SHA_transfer:0 "Expand Collective Space (Default)"
+ HUT_transfer:0 "Expand Hutt Space (Default)"
+ root_transfer:0 "Capture space for [Root.GetNameDef]"
+ root_transfer_desc:0 "When you capture a space, it will be assigned to [Root.GetNameDef]"
+#Separatist Terrorism
+rep_duties:0 "Separatist Terrorism"
+rep_duties_desc:0 "Separatist terrorism threats have made large events somewhat more dangerous in the common era. However, we may still allow them."
+REP_authoriseshockballsixseven:0 "Authorise the 975 Galactic Shockball Championship"
+REP_enlistjedi:0 "Enlist Jedi Generals"
+REP_enlistjedi_desc:0 "The time has come for the peacekeepers of the galaxy to do their part. We will enlist these mighty warriors as leaders for the potential wars beyond."
+REP_enlistjedi_tt: "Several Jedi Masters will become Field Marshals for the Republic"
+REP_coruscantimmigration:0 "Restrict Immigration to Coruscant"
+REP_coruscantimmigration_desc:0 "In light of recent events, the governers of Coruscant has requested that we crack down on immigration, to prevent the importation of separatist terrorists from the colonies."
+REP_coruscantimmigration_tt: "Several Jedi Masters will become Field Marshals for the Republic"
+jedienlisted:0 "Jedi Generalship Program has been established"
+
+Kuat_drive_yards:0 "Kuat Shipyards"
+Kuat_drive_yards_desc:0 "Purchase ships from the Kuat Drive Yards."
+anaxes_shipyards:0 "Anaxes Shipyards"
+anaxes_shipyards_desc:0 "Purchase ships from the Anaxes shipyards."
+REP_carrier1:0 "Venator-class Attack Cruiser"
+REP_carrier2:0 "Venator II-class Attack Cruiser"
+REP_carrier3:0 "Victory-I Class Star Destroyer"
+REP_carrier4:0 "Imperial Class Star Destroyer"
+REP_carrier2_desc:0 "Very powerful main line capital ship."
+
+REP_destroyer1:0 "Consular-class Corvette"
+REP_destroyer2:0 "Corellian Light Corvette"
+REP_destroyer3:0 "Arquitenes-Class Light Cruiser"
+REP_destroyer4:0 "Raider-I Class Corvette"
+
+REP_lc1:0 "Acclamator-Class Cruiser"
+REP_lc2:0 "Carrack-Class Light Cruiser"
+REP_lc3:0 "Dreadnought-Class Cruiser"
+REP_lc4:0 "Acclamator-II Class Star Frigate"
+
+REP_Mandator:0 "Mandator-Class"
+
+REP_carrier1a:0 "Venator-class Attack Cruiser"
+REP_carrier2a:0 "Venator II-class Attack Cruiser"
+REP_carrier3a:0 "Victory-I Class Star Destroyer"
+REP_carrier2a_desc:0 "Very powerful main line capital ship."
+
+REP_destroyer1a:0 "Consular-class Corvette"
+REP_destroyer2a:0 "Corellian Light Corvette"
+REP_destroyer3a:0 "Arquitenes-Class Light Cruiser"
+
+REP_lc1a:0 "Acclamator-Class Cruiser"
+REP_lc2a:0 "Carrack-class Light Cruiser"
+REP_lc3a:0 "Dreadnought-Class Cruiser"
+REP_lc4a:0 "Venator-class Attack Cruiser"
+
+REP_Mandatora:0 "Mandator-Class"
+
+cloning_facilities:0 "Cloning Facilities"
+cloning_facilities_desc:0 "In a vast facility maintained within Tipoca City, clones were grown and trained in the cloning chambers at the city's military complex."
+REP_clonedivision:0 "Clone Trooper Division (x1)"
+REP_clonedivision3:0 "Clone Trooper Division (x3)"
+REP_special_operations_legion:0 "Establish the Special Operations Legion"
+REP_special_operations_legion_desc:0 "We will form nine clone commando squadrons."
+REP_special_operations_legion_tt: "Nine Elite Clone Squads will be created on Kamino."
+############ Confederacy of Independent Systems
+protector:0 "Protector"
+warrior:0 "Warrior"
+cis_missions:0 "Current Missions"
+return_to_GEO:0 "Restore the Geonosian Throne"
+return_to_GEO_tt:0 "Receive: §G200 Million Credits§!"
+return_to_GEO_fail_tt:0 "Cost: §R200 Million Credits§!"
+foerost_shipyards:0 "Foerost shipyards"
+foerost_shipyards_desc:0 "Purchase ships from the Foerost shipyards."
+CIS_carrier1a:0 "Recusant-class Destroyer"
+CIS_carrier2a:0 "Providence-class Cruiser"
+CIS_carrier3a:0 "Lucrehulk-class Battleship"
+CIS_carrier2a_desc:0 "Very powerful main line capital ship."
+
+#CIS General Recruitment
+cis_general_decisons:0 "Separatist Military Leadership"
+cis_general_decisons_desc:0 "To defeat the republic and the jedi, [Root.GetLeader] has ordered the construction of an elite set of generals and genius military minds to lead our campaigns."
+cis_general_decisons_tt: "Recruit mighty warriors to lead our army against the Republic"
+
+rise_grievous:0 "Rise General Grievous!"
+rise_grievous_desc:0 "Having completed the cybernetic enhancements process and trained with Dooku personally, Grievous is ready to lead our forces"
+rise_grievous_tt: "General Grievous will become a Field Marshal for the CIS"
+
+CIS_destroyer1a:0 "Hammerclass Pickett"
+CIS_destroyer2a:0 "Marauder-class Corvette"
+CIS_destroyer3a:0 "Light Missile Cruiser"
+
+CIS_lc1a:0 "Diamond-class Cruiser"
+CIS_lc2a:0 "Munificent-class Cruiser"
+CIS_lc3a:0 "Saboath-class Destroyer"
+CIS_lc4a:0 "Missile Frigate"
+
+CIS_mandatora:0 "Subjugator-Class"
+
+
+mintships:0 "Minntoine shipyards"
+foerost_shipyards_desc:0 "Purchase ships from the Minntoine shipyards."
+CIS_carrier1:0 "Recusant-class Destroyer"
+CIS_carrier2:0 "Providence-class Cruiser"
+CIS_carrier3:0 "Lucrehulk-class Battleship"
+CIS_carrier2_desc:0 "Very powerful main line capital ship."
+
+CIS_destroyer1:0 "Hammerclass Pickett"
+CIS_destroyer2:0 "Marauder-class Corvette"
+CIS_destroyer3:0 "Light Missile Cruiser"
+
+CIS_lc1:0 "Diamond-class Cruiser"
+CIS_lc2:0 "Munificent-class Cruiser"
+CIS_lc3:0 "Saboath-class Destroyer"
+CIS_lc4:0 "Missile Frigate"
+
+CIS_dist:0 "Subjugator-Class"
+
+
+##Republic Decisions###
+
+rep_corps:0 "Clone Legion Program"
+rep_corps_desc:0 "To maximise unit cohesion, [Root.GetLeader] has ordered that the clone army should be sorted into corps that will maximise trooper's abilities on the frontlines"
+kaminorepublicfriends:0 "Kamino and the Republic are on good terms"
+clonesdiscovered:0 "The Clone Army has been discovered"
+
+REP_501st_legion:0 "Establish the 501st Legion"
+REP_501st_legion_desc:0 "We will form the 501st Legion."
+501st_units_tt: "The 501st will be deployed to Timira City, Kamino."
+
+REP_221st_legion:0 "Establish the 7th Sky Corps"
+REP_221st_legion_desc:0 "We will form the 212th Attack Battalion."
+221st_units_tt: "The 7th will be deployed to Timira City, Kamino."
+
+REP_41st_legion:0 "Establish the 41st Corps"
+REP_41st_legion_desc:0 "We will form the 41st Ranger Platoon."
+41st_units_tt: "The 41st will be deployed to Timira City, Kamino."
+
+REP_327th_legion:0 "Establish the 327th Star Corps"
+REP_327th_legion_desc:0 "We will form the 7th Sky Corps."
+327th_units_tt: "The 327th will be deployed to Timira City, Kamino."
+
+REP_104th_legion:0 "Establish the 104th Corps"
+REP_104th_legion_desc:0 "We will form the 104th Mechanised Legion."
+104th_units_tt: "The 104th will be deployed to Timira City, Kamino."
+
+REP_13th_legion:0 "Establish the 13th Corps"
+REP_13th_legion_desc:0 "We will form the 13th Battalion."
+13th_units_tt:0 "The 13th will be deployed to Timira City, Kamino."
+
+##Trade Federation##
+espionage_ministry:0 "Espionage Ministry"
+FED_triggerdorvallaincident:0 "Stage the Dorvalla Incident"
+FED_refusetaxes:0 "Evade New Republic Taxes"
+FED_refuseruusan:0 "Do not adhere to the Ruusan Reformation"
+MAL_fuel:0 "Malaste Fuel Crisis"
+FED_diploaction:0 "Contact Malastare to reopen negotiations"
+FED_blockade:0 "Blockade the planet"
+
+##Techno Union Orders##
+techdroids:0 "Purchase from the Techno Union"
+FED_b1request:0 "Request B1 Battle Droids"
+CIS_b1request:0 "Request B1 Battle Droids"
+CMG_b1request:0 "Request B1 Battle Droids"
+IBC_b1request:0 "Request B1 Battle Droids"
+
+FED_b2request:0 "Request B2 Battle Droids"
+CIS_b2request:0 "Request B2 Battle Droids"
+CMG_b2request:0 "Request B2 Battle Droids"
+IBC_b2request:0 "Request B2 Battle Droids"
+
+FED_aatrequest:0 "Request Armoured Assault Tanks (AAT)"
+CIS_aatrequest:0 "Request Armoured Assault Tanks (AAT)"
+CMG_aatrequest:0 "Request Armoured Assault Tanks (AAT)"
+IBC_aatrequest:0 "Request Armoured Assault Tanks (AAT)"
+
+FED_og9request:0 "Request OG-9 Homing Spiders"
+CIS_og9request:0 "Request OG-9 Homing Spiders"
+CMG_og9request:0 "Request OG-9 Homing Spiders"
+IBC_og9request:0 "Request OG-9 Homing Spiders"
+
+FED_tdrequest:0 "Request NR-N99 Tank Droids"
+CIS_tdrequest:0 "Request NR-N99 Tank Droids"
+CMG_tdrequest:0 "Request NR-N99 Tank Droids"
+IBC_tdrequest:0 "Request NR-N99 Tank Droids"
+
+CIS_supertankrequest:0 "Request Super Tank"
+
+##IBC Loans##
+IBC_loans:0 "Loan Options"
+FED_IBCLOAN:0 "Intergalactic Banking Clan Loan"
+
+##MAL Decisions##
+malastare_fuel:0 "Malastare Fuel Exports"
+MAL_reallocatefuel:0 "Reallocate Fuel Exports"
+fuel_reallocation:0 "Fuel Reallocation"
+FED_fuelreallocation:0 "Malastare Fuel Reallocation"
+
+#Market Temporary
+market_temp:0 "Gandalf's Dank Shop"
+battledroid_OOM:0 "Buy Battledroid OOM"
+
+#Sidious
+#CIS Plan North
+sidious_cis_north:0 "CIS Plan North"
+sidious_cis_north_desc:0 "Push Dooku to mobilize the CIS army to make advances on fronts of your Choosing."
+sidious_1:0 "Mess em up"
+#CIS Plan South
+sidious_cis_south:0 "CIS Plan South"
+
+##Toydaria
+toydaria_negotiations:0 "The Contest"
+toydaria_negotiations_cis:0 "Join the Confederacy"
+toydaria_negotiations_rep:0 "Join the Galactic Republic"

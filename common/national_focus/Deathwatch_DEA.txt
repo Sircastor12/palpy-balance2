@@ -1,0 +1,885 @@
+focus_tree = {
+	id = DEA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DEA
+		}
+	}
+	#Focus for Infiltrate Mandalore
+	focus = {
+		id = Deathwatch_infiltrate_mandalore
+		icon = GFX_goal_unknown
+		x = 5
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_the_secret_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				add_stability = -0.1
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_sow_disloyalty
+		icon = GFX_goal_unknown
+		x = 5
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_infiltrate_mandalore }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				add_stability = -0.2
+			}
+		}
+	}
+
+	#Focus for Invasion Fleet
+	focus = {
+		id = Deathwatch_transport_fleet
+		icon = GFX_goal_unknown
+		x = 13
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_prepare_for_a_invasion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = convoy
+    			amount = 100
+    			producer = DEA
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_invasion_fleet
+		icon = GFX_goal_unknown
+		x = 13
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_transport_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = dd_tech
+			}
+			navy_experience = 20
+		}
+	}
+
+	#Focus for Sow Disloyalty
+	focus = {
+		id = Deathwatch_nurture_criminal_activity
+		icon = GFX_goal_unknown
+		x = 7
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_support_the_black_market }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {	
+				add_ideas = DEA_noticable_criminal_activity
+			}
+		}
+	}
+
+	#Focus for Maul
+	focus = {
+		id = Deathwatch_maul
+		icon = GFX_goal_unknown
+		x = 5
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Deathwatch_terrorism 
+		}
+		prerequisite = { 
+			focus = Deathwatch_meet_with_the_nightbrothers
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = dathomir_leader
+			set_country_flag = DEA_SHADOW_COLLECTIVE_flag
+			set_country_flag = maul_master
+			set_country_flag = savage_apprentice
+			load_focus_tree = SHA
+			set_politics = {
+				ruling_party = syndicate
+			}
+			hidden_effect = {
+				add_ideas = DEA_band_of_rogues
+				add_ideas = SHA_split_power
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SHA
+				kill_country_leader = yes
+				kill_ideology_leader = shadow_collective
+				add_popularity = {
+			    	ideology = syndicate
+			    	popularity = 1
+				}
+			}
+			create_country_leader = {
+				name = "RDarth Maul"
+				desc = "Dark Side User"
+				picture = GFX_maul
+				expire = "2020.1.1"
+				ideology = consortium
+				traits = {}
+			}
+			create_field_marshal = {
+				name = "Darth Maul"
+				gfx = "GFX_maul_gen"  
+				traits = { aggressive_assaulter, offensive_doctrine, harsh_leader }
+				skill = 7
+				attack_skill = 7
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Savage Opress"
+				portrait_path = "gfx/leaders/SHA/Savage.dds"
+				traits = { trait_reckless, aggressive_assaulter }
+				skill = 5
+				attack_skill = 8
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+
+
+	#Focus for Terrorism
+	focus = {
+		id = Deathwatch_terrorism
+		icon = GFX_goal_unknown
+		x = 6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_sow_disloyalty }
+		prerequisite = { focus = Deathwatch_nurture_criminal_activity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				add_ideas = DEA_terrorism
+			}
+		}
+	}
+
+	#Focus for The Invasion
+	focus = {
+		id = Deathwatch_the_invasion
+		icon = GFX_goal_unknown
+		x = 11
+		y = 9
+		cost = 5
+		alwaysfalse = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_dissidents }
+		prerequisite = { focus = Deathwatch_core }
+		prerequisite = { focus = Deathwatch_invasion_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				type = annex_everything
+				target = MAN
+			}
+			load_focus_tree = DWI
+			country_event = DWI.6
+			hidden_effect = {
+				MAN = {
+           			country_event = {
+            		    id = DWI.7
+            		    days = 1
+					}
+        		}			
+			}
+		}
+	}
+
+	#Focus for Prepare for a Invasion
+	focus = {
+		id = Deathwatch_prepare_for_a_invasion
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_make_our_move }
+		mutually_exclusive = { focus = Deathwatch_the_secret_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_field_marshal = {
+				name = "Pre Vizsla"
+				picture = "vizla.dds"  
+				traits = { old_guard, harsh_leader }
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Bo-Katan Kryze"
+				picture = "amnkp-vu5uq.dds"
+				traits = { war_hero, commando, brilliant_strategist }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 2
+				female = yes
+			}
+			create_corps_commander = {
+				name = "Kal Carr"
+				picture = "a0gw5-j7et4.dds"
+				traits = { commando }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Adenn Terja"
+				picture = "aq64w-bp4bl.dds"
+				traits = { }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Jakal Mos"
+				picture = "aje5q-tgogy.dds"
+				traits = { }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 2
+			}
+		}
+	}
+	#Focus for Volunteers
+	focus = {
+		id = Deathwatch_war_support
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_prepare_for_a_invasion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	#Focus for Volunteers
+	focus = {
+		id = Deathwatch_core
+		icon = GFX_goal_unknown
+		x = 11
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_war_support }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_state_core = 164
+			add_state_core = 173
+		}
+	}
+
+	#Focus for Sabotage the Pretenders
+	focus = {
+		id = Deathwatch_make_our_move
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Deathwatch_shortterm
+			focus = Deathwatch_longterm
+		}
+		prerequisite = { focus = Deathwatch_respect_our_past }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+			
+			hidden_effect = { OVERLORD = { save_event_target_as = overlord_target } 
+					create_country_leader = {
+						name = "Pre Vizsla"
+						desc = "Leader of Death Watch"
+						picture = "gfx/leaders/DEA/vizla.dds"
+						expire = "2020.1.1"
+						ideology = despotism
+						traits = {}
+			}
+			set_party_name = { ideology = neutrality long_name = DEA_neutrality_party_death_long name = DEA_neutrality_death_party}
+			
+			
+			}
+			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }
+			effect_tooltip = {		
+				if = {
+					limit = {
+						is_in_faction_with = OVERLORD
+					}
+					leave_faction = yes
+				}
+			}
+			MAN = {
+				add_war_support = 0.1
+			}
+		}
+	}
+
+	#Focus for The Secret War
+	focus = {
+		id = Deathwatch_the_secret_war
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_make_our_move }
+		mutually_exclusive = { focus = Deathwatch_prepare_for_a_invasion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = Deathwatch_cut_cis_ties
+		icon = GFX_goal_unknown
+		x = 3
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_the_secret_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			CIS = {
+				add_opinion_modifier = {
+					target = DEA
+					modifier = large_decrease
+				}
+			}
+			remove_ideas = DEA_dealing_with_the_cis
+			hidden_effect = {
+				remove_ideas = DEA_dealing_with_the_cis2
+				remove_ideas = DEA_dealing_with_the_cis3
+			}
+			add_popularity = {
+				ideology = syndicate
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_meet_with_the_nightbrothers
+		icon = GFX_goal_unknown
+		x = 3
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_cut_cis_ties }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicate
+				popularity = 0.15
+			}
+		}
+	}
+
+	#Focus for Soldiers Until the End!
+	focus = {
+		id = Deathwatch_soldiers_until_the_end
+		icon = GFX_goal_unknown
+		x = 5
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_the_dream_of_our_homeland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = DEA_soldiers_until_the_end
+		}
+	}
+
+	#Focus for The Dream of our Homeland
+	focus = {
+		id = Deathwatch_the_dream_of_our_homeland
+		icon = GFX_goal_unknown
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = Deathwatch_stab
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_soldiers_until_the_end }
+		mutually_exclusive = { focus = Deathwatch_wars }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = Deathwatch_wars
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_soldiers_until_the_end }
+		mutually_exclusive = { focus = Deathwatch_stab }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicate
+				popularity = 0.05
+			}
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = Deathwatch_anonymous_gift
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Deathwatch_wars
+			focus = Deathwatch_stab
+		}
+		mutually_exclusive = { focus = Deathwatch_self_reliance }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicate
+				popularity = 0.075
+			}
+			add_to_variable = { dx = 20 }
+			custom_effect_tooltip = DWI_gift_custom1
+		}
+	}
+	focus = {
+		id = Deathwatch_self_reliance
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Deathwatch_wars
+			focus = Deathwatch_stab
+		}
+		mutually_exclusive = { focus = Deathwatch_anonymous_gift }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.075
+			}
+			add_timed_idea = {
+				days = 365
+				idea = DEA_selfsufficient
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_longterm
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Deathwatch_anonymous_gift
+			focus = Deathwatch_self_reliance 
+		}
+		mutually_exclusive = { focus = Deathwatch_shortterm }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicate
+				popularity = 0.1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = { dx = -10 }
+			custom_effect_tooltip = DWI_cost_custom4
+		}
+	}
+	focus = {
+		id = Deathwatch_shortterm
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = Deathwatch_anonymous_gift
+			focus = Deathwatch_self_reliance 
+		}
+		mutually_exclusive = { focus = Deathwatch_longterm }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = { dx = -20 }
+			custom_effect_tooltip = DWI_cost_custom2
+		}
+	}
+
+	focus = {
+		id = Deathwatch_sleeper_cells
+		icon = GFX_goal_unknown
+		x = 9
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = Deathwatch_the_dream_of_our_homeland }
+		completion_reward = {
+			MAN = {
+				add_stability = -0.05
+				add_war_support = 0.05
+			}
+			custom_effect_tooltip = DEA_sleeper_cells_custom
+		}
+	}
+	focus = {
+		id = Deathwatch_propaganda
+		icon = GFX_goal_unknown
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = Deathwatch_sleeper_cells }
+		completion_reward = {
+			MAN = {
+				add_manpower = -10000
+			}
+			DEA = {
+				add_manpower = 10000
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_respect_our_past
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = Deathwatch_propaganda }
+		completion_reward = {
+			add_tech_bonus = {
+				category = land_doctrine
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+			}
+		}
+	}
+	#Focus for Approach the CIS
+	focus = {
+		id = Deathwatch_approach_the_cis
+		icon = GFX_goal_unknown
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = Deathwatch_the_dream_of_our_homeland }
+		completion_reward = {
+			country_event = {
+    			id = DCI.1
+			}
+		}
+	}
+	#Focus for Approach the CIS
+	focus = {
+		id = Deathwatch_breaking_trust
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = Deathwatch_sleeper_cells }
+		prerequisite = { focus = Deathwatch_operatives_for_the_cis }
+		completion_reward = {
+			MAN = {
+				add_stability = -0.05
+			}
+			REP = {
+				add_opinion_modifier = {
+					target = MAN
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_dealing_cis2
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		available = {
+			has_idea = DEA_dealing_with_the_cis
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = { focus = Deathwatch_operatives_for_the_cis }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DEA_dealing_with_the_cis
+				add_idea = DEA_dealing_with_the_cis2
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_dealing_cis3
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_idea = DEA_dealing_with_the_cis2
+		}
+		prerequisite = { focus = Deathwatch_dealing_cis2 }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DEA_dealing_with_the_cis2
+				add_idea = DEA_dealing_with_the_cis3
+			}
+		}
+	}
+	#Focus for Approach the CIS
+	focus = {
+		id = Deathwatch_operatives_for_the_cis
+		icon = GFX_goal_unknown
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_approach_the_cis }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = -100
+			army_experience = 20
+			CIS = {
+				add_opinion_modifier = {
+					target = DEA
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = Deathwatch_kamikaze
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_soldiers_until_the_end }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+			add_stability = -0.05
+		}
+	}
+
+	#Focus for Volunteers
+	focus = {
+		id = Deathwatch_volunteers
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_prepare_for_a_invasion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {	
+						has_idea = DEA_dealing_with_the_cis
+						has_idea = DEA_dealing_with_the_cis2
+						has_idea = DEA_dealing_with_the_cis3
+					}
+				}
+				set_country_flag = DEA_cis_volunteers_flag
+			}
+			custom_effect_tooltip = DEA_volunteers_custom
+		}
+	}
+	
+	#Focus for Volunteers
+	focus = {
+		id = Deathwatch_dissidents
+		icon = GFX_goal_unknown
+		x = 9
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_volunteers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MAN = {
+				add_stability = -0.1
+			}
+			custom_effect_tooltip = DEA_dissidents_custom
+		}
+	}
+
+	#Focus for Support the Black Market
+	focus = {
+		id = Deathwatch_support_the_black_market
+		icon = GFX_goal_unknown
+		x = 7
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = Deathwatch_the_secret_war }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { dx = 80 } 
+			custom_effect_tooltip = DWI_gift_custom3
+			add_stability = -0.05
+		}
+ 	}
+}

@@ -1,0 +1,629 @@
+scripted_gui = {
+
+	republic_reform_screen_visible = {
+		context_type = player_context
+		
+		window_name = "republic_reform_screen_gui"
+		
+		ai_enabled = {
+			tag = REP
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					AND = {
+						check_variable = { show_reforms > 0.0 }
+					}
+				}
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				set_temp_variable = { show_ref = 1 }
+				subtract_from_temp_variable = { show_ref = show_reforms }
+				set_variable = { show_reforms = show_ref } 
+			}
+			Reform_1_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+							has_country_flag = militarycreationactpassed
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = militarycreationacttofloor
+					set_global_flag = militarycreationacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_2_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = dangerousideasacttofloor
+					set_global_flag = dangerousideasacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_3_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = increasedpolicepowersacttofloor
+					set_global_flag = increasedpolicepowersacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_4_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = corporatesanctionsacttofloor
+					set_global_flag = corporatesanctionsacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_5_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = securityacttofloor
+					set_global_flag = securityacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_6_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = galacticmilitarizationacttofloor
+					set_global_flag = galacticmilitarizationacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_7_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = firewithfireacttofloor
+					set_global_flag = firewithfireacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_8_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = financialreformacttofloor
+					set_global_flag = financialreformacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_9_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = militaryenhancementbilltofloor
+					set_global_flag = militaryenhancementbilltofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_10_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = sectorgovernancedecreetofloor
+					set_global_flag = sectorgovernancedecreetofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_11_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = ruusanreformationfloor
+					set_global_flag = ruusanrepealtofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+			Reform_12_click = {
+				REP = {
+					set_country_flag = AI_lobby_please
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = actonfloor
+						}
+					}
+					set_variable = { global.days_remaining = 15}
+					set_country_flag = emergencypowersacttofloor
+					set_global_flag = emergencypowersacttofloor
+					set_global_flag = actonfloor
+					clr_global_flag = pacifists_lobbied
+					clr_global_flag = militarists_lobbied
+					clr_global_flag = outerrim_lobbied
+					clr_global_flag = corporations_lobbied
+				}
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								has_idea = REP_member_prewar
+								has_idea = REP_member
+							}
+							NOT = {
+								tag = REP
+							}
+						}
+						set_temp_variable = { show = 1 }
+						subtract_from_temp_variable = { show = show_league_of_nations }
+						set_variable = { show_league_of_nations = show }
+						set_variable = { show_league_of_nations_start_voting_country_list = 0 }
+						clear_array = league_of_nations_possible_voting_targets_array
+					}
+				}
+			}
+		}
+
+		triggers = {
+			Reform_1_visible = {
+				NOT = {
+					has_global_flag = militarycreationactpassed
+				}
+			}
+			Reform_2_visible = {
+				NOT = {
+					has_global_flag = dangerousideasactpassed
+				}
+			}
+			Reform_3_visible = {
+				NOT = {
+					has_global_flag = increasedpolicepowersactpassed
+				}
+			}
+			Reform_4_visible = {
+				NOT = {
+					has_global_flag = corporatesanctionsactpassed
+				}
+			}	
+			Reform_12_visible = {
+				NOT = {
+					has_global_flag = emergencypowersactpassed
+				}
+			}	
+			Reform_11_visible = {
+				NOT = {
+					has_global_flag = ruusanreformationpassed
+				}
+			}			
+			Reform_1_click_enabled = {
+				has_country_flag = militarycreationact
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_2_click_enabled = {
+				has_country_flag = dangerousideasacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_3_click_enabled = {
+				has_country_flag = increasedpolicepowersacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_4_click_enabled = {
+				has_country_flag = corporatesanctionsacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_5_click_enabled = {
+				has_country_flag = securityacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_6_click_enabled = {
+				has_country_flag = galacticmilitarizationacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_7_click_enabled = {
+				has_country_flag = firewithfireacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_8_click_enabled = {
+				has_country_flag = financialreformacttosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_9_click_enabled = {
+				has_country_flag = militaryenhancementbill
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_10_click_enabled = {
+				has_country_flag = sectorgovernancedecree
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_11_click_enabled = {
+				has_country_flag = ruusanreformationrepealtosenate
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_12_click_enabled = {
+				has_country_flag = emergencypowersact
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_13_click_enabled = {
+				has_country_flag = unavailable
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_14_click_enabled = {
+				has_country_flag = unavailable
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_15_click_enabled = {
+				has_country_flag = unavailable
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}
+			Reform_16_click_enabled = {
+				has_country_flag = unavailable
+				NOT = {
+					has_global_flag = actonfloor
+				}
+			}	
+		}
+
+		ai_weights = {
+			Reform_1_click = {
+				factor = 1
+			}
+			Reform_12_click = {
+				factor = 1
+			}
+			Reform_11_click = {
+				factor = 1
+			}
+		}
+	}
+}

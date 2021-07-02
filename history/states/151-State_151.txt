@@ -1,0 +1,42 @@
+state={
+	id=151
+	name="STATE_151"
+	provinces={
+		131 1051 1671 2054 2120 3239 6178 6206 6222 6225 6245 6249 6250 6271 6288 6293 6296 
+	}
+	manpower=570000
+	buildings_max_level_factor=1.000
+	state_category = large_town
+	
+	resources={
+		steel = 14
+		aluminium = 2
+		rubber = 0
+		tungsten = 3
+		oil = 0
+		chromium = 3
+	}
+
+  	history = {
+		owner = MAN
+		add_core_of = DEA
+		add_core_of = MAN
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 0
+			industrial_complex = 0
+			dockyard = 0
+			air_base = 0
+
+			1671 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

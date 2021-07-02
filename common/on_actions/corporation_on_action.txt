@@ -1,0 +1,101 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						is_market_corporation = yes
+					}
+					add_to_array = { global.Geonosis = THIS.id }
+					add_to_array = { global.Aratech = THIS.id }
+					add_to_array = { global.Blastech = THIS.id }
+					add_to_array = { global.Chiewab = THIS.id }
+					add_to_array = { global.Colicoid = THIS.id }
+					add_to_array = { global.Corellian = THIS.id }
+					add_to_array = { global.Corporate = THIS.id }
+					add_to_array = { global.Czerka = THIS.id }
+					add_to_array = { global.Free_dac = THIS.id }
+					add_to_array = { global.Haor = THIS.id }
+					add_to_array = { global.Hoersch = THIS.id }
+					add_to_array = { global.Industrial_Automaton = THIS.id }
+					add_to_array = { global.LeisureMechEnterprises = THIS.id }
+					add_to_array = { global.MandalMotors = THIS.id }
+					add_to_array = { global.Mining_guild = THIS.id }
+					add_to_array = { global.Slayn_and_korpil = THIS.id }
+					add_to_array = { global.RendiliStarDrive = THIS.id }
+					add_to_array = { global.Incom = THIS.id }
+					add_to_array = { global.SienarFleetSystems = THIS.id }
+					add_to_array = { global.SoroSuub = THIS.id }
+					add_to_array = { global.Taimandbak = THIS.id }
+					add_to_array = { global.Tagge = THIS.id }
+					add_to_array = { global.TransGalMegIndustriesIncorporated = THIS.id }
+					add_to_array = { global.UbrikkianIndustries = THIS.id }
+					add_to_array = { global.XucphraCorporation = THIS.id }
+				}
+			}
+			TEC = {
+				add_to_array = {
+					array = subsidiary_array
+					value = 26
+				}
+			}
+			FED = {
+				add_to_array = {
+					array = subsidiary_array
+					value = 11
+				}
+			}
+			set_variable = { global.total_shares_Geonosis = 100 }
+			set_variable = { global.total_shares_Aratech = 100 }
+			set_variable = { global.total_shares_Blastech = 100 }
+			set_variable = { global.total_shares_Chiewab = 100 }
+			set_variable = { global.total_shares_Colicoid = 100 }
+			set_variable = { global.total_shares_Corellian = 100 }
+			set_variable = { global.total_shares_Corporate = 100 }
+			set_variable = { global.total_shares_Czerka = 100 }
+			set_variable = { global.total_shares_Free_dac = 100 }
+			set_variable = { global.total_shares_Haor = 100 }
+			set_variable = { global.total_shares_Hoersch = 100 }
+			set_variable = { global.total_shares_Industrial_Automaton = 100 }
+			set_variable = { global.total_shares_LeisureMechEnterprises = 100 }
+			set_variable = { global.total_shares_MandalMotors = 100 }
+			set_variable = { global.total_shares_Mining_guild = 100 }
+			set_variable = { global.total_shares_Slayn_and_korpil = 100 }
+			set_variable = { global.total_shares_RendiliStarDrive = 100 }
+			set_variable = { global.total_shares_Incom = 100 }
+			set_variable = { global.total_shares_SienarFleetSystems = 100 }
+			set_variable = { global.total_shares_SoroSuub = 100 }
+			set_variable = { global.total_shares_Taimandbak = 100 }
+			set_variable = { global.total_shares_Tagge = 100 }
+			set_variable = { global.total_shares_TransGalMegIndustriesIncorporated = 100 }
+			set_variable = { global.total_shares_UbrikkianIndustries = 100 }
+			set_variable = { global.total_shares_XucphraCorporation = 100 }
+
+			set_variable = { global.share_price_Geonosis = 10 }
+			set_variable = { global.share_price_Aratech = 15 }
+			set_variable = { global.share_price_Blastech = 15}
+			set_variable = { global.share_price_Chiewab = 5 }
+			set_variable = { global.share_price_Colicoid = 10 }
+			set_variable = { global.share_price_Corellian = 15 }
+			set_variable = { global.share_price_Corporate = 15 }
+			set_variable = { global.share_price_Czerka = 10 }
+			set_variable = { global.share_price_Free_dac = 15 }
+			set_variable = { global.share_price_Haor = 10 }
+			set_variable = { global.share_price_Hoersch = 15 }
+			set_variable = { global.share_price_Industrial_Automaton = 10 }
+			set_variable = { global.share_price_LeisureMechEnterprises = 5 }
+			set_variable = { global.share_price_MandalMotors = 15 }
+			set_variable = { global.share_price_Mining_guild = 5 }
+			set_variable = { global.share_price_Slayn_and_korpil = 10 }
+			set_variable = { global.share_price_RendiliStarDrive = 15 }
+			set_variable = { global.share_price_Incom = 10 }
+			set_variable = { global.share_price_SienarFleetSystems = 15 }
+			set_variable = { global.share_price_SoroSuub = 15 }
+			set_variable = { global.share_price_Taimandbak = 5 }
+			set_variable = { global.share_price_Tagge = 5 }
+			set_variable = { global.share_price_TransGalMegIndustriesIncorporated = 10 }
+			set_variable = { global.share_price_UbrikkianIndustries = 5 }
+			set_variable = { global.share_price_XucphraCorporation = 10 }
+		}
+	}
+}

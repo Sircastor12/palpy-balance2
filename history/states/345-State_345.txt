@@ -1,0 +1,41 @@
+state={
+	id=345
+	name="STATE_345"
+	provinces={
+		678 1112 1230 2280 2905 3193 3333 3714 3769 3839 4205 4652 4705 4937 9190 9196 9199 9205 9209 9216 9237 9253 9266 9269 9310 9353 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=6
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BEA
+		add_core_of = BEA
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			3333 = {
+				naval_base = 1
+			}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

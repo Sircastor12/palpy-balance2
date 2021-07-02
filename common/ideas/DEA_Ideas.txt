@@ -1,0 +1,83 @@
+ideas = {
+	country = {
+
+		DEA_soldiers_until_the_end = {
+			
+			allowed = {
+				always = no
+                original_tag = DEA
+            }
+            modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+            }
+		}
+		DEA_noticable_criminal_activity = {
+			
+			allowed = {
+				always = no
+				original_tag = MAN
+				country_exists = DEA
+            }
+            modifier = {
+				industrial_capacity_factory = -0.1
+            }
+		}
+		DEA_terrorism = {
+			
+			allowed = {
+				always = no
+				original_tag = MAN
+				country_exists = DEA
+            }
+            modifier = {
+				weekly_manpower = -100
+				stability_weekly = -0.005
+            }
+		}
+		DEA_selfsufficient = {
+			
+			allowed = {
+				always = no
+				original_tag = DEA
+            }
+            modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+            }
+		}
+		DEA_dealing_with_the_cis = {
+			
+			allowed = {
+				always = no
+				original_tag = DEA
+            }
+            modifier = {
+				consumer_goods_factor = 0.05
+            }
+		}
+		DEA_dealing_with_the_cis2 = {
+			
+			allowed = {
+				always = no
+				original_tag = DEA
+            }
+            modifier = {
+				consumer_goods_factor = 0.05
+				experience_gain_army = 0.1
+            }
+		}
+		DEA_dealing_with_the_cis3 = {
+			
+			allowed = {
+				always = no
+				original_tag = DEA
+            }
+            modifier = {
+				consumer_goods_factor = 0.05
+				experience_gain_army = 0.1
+				command_power_gain  = 0.5
+            }
+		}
+	}	
+}

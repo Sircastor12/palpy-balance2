@@ -1,0 +1,119 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_Map_Outline"
+		texturefile = "gfx/interface/dac/Map_Outline.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_1_Dac"
+		texturefile = "gfx/interface/dac/State_1_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_1_Neutral"
+		texturefile = "gfx/interface/dac/State_1_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_1_Quarren"
+		texturefile = "gfx/interface/dac/State_1_Quarren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_2_Dac"
+		texturefile = "gfx/interface/dac/State_2_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_2_Neutral"
+		texturefile = "gfx/interface/dac/State_2_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_2_Quarren"
+		texturefile = "gfx/interface/dac/State_2_Quarren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_3_Dac"
+		texturefile = "gfx/interface/dac/State_3_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_3_Neutral"
+		texturefile = "gfx/interface/dac/State_3_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_3_Quarren"
+		texturefile = "gfx/interface/dac/State_3_Quarren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_4_Dac"
+		texturefile = "gfx/interface/dac/State_4_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_4_Neutral"
+		texturefile = "gfx/interface/dac/State_4_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_4_Quarren"
+		texturefile = "gfx/interface/dac/State_4_Quarren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_5_Dac"
+		texturefile = "gfx/interface/dac/State_5_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_5_Neutral"
+		texturefile = "gfx/interface/dac/State_5_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_5_Quarren"
+		texturefile = "gfx/interface/dac/State_5_Quarren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_6_Dac"
+		texturefile = "gfx/interface/dac/State_6_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_6_Neutral"
+		texturefile = "gfx/interface/dac/State_6_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_6_Quarren"
+		texturefile = "gfx/interface/dac/State_6_Quarren.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_7_Dac"
+		texturefile = "gfx/interface/dac/State_7_Dac.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_7_Neutral"
+		texturefile = "gfx/interface/dac/State_7_Neutral.dds"
+	}
+
+	spriteType = {
+		name = "GFX_State_7_Quarren"
+		texturefile = "gfx/interface/dac/State_7_Quarren.dds"
+	}
+	
+}
+	
+	
+	
+	
+	
+	

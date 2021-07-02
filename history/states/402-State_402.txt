@@ -1,0 +1,41 @@
+state={
+	id=402
+	name="STATE_402"
+	provinces={
+		390 836 1093 2138 2478 3041 3416 3664 4532 4797 5040 10079 10092 10095 10099 10104 10110 10115 10133 10134 10144 10151 10164 
+	}
+	manpower=1200000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=ERI
+		add_core_of = ERI
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			10134 = {
+				naval_base = 2
+			}
+		}
+	
+		victory_points = {
+			10099 30
+		}
+	}
+}
+

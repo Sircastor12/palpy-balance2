@@ -1,0 +1,41 @@
+state={
+	id=296
+	name="STATE_296"
+	provinces={
+		201 244 245 980 1206 1323 1454 1716 2214 2223 2834 3155 3418 3420 4063 4252 4298 4495 4502 4979 8330 8336 8350 8372 8390 8397 8403 8419 8420 8434 8435 8442 8460 8471 8474 8477 8490 8502 8531 8535 8552 8559 
+	}
+	manpower=40000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=1
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=BOZ
+		add_core_of = BOZ
+
+		buildings = {
+			infrastructure=0
+			arms_factory=0
+			industrial_complex=0
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			8477 50
+		}
+	}
+}
+

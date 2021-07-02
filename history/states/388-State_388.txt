@@ -1,0 +1,40 @@
+state={
+	id=388
+	name="STATE_388"
+	provinces={
+		921 1060 1091 1262 1354 1559 1735 2713 2735 2811 2839 3387 3835 3864 4930 4986 9885 9889 9894 9897 9924 9927 9933 9935 9936 9941 9944 9948 9954 9966 9967 9973 9982 
+	}
+	manpower=2000000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=3
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=1
+	}
+
+  	history = {
+		owner=NAB
+		add_core_of = NAB
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=1
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			4986 50
+		}
+	}
+}
+

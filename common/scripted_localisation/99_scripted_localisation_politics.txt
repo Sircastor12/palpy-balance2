@@ -1,0 +1,55 @@
+
+defined_text = {
+	name = GetPolitics
+	text = {
+		trigger = {
+			has_government = fascism
+			NOT = {
+				is_market_corporation = yes
+			}
+		}
+		localization_key = "GFX_cis_pol_view"
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+			NOT = {
+				is_market_corporation = yes
+			}
+		}
+		localization_key = "GFX_rep_pol_view"
+	}
+	text = {
+		trigger = {
+			has_government = neutrality
+			NOT = {
+				is_market_corporation = yes
+			}
+		}
+		localization_key = "GFX_neu_pol_view"
+	}
+	text = {
+		trigger = {
+			has_government = communism
+			NOT = {
+				is_market_corporation = yes
+			}
+		}
+		localization_key = "GFX_neu_con_view"
+	}
+	text = {
+		trigger = {
+			has_government = syndicate
+			NOT = {
+				is_market_corporation = yes
+			}
+		}
+		localization_key = "GFX_neu_con_view"
+	}
+	text = {
+		trigger = {
+			is_market_corporation = yes
+		}
+		localization_key = "GFX_neu_corp_view"
+	}
+}

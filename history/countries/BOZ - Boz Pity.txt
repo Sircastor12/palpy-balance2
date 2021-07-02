@@ -1,0 +1,67 @@
+﻿capital = 296
+
+oob = "BOZ_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	disarmed_nation
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 100
+		fascism = 0        
+	}
+}
+
+0978.8.8 = {
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 0
+		fascism = 100 
+	}
+}		
+
+create_country_leader = {
+	name = "Uninhabited"
+	desc = "This Planet is Believed to be Uninhabited"
+	picture = "gfx/leaders/BOZ/Bozpity.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Separatist Controlled Boz Pity"
+	desc = "Separatist Controlled Land of Boz Pity"
+	picture = "gfx/leaders/BOZ/CISBozpity.dds"
+	expire = "4000.1.1"
+	ideology = fascism_ideology
+}

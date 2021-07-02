@@ -1,0 +1,261 @@
+add_namespace = CAL
+news_event = {
+	id = CAL.1 #Civil War Test
+	title = "Civil War Test"
+	desc = "Trade Federation operatives in the Dorvalla system have successfully staged an attack on one of our Aurodium shipments. Our top political minds suggest that this will force the Republic senate to consider relaxing restrictions put in place by the Russan reformation."
+	picture = GFX_dorvalla
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = no
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		add_threat = 30
+		QUA = {
+			set_technology = {
+				battle_droid_0 = 1
+			}
+			transfer_state = 22
+			22 = { 
+				add_core_of = QUA 
+			}
+			transfer_state = 188
+			188 = { 
+				add_core_of = QUA
+			}
+			transfer_state = 197
+			197 = { 
+				add_core_of = QUA 
+			}
+			set_capital = 188
+
+			load_oob = "QUA_3677"
+
+			set_rule = {
+				can_join_factions = no
+				can_puppet = no
+				can_create_factions = no
+			}
+
+		}
+		CAL = {
+			load_oob = "CAL_Civil_War"
+		}
+	}
+	
+	option = {
+		name = "We must reunite through bloodshed."
+		declare_war_on = {
+			target = QUA
+			type = civil_war
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+news_event = {
+	id = CAL.2 #Civil War Test
+	title = "Flee to Pammant"
+	desc = "PLACEHOLDER"
+	picture = GFX_dorvalla
+	
+	major = no
+	fire_only_once = yes
+	trigger = {
+		NOT = { country_exists = QUA }
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_threat = -25
+			QUA = {
+
+				transfer_state = 236
+				236 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = industrial_complex
+						level = 6
+						instant_build = yes
+					}
+					add_manpower = 27000
+				}
+				transfer_state = 238
+				238 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 13000
+				}
+				transfer_state = 245
+				245 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 12000
+				}
+				transfer_state = 240
+				240 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 11000
+				}
+				transfer_state = 227
+				227 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 5000
+				}
+				transfer_state = 28
+				28 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 8000
+				}
+				transfer_state = 225
+				225 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 16000
+				}
+				set_capital = 236
+
+			}
+		}
+	}
+	
+	option = {
+		name = "We must reunite through bloodshed."
+	}
+}
+
+news_event = {
+	id = CAL.3 #Civil War Test
+	title = "Colonize to Pammant"
+	desc = "PLACEHOLDER"
+	picture = GFX_dorvalla
+	
+	major = no
+	fire_only_once = yes
+	trigger = {
+		NOT = { country_exists = CAL }
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_threat = -25
+			QUA = {
+
+				transfer_state = 236
+				236 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = industrial_complex
+						level = 6
+						instant_build = yes
+					}
+					add_manpower = 27000
+				}
+				transfer_state = 238
+				238 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 13000
+				}
+				transfer_state = 245
+				245 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 12000
+				}
+				transfer_state = 240
+				240 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 11000
+				}
+				transfer_state = 227
+				227 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 5000
+				}
+				transfer_state = 28
+				28 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 8000
+				}
+				transfer_state = 225
+				225 = { 
+					add_core_of = QUA 
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 16000
+				}
+
+				set_rule = {
+					can_join_factions = yes
+					can_puppet = yes
+					can_create_factions = yes
+				}
+			}
+
+		}
+	}
+	
+	option = {
+		name = "We must reunite through bloodshed."
+	}
+}

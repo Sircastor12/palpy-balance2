@@ -1,0 +1,138 @@
+defined_text = {
+	name = Getsithmaster
+	text = {
+		trigger = {
+			ROOT = {
+				has_country_flag = sidious_master
+		}
+	}
+		localization_key = "GFX_sith_palpatine"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_country_flag = maul_master
+		}
+	}
+		localization_key = "GFX_sith_maul"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_country_flag = dooku_master
+		}
+	}
+		localization_key = "GFX_sith_tyranus"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_country_flag = anakin_master
+		}
+	}
+		localization_key = "GFX_sith_anakin"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+				has_country_flag = darth_jarjar
+		}
+	}
+		localization_key = "GFX_sith_jarjar"
+	}
+}
+defined_text = {
+	name = Getsithapprentice
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = ahsoka_apprentice
+		}
+	}
+		localization_key = "GFX_sith_ahsoka"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = maul_apprentice
+		}
+	}
+		localization_key = "GFX_sith_maul"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = dooku_apprentice
+		}
+	}
+		localization_key = "GFX_sith_tyranus"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = ventress_apprentice
+		}
+	}
+		localization_key = "GFX_sith_ventress"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = savage_apprentice
+		}
+	}
+		localization_key = "GFX_sith_savage"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = anakin_apprentice
+		}
+	}
+		localization_key = "GFX_sith_anakin"
+	}
+	text = {
+		trigger = {
+			ROOT = {
+			has_country_flag = pong_apprentice
+		}
+	}
+		localization_key = "GFX_sith_pong"
+	}
+}
+defined_text = {
+	name = Getattack
+	text = {
+		trigger = { 
+			always = yes
+		}
+		localization_key = "[?sith_general_attack]"
+	}
+}
+defined_text = {
+	name = Getdefense
+	text = {
+		trigger = { 
+			always = yes
+		}
+		localization_key = "[?sith_general_defense]"
+	}
+}
+defined_text = {
+	name = Getplanningapprentice
+	text = {
+		trigger = { 
+			always = yes
+		}
+		localization_key = "[?sith_general_supply]"
+	}
+}
+defined_text = {
+	name = Getlogisticsapprentice
+	text = {
+		trigger = { 
+			always = yes
+		}
+		localization_key = "[?sith_general_planning]"
+	}
+}

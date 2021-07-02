@@ -1,0 +1,8 @@
+supply_area={
+	id=71
+	name="SUPPLYAREA_71"
+	value=30
+	states={
+		453 69 464 456 469 471 468 
+	}
+}

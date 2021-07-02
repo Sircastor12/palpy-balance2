@@ -1,0 +1,43 @@
+state={
+	id=189
+	name="STATE_189"
+	provinces={
+		143 194 319 441 1259 1446 1544 1738 1906 2308 2337 2463 2656 2714 3583 3949 4187 4575 4863 6731 6732 6756 6760 6777 6780 6782 6785 6803 6806 6814 6831 6832 6838 6853 6856 6870 6874 
+	}
+	manpower=140000000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	
+	resources={
+		steel=9
+		aluminium=2
+		rubber=2
+		tungsten=3
+		oil=5
+		chromium=1
+	}
+
+  	history = {
+		owner=REP
+		add_core_of = REP
+
+		buildings = {
+			infrastructure=4
+			arms_factory=2
+			industrial_complex=3
+			air_base=2
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			6814 70
+		}
+		victory_points = {
+			194 30
+		}
+	}
+}
+

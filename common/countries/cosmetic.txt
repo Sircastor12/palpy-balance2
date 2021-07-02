@@ -1,0 +1,18 @@
+##Majors##
+SIT_sith = {
+	color = rgb { 186 84 0 }
+	color_ui = rgb { 186 84 0 }
+}
+NIT_maul = {
+	color = rgb { 255 74 61 }
+	color_ui = rgb { 255 74 61 }
+}
+SHA = {
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 32 32 32 }
+}
+
+EMP = {
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 80 80 80 }
+}

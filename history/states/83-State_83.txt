@@ -1,0 +1,40 @@
+state={
+	id=83
+	name="STATE_83"
+	provinces={
+		309 340 418 1030 1299 1555 1646 1896 1941 2242 2668 2716 3221 3356 3426 3442 3639 5010 5172 5176 5180 5183 5184 5188 5189 5192 5195 5197 5198 5199 5202 5204 5206 5207 5213 5215 5218 5223 5224 5235 5236 
+	}
+	manpower=55000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	
+	resources={
+		steel=0
+		aluminium=1
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=DAN
+		add_core_of = DAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			3639 50
+		}
+	}
+}
+

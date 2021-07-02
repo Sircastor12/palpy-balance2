@@ -1,0 +1,41 @@
+state={
+	id=70
+	name="STATE_70"
+	provinces={
+		866 1236 1886 3725 4440 4494 4737 4904 4934 11040 11041 11047 11051 11072 11077 11087 11110 11113 11148 11156 11167 
+	}
+	manpower=571428
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=3
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=3
+		chromium=0
+	}
+
+  	history = {
+		owner=PAN
+		add_core_of = PAN
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+	
+		victory_points = {
+			11167 30
+		}
+	}
+}
+

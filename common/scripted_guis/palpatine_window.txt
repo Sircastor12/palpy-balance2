@@ -1,0 +1,128 @@
+scripted_gui = {
+
+	palpatine_container = {
+		context_type = player_context
+		
+		window_name = "palpatine_container"
+		parent_window_name = topbar
+		
+		visible = {
+			is_ai = no
+			ROOT = {
+				OR = {
+					tag = REP
+					tag = SID
+					tag = CIS
+				}
+			}
+		}
+		effects = {
+			palpatine_button_click = {
+				if = {
+					limit = {
+						has_country_flag = palpatine_general_tab
+					}
+					clr_country_flag = palpatine_general_tab
+				}
+				else = {
+					set_country_flag = palpatine_general_tab
+				}
+			}
+		}
+    }
+
+	palpatine_regular = {
+			context_type = player_context
+			window_name = "palpatine_regular"
+			visible = {
+				has_country_flag = palpatine_general_tab
+				OR = {
+					tag = CIS
+					tag = REP
+				}
+			}
+
+			effects = {
+				close_button_click = {
+					clr_country_flag = palpatine_general_tab
+				}
+				international_button_click = {
+					set_country_flag = attack_mission_clicked
+					clr_country_flag = industry_mission_clicked
+					clr_country_flag = laws_mission_clicked
+					clr_country_flag = army_mission_clicked
+					clr_country_flag = naval_mission_clicked
+				}
+				industry_button_click = {
+					set_country_flag = industry_mission_clicked
+					clr_country_flag = attack_mission_clicked
+					clr_country_flag = laws_mission_clicked
+					clr_country_flag = army_mission_clicked
+					clr_country_flag = naval_mission_clicked
+				}
+				laws_button_click = {
+					set_country_flag = laws_mission_clicked
+					clr_country_flag = attack_mission_clicked
+					clr_country_flag = industry_mission_clicked
+					clr_country_flag = army_mission_clicked
+					clr_country_flag = naval_mission_clicked
+				}
+				army_button_click = {
+					set_country_flag = army_mission_clicked
+					clr_country_flag = attack_mission_clicked
+					clr_country_flag = industry_mission_clicked
+					clr_country_flag = laws_mission_clicked
+					clr_country_flag = naval_mission_clicked
+				}
+				naval_button_click = {
+					set_country_flag = naval_mission_clicked
+					clr_country_flag = attack_mission_clicked
+					clr_country_flag = industry_mission_clicked
+					clr_country_flag = laws_mission_clicked
+					clr_country_flag = army_mission_clicked
+				}
+			}
+			triggers = {
+				international_button_click_enabled = {
+				NOT = {
+					has_country_flag = attack_mission_clicked
+					}
+				}
+				industry_button_click_enabled = {
+				NOT = {
+					has_country_flag = industry_mission_clicked
+				}
+			}
+				laws_button_click_enabled = {
+				NOT = {
+					has_country_flag = laws_mission_clicked
+				}
+			}
+				army_button_click_enabled = {
+				NOT = {
+					has_country_flag = army_mission_clicked
+				}
+			}
+				naval_button_click_enabled = {
+				NOT = {
+					has_country_flag = naval_mission_clicked
+				}
+			}
+		}
+	}
+	palpatine_sidious = {
+		context_type = player_context
+		window_name = "palpatine_sidious"
+
+		visible = {
+			has_country_flag = palpatine_general_tab
+			tag = SID
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = palpatine_general_tab
+			}
+		}
+	}
+}
+

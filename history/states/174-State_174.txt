@@ -1,0 +1,41 @@
+state={
+	id=174
+	name="STATE_174"
+	provinces={
+		46 356 449 970 1548 2368 2904 2989 3095 3227 3989 4453 4841 4963 6526 6584 6590 6609 6614 6617 6618 6624 
+	}
+	manpower=4285714
+	buildings_max_level_factor=1.000
+	state_category=city
+	
+	resources={
+		steel=5
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=1
+	}
+
+  	history = {
+		owner=REP
+		add_core_of = REP
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			6614 = {
+				naval_base = 3
+			}
+		}
+	
+		victory_points = {
+			4453 20
+		}
+	}
+}
+

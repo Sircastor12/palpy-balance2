@@ -1,0 +1,41 @@
+state={
+	id=215
+	name="STATE_215"
+	provinces={
+		993 2101 2211 2333 2363 2616 2933 3900 4725 4853 4997 7099 7108 7110 7120 7132 7153 7158 7160 7181 7182 7187 7194 7215 7223 7224 7245 7246 7257 7313 7325 
+	}
+	manpower=125000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	
+	resources={
+		steel=0
+		aluminium=2
+		rubber=0
+		tungsten=0
+		oil=2
+		chromium=0
+	}
+
+  	history = {
+		owner=FRE
+		add_core_of = FRE
+
+		buildings = {
+			infrastructure=2
+			arms_factory=2
+			industrial_complex=3
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	4853 = 2
+			#}
+		}
+	
+		#victory_points = {
+		#	1102 30
+		#}
+	}
+}
+

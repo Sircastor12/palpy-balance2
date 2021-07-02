@@ -1,0 +1,691 @@
+
+sidious_influence = {
+	murder_padme = {	
+		icon = generic_political_discourse
+
+		visible = {
+			tag = SID
+		}
+
+		allowed = {
+			tag = SID
+		}
+
+		cost = 150
+        fire_only_once = yes 
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 40
+				date > 977.04.25
+			}
+		}
+		complete_effect = {
+			set_global_flag = murder_attempt_padme
+				hidden_effect = {
+				REP = {
+					news_event = {
+						id = REP_Investigation.6
+					}
+				}
+				SID = {
+					news_event = {
+						id = REP_Investigation.6
+					}
+				}
+			}
+		}
+	}
+	#CIS_attack_CHR = {	
+	#	icon = generic_political_discourse
+	#	visible = {
+	#		tag = SID
+	#	}
+	#	allowed = {
+	#		tag = SID
+	#		CIS = {
+	#			has_war_with = REP
+	#			is_in_faction_with = GEO
+	#		}
+	#	}
+	#	cost = 50
+    #   fire_only_once = yes
+	#	ai_will_do = {
+	#		base = 0
+	#		modifier = {
+	#			add = 4
+	#			date > 977.04.25
+	#		}
+	#	}
+	#	complete_effect = {
+	#		CIS = {
+	#			create_wargoal = { 
+	#				type = puppet_wargoal_focus 
+	#				target = CHR
+	#			}
+	#		}
+	#	}
+	#}
+
+	attack_order_cis = {
+		icon = cis_sec
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				AND = {
+					is_capital = yes
+					CONTROLLER = {
+						NOT = {
+							tag = SID
+							tag = REP
+							tag = CIS
+							has_capitulated = yes
+							has_country_flag = cisfookedus
+						}
+						has_government = democratic
+					}
+				}
+			}
+		}
+		allowed = { tag = SID }
+		visible = {
+			tag = SID
+			has_global_flag = the_clone_wars
+			NOT = {
+				any_state = {
+					has_state_flag = cis_war_target
+				}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 5
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				set_state_flag = cis_war_target
+			}
+			CIS = {
+				set_country_flag = international_mission_issued
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FROM.OWNER
+				}
+				add_to_array = {
+					array = CIS_attack_target
+					value = FROM.OWNER
+				}
+				meta_effect = {
+					text = {
+						add_ai_strategy = {
+							type = invade
+							id = [CisTarget]
+							value = 200
+						}
+						ai_strategy = {
+							type = invasion_unit_request
+						   tag = [CisTarget]
+						   execute_order = yes
+						   priority = 20
+					   }
+					}
+					CisTarget = "[?CIS_attack_target^i]"
+				}
+			}
+		}
+		ai_will_do = {
+			base = 500
+		}
+	}
+	attack_order_rep = {
+		icon = rep_sec
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				AND = {
+					is_capital = yes
+					CONTROLLER = {
+						NOT = {
+							tag = SID
+							tag = REP
+							tag = CIS
+							has_capitulated = yes
+							has_country_flag = repfookedus
+						}
+						has_government = fascism
+					}
+				}
+			}
+		}
+		allowed = { tag = SID }
+
+		visible = {
+			tag = SID
+			has_global_flag = the_clone_wars
+			NOT = {
+				any_state = {
+					has_state_flag = rep_war_target
+				}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		days_re_enable = 5
+		on_map_mode = map_only
+		complete_effect = {
+			FROM = {
+				set_state_flag = rep_war_target
+			}
+			REP = {
+				set_country_flag = international_mission_issued
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = FROM.OWNER
+				}
+				add_to_array = {
+					array = REP_attack_target
+					value = FROM.OWNER
+				}
+				meta_effect = {
+					text = {
+						add_ai_strategy = {
+							type = invade
+							id = [RepTarget]
+							value = 200
+						}
+						ai_strategy = {
+							type = invasion_unit_request
+						   tag = [RepTarget]
+						   execute_order = yes
+						   priority = 20
+					   }
+					}
+					RepTarget = "[?REP_attack_target^i]"
+				}
+			}
+		}
+		ai_will_do = {
+			base = 500
+		}
+	}
+	cis_mission = {
+		icon = generic_construction
+		allowed = {
+			custom_trigger_tooltip = {
+				tooltip = sid_cis_attack_TOOLTIP
+			}
+			tag = CIS
+		}
+		visible = {
+			tag = CIS
+		}
+		available = {
+			any_state = {
+				AND = {
+					has_state_flag = cis_war_target
+					CONTROLLER = {
+						has_government = fascism
+					}
+				}
+			}
+		}
+		highlight_states = {
+			has_state_flag = cis_war_target
+		}
+		days_mission_timeout = 120
+		is_good = no
+		activation = {
+			TAG = CIS
+			any_state = {
+				has_state_flag = cis_war_target
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					any_state = {
+						has_state_flag = cis_war_target
+					}
+				}
+				PREV = {
+					clr_state_flag = cis_war_target
+				}
+			}
+			clear_array = CIS_attack_target
+			REP = {
+				add_stability = 0.08
+				add_war_support = 0.08
+			}
+			CIS = {
+				add_stability = -0.08
+				add_war_support = -0.08
+				clear_array = CIS_attack_target
+				clr_country_flag = international_mission_issued
+			}
+			every_state = {
+				clr_state_flag = cis_war_target
+			}
+		}
+		complete_effect = {
+			CIS = {
+				clear_array = CIS_attack_target
+				clr_country_flag = international_mission_issued
+				add_stability = 0.08
+				add_war_support = 0.08
+			}
+			every_state = {
+				if = {
+					limit = {
+						has_state_flag = cis_war_target
+					}
+					OWNER = {
+						set_country_flag = cisfookedus
+					}
+				}
+				clr_state_flag = cis_war_target
+			}
+		}
+	}
+	rep_mission = {
+			icon = generic_construction
+			allowed = {
+				custom_trigger_tooltip = {
+					tooltip = sid_rep_attack_TOOLTIP
+				}
+				tag = REP
+			}
+			visible = {
+				tag = REP
+			}
+			available = {
+				any_state = {
+					AND = {
+						has_state_flag = rep_war_target
+						CONTROLLER = {
+							has_government = democratic
+						}
+					}
+				}
+			}
+			highlight_states = {
+				has_state_flag = rep_war_target
+			}
+			days_mission_timeout = 120
+			is_good = no
+			activation = {
+				TAG = REP
+				any_state = {
+					has_state_flag = rep_war_target
+				}
+			}
+			timeout_effect = {
+				if = {
+					limit = {
+						any_state = {
+							has_state_flag = rep_war_target
+						}
+					}
+					PREV = {
+						clr_state_flag = rep_war_target
+					}
+				}
+				clear_array = REP_attack_target
+				CIS = {
+					add_stability = 0.08
+					add_war_support = 0.08
+				}
+				REP = {
+					add_stability = -0.08
+					add_war_support = -0.08
+					clear_array = REP_attack_target
+					clr_country_flag = international_mission_issued
+				}
+				every_state = {
+					clr_state_flag = rep_war_target
+				}
+			}
+			complete_effect = {
+				REP = {
+					clear_array = REP_attack_target
+					clr_country_flag = international_mission_issued
+					add_stability = 0.08
+					add_war_support = 0.08
+				}
+				every_state = {
+					if = {
+						limit = {
+							has_state_flag = rep_war_target
+						}
+						OWNER = {
+							set_country_flag = repfookedus
+						}
+					}
+					clr_state_flag = rep_war_target
+				}
+			}
+	}
+}
+
+#sidious_cis_south = {
+#	south_geo_christophsis = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			GEO = {
+#				controls_state = 71
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#			set_global_flag = geo_christophsis
+#			CIS = {
+#				news_event = {
+#					id = SCS.1
+#				}
+#			}
+#		}
+#	}
+#
+#	south_christophsis_naboo = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 61
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#	}
+#
+#	south_christophsis_rodia = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 61
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#	}
+#
+#	south_rodia_bothawui = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 56
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_christophsis_corellia = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 61
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_geo_pantora = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 71
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_pantora_utapau = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 72
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_utapau_dagobah = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 76
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_dagobah_sluisvan = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 70
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_sluisvan_eriadu = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 67
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_eriadu_sullust = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				AND = {
+#					controls_state = 80
+#					controls_state = 63
+#				}
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_sullust_malastare = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 57
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#
+#	south_sullust_thyferra = {
+#		icon = generic_political_discourse
+#
+#		visible = {
+#			tag = SID
+#			CIS = {
+#				controls_state = 57
+#			}
+#		}
+#
+#		allowed = {
+#			tag = SID
+#		}
+#
+#		cost = 0
+#        fire_only_once = no # Will not re-enable after being removed
+#
+#
+#		complete_effect = {
+#		}
+#
+#
+#	}
+#}

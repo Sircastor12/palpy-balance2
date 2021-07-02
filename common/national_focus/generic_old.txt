@@ -1,0 +1,1678 @@
+#focus_tree = {
+#	id = generic_focus
+#	
+#	country = {
+#		factor = 1
+#	}
+#	
+#	default = no
+#	reset_on_civilwar = no
+#
+#	initial_show_position = {
+#		focus = industrial_effort
+#	}
+#
+#	focus = {
+#		id = industrial_effort
+#		icon = GFX_goal_generic_production
+#		x = 3
+#		y = 0
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = industrial_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = industry
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 3
+#		}
+#	}
+#
+#	focus = {
+#		id = launch_manufacturing_station
+#		icon = GFX_focus_generic_industry_1
+#		prerequisite = { focus = industrial_effort }
+#		x = -2
+#		y = 1
+#		relative_position_id = industrial_effort
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#
+#
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#
+#		bypass = {
+#		}
+#		completion_reward = {
+#			add_offsite_building = { type = industrial_complex level = 1 }
+#		}
+#	}
+#	focus = {
+#		id = launch_manufacturing_station2
+#		icon = GFX_focus_generic_industry_2
+#		prerequisite = { focus = launch_manufacturing_station }
+#		x = 0
+#		y = 1
+#		relative_position_id = launch_manufacturing_station
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#
+#
+#		
+#		ai_will_do = {
+#			factor = 2
+#		}
+#
+#		bypass = {
+#		}
+#		completion_reward = {
+#			add_offsite_building = { type = industrial_complex level = 2 }
+#		}
+#	}
+#	focus = {
+#		id = launch_manufacturing_station3
+#		icon = GFX_focus_generic_industry_3
+#		prerequisite = { focus = launch_manufacturing_station2 }
+#		x = 0
+#		y = 1
+#		relative_position_id = launch_manufacturing_station2
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#		available = {
+#			num_of_factories > 20
+#		}
+#
+#		ai_will_do = {
+#			factor = 2
+#		}
+#
+#		bypass = {
+#		}
+#		completion_reward = {
+#			add_offsite_building = { type = industrial_complex level = 2 }
+#			unlock_decision_tooltip = launch_civilian_station_decision
+#		}
+#	}
+#
+#	focus = {
+#		id = launch_arms_station
+#		icon = GFX_goal_generic_construct_mil_factory
+#		prerequisite = { focus = industrial_effort }
+#		x = 2
+#		y = 1
+#		relative_position_id = industrial_effort
+#		cost = 10
+#
+#		
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 2			
+#		}
+#
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_offsite_building = { type = arms_factory level = 1 }
+#		}
+#	}
+#
+#	focus = {
+#		id = launch_arms_station_2
+#		icon = GFX_goal_generic_construct_mil_factory
+#		prerequisite = { focus = launch_arms_station }
+#		x = 0
+#		y = 1
+#		relative_position_id = launch_arms_station
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#
+#		ai_will_do = {
+#			factor = 2			
+#		}
+#
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_offsite_building = { type = arms_factory level = 2 }
+#		}
+#	}
+#
+#	focus = {
+#		id = launch_arms_station_3
+#		icon = GFX_goal_generic_construct_mil_factory
+#		prerequisite = { focus = launch_arms_station_2 }
+#		x = 0
+#		y = 1
+#		relative_position_id = launch_arms_station_2
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#		available = {
+#			num_of_factories > 20
+#		}
+#
+#		ai_will_do = {
+#			factor = 2			
+#		}
+#
+#		bypass = {
+#		}
+#
+#		completion_reward = {
+#			add_offsite_building = { type = arms_factory level = 2 }
+#		}
+#	}
+#
+#	focus = {
+#		id = gen_infrastructure_effort
+#		icon = GFX_goal_generic_construction
+#		prerequisite = { focus = industrial_effort }
+#		x = 0
+#		y = 1
+#		relative_position_id = industrial_effort
+#		cost = 8
+#		
+#		available_if_capitulated = yes
+#
+#		bypass = {
+#			custom_trigger_tooltip = {
+#				all_owned_state = {			
+#					free_building_slots = {
+#						building = infrastructure
+#						size < 1
+#					}
+#				}
+#			}
+#		}
+#
+#		complete_tooltip = {
+#			add_building_construction = {
+#				type = infrastructure
+#				level = 2
+#				instant_build = yes
+#			}
+#			add_extra_state_shared_building_slots = 3
+#			add_building_construction = {
+#				type = industrial_complex
+#				level = 3
+#				instant_build = yes
+#			}
+#		}
+#
+#		completion_reward = {
+#			random_owned_controlled_state = {
+#				limit = {
+#					is_capital = yes
+#				}
+#				add_building_construction = {
+#					type = infrastructure
+#					level = 2
+#					instant_build = yes
+#				}
+#				add_extra_state_shared_building_slots = 3
+#				add_building_construction = {
+#					type = industrial_complex
+#					level = 3
+#					instant_build = yes
+#				}
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = gen_planetkilling_effort
+#		icon = GFX_focus_wonderweapons
+#		prerequisite = { focus = extra_tech_slot }
+#		x = -1
+#		y = 1
+#		relative_position_id = extra_tech_slot
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = extra_tech_slot
+#		icon = GFX_focus_research
+#		prerequisite = { focus = gen_infrastructure_effort }
+#		prerequisite = { focus = launch_arms_station_2 }
+#		prerequisite = { focus = launch_manufacturing_station2 }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_infrastructure_effort
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_research_slot = 1
+#		}
+#	}
+#	
+#	focus = {
+#		id = extra_tech_slot_2
+#		icon = GFX_focus_research2
+#		prerequisite = { focus = extra_tech_slot }
+#		available = {
+#			num_of_factories > 30
+#		}
+#		cancel_if_invalid = no
+#		continue_if_invalid = yes
+#		x = 0
+#		y = 2
+#		relative_position_id = extra_tech_slot
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_research_slot = 1
+#		}
+#	}	
+#
+#	focus = {
+#		id = secret_weapons
+#		icon = GFX_goal_generic_scientific_exchange
+#		prerequisite = { focus = extra_tech_slot }
+#		x = 1
+#		y = 1
+#		relative_position_id = extra_tech_slot
+#		cost = 10
+#		
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = secret_bonus
+#				bonus = 1.0
+#				uses = 4
+#				category = electronics
+#				category = nuclear
+#				category = rocketry
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.25
+#				always = yes
+#			}
+#		}
+#	}
+#
+#	focus = {
+#		id = gen_political_effort
+#		icon = GFX_goal_generic_demand_territory
+#		x = 13
+#		y = 0
+#		cost = 10
+#	
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		completion_reward = {
+#			add_political_power = 120
+#		}
+#	}	
+#	focus = {
+#		id = gen_side_with_republic
+#		icon = GFX_focus_chi_mission_to_the_us
+#		prerequisite = { focus = gen_political_effort }
+#		mutually_exclusive = { focus = gen_side_with_cis focus = gen_neutrality_focus }
+#		x = -3
+#		y = 1
+#		relative_position_id = gen_political_effort
+#		cost = 10
+#
+#		available = {
+#			OR = {
+#				is_in_faction_with = REP
+#				has_government = democratic
+#				has_government = neutrality
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 100
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_opinion_modifier = {
+#    			target = REP
+#    			modifier = large_increase
+#			}
+#			REP = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_ties_with_the_senate
+#		icon = GFX_focus_generic_diplomatic_treaty 
+#		prerequisite = { focus = gen_side_with_republic }
+#		x = -1
+#		y = 1
+#		relative_position_id = gen_side_with_republic
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = senate_ties_idea
+#		}
+#	}
+#	focus = {
+#		id = gen_allow_republic_enforcement
+#		icon = GFX_focus_hol_the_foundations_of_defense
+#		prerequisite = { focus = gen_ties_with_the_senate }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_ties_with_the_senate
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_war_support = 0.1
+#			add_stability = 0.1
+#		}
+#	}
+#	focus = {
+#		id = gen_loyalist_effort
+#		icon = GFX_goal_support_democracy
+#		prerequisite = { focus = gen_side_with_republic }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_side_with_republic
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			custom_effect_tooltip = stay_with_republic_tt
+#			add_to_variable = { secessionpoint = -2 }
+#		}
+#	}
+#	focus = {
+#		id = gen_support_the_jedi_order
+#		icon = GFX_focus_generic_concessions
+#		prerequisite = { focus = gen_loyalist_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_loyalist_effort
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = support_the_jedi_idea
+#		}
+#	}
+#	focus = {
+#		id = gen_jedi_assistance
+#		icon = GFX_goal_molotov_ribbentrop_pact
+#		prerequisite = { focus = gen_support_the_jedi_order }
+#		prerequisite = { focus = gen_mission_to_the_core_worlds }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_support_the_jedi_order
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			swap_ideas = {
+#    			remove_idea = support_the_jedi_idea
+#    			add_idea = support_the_jedi_idea_2
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_republic_trading_mission
+#		icon = GFX_goal_generic_positive_trade_relations
+#		prerequisite = { focus = gen_loyalist_effort }
+#		prerequisite = { focus = gen_ties_with_the_senate }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_ties_with_the_senate
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 100
+#			add_ideas = republic_trade
+#		}
+#	}
+#	focus = {
+#		id = gen_mission_to_the_core_worlds
+#		icon = GFX_focus_generic_treaty
+#		prerequisite = { focus = gen_support_the_jedi_order }
+#		prerequisite = { focus = gen_allow_republic_enforcement }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_allow_republic_enforcement
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			swap_ideas = {
+#    			remove_idea = senate_ties_idea
+#    			add_idea = senate_ties_idea_2
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_side_with_cis
+#		icon = GFX_focus_chi_mission_to_germany
+#		prerequisite = { focus = gen_political_effort }
+#		mutually_exclusive = { focus = gen_side_with_republic focus = gen_neutrality_focus }
+#		x = 3
+#		y = 1
+#		relative_position_id = gen_political_effort
+#		cost = 10
+#
+#		available = {
+#			OR = {
+#				is_in_faction_with = CIS
+#				has_government = fascism
+#				has_government = neutrality
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 100
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_opinion_modifier = {
+#    			target = CIS
+#    			modifier = large_increase
+#			}
+#			CIS = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_condemn_republic_corruption
+#		icon = GFX_focus_rom_parties_end
+#		prerequisite = { focus = gen_side_with_cis }
+#		x = -1
+#		y = 1
+#		relative_position_id = gen_side_with_cis
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_opinion_modifier = {
+#    			target = REP
+#    			modifier = betrayed_our_cause
+#			}
+#			add_ideas = condemned_republic_idea
+#		}
+#	}
+#	focus = {
+#		id = gen_contact_the_trade_federation
+#		icon = GFX_focus_mex_privatisation
+#		prerequisite = { focus = gen_condemn_republic_corruption }
+#		prerequisite = { focus = gen_separatist_effort }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_condemn_republic_corruption
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = trade_federation_contact_idea
+#			FED = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_befriend_banking_clan
+#		icon = GFX_focus_usa_reestablish_the_gold_standard
+#		prerequisite = { focus = gen_contact_the_trade_federation }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_contact_the_trade_federation
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 100
+#			IBC = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_support_the_separatist_cause
+#		icon = GFX_focus_generic_strike_at_democracy2
+#		prerequisite = { focus = gen_condemn_republic_corruption }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_condemn_republic_corruption
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = separatist_cause_idea
+#		}
+#	}
+#	focus = {
+#		id = gen_support_the_sith
+#		icon = GFX_goal_generic_attack_allies
+#		prerequisite = { focus = gen_befriend_banking_clan }
+#		prerequisite = { focus = gen_support_the_count }
+#		mutually_exclusive = { focus = gen_distancing_from_the_sith }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_support_the_count
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#    			add_ideas = separatist_effort_idea_sith
+#		}
+#	}
+#	focus = {
+#		id = gen_distancing_from_the_sith
+#		icon = GFX_focus_generic_support_the_left_right
+#		prerequisite = { focus = gen_befriend_banking_clan }
+#		prerequisite = { focus = gen_support_the_separatist_cause }
+#		mutually_exclusive = { focus = gen_support_the_sith }
+#		x = 0	
+#		y = 2
+#		relative_position_id = gen_support_the_separatist_cause
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			swap_ideas = {
+#    			remove_idea = separatist_effort_idea
+#    			add_idea = separatist_effort_idea_2
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_separatist_effort
+#		icon = GFX_focus_focus_fra_maquis
+#		prerequisite = { focus = gen_side_with_cis }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_side_with_cis
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			custom_effect_tooltip = move_toward_secession_tt
+#			add_to_variable = { secessionpoint = 2 }
+#		}
+#	}
+#	focus = {
+#		id = gen_support_the_count
+#		icon = GFX_focus_por_salazar
+#		prerequisite = { focus = gen_separatist_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_separatist_effort
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 100
+#		}
+#	}
+#	focus = {
+#		id = gen_request_defense_forces
+#		icon = GFX_goal_generic_defence
+#		prerequisite = { focus = gen_side_with_republic focus = gen_side_with_cis }
+#		x = 3
+#		y = 1
+#		relative_position_id = gen_side_with_republic
+#		cost = 10
+#
+#		available = {
+#			REP = { has_war_with = CIS }
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			if = {
+#				limit = { has_completed_focus = gen_side_with_republic }
+#				REP = { country_event = { id = GNT.1 days = 1 } }
+#			}
+#			else_if = {
+#				limit = { has_completed_focus = gen_side_with_cis }
+#				CIS = { country_event = { id = GNT.2 days = 1 } }
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_faction_researching
+#		icon = GFX_goal_generic_intelligence_exchange
+#		prerequisite = { focus = gen_request_defense_forces }
+#		x = 0
+#		y = 3
+#		relative_position_id = gen_request_defense_forces
+#		cost = 10
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			if = {
+#				limit = { has_completed_focus = gen_side_with_republic }
+#				add_to_tech_sharing_group = REP_research_group
+#			}
+#			else_if = {
+#				limit = { has_completed_focus = gen_side_with_cis }
+#				add_to_tech_sharing_group = CIS_research_group
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_neutrality_focus
+#		icon = GFX_focus_generic_self_management
+#		prerequisite = { focus = gen_political_effort }
+#		mutually_exclusive = { focus = gen_side_with_republic focus = gen_side_with_cis }
+#		x = 8
+#		y = 1
+#		relative_position_id = gen_political_effort
+#		cost = 10 
+#
+#		available = {
+#			NOT = {
+#				OR = {
+#					is_in_faction_with = CIS
+#					is_in_faction_with = REP
+#				}
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 100
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 50
+#		}
+#	}
+#	focus = {
+#		id = gen_hutt_cartel
+#		icon = GFX_focus_generic_monarchy_2
+#		prerequisite = { focus = gen_neutrality_focus }
+#		mutually_exclusive = { focus = gen_sovereign_planet }
+#		x = -1
+#		y = 1
+#		relative_position_id = gen_neutrality_focus
+#		cost = 10 
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_opinion_modifier = {
+#    			target = HUT
+#    			modifier = large_increase
+#			}
+#			HUT = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#			add_ideas = hutt_aligned_idea
+#		}
+#	}
+#	focus = {
+#		id = gen_sovereign_planet
+#		icon = GFX_focus_eng_special_air_service
+#		prerequisite = { focus = gen_neutrality_focus }
+#		mutually_exclusive = { focus = gen_hutt_cartel }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_neutrality_focus
+#		cost = 10 
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = sovereign_planet_idea
+#		}
+#	}
+#	focus = {
+#		id = gen_bounty_hunter_training
+#		icon = GFX_focus_mex_caudillo_private_armies
+#		prerequisite = { focus = gen_hutt_cartel focus = gen_sovereign_planet }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_hutt_cartel
+#		cost = 10 
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = bounty_hunter_leadership
+#			add_ideas = all_adults_serve
+#		}
+#	}
+#	focus = {
+#		id = gen_hutt_trading
+#		icon = GFX_goal_generic_trade
+#		prerequisite = { focus = gen_hutt_cartel }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_hutt_cartel
+#		cost = 10 
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_political_power = 50
+#			add_opinion_modifier = {
+#    			target = HUT
+#			}
+#			HUT = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_join_the_hutts
+#		icon = GFX_goal_generic_national_unity
+#		prerequisite = { focus = gen_hutt_trading }
+#		mutually_exclusive = { focus = gen_our_own_bloc }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_hutt_trading
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 10
+#				has_government = communism
+#			}
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			HUT = { country_event = { id = GNT.4 days = 1 } }
+#		}
+#	}
+#	focus = {
+#		id = gen_connections_to_the_underworld
+#		icon = GFX_focus_eng_concessions_to_the_trade_unions
+#		prerequisite = { focus = gen_join_the_hutts }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_join_the_hutts
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_ideas = underworld_connections_idea
+#			add_ideas = black_market_economy
+#		}
+#	}
+#	focus = {
+#		id = gen_galactic_outreach
+#		icon = GFX_goal_generic_improve_relations
+#		prerequisite = { focus = gen_sovereign_planet }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_sovereign_planet
+#		cost = 10 
+#
+#		available = {
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			REP = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#			CIS = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#			HUT = {
+#				add_opinion_modifier = {
+#    				target = ROOT
+#    				modifier = large_increase
+#				}
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_our_own_bloc
+#		icon = GFX_goal_anschluss
+#		prerequisite = { focus = gen_hutt_trading focus = gen_galactic_outreach }
+#		mutually_exclusive = { focus = gen_join_the_hutts }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_galactic_outreach
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 5
+#				NOT = { has_government = communism }
+#			}
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			set_rule = { can_create_factions = yes }
+#		}
+#	}
+#	focus = {
+#		id = gen_expand_sovereignty
+#		icon = GFX_focus_eng_move_to_secure_the_dominions
+#		prerequisite = { focus = gen_our_own_bloc }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_our_own_bloc
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			swap_ideas = {
+#    			remove_idea = sovereign_planet_idea
+#    			add_idea = sovereign_planet_idea_2
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_lessons_of_the_clone_wars
+#		icon = GFX_focus_generic_provoke_border_clashes
+#		prerequisite = { focus = gen_jedi_assistance focus = gen_distancing_from_the_sith focus = gen_support_the_sith focus = gen_connections_to_the_underworld focus = gen_expand_sovereignty }
+#		x = 1
+#		y = 2
+#		relative_position_id = gen_distancing_from_the_sith
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_stability = 0.2
+#		}
+#	}
+#	focus = {
+#		id = gen_military_effort
+#		icon = GFX_goal_generic_allies_build_infantry
+#		x = 31
+#		y = 0
+#		cost = 10
+#
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 50
+#		}
+#
+#		completion_reward = {
+#			add_political_power = 120
+#		}
+#	}
+#	focus = {
+#		id = gen_ground_forces_effort
+#		icon = GFX_goal_generic_build_tank
+#		prerequisite = { focus = gen_military_effort }
+#		x = -4
+#		y = 1
+#		relative_position_id = gen_military_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 15
+#		}
+#	}
+#	focus = {
+#		id = gen_ground_artillery_effort
+#		icon = GFX_goal_generic_army_artillery
+#		prerequisite = { focus = gen_ground_forces_effort }
+#		x = -1
+#		y = 1
+#		relative_position_id = gen_ground_forces_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_artillery_bonus
+#				bonus = 0.75
+#				uses = 2
+#				category = artillery
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_armored_vehicles_effort
+#		icon = GFX_goal_generic_army_tanks
+#		prerequisite = { focus = gen_ground_artillery_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_ground_artillery_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_artillery_bonus
+#				bonus = 0.75
+#				uses = 2
+#				category = armor
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_ground_infantry_effort
+#		icon = GFX_focus_generic_manpower
+#		prerequisite = { focus = gen_ground_forces_effort }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_ground_forces_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_artillery_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = infantry_weapons
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_ground_infantry_effort_2
+#		icon = GFX_focus_focus_fra_maquis
+#		prerequisite = { focus = gen_ground_infantry_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_ground_infantry_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = infantry_artillery_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = infantry_weapons
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_special_forces_effort
+#		icon = GFX_goal_generic_special_forces
+#		prerequisite = { focus = gen_ground_infantry_effort }
+#		prerequisite = { focus = gen_air_support_effort }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_ground_infantry_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = "Special Forces Research"
+#				bonus = 1
+#				uses = 2
+#				category = marine_tech
+#				category = para_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_ground_doctrine_effort
+#		icon = GFX_goal_generic_occupy_states_ongoing_war
+#		prerequisite = { focus = gen_ground_forces_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_ground_forces_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 15
+#			add_tech_bonus = {
+#				name = land_doc_bonus
+#				bonus = 1
+#				uses = 2
+#				category = land_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_ground_doctrine_effort_2
+#		icon = GFX_focus_chi_army_reform
+#		prerequisite = { focus = gen_ground_doctrine_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_ground_doctrine_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			army_experience = 15
+#			add_tech_bonus = {
+#				name = land_doc_bonus
+#				bonus = 1
+#				uses = 2
+#				category = land_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_aircraft_effort
+#		icon = GFX_goal_generic_build_airforce
+#		prerequisite = { focus = gen_military_effort }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_military_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			air_experience = 15
+#		}
+#	}
+#	focus = {
+#		id = gen_air_support_effort
+#		icon = GFX_goal_generic_CAS
+#		prerequisite = { focus = gen_aircraft_effort }
+#		x = -1
+#		y = 1
+#		relative_position_id = gen_aircraft_effort
+#		cost = 5 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = CAS_bonus
+#				bonus = 1.0
+#				ahead_reduction = 2
+#				uses = 1
+#				category = cas_bomber
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_air_support_effort_2
+#		icon = GFX_focus_eng_special_air_service
+#		prerequisite = { focus = gen_air_support_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_air_support_effort
+#		cost = 5 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = CAS_bonus
+#				bonus = 1.0
+#				ahead_reduction = 2
+#				uses = 1
+#				category = cas_bomber
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_spacefighter_focus
+#		icon = GFX_goal_generic_air_fighter
+#		prerequisite = { focus = gen_aircraft_effort }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_aircraft_effort
+#		cost = 5
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = "Spacefighter Research"
+#				bonus = 1.0
+#				uses = 1
+#				category = light_fighter
+#				category = cat_heavy_fighter
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_spacefighter_focus_2
+#		icon = GFX_goal_generic_air_production
+#		prerequisite = { focus = gen_spacefighter_focus }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_spacefighter_focus
+#		cost = 5
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = "Extensive Spacefighter Research"
+#				bonus = 1.0
+#				uses = 2
+#				category = light_fighter
+#				category = cat_heavy_fighter
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_bomber_focus
+#		icon = GFX_goal_generic_air_bomber
+#		prerequisite = { focus = gen_aircraft_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_aircraft_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = bomber_bonus
+#				bonus = 1.0
+#				uses = 2
+#				technology = strategic_bomber1
+#				technology = strategic_bomber2
+#				technology = strategic_bomber3
+#				category = tactical_bomber
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_air_doctrine_focus
+#		icon = GFX_goal_generic_cavalry
+#		prerequisite = { focus = gen_spacefighter_focus_2 focus = gen_air_support_effort_2 focus = gen_bomber_focus }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_bomber_focus
+#		cost = 5
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			air_experience = 30
+#			add_tech_bonus = {
+#				name = "Aircraft Doctrine Research"
+#				bonus = 0.75
+#				uses = 3
+#				category = air_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_navy_effort
+#		icon = GFX_goal_generic_build_navy
+#		prerequisite = { focus = gen_military_effort }
+#		x = 6
+#		y = 1
+#		relative_position_id = gen_military_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			navy_experience = 15
+#		}
+#	}
+#	focus = {
+#		id = gen_battleship_effort
+#		icon = GFX_focus_generic_navy_battleship2
+#		prerequisite = { focus = gen_navy_effort }
+#		x = -3
+#		y = 1
+#		relative_position_id = gen_navy_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = capital_ships_bonus
+#				bonus = 1.0
+#				ahead_reduction = 2
+#				uses = 1
+#				category = bb_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_fighter_carrier_effort
+#		icon = GFX_goal_generic_navy_carrier
+#		prerequisite = { focus = gen_navy_effort }
+#		x = -1
+#		y = 1
+#		relative_position_id = gen_navy_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = capital_ships_bonus
+#				bonus = 1.0
+#				ahead_reduction = 2
+#				uses = 1
+#				category = cv_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_further_capital_ship_improvements
+#		icon = GFX_goal_generic_occupy_states_coastal
+#		prerequisite = { focus = gen_battleship_effort }
+#		prerequisite = { focus = gen_fighter_carrier_effort }
+#		mutually_exclusive = { focus = gen_further_frigate_studies }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_battleship_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = capital_ships_bonus
+#				bonus = 0.75
+#				uses = 2
+#				category = bb_tech
+#				category = cv_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_frigate_effort
+#		icon = GFX_focus_generic_destroyer
+#		prerequisite = { focus = gen_navy_effort }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_navy_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = dd_bonus
+#				bonus = 0.75
+#				uses = 2
+#				category = dd_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_further_frigate_studies
+#		icon = GFX_goal_generic_occupy_start_war
+#		prerequisite = { focus = gen_frigate_effort }
+#		mutually_exclusive = { focus = gen_further_capital_ship_improvements }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_frigate_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = dd_bonus
+#				bonus = 1
+#				uses = 1
+#				category = dd_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_turbolaser_improvements
+#		icon = GFX_goal_generic_navy_battleship
+#		prerequisite = { focus = gen_further_capital_ship_improvements focus = gen_further_frigate_studies }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_further_capital_ship_improvements
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			navy_experience = 15
+#			add_tech_bonus = {
+#				name = capital_ships_bonus
+#				bonus = 1.0
+#				uses = 1
+#				category = bb_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_point_defense_laser_improvements
+#		icon = GFX_goal_generic_wolf_pack
+#		prerequisite = { focus = gen_further_capital_ship_improvements focus = gen_further_frigate_studies }
+#		x = 0
+#		y = 1
+#		relative_position_id = gen_further_frigate_studies
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			navy_experience = 15
+#			add_tech_bonus = {
+#				name = dd_bonus
+#				bonus = 1.0
+#				ahead_reduction = 2
+#				uses = 1
+#				category = dd_tech
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_fleet_doctrine_effort
+#		icon = GFX_goal_generic_navy_doctrines_tactics
+#		prerequisite = { focus = gen_navy_effort }
+#		x = 3
+#		y = 1
+#		relative_position_id = gen_navy_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = "Fleet Strategic Studies"
+#				bonus = 1.0
+#				uses = 2
+#				category = naval_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_fleet_doctrine_effort_2
+#		icon = GFX_goal_generic_navy_doctrines_tactics
+#		prerequisite = { focus = gen_fleet_doctrine_effort }
+#		x = 0
+#		y = 2
+#		relative_position_id = gen_fleet_doctrine_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_tech_bonus = {
+#				name = "Fleet Strategic Studies"
+#				bonus = 1.0
+#				uses = 2
+#				category = naval_doctrine
+#			}
+#		}
+#	}
+#	focus = {
+#		id = gen_orbital_shipyards
+#		icon = GFX_goal_generic_construct_naval_dockyard
+#		prerequisite = { focus = gen_fleet_doctrine_effort }
+#		x = 1
+#		y = 1
+#		relative_position_id = gen_fleet_doctrine_effort
+#		cost = 10 
+#
+#		available = {
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available_if_capitulated = yes
+#
+#		completion_reward = {
+#			add_offsite_building = { type = dockyard level = 2 }
+#		}
+#	}
+#
+#}
+#
